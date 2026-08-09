@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>多益英文學習網頁遊戲 - 簡化版原型</title>
+  <style>
+    :root {
+      --bg-main: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --primary: #38bdf8;
+      --primary-hover: #0284c7;
+      --accent: #f43f5e;
+      --accent-hover: #e11d48;
+      --success: #22c55e;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #0f172a;
+    }
+    .btn-primary:hover { background-color: var(--primary-hover); }
+
+    .btn-accent {
+      background-color: var(--accent);
+      color: #ffffff;
+    }
+    .btn-accent:hover { background-color: var(--accent-hover); }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+    }
+    .btn-outline:hover { background-color: #334155; }
+
+    .btn-option {
+      width: 100%;
+      text-align: left;
+      background-color: #334155;
+      color: var(--text-main);
+      border: 1px solid #475569;
+      margin-top: 8px;
+      padding: 10px 14px;
+    }
+    .btn-option:hover { background-color: #475569; }
+    .btn-option.selected {
+      border-color: var(--primary);
+      background-color: #0284c7;
+      color: #ffffff;
+    }
+
+    .input-text {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid var(--card-border);
+      background-color: #0f172a;
+      color: var(--text-main);
+      font-size: 16px;
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background-color: #334155;
+      color: var(--text-muted);
+      border: none;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .tab-btn.active {
+      background-color: var(--primary);
+      color: #0f172a;
+    }
+
+    .toggle-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0f172a;
+      padding: 8px 12px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 44px;
+      height: 22px;
+    }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #475569; transition: .3s; border-radius: 22px;
+    }
+    .slider:before {
+      position: absolute; content: ""; height: 16px; width: 16px; left: 3px; bottom: 3px;
+      background-color: white; transition: .3s; border-radius: 50%;
+    }
+    input:checked + .slider { background-color: var(--primary); }
+    input:checked + .slider:before { transform: translateX(22px); }
+
+    .vocab-card {
+      background-color: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+
+    .vocab-word {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .vocab-pos {
+      font-size: 12px;
+      background: #334155;
+      color: #e2e8f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .example-box {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+
+    .zh-text {
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .article-text {
+      line-height: 1.7;
+      font-size: 15px;
+      color: #e2e8f0;
+      margin-bottom: 12px;
+      white-space: pre-line;
+    }
+
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 1. 登入介面 -->
+    <div id="screen-login" class="card">
+      <h2 style="font-size: 22px; font-weight: 700; text-align: center; margin-bottom: 8px;">🎮 多益英文自主學習網頁遊戲</h2>
+      <p style="color: var(--text-muted); font-size: 14px; text-align: center;">請輸入您的玩家名稱以開始學習與測驗：</p>
+      <input type="text" id="player-name-input" class="input-text" placeholder="例如：Alex" value="Alex">
+      <button id="btn-login" class="btn btn-primary" style="width: 100%;">進入遊戲 (Start Game)</button>
+    </div>
+
+    <!-- 主介面 (登入後顯示) -->
+    <div id="screen-main" class="hidden" style="display: flex; flex-direction: column; gap: 16px;">
+      <!-- 頂部資訊列 -->
+      <div class="card header-bar">
+        <div>
+          <span style="font-size: 12px; color: var(--text-muted);">玩家 (Player)</span>
+          <div id="display-player-name" style="font-weight: 700; color: var(--primary); font-size: 16px;"></div>
+        </div>
+        <button id="btn-lang-toggle" class="btn btn-outline" style="font-size: 12px;">語言: 中文/EN</button>
+      </div>
+
+      <!-- 功能導覽列 -->
+      <div class="nav-tabs">
+        <button class="tab-btn active" onclick="switchTab('vocab')">📖 <span data-i18n="tabVocab">單字自主學習</span></button>
+        <button class="tab-btn" onclick="switchTab('reading')">📰 <span data-i18n="tabReading">閱讀文章學習</span></button>
+        <button class="tab-btn" onclick="switchTab('vocab-quiz')">✍️ <span data-i18n="tabVocabQuiz">單字測驗 (5題)</span></button>
+        <button class="tab-btn" onclick="switchTab('reading-quiz')">📑 <span data-i18n="tabReadingQuiz">閱讀測驗 (5題)</span></button>
+      </div>
+
+      <!-- 2-1. 單字介紹區 -->
+      <div id="tab-content-vocab" class="card">
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;" data-i18n="vocabHeader">📖 多益核心單字庫 (10組)</h3>
+        <div id="vocab-list"></div>
+      </div>
+
+      <!-- 2-2. 閱讀文章區 -->
+      <div id="tab-content-reading" class="card">
+        <div class="toggle-bar">
+          <span data-i18n="showTranslation">顯示中文翻譯</span>
+          <label class="switch">
+            <input type="checkbox" id="toggle-article-zh" checked onchange="renderArticles()">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+          <button class="btn btn-outline" style="flex:1" onclick="selectArticle(0)">文章一：科技研討會</button>
+          <button class="btn btn-outline" style="flex:1" onclick="selectArticle(1)">文章二：全球供應鏈</button>
+        </div>
+
+        <div id="article-display-area"></div>
+      </div>
+
+      <!-- 3-1. 單字測驗區 (全英文克漏字) -->
+      <div id="tab-content-vocab-quiz" class="card">
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">✍️ Vocabulary Cloze Quiz (5 Questions)</h3>
+        <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 12px;">All questions are generated in full English from the 10-vocab database.</p>
+        
+        <div id="vocab-quiz-start-box">
+          <button class="btn btn-primary" style="width:100%;" onclick="startVocabQuiz()">🚀 Start Random Vocab Quiz</button>
+        </div>
+
+        <div id="vocab-quiz-running-box" class="hidden">
+          <div id="vocab-quiz-question-container"></div>
+          <button id="btn-next-vocab-q" class="btn btn-primary" style="width:100%; margin-top:12px;" onclick="nextVocabQuestion()">Next Question</button>
+        </div>
+
+        <div id="vocab-quiz-result-box" class="hidden"></div>
+      </div>
+
+      <!-- 3-2. 閱讀測驗區 -->
+      <div id="tab-content-reading-quiz" class="card">
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">📑 Reading Comprehension Quiz</h3>
+        <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 12px;">Selects 1 reading article and presents 5 comprehension questions in full English.</p>
+
+        <div id="reading-quiz-start-box">
+          <button class="btn btn-primary" style="width:100%;" onclick="startReadingQuiz()">🚀 Start Reading Quiz</button>
+        </div>
+
+        <div id="reading-quiz-running-box" class="hidden">
+          <div id="reading-quiz-article-pass" class="article-text" style="background:#0f172a; padding:12px; border-radius:8px; max-height:200px; overflow-y:auto;"></div>
+          <div id="reading-quiz-question-container" style="margin-top:12px;"></div>
+          <button id="btn-next-reading-q" class="btn btn-primary" style="width:100%; margin-top:12px;" onclick="nextReadingQuestion()">Next Question</button>
+        </div>
+
+        <div id="reading-quiz-result-box" class="hidden"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 4. 資料庫 (10 組單字庫與 2 篇閱讀文章)
+    const DB_VOCAB = [
+      { id: 1, word: "analyze", pos: "verb", zhDefinition: "分析", enDefinition: "to examine detail in order to discover meaning", example: "We need to analyze the quarterly report carefully.", exampleZh: "我們需要仔細分析季度報告。" },
+      { id: 2, word: "strategy", pos: "noun", zhDefinition: "策略", enDefinition: "a plan of action designed to achieve a long-term goal", example: "The marketing strategy resulted in higher sales.", exampleZh: "行銷策略帶來了更高的銷售額。" },
+      { id: 3, word: "innovative", pos: "adj", zhDefinition: "創新的", enDefinition: "featuring new methods or original ideas", example: "The company introduced an innovative software solution.", exampleZh: "該公司推出了一款創新的軟體解決方案。" },
+      { id: 4, word: "negotiate", pos: "verb", zhDefinition: "協商", enDefinition: "to reach an agreement through discussion", example: "They will negotiate the contract terms tomorrow.", exampleZh: "他們明天將協商合約條款。" },
+      { id: 5, word: "efficient", pos: "adj", zhDefinition: "高效率的", enDefinition: "achieving maximum productivity with minimum wasted effort", example: "Automated tasks make the workflow more efficient.", exampleZh: "自動化任務使工作流程更高效率。" },
+      { id: 6, word: "expansion", pos: "noun", zhDefinition: "擴張/擴展", enDefinition: "the action of becoming larger or more extensive", example: "Overseas expansion is the primary goal for next year.", exampleZh: "海外擴張是明年的首要目標。" },
+      { id: 7, word: "budget", pos: "noun", zhDefinition: "預算", enDefinition: "an estimate of income and expenditure for a set period", example: "The project must be completed within the approved budget.", exampleZh: "該專案必須在批准的預算之內完成。" },
+      { id: 8, word: "collaborate", pos: "verb", zhDefinition: "合作", enDefinition: "to work jointly on an activity or project", example: "Our team will collaborate with international experts.", exampleZh: "我們的團隊將與國際專家合作。" },
+      { id: 9, word: "productivity", pos: "noun", zhDefinition: "生產力", enDefinition: "the effectiveness of productive effort", example: "Flexible working hours can boost employee productivity.", exampleZh: "彈性的工作時間可以提高員工的生產力。" },
+      { id: 10, word: "implement", pos: "verb", zhDefinition: "實施/執行", enDefinition: "to put a decision or plan into effect", example: "Management decided to implement a new safety policy.", exampleZh: "管理層決定實行一項新的安全政策。" }
+    ];
+
+    const DB_CLOZE_QUESTIONS = [
+      { id: 1, sentence: "The financial analyst was asked to _______ the market trends before investing.", answer: "analyze", options: ["analyze", "negotiate", "implement", "collaborate"] },
+      { id: 2, sentence: "Our team developed a clear marketing _______ to boost online sales.", answer: "strategy", options: ["expansion", "strategy", "budget", "productivity"] },
+      { id: 3, sentence: "The startup won the award for its _______ design in electric vehicles.", answer: "innovative", options: ["efficient", "innovative", "collaborate", "implement"] },
+      { id: 4, sentence: "Both managers will meet this afternoon to _______ the final price.", answer: "negotiate", options: ["negotiate", "analyze", "strategy", "expansion"] },
+      { id: 5, sentence: "Using digital invoices has made our accounting department much more _______.", answer: "efficient", options: ["efficient", "innovative", "budget", "productivity"] },
+      { id: 6, sentence: "The rapid _______ of the retail chain created hundreds of new jobs.", answer: "expansion", options: ["expansion", "strategy", "collaborate", "implement"] },
+      { id: 7, sentence: "We must review our annual _______ to allocate funds for research.", answer: "budget", options: ["budget", "productivity", "efficient", "analyze"] },
+      { id: 8, sentence: "Engineers from two offices will _______ on the satellite system.", answer: "collaborate", options: ["collaborate", "negotiate", "strategy", "expansion"] },
+      { id: 9, sentence: "Providing modern computers greatly enhanced office _______.", answer: "productivity", options: ["productivity", "budget", "innovative", "efficient"] },
+      { id: 10, sentence: "The HR director plans to _______ new training programs next month.", answer: "implement", options: ["implement", "analyze", "collaborate", "negotiate"] }
+    ];
+
+    const DB_READING_ARTICLES = [
+      {
+        id: 0,
+        titleEn: "Annual Tech Innovation Conference",
+        titleZh: "年度科技創新研討會",
+        contentEn: "Next month, Global Tech Solutions will host its annual innovation conference in San Francisco. The keynote speaker will discuss how artificial intelligence can streamline business operations and improve productivity. Attendance is mandatory for department heads, while team leads are encouraged to join remotely. All attendees must register online before August 15.",
+        contentZh: "下個月，Global Tech Solutions 將在舊金山舉辦年度創新研讨會。主講嘉賓將討論人工智慧如何簡化業務營運並提升生產力。各部門主管必須出席，並鼓勵團隊領導線上遠端參與。所有與會者必須在 8 月 15 日前完成線上報名。",
+        questions: [
+          { q: "Where will the conference be held?", options: ["A. San Francisco", "B. New York", "C. London", "D. Tokyo"], answer: 0 },
+          { q: "What is the main topic of the keynote speech?", options: ["A. Real estate marketing", "B. Artificial intelligence in business", "C. Financial auditing", "D. Overseas expansion"], answer: 1 },
+          { q: "Who is required to attend the conference?", options: ["A. Interns", "B. Remote workers", "C. Department heads", "D. External clients"], answer: 2 },
+          { q: "By what date must attendees complete registration?", options: ["A. August 1", "B. August 15", "C. September 1", "D. September 15"], answer: 1 },
+          { q: "According to the text, how can team leads participate?", options: ["A. By writing a report", "B. Remotely online", "C. By phone call", "D. In-person only"], answer: 1 }
+        ]
+      },
+      {
+        id: 1,
+        titleEn: "Global Supply Chain Report 2026",
+        titleZh: "2026 全球供應鏈報告",
+        contentEn: "International logistics companies face increasing challenges due to fluctuating shipping rates and rising port congestion. To remain competitive, manufacturers are collaborating with local logistics suppliers to shorten delivery times. Furthermore, adopting automated inventory management has proved highly efficient, reducing order processing delays by 35%.",
+        contentZh: "由於航運費率波動和港口擁堵加劇，國際物流公司面臨日益嚴峻的挑戰。為了保持競爭力，製造商正與本地物流供應商合作以縮短交付時間。此外，採用自動化庫存管理已被證明高效率，能將訂單處理延誤減少 35%。",
+        questions: [
+          { q: "What is causing challenges for logistics companies?", options: ["A. Lack of workers", "B. Fluctuating shipping rates & port congestion", "C. Decreased customer demand", "D. Fuel price cuts"], answer: 1 },
+          { q: "Why are manufacturers working with local logistics suppliers?", options: ["A. To lower taxes", "B. To shorten delivery times", "C. To hire more drivers", "D. To build new ports"], answer: 1 },
+          { q: "What technology is mentioned as being highly efficient?", options: ["A. Solar powered trucks", "B. Automated inventory management", "C. Manual stock taking", "D. Paper invoicing"], answer: 1 },
+          { q: "By how much did automated inventory reduce order processing delays?", options: ["A. 15%", "B. 25%", "C. 35%", "D. 50%"], answer: 2 },
+          { q: "What is the primary focus of the report?", options: ["A. Employee benefits", "B. Global supply chain and logistics", "C. Office furniture design", "D. Software bug fixes"], answer: 1 }
+        ]
+      }
+    ];
+
+    // UI 語言介面狀態
+    let currentLang = 'zh'; // 'zh' or 'en'
+    let selectedArticleIndex = 0;
+
+    const i18n = {
+      zh: {
+        tabVocab: "單字自主學習",
+        tabReading: "閱讀文章學習",
+        tabVocabQuiz: "單字測驗 (5題)",
+        tabReadingQuiz: "閱讀測驗 (5題)",
+        vocabHeader: "📖 多益核心單字庫 (10組)",
+        showTranslation: "顯示中文翻譯"
+      },
+      en: {
+        tabVocab: "Vocab Self-Study",
+        tabReading: "Reading Practice",
+        tabVocabQuiz: "Vocab Quiz (5Q)",
+        tabReadingQuiz: "Reading Quiz (5Q)",
+        vocabHeader: "📖 Core TOEIC Vocabulary (10 Words)",
+        showTranslation: "Show Chinese Translation"
+      }
+    };
+
+    // 登入管理
+    document.getElementById('btn-login').addEventListener('click', () => {
+      const name = document.getElementById('player-name-input').value.trim() || 'Player';
+      document.getElementById('display-player-name').textContent = name;
+      document.getElementById('screen-login').classList.add('hidden');
+      document.getElementById('screen-main').classList.remove('hidden');
+      renderVocabList();
+      renderArticles();
+    });
+
+    // 切換中/英 UI 介面
+    document.getElementById('btn-lang-toggle').addEventListener('click', () => {
+      currentLang = currentLang === 'zh' ? 'en' : 'zh';
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[currentLang][key]) {
+          el.textContent = i18n[currentLang][key];
+        }
+      });
+      renderVocabList();
+    });
+
+    // 功能 Tab 切換
+    function switchTab(tabKey) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+
+      document.getElementById('tab-content-vocab').classList.add('hidden');
+      document.getElementById('tab-content-reading').classList.add('hidden');
+      document.getElementById('tab-content-vocab-quiz').classList.add('hidden');
+      document.getElementById('tab-content-reading-quiz').classList.add('hidden');
+
+      document.getElementById(`tab-content-${tabKey}`).classList.remove('hidden');
+    }
+
+    // Web Speech TTS 發音
+    function speakText(text) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9;
+        window.speechSynthesis.speak(utterance);
+      } else {
+        alert("Your browser does not support Web Speech TTS");
+      }
+    }
+
+    // 2-1. 渲染單字列表
+    function renderVocabList() {
+      const container = document.getElementById('vocab-list');
+      container.innerHTML = '';
+
+      DB_VOCAB.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'vocab-card';
+        div.innerHTML = `
+          <div class="vocab-word">
+            <span>${item.word}</span>
+            <span class="vocab-pos">${item.pos}</span>
+            <button class="btn btn-outline" style="padding: 2px 8px; font-size: 12px; margin-left: auto;" onclick="speakText('${item.word}')">🔊 發音</button>
+          </div>
+          <div style="font-size: 14px; margin-top: 4px; color: #38bdf8;">
+            ${currentLang === 'zh' ? item.zhDefinition : item.enDefinition}
+          </div>
+          <div class="example-box">
+            👉 ${item.example}
+            <button class="btn btn-outline" style="padding: 2px 6px; font-size: 11px; margin-left: 4px;" onclick="speakText('${item.example.replace(/'/g, "\\'")}')">🔊</button>
+            ${currentLang === 'zh' ? `<div class="zh-text">${item.exampleZh}</div>` : ''}
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    // 2-2. 閱讀文章學習區
+    function selectArticle(idx) {
+      selectedArticleIndex = idx;
+      renderArticles();
+    }
+
+    function renderArticles() {
+      const showZh = document.getElementById('toggle-article-zh').checked;
+      const art = DB_READING_ARTICLES[selectedArticleIndex];
+      const container = document.getElementById('article-display-area');
+
+      container.innerHTML = `
+        <h4 style="font-size: 18px; font-weight: 700; color: var(--primary); margin-bottom: 8px;">${art.titleEn}</h4>
+        ${showZh ? `<div style="font-size: 14px; color: var(--text-muted); margin-bottom: 12px;">${art.titleZh}</div>` : ''}
+        
+        <button class="btn btn-primary" style="margin-bottom: 12px;" onclick="speakText('${art.contentEn.replace(/'/g, "\\'")}')">🔊 全文語音朗讀 (TTS)</button>
+
+        <div class="article-text">${art.contentEn}</div>
+        ${showZh ? `<div class="article-text" style="color: var(--text-muted); border-top: 1px solid var(--card-border); padding-top: 8px;">${art.contentZh}</div>` : ''}
+      `;
+    }
+
+    // 3-1. 單字克漏字測驗 (隨機 5 題)
+    let vocabQuizQueue = [];
+    let vocabQuizIndex = 0;
+    let vocabScore = 0;
+    let selectedVocabAnswer = null;
+
+    function startVocabQuiz() {
+      // 隨機抽 5 題
+      vocabQuizQueue = [...DB_CLOZE_QUESTIONS].sort(() => 0.5 - Math.random()).slice(0, 5);
+      vocabQuizIndex = 0;
+      vocabScore = 0;
+
+      document.getElementById('vocab-quiz-start-box').classList.add('hidden');
+      document.getElementById('vocab-quiz-result-box').classList.add('hidden');
+      document.getElementById('vocab-quiz-running-box').classList.remove('hidden');
+
+      renderVocabQuestion();
+    }
+
+    function renderVocabQuestion() {
+      selectedVocabAnswer = null;
+      const q = vocabQuizQueue[vocabQuizIndex];
+      const container = document.getElementById('vocab-quiz-question-container');
+
+      container.innerHTML = `
+        <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 6px;">Question ${vocabQuizIndex + 1} of 5</div>
+        <div class="quiz-title">${q.sentence}</div>
+        <div id="vocab-options-group">
+          ${q.options.map(opt => `
+            <button class="btn btn-option" onclick="selectVocabOption(this, '${opt}')">${opt}</button>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function selectVocabOption(btn, val) {
+      document.querySelectorAll('#vocab-options-group .btn-option').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      selectedVocabAnswer = val;
+    }
+
+    function nextVocabQuestion() {
+      if (!selectedVocabAnswer) {
+        alert("Please select an answer!");
+        return;
+      }
+
+      if (selectedVocabAnswer === vocabQuizQueue[vocabQuizIndex].answer) {
+        vocabScore += 20;
+      }
+
+      vocabQuizIndex++;
+      if (vocabQuizIndex < 5) {
+        renderVocabQuestion();
+      } else {
+        showVocabQuizResult();
+      }
+    }
+
+    function showVocabQuizResult() {
+      document.getElementById('vocab-quiz-running-box').classList.add('hidden');
+      const resBox = document.getElementById('vocab-quiz-result-box');
+      resBox.classList.remove('hidden');
+
+      resBox.innerHTML = `
+        <div style="text-align:center; padding:16px;">
+          <h4 style="font-size:20px; font-weight:700; color:var(--primary);">Quiz Completed!</h4>
+          <div style="font-size:36px; font-weight:800; margin:12px 0; color:var(--success);">${vocabScore} / 100</div>
+          <button class="btn btn-primary" style="width:100%;" onclick="startVocabQuiz()">Try Again (Random 5Q)</button>
+        </div>
+      `;
+    }
+
+    // 3-2. 閱讀測驗區 (1 篇文章隨機，5 題)
+    let readingQuizArticle = null;
+    let readingQuizIndex = 0;
+    let readingScore = 0;
+    let selectedReadingAnswer = null;
+
+    function startReadingQuiz() {
+      // 隨機選 1 篇文章
+      readingQuizArticle = DB_READING_ARTICLES[Math.floor(Math.random() * DB_READING_ARTICLES.length)];
+      readingQuizIndex = 0;
+      readingScore = 0;
+
+      document.getElementById('reading-quiz-start-box').classList.add('hidden');
+      document.getElementById('reading-quiz-result-box').classList.add('hidden');
+      document.getElementById('reading-quiz-running-box').classList.remove('hidden');
+
+      document.getElementById('reading-quiz-article-pass').textContent = readingQuizArticle.contentEn;
+      renderReadingQuestion();
+    }
+
+    function renderReadingQuestion() {
+      selectedReadingAnswer = null;
+      const q = readingQuizArticle.questions[readingQuizIndex];
+      const container = document.getElementById('reading-quiz-question-container');
+
+      container.innerHTML = `
+        <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 6px;">Question ${readingQuizIndex + 1} of 5</div>
+        <div class="quiz-title">${q.q}</div>
+        <div id="reading-options-group">
+          ${q.options.map((opt, idx) => `
+            <button class="btn btn-option" onclick="selectReadingOption(this, ${idx})">${opt}</button>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function selectReadingOption(btn, val) {
+      document.querySelectorAll('#reading-options-group .btn-option').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      selectedReadingAnswer = val;
+    }
+
+    function nextReadingQuestion() {
+      if (selectedReadingAnswer === null) {
+        alert("Please select an answer!");
+        return;
+      }
+
+      if (selectedReadingAnswer === readingQuizArticle.questions[readingQuizIndex].answer) {
+        readingScore += 20;
+      }
+
+      readingQuizIndex++;
+      if (readingQuizIndex < 5) {
+        renderReadingQuestion();
+      } else {
+        showReadingQuizResult();
+      }
+    }
+
+    function showReadingQuizResult() {
+      document.getElementById('reading-quiz-running-box').classList.add('hidden');
+      const resBox = document.getElementById('reading-quiz-result-box');
+      resBox.classList.remove('hidden');
+
+      resBox.innerHTML = `
+        <div style="text-align:center; padding:16px;">
+          <h4 style="font-size:20px; font-weight:700; color:var(--primary);">Reading Quiz Completed!</h4>
+          <div style="font-size:36px; font-weight:800; margin:12px 0; color:var(--success);">${readingScore} / 100</div>
+          <button class="btn btn-primary" style="width:100%;" onclick="startReadingQuiz()">Try Another Quiz</button>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>
