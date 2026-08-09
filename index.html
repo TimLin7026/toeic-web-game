@@ -249,9 +249,8 @@
         gap: 8px;
       }
       .vocab-word button {
-        width: 100%;
-        margin-top: 4px;
-        text-align: center;
+        width: auto;
+        margin-top: 0;
       }
       .example-box button {
         padding: 1px 4px;
@@ -500,7 +499,7 @@
           <div class="vocab-word">
             <span>${item.word}</span>
             <span class="vocab-pos">${item.pos}</span>
-            <button class="btn btn-outline" style="padding: 2px 8px; font-size: 12px; margin-left: auto;" onclick="speakText('${item.word}')">🔊 發音</button>
+            <button class="btn btn-outline" style="padding: 2px 8px; font-size: 12px; margin-left: 8px;" onclick="speakText('${item.word}')">🔊 發音</button>
           </div>
           <div style="font-size: 14px; margin-top: 4px; color: #38bdf8;">
             ${currentLang === 'zh' ? item.zhDefinition : item.enDefinition}
