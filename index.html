@@ -201,9 +201,11 @@
                 <button onclick="startQuiz()" class="w-full py-3 bg-emerald-600 text-white font-semibold rounded-xl shadow-md hover:bg-emerald-700 transition active:scale-95 text-sm">開始測驗</button>
             </div>
 
-            <div id="quiz-question-screen" class="w-full hidden">
                 <div class="flex justify-between items-center mb-4">
-                    <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full font-bold">第 <span id="quiz-curr-idx">1</span> 題 / 共 <span id="quiz-total-q">0</span> 題</span>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full font-bold">第 <span id="quiz-curr-idx">1</span> 題 / 共 <span id="quiz-total-q">0</span> 題</span>
+                        <span id="quiz-review-badge" class="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-md font-semibold border border-emerald-100 hidden">✨ 溫故知新複習考</span>
+                    </div>
                     <!-- 2個生命值燈號 -->
                     <div class="flex gap-1.5 items-center">
                         <span class="text-xs text-slate-400 mr-1">生命值:</span>
@@ -1022,7 +1024,7 @@
 
             passedSentences = JSON.parse(localStorage.getItem('unit17_passed_sentences') || '{}');
 
-            // 建立測驗池，自動排除已完全通過 3 個題庫例句的單字
+            // 1. 建立普通測驗池（未完全通過 3 個題庫例句的單字）
             quizPool = [];
             masteredWords.forEach(wordObj => {
                 const passedList = passedSentences[wordObj.id] || [];
@@ -1038,6 +1040,29 @@
                     }
                 });
             });
+
+            // 2. 新增「溫故知新複習考」機制：從「已完全通過3個例句」的單字中，隨機挑選最多 2 個單字，各隨機抽 1 個例句進行複習
+            const fullyPassedWords = masteredWords.filter(wordObj => {
+                const passedList = passedSentences[wordObj.id] || [];
+                return passedList.length === 3;
+            });
+
+            if (fullyPassedWords.length > 0) {
+                const shuffledFullyPassed = [...fullyPassedWords].sort(() => Math.random() - 0.5);
+                const reviewCount = Math.min(shuffledFullyPassed.length, 2);
+                for (let i = 0; i < reviewCount; i++) {
+                    const reviewWordObj = shuffledFullyPassed[i];
+                    const reviewSentenceIdx = Math.floor(Math.random() * 3);
+                    const sentences = [reviewWordObj.ex1En, reviewWordObj.ex2En, reviewWordObj.ex3En];
+                    
+                    quizPool.push({
+                        wordObj: reviewWordObj,
+                        sentence: sentences[reviewSentenceIdx],
+                        sentenceIndex: reviewSentenceIdx,
+                        isReview: true
+                    });
+                }
+            }
 
             if (quizPool.length === 0) {
                 alert("太棒了！所有已掌握的單字都已經完全通過了 3 個題庫例句的測驗！您可以繼續標記新的未掌握單字。");
@@ -1105,6 +1130,16 @@
             }
             document.getElementById('quiz-example').textContent = sentence;
 
+            // 控制「溫故知新複習考」徽章顯示
+            const reviewBadge = document.getElementById('quiz-review-badge');
+            if (reviewBadge) {
+                if (currentItem.isReview) {
+                    reviewBadge.classList.remove('hidden');
+                } else {
+                    reviewBadge.classList.add('hidden');
+                }
+            }
+
             // 預設 focus 到輸入框上，方便行動端直接喚起鍵盤
             const quizInput = document.getElementById('quiz-input');
             if (quizInput) {
@@ -1146,17 +1181,19 @@
                 feedbackEl.textContent = "🎉 答對了！太棒了！";
                 feedbackEl.className = "text-center text-xs font-semibold mt-3 h-5 text-emerald-600";
 
-                // 記錄該例句題庫已通過
-                if (!passedSentences[currentObj.id]) {
-                    passedSentences[currentObj.id] = [];
-                }
-                if (!passedSentences[currentObj.id].includes(currentItem.sentenceIndex)) {
-                    passedSentences[currentObj.id].push(currentItem.sentenceIndex);
-                    localStorage.setItem('unit17_passed_sentences', JSON.stringify(passedSentences));
-                    // 雲端即時同步
-                    if (accessToken && cloudFileId) {
-                        const masteredIds = wordsData.filter(i => i.mastered).map(i => i.id);
-                        uploadToCloud(masteredIds, passedSentences, quizHistory).catch(err => console.error(err));
+                // 記錄該例句題庫已通過（複習題原本就已通過，無須重複記錄）
+                if (!currentItem.isReview) {
+                    if (!passedSentences[currentObj.id]) {
+                        passedSentences[currentObj.id] = [];
+                    }
+                    if (!passedSentences[currentObj.id].includes(currentItem.sentenceIndex)) {
+                        passedSentences[currentObj.id].push(currentItem.sentenceIndex);
+                        localStorage.setItem('unit17_passed_sentences', JSON.stringify(passedSentences));
+                        // 雲端即時同步
+                        if (accessToken && cloudFileId) {
+                            const masteredIds = wordsData.filter(i => i.mastered).map(i => i.id);
+                            uploadToCloud(masteredIds, passedSentences, quizHistory).catch(err => console.error(err));
+                        }
                     }
                 }
 
