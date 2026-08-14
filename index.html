@@ -23,12 +23,15 @@
             <p class="text-xs text-slate-500">已掌握 <span id="mastered-count" class="font-semibold text-emerald-600">0</span> / 35 個單字</p>
         </div>
         
-        <!-- 語速控制與模式切換 -->
+        <!-- 設定與模式切換 -->
         <div class="flex items-center gap-3 flex-wrap justify-center">
-            <div class="flex items-center gap-1.5 bg-slate-100 px-3 py-1.5 rounded-lg">
-                <span class="text-xs text-slate-500">語速: <span id="speed-label" class="font-bold text-indigo-600">0.7</span>x</span>
-                <input type="range" id="speech-rate" min="0.5" max="1.5" step="0.1" value="0.7" class="w-16 accent-indigo-600 cursor-pointer">
-            </div>
+            <!-- 齒輪設定按鈕 -->
+            <button id="btn-settings" onclick="toggleSettingsPanel()" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center" title="語音參數設定">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+            </button>
             <div class="flex gap-1.5">
                 <button id="mode-flip" onclick="switchMode('flip')" class="px-3 py-1.5 text-xs font-medium bg-indigo-50 text-indigo-600 rounded-lg shadow-sm hover:bg-indigo-100 transition">字卡</button>
                 <button id="mode-list" onclick="switchMode('list')" class="px-3 py-1.5 text-xs font-medium bg-slate-100 text-slate-600 rounded-lg shadow-sm hover:bg-slate-200 transition">列表</button>
@@ -39,6 +42,38 @@
 
     <!-- 主要內容區 -->
     <main class="container mx-auto px-4 py-6 max-w-md flex-1 flex flex-col justify-center">
+
+        <!-- 語音設定面板 (預設隱藏) -->
+        <div id="settings-panel" class="hidden w-full bg-white border border-slate-100 rounded-2xl shadow-xl p-5 mb-4 space-y-4 transition-all">
+            <h3 class="text-sm font-bold text-slate-700 border-b pb-2 flex items-center gap-1.5">
+                ⚙️ 語音發音參數設定
+            </h3>
+            <!-- 1. 語速微調區 -->
+            <div class="flex items-center justify-between text-xs">
+                <span class="text-slate-600 font-medium">調整語速：</span>
+                <div class="flex items-center gap-2">
+                    <button onclick="adjustSpeed(-0.1)" class="w-8 h-8 flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-lg transition active:scale-95 shadow-sm">-</button>
+                    <span id="speed-display-val" class="font-bold text-indigo-600 w-12 text-center text-sm">0.7x</span>
+                    <button onclick="adjustSpeed(0.1)" class="w-8 h-8 flex items-center justify-center bg-indigo-50 hover:bg-indigo-100 text-indigo-600 font-bold rounded-lg transition active:scale-95 shadow-sm">+</button>
+                </div>
+            </div>
+            <!-- 2. 口音語系切換 -->
+            <div class="flex items-center justify-between text-xs">
+                <span class="text-slate-600 font-medium">發音口音：</span>
+                <div class="flex bg-slate-100 p-0.5 rounded-lg">
+                    <button id="accent-us" onclick="selectAccent('US')" class="px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600">美式 (US)</button>
+                    <button id="accent-uk" onclick="selectAccent('UK')" class="px-3 py-1 rounded-md transition font-medium text-slate-500">英式 (UK)</button>
+                </div>
+            </div>
+            <!-- 3. 性別聲音切換 -->
+            <div class="flex items-center justify-between text-xs">
+                <span class="text-slate-600 font-medium">聲音性別：</span>
+                <div class="flex bg-slate-100 p-0.5 rounded-lg">
+                    <button id="gender-female" onclick="selectGender('Female')" class="px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600">女聲 (Female)</button>
+                    <button id="gender-male" onclick="selectGender('Male')" class="px-3 py-1 rounded-md transition font-medium text-slate-500">男聲 (Male)</button>
+                </div>
+            </div>
+        </div>
 
         <!-- 1. 字卡模式容器 -->
         <div id="flashcard-view" class="flex flex-col items-center">
@@ -281,18 +316,70 @@
             document.getElementById('mastered-count').textContent = count;
         }
 
-        // 尋找女性語音與引擎預熱
-        let femaleVoice = null;
+        // 語音設定參數
+        let currentSpeed = 0.7;
+        let currentAccent = 'US';
+        let currentGender = 'Female';
+        let selectedVoice = null;
+
+        function toggleSettingsPanel() {
+            const panel = document.getElementById('settings-panel');
+            panel.classList.toggle('hidden');
+        }
+
+        function adjustSpeed(amount) {
+            currentSpeed = Math.round((currentSpeed + amount) * 10) / 10;
+            if (currentSpeed < 0.5) currentSpeed = 0.5;
+            if (currentSpeed > 2.0) currentSpeed = 2.0;
+            document.getElementById('speed-display-val').textContent = currentSpeed + 'x';
+        }
+
+        function selectAccent(accent) {
+            currentAccent = accent;
+            document.getElementById('accent-us').className = accent === 'US' ? 'px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600' : 'px-3 py-1 rounded-md transition font-medium text-slate-500';
+            document.getElementById('accent-uk').className = accent === 'UK' ? 'px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600' : 'px-3 py-1 rounded-md transition font-medium text-slate-500';
+            loadVoices();
+        }
+
+        function selectGender(gender) {
+            currentGender = gender;
+            document.getElementById('gender-female').className = gender === 'Female' ? 'px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600' : 'px-3 py-1 rounded-md transition font-medium text-slate-500';
+            document.getElementById('gender-male').className = gender === 'Male' ? 'px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600' : 'px-3 py-1 rounded-md transition font-medium text-slate-500';
+            loadVoices();
+        }
+
+        // 尋找目標語音與引擎預熱
         function loadVoices() {
             if ('speechSynthesis' in window) {
                 const voices = window.speechSynthesis.getVoices();
-                femaleVoice = voices.find(v => 
-                    v.lang.startsWith('en') && (v.name.includes('Female') || v.name.includes('Zira') || v.name.includes('Samantha') || v.name.includes('Victoria') || v.name.includes('Karen') || v.name.includes('Google US English'))
-                ) || voices.find(v => v.lang.startsWith('en'));
+                const langFilter = currentAccent === 'US' ? 'en-us' : 'en-gb';
+                const enVoices = voices.filter(v => v.lang.toLowerCase().replace('_', '-').startsWith(langFilter));
                 
-                if (femaleVoice) {
+                let voice = null;
+                if (currentGender === 'Male') {
+                    voice = enVoices.find(v => 
+                        v.name.toLowerCase().includes('male') || 
+                        v.name.toLowerCase().includes('david') || 
+                        v.name.toLowerCase().includes('george') ||
+                        v.name.toLowerCase().includes('microsoft')
+                    );
+                } else {
+                    voice = enVoices.find(v => 
+                        v.name.toLowerCase().includes('female') || 
+                        v.name.toLowerCase().includes('zira') || 
+                        v.name.toLowerCase().includes('samantha') || 
+                        v.name.toLowerCase().includes('hazel') ||
+                        v.name.toLowerCase().includes('susan') ||
+                        v.name.toLowerCase().includes('karen') ||
+                        v.name.toLowerCase().includes('victoria')
+                    );
+                }
+                
+                selectedVoice = voice || enVoices[0] || voices.find(v => v.lang.toLowerCase().startsWith('en'));
+                
+                if (selectedVoice) {
                     const warmUp = new SpeechSynthesisUtterance("");
-                    warmUp.voice = femaleVoice;
+                    warmUp.voice = selectedVoice;
                     window.speechSynthesis.speak(warmUp);
                 }
             }
@@ -302,12 +389,6 @@
             loadVoices();
         }
 
-        const speechRateInput = document.getElementById('speech-rate');
-        const speedLabel = document.getElementById('speed-label');
-        speechRateInput.addEventListener('input', (e) => {
-            speedLabel.textContent = e.target.value;
-        });
-
         // 播放語音（串聯 "listen... " 避免 fade-in 切字，朗讀 1 次，防干擾鎖定）
         let isSpeaking = false;
         function playAudio(text) {
@@ -316,13 +397,13 @@
             window.speechSynthesis.cancel();
             isSpeaking = true;
 
-            const rate = parseFloat(speechRateInput.value);
+            const rate = currentSpeed;
             const combinedText = `listen... ${text}`;
             const utterance = new SpeechSynthesisUtterance(combinedText);
-            if (femaleVoice) {
-                utterance.voice = femaleVoice;
+            if (selectedVoice) {
+                utterance.voice = selectedVoice;
             }
-            utterance.lang = 'en-US';
+            utterance.lang = currentAccent === 'US' ? 'en-US' : 'en-GB';
             utterance.rate = rate;
 
             utterance.onend = () => {
