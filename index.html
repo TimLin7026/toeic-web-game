@@ -65,14 +65,6 @@
                     <button id="accent-uk" onclick="selectAccent('UK')" class="px-3 py-1 rounded-md transition font-medium text-slate-500">英式 (UK)</button>
                 </div>
             </div>
-            <!-- 3. 性別聲音切換 -->
-            <div class="flex items-center justify-between text-xs">
-                <span class="text-slate-600 font-medium">聲音性別：</span>
-                <div class="flex bg-slate-100 p-0.5 rounded-lg">
-                    <button id="gender-female" onclick="selectGender('Female')" class="px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600">女聲 (Female)</button>
-                    <button id="gender-male" onclick="selectGender('Male')" class="px-3 py-1 rounded-md transition font-medium text-slate-500">男聲 (Male)</button>
-                </div>
-            </div>
         </div>
 
         <!-- 1. 字卡模式容器 -->
@@ -319,7 +311,6 @@
         // 語音設定參數
         let currentSpeed = 0.7;
         let currentAccent = 'US';
-        let currentGender = 'Female';
         let selectedVoice = null;
 
         function toggleSettingsPanel() {
@@ -341,12 +332,7 @@
             loadVoices();
         }
 
-        function selectGender(gender) {
-            currentGender = gender;
-            document.getElementById('gender-female').className = gender === 'Female' ? 'px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600' : 'px-3 py-1 rounded-md transition font-medium text-slate-500';
-            document.getElementById('gender-male').className = gender === 'Male' ? 'px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600' : 'px-3 py-1 rounded-md transition font-medium text-slate-500';
-            loadVoices();
-        }
+
 
         // 尋找目標語音與引擎預熱
         function loadVoices() {
@@ -355,27 +341,7 @@
                 const langFilter = currentAccent === 'US' ? 'en-us' : 'en-gb';
                 const enVoices = voices.filter(v => v.lang.toLowerCase().replace('_', '-').startsWith(langFilter));
                 
-                let voice = null;
-                if (currentGender === 'Male') {
-                    voice = enVoices.find(v => 
-                        v.name.toLowerCase().includes('male') || 
-                        v.name.toLowerCase().includes('david') || 
-                        v.name.toLowerCase().includes('george') ||
-                        v.name.toLowerCase().includes('microsoft')
-                    );
-                } else {
-                    voice = enVoices.find(v => 
-                        v.name.toLowerCase().includes('female') || 
-                        v.name.toLowerCase().includes('zira') || 
-                        v.name.toLowerCase().includes('samantha') || 
-                        v.name.toLowerCase().includes('hazel') ||
-                        v.name.toLowerCase().includes('susan') ||
-                        v.name.toLowerCase().includes('karen') ||
-                        v.name.toLowerCase().includes('victoria')
-                    );
-                }
-                
-                selectedVoice = voice || enVoices[0] || voices.find(v => v.lang.toLowerCase().startsWith('en'));
+                selectedVoice = enVoices[0] || voices.find(v => v.lang.toLowerCase().startsWith('en'));
                 
                 if (selectedVoice) {
                     const warmUp = new SpeechSynthesisUtterance("");
