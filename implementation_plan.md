@@ -78,13 +78,67 @@
 | Phase 2.5: GitHub Pages 部署與相容性檢查 | 檢查 `index.html` 靜態部署相容性，並編寫跨平台操作手冊 | 已完成 |
 | **Phase 2.6: XS 窄螢幕 RWD 行動端適配優化** | 修正極小螢幕（如 iPhone XS / SE）下按鈕與單字卡片撐寬跑版問題 | 已完成 |
 | **Phase 2.7: 單字發音按鈕佈局微調** | 將單字「發音」按鈕由右上角調整至緊跟在單字與詞性的後方 | 已完成 |
-| **Phase 2.8: 整合新版代碼檔案** | 備份並使用 `code_artifact.html` 取代舊的 `index.html` | **進行中 (本次任務)** |
-| **Phase 3: 自動化時事文章擴充** | GitHub Actions 定時抓取新聞 RSS，經 Python 標註自動更新題庫 | 規劃中 |
-| **Phase 4: 音效與數據持久化** | 加入遊戲音效、成就徽章與歷次測驗分數歷史紀錄圖表 | 規劃中 |
+| **Phase 2.8: 整合新版代碼檔案** | 備份並使用 `code_artifact.html` 取代舊的 `index.html` | 已完成 |
+| **Phase 2.9: 新增齒輪設定面板與 TTS 精細控制** | 新增齒輪按鈕，提供語速 `+-` 調整與英/美式、男/女聲語音選單 | 已完成 |
+| **Phase 2.91: 簡化語音設定面板** | 取消聲音性別篩選參數，僅保留語速調整與英/美式口音選擇 | 已完成 |
+| **Phase 2.92: 測驗輸入框自動聚焦與防止畫面縮放優化** | 進入測驗及切換下一題時自動 Focus，並調整 Viewport 與 Input 字型大小至 16px (text-base) 防止輸入時手機畫面自動縮放跑版 | 已完成 |
+| **Phase 2.93: 間隔重複複習考機制 (Spaced Repetition)** | 建立測驗池時，自動隨機抽選 1-2 個已完全掌握並通過測驗的單字例句，夾雜於考題中進行複習測驗 | 已完成 |
+| **Phase 3: Google 帳號連動與雲端進度同步** | 整合 Firebase Auth (Google 登入) 與 Firestore 實現跨平台同步 | 已完成 |
+| **Phase 3.5: 多單元 (Units) 切換與單字庫擴充** | 實作多個單字資料庫單元 (如 Unit 18/19)，並於前端介面提供選單供切換、雲端分單元同步進度 | **規劃中 (下次優先討論項目)** |
+| **Phase 4: Web Audio 遊戲音效與 SVG 歷次測驗分數折線圖** | 實作 Web Audio API 動態音效合成 (免加載音檔)，並用 SVG 動態繪製測驗歷史進步曲線折線圖 (支援雲端同步) | 已完成 |
+| **Phase 5: 時事文章閱讀與閱讀測驗功能** | GitHub Actions 定時抓取 RSS 英文新聞時事文章，配合文章生成並提供閱讀測驗功能 | 規劃中 (不急) |
+| **Phase 6: 學習成就系統** | 加入遊戲趣味化徽章、成就系統與 Combo 連勝特效 | 規劃中 (不急) |
 
 ---
 
-## 六、 部署計畫與跨平台相容驗證 (Deployment & Compatibility Verification)
+## 六、 Google 帳號連動與雲端同步設計方案 (Google Drive API)
+
+### 1. 技術選型：Google Drive API (App Data Folder)
+為了保護隱私且避免開發端維護資料庫，我們直接將進度同步至**使用者個人 Google 雲端硬碟**的專屬隱藏空間：
+* **Google Identity Services (GIS)**：用於在前端觸發 OAuth2 授權，取得 Access Token。
+* **Google Drive API (App Data Folder)**：讀寫 `drive.appdata` 權限空間。此空間為應用程式專屬，網頁僅能存取自己建立的檔案，完全無法讀取使用者雲端硬碟中的其他個人檔案。
+* **Google Client ID**：`569992410924-9i2rcjfm2rhi0etj3ofqqmbrjja2lj5i.apps.googleusercontent.com`
+
+### 2. 雲端資料同步機制 (Sync Flow)
+* **雲端檔案名稱**：`unit17_progress.json`
+* **授權登入流程與 UI 設計**：
+  1. 在設定面板 (`settings-panel`) 中新增「Google 雲端進度同步」區塊。
+  2. 提供 **「連結 Google 雲端硬碟」** 按鈕（登入後顯示使用者 Google 頭像、信箱與 **「斷開連結」** 按鈕）。
+  3. 使用者點擊連結後，彈出 Google 授權視窗，請求 `https://www.googleapis.com/auth/drive.appdata` 權限。
+  4. 授權成功後，網頁透過 REST API 搜尋該使用者 App Data 空間中是否存在 `unit17_progress.json`。
+* **資料合併與上傳**：
+  * **首次連結 (雲端無檔案)**：將本機當前的進度打包為 JSON 檔案，上傳至雲端 App Data 空間。
+  * **跨設備登入 (雲端已有檔案)**：下載雲端的 `unit17_progress.json`，將雲端進度與本機 LocalStorage 進度取**聯集 (Union) 合併**，更新本機顯示，並同步覆蓋雲端檔案。
+  * **日常學習**：在登入狀態下，每次完成學習或測驗（呼叫 `saveProgress()`）時，會自動在背景非同步更新雲端的 `unit17_progress.json`。
+
+### 3. Web Audio 遊戲音效與 SVG 歷次測驗分數折線圖詳細規劃
+
+#### A. Web Audio API 音效合成方案 (零載入成本)
+為了避免讀取外部音效檔可能產生的延遲或 404 錯誤，我們將利用 HTML5 的 **Web Audio API**，直接在瀏覽器中動態合成音頻波形：
+* **答對「叮咚！」音效**：雙音階和弦（C5 轉 E5，帶有指數衰減的 GainNode 實現清脆的淡出效果）。
+* **答錯「咚！」警告音**：低沉音階（A3 轉 F3，採用迅速衰減的低頻三角波形）。
+
+#### B. SVG 歷次測驗分數折線圖
+* **資料紀錄**：當每一次測驗結束結算時，系統會自動在 LocalStorage 的 `unit17_quiz_history` 陣列中新增一筆包含以下資訊的紀錄，並自動同步至 Google Drive：
+  ```json
+  {
+    "timestamp": 1786291462000,
+    "score": 80,
+    "totalQuestions": 10,
+    "passedCount": 8
+  }
+  ```
+* **SVG 折線圖渲染**：
+  * 在測驗結果頁面中，使用原生 `<svg>` 標籤動態計算折線圖的點座標 `(x, y)` 並繪製 `<polyline>`。
+  * 圖表上會標示每次測驗的分數點（0-100分），滑鼠懸停時會顯示該次測驗的日期與具體分數。
+  * 提供「清除歷史紀錄」按鈕。
+
+
+
+
+---
+
+## 七、 部署計畫與跨平台相容驗證 (Deployment & Compatibility Verification)
 
 ### 1. 部署方案
 * 本專案為 100% 純前端（HTML/CSS/JS）SPA 應用，無須任何後端伺服器與資料庫建置。
