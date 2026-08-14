@@ -648,24 +648,20 @@
             const padding = 20;
             
             const recentHistory = quizHistory.slice(-7);
-            
-            if (recentHistory.length < 2) {
-                container.innerHTML = `
-                    <div class="text-[11px] text-slate-400 text-center w-full py-6">
-                        📈 測驗次數不足，多進行幾次測驗即可顯示成長曲線圖！
-                    </div>
-                `;
-                return;
-            }
-            
             const points = [];
-            const stepX = (width - padding * 2) / (recentHistory.length - 1);
-            
-            recentHistory.forEach((record, index) => {
-                const x = padding + index * stepX;
+            if (recentHistory.length === 1) {
+                const record = recentHistory[0];
+                const x = width / 2;
                 const y = height - padding - (record.score / 100) * (height - padding * 2);
                 points.push({ x, y, score: record.score, date: new Date(record.timestamp).toLocaleDateString('zh-TW', {month:'short', day:'numeric'}) });
-            });
+            } else {
+                const stepX = (width - padding * 2) / (recentHistory.length - 1);
+                recentHistory.forEach((record, index) => {
+                    const x = padding + index * stepX;
+                    const y = height - padding - (record.score / 100) * (height - padding * 2);
+                    points.push({ x, y, score: record.score, date: new Date(record.timestamp).toLocaleDateString('zh-TW', {month:'short', day:'numeric'}) });
+                });
+            }
             
             const polylinePoints = points.map(p => `${p.x},${p.y}`).join(' ');
             
