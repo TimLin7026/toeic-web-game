@@ -232,7 +232,20 @@
 
             <div id="quiz-result-screen" class="w-full text-center py-6 hidden">
                 <h3 class="text-xl font-bold text-slate-800 mb-2">測驗結算</h3>
-                <p id="quiz-result-text" class="text-sm text-slate-600 mb-6">您已完成所有新掌握單字的測試！</p>
+                <p id="quiz-result-text" class="text-sm text-slate-600 mb-4">您已完成所有新掌握單字的測試！</p>
+                
+                <!-- 歷次分數折線圖卡片 -->
+                <div id="chart-card" class="bg-slate-50 border border-slate-100 p-4 rounded-xl mb-6 shadow-inner text-left hidden">
+                    <div class="flex justify-between items-center mb-3">
+                        <h4 class="text-xs font-bold text-slate-500">📊 歷次測驗分數曲線圖</h4>
+                        <button onclick="clearQuizHistory()" class="text-[10px] text-rose-500 hover:text-rose-700 transition font-medium">清除紀錄</button>
+                    </div>
+                    <!-- SVG 折線圖容器 -->
+                    <div id="svg-chart-container" class="w-full h-32 flex items-center justify-center">
+                        <!-- JavaScript 會動態在此插入 SVG -->
+                    </div>
+                </div>
+
                 <button onclick="switchMode('flip')" class="w-full py-3 bg-indigo-600 text-white font-semibold rounded-xl shadow-md hover:bg-indigo-700 transition active:scale-95 text-sm">返回字卡練習</button>
             </div>
         </div>
@@ -296,6 +309,7 @@
         }
 
         let passedSentences = JSON.parse(localStorage.getItem('unit17_passed_sentences') || '{}');
+        let quizHistory = JSON.parse(localStorage.getItem('unit17_quiz_history') || '[]');
 
         function saveProgress() {
             const masteredIds = wordsData.filter(i => i.mastered).map(i => i.id);
@@ -303,7 +317,7 @@
             
             // 如果已連結雲端，非同步寫入 Google Drive 檔案
             if (accessToken && cloudFileId) {
-                uploadToCloud(masteredIds, passedSentences).catch(err => console.error(err));
+                uploadToCloud(masteredIds, passedSentences, quizHistory).catch(err => console.error(err));
             }
         }
 
@@ -448,8 +462,9 @@
                          const cloudData = await fileRes.json();
                          let cloudMastered = cloudData.masteredIds || [];
                          let cloudPassed = cloudData.passedSentences || {};
+                         let cloudHistory = cloudData.quizHistory || [];
                          
-                         // 3. 取聯集合併
+                         // 3. 取聯集合併進度
                          const mergedMastered = Array.from(new Set([...localMastered, ...cloudMastered]));
                          
                          const mergedPassed = { ...localPassed };
@@ -460,6 +475,15 @@
                                  mergedPassed[key] = cloudPassed[key];
                              }
                          }
+                         
+                         // 合併歷史分數紀錄
+                         const historyMap = {};
+                         [...quizHistory, ...cloudHistory].forEach(item => {
+                             historyMap[item.timestamp] = item;
+                         });
+                         const mergedHistory = Object.values(historyMap).sort((a, b) => a.timestamp - b.timestamp);
+                         quizHistory = mergedHistory;
+                         localStorage.setItem('unit17_quiz_history', JSON.stringify(mergedHistory));
                          
                          // 4. 更新本機
                          wordsData.forEach(item => {
@@ -483,25 +507,26 @@
                          }
                          
                          // 5. 寫回雲端
-                         await uploadToCloud(mergedMastered, mergedPassed);
+                         await uploadToCloud(mergedMastered, mergedPassed, mergedHistory);
                     }
                 } else {
                     // 建立新檔案
-                    await createCloudFile(localMastered, localPassed);
+                    await createCloudFile(localMastered, localPassed, quizHistory);
                 }
             } catch (e) {
                 console.error('雲端同步錯誤：', e);
             }
         }
 
-        async function createCloudFile(masteredIds, passedSentences) {
+        async function createCloudFile(masteredIds, passedSentences, history = []) {
             const metadata = {
                 name: 'unit17_progress.json',
                 parents: ['appDataFolder']
             };
             const content = {
                 masteredIds: masteredIds,
-                passedSentences: passedSentences
+                passedSentences: passedSentences,
+                quizHistory: history
             };
             
             const boundary = 'foo_bar_baz';
@@ -537,11 +562,12 @@
             }
         }
 
-        async function uploadToCloud(masteredIds, passedSentences) {
+        async function uploadToCloud(masteredIds, passedSentences, history = []) {
             if (!cloudFileId) return;
             const content = {
                 masteredIds: masteredIds,
-                passedSentences: passedSentences
+                passedSentences: passedSentences,
+                quizHistory: history
             };
             
             await fetch(
@@ -556,6 +582,124 @@
                 }
             );
         }
+
+        // Web Audio API 音效合成控制
+        function playTone(freqs, durations, type = 'sine') {
+            try {
+                const AudioContext = window.AudioContext || window.webkitAudioContext;
+                if (!AudioContext) return;
+                const ctx = new AudioContext();
+                
+                let time = ctx.currentTime;
+                freqs.forEach((freq, idx) => {
+                    const osc = ctx.createOscillator();
+                    const gain = ctx.createGain();
+                    
+                    osc.type = type;
+                    osc.frequency.setValueAtTime(freq, time);
+                    
+                    gain.gain.setValueAtTime(0.15, time);
+                    gain.gain.exponentialRampToValueAtTime(0.0001, time + durations[idx]);
+                    
+                    osc.connect(gain);
+                    gain.connect(ctx.destination);
+                    
+                    osc.start(time);
+                    osc.stop(time + durations[idx]);
+                    
+                    time += durations[idx] * 0.7;
+                });
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        function playCorrectSound() {
+            playTone([523.25, 659.25], [0.12, 0.3], 'sine');
+        }
+
+        function playWrongSound() {
+            playTone([220.00, 174.61], [0.1, 0.22], 'triangle');
+        }
+
+        // 動態 SVG 折線圖繪製
+        function renderQuizChart() {
+            const container = document.getElementById('svg-chart-container');
+            const card = document.getElementById('chart-card');
+            if (!container || !card) return;
+            
+            if (quizHistory.length === 0) {
+                card.classList.add('hidden');
+                return;
+            }
+            
+            card.classList.remove('hidden');
+            container.innerHTML = '';
+            
+            const width = 340;
+            const height = 120;
+            const padding = 20;
+            
+            const recentHistory = quizHistory.slice(-7);
+            
+            if (recentHistory.length < 2) {
+                container.innerHTML = `
+                    <div class="text-[11px] text-slate-400 text-center w-full py-6">
+                        📈 測驗次數不足，多進行幾次測驗即可顯示成長曲線圖！
+                    </div>
+                `;
+                return;
+            }
+            
+            const points = [];
+            const stepX = (width - padding * 2) / (recentHistory.length - 1);
+            
+            recentHistory.forEach((record, index) => {
+                const x = padding + index * stepX;
+                const y = height - padding - (record.score / 100) * (height - padding * 2);
+                points.push({ x, y, score: record.score, date: new Date(record.timestamp).toLocaleDateString('zh-TW', {month:'short', day:'numeric'}) });
+            });
+            
+            const polylinePoints = points.map(p => `${p.x},${p.y}`).join(' ');
+            
+            let gridLines = '';
+            [50, 100].forEach(val => {
+                const y = height - padding - (val / 100) * (height - padding * 2);
+                gridLines += `<line x1="${padding}" y1="${y}" x2="${width - padding}" y2="${y}" stroke="#f1f5f9" stroke-width="1" stroke-dasharray="2 2" />`;
+                gridLines += `<text x="${padding - 5}" y="${y + 3}" fill="#cbd5e1" font-size="7" font-weight="bold" text-anchor="end">${val}</text>`;
+            });
+            
+            let nodes = '';
+            points.forEach(p => {
+                nodes += `
+                    <circle cx="${p.x}" cy="${p.y}" r="4" fill="#ffffff" stroke="#4f46e5" stroke-width="2" />
+                    <text x="${p.x}" y="${p.y - 8}" fill="#4f46e5" font-size="8" font-weight="bold" text-anchor="middle">${p.score}</text>
+                    <text x="${p.x}" y="${height - 5}" fill="#94a3b8" font-size="7" text-anchor="middle">${p.date}</text>
+                `;
+            });
+            
+            const svgHtml = `
+                <svg class="w-full h-full" viewBox="0 0 ${width} ${height}">
+                    ${gridLines}
+                    <polyline fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="${polylinePoints}" />
+                    ${nodes}
+                </svg>
+            `;
+            
+            container.innerHTML = svgHtml;
+        }
+
+        window.clearQuizHistory = function() {
+            if (confirm("確定要清除所有測驗歷史紀錄嗎？（雲端備份亦會一併清除）")) {
+                quizHistory = [];
+                localStorage.removeItem('unit17_quiz_history');
+                if (accessToken && cloudFileId) {
+                    const masteredIds = wordsData.filter(i => i.mastered).map(i => i.id);
+                    uploadToCloud(masteredIds, passedSentences, []).catch(err => console.error(err));
+                }
+                renderQuizChart();
+            }
+        };
 
         function toggleSettingsPanel() {
             const panel = document.getElementById('settings-panel');
@@ -914,7 +1058,30 @@
             if (quizIndex >= quizPool.length) {
                 document.getElementById('quiz-question-screen').classList.add('hidden');
                 document.getElementById('quiz-result-screen').classList.remove('hidden');
-                document.getElementById('quiz-result-text').textContent = `恭喜完成本輪測驗！您總共測試了 ${quizPool.length} 個題目。`;
+                
+                const totalQ = quizPool.length;
+                const wrongCount = quizPool.filter(item => item.wordObj.mastered === false).length;
+                const passedCount = totalQ - wrongCount;
+                const score = Math.round((passedCount / totalQ) * 100);
+                
+                document.getElementById('quiz-result-text').textContent = `恭喜完成本輪測驗！您總共測試了 ${totalQ} 個題目，答對率為 ${score}%。`;
+                
+                const newRecord = {
+                    timestamp: Date.now(),
+                    score: score,
+                    totalQuestions: totalQ,
+                    passedCount: passedCount
+                };
+                
+                quizHistory.push(newRecord);
+                localStorage.setItem('unit17_quiz_history', JSON.stringify(quizHistory));
+                
+                if (accessToken && cloudFileId) {
+                    const masteredIds = wordsData.filter(i => i.mastered).map(i => i.id);
+                    uploadToCloud(masteredIds, passedSentences, quizHistory).catch(err => console.error(err));
+                }
+                
+                renderQuizChart();
                 updateMasteredCount();
                 return;
             }
@@ -975,6 +1142,7 @@
             if (!userAns) return;
 
             if (userAns === currentObj.word.toLowerCase()) {
+                playCorrectSound();
                 feedbackEl.textContent = "🎉 答對了！太棒了！";
                 feedbackEl.className = "text-center text-xs font-semibold mt-3 h-5 text-emerald-600";
 
@@ -988,7 +1156,7 @@
                     // 雲端即時同步
                     if (accessToken && cloudFileId) {
                         const masteredIds = wordsData.filter(i => i.mastered).map(i => i.id);
-                        uploadToCloud(masteredIds, passedSentences).catch(err => console.error(err));
+                        uploadToCloud(masteredIds, passedSentences, quizHistory).catch(err => console.error(err));
                     }
                 }
 
@@ -997,6 +1165,7 @@
                     loadQuizQuestion();
                 }, 1000);
             } else {
+                playWrongSound();
                 lives--;
                 updateHearts();
                 if (lives > 0) {
