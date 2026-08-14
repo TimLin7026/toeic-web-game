@@ -332,7 +332,7 @@
         let selectedVoice = null;
 
         const CLIENT_ID = '569992410924-9i2rcjfm2rhi0etj3ofqqmbrjja2lj5i.apps.googleusercontent.com';
-        const SCOPES = 'https://www.googleapis.com/auth/drive.appdata';
+        const SCOPES = 'https://www.googleapis.com/auth/drive.appdata email openid';
         let tokenClient = null;
         let accessToken = localStorage.getItem('g_access_token') || null;
         let cloudFileId = localStorage.getItem('g_cloud_file_id') || null;
