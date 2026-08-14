@@ -631,7 +631,12 @@
             if (!container || !card) return;
             
             if (quizHistory.length === 0) {
-                card.classList.add('hidden');
+                card.classList.remove('hidden');
+                container.innerHTML = `
+                    <div class="text-[11px] text-slate-400 text-center w-full py-6">
+                        📈 尚無測驗紀錄。只要完成一輪測驗，成長曲線圖就會在這裡顯示出來喔！
+                    </div>
+                `;
                 return;
             }
             
