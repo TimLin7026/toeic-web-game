@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Unit 17 英文單字字卡與測驗</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
@@ -224,7 +224,7 @@
                 </div>
 
                 <div class="space-y-3">
-                    <input type="text" id="quiz-input" placeholder="請輸入完整英文單字..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 text-center font-bold tracking-wider" autocomplete="off">
+                    <input type="text" id="quiz-input" placeholder="請輸入完整英文單字..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-base focus:outline-none focus:ring-2 focus:ring-emerald-500 text-center font-bold tracking-wider" autocomplete="off">
                     <button onclick="submitQuizAnswer()" class="w-full py-3 bg-emerald-600 text-white font-semibold rounded-xl shadow-md hover:bg-emerald-700 transition active:scale-95 text-sm">提交答案</button>
                 </div>
                 <p id="quiz-feedback" class="text-center text-xs font-semibold mt-3 h-5"></p>
@@ -937,6 +937,12 @@
                 sentence = `Please fill in the blank for: "${sentence.replace(new RegExp(targetWord, 'gi'), '_____')}"`;
             }
             document.getElementById('quiz-example').textContent = sentence;
+
+            // 預設 focus 到輸入框上，方便行動端直接喚起鍵盤
+            const quizInput = document.getElementById('quiz-input');
+            if (quizInput) {
+                quizInput.focus();
+            }
         }
 
         function updateHearts() {
