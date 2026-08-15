@@ -18,10 +18,18 @@
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between">
 
     <!-- 頁首：置中集中功能列 -->
-    <header class="bg-white shadow-sm py-4 px-6 sticky top-0 z-10 flex flex-col md:flex-row justify-center items-center gap-4">
-        <div class="text-center md:text-left">
-            <h1 class="text-xl font-bold text-indigo-600">單字訓練營</h1>
-            <p class="text-xs text-slate-500">已掌握 <span id="mastered-count" class="font-semibold text-emerald-600">0</span> / 35 個單字</p>
+    <header class="bg-white shadow-sm py-3 px-6 sticky top-0 z-10 flex flex-col md:flex-row justify-center items-center gap-3">
+        <div class="text-center md:text-left flex flex-col gap-1">
+            <div class="flex items-center justify-center md:justify-start gap-1.5">
+                <span id="book-title" class="text-sm font-bold text-indigo-600 hover:underline cursor-pointer" onclick="showBookSelectModal()">載入中...</span>
+                <button onclick="showBookSelectModal()" class="text-[9px] bg-slate-100 hover:bg-slate-200 text-slate-500 px-1 py-0.5 rounded transition">更換教材</button>
+            </div>
+            <div class="flex items-center justify-center md:justify-start gap-2">
+                <select id="unit-select" onchange="changeUnit(parseInt(this.value))" class="text-[11px] font-semibold bg-slate-50 border border-slate-200 rounded px-1 py-0.5 text-slate-700 outline-none cursor-pointer">
+                    <option value="">載入中...</option>
+                </select>
+                <p class="text-[10px] text-slate-500">已掌握 <span id="mastered-count" class="font-semibold text-emerald-600">0</span> / <span id="total-count">0</span> 個單字</p>
+            </div>
         </div>
         
         <!-- 設定與模式切換 -->
@@ -90,23 +98,28 @@
                     <!-- JavaScript 會動態在此插入 SVG -->
                 </div>
             </div>
+
+            <!-- 遊戲版本號呈現 -->
+            <div class="border-t pt-2.5 text-center">
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.3.0</p>
+            </div>
         </div>
 
         <!-- 1. 字卡模式容器 -->
         <div id="flashcard-view" class="flex flex-col items-center">
             <!-- 進度與篩選狀態列 -->
             <div class="w-full flex justify-between items-center mb-3 text-sm text-slate-500 font-medium px-2">
-                <span id="current-progress">1 / 35</span>
                 <div class="flex items-center gap-2">
                     <select id="filter-select" class="text-xs bg-white border border-slate-200 rounded-lg px-2 py-1 text-slate-600 focus:outline-none focus:ring-1 focus:ring-indigo-500">
                         <option value="all">全部單字</option>
                         <option value="unlearned" selected>未掌握</option>
                         <option value="learned">已掌握</option>
                     </select>
-                    <button id="btn-shuffle" class="flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition" title="重新洗牌與初始化">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                    </button>
+                    <span id="current-progress" class="text-xs font-semibold text-slate-500">35</span>
                 </div>
+                <button id="btn-shuffle" class="flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition" title="重新洗牌與初始化">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                </button>
             </div>
 
             <!-- 3D 翻轉卡片 -->
@@ -141,6 +154,19 @@
                                     <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                                 </button>
                             </div>
+
+                            <!-- 例句 3+ 隱藏區塊（預設收起） -->
+                            <div id="card-extra-sentences" class="hidden w-full space-y-2">
+                                <div class="w-full bg-white/10 p-2.5 rounded-xl flex items-center justify-between gap-2 text-left">
+                                    <p id="card-ex3-en" class="text-sm font-semibold text-indigo-100 flex-1"></p>
+                                    <button onclick="event.stopPropagation(); playAudio(currentWords[currentIndex].ex3En);" class="p-1.5 bg-white/20 hover:bg-white/30 rounded-full transition flex-shrink-0" title="播放例句3發音">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- 展開更多例句按鈕 -->
+                            <button id="btn-toggle-extra-ex" onclick="event.stopPropagation(); toggleExtraSentences();" class="text-[11px] text-indigo-200 hover:text-white transition underline underline-offset-2">＋ 查看更多例句</button>
                         </div>
 
                         <div class="text-center text-[11px] text-indigo-200">
@@ -183,10 +209,6 @@
                     <svg id="master-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                     <span id="master-btn-text">標記為：已掌握（自動下一張）</span>
                 </button>
-                <div class="flex justify-between gap-3">
-                    <button id="btn-prev" class="flex-1 py-2.5 bg-white border border-slate-200 rounded-xl font-semibold text-slate-600 shadow-sm hover:bg-slate-50 transition active:scale-95 text-sm">上一張</button>
-                    <button id="btn-next" class="flex-1 py-2.5 bg-indigo-600 text-white rounded-xl font-semibold shadow-md shadow-indigo-100 hover:bg-indigo-700 transition active:scale-95 text-sm">下一張</button>
-                </div>
             </div>
         </div>
 
@@ -256,77 +278,174 @@
 
     <!-- 頁尾 -->
     <footer class="text-center py-4 text-xs text-slate-400">
-        Unit 17 互動單字學習工具
     </footer>
 
     <script>
+        // === FALLBACK DATA START ===
+        // 內嵌兜底已被移除，現在若加載失敗將直接彈出錯誤資訊
+        // === FALLBACK DATA END ===
+
         // 單字原始資料（每個單字均含 3 個題庫例句：2個卡片顯示 + 1個隱藏）
-        let wordsData = [
-            { id: 1, word: "spoil", meaning: "破壞", mastered: false, ex1En: "Don't let one mistake spoil your day.", ex1Zh: "不要讓一個錯誤破壞了你的一天。", ex2En: "Too many cooks spoil the broth.", ex2Zh: "人多手雜，反而壞事。", ex3En: "Leaving the milk out in the sun will spoil it." },
-            { id: 2, word: "novel", meaning: "小說", mastered: false, ex1En: "She is reading an interesting novel.", ex1Zh: "她正在讀一本有趣的小說。", ex2En: "His ideas are quite novel.", ex2Zh: "他的想法相當新穎。", ex3En: "This new digital tool is a novel way to learn." },
-            { id: 3, word: "constant", meaning: "持續的", mastered: false, ex1En: "The machine made a constant noise.", ex1Zh: "這台機器發出持續的噪音。", ex2En: "He lives in constant fear.", ex2Zh: "他生活在持續的恐懼中。", ex3En: "Success requires constant effort and practice." },
-            { id: 4, word: "invent", meaning: "發明", mastered: false, ex1En: "Who did invent the telephone?", ex1Zh: "是誰發明了電話？", ex2En: "Children love to invent stories.", ex2Zh: "孩子們喜歡編造故事。", ex3En: "Thomas Edison went on to invent the light bulb." },
-            { id: 5, word: "ray", meaning: "光線", mastered: false, ex1En: "A ray of sunlight came through the window.", ex1Zh: "一束陽光透過窗戶照進來。", ex2En: "X-rays are used in medicine.", ex2Zh: "X光在醫學上被廣泛使用。", ex3En: "I saw a single ray of hope in the dark situation." },
-            { id: 6, word: "cheer", meaning: "使高興", mastered: false, ex1En: "The good news cheered everyone up.", ex1Zh: "這個好消息讓大家振作起來。", ex2En: "Give a cheer for the winner!", ex2Zh: "為獲勝者歡呼吧！", ex3En: "Her encouraging words cheered me up instantly." },
-            { id: 7, word: "gossip", meaning: "閒聊", mastered: false, ex1En: "They like to gossip about neighbors.", ex1Zh: "他們喜歡閒聊鄰居的八卦。", ex2En: "Don't believe all that gossip.", ex2Zh: "別相信所有的閒言閒語。", ex3En: "She refused to take part in office gossip." },
-            { id: 8, word: "dump", meaning: "傾倒", mastered: false, ex1En: "It is illegal to dump waste here.", ex1Zh: "在這裡傾倒廢棄物是非法的。", ex2En: "He decided to dump his old car.", ex2Zh: "他決定把他的舊車丟棄。", ex3En: "The factory was fined for trying to dump chemicals into the river." },
-            { id: 9, word: "dairy", meaning: "酪農場", mastered: false, ex1En: "We buy fresh milk from the local dairy.", ex1Zh: "我們從當地的酪農場買鮮奶。", ex2En: "Cheese and butter are dairy products.", ex2Zh: "乳酪和奶油是乳製品。", ex3En: "He works at a family-owned dairy farm." },
-            { id: 10, word: "stuff", meaning: "事物", mastered: false, ex1En: "Pack your stuff, we are leaving.", ex1Zh: "收拾好你的東西，我們要走了。", ex2En: "I have too much stuff in my room.", ex2Zh: "我房間裡有太多雜物了。", ex3En: "Can you help me move this heavy stuff?" },
-            { id: 11, word: "jar", meaning: "罐子", mastered: false, ex1En: "Open the jar of honey, please.", ex1Zh: "請把蜂蜜罐打開。", ex2En: "She kept cookies in a glass jar.", ex2Zh: "她把餅乾裝在玻璃罐裡。", ex3En: "The sudden loud noise caused the jar to fall." },
-            { id: 12, word: "stick", meaning: "黏貼", mastered: false, ex1En: "Stick the stamp on the envelope.", ex1Zh: "把郵票貼在信封上。", ex2En: "The mud made my shoes stick.", ex2Zh: "泥巴讓我的鞋子黏住了。", ex3En: "Always stick to your core values and principles." },
-            { id: 13, word: "drain", meaning: "排(水)", mastered: false, ex1En: "Drain the water from the pasta.", ex1Zh: "把義大利麵的水瀝乾。", ex2En: "The kitchen sink drain is blocked.", ex2Zh: "廚房水槽的排水管堵塞了。", ex3En: "Heavy rains helped drain the excess water." },
-            { id: 14, word: "awake", meaning: "醒著的", mastered: false, ex1En: "Are you still awake?", ex1Zh: "你還醒著嗎？", ex2En: "The noise kept me awake all night.", ex2Zh: "噪音讓我整晚沒睡著。", ex3En: "She was wide awake long before the alarm went off." },
-            { id: 15, word: "chip", meaning: "渣", mastered: false, ex1En: "There is a chip in this coffee cup.", ex1Zh: "這個咖啡杯上有一個缺口/碎渣。", ex2En: "Would you like some potato chips?", ex2Zh: "你想來點洋芋片嗎？", ex3En: "He ate a chocolate chip cookie for dessert." },
-            { id: 16, word: "alley", meaning: "巷子", mastered: false, ex1En: "The cat ran down the dark alley.", ex1Zh: "貓咪跑進了黑暗的巷子裡。", ex2En: "We parked our car in the alley.", ex2Zh: "我們把車停在小巷子裡。", ex3En: "The delivery truck got stuck in the narrow alley." },
-            { id: 17, word: "bacteria", meaning: "細菌", mastered: false, ex1En: "Soap helps kill harmful bacteria.", ex1Zh: "肥皂有助於殺死有害細菌。", ex2En: "Not all bacteria are bad for health.", ex2Zh: "並非所有細菌對健康都是有害的。", ex3En: "Scientists are studying how bacteria adapt to environments." },
-            { id: 18, word: "bait", meaning: "餌", mastered: false, ex1En: "He used worms as bait for fishing.", ex1Zh: "他用蟲子作為釣魚的魚餌。", ex2En: "The cheese was used as bait in the trap.", ex2Zh: "起司被用作陷阱裡的誘餌。", ex3En: "Do not take the bait when someone tries to provoke you." },
-            { id: 19, word: "beast", meaning: "野獸", mastered: false, ex1En: "The forest was said to be home to a wild beast.", ex1Zh: "據說森林裡住著一隻野獸。", ex2En: "Beauty and the Beast is a classic story.", ex2Zh: "美女與野獸是一個經典故事。", ex3En: "The fierce storm felt like an untamed beast." },
-            { id: 20, word: "berry", meaning: "莓果類", mastered: false, ex1En: "She picked fresh berries in the woods.", ex1Zh: "她在樹林裡採了新鮮的莓果。", ex2En: "Blueberry is my favorite berry.", ex2Zh: "藍莓是我最喜歡的莓果。", ex3En: "Strawberry is a sweet red berry often used in cakes." },
-            { id: 21, word: "brake", meaning: "煞車", mastered: false, ex1En: "Step on the brake immediately!", ex1Zh: "立刻踩煞車！", ex2En: "The bicycle brake failed.", ex2Zh: "腳踏車煞車失靈了。", ex3En: "He applied the brake just in time to avoid the crash." },
-            { id: 22, word: "bud", meaning: "花苞", mastered: false, ex1En: "Spring flowers are beginning to bud.", ex1Zh: "春天的花朵開始長出花苞。", ex2En: "Rosebuds are beautiful in May.", ex2Zh: "五月的玫瑰花苞非常美麗。", ex3En: "Every great achievement started as a tiny bud of an idea." },
-            { id: 23, word: "buffet", meaning: "自助", mastered: false, ex1En: "We had a wonderful buffet dinner.", ex1Zh: "我們享用了豐盛的自助晚餐。", ex2En: "Breakfast is served as a buffet.", ex2Zh: "早餐以自助餐形式供應。", ex3En: "The hotel offers an international buffet on weekends." },
-            { id: 24, word: "bump", meaning: "撞擊", mastered: false, ex1En: "I felt a sudden bump in the road.", ex1Zh: "我感覺路上突然震動了一下。", ex2En: "Watch your head, don't bump it.", ex2Zh: "注意你的頭，別撞到了。", ex3En: "My car took a small bump in the parking lot." },
-            { id: 25, word: "carpenter", meaning: "木匠", mastered: false, ex1En: "The carpenter built a wooden table.", ex1Zh: "木匠造了一張木桌子。", ex2En: "We hired a carpenter to fix the door.", ex2Zh: "我們請木匠來修理門。", ex3En: "The master carpenter measured the wood precisely." },
-            { id: 26, word: "chat", meaning: "聊天", mastered: false, ex1En: "I love to chat with my friends.", ex1Zh: "我喜歡和朋友聊天。", ex2En: "We had a nice chat over coffee.", ex2Zh: "我們邊喝咖啡邊愉快地聊了天。", ex3En: "She paused her work to have a quick chat with her boss." },
-            { id: 27, word: "cherry", meaning: "櫻桃", mastered: false, ex1En: "There is a cherry on top of the cake.", ex1Zh: "蛋糕頂端放了一顆櫻桃。", ex2En: "Cherry trees blossom in spring.", ex2Zh: "櫻桃樹在春天開花。", ex3En: "He bought a basket of fresh dark cherries." },
-            { id: 28, word: "porcelain", meaning: "瓷器", mastered: false, ex1En: "This is a valuable porcelain vase.", ex1Zh: "這是一個價值連城的瓷器花瓶。", ex2En: "Porcelain is fragile, handle with care.", ex2Zh: "瓷器易碎，請小心輕放。", ex3En: "The museum exhibits ancient Chinese porcelain art." },
-            { id: 29, word: "chop", meaning: "劈 / 刀", mastered: false, ex1En: "Chop the vegetables into pieces.", ex1Zh: "把蔬菜切成小塊。", ex2En: "He used an axe to chop wood.", ex2Zh: "他用斧頭砍柴。", ex3En: "She learned how to chop meat skillfully." },
-            { id: 30, word: "circus", meaning: "馬戲團", mastered: false, ex1En: "Children love to visit the circus.", ex1Zh: "孩子們很喜歡參觀馬戲團。", ex2En: "The circus performance was amazing.", ex2Zh: "馬戲團的表演非常精彩。", ex3En: "The traveling circus brought joy to the town." },
-            { id: 31, word: "clinic", meaning: "診所", mastered: false, ex1En: "She went to the local clinic for a checkup.", ex1Zh: "她去當地診所做檢查。", ex2En: "The dental clinic is open today.", ex2Zh: "牙醫診所今天有營業。", ex3En: "He works as a volunteer nurse at the community clinic." },
-            { id: 32, word: "cradle", meaning: "搖籃", mastered: false, ex1En: "The baby is sleeping in the cradle.", ex1Zh: "寶寶正在搖籃裡睡覺。", ex2En: "Music rocked the cradle gently.", ex2Zh: "音樂輕輕地搖晃著搖籃。", ex3En: "The valley serves as the cradle of ancient civilization." },
-            { id: 33, word: "dam", meaning: "水壩", mastered: false, ex1En: "The dam generates hydroelectric power.", ex1Zh: "水壩產生了水力發電。", ex2En: "Beavers build a dam across the river.", ex2Zh: "河狸在河上築起水壩。", ex3En: "Engineers inspected the stability of the large dam." },
-            { id: 34, word: "darling", meaning: "親愛的人", mastered: false, ex1En: "You did a great job, darling.", ex1Zh: "你做得太棒了，親愛的。", ex2En: "Good morning, my darling.", ex2Zh: "早安，我的摯愛。", ex3En: "She called her little puppy her sweet darling." },
-            { id: 35, word: "depth", meaning: "深度", mastered: false, ex1En: "Measure the depth of the pool.", ex1Zh: "測量游泳池的深度。", ex2En: "The whale dives to great depth.", ex2Zh: "鯨魚潛入極深的深海。", ex3En: "We discussed the depth of the philosophical novel." }
-        ];
+        let wordsData = [];
+        let masteredWords = JSON.parse(localStorage.getItem('toeic_mastered_words') || '[]');
+        let passedSentences = JSON.parse(localStorage.getItem('toeic_passed_sentences') || '{}');
+        let leitnerBox = JSON.parse(localStorage.getItem('toeic_leitner_box') || '{}');
+        let quizHistory = JSON.parse(localStorage.getItem('toeic_quiz_history') || '[]');
 
-        // 讀取本地儲存的進度
-        const savedProgress = localStorage.getItem('unit17_mastered');
-        if (savedProgress) {
-            const masteredIds = JSON.parse(savedProgress);
-            wordsData.forEach(item => {
-                if (masteredIds.includes(item.id)) {
-                    item.mastered = true;
-                }
-            });
-        }
+        let currentBook = localStorage.getItem('toeic_current_book') || null;
+        let currentUnit = parseInt(localStorage.getItem('toeic_current_unit')) || null;
+        let booksList = [];
 
-        let passedSentences = JSON.parse(localStorage.getItem('unit17_passed_sentences') || '{}');
-        let quizHistory = JSON.parse(localStorage.getItem('unit17_quiz_history') || '[]');
+        let currentFilter = 'unlearned'; // 預設顯示未掌握
+        let currentWords = [];
+        let currentIndex = 0;
+        let isFlipped = false;
+        let sessionMasteredCount = 0; // 本 session 新掌握單字累計 (達 5 字強制測驗)
 
         function saveProgress() {
-            const masteredIds = wordsData.filter(i => i.mastered).map(i => i.id);
-            localStorage.setItem('unit17_mastered', JSON.stringify(masteredIds));
+            localStorage.setItem('toeic_mastered_words', JSON.stringify(masteredWords));
+            localStorage.setItem('toeic_passed_sentences', JSON.stringify(passedSentences));
+            localStorage.setItem('toeic_leitner_box', JSON.stringify(leitnerBox));
             
-            // 如果已連結雲端，非同步寫入 Google Drive 檔案
             if (accessToken && cloudFileId) {
-                uploadToCloud(masteredIds, passedSentences, quizHistory).catch(err => console.error(err));
+                uploadToCloud(masteredWords, passedSentences, leitnerBox, quizHistory).catch(err => console.error(err));
             }
         }
 
-        let currentFilter = 'unlearned'; // 預設顯示未掌握
-        let currentWords = getFilteredWords();
-        let currentIndex = 0;
-        let isFlipped = false;
+        let lastErrorMsg = "";
+
+        window.showErrorModal = function(error) {
+            const errorText = error.stack || error.message || String(error);
+            lastErrorMsg = errorText;
+            document.getElementById('error-text').textContent = errorText;
+            document.getElementById('error-modal').classList.remove('hidden');
+        };
+
+        window.closeErrorModal = function() {
+            document.getElementById('error-modal').classList.add('hidden');
+        };
+
+        window.copyErrorMsg = function() {
+            if (!lastErrorMsg) return;
+            navigator.clipboard.writeText(lastErrorMsg).then(() => {
+                alert("📋 錯誤資訊已複製到剪貼簿！");
+            }).catch(err => {
+                console.error("無法複製", err);
+                alert("複製失敗：" + lastErrorMsg);
+            });
+        };
+
+        async function loadBooksList() {
+            try {
+                const res = await fetch('data/books_list.json');
+                if (!res.ok) throw new Error(`HTTP 載入失敗! 狀態碼: ${res.status} (${res.statusText})`);
+                booksList = await res.json();
+            } catch (e) {
+                console.error("載入教材清單失敗", e);
+                showErrorModal(e);
+                return;
+            }
+            
+            const container = document.getElementById('book-list-container');
+            container.innerHTML = '';
+
+            booksList.forEach(book => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left px-4 py-3 bg-slate-50 hover:bg-indigo-50 border border-slate-100 hover:border-indigo-200 rounded-xl font-semibold text-slate-700 hover:text-indigo-600 transition flex justify-between items-center";
+                btn.innerHTML = `<span>${book.name}</span><span class="text-xs text-slate-400 font-normal">共 ${book.units.length} 單元</span>`;
+                btn.onclick = () => selectBook(book.id);
+                container.appendChild(btn);
+            });
+
+            if (!currentBook) {
+                showBookSelectModal();
+            } else {
+                await selectBook(currentBook, false);
+            }
+        }
+
+        function showBookSelectModal() {
+            document.getElementById('book-select-modal').classList.remove('hidden');
+        }
+
+        function hideBookSelectModal() {
+            document.getElementById('book-select-modal').classList.add('hidden');
+        }
+
+        async function selectBook(bookId) {
+            currentBook = bookId;
+            localStorage.setItem('toeic_current_book', bookId);
+            hideBookSelectModal();
+
+            const book = booksList.find(b => b.id === bookId);
+            if (!book) return;
+
+            document.getElementById('book-title').textContent = book.name;
+
+            if (!currentUnit || !book.units.includes(currentUnit)) {
+                currentUnit = book.units[0];
+            }
+            
+            await renderUnitSelect(book);
+            await loadUnitWords();
+        }
+
+        async function renderUnitSelect(book) {
+            const select = document.getElementById('unit-select');
+            select.innerHTML = '';
+            
+            for (let unitNum of book.units) {
+                try {
+                    const res = await fetch(`data/books/${book.id}_${unitNum}.json`);
+                    if (!res.ok) throw new Error(`HTTP 載入失敗! 狀態碼: ${res.status} (${res.statusText})`);
+                    const words = await res.json();
+                    const total = words.length;
+                    const mastered = words.filter(w => masteredWords.includes(w.word.toLowerCase())).length;
+                    
+                    const opt = document.createElement('option');
+                    opt.value = unitNum;
+                    opt.selected = (unitNum === currentUnit);
+                    opt.textContent = `Unit ${unitNum} (${mastered}/${total})`;
+                    select.appendChild(opt);
+                } catch (e) {
+                    console.error(`載入單元 Unit ${unitNum} 失敗`, e);
+                    showErrorModal(e);
+                }
+            }
+        }
+
+        async function changeUnit(unitNum) {
+            currentUnit = unitNum;
+            localStorage.setItem('toeic_current_unit', unitNum);
+            await loadUnitWords();
+            const book = booksList.find(b => b.id === currentBook);
+            if (book) {
+                await renderUnitSelect(book);
+            }
+        }
+
+        async function loadUnitWords() {
+            if (!currentBook || !currentUnit) return;
+            try {
+                const res = await fetch(`data/books/${currentBook}_${currentUnit}.json`);
+                if (!res.ok) throw new Error(`HTTP 載入失敗! 狀態碼: ${res.status} (${res.statusText})`);
+                wordsData = await res.json();
+                
+                wordsData.forEach(item => {
+                    item.mastered = masteredWords.includes(item.word.toLowerCase());
+                });
+
+                currentWords = getFilteredWords();
+                currentIndex = 0;
+                isFlipped = false;
+                updateCard();
+                updateMasteredCount();
+                renderList();
+            } catch (e) {
+                console.error("載入單元單字失敗", e);
+                showErrorModal(e);
+            }
+        }
 
         function getFilteredWords() {
             if (currentFilter === 'unlearned') {
@@ -340,6 +459,7 @@
         function updateMasteredCount() {
             const count = wordsData.filter(i => i.mastered).length;
             document.getElementById('mastered-count').textContent = count;
+            document.getElementById('total-count').textContent = wordsData.length;
         }
 
         // 語音設定與 Google API 參數
@@ -438,7 +558,7 @@
             try {
                 // 1. 搜尋 AppData 中的檔案
                 const searchRes = await fetch(
-                    'https://www.googleapis.com/drive/v3/files?spaces=appDataFolder&q=name=%27unit17_progress.json%27', 
+                    'https://www.googleapis.com/drive/v3/files?spaces=appDataFolder&q=name=%27toeic_game_progress.json%27', 
                     {
                         headers: { 'Authorization': `Bearer ${accessToken}` }
                     }
@@ -447,8 +567,9 @@
                 if (!searchRes.ok) throw new Error('Search failed');
                 const searchData = await searchRes.json();
                 
-                let localMastered = wordsData.filter(i => i.mastered).map(i => i.id);
-                let localPassed = JSON.parse(localStorage.getItem('unit17_passed_sentences') || '{}');
+                let localMastered = JSON.parse(localStorage.getItem('toeic_mastered_words') || '[]');
+                let localPassed = JSON.parse(localStorage.getItem('toeic_passed_sentences') || '{}');
+                let localLeitner = JSON.parse(localStorage.getItem('toeic_leitner_box') || '{}');
                 
                 if (searchData.files && searchData.files.length > 0) {
                     cloudFileId = searchData.files[0].id;
@@ -464,8 +585,9 @@
                     
                     if (fileRes.ok) {
                          const cloudData = await fileRes.json();
-                         let cloudMastered = cloudData.masteredIds || [];
+                         let cloudMastered = cloudData.masteredWords || [];
                          let cloudPassed = cloudData.passedSentences || {};
+                         let cloudLeitner = cloudData.leitnerBox || {};
                          let cloudHistory = cloudData.quizHistory || [];
                          
                          // 3. 取聯集合併進度
@@ -479,6 +601,17 @@
                                  mergedPassed[key] = cloudPassed[key];
                              }
                          }
+
+                         const mergedLeitner = { ...localLeitner };
+                         for (const key in cloudLeitner) {
+                             if (mergedLeitner[key]) {
+                                 if ((cloudLeitner[key].boxLevel || 1) > (mergedLeitner[key].boxLevel || 1)) {
+                                     mergedLeitner[key] = cloudLeitner[key];
+                                 }
+                             } else {
+                                 mergedLeitner[key] = cloudLeitner[key];
+                             }
+                         }
                          
                          // 合併歷史分數紀錄
                          const historyMap = {};
@@ -487,18 +620,21 @@
                          });
                          const mergedHistory = Object.values(historyMap).sort((a, b) => a.timestamp - b.timestamp);
                          quizHistory = mergedHistory;
-                         localStorage.setItem('unit17_quiz_history', JSON.stringify(mergedHistory));
+                         localStorage.setItem('toeic_quiz_history', JSON.stringify(mergedHistory));
                          
-                         // 4. 更新本機
-                         wordsData.forEach(item => {
-                             if (mergedMastered.includes(item.id)) {
-                                 item.mastered = true;
-                             }
-                         });
+                         // 4. 更新記憶體與本機 LocalStorage
+                         masteredWords = mergedMastered;
                          passedSentences = mergedPassed;
-                         
-                         localStorage.setItem('unit17_mastered', JSON.stringify(mergedMastered));
-                         localStorage.setItem('unit17_passed_sentences', JSON.stringify(mergedPassed));
+                         leitnerBox = mergedLeitner;
+
+                         localStorage.setItem('toeic_mastered_words', JSON.stringify(mergedMastered));
+                         localStorage.setItem('toeic_passed_sentences', JSON.stringify(mergedPassed));
+                         localStorage.setItem('toeic_leitner_box', JSON.stringify(mergedLeitner));
+
+                         // 更新當前加載的 wordsData 單字狀態
+                         wordsData.forEach(item => {
+                             item.mastered = masteredWords.includes(item.word.toLowerCase());
+                         });
                          
                          updateMasteredCount();
                          
@@ -511,25 +647,26 @@
                          }
                          
                          // 5. 寫回雲端
-                         await uploadToCloud(mergedMastered, mergedPassed, mergedHistory);
+                         await uploadToCloud(mergedMastered, mergedPassed, mergedLeitner, mergedHistory);
                     }
                 } else {
                     // 建立新檔案
-                    await createCloudFile(localMastered, localPassed, quizHistory);
+                    await createCloudFile(localMastered, localPassed, localLeitner, quizHistory);
                 }
             } catch (e) {
                 console.error('雲端同步錯誤：', e);
             }
         }
 
-        async function createCloudFile(masteredIds, passedSentences, history = []) {
+        async function createCloudFile(masteredWords, passedSentences, leitnerBox, history = []) {
             const metadata = {
-                name: 'unit17_progress.json',
+                name: 'toeic_game_progress.json',
                 parents: ['appDataFolder']
             };
             const content = {
-                masteredIds: masteredIds,
+                masteredWords: masteredWords,
                 passedSentences: passedSentences,
+                leitnerBox: leitnerBox,
                 quizHistory: history
             };
             
@@ -566,11 +703,12 @@
             }
         }
 
-        async function uploadToCloud(masteredIds, passedSentences, history = []) {
+        async function uploadToCloud(masteredWords, passedSentences, leitnerBox, history = []) {
             if (!cloudFileId) return;
             const content = {
-                masteredIds: masteredIds,
+                masteredWords: masteredWords,
                 passedSentences: passedSentences,
+                leitnerBox: leitnerBox,
                 quizHistory: history
             };
             
@@ -814,7 +952,7 @@
                 document.getElementById('card-ex1-zh').textContent = "";
                 document.getElementById('card-ex2-en').textContent = "";
                 document.getElementById('card-ex2-zh').textContent = "";
-                document.getElementById('current-progress').textContent = "0 / 0";
+                document.getElementById('current-progress').textContent = "0";
                 document.getElementById('card-index').textContent = 0;
                 document.getElementById('card-total').textContent = 0;
                 return;
@@ -834,7 +972,19 @@
             document.getElementById('card-ex2-en').textContent = wordObj.ex2En;
             document.getElementById('card-ex2-zh').textContent = wordObj.ex2Zh;
 
-            document.getElementById('current-progress').textContent = `${currentIndex + 1} / ${currentWords.length}`;
+            // 更新 ex3（若有），並重置展開狀態
+            const ex3El = document.getElementById('card-ex3-en');
+            const extraDiv = document.getElementById('card-extra-sentences');
+            const toggleExBtn = document.getElementById('btn-toggle-extra-ex');
+            if (ex3El) ex3El.textContent = wordObj.ex3En || '';
+            if (extraDiv) extraDiv.classList.add('hidden');
+            if (toggleExBtn) {
+                toggleExBtn.textContent = '＋ 查看更多例句';
+                // 若此單字無 ex3，隱藏按鈕
+                toggleExBtn.style.display = (wordObj.ex3En) ? '' : 'none';
+            }
+
+            document.getElementById('current-progress').textContent = `${currentWords.length}`;
             document.getElementById('card-index').textContent = currentIndex + 1;
             document.getElementById('card-total').textContent = currentWords.length;
 
@@ -854,6 +1004,16 @@
             }
         }
 
+        // 展開/收起更多例句
+        function toggleExtraSentences() {
+            const extraDiv = document.getElementById('card-extra-sentences');
+            const btn = document.getElementById('btn-toggle-extra-ex');
+            if (!extraDiv || !btn) return;
+            const isHidden = extraDiv.classList.contains('hidden');
+            extraDiv.classList.toggle('hidden', !isHidden);
+            btn.textContent = isHidden ? '－ 收起' : '＋ 查看更多例句';
+        }
+
         const cardContainer = document.getElementById('card-container');
         const cardInner = document.getElementById('card-inner');
         
@@ -868,18 +1028,48 @@
             e.stopPropagation();
             if (isSpeaking || currentWords.length === 0) return;
             const wordObj = currentWords[currentIndex];
+            const wordKey = wordObj.word.toLowerCase();
             wordObj.mastered = !wordObj.mastered;
-            if (!wordObj.mastered && passedSentences[wordObj.id]) {
-                delete passedSentences[wordObj.id];
-                localStorage.setItem('unit17_passed_sentences', JSON.stringify(passedSentences));
+            
+            if (wordObj.mastered) {
+                if (!masteredWords.includes(wordKey)) {
+                    masteredWords.push(wordKey);
+                    
+                    // 初始化 Leitner 數據
+                    if (!leitnerBox[wordKey]) {
+                        leitnerBox[wordKey] = {
+                            boxLevel: 1,
+                            lastTested: 0
+                        };
+                    }
+                    
+                    sessionMasteredCount++;
+                }
+            } else {
+                masteredWords = masteredWords.filter(w => w !== wordKey);
+                delete passedSentences[wordKey];
+                delete leitnerBox[wordKey];
             }
             saveProgress();
+
+            const book = booksList.find(b => b.id === currentBook);
+            if (book) {
+                renderUnitSelect(book);
+            }
+
+            if (sessionMasteredCount >= 5) {
+                sessionMasteredCount = 0;
+                alert("🎉 恭喜！您剛剛新掌握了 5 個單字！現在即刻進入測驗挑戰，科學複習驗證記憶成果！");
+                switchMode('quiz');
+                return;
+            }
 
             currentWords = getFilteredWords();
             if (currentIndex >= currentWords.length) {
                 currentIndex = 0;
             }
             updateCard();
+            updateMasteredCount();
         });
 
         document.getElementById('filter-select').addEventListener('change', (e) => {
@@ -889,30 +1079,28 @@
             updateCard();
         });
 
-        document.getElementById('btn-next').addEventListener('click', (e) => {
-            e.stopPropagation();
-            if (isSpeaking || currentWords.length === 0) return;
-            currentIndex = (currentIndex + 1) % currentWords.length;
-            updateCard();
-        });
 
-        document.getElementById('btn-prev').addEventListener('click', (e) => {
-            e.stopPropagation();
-            if (isSpeaking || currentWords.length === 0) return;
-            currentIndex = (currentIndex - 1 + currentWords.length) % currentWords.length;
-            updateCard();
-        });
 
-        // 重新洗牌並初始化（取消全部卡片的已記憶狀態）
+
+        // 重新洗牌並初始化（取消目前單元卡片的已記憶狀態）
         document.getElementById('btn-shuffle').addEventListener('click', (e) => {
             e.stopPropagation();
             if (isSpeaking) return;
 
-            wordsData.forEach(item => item.mastered = false);
-            passedSentences = {};
-            localStorage.removeItem('unit17_passed_sentences');
+            wordsData.forEach(item => {
+                const wordKey = item.word.toLowerCase();
+                item.mastered = false;
+                masteredWords = masteredWords.filter(w => w !== wordKey);
+                delete passedSentences[wordKey];
+                delete leitnerBox[wordKey];
+            });
             saveProgress();
             updateMasteredCount();
+
+            const book = booksList.find(b => b.id === currentBook);
+            if (book) {
+                renderUnitSelect(book);
+            }
 
             document.getElementById('filter-select').value = 'unlearned';
             currentFilter = 'unlearned';
@@ -989,7 +1177,7 @@
                 row.className = `bg-white p-3.5 rounded-xl border ${item.mastered ? 'border-emerald-200 bg-emerald-50/20' : 'border-slate-100'} shadow-sm flex justify-between items-center transition`;
                 row.innerHTML = `
                     <div class="flex items-center gap-3">
-                        <button onclick="toggleListMaster(${item.id})" class="p-1.5 rounded-lg ${item.mastered ? 'bg-emerald-500 text-white' : 'bg-slate-100 text-slate-400 hover:bg-slate-200'} transition" title="${item.mastered ? '標記為未掌握' : '標記為已掌握'}">
+                        <button onclick="toggleListMaster('${item.word}')" class="p-1.5 rounded-lg ${item.mastered ? 'bg-emerald-500 text-white' : 'bg-slate-100 text-slate-400 hover:bg-slate-200'} transition" title="${item.mastered ? '標記為未掌握' : '標記為已掌握'}">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                         </button>
                         <div>
@@ -1008,16 +1196,31 @@
             });
         }
 
-        window.toggleListMaster = function(id) {
+        window.toggleListMaster = function(wordText) {
             if (isSpeaking) return;
-            const item = wordsData.find(i => i.id === id);
+            const item = wordsData.find(i => i.word.toLowerCase() === wordText.toLowerCase());
             if (item) {
+                const wordKey = item.word.toLowerCase();
                 item.mastered = !item.mastered;
-                if (!item.mastered && passedSentences[item.id]) {
-                    delete passedSentences[item.id];
-                    localStorage.setItem('unit17_passed_sentences', JSON.stringify(passedSentences));
+                if (item.mastered) {
+                    if (!masteredWords.includes(wordKey)) {
+                        masteredWords.push(wordKey);
+                        if (!leitnerBox[wordKey]) {
+                            leitnerBox[wordKey] = { boxLevel: 1, lastTested: 0 };
+                        }
+                    }
+                } else {
+                    masteredWords = masteredWords.filter(w => w !== wordKey);
+                    delete passedSentences[wordKey];
+                    delete leitnerBox[wordKey];
                 }
                 saveProgress();
+                
+                const book = booksList.find(b => b.id === currentBook);
+                if (book) {
+                    renderUnitSelect(book);
+                }
+                
                 updateMasteredCount();
                 renderList();
             }
@@ -1031,6 +1234,33 @@
         let quizIndex = 0;
         let lives = 2;
 
+        // ── 詞形容錯工具函數 ──────────────────────────────────────
+        // 計算兩個字串的最長共同前綴長度
+        function longestCommonPrefix(a, b) {
+            let i = 0;
+            while (i < a.length && i < b.length && a[i] === b[i]) i++;
+            return i; // 回傳長度
+        }
+
+        // 在句子中找出與 baseWord 前綴最長匹配的詞形變化單字
+        // 回傳 { inflected: "dairies", prefixLen: 4 } 或 null
+        function findInflectedWord(sentence, baseWord) {
+            const words = sentence.toLowerCase().match(/[a-z]+/g) || [];
+            const base = baseWord.toLowerCase();
+            let best = null;
+            let bestLen = 0;
+            for (const w of words) {
+                const len = longestCommonPrefix(base, w);
+                // 至少 3 字符共同前綴，且不是完全相同（避免重複）
+                if (len >= 3 && len > bestLen && w !== base) {
+                    bestLen = len;
+                    best = { inflected: w, prefixLen: len };
+                }
+            }
+            return best;
+        }
+        // ─────────────────────────────────────────────────────────
+
         function initQuizScreen() {
             document.getElementById('quiz-start-screen').classList.remove('hidden');
             document.getElementById('quiz-question-screen').classList.add('hidden');
@@ -1038,19 +1268,18 @@
         }
 
         function startQuiz() {
-            const masteredWords = wordsData.filter(i => i.mastered);
-            if (masteredWords.length === 0) {
+            const currentMastered = wordsData.filter(i => masteredWords.includes(i.word.toLowerCase()));
+            if (currentMastered.length === 0) {
                 alert("目前沒有「已掌握」的單字可以測驗！請先在字卡或列表模式中將單字標記為已掌握。");
                 switchMode('flip');
                 return;
             }
 
-            passedSentences = JSON.parse(localStorage.getItem('unit17_passed_sentences') || '{}');
-
-            // 1. 建立普通測驗池（未完全通過 3 個題庫例句的單字）
+            // 1. 建立普通測驗池（當前單元中，未完全通過 3 個題庫例句的單字）
             quizPool = [];
-            masteredWords.forEach(wordObj => {
-                const passedList = passedSentences[wordObj.id] || [];
+            currentMastered.forEach(wordObj => {
+                const wordKey = wordObj.word.toLowerCase();
+                const passedList = passedSentences[wordKey] || [];
                 const allSentences = [
                     { sentence: wordObj.ex1En, index: 0 },
                     { sentence: wordObj.ex2En, index: 1 },
@@ -1064,17 +1293,30 @@
                 });
             });
 
-            // 2. 新增「溫故知新複習考」機制：從「已完全通過3個例句」的單字中，隨機挑選最多 2 個單字，各隨機抽 1 個例句進行複習
-            const fullyPassedWords = masteredWords.filter(wordObj => {
-                const passedList = passedSentences[wordObj.id] || [];
-                return passedList.length === 3;
+            // 2. 基於 Leitner 複習箱子選題（溫故知新複習考）：
+            // 篩選當前單元中「已完全通過 3 個例句」且「在 Leitner 盒子中已判定為過期 (Due)」的單字
+            const now = Date.now();
+            const intervals = {
+                1: 60 * 1000,      // Box 1: 1 分鐘
+                2: 300 * 1000,     // Box 2: 5 分鐘
+                3: 900 * 1000      // Box 3: 15 分鐘
+            };
+
+            const reviewWords = currentMastered.filter(wordObj => {
+                const wordKey = wordObj.word.toLowerCase();
+                const passedList = passedSentences[wordKey] || [];
+                if (passedList.length < 3) return false;
+
+                const box = leitnerBox[wordKey] || { boxLevel: 1, lastTested: 0 };
+                const interval = intervals[box.boxLevel] || intervals[1];
+                return (now - box.lastTested) > interval;
             });
 
-            if (fullyPassedWords.length > 0) {
-                const shuffledFullyPassed = [...fullyPassedWords].sort(() => Math.random() - 0.5);
-                const reviewCount = Math.min(shuffledFullyPassed.length, 2);
-                for (let i = 0; i < reviewCount; i++) {
-                    const reviewWordObj = shuffledFullyPassed[i];
+            if (reviewWords.length > 0) {
+                const shuffledReview = [...reviewWords].sort(() => Math.random() - 0.5);
+                const limit = Math.min(shuffledReview.length, 3); // 每次最多加入 3 個複習考單字
+                for (let i = 0; i < limit; i++) {
+                    const reviewWordObj = shuffledReview[i];
                     const reviewSentenceIdx = Math.floor(Math.random() * 3);
                     const sentences = [reviewWordObj.ex1En, reviewWordObj.ex2En, reviewWordObj.ex3En];
                     
@@ -1088,7 +1330,7 @@
             }
 
             if (quizPool.length === 0) {
-                alert("太棒了！所有已掌握的單字都已經完全通過了 3 個題庫例句的測驗！您可以繼續標記新的未掌握單字。");
+                alert("太棒了！當前單元中所有已掌握的單字均已通過 3 次例句測驗，且暫無過期需複習的單字！");
                 switchMode('flip');
                 return;
             }
@@ -1108,7 +1350,10 @@
                 document.getElementById('quiz-result-screen').classList.remove('hidden');
                 
                 const totalQ = quizPool.length;
-                const wrongCount = quizPool.filter(item => item.wordObj.mastered === false).length;
+                const wrongCount = quizPool.filter(item => {
+                    const wordKey = item.wordObj.word.toLowerCase();
+                    return !masteredWords.includes(wordKey);
+                }).length;
                 const passedCount = totalQ - wrongCount;
                 const score = Math.round((passedCount / totalQ) * 100);
                 
@@ -1122,11 +1367,10 @@
                 };
                 
                 quizHistory.push(newRecord);
-                localStorage.setItem('unit17_quiz_history', JSON.stringify(quizHistory));
+                localStorage.setItem('toeic_quiz_history', JSON.stringify(quizHistory));
                 
                 if (accessToken && cloudFileId) {
-                    const masteredIds = wordsData.filter(i => i.mastered).map(i => i.id);
-                    uploadToCloud(masteredIds, passedSentences, quizHistory).catch(err => console.error(err));
+                    uploadToCloud(masteredWords, passedSentences, leitnerBox, quizHistory).catch(err => console.error(err));
                 }
                 
                 renderQuizChart();
@@ -1145,15 +1389,31 @@
             let sentence = currentItem.sentence;
             const targetWord = currentItem.wordObj.word;
 
-            const regex = new RegExp(targetWord, 'gi');
-            if (sentence.match(regex)) {
-                sentence = sentence.replace(regex, '_____');
+            const exactRegex = new RegExp(`\\b${targetWord}\\b`, 'gi');
+            if (sentence.match(exactRegex)) {
+                // 情況 1：精準命中 → 整個單字替換為 _____
+                sentence = sentence.replace(exactRegex, '_____');
+                currentItem.inflectedWord = null; // 無詞形變化
             } else {
-                sentence = `Please fill in the blank for: "${sentence.replace(new RegExp(targetWord, 'gi'), '_____')}"`;
+                // 情況 2：嘗試找詞形變化
+                const found = findInflectedWord(sentence, targetWord);
+                if (found) {
+                    // 計算保留的 suffix（詞形尾部）
+                    const suffix = found.inflected.slice(found.prefixLen);
+                    // 在句子中用正則（大小寫不敏感）把詞形替換為 _____suffix
+                    const inflectedRegex = new RegExp(`\\b${found.inflected}\\b`, 'gi');
+                    sentence = sentence.replace(inflectedRegex, `_____${suffix}`);
+                    currentItem.inflectedWord = found.inflected; // 儲存以供驗題
+                } else {
+                    // 情況 3：完全無法匹配 → 顯示中文翻譯作線索
+                    const zhMap = [currentItem.wordObj.ex1Zh, currentItem.wordObj.ex2Zh, currentItem.wordObj.ex3Zh];
+                    const zhHint = zhMap[currentItem.sentenceIndex] || currentItem.wordObj.ex1Zh || '';
+                    sentence = `📌 根據中文語義填入英文單字：「${zhHint}」`;
+                    currentItem.inflectedWord = null;
+                }
             }
             document.getElementById('quiz-example').textContent = sentence;
 
-            // 控制「溫故知新複習考」徽章顯示
             const reviewBadge = document.getElementById('quiz-review-badge');
             if (reviewBadge) {
                 if (currentItem.isReview) {
@@ -1163,7 +1423,6 @@
                 }
             }
 
-            // 預設 focus 到輸入框上，方便行動端直接喚起鍵盤
             const quizInput = document.getElementById('quiz-input');
             if (quizInput) {
                 quizInput.focus();
@@ -1174,7 +1433,6 @@
             document.getElementById('heart-1').className = `w-4 h-4 rounded-full transition-all ${lives >= 1 ? 'bg-rose-500 scale-100' : 'bg-slate-200 scale-90'}`;
             document.getElementById('heart-2').className = `w-4 h-4 rounded-full transition-all ${lives >= 2 ? 'bg-rose-500 scale-100' : 'bg-slate-200 scale-90'}`;
             
-            // 語音按鈕狀態控制：僅在生命值剩 1 時解鎖
             const audioBtn = document.getElementById('quiz-audio-btn');
             if (audioBtn) {
                 if (lives === 1) {
@@ -1199,25 +1457,34 @@
 
             if (!userAns) return;
 
-            if (userAns === currentObj.word.toLowerCase()) {
+            const wordKey = currentObj.word.toLowerCase();
+            // 接受原形或詞形變化（如 dairy / dairies，cheer / cheerful）
+            const inflectedKey = currentItem.inflectedWord ? currentItem.inflectedWord.toLowerCase() : null;
+            const isCorrect = userAns === wordKey || (inflectedKey && userAns === inflectedKey);
+
+            if (isCorrect) {
                 playCorrectSound();
                 feedbackEl.textContent = "🎉 答對了！太棒了！";
                 feedbackEl.className = "text-center text-xs font-semibold mt-3 h-5 text-emerald-600";
 
-                // 記錄該例句題庫已通過（複習題原本就已通過，無須重複記錄）
-                if (!currentItem.isReview) {
-                    if (!passedSentences[currentObj.id]) {
-                        passedSentences[currentObj.id] = [];
-                    }
-                    if (!passedSentences[currentObj.id].includes(currentItem.sentenceIndex)) {
-                        passedSentences[currentObj.id].push(currentItem.sentenceIndex);
-                        localStorage.setItem('unit17_passed_sentences', JSON.stringify(passedSentences));
-                        // 雲端即時同步
-                        if (accessToken && cloudFileId) {
-                            const masteredIds = wordsData.filter(i => i.mastered).map(i => i.id);
-                            uploadToCloud(masteredIds, passedSentences, quizHistory).catch(err => console.error(err));
-                        }
-                    }
+                // 記錄該例句題庫已通過 (全域儲存)
+                if (!passedSentences[wordKey]) {
+                    passedSentences[wordKey] = [];
+                }
+                if (!passedSentences[wordKey].includes(currentItem.sentenceIndex)) {
+                    passedSentences[wordKey].push(currentItem.sentenceIndex);
+                    localStorage.setItem('toeic_passed_sentences', JSON.stringify(passedSentences));
+                }
+
+                // 答對時 Leitner 晉級 (最高至 Box 3)
+                let box = leitnerBox[wordKey] || { boxLevel: 1, lastTested: 0 };
+                box.boxLevel = Math.min((box.boxLevel || 1) + 1, 3);
+                box.lastTested = Date.now();
+                leitnerBox[wordKey] = box;
+                localStorage.setItem('toeic_leitner_box', JSON.stringify(leitnerBox));
+
+                if (accessToken && cloudFileId) {
+                    uploadToCloud(masteredWords, passedSentences, leitnerBox, quizHistory).catch(err => console.error(err));
                 }
 
                 setTimeout(() => {
@@ -1232,13 +1499,31 @@
                     feedbackEl.textContent = `❌ 答錯囉！還剩 ${lives} 次機會（已解鎖語音提示），請再試一次！`;
                     feedbackEl.className = "text-center text-xs font-semibold mt-3 h-5 text-rose-500";
                 } else {
+                    // 答錯且次數用完，取消掌握，清空通關例句，Leitner 降級 (退回 Box 1)
                     currentObj.mastered = false;
-                    if (passedSentences[currentObj.id]) {
-                        delete passedSentences[currentObj.id];
-                        localStorage.setItem('unit17_passed_sentences', JSON.stringify(passedSentences));
+                    masteredWords = masteredWords.filter(w => w !== wordKey);
+                    delete passedSentences[wordKey];
+                    
+                    let box = leitnerBox[wordKey] || { boxLevel: 1, lastTested: 0 };
+                    box.boxLevel = 1;
+                    box.lastTested = Date.now();
+                    leitnerBox[wordKey] = box;
+
+                    localStorage.setItem('toeic_mastered_words', JSON.stringify(masteredWords));
+                    localStorage.setItem('toeic_passed_sentences', JSON.stringify(passedSentences));
+                    localStorage.setItem('toeic_leitner_box', JSON.stringify(leitnerBox));
+
+                    // 刷新下拉選單進度顯示
+                    const book = booksList.find(b => b.id === currentBook);
+                    if (book) {
+                        renderUnitSelect(book);
                     }
-                    saveProgress();
-                    feedbackEl.textContent = `💥 殘念！正確答案是：【 ${currentObj.word} 】。已自動取消該單字的掌握標記。`;
+
+                    if (accessToken && cloudFileId) {
+                        uploadToCloud(masteredWords, passedSentences, leitnerBox, quizHistory).catch(err => console.error(err));
+                    }
+
+                    feedbackEl.textContent = `💥 殘念！正確答案是：【 ${currentObj.word} 】。已自動取消該單字的掌握標記並退回 Box 1。`;
                     feedbackEl.className = "text-center text-xs font-semibold mt-3 h-5 text-amber-600";
                     setTimeout(() => {
                         quizIndex++;
@@ -1255,9 +1540,8 @@
         });
 
         // 初始化載入與 Google SDK 監聽
-        updateCard();
+        loadBooksList();
         renderQuizChart();
-
         function autoConnectGoogle() {
             const isConnected = localStorage.getItem('g_connected') === 'true';
             if (isConnected && tokenClient) {
@@ -1270,6 +1554,14 @@
                     // 若無 Token 但曾連結過，直接背景靜默申請
                     tokenClient.requestAccessToken({ prompt: '' });
                 }
+            } else if (!isConnected && tokenClient) {
+                // 從未連結過 Google，延遲 800ms 後友善提醒詢問
+                setTimeout(() => {
+                    const wantConnect = confirm('💡 系統偵測到您尚未連結 Google 雲端硬碟。\n\n建議您連結 Google 帳號以啟用「進度同步備份功能」，避免清除瀏覽器快取時導致背單字進度遺失。\n\n是否立即連結同步？');
+                    if (wantConnect) {
+                        handleGoogleSync();
+                    }
+                }, 800);
             }
         }
 
@@ -1285,5 +1577,39 @@
             });
         }
     </script>
+    <!-- 教材選擇彈窗 (Modal) -->
+    <div id="book-select-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white w-full max-w-sm rounded-2xl shadow-2xl p-6 space-y-4">
+            <h2 class="text-base font-bold text-slate-800 border-b pb-2 flex items-center gap-1.5 justify-center">
+                📚 請選擇學習教材
+            </h2>
+            <div id="book-list-container" class="space-y-2.5 max-h-60 overflow-y-auto">
+                <p class="text-xs text-slate-400 text-center py-4">教材清單載入中...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 載入錯誤提示彈窗 (Error Modal) -->
+    <div id="error-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white w-full max-w-sm rounded-2xl shadow-2xl p-6 space-y-4 text-center">
+            <div class="w-12 h-12 bg-rose-50 text-rose-500 rounded-full flex items-center justify-center mx-auto mb-2 text-xl">
+                ⚠️
+            </div>
+            <h2 class="text-base font-bold text-slate-800 border-b pb-2">
+                系統載入失敗
+            </h2>
+            <p class="text-[11px] text-slate-500 text-left bg-slate-50 p-3 rounded-lg border border-slate-100 font-mono break-all max-h-40 overflow-y-auto" id="error-text">
+                載入錯誤資訊...
+            </p>
+            <div class="flex gap-2">
+                <button onclick="copyErrorMsg()" class="flex-1 py-2.5 bg-indigo-50 text-indigo-600 hover:bg-indigo-100 transition rounded-xl text-xs font-semibold">
+                    複製錯誤資訊
+                </button>
+                <button onclick="closeErrorModal()" class="flex-1 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 transition rounded-xl text-xs font-semibold">
+                    關閉
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
