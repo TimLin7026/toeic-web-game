@@ -111,6 +111,29 @@
   * **跨設備登入 (雲端已有檔案)**：下載雲端的 `unit17_progress.json`，將雲端進度與本機 LocalStorage 進度取**聯集 (Union) 合併**，更新本機顯示，並同步覆蓋雲端檔案。
   * **日常學習**：在登入狀態下，每次完成學習或測驗（呼叫 `saveProgress()`）時，會自動在背景非同步更新雲端的 `unit17_progress.json`。
 
+### 4. 本機 SQLite 題庫管理與動態單元 (Units) 切換方案
+
+#### A. 本機端 SQLite 資料庫設計 (`toeic_vocab.db`)
+為了集中管理維護所有多益單字與例句，本機端資料庫採用關聯式設計：
+* **`units` 資料表**：記錄所有單元資訊（如 `id`, `name`）。
+* **`words` 資料表**：記錄單字核心資訊（如 `id`, `word`, `meaning`, `unit_id`）。
+* **`sentences` 資料表**：記錄例句與翻譯（如 `id`, `word_id`, `sentence_en`, `sentence_zh`, `sentence_index` [0, 1, 2]）。
+
+#### B. Python 導出腳本 (`export_vocab.py`)
+* 開發者在本機資料庫維護好題庫後，執行此腳本。
+* 腳本會自動將各單元的單字與例句分組，匯出為網頁可用的 JSON 題庫檔案，寫入專案目錄：
+  * `data/unit17.json`
+  * `data/unit18.json`
+  * `data/units_list.json`（記錄目前可用的所有單元列表，供前端動態產生下拉選單）
+
+#### C. 前端動態單元選單與雲端輕量同步
+1. **動態選單渲染**：網頁載入時先下載 `units_list.json`，在頁首生成「單元切換下拉選單」。
+2. **非同步題庫載入**：當使用者選擇某個單元（例如 Unit 18）時，前端 `fetch('data/unit18.json')` 載入單字，無須重載整個網頁。
+3. **Google 雲端輕量化同步**：
+   * 雲端檔案名稱變更為統一的 `toeic_game_progress.json`。
+   * **僅上傳進度元數據**（各單元的 `masteredIds` 數組、`passedSentences` 物件及 `quizHistory` 分數紀錄），完全不包含單字及例句本身，維持極致輕量（<5KB）。
+
+
 ### 3. Web Audio 遊戲音效與 SVG 歷次測驗分數折線圖詳細規劃
 
 #### A. Web Audio API 音效合成方案 (零載入成本)
