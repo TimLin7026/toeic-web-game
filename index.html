@@ -712,6 +712,17 @@
             }
         }
 
+        // 點擊面板外部區域自動隱藏設定面板
+        document.addEventListener('click', (e) => {
+            const panel = document.getElementById('settings-panel');
+            const btn = document.getElementById('btn-settings');
+            if (panel && !panel.classList.contains('hidden')) {
+                if (!panel.contains(e.target) && !btn.contains(e.target)) {
+                    panel.classList.add('hidden');
+                }
+            }
+        });
+
         function adjustSpeed(amount) {
             currentSpeed = Math.round((currentSpeed + amount) * 10) / 10;
             if (currentSpeed < 0.5) currentSpeed = 0.5;
