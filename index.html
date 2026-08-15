@@ -919,6 +919,12 @@
             const flashcardView = document.getElementById('flashcard-view');
             const listView = document.getElementById('list-view');
             const quizView = document.getElementById('quiz-view');
+            
+            // 切換視圖時自動隱藏設定面板
+            const panel = document.getElementById('settings-panel');
+            if (panel) {
+                panel.classList.add('hidden');
+            }
             const modeFlip = document.getElementById('mode-flip');
             const modeList = document.getElementById('mode-list');
             const modeQuiz = document.getElementById('mode-quiz');
