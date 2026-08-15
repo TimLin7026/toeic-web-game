@@ -35,12 +35,16 @@
         <!-- 設定與模式切換 -->
         <div class="flex items-center gap-3 flex-wrap justify-center">
             <!-- 齒輪設定按鈕 -->
-            <button id="btn-settings" onclick="toggleSettingsPanel()" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center" title="語音參數設定">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-            </button>
+            <div class="relative inline-flex">
+                <button id="btn-settings" onclick="toggleSettingsPanel()" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center" title="語音參數設定">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                </button>
+                <!-- Google 未連結提示 badge -->
+                <span id="google-sync-badge" class="hidden absolute -top-1 -right-1 w-4 h-4 bg-rose-500 text-white text-[9px] font-bold rounded-full flex items-center justify-center leading-none shadow-sm" title="尚未連結 Google 雲端同步">!</span>
+            </div>
             <div class="flex gap-1.5">
                 <button id="mode-flip" onclick="switchMode('flip')" class="px-3 py-1.5 text-xs font-medium bg-indigo-50 text-indigo-600 rounded-lg shadow-sm hover:bg-indigo-100 transition">字卡</button>
                 <button id="mode-list" onclick="switchMode('list')" class="px-3 py-1.5 text-xs font-medium bg-slate-100 text-slate-600 rounded-lg shadow-sm hover:bg-slate-200 transition">列表</button>
@@ -487,6 +491,9 @@
                         accessToken = resp.access_token;
                         localStorage.setItem('g_access_token', accessToken);
                         localStorage.setItem('g_connected', 'true'); // 標記為已連結狀態
+                        // 連結成功 → 隱藏齒輪按鈕上的提示 badge
+                        const badge = document.getElementById('google-sync-badge');
+                        if (badge) badge.classList.add('hidden');
                         
                         await fetchUserInfo();
                         await syncWithCloud();
@@ -1554,14 +1561,10 @@
                     // 若無 Token 但曾連結過，直接背景靜默申請
                     tokenClient.requestAccessToken({ prompt: '' });
                 }
-            } else if (!isConnected && tokenClient) {
-                // 從未連結過 Google，延遲 800ms 後友善提醒詢問
-                setTimeout(() => {
-                    const wantConnect = confirm('💡 系統偵測到您尚未連結 Google 雲端硬碟。\n\n建議您連結 Google 帳號以啟用「進度同步備份功能」，避免清除瀏覽器快取時導致背單字進度遺失。\n\n是否立即連結同步？');
-                    if (wantConnect) {
-                        handleGoogleSync();
-                    }
-                }, 800);
+            } else if (!isConnected) {
+                // 從未連結過 Google → 在齒輪按鈕顯示 ! 提示 badge
+                const badge = document.getElementById('google-sync-badge');
+                if (badge) badge.classList.remove('hidden');
             }
         }
 
