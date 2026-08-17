@@ -105,7 +105,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.5</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.6</p>
             </div>
         </div>
 
@@ -1349,17 +1349,17 @@
                 return;
             }
 
-            // 1. 建立普通測驗池（當前單元中，未完全通過 3 個題庫例句的單字）
+            // 1. 建立普通測驗池（當前單元中，未完全通過 2 個題庫例句的單字）
             quizPool = [];
             currentMastered.forEach(wordObj => {
                 const wordKey = wordObj.word.toLowerCase();
                 const passedList = passedSentences[wordKey] || [];
-                if (passedList.length < 3) {
+                if (passedList.length < 2) {
                     const examples = wordObj.examples || [];
                     const indices = examples.map((_, idx) => idx);
-                    // 隨機打亂 indices 並取前 3 個
+                    // 隨機打亂 indices 並取前 2 個
                     indices.sort(() => Math.random() - 0.5);
-                    const selectedIndices = indices.slice(0, Math.min(3, examples.length));
+                    const selectedIndices = indices.slice(0, Math.min(2, examples.length));
                     
                     selectedIndices.forEach(idx => {
                         quizPool.push({
@@ -1372,7 +1372,7 @@
             });
 
             // 2. 基於 Leitner 複習箱子選題（溫故知新複習考）：
-            // 篩選當前單元中「已完全通過 3 個例句」且「在 Leitner 盒子中已判定為過期 (Due)」的單字
+            // 篩選當前單元中「已完全通過 2 個例句」且「在 Leitner 盒子中已判定為過期 (Due)」的單字
             const now = Date.now();
             const intervals = {
                 1: 60 * 1000,      // Box 1: 1 分鐘
@@ -1383,7 +1383,7 @@
             const reviewWords = currentMastered.filter(wordObj => {
                 const wordKey = wordObj.word.toLowerCase();
                 const passedList = passedSentences[wordKey] || [];
-                if (passedList.length < 3) return false;
+                if (passedList.length < 2) return false;
 
                 const box = leitnerBox[wordKey] || { boxLevel: 1, lastTested: 0 };
                 const interval = intervals[box.boxLevel] || intervals[1];
@@ -1408,7 +1408,7 @@
             }
 
             if (quizPool.length === 0) {
-                alert("太棒了！當前單元中所有已掌握的單字均已通過 3 次例句測驗，且暫無過期需複習的單字！");
+                alert("太棒了！當前單元中所有已掌握的單字均已通過 2 次例句測驗，且暫無過期需複習的單字！");
                 switchMode('flip');
                 return;
             }
