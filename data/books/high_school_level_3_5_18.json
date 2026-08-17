@@ -1,482 +1,1122 @@
 [
     {
-        "id": 41,
+        "id": 1,
         "word": "erase",
         "meaning": "擦掉、消除",
         "mastered": false,
-        "ex1En": "The computer crashed, and all our records were erased.",
-        "ex1Zh": "電腦當機了，我們所有的紀錄都被消除。",
-        "ex2En": "It is impossible to erase those memories from my mind.",
-        "ex2Zh": "要在我的腦海中消除那些回憶是不可能的。",
-        "ex3En": "You can use an eraser to erase the pencil marks.",
-        "ex3Zh": "你可以用橡皮擦把鉛筆痕跡擦掉。"
+        "examples": [
+            {
+                "en": "Please ensure that you completely erase all confidential data from the hard drive before disposing of it.",
+                "zh": "在處理硬碟之前，請確保完全消除所有機密資料。"
+            },
+            {
+                "en": "The assistant is erasing the whiteboard for the upcoming strategy meeting.",
+                "zh": "助理正在為即將到來的策略會議擦掉白板上的字。"
+            },
+            {
+                "en": "Any trace of his mistake has been erased from the official financial records.",
+                "zh": "他的錯誤痕跡已經從官方財務記錄中被消除了。"
+            },
+            {
+                "en": "If you use this special software, it will easily erase background noise from your audio recordings.",
+                "zh": "如果你使用這款特殊軟體，它會輕鬆消除錄音檔中的背景噪音。"
+            },
+            {
+                "en": "She quickly erased the incorrect figures and replaced them with the updated revenue projections.",
+                "zh": "她迅速擦掉錯誤的數字，並替換為更新後的營收預測。"
+            }
+        ]
     },
     {
-        "id": 42,
+        "id": 2,
         "word": "fancy",
         "meaning": "昂貴的、豪華的；花俏精緻的；幻想；喜歡；幻想",
         "mastered": false,
-        "ex1En": "I had dinner at a fancy restaurant.",
-        "ex1Zh": "在一本豪華的餐廳享用晚餐。",
-        "ex2En": "He bought a fancy sports car.",
-        "ex2Zh": "他買了一輛很炫的跑車。",
-        "ex3En": "The boy often fancies himself as a superhero.",
-        "ex3Zh": "這個男孩時常幻想自己是超級英雄。"
+        "examples": [
+            {
+                "en": "The executive board treated the visiting clients to a fancy dinner at a five-star restaurant.",
+                "zh": "執行董事會招待來訪的客戶在一家五星級餐廳享用豪華晚餐。"
+            },
+            {
+                "en": "Do you fancy grabbing a cup of coffee after the presentation to discuss the proposal?",
+                "zh": "做完簡報後，你想不想去喝杯咖啡討論一下提案？"
+            },
+            {
+                "en": "He always wears a fancy suit to important negotiations to make a good impression.",
+                "zh": "他總是在重要的談判中穿著昂貴精緻的西裝以留下好印象。"
+            },
+            {
+                "en": "Our competitor is trying to attract younger consumers with fancy packaging and aggressive marketing.",
+                "zh": "我們的競爭對手正試圖用花俏精緻的包裝和積極的行銷來吸引年輕消費者。"
+            },
+            {
+                "en": "She never fancied herself as a leader, but she managed the crisis exceptionally well.",
+                "zh": "她從未幻想過自己能成為領導者，但她將危機處理得非常出色。"
+            }
+        ]
     },
     {
-        "id": 43,
+        "id": 3,
         "word": "flock",
         "meaning": "(鳥、羊)群；成群聚集",
         "mastered": false,
-        "ex1En": "It's easy to spot flocks of geese as they migrate.",
-        "ex1Zh": "當成群的野雁遷徙時，很容易發現牠們的蹤跡。",
-        "ex2En": "Thirty million tourists flock to New York every year.",
-        "ex2Zh": "每年都有三千萬遊客湧入紐約。",
-        "ex3En": "Birds of a feather flock together.",
-        "ex3Zh": "物以類聚 (同一種羽毛的鳥會聚集在一起)。"
+        "examples": [
+            {
+                "en": "Hundreds of eager customers flocked to the flagship store for the product launch.",
+                "zh": "數百名熱切的顧客成群聚集在旗艦店參加產品發表會。"
+            },
+            {
+                "en": "The tourist industry expects a huge flock of visitors during the upcoming summer holiday.",
+                "zh": "旅遊業預期在即將到來的暑假期間會有大批遊客湧入。"
+            },
+            {
+                "en": "Shareholders are flocking to sell their stocks after the sudden drop in quarterly profits.",
+                "zh": "在季度利潤暴跌後，股東們正成群結隊地拋售股票。"
+            },
+            {
+                "en": "When the scandal broke out, reporters flocked around the CEO's office.",
+                "zh": "當醜聞爆發時，記者們成群聚集在執行長的辦公室周圍。"
+            },
+            {
+                "en": "As a local business, we rely heavily on the flock of commuters passing by every morning.",
+                "zh": "身為一家當地企業，我們非常依賴每天早上路過的成群通勤族。"
+            }
+        ]
     },
     {
-        "id": 44,
+        "id": 4,
         "word": "grocery",
         "meaning": "雜貨；雜貨商；雜貨店",
         "mastered": false,
-        "ex1En": "I usually do grocery shopping on weekends.",
-        "ex1Zh": "我通常在週末採買生活用品。",
-        "ex2En": "John bought some eggs at the grocer's.",
-        "ex2Zh": "約翰在雜貨店買了一些蛋。",
-        "ex3En": "There is a grocery store around the corner from the hostel.",
-        "ex3Zh": "青年旅社的附近有一家雜貨店。"
+        "examples": [
+            {
+                "en": "The supermarket chain has decided to expand its grocery delivery service to suburban areas.",
+                "zh": "該連鎖超市已決定將其雜貨外送服務擴展至郊區。"
+            },
+            {
+                "en": "He stopped by the local grocery store to pick up some fresh produce for tonight's dinner.",
+                "zh": "他順道去當地的雜貨店買一些今晚晚餐要用的新鮮農產品。"
+            },
+            {
+                "en": "With inflation rising, consumers are spending a larger portion of their income on basic groceries.",
+                "zh": "隨著通貨膨脹加劇，消費者將更大比例的收入花在基本雜貨上。"
+            },
+            {
+                "en": "The new startup developed an app that compares grocery prices across different retailers.",
+                "zh": "這家新創公司開發了一款比較不同零售商雜貨價格的應用程式。"
+            },
+            {
+                "en": "We need to restock the office pantry with some snacks and other essential grocery items.",
+                "zh": "我們需要為辦公室茶水間補給一些零食和其他基本雜貨項目。"
+            }
+        ]
     },
     {
-        "id": 45,
+        "id": 5,
         "word": "headline",
         "meaning": "新聞標題；以~為標題；段落標題",
         "mastered": false,
-        "ex1En": "I just read through the headlines of the paper.",
-        "ex1Zh": "我只瀏覽報紙的標題。",
-        "ex2En": "The article is headlined \"Listen to your heart.\"",
-        "ex2Zh": "這篇文章的標題是「傾聽內在的聲音」。",
-        "ex3En": "The heading of each chapter in this book has been carefully written.",
-        "ex3Zh": "書中每章的標題都是審慎撰寫的。"
+        "examples": [
+            {
+                "en": "The company's massive merger made headlines in every major financial newspaper.",
+                "zh": "該公司的大規模合併案登上了各大財經報紙的新聞標題。"
+            },
+            {
+                "en": "She drafted a catchy headline for the press release to immediately grab the media's attention.",
+                "zh": "她為新聞稿草擬了一個引人注目的標題，以立刻抓住媒體的注意力。"
+            },
+            {
+                "en": "The upcoming technology conference will be headlined by our Chief Executive Officer.",
+                "zh": "即將到來的科技會議將由我們的執行長擔任主講人（以其為號召標題）。"
+            },
+            {
+                "en": "If you read past the headlines, you will find that the actual market trend is quite stable.",
+                "zh": "如果你略過新聞標題仔細閱讀，你會發現實際的市場趨勢相當穩定。"
+            },
+            {
+                "en": "Our PR team is working hard to ensure the launch event generates positive headlines.",
+                "zh": "我們的公關團隊正在努力確保發表會能產生正面的新聞標題。"
+            }
+        ]
     },
     {
-        "id": 46,
+        "id": 6,
         "word": "helmet",
         "meaning": "頭盔、安全帽",
         "mastered": false,
-        "ex1En": "Be sure to wear a safety helmet when you ride a motorcycle.",
-        "ex1Zh": "騎乘機車一定要戴安全帽。",
-        "ex2En": "The construction worker wore a hard helmet.",
-        "ex2Zh": "建築工人戴著堅固的安全帽。",
-        "ex3En": "Soldiers wear helmets to protect their heads in battle.",
-        "ex3Zh": "士兵在戰鬥中戴頭盔以保護頭部。"
+        "examples": [
+            {
+                "en": "All construction workers on the site must wear a safety helmet at all times to prevent injuries.",
+                "zh": "工地上的所有建築工人都必須隨時戴上安全帽以防止受傷。"
+            },
+            {
+                "en": "The delivery rider strapped on his helmet before starting the engine of his motorcycle.",
+                "zh": "外送員在發動機車引擎前繫緊了安全帽。"
+            },
+            {
+                "en": "We are distributing free helmets to encourage more employees to commute by bicycle.",
+                "zh": "我們正在免費發放頭盔，以鼓勵更多員工騎自行車通勤。"
+            },
+            {
+                "en": "The manufacturer recalled thousands of defective helmets that failed to meet safety standards.",
+                "zh": "製造商召回了數千頂未達到安全標準的瑕疵頭盔。"
+            },
+            {
+                "en": "He carefully adjusted the strap on his helmet to ensure a snug and comfortable fit.",
+                "zh": "他仔細調整了安全帽上的帶子，確保戴起來緊密舒適。"
+            }
+        ]
     },
     {
-        "id": 47,
+        "id": 7,
         "word": "homesick",
         "meaning": "思鄉的、想家的；故鄉",
         "mastered": false,
-        "ex1En": "As I read my mother's letter, I felt more and more homesick.",
-        "ex1Zh": "當我讀母親的信時，想家的心情愈來愈強烈。",
-        "ex2En": "His hometown is a small town in the middle of France.",
-        "ex2Zh": "他的家鄉是法國中部的一座小鎮。",
-        "ex3En": "He felt homesick during his first week at college.",
-        "ex3Zh": "他在上大學的第一個星期感到很想家。"
+        "examples": [
+            {
+                "en": "The expatriate employee felt extremely homesick during his first few months in the overseas branch.",
+                "zh": "這位外派員工在海外分部的前幾個月感到非常思鄉。"
+            },
+            {
+                "en": "To comfort the homesick international students, the university organized a multicultural food festival.",
+                "zh": "為了安撫想家的國際學生，大學舉辦了多元文化美食節。"
+            },
+            {
+                "en": "She tries to overcome feeling homesick by calling her family via video chat every weekend.",
+                "zh": "她試著每週末透過視訊通話與家人聯繫，以克服思鄉之情。"
+            },
+            {
+                "en": "Working abroad has many benefits, but being homesick is a common challenge for many professionals.",
+                "zh": "在國外工作有許多好處，但想家是許多專業人士共同面臨的挑戰。"
+            },
+            {
+                "en": "He occasionally gets homesick, especially during traditional holidays when his family gathers together.",
+                "zh": "他偶爾會想家，尤其是在家人團聚的傳統節日期間。"
+            }
+        ]
     },
     {
-        "id": 48,
+        "id": 8,
         "word": "outdoor",
         "meaning": "戶外的；在戶外；室內的；在室內",
         "mastered": false,
-        "ex1En": "He likes outdoor activities.",
-        "ex1Zh": "他喜歡戶外活動。",
-        "ex2En": "Most children like to play outdoors rather than stay indoors.",
-        "ex2Zh": "大部分的小孩喜歡在戶外玩耍勝過待在室內。",
-        "ex3En": "The indoor flower market is a big tourist attraction.",
-        "ex3Zh": "這個室內花卉市場是一個很大的觀光景點。"
+        "examples": [
+            {
+                "en": "The company organized an outdoor team-building event to foster better communication among staff.",
+                "zh": "公司舉辦了一場戶外團隊建立活動，以促進員工間更好的溝通。"
+            },
+            {
+                "en": "Sales of outdoor sporting goods typically peak during the spring and summer months.",
+                "zh": "戶外體育用品的銷售量通常在春季和夏季達到高峰。"
+            },
+            {
+                "en": "We are planning to host the annual corporate reception at a beautiful outdoor venue.",
+                "zh": "我們正計畫在一個美麗的戶外場地舉辦年度企業招待會。"
+            },
+            {
+                "en": "Many employees enjoy having their lunch break in the outdoor seating area of the cafeteria.",
+                "zh": "許多員工喜歡在自助餐廳的戶外座位區享用午餐。"
+            },
+            {
+                "en": "Due to heavy rain, the outdoor concert was unfortunately moved to an indoor stadium.",
+                "zh": "由於大雨，戶外演唱會不幸被移至室內體育館舉行。"
+            }
+        ]
     },
     {
-        "id": 49,
+        "id": 9,
         "word": "jealous",
         "meaning": "妒忌的",
         "mastered": false,
-        "ex1En": "He has always been very jealous of his brother's good looks.",
-        "ex1Zh": "他一直都非常忌妒哥哥俊俏的外表。",
-        "ex2En": "She felt jealous when she saw her boyfriend talking to another girl.",
-        "ex2Zh": "當她看到男友與另一個女孩聊天時，她感到忌妒。",
-        "ex3En": "His success made his colleagues jealous.",
-        "ex3Zh": "他的成功讓他的同事感到忌妒。"
+        "examples": [
+            {
+                "en": "She tried not to appear jealous when her colleague was promoted to the managerial position.",
+                "zh": "當她的同事被晉升為管理職位時，她盡量不表現出妒忌。"
+            },
+            {
+                "en": "Competitors are jealous of our rapid market expansion and innovative product line.",
+                "zh": "競爭對手對我們快速的市場擴張和創新的產品線感到嫉妒。"
+            },
+            {
+                "en": "His success in closing the million-dollar deal made a few team members secretly jealous.",
+                "zh": "他成功談成百萬美元交易的成就，讓幾位團隊成員暗自嫉妒。"
+            },
+            {
+                "en": "It is unprofessional to be jealous of someone else's achievements in the workplace.",
+                "zh": "在職場上嫉妒他人的成就是不專業的。"
+            },
+            {
+                "en": "He admitted feeling a bit jealous of the extensive benefits offered by the rival company.",
+                "zh": "他承認對競爭對手公司提供的大量福利感到有些嫉妒。"
+            }
+        ]
     },
     {
-        "id": 50,
+        "id": 10,
         "word": "jelly",
         "meaning": "果凍；果醬",
         "mastered": false,
-        "ex1En": "I've made a strawberry jelly for the children.",
-        "ex1Zh": "我做了草莓果凍給小朋友。",
-        "ex2En": "Americans love peanut butter and jelly sandwich.",
-        "ex2Zh": "美國人愛吃花生果醬三明治。",
-        "ex3En": "The jelly is set and ready to eat.",
-        "ex3Zh": "果凍已經凝固可以吃了。"
+        "examples": [
+            {
+                "en": "The caterer provided a selection of freshly baked scones served with strawberry jelly and cream.",
+                "zh": "餐飲服務商提供了一系列新鮮烘焙的司康，搭配草莓果醬和奶油。"
+            },
+            {
+                "en": "For the dessert buffet, we decided to include a colorful fruit jelly that is visually appealing.",
+                "zh": "對於甜點自助餐，我們決定加入一種視覺上很吸引人的色彩繽紛的水果果凍。"
+            },
+            {
+                "en": "Please remind the supplier to send the latest catalog for the new organic jelly products.",
+                "zh": "請提醒供應商寄送最新有機果醬產品的最新型錄。"
+            },
+            {
+                "en": "The children were delighted by the bouncy texture and sweet flavor of the grape jelly.",
+                "zh": "孩子們對葡萄果凍有彈性的質地和甜美的味道感到高興。"
+            },
+            {
+                "en": "She accidentally spilled a jar of blueberry jelly on the important shipping documents.",
+                "zh": "她不小心把一罐藍莓果醬灑在了重要的運輸文件上。"
+            }
+        ]
     },
     {
-        "id": 51,
+        "id": 11,
         "word": "jewel",
         "meaning": "寶石、首飾；珠寶",
         "mastered": false,
-        "ex1En": "She loved dressing up and wearing priceless jewels.",
-        "ex1Zh": "她愛盛裝打扮並穿戴一些價值不斐的珠寶首飾。",
-        "ex2En": "The burglar stole all the jewelry.",
-        "ex2Zh": "竊賊偷走所有珠寶。",
-        "ex3En": "Diamonds are the most precious of all jewels.",
-        "ex3Zh": "鑽石是所有寶石中最珍貴的。"
+        "examples": [
+            {
+                "en": "The rare diamond necklace is considered the crown jewel of the upcoming auction.",
+                "zh": "這條罕見的鑽石項鍊被認為是即將舉行的拍賣會上的稀世珠寶。"
+            },
+            {
+                "en": "Our lead software engineer is a true jewel, always finding creative solutions to complex problems.",
+                "zh": "我們的首席軟體工程師是個真正的無價之寶，總是能為複雜問題找到具創意的解決方案。"
+            },
+            {
+                "en": "The luxury brand recently launched a new collection of fine jewels targeting high-net-worth clients.",
+                "zh": "這個奢侈品牌最近推出了一系列針對高淨值客戶的高級首飾。"
+            },
+            {
+                "en": "She kept her family's precious jewels securely locked away in a safe deposit box at the bank.",
+                "zh": "她將家族珍貴的寶石安全地鎖在銀行的保險箱裡。"
+            },
+            {
+                "en": "The newly built corporate headquarters is the architectural jewel of the downtown business district.",
+                "zh": "新建的企業總部是市中心商業區的建築瑰寶。"
+            }
+        ]
     },
     {
-        "id": 52,
+        "id": 12,
         "word": "junk",
         "meaning": "垃圾、沒用東西；垃圾食品；破壞",
         "mastered": false,
-        "ex1En": "The garage is full of junk.",
-        "ex1Zh": "車庫裡頭塞滿了廢物。",
-        "ex2En": "Eating too much junk food is not good for your health.",
-        "ex2Zh": "吃太多垃圾食物對你的健康有害。",
-        "ex3En": "Many shops were trashed during the riot.",
-        "ex3Zh": "許多商店在暴動中被砸爛。"
+        "examples": [
+            {
+                "en": "We need to clear out all the old junk from the storage room to make space for new inventory.",
+                "zh": "我們需要清除儲藏室裡所有舊的沒用東西，以為新庫存騰出空間。"
+            },
+            {
+                "en": "The nutritionist advised the executives to avoid eating junk food during stressful periods.",
+                "zh": "營養師建議主管們在壓力大的時期避免吃垃圾食品。"
+            },
+            {
+                "en": "The IT department installed a stronger filter to prevent junk mail from reaching our inboxes.",
+                "zh": "資訊部門安裝了更強的過濾器，以防止垃圾郵件進入我們的收件匣。"
+            },
+            {
+                "en": "He decided to throw away his broken laptop, considering it nothing more than useless junk.",
+                "zh": "他決定扔掉他壞掉的筆記型電腦，認為它只不過是沒用的垃圾。"
+            },
+            {
+                "en": "Investing in that bankrupt company turned out to be buying a bunch of junk bonds.",
+                "zh": "投資那家破產公司結果變成了購買一堆垃圾債券。"
+            }
+        ]
     },
     {
-        "id": 53,
+        "id": 13,
         "word": "lung",
         "meaning": "肺；肝臟；腎臟",
         "mastered": false,
-        "ex1En": "He died of lung cancer.",
-        "ex1Zh": "他死於肺癌。",
-        "ex2En": "Drinking too much alcohol does harm to your liver.",
-        "ex2Zh": "酒喝多了對肝臟不好。",
-        "ex3En": "The patient badly needs a kidney transplant.",
-        "ex3Zh": "這位病人急需腎臟移植。"
+        "examples": [
+            {
+                "en": "Prolonged exposure to toxic chemicals in the factory can cause serious damage to the workers' lungs.",
+                "zh": "長期暴露在工廠的有毒化學物質中可能會對工人的肺部造成嚴重損害。"
+            },
+            {
+                "en": "The healthcare initiative focuses on raising awareness about lung cancer prevention and early screening.",
+                "zh": "這項醫療保健倡議旨在提高人們對肺癌預防和早期篩檢的認識。"
+            },
+            {
+                "en": "Breathing exercises can help improve lung capacity and reduce stress before a big presentation.",
+                "zh": "呼吸練習有助於改善肺活量，並在大型簡報前減輕壓力。"
+            },
+            {
+                "en": "The doctor listened carefully to her lungs with a stethoscope during the annual medical check-up.",
+                "zh": "醫生在年度健康檢查時，用聽診器仔細聽了她的肺部。"
+            },
+            {
+                "en": "Air purifiers have been installed in all offices to ensure the protection of employees' lung health.",
+                "zh": "所有辦公室都安裝了空氣清淨機，以確保保護員工的肺健康。"
+            }
+        ]
     },
     {
-        "id": 54,
+        "id": 14,
         "word": "meter",
         "meaning": "公尺；儀表；公分；公里",
         "mastered": false,
-        "ex1En": "The desk is one meter long, half a meter wide.",
-        "ex1Zh": "這桌子長一公尺寬半公尺。",
-        "ex2En": "I am 172 centimeters tall.",
-        "ex2Zh": "我的身高有一百七十二公分。",
-        "ex3En": "They are now a kilometer from the castle.",
-        "ex3Zh": "他們現在離城堡有一公里遠。"
+        "examples": [
+            {
+                "en": "The new warehouse facility covers an impressive area of over ten thousand square meters.",
+                "zh": "新的倉庫設施佔地超過一萬平方公尺，令人印象深刻。"
+            },
+            {
+                "en": "The technician checked the electrical meter to accurately calculate the factory's monthly power consumption.",
+                "zh": "技術人員檢查了電表（儀表），以準確計算工廠的每月耗電量。"
+            },
+            {
+                "en": "Please ensure there is at least one meter of space between each desk for social distancing.",
+                "zh": "請確保每張辦公桌之間至少有一公尺的空間以保持社交距離。"
+            },
+            {
+                "en": "The taxi driver forgot to start the meter when the passenger got in the car.",
+                "zh": "計程車司機在乘客上車時忘記按下計費表。"
+            },
+            {
+                "en": "We are running a 100-meter dash as part of the company's charity sports day.",
+                "zh": "我們正在舉行100公尺短跑，作為公司慈善運動日的一部分。"
+            }
+        ]
     },
     {
-        "id": 55,
+        "id": 15,
         "word": "knot",
         "meaning": "繩結；打結",
         "mastered": false,
-        "ex1En": "Are you good at tying knots?",
-        "ex1Zh": "你擅長綁繩結嗎？",
-        "ex2En": "Do you know how to knot a bow tie?",
-        "ex2Zh": "你知道如何打蝴蝶結嗎？",
-        "ex3En": "He tied a tight knot in the rope.",
-        "ex3Zh": "他在繩子上打了個緊緊的結。"
+        "examples": [
+            {
+                "en": "The sailors made sure to tie a strong knot to secure the cargo on the ship's deck.",
+                "zh": "水手們確保打了一個牢固的繩結，將貨物固定在船的甲板上。"
+            },
+            {
+                "en": "I could feel a tight knot of anxiety in my stomach before the performance review began.",
+                "zh": "在績效評估開始前，我能感覺到胃裡因焦慮而緊緊揪在一起（打結）。"
+            },
+            {
+                "en": "The dispute over the contract terms proved to be a difficult knot to untangle for the legal team.",
+                "zh": "對於法務團隊來說，合約條款的爭議證明是一個難以解開的死結。"
+            },
+            {
+                "en": "He loosened the knot of his tie as soon as the long and exhausting meeting was over.",
+                "zh": "漫長而疲憊的會議一結束，他就鬆開了領帶的結。"
+            },
+            {
+                "en": "Learning to tie different types of knots is an essential skill for anyone joining the sailing club.",
+                "zh": "學習打不同種類的結是任何加入帆船俱樂部的人必備的技能。"
+            }
+        ]
     },
     {
-        "id": 56,
+        "id": 16,
         "word": "litter",
         "meaning": "隨手丟棄垃圾；亂丟垃圾",
         "mastered": false,
-        "ex1En": "People who drop litter can be fined in some cities.",
-        "ex1Zh": "在某些城市亂丟垃圾的人會被罰款。",
-        "ex2En": "The sign says, \"Please Don't litter.\"",
-        "ex2Zh": "告示上寫著「請勿亂丟垃圾」。",
-        "ex3En": "The park is littered with rubbish.",
-        "ex3Zh": "公園裡滿地垃圾。"
+        "examples": [
+            {
+                "en": "The municipal government imposed a heavy fine on citizens who carelessly litter in public parks.",
+                "zh": "市政府對在公園內隨手亂丟垃圾的市民處以重罰。"
+            },
+            {
+                "en": "Volunteers spent the entire weekend picking up litter along the beach to protect marine life.",
+                "zh": "志工們花了整個週末在海灘上撿拾垃圾，以保護海洋生物。"
+            },
+            {
+                "en": "We have placed recycling bins in every corner of the office to discourage employees from littering.",
+                "zh": "我們在辦公室的每個角落都放置了資源回收桶，以勸阻員工亂丟垃圾。"
+            },
+            {
+                "en": "The streets were completely covered with promotional litter after the parade finished.",
+                "zh": "遊行結束後，街道上完全覆蓋了宣傳用的廢棄物。"
+            },
+            {
+                "en": "If you continue to litter in the company parking lot, you will receive a formal warning from HR.",
+                "zh": "如果你繼續在公司停車場亂丟垃圾，你將收到人資部門的正式警告。"
+            }
+        ]
     },
     {
-        "id": 57,
+        "id": 17,
         "word": "mall",
         "meaning": "大型購物中心",
         "mastered": false,
-        "ex1En": "Let's meet at the mall.",
-        "ex1Zh": "我們在購物中心碰面吧！",
-        "ex2En": "The new mall has over two hundred shops.",
-        "ex2Zh": "新購物中心有超過兩百家商店。",
-        "ex3En": "She spent the whole afternoon shopping at the mall.",
-        "ex3Zh": "她整個下午都在購物中心逛街。"
+        "examples": [
+            {
+                "en": "The retail store in the new shopping mall is generating higher revenue than initially expected.",
+                "zh": "位於新大型購物中心的零售店所產生的收入高於最初的預期。"
+            },
+            {
+                "en": "She prefers doing all her holiday shopping at the local mall because it is very convenient.",
+                "zh": "她喜歡在當地的大型購物中心進行所有的節日採購，因為那非常方便。"
+            },
+            {
+                "en": "The property developer plans to build a massive mall that includes a cinema and a food court.",
+                "zh": "房地產開發商計畫建造一個包含電影院和美食街的大型購物中心。"
+            },
+            {
+                "en": "Our company will set up a promotional booth right in the center of the busiest mall in town.",
+                "zh": "我們公司將在鎮上最繁忙的購物中心正中央設立一個宣傳攤位。"
+            },
+            {
+                "en": "Despite the rise of e-commerce, the indoor mall still attracts thousands of visitors every weekend.",
+                "zh": "儘管電子商務興起，這座室內購物中心每週末仍吸引數千名遊客。"
+            }
+        ]
     },
     {
-        "id": 58,
+        "id": 18,
         "word": "marvelous",
         "meaning": "令人驚嘆的、不可思議的",
         "mastered": false,
-        "ex1En": "The Great Wall is a marvelous architectural feat.",
-        "ex1Zh": "萬里長城是個令人驚嘆的建築。",
-        "ex2En": "We had a marvelous time at the party.",
-        "ex2Zh": "我們在派對上玩得很痛快。",
-        "ex3En": "The weather today is just marvelous.",
-        "ex3Zh": "今天的天氣真是太棒了。"
+        "examples": [
+            {
+                "en": "The marketing team did a marvelous job organizing the international trade fair on such short notice.",
+                "zh": "行銷團隊在如此短的通知時間內籌辦國際貿易博覽會，表現得非常出色（令人驚嘆）。"
+            },
+            {
+                "en": "The new software application offers a marvelous user experience that sets it apart from competitors.",
+                "zh": "這款新的軟體應用程式提供了令人驚嘆的使用者體驗，使其在競爭對手中脫穎而出。"
+            },
+            {
+                "en": "We had a marvelous time celebrating the company's twentieth anniversary at the luxury resort.",
+                "zh": "我們在豪華度假村慶祝公司成立二十週年，度過了一段不可思議的美好時光。"
+            },
+            {
+                "en": "The CEO delivered a marvelous speech that inspired all employees to strive for excellence.",
+                "zh": "執行長發表了一場令人驚嘆的演講，激勵所有員工追求卓越。"
+            },
+            {
+                "en": "The panoramic view of the city skyline from the executive boardroom is simply marvelous.",
+                "zh": "從高階主管會議室看出去的城市天際線全景簡直不可思議。"
+            }
+        ]
     },
     {
-        "id": 59,
+        "id": 19,
         "word": "medal",
         "meaning": "獎牌；銀/銅牌",
         "mastered": false,
-        "ex1En": "She won a gold medal at the last Olympics.",
-        "ex1Zh": "她在上屆奧運贏得一面金牌。",
-        "ex2En": "The silver medal and the bronze medal go to Jane and Jack respectively.",
-        "ex2Zh": "銀牌與銅牌得主分別為珍與傑克。",
-        "ex3En": "He proudly displayed his military medals.",
-        "ex3Zh": "他驕傲地展示他的軍事勳章。"
+        "examples": [
+            {
+                "en": "The athlete's dedication and hard work finally earned him a gold medal at the Olympic games.",
+                "zh": "這位運動員的奉獻和努力終於為他贏得了奧運金牌。"
+            },
+            {
+                "en": "To recognize her outstanding sales performance, the company awarded her a commemorative medal.",
+                "zh": "為了表彰她出色的銷售業績，公司頒發給她一枚紀念獎牌。"
+            },
+            {
+                "en": "The military veteran proudly wore his medals on his uniform during the memorial service.",
+                "zh": "退伍軍人在追悼會上自豪地在制服上佩戴著他的獎牌。"
+            },
+            {
+                "en": "Our local branch won the silver medal in the national customer service excellence competition.",
+                "zh": "我們當地分公司在全國卓越客戶服務競賽中獲得了銀牌。"
+            },
+            {
+                "en": "A bronze medal was given to the third-place finisher in the annual corporate marathon.",
+                "zh": "年度企業馬拉松的第三名完賽者獲頒一枚銅牌。"
+            }
+        ]
     },
     {
-        "id": 60,
+        "id": 20,
         "word": "merry",
         "meaning": "歡樂的；旋轉木馬",
         "mastered": false,
-        "ex1En": "I wish you a merry Christmas.",
-        "ex1Zh": "祝你耶誕快樂。",
-        "ex2En": "We went for a ride on the merry-go-round.",
-        "ex2Zh": "我們去坐旋轉木馬。",
-        "ex3En": "The sound of merry laughter filled the room.",
-        "ex3Zh": "歡樂的笑聲充滿了整個房間。"
+        "examples": [
+            {
+                "en": "The office was filled with a merry atmosphere as everyone exchanged gifts before the holiday break.",
+                "zh": "在假期前大家交換禮物時，辦公室裡充滿了歡樂的氣氛。"
+            },
+            {
+                "en": "We wish all our valued clients and business partners a very merry Christmas and a prosperous New Year.",
+                "zh": "我們祝願所有尊貴的客戶和商業夥伴度過一個歡樂的聖誕節和繁榮的新年。"
+            },
+            {
+                "en": "The team went out for a few drinks after work, completely merry and relaxed after closing the deal.",
+                "zh": "團隊下班後出去喝了幾杯，在完成交易後感到完全歡樂和放鬆。"
+            },
+            {
+                "en": "The amusement park featured a beautifully decorated merry-go-round that attracted many young families.",
+                "zh": "遊樂園裡設有裝飾精美的旋轉木馬，吸引了許多有小孩的家庭。"
+            },
+            {
+                "en": "A merry tune played softly in the background of the boutique, making shoppers feel welcomed.",
+                "zh": "精品店背景輕柔地播放著歡樂的曲調，讓購物者感到賓至如歸。"
+            }
+        ]
     },
     {
-        "id": 61,
+        "id": 21,
         "word": "microphone",
         "meaning": "麥克風",
         "mastered": false,
-        "ex1En": "She spoke confidently into the microphone.",
-        "ex1Zh": "她自信地對著麥克風說話。",
-        "ex2En": "The singer adjusted the microphone stand.",
-        "ex2Zh": "歌手調整了麥克風架。",
-        "ex3En": "Please speak into the microphone so everyone can hear you.",
-        "ex3Zh": "請對著麥克風說話，這樣大家才能聽見。"
+        "examples": [
+            {
+                "en": "Please ensure your microphone is muted when you are not speaking during the conference call.",
+                "zh": "在視訊會議中，不發言時請確保您的麥克風處於靜音狀態。"
+            },
+            {
+                "en": "The wireless microphone was handed to the audience member for the Q&A session.",
+                "zh": "在問答環節中，無線麥克風被遞給了觀眾。"
+            },
+            {
+                "en": "The technician replaced the faulty microphone just minutes before the live broadcast.",
+                "zh": "技師在現場直播前幾分鐘更換了故障的麥克風。"
+            },
+            {
+                "en": "Speak clearly into the microphone so that everyone in the auditorium can hear you.",
+                "zh": "請對著麥克風清晰地說話，以便禮堂裡的每個人都能聽見。"
+            },
+            {
+                "en": "We need to purchase a new directional microphone to improve the audio quality of our promotional videos.",
+                "zh": "我們需要購買一個新的指向性麥克風，以提升宣傳影片的音訊品質。"
+            }
+        ]
     },
     {
-        "id": 62,
+        "id": 22,
         "word": "microwave",
         "meaning": "微波；微波加熱",
         "mastered": false,
-        "ex1En": "I always heat up my lunch in the microwave oven.",
-        "ex1Zh": "我都用微波爐加熱便當。",
-        "ex2En": "Some foods taste terrible after they are microwaved.",
-        "ex2Zh": "有些食物微波之後很難吃。",
-        "ex3En": "Microwave cooking is fast and convenient.",
-        "ex3Zh": "微波爐烹調快速又便利。"
+        "examples": [
+            {
+                "en": "Employees often use the microwave in the break room to heat up their lunches.",
+                "zh": "員工們經常使用休息室裡的微波爐來加熱午餐。"
+            },
+            {
+                "en": "Do not place any metal objects in the microwave, as they can cause severe damage.",
+                "zh": "請勿將任何金屬物品放入微波爐中，因為它們會造成嚴重的損壞。"
+            },
+            {
+                "en": "The newly released microwave oven features advanced defrosting and reheating technology.",
+                "zh": "最新推出的微波爐配備了先進的解凍與加熱技術。"
+            },
+            {
+                "en": "She quickly microwaved the leftover pizza before heading out for the afternoon meeting.",
+                "zh": "她在出門參加下午的會議前，迅速把剩下的披薩微波加熱了一下。"
+            },
+            {
+                "en": "Microwave communications are widely utilized in modern cellular networks and satellite transmissions.",
+                "zh": "微波通訊廣泛應用於現代行動網路與衛星傳輸中。"
+            }
+        ]
     },
     {
-        "id": 63,
+        "id": 23,
         "word": "nap",
         "meaning": "小睡",
         "mastered": false,
-        "ex1En": "I often take a nap after lunch.",
-        "ex1Zh": "我常在午餐後小睡片刻。",
-        "ex2En": "Children under two nap both in the morning and in the afternoon.",
-        "ex2Zh": "兩歲以下的小孩早上和下午都會小睡一下。",
-        "ex3En": "The old man is napping in his armchair.",
-        "ex3Zh": "老人正在他的扶手椅上打盹。"
+        "examples": [
+            {
+                "en": "Taking a short nap during the lunch break can significantly boost employee productivity.",
+                "zh": "在午休時間稍微小睡一下，能顯著提升員工的生產力。"
+            },
+            {
+                "en": "He often naps for twenty minutes in the afternoon to refresh his mind for the upcoming negotiations.",
+                "zh": "他經常在下午小睡二十分鐘，讓頭腦清醒以準備接下來的談判。"
+            },
+            {
+                "en": "The company has set up designated nap pods for staff members working long shifts.",
+                "zh": "公司為輪值長班的員工設立了專門的小睡艙。"
+            },
+            {
+                "en": "After catching a quick nap on the flight, she felt ready to tackle the business schedule.",
+                "zh": "在飛機上短暫小睡後，她覺得已經準備好應對商務行程了。"
+            },
+            {
+                "en": "He was caught napping by his supervisor during the important strategy presentation.",
+                "zh": "在重要的策略簡報中，他被主管抓到在打瞌睡。"
+            }
+        ]
     },
     {
-        "id": 64,
+        "id": 24,
         "word": "collar",
         "meaning": "衣領；領帶；白領/藍領",
         "mastered": false,
-        "ex1En": "The wind was so cold that he turned his coat collar up.",
-        "ex1Zh": "風太冷了，所以他把外套的領子立起來。",
-        "ex2En": "Our general manager always wears a necktie at work.",
-        "ex2Zh": "我們總經理總是打著領帶上班。",
-        "ex3En": "Government statistics show that hourly earnings of white-collar workers are about 30% higher than those of blue-collar workers.",
-        "ex3Zh": "政府統計資料顯示，白領階級的時薪比藍領階級高三成。"
+        "examples": [
+            {
+                "en": "The shift toward remote work has fundamentally changed expectations for white-collar employees.",
+                "zh": "遠距工作的趨勢已徹底改變了對白領員工的期望。"
+            },
+            {
+                "en": "Make sure your shirt collar is neatly pressed before you attend the job interview.",
+                "zh": "參加工作面試前，請確保你的襯衫衣領熨燙平整。"
+            },
+            {
+                "en": "The suspect was collared by the police just outside the abandoned warehouse.",
+                "zh": "嫌犯在廢棄倉庫外被警方當場逮捕（抓住衣領）。"
+            },
+            {
+                "en": "Many blue-collar workers in the manufacturing sector are demanding better safety regulations.",
+                "zh": "製造業中的許多藍領工人正要求制定更好的安全法規。"
+            },
+            {
+                "en": "She wore a classic wool coat with a faux fur collar to the annual corporate gala.",
+                "zh": "她穿著一件帶有人造毛領的經典羊毛大衣參加公司的年度晚會。"
+            }
+        ]
     },
     {
-        "id": 65,
+        "id": 25,
         "word": "pal",
         "meaning": "朋友、哥兒們",
         "mastered": false,
-        "ex1En": "I am so happy to see my old pal Martin.",
-        "ex1Zh": "我高興要與老友馬丁碰面了。",
-        "ex2En": "Hi, pal, please keep your voice down.",
-        "ex2Zh": "嗨，兄弟，說話請小聲點。",
-        "ex3En": "They have been best pals since childhood.",
-        "ex3Zh": "他們從小就是最好的朋友。"
+        "examples": [
+            {
+                "en": "He started the innovative tech startup with his college pal ten years ago.",
+                "zh": "十年前，他與大學時期的哥兒們一起創辦了這家創新的科技新創公司。"
+            },
+            {
+                "en": "My old pen pal from Japan will be visiting our headquarters next week.",
+                "zh": "我以前在日本的筆友下週將會來參訪我們的總部。"
+            },
+            {
+                "en": "It's always helpful to have a reliable pal in the marketing department to bounce ideas off.",
+                "zh": "在行銷部門有個可靠的朋友能互相討論想法總是很有幫助。"
+            },
+            {
+                "en": "They have been close pals since childhood and eventually became business partners.",
+                "zh": "他們從小就是親密的好友，最終成為了商業夥伴。"
+            },
+            {
+                "en": "Hey pal, could you please pass me the quarterly financial report on your desk?",
+                "zh": "嘿老兄，能請你把桌上那份季度財務報告遞給我嗎？"
+            }
+        ]
     },
     {
-        "id": 66,
+        "id": 26,
         "word": "pancake",
         "meaning": "煎薄餅、鬆餅；甜甜圈",
         "mastered": false,
-        "ex1En": "Would you like your pancake with syrup or cream?",
-        "ex1Zh": "你的鬆餅要配糖漿還是奶油？",
-        "ex2En": "Most Americans like to eat doughnuts.",
-        "ex2Zh": "大部分的美國人喜歡吃甜甜圈。",
-        "ex3En": "She made a stack of pancakes for breakfast.",
-        "ex3Zh": "她做了疊鬆餅當早餐。"
+        "examples": [
+            {
+                "en": "The hotel’s breakfast buffet features freshly made pancakes with a variety of syrups.",
+                "zh": "飯店的自助早餐提供現做的煎薄餅以及各種糖漿。"
+            },
+            {
+                "en": "We decided to hold our casual morning team meeting over pancakes at the nearby diner.",
+                "zh": "我們決定在附近的餐館一邊吃鬆餅一邊進行輕鬆的早晨團隊會議。"
+            },
+            {
+                "en": "Sales of the new kitchen appliance flattened out like a pancake after the initial marketing hype faded.",
+                "zh": "在最初的行銷熱潮退去後，新廚房家電的銷量就像鬆餅一樣變得平緩（停滯不前）。"
+            },
+            {
+                "en": "She accidentally dropped a pancake on the floor while rushing to prepare breakfast for her kids.",
+                "zh": "她在趕著為孩子們準備早餐時，不小心把一塊煎薄餅掉在地上。"
+            },
+            {
+                "en": "The community center organized a pancake breakfast event to raise funds for local charities.",
+                "zh": "社區中心舉辦了一場鬆餅早餐會，為當地慈善機構籌集資金。"
+            }
+        ]
     },
     {
-        "id": 67,
+        "id": 27,
         "word": "parcel",
         "meaning": "包裹；打包",
         "mastered": false,
-        "ex1En": "The parcel was wrapped in plain brown paper.",
-        "ex1Zh": "那個包裹用普通的牛皮紙包著。",
-        "ex2En": "She parceled the letters and put them in the drawer.",
-        "ex2Zh": "她將信件紮好並放進抽屜。",
-        "ex3En": "He parceled some food for the picnic in the afternoon.",
-        "ex3Zh": "他為了下午的野餐包了一些食物。"
+        "examples": [
+            {
+                "en": "The logistics company guarantees that every parcel will be delivered within two business days.",
+                "zh": "這家物流公司保證每個包裹都會在兩個工作天內送達。"
+            },
+            {
+                "en": "Please ensure the fragile items are carefully parceled up before handing them to the courier.",
+                "zh": "在交給快遞員之前，請確保易碎物品已經小心打包好。"
+            },
+            {
+                "en": "We received a mysterious parcel at the front desk with no return address.",
+                "zh": "我們在櫃檯收到了一個沒有寄件地址的神秘包裹。"
+            },
+            {
+                "en": "Dealing with customer complaints is part and parcel of working in the service industry.",
+                "zh": "處理客戶投訴是服務業工作中不可或缺的一部分。"
+            },
+            {
+                "en": "The developer purchased a large parcel of land to build a new commercial complex.",
+                "zh": "開發商購買了一大塊土地（地塊），準備興建新的商業綜合體。"
+            }
+        ]
     },
     {
-        "id": 68,
+        "id": 28,
         "word": "passport",
         "meaning": "護照",
         "mastered": false,
-        "ex1En": "He was a German, traveling on a Swiss passport.",
-        "ex1Zh": "他是德國人，持瑞士護照旅行。",
-        "ex2En": "You must show your passport at the border crossing.",
-        "ex2Zh": "你必須在過境時出示護照。",
-        "ex3En": "She applied for a new passport last week.",
-        "ex3Zh": "她上週申請了新護照。"
+        "examples": [
+            {
+                "en": "You must ensure your passport is valid for at least six months prior to international travel.",
+                "zh": "在進行國際旅行前，您必須確保護照至少有六個月的效期。"
+            },
+            {
+                "en": "The border control officer stamped his passport after verifying his visa documents.",
+                "zh": "邊境管制官員在核對了他的簽證文件後，在他的護照上蓋了章。"
+            },
+            {
+                "en": "A strong command of English can often be a passport to a successful international career.",
+                "zh": "精通英語往往是邁向成功國際職業生涯的通行證。"
+            },
+            {
+                "en": "She rushed to the embassy to renew her expired passport before the business trip to Europe.",
+                "zh": "在前往歐洲出差前，她趕到大使館更新了過期的護照。"
+            },
+            {
+                "en": "Keep your passport and boarding pass easily accessible while navigating the airport security checkpoint.",
+                "zh": "在通過機場安檢時，請將您的護照和登機證放在容易拿取的地方。"
+            }
+        ]
     },
     {
-        "id": 69,
+        "id": 29,
         "word": "pity",
         "meaning": "同情；遺憾的事；自憐；可憐的",
         "mastered": false,
-        "ex1En": "I pity her for having to work while we are on vacation.",
-        "ex1Zh": "我同情她在我們度假的時候必須工作。",
-        "ex2En": "It's a pity that I cannot attend this conference.",
-        "ex2Zh": "很遺憾，我不能參加這場學術研討會。",
-        "ex3En": "Stop indulging in self-pity for yourself.",
-        "ex3Zh": "別沉浸在自艾自憐中了。"
+        "examples": [
+            {
+                "en": "It is a great pity that the CEO decided to resign just before the product launch.",
+                "zh": "執行長在產品發布前決定辭職，真是一件非常遺憾的事。"
+            },
+            {
+                "en": "She felt a deep sense of pity for the workers who lost their jobs due to the factory closure.",
+                "zh": "她對那些因工廠關閉而失業的工人感到深深的同情。"
+            },
+            {
+                "en": "Stop wallowing in self-pity and start taking proactive steps to improve your career prospects.",
+                "zh": "別再沉溺於自憐中，開始採取積極的步驟來改善你的職業前景吧。"
+            },
+            {
+                "en": "He took pity on the stray dog sheltering in the rain and brought it into his office.",
+                "zh": "他對那隻在雨中躲避的流浪狗心生憐憫，並把它帶進了辦公室。"
+            },
+            {
+                "en": "The board showed no pity towards the manager who embezzled company funds.",
+                "zh": "董事會對挪用公司資金的經理毫不留情。"
+            }
+        ]
     },
     {
-        "id": 70,
+        "id": 30,
         "word": "pollute",
         "meaning": "汙染；汙染物",
         "mastered": false,
-        "ex1En": "His mind is polluted by hatred.",
-        "ex1Zh": "仇恨汙染了他的心智。",
-        "ex2En": "Air pollution is a serious problem in modern cities.",
-        "ex2Zh": "現代城市中的空氣汙染損害大。",
-        "ex3En": "Exhaust fumes from vehicles are the major air pollutant.",
-        "ex3Zh": "車輛排放的廢氣是最主要的空氣汙染物。"
+        "examples": [
+            {
+                "en": "The manufacturing plant was heavily fined for polluting the nearby river with industrial waste.",
+                "zh": "那家製造廠因工業廢料嚴重汙染附近河流而被處以巨額罰款。"
+            },
+            {
+                "en": "The continuous emission of exhaust gases from cars heavily pollutes the urban air.",
+                "zh": "汽車不斷排放的廢氣嚴重汙染了城市空氣。"
+            },
+            {
+                "en": "Strict environmental regulations have been introduced to prevent corporations from polluting the groundwater.",
+                "zh": "政府出台了嚴格的環保法規，以防止企業汙染地下水。"
+            },
+            {
+                "en": "We must adopt sustainable energy solutions to reduce the amount of greenhouse gases that pollute our atmosphere.",
+                "zh": "我們必須採用永續能源方案，以減少汙染我們大氣層的溫室氣體量。"
+            },
+            {
+                "en": "The toxic spill severely polluted the coastal ecosystem, causing massive damage to local fisheries.",
+                "zh": "有毒物質外洩嚴重汙染了沿海生態系統，對當地漁業造成巨大損害。"
+            }
+        ]
     },
     {
-        "id": 71,
+        "id": 31,
         "word": "rot",
         "meaning": "腐壞；爛到底",
         "mastered": false,
-        "ex1En": "Rain has got in and rotted the woodwork.",
-        "ex1Zh": "雨水滲進來，腐蝕了木造的部分。",
-        "ex2En": "Remove decaying vegetables to prevent rot from spreading.",
-        "ex2Zh": "移除腐爛的蔬菜，以防腐壞情況擴散。",
-        "ex3En": "He is rotten to the core.",
-        "ex3Zh": "他真是壞到骨子裡了。"
+        "examples": [
+            {
+                "en": "If you leave the fruits in the damp warehouse for too long, they will inevitably start to rot.",
+                "zh": "如果你把水果放在潮濕的倉庫裡太久，它們不可避免地會開始腐壞。"
+            },
+            {
+                "en": "The structural beams of the old office building had rotted away over decades of neglect.",
+                "zh": "由於幾十年的疏忽，這棟舊辦公大樓的結構樑柱已經腐爛。"
+            },
+            {
+                "en": "Corruption has caused the administration of the company to rot from the inside out.",
+                "zh": "貪污腐敗已經導致該公司的管理階層從內部徹底爛到底。"
+            },
+            {
+                "en": "The investors were disappointed to discover that the financial core of the startup was entirely rotten.",
+                "zh": "投資者失望地發現，這家新創公司的財務核心已經徹底腐敗。"
+            },
+            {
+                "en": "Without proper preservation methods, the perishable goods will rot before they reach the overseas market.",
+                "zh": "如果沒有適當的保存方法，易腐爛的貨物在運抵海外市場前就會腐壞。"
+            }
+        ]
     },
     {
-        "id": 72,
+        "id": 32,
         "word": "rust",
         "meaning": "鐵鏽；生鏽",
         "mastered": false,
-        "ex1En": "The spade was covered with rust.",
-        "ex1Zh": "那鏟子上布滿鐵鏽。",
-        "ex2En": "Iron rusts easily.",
-        "ex2Zh": "鐵容易生鏽。",
-        "ex3En": "The old gate has rusted shut.",
-        "ex3Zh": "舊鐵門生鏽卡住關不上了。"
+        "examples": [
+            {
+                "en": "The abandoned factory machines had accumulated a thick layer of rust over the years.",
+                "zh": "那些被廢棄的工廠機器多年來累積了一層厚厚的鐵鏽。"
+            },
+            {
+                "en": "If we don't apply a protective coating, the outdoor metal furniture will quickly rust in this humid climate.",
+                "zh": "如果不塗上保護層，戶外的金屬傢俱在這種潮濕氣候下很快就會生鏽。"
+            },
+            {
+                "en": "My programming skills have gotten a bit rusty after working in management for five years.",
+                "zh": "在從事管理工作五年後，我的程式設計技能已經有點生疏（生鏽）了。"
+            },
+            {
+                "en": "The mechanic used a specialized chemical solvent to remove the rust from the vintage car's engine.",
+                "zh": "技師使用了一種專門的化學溶劑來清除這輛骨董車引擎上的鐵鏽。"
+            },
+            {
+                "en": "Stainless steel is widely preferred in medical equipment because it does not easily rust.",
+                "zh": "不鏽鋼在醫療設備中廣受青睞，因為它不容易生鏽。"
+            }
+        ]
     },
     {
-        "id": 73,
+        "id": 33,
         "word": "sack",
         "meaning": "大袋子",
         "mastered": false,
-        "ex1En": "The corn was stored in large sacks.",
-        "ex1Zh": "玉米被存放在大袋子裡。",
-        "ex2En": "He carried a heavy sack of potatoes on his back.",
-        "ex2Zh": "他背上背著一大袋沉重的馬鈴薯。",
-        "ex3En": "The workers filled the sacks with sand to block the flood.",
-        "ex3Zh": "工人用沙填滿袋子來防洪。"
+        "examples": [
+            {
+                "en": "The warehouse workers loaded heavy sacks of coffee beans onto the delivery truck.",
+                "zh": "倉庫工人將一袋袋沉重的咖啡豆裝載到送貨卡車上。"
+            },
+            {
+                "en": "He was unexpectedly sacked from his managerial position following the corporate restructuring.",
+                "zh": "在公司重組後，他出乎意料地被解雇（炒魷魚）了其經理職位。"
+            },
+            {
+                "en": "We bought a large sack of potatoes from the local farmers' market for the restaurant.",
+                "zh": "我們從當地的農夫市集為餐廳買了一大袋馬鈴薯。"
+            },
+            {
+                "en": "After a grueling 12-hour shift, she was exhausted and just wanted to hit the sack.",
+                "zh": "在經歷了漫長且折磨人的12小時輪班後，她筋疲力盡，只想上床睡覺。"
+            },
+            {
+                "en": "The contractor carried his tools in a sturdy canvas sack while working on the construction site.",
+                "zh": "承包商在建築工地工作時，用一個堅固的帆布大袋子裝著他的工具。"
+            }
+        ]
     },
     {
-        "id": 74,
+        "id": 34,
         "word": "shampoo",
         "meaning": "洗髮精；洗頭；肥皂劇",
         "mastered": false,
-        "ex1En": "You need a gentle shampoo for your baby's fine hair.",
-        "ex1Zh": "你需要溫和的洗髮精來清潔寶寶柔細的頭髮。",
-        "ex2En": "We should wash hands with soap before eating.",
-        "ex2Zh": "我們吃東西前應該用肥皂洗手。",
-        "ex3En": "Many housewives enjoy watching soap operas.",
-        "ex3Zh": "許多家庭主婦喜歡看肥皂劇。"
+        "examples": [
+            {
+                "en": "The cosmetic brand launched a new line of organic shampoo that promotes hair growth.",
+                "zh": "這家化妝品品牌推出了一款能促進頭髮生長的全新有機洗髮精系列。"
+            },
+            {
+                "en": "Hotel guests are provided with complimentary toiletries, including shampoo, conditioner, and body wash.",
+                "zh": "飯店為客人提供免費的盥洗用品，包含洗髮精、潤髮乳和沐浴乳。"
+            },
+            {
+                "en": "She decided to shampoo her hair thoroughly before attending the formal gala dinner.",
+                "zh": "她決定在參加正式晚宴前，把頭髮徹底洗乾淨。"
+            },
+            {
+                "en": "This particular formula of shampoo is highly recommended for people with sensitive scalps.",
+                "zh": "這款特殊配方的洗髮精極力推薦給頭皮敏感的人使用。"
+            },
+            {
+                "en": "The supermarket is currently running a buy-one-get-one-free promotion on all imported shampoos.",
+                "zh": "這家超市目前正在對所有進口洗髮精進行買一送一的促銷活動。"
+            }
+        ]
     },
     {
-        "id": 75,
+        "id": 35,
         "word": "shepherd",
         "meaning": "牧羊人；牧羊犬",
         "mastered": false,
-        "ex1En": "The shepherd herds his sheep down the mountain.",
-        "ex1Zh": "牧羊人驅趕綿羊下山。",
-        "ex2En": "A sheepdog can do twenty shepherds' job.",
-        "ex2Zh": "一隻牧羊犬可以做二十個牧羊人的工作。",
-        "ex3En": "The Lord is my shepherd; I shall not want.",
-        "ex3Zh": "耶和華是我的牧者，我必不致缺乏。"
+        "examples": [
+            {
+                "en": "The experienced project manager shepherded the inexperienced team through the complex software implementation.",
+                "zh": "經驗豐富的專案經理引導（帶領）著缺乏經驗的團隊完成了複雜的軟體導入。"
+            },
+            {
+                "en": "A German Shepherd is widely regarded as an excellent breed for police and security work.",
+                "zh": "德國牧羊犬被廣泛認為是警察和保全工作的優良犬種。"
+            },
+            {
+                "en": "The old shepherd carefully guided his flock of sheep back to the pen before the storm arrived.",
+                "zh": "老牧羊人在暴風雨來臨前，小心翼翼地將他的羊群趕回羊圈。"
+            },
+            {
+                "en": "The human resources director skillfully shepherded the new corporate policy through the board of directors.",
+                "zh": "人力資源總監巧妙地引導新的公司政策通過了董事會的審查。"
+            },
+            {
+                "en": "He relied on his loyal shepherd dog to guard the farm against potential predators at night.",
+                "zh": "他依靠忠誠的牧羊犬在夜間守護農場，防範潛在的掠食者。"
+            }
+        ]
     },
     {
-        "id": 76,
+        "id": 36,
         "word": "slip",
         "meaning": "滑倒；滑落；溜走；紙片；拖鞋；滑的",
         "mastered": false,
-        "ex1En": "The ground was so wet that I almost slipped.",
-        "ex1Zh": "地上很溼，我差一點滑倒。",
-        "ex2En": "The glass slipped out of my hand and smashed on the floor.",
-        "ex2Zh": "玻璃杯從我手中滑落，碎了一地。",
-        "ex3En": "Even when walking on the carpet, I still have my slippers on.",
-        "ex3Zh": "我即使走在地毯上，還是穿著拖鞋。"
+        "examples": [
+            {
+                "en": "The deadline completely slipped my mind because I was overwhelmed with other urgent tasks.",
+                "zh": "因為我被其他緊急任務淹沒，所以把截止日期完全拋諸腦後了。"
+            },
+            {
+                "en": "Be cautious walking in the lobby, as the freshly mopped marble floor is very slippery.",
+                "zh": "在大廳行走時請小心，因為剛拖過的大理石地板非常滑。"
+            },
+            {
+                "en": "Please write your contact details on this small slip of paper and hand it to the receptionist.",
+                "zh": "請將您的聯絡資訊寫在這張小紙片上，然後交給接待員。"
+            },
+            {
+                "en": "Despite his best efforts, the lucrative contract managed to slip through his fingers to a competitor.",
+                "zh": "儘管他盡了最大努力，那份利潤豐厚的合約還是從他指尖溜走，落入競爭對手手中。"
+            },
+            {
+                "en": "The employee slipped on the wet floor and subsequently filed a workers' compensation claim.",
+                "zh": "該員工在溼滑的地板上滑倒，隨後提出了勞工賠償申請。"
+            }
+        ]
     },
     {
-        "id": 77,
+        "id": 37,
         "word": "sorrow",
         "meaning": "悲傷",
         "mastered": false,
-        "ex1En": "He expressed his sorrow at my father's death.",
-        "ex1Zh": "他對我父親的去世表達哀悼之情。",
-        "ex2En": "She hid her sorrow behind a forced smile.",
-        "ex2Zh": "她用強顏歡笑掩飾她的悲傷。",
-        "ex3En": "Time heals all sorrows.",
-        "ex3Zh": "時間會撫平所有的悲傷。"
+        "examples": [
+            {
+                "en": "The CEO expressed deep sorrow over the sudden passing of the company's brilliant co-founder.",
+                "zh": "執行長對公司傑出的聯合創始人突然離世表達了深切的悲傷。"
+            },
+            {
+                "en": "She tried to mask her sorrow with a professional smile during the client meeting.",
+                "zh": "在客戶會議中，她試圖用專業的微笑掩蓋她的悲傷。"
+            },
+            {
+                "en": "The documentary vividly depicts the pain and sorrow experienced by the refugees displaced by the conflict.",
+                "zh": "這部紀錄片生動地描繪了因衝突而流離失所的難民所經歷的痛苦與悲傷。"
+            },
+            {
+                "en": "We offer our condolences and share in your sorrow during this incredibly difficult time.",
+                "zh": "在這個極其艱難的時刻，我們向您致以哀悼，並分擔您的悲傷。"
+            },
+            {
+                "en": "After the massive layoff was announced, an atmosphere of sorrow enveloped the entire office.",
+                "zh": "在宣布大規模裁員後，整個辦公室籠罩在悲傷的氣氛中。"
+            }
+        ]
     },
     {
-        "id": 78,
+        "id": 38,
         "word": "spy",
         "meaning": "間諜；監視；看見",
         "mastered": false,
-        "ex1En": "He was suspected of having been a spy during the war.",
-        "ex1Zh": "他遭懷疑曾在戰時擔任間諜。",
-        "ex2En": "The woman hired a private detective to spy on her husband.",
-        "ex2Zh": "這名女子僱用一名私家偵探監視丈夫。",
-        "ex3En": "I spied my sister in the crowd at the entrance.",
-        "ex3Zh": "我在入口處的人群中看到我妹妹。"
+        "examples": [
+            {
+                "en": "The corporation was accused of hiring a corporate spy to steal confidential trade secrets from its rival.",
+                "zh": "該公司被指控雇傭商業間諜來竊取競爭對手的機密商業機密。"
+            },
+            {
+                "en": "Through the cracked door, the manager could spy the employees discussing the unannounced merger.",
+                "zh": "透過門縫，經理瞥見（看見）員工們正在討論未公開的合併案。"
+            },
+            {
+                "en": "The software is designed to prevent malicious hackers from spying on users' private financial transactions.",
+                "zh": "這款軟體的設計是為了防止惡意駭客監視使用者的私人財務交易。"
+            },
+            {
+                "en": "He worked undercover as a spy for years before retiring from the intelligence agency.",
+                "zh": "他在從情報機構退休前，當了多年的臥底間諜。"
+            },
+            {
+                "en": "The investigative journalist suspected that someone was spying on her electronic communications.",
+                "zh": "這位調查記者懷疑有人在監視她的電子通訊。"
+            }
+        ]
     },
     {
-        "id": 79,
+        "id": 39,
         "word": "stadium",
         "meaning": "運動場；體育館；健身房",
         "mastered": false,
-        "ex1En": "Thousands of football fans packed into the stadium to watch the game.",
-        "ex1Zh": "幾千名球迷擠進運動場來看球賽。",
-        "ex2En": "We played basketball in the gymnasium.",
-        "ex2Zh": "我們在體育館打籃球。",
-        "ex3En": "I work out in the gymnasium every day.",
-        "ex3Zh": "我每天都上健身房健身。"
+        "examples": [
+            {
+                "en": "The city invested millions of dollars to construct a state-of-the-art stadium for the upcoming international games.",
+                "zh": "這座城市投資了數百萬美元，為即將到來的國際賽事建造了一座最先進的體育場。"
+            },
+            {
+                "en": "The concert held at the newly renovated stadium attracted a massive crowd of over fifty thousand fans.",
+                "zh": "在剛翻新的體育館舉行的演唱會吸引了超過五萬名粉絲的龐大人群。"
+            },
+            {
+                "en": "Advertising billboards inside the stadium provide significant revenue for the local sports franchise.",
+                "zh": "體育場內的廣告看板為當地的運動球隊帶來了可觀的收入。"
+            },
+            {
+                "en": "Fans started gathering outside the stadium hours before the championship match officially kicked off.",
+                "zh": "在冠軍賽正式開踢前幾個小時，球迷們就開始聚集在運動場外。"
+            },
+            {
+                "en": "The stadium's retractable roof allows events to proceed smoothly regardless of severe weather conditions.",
+                "zh": "這座體育館的可伸縮屋頂讓賽事在任何惡劣天氣下都能順利進行。"
+            }
+        ]
     },
     {
-        "id": 80,
+        "id": 40,
         "word": "stool",
         "meaning": "凳子；糞便",
         "mastered": false,
-        "ex1En": "The man fetched a stool and sat with the others.",
-        "ex1Zh": "那個人拿了一把凳子和其他人坐在一起。",
-        "ex2En": "A stool test can help diagnose problems in the digestive tract.",
-        "ex2Zh": "糞便檢查有助於診斷消化道的問題。",
-        "ex3En": "The piano stool is adjustable.",
-        "ex3Zh": "琴凳是可以調整高度的。"
+        "examples": [
+            {
+                "en": "The bartender pulled up a wooden stool so the exhausted customer could rest his feet.",
+                "zh": "酒保拉過來一張木製凳子，好讓精疲力竭的顧客能歇歇腳。"
+            },
+            {
+                "en": "She stood on a small step stool to reach the binders stored on the highest shelf in the archive room.",
+                "zh": "她站在一個小踏凳上，以便拿取存放在檔案室最高層架子上的活頁夾。"
+            },
+            {
+                "en": "As part of the routine medical checkup, the doctor requested a stool sample for laboratory analysis.",
+                "zh": "作為例行健康檢查的一部分，醫生要求提供糞便樣本以進行實驗室分析。"
+            },
+            {
+                "en": "The modern kitchen island is complemented by three elegantly designed bar stools.",
+                "zh": "這座現代化的廚房中島搭配了三張設計優雅的吧台凳。"
+            },
+            {
+                "en": "He sat quietly on the piano stool, waiting for the audience to settle down before beginning his performance.",
+                "zh": "他靜靜地坐在鋼琴凳上，等待觀眾安靜下來後才開始他的表演。"
+            }
+        ]
     }
 ]

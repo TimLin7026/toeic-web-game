@@ -105,7 +105,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.2</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.4</p>
             </div>
         </div>
 
@@ -143,37 +143,16 @@
                         <div class="flex flex-col items-center my-auto w-full space-y-2.5">
                             <h2 id="card-word" class="text-3xl font-extrabold tracking-wide mb-1">spoil</h2>
                             
-                            <!-- 例句 1 (純英文 + 獨立語音) -->
-                            <div class="w-full bg-white/10 p-2.5 rounded-xl flex items-center justify-between gap-2 text-left">
-                                <p id="card-ex1-en" class="text-sm font-semibold text-indigo-100 flex-1">Don't let one mistake spoil your day.</p>
-                                <button onclick="event.stopPropagation(); playAudio(currentWords[currentIndex].ex1En);" class="p-1.5 bg-white/20 hover:bg-white/30 rounded-full transition flex-shrink-0" title="播放例句1發音">
-                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
-                                </button>
+                            <!-- 英文面例句動態容器 -->
+                            <div id="card-sentences-container-en" class="w-full space-y-2">
+                                <!-- 由 JavaScript 動態生成例句 -->
                             </div>
-
-                            <!-- 例句 2 (純英文 + 獨立語音) -->
-                            <div class="w-full bg-white/10 p-2.5 rounded-xl flex items-center justify-between gap-2 text-left">
-                                <p id="card-ex2-en" class="text-sm font-semibold text-indigo-100 flex-1">Too many cooks spoil the broth.</p>
-                                <button onclick="event.stopPropagation(); playAudio(currentWords[currentIndex].ex2En);" class="p-1.5 bg-white/20 hover:bg-white/30 rounded-full transition flex-shrink-0" title="播放例句2發音">
-                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
-                                </button>
-                            </div>
-
-                            <!-- 例句 3+ 隱藏區塊（預設收起） -->
-                            <div id="card-extra-sentences" class="hidden w-full space-y-2">
-                                <div class="w-full bg-white/10 p-2.5 rounded-xl flex items-center justify-between gap-2 text-left">
-                                    <p id="card-ex3-en" class="text-sm font-semibold text-indigo-100 flex-1"></p>
-                                    <button onclick="event.stopPropagation(); playAudio(currentWords[currentIndex].ex3En);" class="p-1.5 bg-white/20 hover:bg-white/30 rounded-full transition flex-shrink-0" title="播放例句3發音">
-                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
-                                    </button>
-                                </div>
-                            </div>
-
+ 
                             <!-- 展開更多例句按鈕 -->
                             <button id="btn-toggle-extra-ex" onclick="event.stopPropagation(); toggleExtraSentences();" class="text-[11px] text-indigo-200 hover:text-white transition underline underline-offset-2">＋ 查看更多例句</button>
                         </div>
                     </div>
-
+ 
                     <!-- 背面 (中文與中文例句) -->
                     <div class="absolute inset-0 w-full h-full bg-white text-slate-800 rounded-2xl p-5 flex flex-col justify-between backface-hidden rotate-y-180 border border-slate-100 shadow-md overflow-y-auto">
                         <div class="flex justify-between items-center">
@@ -186,17 +165,9 @@
                             <h2 id="card-meaning" class="text-2xl font-bold text-slate-700">破壞</h2>
                             <p class="text-xs font-medium text-indigo-600" id="card-word-back">spoil</p>
                             
-                            <!-- 背面中文例句 1 -->
-                            <div class="w-full bg-slate-50 p-2.5 rounded-xl text-left border border-slate-100">
-                                <p id="card-ex1-zh" class="text-xs text-slate-600 font-medium">1. 不要讓一個錯誤破壞了你的一天。</p>
-                            </div>
-                            <!-- 背面中文例句 2 -->
-                            <div class="w-full bg-slate-50 p-2.5 rounded-xl text-left border border-slate-100">
-                                <p id="card-ex2-zh" class="text-xs text-slate-600 font-medium">2. 人多手雜，反而壞事。</p>
-                            </div>
-                            <!-- 背面中文例句 3（預設隱藏，與英文面同步展開） -->
-                            <div id="card-extra-zh-sentences" class="hidden w-full bg-slate-50 p-2.5 rounded-xl text-left border border-slate-100">
-                                <p id="card-ex3-zh" class="text-xs text-slate-600 font-medium"></p>
+                            <!-- 中文面例句動態容器 -->
+                            <div id="card-sentences-container-zh" class="w-full space-y-2">
+                                <!-- 由 JavaScript 動態生成例句中文對照 -->
                             </div>
                         </div>
                         <div class="text-center text-[11px] text-slate-400">
@@ -990,25 +961,57 @@
             document.getElementById('card-word-back').textContent = wordObj.word;
             document.getElementById('card-meaning').textContent = wordObj.meaning;
             
-            document.getElementById('card-ex1-en').textContent = wordObj.ex1En;
-            document.getElementById('card-ex1-zh').textContent = wordObj.ex1Zh;
-            document.getElementById('card-ex2-en').textContent = wordObj.ex2En;
-            document.getElementById('card-ex2-zh').textContent = wordObj.ex2Zh;
+            // 動態渲染英文例句
+            const containerEn = document.getElementById('card-sentences-container-en');
+            if (containerEn) {
+                containerEn.innerHTML = '';
+                const examples = wordObj.examples || [];
+                examples.forEach((ex, idx) => {
+                    const div = document.createElement('div');
+                    div.className = `w-full bg-white/10 p-2.5 rounded-xl flex items-center justify-between gap-2 text-left ${idx >= 2 ? 'extra-sentence hidden' : ''}`;
+                    
+                    const p = document.createElement('p');
+                    p.className = "text-sm font-semibold text-indigo-100 flex-1";
+                    p.textContent = ex.en;
+                    
+                    const btn = document.createElement('button');
+                    btn.onclick = (e) => {
+                        e.stopPropagation();
+                        playAudio(ex.en);
+                    };
+                    btn.className = "p-1.5 bg-white/20 hover:bg-white/30 rounded-full transition flex-shrink-0";
+                    btn.title = `播放例句${idx + 1}發音`;
+                    btn.innerHTML = `<svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>`;
+                    
+                    div.appendChild(p);
+                    div.appendChild(btn);
+                    containerEn.appendChild(div);
+                });
+            }
 
-            // 更新 ex3（若有），並重置展開狀態（英文面 + 中文背面同步）
-            const ex3El = document.getElementById('card-ex3-en');
-            const ex3ZhEl = document.getElementById('card-ex3-zh');
-            const extraDiv = document.getElementById('card-extra-sentences');
-            const extraZhDiv = document.getElementById('card-extra-zh-sentences');
+            // 動態渲染中文例句對照
+            const containerZh = document.getElementById('card-sentences-container-zh');
+            if (containerZh) {
+                containerZh.innerHTML = '';
+                const examples = wordObj.examples || [];
+                examples.forEach((ex, idx) => {
+                    const div = document.createElement('div');
+                    div.className = `w-full bg-slate-50 p-2.5 rounded-xl text-left border border-slate-100 ${idx >= 2 ? 'extra-zh-sentence hidden' : ''}`;
+                    
+                    const p = document.createElement('p');
+                    p.className = "text-xs text-slate-600 font-medium";
+                    p.textContent = ex.zh;
+                    
+                    div.appendChild(p);
+                    containerZh.appendChild(div);
+                });
+            }
+
             const toggleExBtn = document.getElementById('btn-toggle-extra-ex');
-            if (ex3El) ex3El.textContent = wordObj.ex3En || '';
-            if (ex3ZhEl) ex3ZhEl.textContent = wordObj.ex3Zh || '';
-            if (extraDiv) extraDiv.classList.add('hidden');
-            if (extraZhDiv) extraZhDiv.classList.add('hidden');
             if (toggleExBtn) {
                 toggleExBtn.textContent = '＋ 查看更多例句';
-                // 若此單字無 ex3，隱藏按鈕
-                toggleExBtn.style.display = (wordObj.ex3En) ? '' : 'none';
+                const examples = wordObj.examples || [];
+                toggleExBtn.style.display = (examples.length > 2) ? '' : 'none';
             }
 
             document.getElementById('current-progress').textContent = `${currentWords.length}`;
@@ -1031,14 +1034,18 @@
 
         // 展開/收起更多例句
         function toggleExtraSentences() {
-            const extraDiv = document.getElementById('card-extra-sentences');
-            const extraZhDiv = document.getElementById('card-extra-zh-sentences');
+            const extraEn = document.querySelectorAll('.extra-sentence');
+            const extraZh = document.querySelectorAll('.extra-zh-sentence');
             const btn = document.getElementById('btn-toggle-extra-ex');
-            if (!extraDiv || !btn) return;
-            const isHidden = extraDiv.classList.contains('hidden');
-            extraDiv.classList.toggle('hidden', !isHidden);
-            // 中文背面同步展開/收摺
-            if (extraZhDiv) extraZhDiv.classList.toggle('hidden', !isHidden);
+            if (!btn) return;
+            
+            let isHidden = true;
+            if (extraEn.length > 0) {
+                isHidden = extraEn[0].classList.contains('hidden');
+            }
+            
+            extraEn.forEach(el => el.classList.toggle('hidden', !isHidden));
+            extraZh.forEach(el => el.classList.toggle('hidden', !isHidden));
             btn.textContent = isHidden ? '－ 收起' : '＋ 查看更多例句';
         }
 
@@ -1224,7 +1231,9 @@
             const listFilter = document.getElementById('list-filter-select').value;
 
             let data = wordsData.filter(item => {
-                const matchKeyword = item.word.toLowerCase().includes(keyword) || item.meaning.includes(keyword) || item.ex1En.toLowerCase().includes(keyword);
+                const matchKeyword = item.word.toLowerCase().includes(keyword) || 
+                                     item.meaning.includes(keyword) || 
+                                     (item.examples && item.examples.some(ex => ex.en.toLowerCase().includes(keyword)));
                 if (listFilter === 'unlearned') return matchKeyword && !item.mastered;
                 if (listFilter === 'learned') return matchKeyword && item.mastered;
                 return matchKeyword;
@@ -1237,6 +1246,7 @@
             }
 
             data.forEach((item) => {
+                const firstEx = (item.examples && item.examples[0]) ? item.examples[0].en : '';
                 const row = document.createElement('div');
                 row.className = `bg-white p-3.5 rounded-xl border ${item.mastered ? 'border-emerald-200 bg-emerald-50/20' : 'border-slate-100'} shadow-sm flex justify-between items-center transition`;
                 row.innerHTML = `
@@ -1249,7 +1259,7 @@
                                 ${item.word}
                                 ${item.mastered ? '<span class="text-[10px] bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-normal">已掌握</span>' : ''}
                             </span>
-                            <span class="text-xs text-slate-500 block">${item.meaning} - <span class="italic text-slate-400">${item.ex1En}</span></span>
+                            <span class="text-xs text-slate-500 block">${item.meaning} - <span class="italic text-slate-400">${firstEx}</span></span>
                         </div>
                     </div>
                     <button onclick="playAudio('${item.word}')" class="p-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-600 rounded-lg transition" title="播放發音">
@@ -1344,17 +1354,21 @@
             currentMastered.forEach(wordObj => {
                 const wordKey = wordObj.word.toLowerCase();
                 const passedList = passedSentences[wordKey] || [];
-                const allSentences = [
-                    { sentence: wordObj.ex1En, index: 0 },
-                    { sentence: wordObj.ex2En, index: 1 },
-                    { sentence: wordObj.ex3En, index: 2 }
-                ];
-
-                allSentences.forEach(item => {
-                    if (!passedList.includes(item.index)) {
-                        quizPool.push({ wordObj: wordObj, sentence: item.sentence, sentenceIndex: item.index });
-                    }
-                });
+                if (passedList.length < 3) {
+                    const examples = wordObj.examples || [];
+                    const indices = examples.map((_, idx) => idx);
+                    // 隨機打亂 indices 並取前 3 個
+                    indices.sort(() => Math.random() - 0.5);
+                    const selectedIndices = indices.slice(0, Math.min(3, examples.length));
+                    
+                    selectedIndices.forEach(idx => {
+                        quizPool.push({
+                            wordObj: wordObj,
+                            sentence: examples[idx].en,
+                            sentenceIndex: idx
+                        });
+                    });
+                }
             });
 
             // 2. 基於 Leitner 複習箱子選題（溫故知新複習考）：
@@ -1381,12 +1395,12 @@
                 const limit = Math.min(shuffledReview.length, 3); // 每次最多加入 3 個複習考單字
                 for (let i = 0; i < limit; i++) {
                     const reviewWordObj = shuffledReview[i];
-                    const reviewSentenceIdx = Math.floor(Math.random() * 3);
-                    const sentences = [reviewWordObj.ex1En, reviewWordObj.ex2En, reviewWordObj.ex3En];
+                    const examples = reviewWordObj.examples || [];
+                    const reviewSentenceIdx = Math.floor(Math.random() * examples.length);
                     
                     quizPool.push({
                         wordObj: reviewWordObj,
-                        sentence: sentences[reviewSentenceIdx],
+                        sentence: examples[reviewSentenceIdx].en,
                         sentenceIndex: reviewSentenceIdx,
                         isReview: true
                     });
@@ -1474,10 +1488,14 @@
                     sentence = sentence.replace(inflectedRegex, `_____${suffix}`);
                     currentItem.inflectedWord = found.inflected; // 儲存以供驗題
                 } else {
-                    // 情況 3：完全無法匹配 → 顯示中文翻譯作線索
-                    const zhMap = [currentItem.wordObj.ex1Zh, currentItem.wordObj.ex2Zh, currentItem.wordObj.ex3Zh];
-                    const zhHint = zhMap[currentItem.sentenceIndex] || currentItem.wordObj.ex1Zh || '';
-                    sentence = `📌 根據中文語義填入英文單字：「${zhHint}」`;
+                    // 情況 3：後備直接模糊替換單字部分，確保例句一律以英文呈現
+                    const fuzzyRegex = new RegExp(targetWord, 'gi');
+                    if (sentence.match(fuzzyRegex)) {
+                        sentence = sentence.replace(fuzzyRegex, '_____');
+                    } else {
+                        // 若真的完全找不到（極罕見），則在單字外圍加底線呈現
+                        sentence = sentence + ` (_____ / ${targetWord})`;
+                    }
                     currentItem.inflectedWord = null;
                 }
             }
@@ -1523,8 +1541,8 @@
             if (zhHint && zhHintText) {
                 if (lives === 1 && quizPool[quizIndex]) {
                     const item = quizPool[quizIndex];
-                    const zhMap = [item.wordObj.ex1Zh, item.wordObj.ex2Zh, item.wordObj.ex3Zh];
-                    const zh = zhMap[item.sentenceIndex] || item.wordObj.ex1Zh || '';
+                    const examples = item.wordObj.examples || [];
+                    const zh = examples[item.sentenceIndex] ? examples[item.sentenceIndex].zh : '';
                     if (zh) {
                         zhHintText.textContent = zh;
                         zhHint.classList.remove('hidden');
