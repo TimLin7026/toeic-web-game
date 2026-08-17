@@ -18,20 +18,7 @@
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between">
 
     <!-- 頁首：置中集中功能列 -->
-    <header class="bg-white shadow-sm py-3 px-6 sticky top-0 z-10 flex flex-col md:flex-row justify-center items-center gap-3">
-        <div class="text-center md:text-left flex flex-col gap-1">
-            <div class="flex items-center justify-center md:justify-start gap-1.5">
-                <span id="book-title" class="text-sm font-bold text-indigo-600 hover:underline cursor-pointer" onclick="showBookSelectModal()">載入中...</span>
-                <button onclick="showBookSelectModal()" class="text-[9px] bg-slate-100 hover:bg-slate-200 text-slate-500 px-1 py-0.5 rounded transition">更換教材</button>
-            </div>
-            <div class="flex items-center justify-center md:justify-start gap-2">
-                <select id="unit-select" onchange="changeUnit(parseInt(this.value))" class="text-[11px] font-semibold bg-slate-50 border border-slate-200 rounded px-1 py-0.5 text-slate-700 outline-none cursor-pointer">
-                    <option value="">載入中...</option>
-                </select>
-                <p class="text-[10px] text-slate-500">已掌握 <span id="mastered-count" class="font-semibold text-emerald-600">0</span> / <span id="total-count">0</span> 個單字</p>
-            </div>
-        </div>
-        
+    <header class="bg-white shadow-sm py-3 px-6 sticky top-0 z-10 flex justify-center items-center gap-3">
         <!-- 設定與模式切換 -->
         <div class="flex items-center gap-3 flex-wrap justify-center">
             <!-- 齒輪設定按鈕 -->
@@ -45,6 +32,12 @@
                 <!-- Google 未連結提示 badge -->
                 <span id="google-sync-badge" class="hidden absolute -top-1 -right-1 w-4 h-4 bg-rose-500 text-white text-[9px] font-bold rounded-full flex items-center justify-center leading-none shadow-sm" title="尚未連結 Google 雲端同步">!</span>
             </div>
+
+            <!-- 教材單元選擇 📖 按鈕 -->
+            <button id="btn-book-unit" onclick="toggleBookUnitPanel()" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center" title="選擇教材與單元">
+                <span class="text-base leading-none">📖</span>
+            </button>
+
             <div class="flex gap-1.5">
                 <button id="mode-flip" onclick="switchMode('flip')" class="px-3 py-1.5 text-xs font-medium bg-indigo-50 text-indigo-600 rounded-lg shadow-sm hover:bg-indigo-100 transition">字卡</button>
                 <button id="mode-list" onclick="switchMode('list')" class="px-3 py-1.5 text-xs font-medium bg-slate-100 text-slate-600 rounded-lg shadow-sm hover:bg-slate-200 transition">列表</button>
@@ -55,6 +48,34 @@
 
     <!-- 主要內容區 -->
     <main class="container mx-auto px-4 py-6 max-w-md flex-1 flex flex-col justify-center">
+
+        <!-- 教材與單元選擇面板 (預設隱藏) -->
+        <div id="book-unit-panel" class="hidden w-full bg-white border border-slate-100 rounded-2xl shadow-xl p-5 mb-4 space-y-4 transition-all text-xs">
+            <h3 class="text-sm font-bold text-slate-700 border-b pb-2 flex items-center gap-1.5">
+                📖 教材與單元選擇
+            </h3>
+            <!-- 1. 教材選擇 -->
+            <div class="flex items-center justify-between">
+                <span class="text-slate-600 font-medium">選擇教材：</span>
+                <select id="book-select-dropdown" onchange="changeBook(this.value)" class="bg-slate-50 border border-slate-200 rounded px-2.5 py-1.5 text-slate-700 outline-none cursor-pointer w-48 font-semibold">
+                    <!-- 動態載入 -->
+                </select>
+            </div>
+            <!-- 2. 單元選擇 -->
+            <div class="flex items-center justify-between">
+                <span class="text-slate-600 font-medium">選擇單元：</span>
+                <select id="unit-select" onchange="changeUnit(parseInt(this.value))" class="bg-slate-50 border border-slate-200 rounded px-2.5 py-1.5 text-slate-700 outline-none cursor-pointer w-48 font-semibold">
+                    <option value="">載入中...</option>
+                </select>
+            </div>
+            <!-- 3. 單元學習進度 -->
+            <div class="flex items-center justify-between border-t pt-3">
+                <span class="text-slate-600 font-medium">學習進度：</span>
+                <p class="text-slate-600 font-semibold">
+                    已掌握 <span id="mastered-count" class="font-bold text-emerald-600">0</span> / <span id="total-count">0</span> 個單字
+                </p>
+            </div>
+        </div>
 
         <!-- 語音設定面板 (預設隱藏) -->
         <div id="settings-panel" class="hidden w-full bg-white border border-slate-100 rounded-2xl shadow-xl p-5 mb-4 space-y-4 transition-all">
@@ -105,7 +126,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.7</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.8</p>
             </div>
         </div>
 
@@ -332,17 +353,30 @@
                 showErrorModal(e);
                 return;
             }
+
+            // 動態填充教材下拉選單
+            const bookDropdown = document.getElementById('book-select-dropdown');
+            if (bookDropdown) {
+                bookDropdown.innerHTML = '';
+                booksList.forEach(book => {
+                    const opt = document.createElement('option');
+                    opt.value = book.id;
+                    opt.textContent = book.name;
+                    bookDropdown.appendChild(opt);
+                });
+            }
             
             const container = document.getElementById('book-list-container');
-            container.innerHTML = '';
-
-            booksList.forEach(book => {
-                const btn = document.createElement('button');
-                btn.className = "w-full text-left px-4 py-3 bg-slate-50 hover:bg-indigo-50 border border-slate-100 hover:border-indigo-200 rounded-xl font-semibold text-slate-700 hover:text-indigo-600 transition flex justify-between items-center";
-                btn.innerHTML = `<span>${book.name}</span><span class="text-xs text-slate-400 font-normal">共 ${book.units.length} 單元</span>`;
-                btn.onclick = () => selectBook(book.id);
-                container.appendChild(btn);
-            });
+            if (container) {
+                container.innerHTML = '';
+                booksList.forEach(book => {
+                    const btn = document.createElement('button');
+                    btn.className = "w-full text-left px-4 py-3 bg-slate-50 hover:bg-indigo-50 border border-slate-100 hover:border-indigo-200 rounded-xl font-semibold text-slate-700 hover:text-indigo-600 transition flex justify-between items-center";
+                    btn.innerHTML = `<span>${book.name}</span><span class="text-xs text-slate-400 font-normal">共 ${book.units.length} 單元</span>`;
+                    btn.onclick = () => selectBook(book.id);
+                    container.appendChild(btn);
+                });
+            }
 
             if (!currentBook) {
                 showBookSelectModal();
@@ -359,6 +393,10 @@
             document.getElementById('book-select-modal').classList.add('hidden');
         }
 
+        window.changeBook = async function(bookId) {
+            await selectBook(bookId);
+        };
+
         async function selectBook(bookId) {
             currentBook = bookId;
             localStorage.setItem('toeic_current_book', bookId);
@@ -367,7 +405,13 @@
             const book = booksList.find(b => b.id === bookId);
             if (!book) return;
 
-            document.getElementById('book-title').textContent = book.name;
+            const bookTitle = document.getElementById('book-title');
+            if (bookTitle) bookTitle.textContent = book.name;
+
+            const bookDropdown = document.getElementById('book-select-dropdown');
+            if (bookDropdown) {
+                bookDropdown.value = bookId;
+            }
 
             if (!currentUnit || !book.units.includes(currentUnit)) {
                 currentUnit = book.units[0];
@@ -840,19 +884,44 @@
 
         function toggleSettingsPanel() {
             const panel = document.getElementById('settings-panel');
-            panel.classList.toggle('hidden');
+            const bookPanel = document.getElementById('book-unit-panel');
+            if (!panel) return;
+            const isHidden = panel.classList.contains('hidden');
+            panel.classList.toggle('hidden', !isHidden);
+            if (isHidden && bookPanel) {
+                bookPanel.classList.add('hidden');
+            }
             if (!panel.classList.contains('hidden')) {
                 renderQuizChart();
             }
         }
 
-        // 點擊面板外部區域自動隱藏設定面板
+        window.toggleBookUnitPanel = function() {
+            const panel = document.getElementById('book-unit-panel');
+            const settingsPanel = document.getElementById('settings-panel');
+            if (!panel) return;
+            const isHidden = panel.classList.contains('hidden');
+            panel.classList.toggle('hidden', !isHidden);
+            if (isHidden && settingsPanel) {
+                settingsPanel.classList.add('hidden');
+            }
+        }
+
+        // 點擊面板外部區域自動隱藏面板
         document.addEventListener('click', (e) => {
             const panel = document.getElementById('settings-panel');
             const btn = document.getElementById('btn-settings');
             if (panel && !panel.classList.contains('hidden')) {
                 if (!panel.contains(e.target) && !btn.contains(e.target)) {
                     panel.classList.add('hidden');
+                }
+            }
+
+            const bookPanel = document.getElementById('book-unit-panel');
+            const bookBtn = document.getElementById('btn-book-unit');
+            if (bookPanel && !bookPanel.classList.contains('hidden')) {
+                if (!bookPanel.contains(e.target) && !bookBtn.contains(e.target) && !e.target.closest('#book-select-modal')) {
+                    bookPanel.classList.add('hidden');
                 }
             }
         });
