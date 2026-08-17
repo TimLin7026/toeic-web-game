@@ -105,7 +105,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.6</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.7</p>
             </div>
         </div>
 
@@ -1030,14 +1030,21 @@
                 isFlipped = false;
                 document.getElementById('card-inner').style.transform = 'rotateY(0deg)';
             }
+
+            // 換牌時，重置卡片高度為預設的 320px
+            const container = document.getElementById('card-container');
+            if (container) {
+                container.style.height = '320px';
+            }
         }
 
-        // 展開/收起更多例句
+        // 展開/收起更多例句 (Expander 高度自適應撐開，消除 scrollbar)
         function toggleExtraSentences() {
             const extraEn = document.querySelectorAll('.extra-sentence');
             const extraZh = document.querySelectorAll('.extra-zh-sentence');
             const btn = document.getElementById('btn-toggle-extra-ex');
-            if (!btn) return;
+            const container = document.getElementById('card-container');
+            if (!btn || !container) return;
             
             let isHidden = true;
             if (extraEn.length > 0) {
@@ -1047,6 +1054,22 @@
             extraEn.forEach(el => el.classList.toggle('hidden', !isHidden));
             extraZh.forEach(el => el.classList.toggle('hidden', !isHidden));
             btn.textContent = isHidden ? '－ 收起' : '＋ 查看更多例句';
+
+            if (isHidden) {
+                // 展開時：讀取正面或背面實際內容總高 (scrollHeight)，並動態撐開卡片
+                const frontEl = container.querySelector('#card-inner > div:first-child');
+                const backEl = container.querySelector('#card-inner > div:last-child');
+                
+                const frontHeight = frontEl ? frontEl.scrollHeight : 320;
+                const backHeight = backEl ? backEl.scrollHeight : 320;
+                // 取最大內容高度，加額外 20px 底部緩衝 padding
+                const targetHeight = Math.max(frontHeight, backHeight, 320) + 20;
+                
+                container.style.height = `${targetHeight}px`;
+            } else {
+                // 收起時：恢復預設 320px
+                container.style.height = '320px';
+            }
         }
 
         const cardContainer = document.getElementById('card-container');
