@@ -126,7 +126,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.9</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.10</p>
             </div>
         </div>
 
@@ -153,16 +153,22 @@
                     
                     <!-- 正面 (英文與雙例句，靠上對齊) -->
                     <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-indigo-500 to-violet-600 text-white rounded-2xl p-5 flex flex-col justify-between backface-hidden shadow-md overflow-y-auto">
-                        <div class="flex justify-between items-center">
+                        <div class="flex justify-between items-center w-full">
                             <span class="text-[11px] bg-white/20 px-2.5 py-0.5 rounded-full font-semibold uppercase tracking-wider">English (點擊卡片看背面)</span>
-                            <button onclick="event.stopPropagation(); playAudio(currentWords[currentIndex].word);" class="p-2 bg-white/20 hover:bg-white/30 rounded-full transition transform active:scale-95" title="播放單字發音">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                            <!-- 右上角已掌握勾勾按鈕 -->
+                            <button id="card-master-top-en" onclick="event.stopPropagation(); toggleCardMaster();" class="p-1.5 rounded-lg bg-white/20 hover:bg-white/30 text-white transition active:scale-95 flex items-center justify-center" title="標記為已掌握">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             </button>
                         </div>
 
                         <!-- 靠上對齊的主內容區 -->
                         <div class="flex flex-col items-center my-auto w-full space-y-2.5">
-                            <h2 id="card-word" class="text-3xl font-extrabold tracking-wide mb-1">spoil</h2>
+                            <div class="flex items-center gap-2.5 mb-1 justify-center flex-wrap">
+                                <h2 id="card-word" class="text-3xl font-extrabold tracking-wide">spoil</h2>
+                                <button onclick="event.stopPropagation(); playAudio(currentWords[currentIndex].word);" class="p-1.5 bg-white/20 hover:bg-white/30 rounded-full transition transform active:scale-95 flex-shrink-0" title="播放單字發音">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                                </button>
+                            </div>
                             
                             <!-- 英文面例句動態容器 -->
                             <div id="card-sentences-container-en" class="w-full space-y-2">
@@ -172,27 +178,48 @@
                             <!-- 展開更多例句按鈕 -->
                             <button id="btn-toggle-extra-ex" onclick="event.stopPropagation(); toggleExtraSentences();" class="text-[11px] text-indigo-200 hover:text-white transition underline underline-offset-2">＋ 查看更多例句</button>
                         </div>
+
+                        <!-- 正面底部 -->
+                        <div class="flex justify-between items-center w-full mt-auto pt-2 border-t border-white/10 flex-shrink-0">
+                            <span class="text-[10px] text-white/50">點擊卡片看背面</span>
+                            <!-- 右下角已掌握勾勾按鈕 -->
+                            <button id="card-master-bottom-en" onclick="event.stopPropagation(); toggleCardMaster();" class="p-1.5 rounded-lg bg-white/20 hover:bg-white/30 text-white transition active:scale-95 flex items-center justify-center" title="標記為已掌握">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </button>
+                        </div>
                     </div>
  
                     <!-- 背面 (中文與中文例句) -->
                     <div class="absolute inset-0 w-full h-full bg-white text-slate-800 rounded-2xl p-5 flex flex-col justify-between backface-hidden rotate-y-180 border border-slate-100 shadow-md overflow-y-auto">
-                        <div class="flex justify-between items-center">
+                        <div class="flex justify-between items-center w-full">
                             <span class="text-[11px] bg-emerald-100 text-emerald-700 px-2.5 py-0.5 rounded-full font-semibold uppercase tracking-wider">中文釋義與例句對照</span>
-                            <button onclick="event.stopPropagation(); playAudio(currentWords[currentIndex].word);" class="p-2 bg-slate-100 hover:bg-slate-200 rounded-full transition transform active:scale-95" title="播放發音">
-                                <svg class="w-5 h-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                            <!-- 右上角已掌握勾勾按鈕 -->
+                            <button id="card-master-top-zh" onclick="event.stopPropagation(); toggleCardMaster();" class="p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition active:scale-95 flex items-center justify-center" title="標記為已掌握">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             </button>
                         </div>
                         <div class="flex flex-col items-center my-auto w-full space-y-2.5">
                             <h2 id="card-meaning" class="text-2xl font-bold text-slate-700">破壞</h2>
-                            <p class="text-xs font-medium text-indigo-600" id="card-word-back">spoil</p>
+                            <div class="flex items-center gap-1.5 justify-center">
+                                <p class="text-xs font-semibold text-indigo-600" id="card-word-back">spoil</p>
+                                <button onclick="event.stopPropagation(); playAudio(currentWords[currentIndex].word);" class="p-1 bg-slate-100 hover:bg-slate-200 rounded-full transition transform active:scale-95 flex-shrink-0" title="播放發音">
+                                    <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                                </button>
+                            </div>
                             
                             <!-- 中文面例句動態容器 -->
                             <div id="card-sentences-container-zh" class="w-full space-y-2">
                                 <!-- 由 JavaScript 動態生成例句中文對照 -->
                             </div>
                         </div>
-                        <div class="text-center text-[11px] text-slate-400">
-                            點擊卡片回到英文
+                        
+                        <!-- 背面底部 -->
+                        <div class="flex justify-between items-center w-full mt-auto pt-2 border-t border-slate-100 flex-shrink-0">
+                            <span class="text-[11px] text-slate-400">點擊卡片回到英文</span>
+                            <!-- 右下角已掌握勾勾按鈕 -->
+                            <button id="card-master-bottom-zh" onclick="event.stopPropagation(); toggleCardMaster();" class="p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition active:scale-95 flex items-center justify-center" title="標記為已掌握">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </button>
                         </div>
                     </div>
 
@@ -200,7 +227,7 @@
             </div>
 
             <div class="flex flex-col w-full mt-4 gap-2.5">
-                <button id="btn-toggle-master" class="w-full py-2.5 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-xl font-semibold text-sm shadow-sm hover:bg-emerald-100 transition active:scale-95 flex items-center justify-center gap-2">
+                <button id="btn-toggle-master" style="display: none;" class="w-full py-2.5 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-xl font-semibold text-sm shadow-sm hover:bg-emerald-100 transition active:scale-95 flex items-center justify-center gap-2">
                     <svg id="master-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                     <span id="master-btn-text">標記為：已掌握（自動下一張）</span>
                 </button>
@@ -1094,6 +1121,24 @@
                 toggleBtn.className = "w-full py-2.5 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-xl font-semibold text-sm shadow-sm hover:bg-emerald-100 transition active:scale-95 flex items-center justify-center gap-2";
                 btnText.textContent = "標記為：已掌握（自動下一張）";
             }
+
+            // 更新雙勾勾按鈕樣式 (右上/右下)
+            const btnTopEn = document.getElementById('card-master-top-en');
+            const btnBottomEn = document.getElementById('card-master-bottom-en');
+            const btnTopZh = document.getElementById('card-master-top-zh');
+            const btnBottomZh = document.getElementById('card-master-bottom-zh');
+
+            if (wordObj.mastered) {
+                if (btnTopEn) btnTopEn.className = "p-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
+                if (btnBottomEn) btnBottomEn.className = "p-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
+                if (btnTopZh) btnTopZh.className = "p-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
+                if (btnBottomZh) btnBottomZh.className = "p-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
+            } else {
+                if (btnTopEn) btnTopEn.className = "p-1.5 rounded-lg bg-white/20 hover:bg-white/30 text-white transition active:scale-95 flex items-center justify-center";
+                if (btnBottomEn) btnBottomEn.className = "p-1.5 rounded-lg bg-white/20 hover:bg-white/30 text-white transition active:scale-95 flex items-center justify-center";
+                if (btnTopZh) btnTopZh.className = "p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition active:scale-95 flex items-center justify-center";
+                if (btnBottomZh) btnBottomZh.className = "p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition active:scale-95 flex items-center justify-center";
+            }
             
             if (isFlipped) {
                 isFlipped = false;
@@ -1161,8 +1206,7 @@
         });
 
         // 點擊掌握按鈕：標記並自動跳下一張
-        document.getElementById('btn-toggle-master').addEventListener('click', (e) => {
-            e.stopPropagation();
+        window.toggleCardMaster = function() {
             if (isSpeaking || currentWords.length === 0) return;
             const wordObj = currentWords[currentIndex];
             const wordKey = wordObj.word.toLowerCase();
@@ -1201,12 +1245,22 @@
                 return;
             }
 
+            if (wordObj.mastered) {
+                currentIndex++;
+            }
+
             currentWords = getFilteredWords();
             if (currentIndex >= currentWords.length) {
                 currentIndex = 0;
             }
             updateCard();
             updateMasteredCount();
+        };
+
+        // 保留原隱藏大按鈕的事件呼叫以防報錯
+        document.getElementById('btn-toggle-master').addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleCardMaster();
         });
 
         document.getElementById('filter-select').addEventListener('change', (e) => {
@@ -1217,23 +1271,19 @@
             updateCardButtonLayout();
         });
 
-        // 依篩選條件控制按鈕可見性
+        // 依篩選條件控制按鈕可見性 (只控制上下一張按鈕，雙勾勾按鈕恆常顯示)
         function updateCardButtonLayout() {
-            const masterBtn = document.getElementById('btn-toggle-master');
             const navRow = document.getElementById('btn-nav-row');
-            if (!masterBtn || !navRow) return;
+            if (!navRow) return;
             const f = currentFilter;
             if (f === 'learned') {
                 // 已掌握：只顯示上下一張
-                masterBtn.classList.add('hidden');
                 navRow.classList.remove('hidden');
             } else if (f === 'unlearned') {
-                // 未掌握：只顯示掌握按鈕
-                masterBtn.classList.remove('hidden');
+                // 未掌握：隱藏上下一張
                 navRow.classList.add('hidden');
             } else {
-                // 全部：兩者都顯示
-                masterBtn.classList.remove('hidden');
+                // 全部：顯示上下一張
                 navRow.classList.remove('hidden');
             }
         }
