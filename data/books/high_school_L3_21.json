@@ -1,0 +1,1730 @@
+[
+    {
+        "unit": 21,
+        "word": "ambulance",
+        "sentences": [
+            {
+                "en": "The manager called an ambulance immediately when the employee collapsed in the hallway.",
+                "zh": "當該名員工在走廊昏倒時，經理立刻叫了救護車。"
+            },
+            {
+                "en": "Due to the severe traffic jam, the ambulance couldn't reach the accident scene on time.",
+                "zh": "由於嚴重的交通阻塞，救護車無法準時抵達事故現場。"
+            },
+            {
+                "en": "Our company's health insurance policy covers emergency ambulance services.",
+                "zh": "我們公司的健康保險方案涵蓋緊急救護車服務。"
+            },
+            {
+                "en": "He has been working as an ambulance driver for over a decade.",
+                "zh": "他擔任救護車駕駛已經超過十年了。"
+            },
+            {
+                "en": "The hospital is planning to purchase three new ambulances equipped with the latest medical devices.",
+                "zh": "醫院正計畫採購三輛配備最新醫療設備的新救護車。"
+            }
+        ],
+        "id": 1
+    },
+    {
+        "unit": 21,
+        "word": "anxious",
+        "sentences": [
+            {
+                "en": "The CEO is anxious to see the final sales report for the third quarter.",
+                "zh": "執行長急切地想看到第三季的最終銷售報告。"
+            },
+            {
+                "en": "Many candidates feel anxious before their first job interview at a major corporation.",
+                "zh": "許多求職者在大公司的初次面試前會感到焦慮。"
+            },
+            {
+                "en": "We are anxious about the potential impact of the new regulations on our supply chain.",
+                "zh": "我們對新法規可能對供應鏈造成的影響感到憂心。"
+            },
+            {
+                "en": "She had been anxious for a promotion after taking on additional responsibilities.",
+                "zh": "在承擔了額外的職責後，她一直渴望能獲得升遷。"
+            },
+            {
+                "en": "To reduce anxious feelings among the staff, the management held an open forum.",
+                "zh": "為了減少員工的焦慮感，管理層舉辦了一場公開論壇。"
+            }
+        ],
+        "id": 2
+    },
+    {
+        "unit": 21,
+        "word": "apologize",
+        "sentences": [
+            {
+                "en": "I sincerely apologize for the delay in processing your recent order.",
+                "zh": "對於延誤處理您近期的訂單，我深表歉意。"
+            },
+            {
+                "en": "The airline had to apologize to the passengers for the unexpected flight cancellation.",
+                "zh": "航空公司必須為突如其來的航班取消向乘客道歉。"
+            },
+            {
+                "en": "He apologized publicly for his inappropriate remarks during the press conference.",
+                "zh": "他為在記者會上的不當言論公開道歉。"
+            },
+            {
+                "en": "We would like to apologize for any inconvenience caused by our website maintenance.",
+                "zh": "我們想為網站維護所造成的任何不便致歉。"
+            },
+            {
+                "en": "She has already apologized to the client for the calculation error in the proposal.",
+                "zh": "她已經為提案中的計算錯誤向客戶道歉了。"
+            }
+        ],
+        "id": 3
+    },
+    {
+        "unit": 21,
+        "word": "assume",
+        "sentences": [
+            {
+                "en": "You shouldn't assume that the project will be approved without a detailed cost analysis.",
+                "zh": "在沒有詳細成本分析的情況下，你不該認定專案會獲准。"
+            },
+            {
+                "en": "I assumed he was the new marketing director because of his professional presentation.",
+                "zh": "因為他專業的簡報，我以為他是新的行銷總監。"
+            },
+            {
+                "en": "The newly appointed manager will assume her duties starting next Monday.",
+                "zh": "新上任的經理將從下週一開始承擔職責。"
+            },
+            {
+                "en": "It is generally assumed that the inflation rate will continue to rise this year.",
+                "zh": "人們普遍認為今年的通貨膨脹率將持續上升。"
+            },
+            {
+                "en": "Please do not assume the meeting is canceled just because you didn't receive a reminder.",
+                "zh": "請不要只因為沒收到提醒就假定會議已取消。"
+            }
+        ],
+        "id": 4
+    },
+    {
+        "unit": 21,
+        "word": "awkward",
+        "sentences": [
+            {
+                "en": "There was an awkward silence in the boardroom after the client rejected our proposal.",
+                "zh": "在客戶拒絕我們的提案後，會議室裡出現了尷尬的沉默。"
+            },
+            {
+                "en": "He found himself in an awkward position when he had to lay off his close friend.",
+                "zh": "當他不得不解僱他的好朋友時，他發現自己處於一個尷尬的境地。"
+            },
+            {
+                "en": "The new software interface is a bit awkward to use for beginners.",
+                "zh": "這個新的軟體介面對於初學者來說有點笨拙難用。"
+            },
+            {
+                "en": "She handled the awkward situation with great professionalism and grace.",
+                "zh": "她以極高的專業精神與優雅處理了那個尷尬的局面。"
+            },
+            {
+                "en": "It can be awkward to ask for a salary increase during an economic downturn.",
+                "zh": "在經濟低迷時期要求加薪可能會很尷尬。"
+            }
+        ],
+        "id": 5
+    },
+    {
+        "unit": 21,
+        "word": "be located in / on / at",
+        "sentences": [
+            {
+                "en": "Our new corporate headquarters will be located in the downtown business district.",
+                "zh": "我們的新企業總部將位於市中心的商業區。"
+            },
+            {
+                "en": "The newly opened restaurant is located on the second floor of the shopping mall.",
+                "zh": "新開幕的餐廳位於購物中心的二樓。"
+            },
+            {
+                "en": "The customer service center is located at the intersection of Main Street and Elm Avenue.",
+                "zh": "客服中心位於主街與榆樹大道的交叉口。"
+            },
+            {
+                "en": "Many tech startups are located in Silicon Valley due to the abundant resources.",
+                "zh": "由於資源豐富，許多科技新創公司都位於矽谷。"
+            },
+            {
+                "en": "The manufacturing plant is located in a rural area to minimize production costs.",
+                "zh": "為了將生產成本降到最低，該製造廠位於鄉村地區。"
+            }
+        ],
+        "id": 6
+    },
+    {
+        "unit": 21,
+        "word": "buzz",
+        "sentences": [
+            {
+                "en": "There is a lot of buzz surrounding the launch of their latest smartphone model.",
+                "zh": "關於他們最新智慧型手機型號的發表，引起了許多討論與熱潮。"
+            },
+            {
+                "en": "My phone has been buzzing all morning with notifications from important clients.",
+                "zh": "我的手機整個早上都嗡嗡作響，不斷收到重要客戶的通知。"
+            },
+            {
+                "en": "The conference room was buzzing with excitement before the annual bonus announcement.",
+                "zh": "在年度獎金宣布之前，會議室裡充滿了興奮的嘰喳聲。"
+            },
+            {
+                "en": "If you need any assistance, just buzz the receptionist on the intercom.",
+                "zh": "如果您需要任何協助，只要按對講機呼叫櫃檯接待員即可。"
+            },
+            {
+                "en": "A strange buzzing noise was coming from the printer in the accounting department.",
+                "zh": "會計部的印表機發出奇怪的嗡嗡聲。"
+            }
+        ],
+        "id": 7
+    },
+    {
+        "unit": 21,
+        "word": "career",
+        "sentences": [
+            {
+                "en": "She has had a highly successful career in the financial sector for over twenty years.",
+                "zh": "她在金融界有著超過二十年非常成功的職涯。"
+            },
+            {
+                "en": "Attending this intensive workshop will definitely help advance your professional career.",
+                "zh": "參加這個密集的研討會肯定有助於推進你的專業職涯。"
+            },
+            {
+                "en": "He decided to change his career path and pursue his passion for graphic design.",
+                "zh": "他決定改變他的職涯道路，追求他對平面設計的熱情。"
+            },
+            {
+                "en": "The university offers career counseling services to assist graduates in finding jobs.",
+                "zh": "該大學提供職涯諮詢服務，以協助畢業生找工作。"
+            },
+            {
+                "en": "Networking is a crucial element for career development in the modern business world.",
+                "zh": "建立人脈是現代商業世界中職涯發展的關鍵要素。"
+            }
+        ],
+        "id": 8
+    },
+    {
+        "unit": 21,
+        "word": "daily",
+        "sentences": [
+            {
+                "en": "The supervisor requires us to submit a daily progress report before leaving the office.",
+                "zh": "主管要求我們在下班前提交每日進度報告。"
+            },
+            {
+                "en": "Regular exercise is an important part of her daily routine to maintain productivity.",
+                "zh": "規律運動是她日常作息的重要部分，有助於維持生產力。"
+            },
+            {
+                "en": "The local daily newspaper has published an article about our company's merger.",
+                "zh": "當地日報刊登了一篇關於我們公司合併的報導。"
+            },
+            {
+                "en": "Our manufacturing plant can process up to five tons of raw materials daily.",
+                "zh": "我們的製造廠每天最多可以處理五噸的原料。"
+            },
+            {
+                "en": "These software updates are performed daily to ensure maximum security.",
+                "zh": "這些軟體更新每日執行一次，以確保最高安全性。"
+            }
+        ],
+        "id": 9
+    },
+    {
+        "unit": 21,
+        "word": "decrease",
+        "sentences": [
+            {
+                "en": "The retail store has seen a significant decrease in foot traffic since the pandemic started.",
+                "zh": "自疫情開始以來，這家零售店的客流量出現了顯著的減少。"
+            },
+            {
+                "en": "We need to find effective ways to decrease our operational expenses this quarter.",
+                "zh": "我們需要找到有效的方法來減少本季的營運支出。"
+            },
+            {
+                "en": "Sales figures decreased slightly in November due to unseasonably warm weather.",
+                "zh": "由於天氣反常溫暖，十一月的銷售數據略微下降。"
+            },
+            {
+                "en": "A steady decrease in unemployment rates indicates a recovering local economy.",
+                "zh": "失業率的穩定下降顯示當地經濟正在復甦。"
+            },
+            {
+                "en": "The manager decided to decrease the budget for marketing campaigns by 15 percent.",
+                "zh": "經理決定將行銷活動的預算減少百分之十五。"
+            }
+        ],
+        "id": 10
+    },
+    {
+        "unit": 21,
+        "word": "drip",
+        "sentences": [
+            {
+                "en": "Water was dripping from the ceiling in the storage room, damaging several boxes.",
+                "zh": "水從儲藏室的天花板滴下來，損壞了好幾個箱子。"
+            },
+            {
+                "en": "Please ensure the coffee machine isn't dripping onto the counter.",
+                "zh": "請確保咖啡機沒有滴水在流理台上。"
+            },
+            {
+                "en": "The patient was put on a medical drip to stabilize his condition in the emergency room.",
+                "zh": "病人在急診室被打點滴以穩定病情。"
+            },
+            {
+                "en": "The constant drip of the leaking faucet made it hard for him to concentrate on his work.",
+                "zh": "漏水水龍頭不斷的滴水聲讓他很難專心工作。"
+            },
+            {
+                "en": "The paint is still wet and might drip, so be careful not to touch the walls.",
+                "zh": "油漆還沒乾可能會滴下來，所以小心不要碰到牆壁。"
+            }
+        ],
+        "id": 11
+    },
+    {
+        "unit": 21,
+        "word": "emotion",
+        "sentences": [
+            {
+                "en": "The speaker's voice was filled with emotion when he thanked his dedicated team.",
+                "zh": "當演講者感謝他敬業的團隊時，他的聲音充滿了感情。"
+            },
+            {
+                "en": "In business negotiations, it is important to keep your emotions in check.",
+                "zh": "在商業談判中，控制好自己的情緒是很重要的。"
+            },
+            {
+                "en": "The advertisement was designed to evoke a strong positive emotion from the viewers.",
+                "zh": "這則廣告旨在喚起觀眾強烈的正面情感。"
+            },
+            {
+                "en": "She struggled to hide her emotion after receiving the prestigious industry award.",
+                "zh": "在獲得這項享有盛譽的業界大獎後，她努力掩飾自己的情緒。"
+            },
+            {
+                "en": "Understanding consumer emotion can help a company create more appealing products.",
+                "zh": "了解消費者的情感可以幫助公司創造出更具吸引力的產品。"
+            }
+        ],
+        "id": 12
+    },
+    {
+        "unit": 21,
+        "word": "emotional",
+        "sentences": [
+            {
+                "en": "The CEO delivered an emotional speech during his retirement farewell party.",
+                "zh": "執行長在他的退休歡送會上發表了一場感性的演講。"
+            },
+            {
+                "en": "Customers often make purchasing decisions based on emotional attachment to a brand.",
+                "zh": "顧客常常根據對品牌的的情感依附來做出購買決定。"
+            },
+            {
+                "en": "He became very emotional when discussing the recent restructuring of the department.",
+                "zh": "在討論最近部門的重組時，他變得非常情緒化。"
+            },
+            {
+                "en": "Our company provides emotional support services for employees dealing with stress.",
+                "zh": "我們公司為處理壓力的員工提供情感支持服務。"
+            },
+            {
+                "en": "It is crucial to avoid making emotional choices when investing in the stock market.",
+                "zh": "在投資股市時，避免做出情緒化的選擇是至關重要的。"
+            }
+        ],
+        "id": 13
+    },
+    {
+        "unit": 21,
+        "word": "explore",
+        "sentences": [
+            {
+                "en": "The executive board decided to explore new market opportunities in Southeast Asia.",
+                "zh": "執行董事會決定探索東南亞的新市場機會。"
+            },
+            {
+                "en": "We are currently exploring the possibility of forming a partnership with a local distributor.",
+                "zh": "我們目前正在探討與當地經銷商建立合作關係的可能性。"
+            },
+            {
+                "en": "The team took the weekend to explore the city before the conference started.",
+                "zh": "團隊利用週末時間在會議開始前探索了這座城市。"
+            },
+            {
+                "en": "This training program allows employees to explore their hidden leadership potential.",
+                "zh": "這個訓練計畫讓員工探索他們潛在的領導力。"
+            },
+            {
+                "en": "The mining company has acquired the rights to explore the region for natural resources.",
+                "zh": "這家礦業公司已經獲得了在該地區探勘自然資源的權利。"
+            }
+        ],
+        "id": 14
+    },
+    {
+        "unit": 21,
+        "word": "explorer",
+        "sentences": [
+            {
+                "en": "Internet Explorer was once one of the most widely used web browsers in the corporate world.",
+                "zh": "Internet Explorer 曾經是企業界最廣泛使用的網頁瀏覽器之一。"
+            },
+            {
+                "en": "He considers himself an explorer of new culinary trends in the restaurant industry.",
+                "zh": "他自認為是餐飲業新烹飪趨勢的探索者。"
+            },
+            {
+                "en": "The documentary featured a famous explorer who discovered ancient ruins in South America.",
+                "zh": "這部紀錄片以一位在南美洲發現古代遺跡的著名探險家為主角。"
+            },
+            {
+                "en": "Early explorers faced numerous challenges when navigating uncharted territories.",
+                "zh": "早期的探險家在航行未知領域時面臨了無數的挑戰。"
+            },
+            {
+                "en": "As a market explorer, our company is always the first to adopt innovative technologies.",
+                "zh": "身為市場探索者，我們公司總是第一個採用創新科技的。"
+            }
+        ],
+        "id": 15
+    },
+    {
+        "unit": 21,
+        "word": "fuel",
+        "sentences": [
+            {
+                "en": "Rising fuel prices have significantly increased our logistics and transportation costs.",
+                "zh": "上漲的燃料價格大幅增加了我們的物流與運輸成本。"
+            },
+            {
+                "en": "The rumor about the upcoming merger helped fuel a rise in the company's stock price.",
+                "zh": "關於即將合併的謠言助長了該公司股價的上漲。"
+            },
+            {
+                "en": "The power plant uses a combination of coal and renewable sources for fuel.",
+                "zh": "這座發電廠使用煤炭和可再生能源的混合物作為燃料。"
+            },
+            {
+                "en": "The pilot announced that the aircraft needed to stop in Tokyo to refuel.",
+                "zh": "機長宣布飛機需要在東京停靠以補充燃料。"
+            },
+            {
+                "en": "His passion for technology fuels his desire to launch his own software startup.",
+                "zh": "他對科技的熱情供給了他創立自己軟體新創公司的渴望(動力)。"
+            }
+        ],
+        "id": 16
+    },
+    {
+        "unit": 21,
+        "word": "hopeful",
+        "sentences": [
+            {
+                "en": "We remain hopeful that the ongoing negotiations will result in a mutually beneficial contract.",
+                "zh": "我們對正在進行的談判將達成互惠互利的合約仍抱有希望。"
+            },
+            {
+                "en": "The recent increase in sales has made the management hopeful about this year's profits.",
+                "zh": "最近銷售額的增長讓管理層對今年的利潤感到樂觀。"
+            },
+            {
+                "en": "She is a hopeful candidate who possesses all the qualifications listed in the job description.",
+                "zh": "她是一位具備職務說明中列出的所有資格、充滿希望的候選人。"
+            },
+            {
+                "en": "Despite the economic downturn, many investors are hopeful for a quick recovery.",
+                "zh": "儘管經濟低迷，許多投資者對快速復甦抱有希望。"
+            },
+            {
+                "en": "He sounded very hopeful when discussing his plans for expanding the business overseas.",
+                "zh": "在討論他將業務擴展到海外的計畫時，他聽起來非常有希望。"
+            }
+        ],
+        "id": 17
+    },
+    {
+        "unit": 21,
+        "word": "hopeless",
+        "sentences": [
+            {
+                "en": "Without proper funding, completing the ambitious construction project seemed hopeless.",
+                "zh": "如果沒有適當的資金，完成這項雄心勃勃的建築工程似乎是無望的。"
+            },
+            {
+                "en": "The trainee felt hopeless when he couldn't figure out how to operate the new software.",
+                "zh": "當實習生搞不懂如何操作新軟體時，他感到很絕望。"
+            },
+            {
+                "en": "Despite his best efforts, the situation regarding the delayed shipment was hopelessly tangled.",
+                "zh": "儘管他盡了最大努力，關於延遲出貨的狀況仍無望地糾結不清。"
+            },
+            {
+                "en": "The technician declared that the old printer was broken beyond repair and completely hopeless.",
+                "zh": "技術人員宣布這台舊印表機已經壞到無法修理，完全沒救了。"
+            },
+            {
+                "en": "She refused to give up, even when the odds of winning the contract appeared hopeless.",
+                "zh": "即使贏得合約的機會看似渺茫，她仍拒絕放棄。"
+            }
+        ],
+        "id": 18
+    },
+    {
+        "unit": 21,
+        "word": "hourly",
+        "sentences": [
+            {
+                "en": "The factory hires several temporary workers at an hourly rate during the peak season.",
+                "zh": "工廠在旺季期間以計時工資雇用了幾名臨時工。"
+            },
+            {
+                "en": "Our IT department monitors the server performance on an hourly basis to prevent crashes.",
+                "zh": "我們的資訊部門每小時監控一次伺服器效能以防止當機。"
+            },
+            {
+                "en": "The new labor law mandates a slight increase in the minimum hourly wage.",
+                "zh": "新的勞工法規強制微幅調高最低基本時薪。"
+            },
+            {
+                "en": "There is a shuttle bus that runs hourly between the international airport and the hotel.",
+                "zh": "有一班接駁巴士每小時在國際機場和飯店之間往返。"
+            },
+            {
+                "en": "She is compensated hourly, which means she gets paid more when she works overtime.",
+                "zh": "她按小時獲得報酬，這意味著她加班時能得到更多薪水。"
+            }
+        ],
+        "id": 19
+    },
+    {
+        "unit": 21,
+        "word": "ice-skate",
+        "sentences": [
+            {
+                "en": "During the company's winter retreat, the team decided to ice-skate on the frozen lake.",
+                "zh": "在公司的冬季員工旅遊期間，團隊決定在結冰的湖面上溜冰。"
+            },
+            {
+                "en": "He bought a brand new pair of ice-skates to prepare for the amateur tournament.",
+                "zh": "他買了一雙全新的溜冰鞋來為業餘錦標賽做準備。"
+            },
+            {
+                "en": "Learning how to ice-skate requires a great deal of balance and practice.",
+                "zh": "學習如何冰上溜冰需要極佳的平衡感和大量的練習。"
+            },
+            {
+                "en": "The indoor sports center features an Olympic-sized rink for people to ice-skate year-round.",
+                "zh": "這座室內運動中心設有一個奧林匹克標準的溜冰場，讓人們可以全年溜冰。"
+            },
+            {
+                "en": "She fell down several times while trying to ice-skate for the very first time.",
+                "zh": "當她第一次嘗試溜冰時，她摔倒了好幾次。"
+            }
+        ],
+        "id": 20
+    },
+    {
+        "unit": 21,
+        "word": "in-line skate",
+        "sentences": [
+            {
+                "en": "Many teenagers like to in-line skate in the park during their summer vacation.",
+                "zh": "許多年輕人喜歡在暑假期間到公園溜直排輪。"
+            },
+            {
+                "en": "The safety guidelines strongly recommend wearing a helmet when using in-line skates.",
+                "zh": "安全指南強烈建議使用直排輪鞋時要戴安全帽。"
+            },
+            {
+                "en": "He commuting to work on his in-line skates to avoid the morning traffic jams.",
+                "zh": "他穿著直排輪鞋通勤上班，以避開早晨的交通阻塞。"
+            },
+            {
+                "en": "The sports brand launched a new line of lightweight, professional in-line skates.",
+                "zh": "這個運動品牌推出了一系列輕量化的專業直排輪鞋。"
+            },
+            {
+                "en": "She taught her little brother how to balance and in-line skate down the pavement.",
+                "zh": "她教她弟弟如何在人行道上保持平衡並溜直排輪。"
+            }
+        ],
+        "id": 21
+    },
+    {
+        "unit": 21,
+        "word": "increase",
+        "sentences": [
+            {
+                "en": "The board of directors approved a significant increase in the annual marketing budget.",
+                "zh": "董事會批准了大幅增加年度行銷預算。"
+            },
+            {
+                "en": "Our primary goal this quarter is to increase customer satisfaction and retention rates.",
+                "zh": "我們本季的主要目標是提高顧客滿意度與留存率。"
+            },
+            {
+                "en": "Sales of electric vehicles have increased dramatically over the past five years.",
+                "zh": "電動車的銷售量在過去五年內急劇增加。"
+            },
+            {
+                "en": "Employees will receive a five percent pay increase starting next financial year.",
+                "zh": "從下個財務年度開始，員工將獲得百分之五的加薪。"
+            },
+            {
+                "en": "We need to increase our production capacity to meet the growing demand from overseas clients.",
+                "zh": "我們需要增加產能以滿足海外客戶不斷增長的需求。"
+            }
+        ],
+        "id": 22
+    },
+    {
+        "unit": 21,
+        "word": "increasingly",
+        "sentences": [
+            {
+                "en": "Consumers are becoming increasingly aware of the environmental impact of plastic packaging.",
+                "zh": "消費者越來越意識到塑膠包裝對環境的影響。"
+            },
+            {
+                "en": "It is increasingly difficult to find affordable office space in the city center.",
+                "zh": "在市中心找到負擔得起的辦公空間變得越來越困難。"
+            },
+            {
+                "en": "Our firm is increasingly relying on artificial intelligence to automate routine tasks.",
+                "zh": "我們公司越來越依賴人工智慧來自動化例行任務。"
+            },
+            {
+                "en": "The global market has become increasingly competitive due to the rise of e-commerce.",
+                "zh": "由於電子商務的興起，全球市場的競爭變得越來越激烈。"
+            },
+            {
+                "en": "Working remotely has become increasingly popular among tech professionals post-pandemic.",
+                "zh": "在疫情過後，遠距工作在科技專業人士中變得越來越受歡迎。"
+            }
+        ],
+        "id": 23
+    },
+    {
+        "unit": 21,
+        "word": "inferior",
+        "sentences": [
+            {
+                "en": "The newly sourced materials were deemed inferior to the ones we previously used.",
+                "zh": "新採購的材料被認為劣於我們以前使用的材料。"
+            },
+            {
+                "en": "He resigned because he felt he was constantly being treated as an inferior by his manager.",
+                "zh": "他辭職了，因為他覺得自己不斷被經理當作下屬般(輕視)對待。"
+            },
+            {
+                "en": "Never compromise on quality; selling an inferior product will damage our brand reputation.",
+                "zh": "絕不在品質上妥協；銷售劣質產品會損害我們的品牌聲譽。"
+            },
+            {
+                "en": "The court ruled that the contract was invalid due to its inferior drafting and unclear terms.",
+                "zh": "法院裁定該合約因起草草率及條款不清而無效。"
+            },
+            {
+                "en": "Some employees may feel inferior if they do not receive the same training opportunities.",
+                "zh": "如果沒有獲得相同的培訓機會，有些員工可能會感到自卑。"
+            }
+        ],
+        "id": 24
+    },
+    {
+        "unit": 21,
+        "word": "intelligent",
+        "sentences": [
+            {
+                "en": "The company developed an intelligent software system that predicts consumer purchasing trends.",
+                "zh": "公司開發了一套能預測消費者購買趨勢的智慧軟體系統。"
+            },
+            {
+                "en": "She provided an intelligent solution to a complex logistical problem during the meeting.",
+                "zh": "她在會議中針對複雜的物流問題提供了一個聰明的解決方案。"
+            },
+            {
+                "en": "We are looking for highly intelligent candidates who can adapt to a fast-paced environment.",
+                "zh": "我們正在尋找能適應快節奏環境且非常聰明優秀的候選人。"
+            },
+            {
+                "en": "The intelligent home device allows users to control lighting and temperature with their voice.",
+                "zh": "這款智慧家庭裝置允許使用者用語音控制照明和溫度。"
+            },
+            {
+                "en": "It was an intelligent move to invest in renewable energy before the government subsidies ended.",
+                "zh": "在政府補貼結束前投資再生能源是個明智的舉動。"
+            }
+        ],
+        "id": 25
+    },
+    {
+        "unit": 21,
+        "word": "junior",
+        "sentences": [
+            {
+                "en": "The junior accountant is responsible for preparing basic financial spreadsheets and invoices.",
+                "zh": "初級會計師負責準備基本的財務試算表和發票。"
+            },
+            {
+                "en": "He joined the firm as a junior associate but quickly climbed the corporate ladder.",
+                "zh": "他以初級助理的身份加入公司，但很快地在企業階梯攀升。"
+            },
+            {
+                "en": "Junior students in the university are encouraged to start applying for summer internships.",
+                "zh": "大學裡的大三學生被鼓勵開始申請暑期實習。"
+            },
+            {
+                "en": "Please ask a junior staff member to organize the files in the storage cabinet.",
+                "zh": "請叫一位資淺員工整理儲物櫃裡的檔案。"
+            },
+            {
+                "en": "As a junior in the industry, she always seeks guidance from her experienced mentor.",
+                "zh": "作為業界的晚輩，她總是向她經驗豐富的導師尋求指導。"
+            }
+        ],
+        "id": 26
+    },
+    {
+        "unit": 21,
+        "word": "lately",
+        "sentences": [
+            {
+                "en": "Have you noticed that the office printer has been breaking down quite often lately?",
+                "zh": "你最近有注意到辦公室的印表機經常故障嗎？"
+            },
+            {
+                "en": "The company's stock price has been fluctuating significantly lately due to market rumors.",
+                "zh": "由於市場傳言，該公司的股價最近大幅波動。"
+            },
+            {
+                "en": "Lately, our department has been overwhelmed with customer inquiries regarding the new policy.",
+                "zh": "最近，我們部門被關於新政策的客戶詢問給淹沒了。"
+            },
+            {
+                "en": "She has been working late a lot lately to ensure the project is delivered on time.",
+                "zh": "為了確保專案如期交付，她最近經常加班到很晚。"
+            },
+            {
+                "en": "Consumer demand for organic products has grown exponentially lately.",
+                "zh": "消費者對有機產品的需求近來呈指數級增長。"
+            }
+        ],
+        "id": 27
+    },
+    {
+        "unit": 21,
+        "word": "local",
+        "sentences": [
+            {
+                "en": "The supermarket prioritizes purchasing fresh produce from local farmers to support the community.",
+                "zh": "這家超市優先向當地農民採購新鮮農產品以支持社區。"
+            },
+            {
+                "en": "You should check the local zoning laws before beginning the construction of the new warehouse.",
+                "zh": "在開始建造新倉庫之前，你應該查看當地的區劃法規。"
+            },
+            {
+                "en": "The tourism board aims to attract more international visitors while pleasing the locals.",
+                "zh": "旅遊局旨在吸引更多國際遊客，同時也要讓當地人滿意。"
+            },
+            {
+                "en": "Our firm hired a local law agency to handle the complex legal procedures overseas.",
+                "zh": "我們公司聘請了一家當地的法律機構來處理海外複雜的法律程序。"
+            },
+            {
+                "en": "Local authorities have announced a temporary road closure near the main business district.",
+                "zh": "當地主管機關宣布主要商業區附近將暫時封閉道路。"
+            }
+        ],
+        "id": 28
+    },
+    {
+        "unit": 21,
+        "word": "locate",
+        "sentences": [
+            {
+                "en": "It took the technician several hours to locate the source of the network connection error.",
+                "zh": "技術人員花了幾個小時才找到網路連線錯誤的根源。"
+            },
+            {
+                "en": "Please use our website's interactive map to locate the nearest retail branch.",
+                "zh": "請使用我們網站的互動地圖來尋找最近的零售分店。"
+            },
+            {
+                "en": "The real estate agent helped the startup locate an affordable office in the industrial park.",
+                "zh": "房地產仲介幫助這家新創公司在工業區找到一間負擔得起的辦公室。"
+            },
+            {
+                "en": "We are currently trying to locate the misplaced documents before the audit begins.",
+                "zh": "我們目前正試圖在審計開始前找到那些放錯地方的檔案。"
+            },
+            {
+                "en": "The rescue team used GPS technology to quickly locate the missing hikers.",
+                "zh": "救援隊使用 GPS 技術迅速找到了失蹤的登山客。"
+            }
+        ],
+        "id": 29
+    },
+    {
+        "unit": 21,
+        "word": "location",
+        "sentences": [
+            {
+                "en": "The success of a coffee shop largely depends on its strategic location.",
+                "zh": "咖啡廳的成功很大程度上取決於其具戰略意義的位置。"
+            },
+            {
+                "en": "Please send me the exact location of the conference center so I can arrange transportation.",
+                "zh": "請把會議中心的確切位置傳給我，這樣我才能安排交通。"
+            },
+            {
+                "en": "Our company is searching for a new location to build a state-of-the-art research facility.",
+                "zh": "我們公司正在尋找一個新地點來建造最先進的研究設施。"
+            },
+            {
+                "en": "The film crew spent a week scouting for the perfect location to shoot the commercial.",
+                "zh": "劇組花了一週的時間尋找拍攝這支廣告的完美地點。"
+            },
+            {
+                "en": "The app tracks the user's location to provide personalized restaurant recommendations.",
+                "zh": "該應用程式追蹤使用者的位置以提供個人化的餐廳推薦。"
+            }
+        ],
+        "id": 30
+    },
+    {
+        "unit": 21,
+        "word": "mend",
+        "sentences": [
+            {
+                "en": "The IT department was able to mend the broken server overnight, minimizing downtime.",
+                "zh": "資訊部門能夠在連夜修補好故障的伺服器，將停機時間降至最低。"
+            },
+            {
+                "en": "The CEO held a special meeting in an attempt to mend relations with the labor union.",
+                "zh": "執行長舉行了一次特別會議，試圖修復與工會的關係。"
+            },
+            {
+                "en": "It took him several months to mend completely after the severe car accident.",
+                "zh": "在嚴重車禍後，他花了幾個月的時間才完全康復。"
+            },
+            {
+                "en": "She sent her luxury handbag to a professional shop to have the torn strap mended.",
+                "zh": "她把她的名牌包送到專業店鋪去修補斷裂的帶子。"
+            },
+            {
+                "en": "The government promised to mend the potholes on the main highway before winter arrives.",
+                "zh": "政府承諾在冬天到來前修補主要高速公路上的坑洞。"
+            }
+        ],
+        "id": 31
+    },
+    {
+        "unit": 21,
+        "word": "monthly",
+        "sentences": [
+            {
+                "en": "Employees are required to attend a monthly departmental meeting to discuss overall progress.",
+                "zh": "員工被要求參加每月的部門會議以討論整體進度。"
+            },
+            {
+                "en": "The company publishes a monthly newsletter to keep clients informed about new products.",
+                "zh": "公司發行月刊通訊，讓客戶了解新產品的資訊。"
+            },
+            {
+                "en": "Please ensure that the monthly rent for the office space is paid before the fifth day.",
+                "zh": "請確保辦公空間的月租金在每月五號前支付。"
+            },
+            {
+                "en": "Our subscription service allows you to pay a low monthly fee for unlimited streaming.",
+                "zh": "我們的訂閱服務讓您只需支付低廉的月費即可享受無限串流。"
+            },
+            {
+                "en": "The sales team's performance is evaluated monthly to determine their commission bonuses.",
+                "zh": "業務團隊的績效每月評估一次，以決定他們的佣金獎金。"
+            }
+        ],
+        "id": 32
+    },
+    {
+        "unit": 21,
+        "word": "mostly",
+        "sentences": [
+            {
+                "en": "The participants at the seminar were mostly middle management executives.",
+                "zh": "參加研討會的人多半是中階管理主管。"
+            },
+            {
+                "en": "Our client base consists mostly of small to medium-sized enterprises in the tech sector.",
+                "zh": "我們的客戶群大部分由科技領域的中小企業組成。"
+            },
+            {
+                "en": "The feedback from the focus group regarding the new packaging was mostly positive.",
+                "zh": "焦點小組對於新包裝的回饋大部分是正面的。"
+            },
+            {
+                "en": "He spends his weekends mostly catching up on administrative tasks he missed during the week.",
+                "zh": "他週末大部分時間都在趕處理週間落下的行政工作。"
+            },
+            {
+                "en": "The software glitches occur mostly when the server experiences high traffic volumes.",
+                "zh": "軟體故障多半發生在伺服器經歷高流量的時候。"
+            }
+        ],
+        "id": 33
+    },
+    {
+        "unit": 21,
+        "word": "mushroom",
+        "sentences": [
+            {
+                "en": "Boutique coffee shops have mushroomed across the city over the past five years.",
+                "zh": "在過去五年裡，精品咖啡店在全市如雨後春筍般出現。"
+            },
+            {
+                "en": "The chef prepared a special dish featuring truffles and exotic mushrooms for the VIP guests.",
+                "zh": "主廚為貴賓準備了一道以松露和異國蘑菇為特色的特別料理。"
+            },
+            {
+                "en": "Online educational platforms have mushroomed since the shift towards remote learning.",
+                "zh": "自從轉向遠距學習以來，線上教育平台呈蕈狀般大量擴散。"
+            },
+            {
+                "en": "The problem started as a minor disagreement and mushroomed into a full-scale legal battle.",
+                "zh": "這個問題一開始只是個小分歧，最後卻迅速擴大成全面的法律戰。"
+            },
+            {
+                "en": "New tech startups are mushrooming in this district thanks to government tax incentives.",
+                "zh": "多虧了政府的稅收優惠，新的科技新創公司在這個地區如雨後春筍般湧現。"
+            }
+        ],
+        "id": 34
+    },
+    {
+        "unit": 21,
+        "word": "on the decrease",
+        "sentences": [
+            {
+                "en": "Customer complaints have been on the decrease since we implemented the new quality control system.",
+                "zh": "自從我們實施新的品質控管系統後，顧客投訴一直處於減少中。"
+            },
+            {
+                "en": "Fortunately, the inflation rate seems to be on the decrease this quarter.",
+                "zh": "幸運的是，本季度的通貨膨脹率似乎正在減少中。"
+            },
+            {
+                "en": "The number of workplace accidents is on the decrease thanks to strict safety training.",
+                "zh": "多虧了嚴格的安全培訓，工作場所的事故數量正在減少中。"
+            },
+            {
+                "en": "Sales of traditional printed magazines are steadily on the decrease in the digital age.",
+                "zh": "在數位時代，傳統印刷雜誌的銷售量正穩定地在減少中。"
+            },
+            {
+                "en": "According to the latest report, the crime rate in the downtown area is on the decrease.",
+                "zh": "根據最新報告，市中心的犯罪率正在減少中。"
+            }
+        ],
+        "id": 35
+    },
+    {
+        "word": "on the increase",
+        "meaning": "不斷增加",
+        "sentences": [
+            {
+                "en": "Online sales have been steadily on the increase since the new marketing campaign was launched.",
+                "zh": "自從推出新行銷活動以來，網路銷售額一直在穩定不斷增加。"
+            },
+            {
+                "en": "The demand for renewable energy sources is clearly on the increase globally.",
+                "zh": "全球對再生能源的需求明顯正在不斷增加。"
+            },
+            {
+                "en": "Cybersecurity threats are on the increase, making it essential for companies to upgrade their software.",
+                "zh": "網路安全威脅不斷增加，這使得企業升級軟體變得至關重要。"
+            },
+            {
+                "en": "Customer complaints were on the increase before we revamped our service protocols.",
+                "zh": "在我們修改服務規章之前，顧客抱怨曾經不斷增加。"
+            },
+            {
+                "en": "Is the number of tourists visiting the island still on the increase this season?",
+                "zh": "這一季前往該島旅遊的遊客人數還在不斷增加嗎？"
+            }
+        ],
+        "id": 36
+    },
+    {
+        "word": "on the mend",
+        "meaning": "好轉中、康復中",
+        "sentences": [
+            {
+                "en": "After weeks of declining sales, the local retail market is finally on the mend.",
+                "zh": "經過連續幾週的銷售下滑，當地零售市場終於正在好轉中。"
+            },
+            {
+                "en": "Our CEO was hospitalized for a severe flu, but thankfully, he is on the mend now.",
+                "zh": "我們的執行長因重感冒住院，但幸好他現在正在康復中。"
+            },
+            {
+                "en": "The diplomatic relationship between the two nations appears to be on the mend.",
+                "zh": "這兩國之間的外交關係似乎正在好轉中。"
+            },
+            {
+                "en": "I heard your startup faced some financial issues last year; is it on the mend?",
+                "zh": "我聽說你的新創公司去年面臨了一些財務問題，現在情況好轉了嗎？"
+            },
+            {
+                "en": "Thanks to the recent restructuring, the company's profitability is definitely on the mend.",
+                "zh": "多虧了最近的重組，公司的獲利能力絕對正在好轉中。"
+            }
+        ],
+        "id": 37
+    },
+    {
+        "word": "ongoing",
+        "meaning": "不間斷的；正在進行的",
+        "sentences": [
+            {
+                "en": "We apologize for the inconvenience caused by the ongoing maintenance of our website.",
+                "zh": "我們為網站正在進行的維護所造成的不便致歉。"
+            },
+            {
+                "en": "There is an ongoing investigation into the recent data breach at the headquarters.",
+                "zh": "目前針對總部最近的資料外洩事件，有一項正在進行的調查。"
+            },
+            {
+                "en": "The ongoing negotiations between the labor union and the management are expected to conclude soon.",
+                "zh": "工會與資方之間正在進行的談判預計將很快結束。"
+            },
+            {
+                "en": "She has been dealing with ongoing health issues that affect her productivity at work.",
+                "zh": "她一直在處理影響她工作效率的不間斷的健康問題。"
+            },
+            {
+                "en": "Due to ongoing budget cuts, we cannot approve any new hiring requests this quarter.",
+                "zh": "由於持續進行的預算削減，我們無法批准本季任何的新聘請求。"
+            }
+        ],
+        "id": 38
+    },
+    {
+        "word": "operate",
+        "meaning": "操作；動手術",
+        "sentences": [
+            {
+                "en": "All employees must be trained before they are allowed to operate this heavy machinery.",
+                "zh": "所有員工在被允許操作這台重型機械之前，都必須接受培訓。"
+            },
+            {
+                "en": "The surgeon decided to operate on the patient immediately to prevent further complications.",
+                "zh": "外科醫生決定立即為病人動手術，以防止進一步的併發症。"
+            },
+            {
+                "en": "Our new software operates seamlessly across different operating systems and devices.",
+                "zh": "我們的新軟體在不同的作業系統和設備上都能順暢地操作運作。"
+            },
+            {
+                "en": "The charity organization operates entirely on donations from generous local residents.",
+                "zh": "該慈善機構完全依賴當地慷慨居民的捐款來運作。"
+            },
+            {
+                "en": "Do you know how to operate the updated version of the accounting program?",
+                "zh": "你知道如何操作這個更新版的會計程式嗎？"
+            }
+        ],
+        "id": 39
+    },
+    {
+        "word": "operation",
+        "meaning": "操作；運轉；手術",
+        "sentences": [
+            {
+                "en": "The new manufacturing plant is scheduled to begin its operation next month.",
+                "zh": "新的製造工廠預計將於下個月開始運轉。"
+            },
+            {
+                "en": "He underwent a complex heart operation last year and has fully recovered since.",
+                "zh": "他去年經歷了一次複雜的心臟手術，自那以後已完全康復。"
+            },
+            {
+                "en": "Strict safety guidelines must be followed during the operation of these chemical reactors.",
+                "zh": "在操作這些化學反應器時，必須遵守嚴格的安全準則。"
+            },
+            {
+                "en": "Our overseas operation has expanded significantly due to high demand in Asian markets.",
+                "zh": "由於亞洲市場的高需求，我們的海外業務（營運）已大幅擴張。"
+            },
+            {
+                "en": "The rescue operation was halted temporarily because of the severe weather conditions.",
+                "zh": "由於惡劣的天氣條件，救援行動（運作）被暫時中止。"
+            }
+        ],
+        "id": 40
+    },
+    {
+        "word": "operator",
+        "meaning": "操作者；接線生",
+        "sentences": [
+            {
+                "en": "The machine operator is responsible for performing daily maintenance checks.",
+                "zh": "機器操作者負責執行日常的維護檢查。"
+            },
+            {
+                "en": "I tried calling the customer service center, but the operator put me on hold for ten minutes.",
+                "zh": "我試圖打電話給客服中心，但接線生讓我等了十分鐘。"
+            },
+            {
+                "en": "As a skilled crane operator, he commands a very competitive salary in the construction industry.",
+                "zh": "身為一名熟練的起重機操作者，他在建築業中獲得了極具競爭力的薪水。"
+            },
+            {
+                "en": "The tour operator organized a customized itinerary for our corporate retreat.",
+                "zh": "該旅遊業者（操作者）為我們的企業靜修活動安排了客製化的行程。"
+            },
+            {
+                "en": "Please stay on the line, and an operator will be with you shortly to assist with your inquiry.",
+                "zh": "請不要掛斷，接線生很快就會為您服務並協助處理您的查詢。"
+            }
+        ],
+        "id": 41
+    },
+    {
+        "word": "oral",
+        "meaning": "口頭的；口腔的；口服的；口試",
+        "sentences": [
+            {
+                "en": "The candidate performed exceptionally well in the oral exam for the bilingual position.",
+                "zh": "該名應徵者在雙語職位的口試中表現得異常出色。"
+            },
+            {
+                "en": "Good oral hygiene is essential for preventing dental diseases and maintaining overall health.",
+                "zh": "良好的口腔衛生對於預防牙科疾病和維持整體健康至關重要。"
+            },
+            {
+                "en": "We reached an oral agreement regarding the lease terms before signing the formal contract.",
+                "zh": "在簽署正式合約之前，我們針對租賃條款達成了口頭協議。"
+            },
+            {
+                "en": "This medication is for oral use only and should not be applied directly to the skin.",
+                "zh": "這種藥物僅供口服使用，不應直接塗抹於皮膚上。"
+            },
+            {
+                "en": "He possesses excellent oral communication skills, making him a great fit for the sales team.",
+                "zh": "他具備極佳的口頭溝通能力，使他非常適合這個業務團隊。"
+            }
+        ],
+        "id": 42
+    },
+    {
+        "word": "organ",
+        "meaning": "器官；管風琴",
+        "sentences": [
+            {
+                "en": "The heart is a vital organ that pumps blood throughout the entire human body.",
+                "zh": "心臟是一個將血液輸送到全人體的重要器官。"
+            },
+            {
+                "en": "He decided to become an organ donor after his brother received a life-saving transplant.",
+                "zh": "在他哥哥接受了挽救生命的移植手術後，他決定成為一名器官捐贈者。"
+            },
+            {
+                "en": "The old church features a magnificent pipe organ that dates back to the 19th century.",
+                "zh": "這座古老的教堂擁有一架可追溯至 19 世紀的宏偉管風琴。"
+            },
+            {
+                "en": "Exposure to toxic chemicals can cause irreversible damage to internal organs.",
+                "zh": "暴露於有毒化學物質中可能會對內部器官造成不可逆的損害。"
+            },
+            {
+                "en": "She practices playing the organ every Sunday morning before the congregation arrives.",
+                "zh": "她每個星期天早上在會眾到達之前練習彈奏管風琴。"
+            }
+        ],
+        "id": 43
+    },
+    {
+        "word": "organic",
+        "meaning": "有機的；器官的",
+        "sentences": [
+            {
+                "en": "The supermarket has expanded its selection of organic vegetables to meet growing consumer demand.",
+                "zh": "超市擴大了有機蔬菜的選擇範圍，以滿足不斷增長的消費者需求。"
+            },
+            {
+                "en": "Our farm uses only organic fertilizers to ensure the soil remains healthy and fertile.",
+                "zh": "我們的農場只使用有機肥料，以確保土壤保持健康和肥沃。"
+            },
+            {
+                "en": "The company's organic growth over the last decade has been nothing short of remarkable.",
+                "zh": "該公司過去十年來的有機成長簡直令人矚目。"
+            },
+            {
+                "en": "Certain organic diseases can affect a person's cognitive abilities as they age.",
+                "zh": "某些器官的疾病可能會影響一個人隨著年齡增長而改變的認知能力。"
+            },
+            {
+                "en": "Are you willing to pay a premium price for products made with certified organic ingredients?",
+                "zh": "你願意花更高的價格購買經過認證的有機成分製成的產品嗎？"
+            }
+        ],
+        "id": 44
+    },
+    {
+        "word": "professor",
+        "meaning": "教授",
+        "sentences": [
+            {
+                "en": "Professor Smith will deliver a keynote speech on the impact of artificial intelligence in business.",
+                "zh": "史密斯教授將發表關於人工智慧在商業中影響的主題演講。"
+            },
+            {
+                "en": "She was recently promoted to the rank of full professor at the university's economics department.",
+                "zh": "她最近被晉升為該大學經濟系的正規教授。"
+            },
+            {
+                "en": "The professor extended the deadline for the final assignment due to a campus-wide network outage.",
+                "zh": "由於全校網路中斷，教授延後了期末作業的截止日期。"
+            },
+            {
+                "en": "Many students consider him to be the most inspiring professor they have ever had.",
+                "zh": "許多學生認為他是他們遇過最具啟發性的教授。"
+            },
+            {
+                "en": "Before joining the tech firm, he spent ten years working as a visiting professor in Europe.",
+                "zh": "在加入這家科技公司之前，他曾在歐洲擔任了十年的客座教授。"
+            }
+        ],
+        "id": 45
+    },
+    {
+        "word": "property",
+        "meaning": "財產；特性",
+        "sentences": [
+            {
+                "en": "The real estate agent showed us a commercial property located right in the heart of the city.",
+                "zh": "房地產仲介向我們展示了一處位於市中心的商業財產（房地產）。"
+            },
+            {
+                "en": "Please make sure you don't leave any personal property behind when exiting the conference room.",
+                "zh": "離開會議室時，請確保您沒有遺留任何個人財產。"
+            },
+            {
+                "en": "This new material has a unique property that allows it to absorb shock more effectively.",
+                "zh": "這種新材料具有獨特的特性，使其能更有效地吸收衝擊力。"
+            },
+            {
+                "en": "Intellectual property rights are strictly enforced to protect the company's innovative designs.",
+                "zh": "智慧財產權受到嚴格執行，以保護公司的創新設計。"
+            },
+            {
+                "en": "The chemical properties of the substance change dramatically when exposed to high temperatures.",
+                "zh": "當暴露在高溫下時，該物質的化學特性會發生劇烈變化。"
+            }
+        ],
+        "id": 46
+    },
+    {
+        "word": "recently",
+        "meaning": "最近地",
+        "sentences": [
+            {
+                "en": "The board of directors recently approved the proposal for international expansion.",
+                "zh": "董事會最近批准了國際擴張的提案。"
+            },
+            {
+                "en": "Have you recently updated the firmware on your company laptop?",
+                "zh": "你最近有更新公司筆記型電腦上的韌體嗎？"
+            },
+            {
+                "en": "We recently celebrated our ten-year anniversary by hosting a grand banquet for all staff.",
+                "zh": "我們最近為全體員工舉辦了一場盛大的宴會，慶祝我們成立十週年。"
+            },
+            {
+                "en": "The unemployment rate in the region has recently dropped to its lowest point in five years.",
+                "zh": "該地區的失業率最近已降至五年來的最低點。"
+            },
+            {
+                "en": "She was recently transferred to the marketing department to oversee the new product launch.",
+                "zh": "她最近被調到行銷部，負責監督新產品的發布。"
+            }
+        ],
+        "id": 47
+    },
+    {
+        "word": "roller-skate",
+        "meaning": "輪鞋溜冰；滑輪溜冰鞋",
+        "sentences": [
+            {
+                "en": "The kids love to roller-skate in the park every weekend when the weather is nice.",
+                "zh": "天氣好時，孩子們喜歡每個週末在公園裡輪鞋溜冰。"
+            },
+            {
+                "en": "She bought a pair of vintage roller-skates online, hoping to learn some new tricks.",
+                "zh": "她在網路上買了一雙復古滑輪溜冰鞋，希望能學些新花招。"
+            },
+            {
+                "en": "Learning to roller-skate requires a good sense of balance and a lot of practice.",
+                "zh": "學習輪鞋溜冰需要良好的平衡感和大量的練習。"
+            },
+            {
+                "en": "The community center is hosting a roller-skate party this Friday evening.",
+                "zh": "社區中心這週五晚上將舉辦一場輪鞋溜冰派對。"
+            },
+            {
+                "en": "He forgot to bring his safety gear while going to roller-skate and unfortunately scraped his knee.",
+                "zh": "他去輪鞋溜冰時忘了帶安全裝備，不幸擦傷了膝蓋。"
+            }
+        ],
+        "id": 48
+    },
+    {
+        "word": "rub",
+        "meaning": "摩擦、揉；塗抹、擦~；擦洗",
+        "sentences": [
+            {
+                "en": "You need to rub the ointment gently into the affected area twice a day.",
+                "zh": "你需要每天兩次將藥膏輕輕塗抹在患處。"
+            },
+            {
+                "en": "He rubbed his eyes in disbelief when he saw the outstanding quarterly sales figures.",
+                "zh": "當他看到出色的季度銷售數據時，難以置信地揉了揉眼睛。"
+            },
+            {
+                "en": "If the stain doesn't come off, try to rub it with a mixture of baking soda and water.",
+                "zh": "如果污漬洗不掉，試著用小蘇打和水的混合物擦洗它。"
+            },
+            {
+                "en": "The friction caused the metal parts to rub against each other, creating a loud noise.",
+                "zh": "摩擦力導致金屬零件互相摩擦，產生了巨大的噪音。"
+            },
+            {
+                "en": "She rubbed the surface of the antique table with a special wax to restore its shine.",
+                "zh": "她用一種特殊的蠟擦拭古董桌的表面，以恢復其光澤。"
+            }
+        ],
+        "id": 49
+    },
+    {
+        "word": "saucer",
+        "meaning": "茶碟、(杯子下的)托碟",
+        "sentences": [
+            {
+                "en": "The waiter carefully placed the teacup and its matching saucer on the dining table.",
+                "zh": "服務生小心翼翼地將茶杯和配套的托碟放在餐桌上。"
+            },
+            {
+                "en": "I accidentally dropped the saucer, but fortunately, it didn't shatter into pieces.",
+                "zh": "我不小心摔落了茶碟，但幸好它沒有碎成碎片。"
+            },
+            {
+                "en": "She poured a little milk into a saucer for the stray kitten waiting by the door.",
+                "zh": "她在托碟裡倒了一點牛奶，給在門外等候的流浪小貓喝。"
+            },
+            {
+                "en": "The antique store sells a beautiful set of porcelain cups and saucers from the 18th century.",
+                "zh": "這家古董店出售一套精美的18世紀瓷器杯子和茶碟。"
+            },
+            {
+                "en": "Please ensure every coffee cup is served with a clean saucer during the business conference.",
+                "zh": "在商務會議期間，請確保每杯咖啡都配有乾淨的托碟送上。"
+            }
+        ],
+        "id": 50
+    },
+    {
+        "word": "scrub",
+        "meaning": "用力擦洗或刷洗；用力擦洗或刷洗；磨砂膏",
+        "sentences": [
+            {
+                "en": "The maintenance team had to scrub the graffiti off the building's exterior walls.",
+                "zh": "維護團隊不得不將建築物外牆上的塗鴉用力刷洗掉。"
+            },
+            {
+                "en": "She bought a new facial scrub to help exfoliate and refresh her skin.",
+                "zh": "她買了一款新的臉部磨砂膏，以幫助去角質並讓肌膚煥然一新。"
+            },
+            {
+                "en": "The surgeon began to scrub his hands thoroughly before entering the operating room.",
+                "zh": "外科醫生在進入手術室前開始徹底地用力擦洗雙手。"
+            },
+            {
+                "en": "It took me hours to scrub the kitchen floor until it was completely spotless.",
+                "zh": "我花了幾個小時用力擦洗廚房地板，直到它完全一塵不染。"
+            },
+            {
+                "en": "They decided to scrub the launch mission due to unexpected technical difficulties.",
+                "zh": "由於出現了意想不到的技術困難，他們決定取消（引申義：擦去/取消）發射任務。"
+            }
+        ],
+        "id": 51
+    },
+    {
+        "word": "senior",
+        "meaning": "較~年長的；資深的；(四年制學校)四年級的；年長者；長官、上司；(四年制學校)四年級生",
+        "sentences": [
+            {
+                "en": "As a senior manager, she is responsible for overseeing the entire project development cycle.",
+                "zh": "作為一名資深經理，她負責監督整個專案開發週期。"
+            },
+            {
+                "en": "He is my senior by five years, but we share a lot of common interests outside of work.",
+                "zh": "他比我年長五歲，但我們在工作之餘有許多共同的興趣。"
+            },
+            {
+                "en": "The company offers special discounts on travel packages for seniors over the age of 65.",
+                "zh": "該公司為65歲以上的年長者提供旅遊套裝行程的特別折扣。"
+            },
+            {
+                "en": "My brother is currently a senior in college and will be graduating next spring.",
+                "zh": "我弟弟目前是大學四年級生，將於明年春天畢業。"
+            },
+            {
+                "en": "You should always consult your seniors before making any major changes to the corporate policy.",
+                "zh": "在對公司政策進行任何重大更改之前，你應始終諮詢你的上司。"
+            }
+        ],
+        "id": 52
+    },
+    {
+        "word": "senior citizen",
+        "meaning": "長者(一般指六十五歲以上已退休人士)",
+        "sentences": [
+            {
+                "en": "The local public transportation system provides discounted fares for every registered senior citizen.",
+                "zh": "當地的公共交通系統為每位註冊的長者提供折扣票價。"
+            },
+            {
+                "en": "Many community centers organize daily activities to help senior citizens stay active and social.",
+                "zh": "許多社區中心組織日常活動，以幫助長者保持活躍和參與社交。"
+            },
+            {
+                "en": "As a senior citizen, my grandfather enjoys tending to his garden and reading novels.",
+                "zh": "身為一名長者，我祖父喜歡照料他的花園和閱讀小說。"
+            },
+            {
+                "en": "The newly built residential complex is designed specifically to meet the needs of senior citizens.",
+                "zh": "這個新建的住宅大樓是專門為了滿足長者的需求而設計的。"
+            },
+            {
+                "en": "There is a significant tax deduction available for any senior citizen who meets the income criteria.",
+                "zh": "對於符合收入標準的任何長者，有相當大的扣除額可供申請。"
+            }
+        ],
+        "id": 53
+    },
+    {
+        "word": "shovel",
+        "meaning": "鏟子、圓鍬；一鏟的量；鏟除",
+        "sentences": [
+            {
+                "en": "We need a heavy-duty shovel to move this pile of gravel out of the driveway.",
+                "zh": "我們需要一把重型圓鍬把這堆碎石移出車道。"
+            },
+            {
+                "en": "He woke up early to shovel the snow off the sidewalk before the neighbors left for work.",
+                "zh": "他提早起床，在鄰居出門上班前將人行道上的雪鏟除。"
+            },
+            {
+                "en": "The construction worker threw a shovel of cement into the mixer to prepare the foundation.",
+                "zh": "建築工人往攪拌機裡扔了一鏟的量的水泥以準備地基。"
+            },
+            {
+                "en": "Can you pass me that small shovel? I want to plant some rose bushes in the garden.",
+                "zh": "你能把那把小鏟子遞給我嗎？我想在花園裡種幾株玫瑰。"
+            },
+            {
+                "en": "They had to continuously shovel coal into the furnace to keep the steam engine running.",
+                "zh": "他們必須不斷將煤鏟入火爐中，以保持蒸汽機的運轉。"
+            }
+        ],
+        "id": 54
+    },
+    {
+        "word": "skate",
+        "meaning": "溜冰、溜滑輪；溜冰鞋",
+        "sentences": [
+            {
+                "en": "She learned how to ice skate when she was only five years old and eventually joined a professional team.",
+                "zh": "她年僅五歲時就學會了溜冰，最終加入了一支職業隊伍。"
+            },
+            {
+                "en": "My right skate feels a bit loose; I need to tie the laces tighter before returning to the rink.",
+                "zh": "我的右腳溜冰鞋感覺有點鬆；我需要把鞋帶綁緊一點再回到溜冰場上。"
+            },
+            {
+                "en": "The city government plans to build a new skate park to encourage outdoor activities among teenagers.",
+                "zh": "市政府計劃建造一個新的溜滑輪公園，以鼓勵青少年的戶外活動。"
+            },
+            {
+                "en": "He managed to skate around the defender and score the winning goal for his hockey team.",
+                "zh": "他成功地溜冰繞過防守球員，為他的曲棍球隊踢進了致勝的一球。"
+            },
+            {
+                "en": "If you want to rent a pair of inline skates, you have to leave your ID at the front desk.",
+                "zh": "如果你想租一雙直排溜冰鞋，你必須將身份證留在櫃檯。"
+            }
+        ],
+        "id": 55
+    },
+    {
+        "word": "ski",
+        "meaning": "滑雪；滑雪板、滑雪屐",
+        "sentences": [
+            {
+                "en": "Our family goes to Switzerland to ski every winter holiday.",
+                "zh": "我們家每年寒假都會去瑞士滑雪。"
+            },
+            {
+                "en": "The instructor showed the beginners how to correctly position their skis to slow down.",
+                "zh": "教練向初學者示範如何正確擺放滑雪板以減慢速度。"
+            },
+            {
+                "en": "He unfortunately broke his leg when one of his skis got caught in a tree branch.",
+                "zh": "不幸的是，當他的一塊滑雪板卡在樹枝上時，他摔斷了腿。"
+            },
+            {
+                "en": "The resort provides ski equipment rentals for those who don't have their own gear.",
+                "zh": "這個度假村為那些沒有自己裝備的人提供滑雪設備租賃服務。"
+            },
+            {
+                "en": "It takes years of practice to safely ski down such a steep and treacherous mountain slope.",
+                "zh": "要安全地從如此陡峭危險的山坡上滑雪下來，需要多年的練習。"
+            }
+        ],
+        "id": 56
+    },
+    {
+        "word": "stale",
+        "meaning": "不新鮮的、走味的；陳舊的、無新意的",
+        "sentences": [
+            {
+                "en": "The bakery throws away any stale bread at the end of the day to maintain its high quality.",
+                "zh": "這家麵包店在每天打烊時會丟棄任何不新鮮的麵包，以維持其高品質。"
+            },
+            {
+                "en": "The meeting dragged on for hours because the manager kept repeating the same stale ideas.",
+                "zh": "會議拖了幾個小時，因為經理一直重複同樣陳舊無新意的想法。"
+            },
+            {
+                "en": "Please seal the bag of coffee beans tightly so they don't go stale over time.",
+                "zh": "請將這包咖啡豆密封緊實，以免它們隨著時間走味。"
+            },
+            {
+                "en": "The air in the abandoned warehouse smelled stale and dusty after being closed for years.",
+                "zh": "這個廢棄倉庫被關閉多年後，裡面的空氣聞起來陳舊且充滿灰塵。"
+            },
+            {
+                "en": "Their marketing campaign felt a bit stale and failed to attract the younger demographic.",
+                "zh": "他們的行銷活動讓人感覺有點無新意，未能吸引較年輕的客群。"
+            }
+        ],
+        "id": 57
+    },
+    {
+        "word": "superior",
+        "meaning": "優於；上司、位階較高者；較優秀者",
+        "sentences": [
+            {
+                "en": "The quality of these imported materials is far superior to what we can find locally.",
+                "zh": "這些進口材料的品質遠優於我們在本地能找到的。"
+            },
+            {
+                "en": "You must seek approval from your immediate superior before finalizing the project budget.",
+                "zh": "在敲定專案預算之前，你必須尋求直屬上司的批准。"
+            },
+            {
+                "en": "Our new smartphone boasts a processor that is technologically superior to any competitor on the market.",
+                "zh": "我們的新款智慧型手機配備了在技術上優於市場上任何競爭對手的處理器。"
+            },
+            {
+                "en": "She acted politely toward her superiors but was often critical of her peers.",
+                "zh": "她對位階較高的主管表現得很有禮貌，但對同儕卻經常吹毛求疵。"
+            },
+            {
+                "en": "In the tournament, the champion proved to be the superior athlete through endurance and skill.",
+                "zh": "在錦標賽中，冠軍透過耐力和技巧證明了自己是較優秀的運動員。"
+            }
+        ],
+        "id": 58
+    },
+    {
+        "word": "tug",
+        "meaning": "(迅速地)用力拉；猛力拉",
+        "sentences": [
+            {
+                "en": "The little boy gave his mother's sleeve a gentle tug to get her attention.",
+                "zh": "小男孩輕輕地拉了一下他母親的袖子以引起她的注意。"
+            },
+            {
+                "en": "If you tug on that rope too hard, it might snap and cause an accident.",
+                "zh": "如果你太用力猛拉那條繩子，它可能會斷裂並造成意外。"
+            },
+            {
+                "en": "She felt a sudden tug at her bag and realized someone was trying to snatch it.",
+                "zh": "她感覺到包包被猛力拉了一下，這才意識到有人試圖搶走它。"
+            },
+            {
+                "en": "A small tugboat was used to tug the massive cruise ship into the harbor safely.",
+                "zh": "一艘小拖船被用來將這艘巨大的遊輪安全地拉進港口。"
+            },
+            {
+                "en": "The dog grabbed the end of the blanket and began to tug it away playfully.",
+                "zh": "這隻狗咬住毯子的一端，開始好玩地用力拉開它。"
+            }
+        ],
+        "id": 59
+    },
+    {
+        "word": "tug-of-war",
+        "meaning": "拔河、拉鋸戰",
+        "sentences": [
+            {
+                "en": "The employees organized a friendly game of tug-of-war during the company's annual picnic.",
+                "zh": "員工們在公司年度野餐期間舉辦了一場友誼拔河比賽。"
+            },
+            {
+                "en": "There is an ongoing political tug-of-war between the two major parties regarding the new tax law.",
+                "zh": "針對新稅法，兩大主要政黨之間正進行著一場政治拉鋸戰。"
+            },
+            {
+                "en": "The budget negotiations turned into a frustrating tug-of-war between marketing and research departments.",
+                "zh": "預算談判變成了行銷部和研發部之間令人沮喪的拉鋸戰。"
+            },
+            {
+                "en": "Winning a real tug-of-war match requires not just physical strength, but also synchronized teamwork.",
+                "zh": "贏得真正的拔河比賽不僅需要體力，還需要同步的團隊合作。"
+            },
+            {
+                "en": "She felt caught in an emotional tug-of-war, unable to choose between her career and family.",
+                "zh": "她感到陷入了情感的拉鋸戰中，無法在事業和家庭之間做出選擇。"
+            }
+        ],
+        "id": 60
+    },
+    {
+        "word": "underlying",
+        "meaning": "根本的；潛在的、隱含的",
+        "sentences": [
+            {
+                "en": "The consultant was hired to identify the underlying causes of the company's declining revenue.",
+                "zh": "這位顧問被聘請來找出公司營收下滑的根本原因。"
+            },
+            {
+                "en": "Before treating the symptoms, the doctor ordered tests to determine the underlying disease.",
+                "zh": "在治療症狀之前，醫生安排了檢查以確定潛在的疾病。"
+            },
+            {
+                "en": "There seems to be an underlying message of hope in the CEO's recent resignation speech.",
+                "zh": "在執行長最近的辭職演說中，似乎隱含著一個充滿希望的訊息。"
+            },
+            {
+                "en": "Understanding the underlying principles of physics is essential for any engineering student.",
+                "zh": "了解物理學的根本原理對任何工程系學生來說都是必不可少的。"
+            },
+            {
+                "en": "The dispute over property lines was just a manifestation of their underlying hostility toward each other.",
+                "zh": "關於財產界線的爭執只是他們彼此之間潛在敵意的一種表現。"
+            }
+        ],
+        "id": 61
+    },
+    {
+        "word": "unique",
+        "meaning": "獨特的、獨一無二的",
+        "sentences": [
+            {
+                "en": "Each applicant brings a unique set of skills and experiences to our fast-growing team.",
+                "zh": "每位應徵者都為我們快速成長的團隊帶來了獨特的一套技能和經驗。"
+            },
+            {
+                "en": "The boutique hotel offers a unique dining experience that you won't find anywhere else in the city.",
+                "zh": "這家精品旅館提供了你在城市其他任何地方都找不到的獨一無二的用餐體驗。"
+            },
+            {
+                "en": "This antique vase is completely unique; there isn't another one like it in the world.",
+                "zh": "這個古董花瓶是完全獨一無二的；世界上沒有第二個像它一樣的。"
+            },
+            {
+                "en": "Our marketing strategy needs a unique selling proposition to stand out in this competitive market.",
+                "zh": "我們的行銷策略需要一個獨特的銷售主張，才能在這個競爭激烈的市場中脫穎而出。"
+            },
+            {
+                "en": "She possesses a unique talent for solving complex logistical problems under extreme pressure.",
+                "zh": "她擁有一種在極大壓力下解決複雜物流問題的獨特天賦。"
+            }
+        ],
+        "id": 62
+    },
+    {
+        "word": "urban",
+        "meaning": "都市的",
+        "sentences": [
+            {
+                "en": "The rapid expansion of the urban population has put an immense strain on public transportation.",
+                "zh": "都市人口的快速擴張對大眾運輸造成了極大的壓力。"
+            },
+            {
+                "en": "The architect specializes in designing sustainable housing projects for densely populated urban areas.",
+                "zh": "這位建築師專精於為人口稠密的都市地區設計永續的住宅專案。"
+            },
+            {
+                "en": "Urban development must be balanced with environmental conservation to ensure a livable future.",
+                "zh": "都市發展必須與環境保育取得平衡，以確保一個適合居住的未來。"
+            },
+            {
+                "en": "Many young professionals prefer the convenience and vibrant lifestyle of an urban setting.",
+                "zh": "許多充滿活力的年輕專業人士偏好都市環境帶來的便利與生活方式。"
+            },
+            {
+                "en": "The seminar focused on the unique challenges related to urban planning and zoning laws.",
+                "zh": "研討會聚焦於與都市計畫及分區法律相關的獨特挑戰。"
+            }
+        ],
+        "id": 63
+    },
+    {
+        "word": "weekly",
+        "meaning": "每週的；每週地；週刊",
+        "sentences": [
+            {
+                "en": "We hold a weekly staff meeting every Monday morning to align our goals for the upcoming days.",
+                "zh": "我們每週一早上舉行每週的員工會議，以對齊接下來幾天的目標。"
+            },
+            {
+                "en": "The business magazine is published weekly and provides in-depth analysis of financial markets.",
+                "zh": "這本商業雜誌以週刊形式發行，並提供金融市場的深入分析。"
+            },
+            {
+                "en": "She visits her grandparents weekly to bring them groceries and keep them company.",
+                "zh": "她每週地去探望祖父母，為他們帶去雜貨並陪伴他們。"
+            },
+            {
+                "en": "Please ensure that your weekly progress reports are submitted to the project manager by Friday noon.",
+                "zh": "請確保您的每週進度報告在星期五中午前提交給專案經理。"
+            },
+            {
+                "en": "Subscribers will receive a weekly newsletter featuring the latest industry trends and insights.",
+                "zh": "訂閱者將收到一份包含最新行業趨勢和見解的每週電子報。"
+            }
+        ],
+        "id": 64
+    }
+]
