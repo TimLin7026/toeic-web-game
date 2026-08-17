@@ -126,7 +126,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.10</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.11</p>
             </div>
         </div>
 
@@ -152,7 +152,7 @@
                 <div class="relative w-full h-full duration-500 transform-style-3d shadow-xl rounded-2xl bg-white" id="card-inner">
                     
                     <!-- 正面 (英文與雙例句，靠上對齊) -->
-                    <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-indigo-500 to-violet-600 text-white rounded-2xl p-5 flex flex-col justify-between backface-hidden shadow-md overflow-y-auto">
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-emerald-600 to-teal-700 text-white rounded-2xl p-5 flex flex-col justify-between backface-hidden shadow-md overflow-y-auto">
                         <div class="flex justify-between items-center w-full">
                             <span class="text-[11px] bg-white/20 px-2.5 py-0.5 rounded-full font-semibold uppercase tracking-wider">English (點擊卡片看背面)</span>
                             <!-- 右上角已掌握勾勾按鈕 -->
@@ -174,9 +174,6 @@
                             <div id="card-sentences-container-en" class="w-full space-y-2">
                                 <!-- 由 JavaScript 動態生成例句 -->
                             </div>
- 
-                            <!-- 展開更多例句按鈕 -->
-                            <button id="btn-toggle-extra-ex" onclick="event.stopPropagation(); toggleExtraSentences();" class="text-[11px] text-indigo-200 hover:text-white transition underline underline-offset-2">＋ 查看更多例句</button>
                         </div>
 
                         <!-- 正面底部 -->
@@ -201,7 +198,7 @@
                         <div class="flex flex-col items-center my-auto w-full space-y-2.5">
                             <h2 id="card-meaning" class="text-2xl font-bold text-slate-700">破壞</h2>
                             <div class="flex items-center gap-1.5 justify-center">
-                                <p class="text-xs font-semibold text-indigo-600" id="card-word-back">spoil</p>
+                                <p class="text-xs font-semibold text-emerald-600" id="card-word-back">spoil</p>
                                 <button onclick="event.stopPropagation(); playAudio(currentWords[currentIndex].word);" class="p-1 bg-slate-100 hover:bg-slate-200 rounded-full transition transform active:scale-95 flex-shrink-0" title="播放發音">
                                     <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                                 </button>
@@ -1067,7 +1064,7 @@
                     div.className = `w-full bg-white/10 p-2.5 rounded-xl flex items-center justify-between gap-2 text-left ${idx >= 2 ? 'extra-sentence' : ''}`;
                     
                     const p = document.createElement('p');
-                    p.className = "text-sm font-semibold text-indigo-100 flex-1";
+                    p.className = "text-sm font-semibold text-emerald-100 flex-1";
                     p.textContent = ex.en;
                     
                     const btn = document.createElement('button');
