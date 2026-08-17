@@ -1002,7 +1002,7 @@
             const extraZhDiv = document.getElementById('card-extra-zh-sentences');
             const toggleExBtn = document.getElementById('btn-toggle-extra-ex');
             if (ex3El) ex3El.textContent = wordObj.ex3En || '';
-            if (ex3ZhEl) ex3ZhEl.textContent = wordObj.ex3Zh ? `3. ${wordObj.ex3Zh}` : '';
+            if (ex3ZhEl) ex3ZhEl.textContent = wordObj.ex3Zh || '';
             if (extraDiv) extraDiv.classList.add('hidden');
             if (extraZhDiv) extraZhDiv.classList.add('hidden');
             if (toggleExBtn) {
