@@ -126,7 +126,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.12</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.13</p>
             </div>
         </div>
 
@@ -152,11 +152,11 @@
                 <div class="relative w-full h-full duration-500 transform-style-3d shadow-xl rounded-2xl bg-white" id="card-inner">
                     
                     <!-- 正面 (英文與雙例句，靠上對齊) -->
-                    <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#e1eedd] to-[#c7e2b2] text-slate-800 rounded-2xl p-5 flex flex-col justify-between backface-hidden shadow-md overflow-y-auto border border-emerald-100/40">
+                    <div class="absolute top-0 left-0 w-full min-h-full bg-gradient-to-br from-[#e1eedd] to-[#c7e2b2] text-slate-800 rounded-2xl p-5 flex flex-col justify-between backface-hidden shadow-md border border-emerald-100/40">
                         <div class="flex justify-between items-center w-full">
                             <span class="text-[11px] bg-white/60 text-emerald-800 border border-emerald-200/50 px-2.5 py-0.5 rounded-full font-semibold uppercase tracking-wider">English (點擊卡片看背面)</span>
                             <!-- 右上角已掌握勾勾按鈕 -->
-                            <button id="card-master-top-en" onclick="event.stopPropagation(); toggleCardMaster();" class="p-1.5 rounded-lg bg-white/60 hover:bg-white/80 text-slate-400 hover:text-slate-600 border border-emerald-200/50 transition active:scale-95 flex items-center justify-center" title="標記為已掌握">
+                            <button id="card-master-top-en" onclick="event.stopPropagation(); toggleCardMaster();" class="px-4 py-1.5 rounded-lg bg-white/60 hover:bg-white/80 text-slate-400 hover:text-slate-600 border border-emerald-200/50 transition active:scale-95 flex items-center justify-center shadow-sm" title="標記為已掌握">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             </button>
                         </div>
@@ -180,18 +180,18 @@
                         <div class="flex justify-between items-center w-full mt-auto pt-2 border-t border-emerald-200/50 flex-shrink-0">
                             <span class="text-[10px] text-slate-500">點擊卡片看背面</span>
                             <!-- 右下角已掌握勾勾按鈕 -->
-                            <button id="card-master-bottom-en" onclick="event.stopPropagation(); toggleCardMaster();" class="p-1.5 rounded-lg bg-white/60 hover:bg-white/80 text-slate-400 hover:text-slate-600 border border-emerald-200/50 transition active:scale-95 flex items-center justify-center" title="標記為已掌握">
+                            <button id="card-master-bottom-en" onclick="event.stopPropagation(); toggleCardMaster();" class="px-4 py-1.5 rounded-lg bg-white/60 hover:bg-white/80 text-slate-400 hover:text-slate-600 border border-emerald-200/50 transition active:scale-95 flex items-center justify-center shadow-sm" title="標記為已掌握">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             </button>
                         </div>
                     </div>
  
                     <!-- 背面 (中文與中文例句) -->
-                    <div class="absolute inset-0 w-full h-full bg-white text-slate-800 rounded-2xl p-5 flex flex-col justify-between backface-hidden rotate-y-180 border border-slate-100 shadow-md overflow-y-auto">
+                    <div class="absolute top-0 left-0 w-full min-h-full bg-white text-slate-800 rounded-2xl p-5 flex flex-col justify-between backface-hidden rotate-y-180 border border-slate-100 shadow-md">
                         <div class="flex justify-between items-center w-full">
                             <span class="text-[11px] bg-emerald-100 text-emerald-700 px-2.5 py-0.5 rounded-full font-semibold uppercase tracking-wider">中文釋義與例句對照</span>
                             <!-- 右上角已掌握勾勾按鈕 -->
-                            <button id="card-master-top-zh" onclick="event.stopPropagation(); toggleCardMaster();" class="p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition active:scale-95 flex items-center justify-center" title="標記為已掌握">
+                            <button id="card-master-top-zh" onclick="event.stopPropagation(); toggleCardMaster();" class="px-4 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 border border-slate-200 transition active:scale-95 flex items-center justify-center shadow-sm" title="標記為已掌握">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             </button>
                         </div>
@@ -214,7 +214,7 @@
                         <div class="flex justify-between items-center w-full mt-auto pt-2 border-t border-slate-100 flex-shrink-0">
                             <span class="text-[11px] text-slate-400">點擊卡片回到英文</span>
                             <!-- 右下角已掌握勾勾按鈕 -->
-                            <button id="card-master-bottom-zh" onclick="event.stopPropagation(); toggleCardMaster();" class="p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition active:scale-95 flex items-center justify-center" title="標記為已掌握">
+                            <button id="card-master-bottom-zh" onclick="event.stopPropagation(); toggleCardMaster();" class="px-4 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 border border-slate-200 transition active:scale-95 flex items-center justify-center shadow-sm" title="標記為已掌握">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             </button>
                         </div>
@@ -1126,15 +1126,15 @@
             const btnBottomZh = document.getElementById('card-master-bottom-zh');
 
             if (wordObj.mastered) {
-                if (btnTopEn) btnTopEn.className = "p-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
-                if (btnBottomEn) btnBottomEn.className = "p-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
-                if (btnTopZh) btnTopZh.className = "p-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
-                if (btnBottomZh) btnBottomZh.className = "p-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
+                if (btnTopEn) btnTopEn.className = "px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
+                if (btnBottomEn) btnBottomEn.className = "px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
+                if (btnTopZh) btnTopZh.className = "px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
+                if (btnBottomZh) btnBottomZh.className = "px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
             } else {
-                if (btnTopEn) btnTopEn.className = "p-1.5 rounded-lg bg-white/60 hover:bg-white/80 text-slate-400 hover:text-slate-600 border border-emerald-200/50 transition active:scale-95 flex items-center justify-center";
-                if (btnBottomEn) btnBottomEn.className = "p-1.5 rounded-lg bg-white/60 hover:bg-white/80 text-slate-400 hover:text-slate-600 border border-emerald-200/50 transition active:scale-95 flex items-center justify-center";
-                if (btnTopZh) btnTopZh.className = "p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition active:scale-95 flex items-center justify-center";
-                if (btnBottomZh) btnBottomZh.className = "p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition active:scale-95 flex items-center justify-center";
+                if (btnTopEn) btnTopEn.className = "px-4 py-1.5 rounded-lg bg-white/60 hover:bg-white/80 text-slate-400 hover:text-slate-600 border border-emerald-200/50 transition active:scale-95 flex items-center justify-center";
+                if (btnBottomEn) btnBottomEn.className = "px-4 py-1.5 rounded-lg bg-white/60 hover:bg-white/80 text-slate-400 hover:text-slate-600 border border-emerald-200/50 transition active:scale-95 flex items-center justify-center";
+                if (btnTopZh) btnTopZh.className = "px-4 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition active:scale-95 flex items-center justify-center";
+                if (btnBottomZh) btnBottomZh.className = "px-4 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition active:scale-95 flex items-center justify-center";
             }
             
             if (isFlipped) {
@@ -1142,20 +1142,18 @@
                 document.getElementById('card-inner').style.transform = 'rotateY(0deg)';
             }
 
-            // 換牌時，因為預設展開全部例句，因此若例句大於 2 個則動態撐開卡片，否則維持 320px
+            // 換牌時，先重置高度為預設緊湊狀態讓 min-h-full 內容收縮回真實高度，再計算最新 scrollHeight 並設定
             const container = document.getElementById('card-container');
             if (container) {
-                const examples = wordObj.examples || [];
-                if (examples.length > 2) {
-                    const frontEl = container.querySelector('#card-inner > div:first-child');
-                    const backEl = container.querySelector('#card-inner > div:last-child');
-                    const frontHeight = frontEl ? frontEl.scrollHeight : 320;
-                    const backHeight = backEl ? backEl.scrollHeight : 320;
-                    const targetHeight = Math.max(frontHeight, backHeight, 320) + 20;
-                    container.style.height = `${targetHeight}px`;
-                } else {
-                    container.style.height = '320px';
-                }
+                container.style.height = '320px';
+                
+                const frontEl = container.querySelector('#card-inner > div:first-child');
+                const backEl = container.querySelector('#card-inner > div:last-child');
+                const frontHeight = frontEl ? frontEl.scrollHeight : 320;
+                const backHeight = backEl ? backEl.scrollHeight : 320;
+                
+                const targetHeight = Math.max(frontHeight, backHeight, 320) + 10;
+                container.style.height = `${targetHeight}px`;
             }
         }
 
