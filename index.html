@@ -105,7 +105,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.1</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.2</p>
             </div>
         </div>
 
@@ -172,10 +172,6 @@
                             <!-- 展開更多例句按鈕 -->
                             <button id="btn-toggle-extra-ex" onclick="event.stopPropagation(); toggleExtraSentences();" class="text-[11px] text-indigo-200 hover:text-white transition underline underline-offset-2">＋ 查看更多例句</button>
                         </div>
-
-                        <div class="text-center text-[11px] text-indigo-200">
-                            第 <span id="card-index">1</span> 題 / 共 <span id="card-total">35</span> 題
-                        </div>
                     </div>
 
                     <!-- 背面 (中文與中文例句) -->
@@ -197,6 +193,10 @@
                             <!-- 背面中文例句 2 -->
                             <div class="w-full bg-slate-50 p-2.5 rounded-xl text-left border border-slate-100">
                                 <p id="card-ex2-zh" class="text-xs text-slate-600 font-medium">2. 人多手雜，反而壞事。</p>
+                            </div>
+                            <!-- 背面中文例句 3（預設隱藏，與英文面同步展開） -->
+                            <div id="card-extra-zh-sentences" class="hidden w-full bg-slate-50 p-2.5 rounded-xl text-left border border-slate-100">
+                                <p id="card-ex3-zh" class="text-xs text-slate-600 font-medium"></p>
                             </div>
                         </div>
                         <div class="text-center text-[11px] text-slate-400">
@@ -509,8 +509,10 @@
                         
                         await fetchUserInfo();
                         await syncWithCloud();
-                        // 同步完成後刷新單元選單，更新已掌握進度計數
-                        if (typeof loadBooksList === 'function') loadBooksList();
+                        // 同步完成後直接刷新單元選單計數（masteredWords 已合併更新）
+                        const syncedBook = booksList.find(b => b.id === currentBook);
+                        if (syncedBook) await renderUnitSelect(syncedBook);
+                        updateMasteredCount();
                     }
                 });
             }
@@ -993,12 +995,16 @@
             document.getElementById('card-ex2-en').textContent = wordObj.ex2En;
             document.getElementById('card-ex2-zh').textContent = wordObj.ex2Zh;
 
-            // 更新 ex3（若有），並重置展開狀態
+            // 更新 ex3（若有），並重置展開狀態（英文面 + 中文背面同步）
             const ex3El = document.getElementById('card-ex3-en');
+            const ex3ZhEl = document.getElementById('card-ex3-zh');
             const extraDiv = document.getElementById('card-extra-sentences');
+            const extraZhDiv = document.getElementById('card-extra-zh-sentences');
             const toggleExBtn = document.getElementById('btn-toggle-extra-ex');
             if (ex3El) ex3El.textContent = wordObj.ex3En || '';
+            if (ex3ZhEl) ex3ZhEl.textContent = wordObj.ex3Zh ? `3. ${wordObj.ex3Zh}` : '';
             if (extraDiv) extraDiv.classList.add('hidden');
+            if (extraZhDiv) extraZhDiv.classList.add('hidden');
             if (toggleExBtn) {
                 toggleExBtn.textContent = '＋ 查看更多例句';
                 // 若此單字無 ex3，隱藏按鈕
@@ -1006,8 +1012,6 @@
             }
 
             document.getElementById('current-progress').textContent = `${currentWords.length}`;
-            document.getElementById('card-index').textContent = currentIndex + 1;
-            document.getElementById('card-total').textContent = currentWords.length;
 
             const toggleBtn = document.getElementById('btn-toggle-master');
             const btnText = document.getElementById('master-btn-text');
@@ -1028,10 +1032,13 @@
         // 展開/收起更多例句
         function toggleExtraSentences() {
             const extraDiv = document.getElementById('card-extra-sentences');
+            const extraZhDiv = document.getElementById('card-extra-zh-sentences');
             const btn = document.getElementById('btn-toggle-extra-ex');
             if (!extraDiv || !btn) return;
             const isHidden = extraDiv.classList.contains('hidden');
             extraDiv.classList.toggle('hidden', !isHidden);
+            // 中文背面同步展開/收摺
+            if (extraZhDiv) extraZhDiv.classList.toggle('hidden', !isHidden);
             btn.textContent = isHidden ? '－ 收起' : '＋ 查看更多例句';
         }
 
