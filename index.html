@@ -126,7 +126,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.11</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260817.12</p>
             </div>
         </div>
 
@@ -152,11 +152,11 @@
                 <div class="relative w-full h-full duration-500 transform-style-3d shadow-xl rounded-2xl bg-white" id="card-inner">
                     
                     <!-- 正面 (英文與雙例句，靠上對齊) -->
-                    <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-emerald-600 to-teal-700 text-white rounded-2xl p-5 flex flex-col justify-between backface-hidden shadow-md overflow-y-auto">
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-[#e1eedd] to-[#c7e2b2] text-slate-800 rounded-2xl p-5 flex flex-col justify-between backface-hidden shadow-md overflow-y-auto border border-emerald-100/40">
                         <div class="flex justify-between items-center w-full">
-                            <span class="text-[11px] bg-white/20 px-2.5 py-0.5 rounded-full font-semibold uppercase tracking-wider">English (點擊卡片看背面)</span>
+                            <span class="text-[11px] bg-white/60 text-emerald-800 border border-emerald-200/50 px-2.5 py-0.5 rounded-full font-semibold uppercase tracking-wider">English (點擊卡片看背面)</span>
                             <!-- 右上角已掌握勾勾按鈕 -->
-                            <button id="card-master-top-en" onclick="event.stopPropagation(); toggleCardMaster();" class="p-1.5 rounded-lg bg-white/20 hover:bg-white/30 text-white transition active:scale-95 flex items-center justify-center" title="標記為已掌握">
+                            <button id="card-master-top-en" onclick="event.stopPropagation(); toggleCardMaster();" class="p-1.5 rounded-lg bg-white/60 hover:bg-white/80 text-slate-400 hover:text-slate-600 border border-emerald-200/50 transition active:scale-95 flex items-center justify-center" title="標記為已掌握">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             </button>
                         </div>
@@ -164,9 +164,9 @@
                         <!-- 靠上對齊的主內容區 -->
                         <div class="flex flex-col items-center my-auto w-full space-y-2.5">
                             <div class="flex items-center gap-2.5 mb-1 justify-center flex-wrap">
-                                <h2 id="card-word" class="text-3xl font-extrabold tracking-wide">spoil</h2>
-                                <button onclick="event.stopPropagation(); playAudio(currentWords[currentIndex].word);" class="p-1.5 bg-white/20 hover:bg-white/30 rounded-full transition transform active:scale-95 flex-shrink-0" title="播放單字發音">
-                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                                <h2 id="card-word" class="text-3xl font-extrabold tracking-wide text-slate-800">spoil</h2>
+                                <button onclick="event.stopPropagation(); playAudio(currentWords[currentIndex].word);" class="p-1.5 bg-white/60 hover:bg-white/80 text-emerald-700 border border-emerald-200/50 rounded-full transition transform active:scale-95 flex-shrink-0" title="播放單字發音">
+                                    <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                                 </button>
                             </div>
                             
@@ -177,10 +177,10 @@
                         </div>
 
                         <!-- 正面底部 -->
-                        <div class="flex justify-between items-center w-full mt-auto pt-2 border-t border-white/10 flex-shrink-0">
-                            <span class="text-[10px] text-white/50">點擊卡片看背面</span>
+                        <div class="flex justify-between items-center w-full mt-auto pt-2 border-t border-emerald-200/50 flex-shrink-0">
+                            <span class="text-[10px] text-slate-500">點擊卡片看背面</span>
                             <!-- 右下角已掌握勾勾按鈕 -->
-                            <button id="card-master-bottom-en" onclick="event.stopPropagation(); toggleCardMaster();" class="p-1.5 rounded-lg bg-white/20 hover:bg-white/30 text-white transition active:scale-95 flex items-center justify-center" title="標記為已掌握">
+                            <button id="card-master-bottom-en" onclick="event.stopPropagation(); toggleCardMaster();" class="p-1.5 rounded-lg bg-white/60 hover:bg-white/80 text-slate-400 hover:text-slate-600 border border-emerald-200/50 transition active:scale-95 flex items-center justify-center" title="標記為已掌握">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             </button>
                         </div>
@@ -1061,10 +1061,10 @@
                 const examples = wordObj.examples || [];
                 examples.forEach((ex, idx) => {
                     const div = document.createElement('div');
-                    div.className = `w-full bg-white/10 p-2.5 rounded-xl flex items-center justify-between gap-2 text-left ${idx >= 2 ? 'extra-sentence' : ''}`;
+                    div.className = `w-full bg-white/60 border border-emerald-200/35 p-2.5 rounded-xl flex items-center justify-between gap-2 text-left ${idx >= 2 ? 'extra-sentence' : ''}`;
                     
                     const p = document.createElement('p');
-                    p.className = "text-sm font-semibold text-emerald-100 flex-1";
+                    p.className = "text-sm font-semibold text-emerald-900 flex-1";
                     p.textContent = ex.en;
                     
                     const btn = document.createElement('button');
@@ -1072,9 +1072,9 @@
                         e.stopPropagation();
                         playAudio(ex.en);
                     };
-                    btn.className = "p-1.5 bg-white/20 hover:bg-white/30 rounded-full transition flex-shrink-0";
+                    btn.className = "p-1.5 bg-emerald-50 hover:bg-emerald-100 rounded-full transition flex-shrink-0 border border-emerald-100/50";
                     btn.title = `播放例句${idx + 1}發音`;
-                    btn.innerHTML = `<svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>`;
+                    btn.innerHTML = `<svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>`;
                     
                     div.appendChild(p);
                     div.appendChild(btn);
@@ -1131,8 +1131,8 @@
                 if (btnTopZh) btnTopZh.className = "p-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
                 if (btnBottomZh) btnBottomZh.className = "p-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition active:scale-95 flex items-center justify-center shadow-sm";
             } else {
-                if (btnTopEn) btnTopEn.className = "p-1.5 rounded-lg bg-white/20 hover:bg-white/30 text-white transition active:scale-95 flex items-center justify-center";
-                if (btnBottomEn) btnBottomEn.className = "p-1.5 rounded-lg bg-white/20 hover:bg-white/30 text-white transition active:scale-95 flex items-center justify-center";
+                if (btnTopEn) btnTopEn.className = "p-1.5 rounded-lg bg-white/60 hover:bg-white/80 text-slate-400 hover:text-slate-600 border border-emerald-200/50 transition active:scale-95 flex items-center justify-center";
+                if (btnBottomEn) btnBottomEn.className = "p-1.5 rounded-lg bg-white/60 hover:bg-white/80 text-slate-400 hover:text-slate-600 border border-emerald-200/50 transition active:scale-95 flex items-center justify-center";
                 if (btnTopZh) btnTopZh.className = "p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition active:scale-95 flex items-center justify-center";
                 if (btnBottomZh) btnBottomZh.className = "p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 transition active:scale-95 flex items-center justify-center";
             }
