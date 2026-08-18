@@ -126,7 +126,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.01</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.02</p>
             </div>
         </div>
 
@@ -652,30 +652,43 @@
                          let cloudLeitner = cloudData.leitnerBox || {};
                          let cloudHistory = cloudData.quizHistory || [];
                          
-                         // 3. 取聯集合併進度
-                         const mergedMastered = Array.from(new Set([...localMastered, ...cloudMastered]));
-                         
-                         const mergedPassed = { ...localPassed };
-                         for (const key in cloudPassed) {
-                             if (mergedPassed[key]) {
-                                 mergedPassed[key] = Array.from(new Set([...mergedPassed[key], ...cloudPassed[key]]));
-                             } else {
-                                 mergedPassed[key] = cloudPassed[key];
-                             }
-                         }
+                         // 3. 以時間戳最新的學習進度記錄合併為主
+                          const mergedLeitner = { ...localLeitner };
+                          for (const key in cloudLeitner) {
+                              if (mergedLeitner[key]) {
+                                  const localUpdate = mergedLeitner[key].lastUpdated || mergedLeitner[key].lastTested || 0;
+                                  const cloudUpdate = cloudLeitner[key].lastUpdated || cloudLeitner[key].lastTested || 0;
+                                  if (cloudUpdate > localUpdate) {
+                                      mergedLeitner[key] = cloudLeitner[key];
+                                  } else if (cloudUpdate === localUpdate) {
+                                      if ((cloudLeitner[key].boxLevel || 1) > (mergedLeitner[key].boxLevel || 1)) {
+                                          mergedLeitner[key] = cloudLeitner[key];
+                                      }
+                                  }
+                              } else {
+                                  mergedLeitner[key] = cloudLeitner[key];
+                              }
+                          }
 
-                         const mergedLeitner = { ...localLeitner };
-                         for (const key in cloudLeitner) {
-                             if (mergedLeitner[key]) {
-                                 if ((cloudLeitner[key].boxLevel || 1) > (mergedLeitner[key].boxLevel || 1)) {
-                                     mergedLeitner[key] = cloudLeitner[key];
-                                 }
-                             } else {
-                                 mergedLeitner[key] = cloudLeitner[key];
-                             }
-                         }
-                         
-                         // 合併歷史分數紀錄
+                          // 根據合併後的 mergedLeitner 更新已掌握清單 (排除 mastered 設為 false 的單字)
+                          const mergedMastered = Object.keys(mergedLeitner).filter(key => mergedLeitner[key].mastered !== false);
+
+                          const mergedPassed = { ...localPassed };
+                          for (const key in cloudPassed) {
+                              if (mergedPassed[key]) {
+                                  mergedPassed[key] = Array.from(new Set([...mergedPassed[key], ...cloudPassed[key]]));
+                              } else {
+                                  mergedPassed[key] = cloudPassed[key];
+                              }
+                          }
+                          // 若單字已被取消掌握標記，則同步清空其通關例句
+                          for (const key in mergedPassed) {
+                              if (!mergedMastered.includes(key)) {
+                                  delete mergedPassed[key];
+                              }
+                          }
+                          
+                          // 合併歷史分數紀錄
                          const historyMap = {};
                          [...quizHistory, ...cloudHistory].forEach(item => {
                              historyMap[item.timestamp] = item;
@@ -1210,21 +1223,24 @@
             if (wordObj.mastered) {
                 if (!masteredWords.includes(wordKey)) {
                     masteredWords.push(wordKey);
-                    
-                    // 初始化 Leitner 數據
-                    if (!leitnerBox[wordKey]) {
-                        leitnerBox[wordKey] = {
-                            boxLevel: 1,
-                            lastTested: 0
-                        };
-                    }
-                    
                     sessionMasteredCount++;
                 }
+                leitnerBox[wordKey] = {
+                    ...leitnerBox[wordKey],
+                    boxLevel: leitnerBox[wordKey]?.boxLevel || 1,
+                    lastTested: leitnerBox[wordKey]?.lastTested || 0,
+                    mastered: true,
+                    lastUpdated: Date.now()
+                };
             } else {
                 masteredWords = masteredWords.filter(w => w !== wordKey);
                 delete passedSentences[wordKey];
-                delete leitnerBox[wordKey];
+                leitnerBox[wordKey] = {
+                    ...leitnerBox[wordKey],
+                    boxLevel: 1,
+                    mastered: false,
+                    lastUpdated: Date.now()
+                };
             }
             saveProgress();
 
@@ -1310,7 +1326,12 @@
                 item.mastered = false;
                 masteredWords = masteredWords.filter(w => w !== wordKey);
                 delete passedSentences[wordKey];
-                delete leitnerBox[wordKey];
+                leitnerBox[wordKey] = {
+                    ...leitnerBox[wordKey],
+                    boxLevel: 1,
+                    mastered: false,
+                    lastUpdated: Date.now()
+                };
             });
             saveProgress();
             updateMasteredCount();
@@ -1426,14 +1447,23 @@
                 if (item.mastered) {
                     if (!masteredWords.includes(wordKey)) {
                         masteredWords.push(wordKey);
-                        if (!leitnerBox[wordKey]) {
-                            leitnerBox[wordKey] = { boxLevel: 1, lastTested: 0 };
-                        }
                     }
+                    leitnerBox[wordKey] = {
+                        ...leitnerBox[wordKey],
+                        boxLevel: leitnerBox[wordKey]?.boxLevel || 1,
+                        lastTested: leitnerBox[wordKey]?.lastTested || 0,
+                        mastered: true,
+                        lastUpdated: Date.now()
+                    };
                 } else {
                     masteredWords = masteredWords.filter(w => w !== wordKey);
                     delete passedSentences[wordKey];
-                    delete leitnerBox[wordKey];
+                    leitnerBox[wordKey] = {
+                        ...leitnerBox[wordKey],
+                        boxLevel: 1,
+                        mastered: false,
+                        lastUpdated: Date.now()
+                    };
                 }
                 saveProgress();
                 
@@ -1731,6 +1761,8 @@
                 let box = leitnerBox[wordKey] || { boxLevel: 1, lastTested: 0 };
                 box.boxLevel = Math.min((box.boxLevel || 1) + 1, 3);
                 box.lastTested = Date.now();
+                box.mastered = true;
+                box.lastUpdated = Date.now();
                 leitnerBox[wordKey] = box;
                 localStorage.setItem('toeic_leitner_box', JSON.stringify(leitnerBox));
 
@@ -1758,6 +1790,8 @@
                     let box = leitnerBox[wordKey] || { boxLevel: 1, lastTested: 0 };
                     box.boxLevel = 1;
                     box.lastTested = Date.now();
+                    box.mastered = false;
+                    box.lastUpdated = Date.now();
                     leitnerBox[wordKey] = box;
 
                     localStorage.setItem('toeic_mastered_words', JSON.stringify(masteredWords));
