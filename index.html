@@ -79,6 +79,32 @@
                     已掌握 <span id="mastered-count" class="font-bold text-emerald-600">0</span> / <span id="total-count">0</span> 個單字
                 </p>
             </div>
+            
+            <!-- 單元記憶深淺度分佈 -->
+            <div id="unit-leitner-distribution" class="border-t pt-3 text-left space-y-2 mt-2">
+                <span class="text-[11px] text-slate-500 font-bold flex items-center gap-1">🧠 單元記憶分佈</span>
+                <div class="grid grid-cols-2 gap-2 text-[10px]">
+                    <div class="flex items-center justify-between text-slate-500">
+                        <span>長期 (Box 3): <span id="unit-box3-ratio" class="font-bold text-emerald-600">0% (0字)</span></span>
+                    </div>
+                    <div class="flex items-center justify-between text-slate-500">
+                        <span>中期 (Box 2): <span id="unit-box2-ratio" class="font-bold text-amber-500">0% (0字)</span></span>
+                    </div>
+                    <div class="flex items-center justify-between text-slate-500">
+                        <span>短期 (Box 1): <span id="unit-box1-ratio" class="font-bold text-orange-500">0% (0字)</span></span>
+                    </div>
+                    <div class="flex items-center justify-between text-slate-500">
+                        <span>未掌握: <span id="unit-box0-ratio" class="font-bold text-slate-400">0% (0字)</span></span>
+                    </div>
+                </div>
+                <!-- 合併的單元進度條 -->
+                <div class="w-full bg-slate-100 rounded-full h-2 flex overflow-hidden">
+                    <div id="unit-box3-bar" class="bg-emerald-500 h-2 transition-all duration-500" style="width: 0%"></div>
+                    <div id="unit-box2-bar" class="bg-amber-400 h-2 transition-all duration-500" style="width: 0%"></div>
+                    <div id="unit-box1-bar" class="bg-orange-400 h-2 transition-all duration-500" style="width: 0%"></div>
+                    <div id="unit-box0-bar" class="bg-slate-300 h-2 transition-all duration-500" style="width: 0%"></div>
+                </div>
+            </div>
         </div>
 
         <!-- 語音設定面板 (預設隱藏) -->
@@ -154,7 +180,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.14</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.15</p>
             </div>
         </div>
 
@@ -422,6 +448,13 @@
         let wordsData = [];
         // 已終結的單元清單 (頂部全域宣告，防止 TDZ 暫時性死區崩潰)
         let completedUnits = JSON.parse(localStorage.getItem('toeic_completed_units') || '[]');
+        let allWordsData = []; // 儲存全圖書所有單字
+        
+        function syncAllWordsMasteredStatus() {
+            allWordsData.forEach(item => {
+                item.mastered = masteredWords.includes(item.word.toLowerCase());
+            });
+        }
 
         // 檢查並更新當前單元的終結狀態 (頂部全域宣告)
         function checkUnitCompletion() {
@@ -453,6 +486,8 @@
         let sessionMasteredCount = 0; // 本 session 新掌握單字累計 (達 5 字強制測驗)
 
         function saveProgress() {
+            syncAllWordsMasteredStatus(); // 存檔前先更新全書掌握狀態
+            checkUnitCompletion();
             checkUnitCompletion(); // 存檔前先檢查並更新當前單元的終結狀態
             localStorage.setItem('toeic_mastered_words', JSON.stringify(masteredWords));
             localStorage.setItem('toeic_passed_sentences', JSON.stringify(passedSentences));
@@ -491,6 +526,25 @@
                 const res = await fetch('data/books_list.json');
                 if (!res.ok) throw new Error(`HTTP 載入失敗! 狀態碼: ${res.status} (${res.statusText})`);
                 booksList = await res.json();
+                
+                // 預載入全書單字庫
+                allWordsData = [];
+                for (const book of booksList) {
+                    for (const unit of book.units) {
+                        try {
+                            const uRes = await fetch(`data/books/${book.id}/${unit}.json`);
+                            const uData = await uRes.json();
+                            uData.forEach(w => {
+                                w.bookId = book.id;
+                                w.unitId = unit;
+                            });
+                            allWordsData = allWordsData.concat(uData);
+                        } catch (e) {
+                            console.error(`預載入 ${book.id} Unit ${unit} 失敗:`, e);
+                        }
+                    }
+                }
+                syncAllWordsMasteredStatus();
             } catch (e) {
                 console.error("載入教材清單失敗", e);
                 showErrorModal(e);
@@ -634,6 +688,49 @@
             const count = wordsData.filter(i => i.mastered).length;
             document.getElementById('mastered-count').textContent = count;
             document.getElementById('total-count').textContent = wordsData.length;
+            
+            // 同時更新單元記憶深淺度分佈
+            renderUnitLeitnerDistribution();
+        }
+
+        // 🧠 渲染目前單元的記憶深淺度分佈
+        function renderUnitLeitnerDistribution() {
+            const total = wordsData.length;
+            if (total === 0) return;
+            
+            let box3Count = 0;
+            let box2Count = 0;
+            let box1Count = 0;
+            let box0Count = 0;
+            
+            wordsData.forEach(item => {
+                const wordKey = item.word.toLowerCase();
+                if (item.mastered) {
+                    const box = leitnerBox[wordKey]?.boxLevel || 1;
+                    if (box === 3) box3Count++;
+                    else if (box === 2) box2Count++;
+                    else box1Count++;
+                } else {
+                    box0Count++;
+                }
+            });
+            
+            const r3 = Math.round((box3Count / total) * 100);
+            const r2 = Math.round((box2Count / total) * 100);
+            const r1 = Math.round((box1Count / total) * 100);
+            const r0 = 100 - r3 - r2 - r1;
+            
+            document.getElementById('unit-box3-ratio').textContent = `${r3}% (${box3Count}字)`;
+            document.getElementById('unit-box3-bar').style.width = `${r3}%`;
+            
+            document.getElementById('unit-box2-ratio').textContent = `${r2}% (${box2Count}字)`;
+            document.getElementById('unit-box2-bar').style.width = `${r2}%`;
+            
+            document.getElementById('unit-box1-ratio').textContent = `${r1}% (${box1Count}字)`;
+            document.getElementById('unit-box1-bar').style.width = `${r1}%`;
+            
+            document.getElementById('unit-box0-ratio').textContent = `${r0}% (${box0Count}字)`;
+            document.getElementById('unit-box0-bar').style.width = `${r0}%`;
         }
 
         // 語音設定與 Google API 參數
@@ -1471,7 +1568,7 @@
 
         // 🧠 1. 渲染記憶深淺度分佈
         function renderLeitnerDistribution() {
-            const total = wordsData.length;
+            const total = allWordsData.length;
             if (total === 0) return;
             
             let box3Count = 0;
@@ -1479,7 +1576,7 @@
             let box1Count = 0;
             let box0Count = 0;
             
-            wordsData.forEach(item => {
+            allWordsData.forEach(item => {
                 const wordKey = item.word.toLowerCase();
                 if (item.mastered) {
                     const box = leitnerBox[wordKey]?.boxLevel || 1;
@@ -1672,7 +1769,10 @@
                                 <span>${b.title}</span>
                                 <span class="bg-white/40 px-2 py-0.5 rounded-full text-[10px] font-extrabold">${b.count} 次</span>
                             </div>
-                            <p class="text-[10px] opacity-90 font-medium leading-tight mt-0.5">${b.desc}</p>
+                            <!-- 激勵的一句話：大、粗體 -->
+                            <p class="text-xs font-extrabold leading-tight mt-1">${b.desc}</p>
+                            <!-- 取得條件：小字 -->
+                            <p class="text-[10px] opacity-75 mt-0.5">條件：${b.condition}</p>
                         </div>
                     `;
                 } else {
