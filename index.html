@@ -193,7 +193,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.16</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.17</p>
             </div>
         </div>
 
@@ -546,7 +546,7 @@
                 for (const book of booksList) {
                     for (const unit of book.units) {
                         try {
-                            const uRes = await fetch(`data/books/${book.id}/${unit}.json`);
+                            const uRes = await fetch(`data/books/${book.id}_${unit}.json`);
                             const uData = await uRes.json();
                             uData.forEach(w => {
                                 w.bookId = book.id;
@@ -1047,7 +1047,7 @@
                          if (!document.getElementById('flashcard-view').classList.contains('hidden')) {
                              currentWords = getFilteredWords();
                              if (currentIndex >= currentWords.length) currentIndex = 0;
-                             showCard();
+                             updateCard();
                          } else if (!document.getElementById('list-view').classList.contains('hidden')) {
                              renderList();
                          }
