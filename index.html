@@ -163,7 +163,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.06</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.07</p>
             </div>
         </div>
 
@@ -1638,15 +1638,12 @@
             if (isSpeaking) return;
             const wordKey = wordText.toLowerCase();
             
-            // 智慧判定字卡篩選器是否會將該單字過濾，若會則自動退回 'all'
+            // 跳轉時，將字卡模式下的篩選器設定為與列表篩選器一致
+            const listFilterSelect = document.getElementById('list-filter-select');
             const filterSelect = document.getElementById('filter-select');
-            const item = wordsData.find(w => w.word.toLowerCase() === wordKey);
-            if (item && filterSelect) {
-                const currentFilter = filterSelect.value;
-                if ((currentFilter === 'unlearned' && item.mastered) || (currentFilter === 'learned' && !item.mastered)) {
-                    filterSelect.value = 'all';
-                    currentWords = getFilteredWords();
-                }
+            if (listFilterSelect && filterSelect) {
+                filterSelect.value = listFilterSelect.value;
+                currentWords = getFilteredWords();
             }
             
             const idx = currentWords.findIndex(w => w.word.toLowerCase() === wordKey);
@@ -1654,6 +1651,7 @@
                 currentIndex = idx;
                 switchMode('flip');
             } else {
+                // 萬一在此篩選下找不到，再退回 'all' 兜底
                 if (filterSelect) {
                     filterSelect.value = 'all';
                     currentWords = getFilteredWords();
