@@ -42,6 +42,10 @@
                 <button id="mode-flip" onclick="switchMode('flip')" class="px-3 py-1.5 text-xs font-medium bg-indigo-50 text-indigo-600 rounded-lg shadow-sm hover:bg-indigo-100 transition">字卡</button>
                 <button id="mode-list" onclick="switchMode('list')" class="px-3 py-1.5 text-xs font-medium bg-slate-100 text-slate-600 rounded-lg shadow-sm hover:bg-slate-200 transition">列表</button>
                 <button id="mode-quiz" onclick="switchMode('quiz')" class="px-3 py-1.5 text-xs font-medium bg-emerald-50 text-emerald-600 rounded-lg shadow-sm hover:bg-emerald-100 transition border border-emerald-200">測驗</button>
+            <!-- 成效分析 📈 按鈕 -->
+            <button id="btn-analysis" onclick="toggleAnalysisPanel()" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center" title="成效分析與歷次測驗分數">
+                <span class="text-base leading-none">📈</span>
+            </button>
             </div>
         </div>
     </header>
@@ -155,22 +159,82 @@
                     </div>
                 </div>
             </div>
+            <!-- 遊戲版本號呈現 -->
+            <div class="border-t pt-2.5 text-center">
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.12</p>
+            </div>
+        </div>
 
-            <!-- 歷次分數折線圖卡片 -->
-            <div id="chart-card" class="border-t pt-3 text-left hidden">
+        <!-- 成效分析面板 (預設隱藏) -->
+        <div id="analysis-panel" class="hidden w-full bg-white border border-slate-100 rounded-2xl shadow-xl p-5 mb-4 space-y-4 transition-all text-xs">
+            <h3 class="text-sm font-bold text-slate-700 border-b pb-2 flex items-center gap-1.5">
+                📈 學習與測驗成效分析
+            </h3>
+            
+            <!-- 📊 歷次測驗分數曲線圖 -->
+            <div id="chart-card" class="text-left hidden">
                 <div class="flex justify-between items-center mb-3">
                     <span class="text-xs text-slate-600 font-bold flex items-center gap-1">📊 歷次測驗分數曲線圖</span>
-                    <button onclick="clearQuizHistory()" class="text-[10px] text-rose-500 hover:text-rose-700 transition font-medium">清除紀錄</button>
+                    <button onclick="clearQuizHistory()" class="text-[10px] text-rose-500 hover:text-rose-700 transition font-medium cursor-pointer">清除紀錄</button>
                 </div>
                 <!-- SVG 折線圖容器 -->
                 <div id="svg-chart-container" class="w-full h-32 flex items-center justify-center bg-slate-50 border border-slate-100 rounded-xl p-2">
-                    <!-- JavaScript 會動態在此插入 SVG -->
+                    <!-- JS 會動態在此插入 SVG -->
                 </div>
             </div>
 
-            <!-- 遊戲版本號呈現 -->
-            <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.10</p>
+            <!-- 🧠 記憶深淺度分佈 -->
+            <div class="border-t pt-3.5 text-left">
+                <span class="text-xs text-slate-600 font-bold flex items-center gap-1.5 mb-2.5">🧠 記憶深淺度分佈</span>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between text-[11px] text-slate-500">
+                        <span>長期記憶 (Box 3)</span>
+                        <span id="box3-ratio" class="font-semibold text-emerald-600">0% (0字)</span>
+                    </div>
+                    <div class="w-full bg-slate-100 rounded-full h-2">
+                        <div id="box3-bar" class="bg-emerald-500 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between text-[11px] text-slate-500">
+                        <span>中期記憶 (Box 2)</span>
+                        <span id="box2-ratio" class="font-semibold text-amber-500">0% (0字)</span>
+                    </div>
+                    <div class="w-full bg-slate-100 rounded-full h-2">
+                        <div id="box2-bar" class="bg-amber-400 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between text-[11px] text-slate-500">
+                        <span>短期記憶 (Box 1)</span>
+                        <span id="box1-ratio" class="font-semibold text-orange-500">0% (0字)</span>
+                    </div>
+                    <div class="w-full bg-slate-100 rounded-full h-2">
+                        <div id="box1-bar" class="bg-orange-400 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between text-[11px] text-slate-500">
+                        <span>未學習/未掌握</span>
+                        <span id="box0-ratio" class="font-semibold text-slate-400">0% (0字)</span>
+                    </div>
+                    <div class="w-full bg-slate-100 rounded-full h-2">
+                        <div id="box0-bar" class="bg-slate-300 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 📅 最近 7 天新掌握量 -->
+            <div class="border-t pt-3.5 text-left">
+                <span class="text-xs text-slate-600 font-bold flex items-center gap-1.5 mb-2">📅 最近 7 天新掌握字數</span>
+                <div id="weekly-chart-container" class="w-full h-32 flex items-center justify-center bg-slate-50 border border-slate-100 rounded-xl p-2 text-center text-slate-400">
+                    <!-- JS 生成 SVG 柱狀圖 -->
+                </div>
+            </div>
+
+            <!-- 🏆 學習成就記錄榜 -->
+            <div class="border-t pt-3.5 text-left">
+                <span class="text-xs text-slate-600 font-bold flex items-center gap-1.5 mb-2.5">🏆 學習成就記錄榜</span>
+                <div class="grid grid-cols-1 gap-2" id="badge-grid">
+                    <!-- 徽章將動態渲染 -->
+                </div>
             </div>
         </div>
 
@@ -359,6 +423,23 @@
 
         // 單字原始資料（每個單字均含 3 個題庫例句：2個卡片顯示 + 1個隱藏）
         let wordsData = [];
+        // 已終結的單元清單 (頂部全域宣告，防止 TDZ 暫時性死區崩潰)
+        let completedUnits = JSON.parse(localStorage.getItem('toeic_completed_units') || '[]');
+
+        // 檢查並更新當前單元的終結狀態 (頂部全域宣告)
+        function checkUnitCompletion() {
+            if (!currentBook || !currentUnit) return;
+            const key = `${currentBook}_${currentUnit}`;
+            if (completedUnits.includes(key)) return;
+            
+            // 計算當前單元是否 100% 掌握
+            const totalCount = wordsData.length;
+            const masteredCount = wordsData.filter(i => i.mastered).length;
+            if (totalCount > 0 && masteredCount === totalCount) {
+                completedUnits.push(key);
+                localStorage.setItem('toeic_completed_units', JSON.stringify(completedUnits));
+            }
+        }
         let masteredWords = JSON.parse(localStorage.getItem('toeic_mastered_words') || '[]');
         let passedSentences = JSON.parse(localStorage.getItem('toeic_passed_sentences') || '{}');
         let leitnerBox = JSON.parse(localStorage.getItem('toeic_leitner_box') || '{}');
@@ -375,6 +456,7 @@
         let sessionMasteredCount = 0; // 本 session 新掌握單字累計 (達 5 字強制測驗)
 
         function saveProgress() {
+            checkUnitCompletion(); // 存檔前先檢查並更新當前單元的終結狀態
             localStorage.setItem('toeic_mastered_words', JSON.stringify(masteredWords));
             localStorage.setItem('toeic_passed_sentences', JSON.stringify(passedSentences));
             localStorage.setItem('toeic_leitner_box', JSON.stringify(leitnerBox));
@@ -840,6 +922,10 @@
                               if (s.reviewTimeMode) localStorage.setItem('toeic_review_time_mode', s.reviewTimeMode);
                               if (s.targetQuizCount) localStorage.setItem('toeic_target_quiz_count', s.targetQuizCount);
                               if (s.autoQuizThreshold) localStorage.setItem('toeic_auto_quiz_threshold', s.autoQuizThreshold);
+                          if (s.completedUnits) {
+                              completedUnits = Array.from(new Set([...completedUnits, ...s.completedUnits]));
+                              localStorage.setItem('toeic_completed_units', JSON.stringify(completedUnits));
+                          }
                               syncSettingsUI();
                           }
 
@@ -876,7 +962,9 @@
                 speechAccent: localStorage.getItem('toeic_speech_accent') || 'US',
                 reviewTimeMode: localStorage.getItem('toeic_review_time_mode') || 'fast',
                 targetQuizCount: localStorage.getItem('toeic_target_quiz_count') || '2',
-                autoQuizThreshold: localStorage.getItem('toeic_auto_quiz_threshold') || '3'
+                autoQuizThreshold: localStorage.getItem('toeic_auto_quiz_threshold') || '3',
+                completedUnits: completedUnits,
+                completedUnits: completedUnits
             };
             const content = {
                 masteredWords: masteredWords,
@@ -1100,6 +1188,8 @@
                 
                 panel.classList.remove('hidden');
                 if (bookPanel) bookPanel.classList.add('hidden');
+                const analysisPanel = document.getElementById('analysis-panel');
+                if (analysisPanel) analysisPanel.classList.add('hidden');
                 syncSettingsUI();
                 renderQuizChart();
             } else {
@@ -1129,6 +1219,8 @@
                 
                 panel.classList.remove('hidden');
                 if (settingsPanel) settingsPanel.classList.add('hidden');
+                const analysisPanel = document.getElementById('analysis-panel');
+                if (analysisPanel) analysisPanel.classList.add('hidden');
             } else {
                 panel.classList.add('hidden');
                 restorePreviousView();
@@ -1137,6 +1229,16 @@
 
         // 點擊面板外部區域自動隱藏面板
         document.addEventListener('click', (e) => {
+            // 點選外部自動關閉成效分析面板
+            const analysisPanel = document.getElementById('analysis-panel');
+            const analysisBtn = document.getElementById('btn-analysis');
+            if (analysisPanel && !analysisPanel.classList.contains('hidden')) {
+                if (!analysisPanel.contains(e.target) && !analysisBtn.contains(e.target)) {
+                    analysisPanel.classList.add('hidden');
+                    restorePreviousView();
+                }
+            }
+
             const panel = document.getElementById('settings-panel');
             const btn = document.getElementById('btn-settings');
             if (panel && !panel.classList.contains('hidden')) {
@@ -1370,6 +1472,262 @@
             updateCardButtonLayout();
         }
 
+        // 🧠 1. 渲染記憶深淺度分佈
+        function renderLeitnerDistribution() {
+            const total = wordsData.length;
+            if (total === 0) return;
+            
+            let box3Count = 0;
+            let box2Count = 0;
+            let box1Count = 0;
+            let box0Count = 0;
+            
+            wordsData.forEach(item => {
+                const wordKey = item.word.toLowerCase();
+                if (item.mastered) {
+                    const box = leitnerBox[wordKey]?.boxLevel || 1;
+                    if (box === 3) box3Count++;
+                    else if (box === 2) box2Count++;
+                    else box1Count++;
+                } else {
+                    box0Count++;
+                }
+            });
+            
+            const r3 = Math.round((box3Count / total) * 100);
+            const r2 = Math.round((box2Count / total) * 100);
+            const r1 = Math.round((box1Count / total) * 100);
+            const r0 = 100 - r3 - r2 - r1;
+            
+            document.getElementById('box3-ratio').textContent = `${r3}% (${box3Count}字)`;
+            document.getElementById('box3-bar').style.width = `${r3}%`;
+            
+            document.getElementById('box2-ratio').textContent = `${r2}% (${box2Count}字)`;
+            document.getElementById('box2-bar').style.width = `${r2}%`;
+            
+            document.getElementById('box1-ratio').textContent = `${r1}% (${box1Count}字)`;
+            document.getElementById('box1-bar').style.width = `${r1}%`;
+            
+            document.getElementById('box0-ratio').textContent = `${r0}% (${box0Count}字)`;
+            document.getElementById('box0-bar').style.width = `${r0}%`;
+        }
+
+        // 📅 2. 渲染最近 7 天新掌握量柱狀圖 (SVG 柱狀圖)
+        function renderWeeklyActivityChart() {
+            const container = document.getElementById('weekly-chart-container');
+            if (!container) return;
+            
+            // 計算最近 7 天日期陣列 (含今天)
+            const days = [];
+            const counts = [];
+            const today = new Date();
+            for (let i = 6; i >= 0; i--) {
+                const d = new Date();
+                d.setDate(today.getDate() - i);
+                days.push(d);
+                counts.push(0);
+            }
+            
+            // 依 leitnerBox 單字 mastered 且 lastUpdated 統計
+            Object.keys(leitnerBox).forEach(key => {
+                const item = leitnerBox[key];
+                if (item.mastered && item.lastUpdated) {
+                    const updateDate = new Date(item.lastUpdated);
+                    // 比對是否落在最近 7 天
+                    days.forEach((day, idx) => {
+                        if (updateDate.getFullYear() === day.getFullYear() &&
+                            updateDate.getMonth() === day.getMonth() &&
+                            updateDate.getDate() === day.getDate()) {
+                            counts[idx]++;
+                        }
+                    });
+                }
+            });
+            
+            const maxVal = Math.max(...counts, 5); // 最小刻度設為 5
+            const width = 340;
+            const height = 120;
+            const padding = 20;
+            const barWidth = 24;
+            const colWidth = (width - padding * 2) / 7;
+            
+            let barsHtml = '';
+            let gridLines = '';
+            
+            // 繪製背景參考線
+            [Math.round(maxVal / 2), maxVal].forEach(val => {
+                const y = height - padding - (val / maxVal) * (height - padding * 2);
+                gridLines += `<line x1="${padding}" y1="${y}" x2="${width - padding}" y2="${y}" stroke="#f1f5f9" stroke-width="1" stroke-dasharray="2 2" />`;
+                gridLines += `<text x="${padding - 5}" y="${y + 3}" fill="#cbd5e1" font-size="7" font-weight="bold" text-anchor="end">${val}</text>`;
+            });
+            
+            days.forEach((day, idx) => {
+                const count = counts[idx];
+                const x = padding + idx * colWidth + (colWidth - barWidth) / 2;
+                const barHeight = (count / maxVal) * (height - padding * 2);
+                const y = height - padding - barHeight;
+                const dateStr = day.toLocaleDateString('zh-TW', {month:'short', day:'numeric'});
+                const isToday = idx === 6;
+                
+                barsHtml += `
+                    <!-- 柱狀長條 -->
+                    <rect x="${x}" y="${y}" width="${barWidth}" height="${barHeight}" rx="4" fill="${isToday ? '#6366f1' : '#a5b4fc'}" />
+                    <!-- 頂部數字 -->
+                    <text x="${x + barWidth/2}" y="${y - 5}" fill="${isToday ? '#4338ca' : '#64748b'}" font-size="8" font-weight="bold" text-anchor="middle">${count > 0 ? count : ''}</text>
+                    <!-- 日期標籤 -->
+                    <text x="${x + barWidth/2}" y="${height - 5}" fill="#94a3b8" font-size="7" text-anchor="middle">${dateStr}</text>
+                `;
+            });
+            
+            container.innerHTML = `
+                <svg class="w-full h-full" viewBox="0 0 ${width} ${height}">
+                    ${gridLines}
+                    ${barsHtml}
+                </svg>
+            `;
+        }
+
+        // 🏆 3. 渲染成就記錄榜 (繁體中文與累計次數標記)
+        function updateBadges() {
+            const grid = document.getElementById('badge-grid');
+            if (!grid) return;
+            
+            // 計算各項成就的次數
+            
+            // A. 完美無瑕：測驗 100 分次數
+            const perfectCount = quizHistory.filter(i => i.score === 100).length;
+            
+            // B. 長期記憶領主：Box 3 單字數每達 30 個算 1 次
+            const box3Words = Object.keys(leitnerBox).filter(k => leitnerBox[k].boxLevel === 3 && leitnerBox[k].mastered).length;
+            const memoryLordCount = Math.floor(box3Words / 30);
+            
+            // C. 單元終結者：已掌握的單元數 (completedUnits 陣列長度)
+            const unitConquerorCount = completedUnits.length;
+            
+            // D. 鋼鐵意志：測驗合格（>=60分）不重複日期數每達 3 天算 1 次
+            const passedDates = new Set();
+            quizHistory.forEach(i => {
+                if (i.score >= 60 && i.timestamp) {
+                    const dateKey = new Date(i.timestamp).toDateString();
+                    passedDates.add(dateKey);
+                }
+            });
+            const ironStreakCount = Math.floor(passedDates.size / 3);
+            
+            // E. 百戰雄兵：累計測驗題數每滿 100 題算 1 次
+            const totalQuestionsCount = quizHistory.reduce((acc, cur) => acc + (cur.totalQuestions || 0), 0);
+            const veteranCount = Math.floor(totalQuestionsCount / 100);
+            
+            const badges = [
+                {
+                    icon: '✨',
+                    title: '完美無瑕',
+                    desc: '極致的專注，不容許半點瑕疵！',
+                    condition: '在任何一輪測驗中獲得 100 分',
+                    count: perfectCount,
+                    bgClass: 'from-amber-400 to-orange-500 text-amber-950 border-amber-300'
+                },
+                {
+                    icon: '🧬',
+                    title: '長期記憶領主',
+                    desc: '這批單字已刻進您的大腦深處，再也忘不掉了！',
+                    condition: '在 Leitner 盒子中，每累計有 30 個單字晉升到 Box 3',
+                    count: memoryLordCount,
+                    bgClass: 'from-emerald-400 to-teal-600 text-emerald-950 border-emerald-300'
+                },
+                {
+                    icon: '📖',
+                    title: '單元終結者',
+                    desc: '踏平當前單元，下一個單元在瑟瑟發抖！',
+                    condition: '將任一單元的所有單字 100% 標記為已掌握',
+                    count: unitConquerorCount,
+                    bgClass: 'from-blue-400 to-indigo-600 text-blue-950 border-blue-300'
+                },
+                {
+                    icon: '🛡️',
+                    title: '鋼鐵意志',
+                    desc: '三天不懈，習慣成自然，您擁有鐵打的意志！',
+                    condition: '合格測驗（60分以上）累計有 3 天以上的活躍記錄',
+                    count: ironStreakCount,
+                    bgClass: 'from-purple-400 to-pink-600 text-purple-950 border-purple-300'
+                },
+                {
+                    icon: '🎖️',
+                    title: '百戰雄兵',
+                    desc: '見過上百發考題的洗禮，戰場上的真英雄！',
+                    condition: '測驗累計答題數每達到 100 題',
+                    count: veteranCount,
+                    bgClass: 'from-cyan-400 to-blue-500 text-cyan-950 border-cyan-300'
+                }
+            ];
+            
+            grid.innerHTML = '';
+            badges.forEach(b => {
+                const isUnlocked = b.count > 0;
+                const card = document.createElement('div');
+                
+                if (isUnlocked) {
+                    card.className = `flex items-center gap-3 p-3 bg-gradient-to-r ${b.bgClass} rounded-xl border shadow-sm transition duration-300` ;
+                    card.innerHTML = `
+                        <div class="text-2xl">${b.icon}</div>
+                        <div class="flex-1 text-left">
+                            <div class="flex items-center justify-between font-bold text-xs">
+                                <span>${b.title}</span>
+                                <span class="bg-white/40 px-2 py-0.5 rounded-full text-[10px] font-extrabold">${b.count} 次</span>
+                            </div>
+                            <p class="text-[10px] opacity-90 font-medium leading-tight mt-0.5">${b.desc}</p>
+                        </div>
+                    `;
+                } else {
+                    card.className = "flex items-center gap-3 p-3 bg-slate-50 text-slate-400 rounded-xl border border-slate-100 shadow-inner opacity-65 transition duration-300";
+                    card.innerHTML = `
+                        <div class="text-2xl filter grayscale">🔒</div>
+                        <div class="flex-1 text-left">
+                            <div class="font-bold text-xs text-slate-500">${b.title} (未解鎖)</div>
+                            <p class="text-[10px] text-slate-400 leading-tight mt-0.5">${b.condition}</p>
+                        </div>
+                    `;
+                }
+                grid.appendChild(card);
+            });
+        }
+
+        // 🟢 4. 控制成效分析面板獨佔開啟
+        window.toggleAnalysisPanel = function() {
+            const panel = document.getElementById('analysis-panel');
+            const settingsPanel = document.getElementById('settings-panel');
+            const bookPanel = document.getElementById('book-unit-panel');
+            if (!panel) return;
+            
+            const isHidden = panel.classList.contains('hidden');
+            if (isHidden) {
+                const cardView = document.getElementById('flashcard-view');
+                const listView = document.getElementById('list-view');
+                const quizView = document.getElementById('quiz-view');
+                
+                if (cardView && !cardView.classList.contains('hidden')) previousViewBeforePanel = 'card';
+                else if (listView && !listView.classList.contains('hidden')) previousViewBeforePanel = 'list';
+                else if (quizView && !quizView.classList.contains('hidden')) previousViewBeforePanel = 'quiz';
+                
+                if (cardView) cardView.classList.add('hidden');
+                if (listView) listView.classList.add('hidden');
+                if (quizView) quizView.classList.add('hidden');
+                
+                panel.classList.remove('hidden');
+                if (settingsPanel) settingsPanel.classList.add('hidden');
+                if (bookPanel) bookPanel.classList.add('hidden');
+                
+                // 動態刷新四大圖表板塊
+                renderQuizChart();
+                renderLeitnerDistribution();
+                renderWeeklyActivityChart();
+                updateBadges();
+            } else {
+                panel.classList.add('hidden');
+                restorePreviousView();
+            }
+        };
+
         // 展開/收起更多例句 (Expander 高度自適應撐開，消除 scrollbar)
         function toggleExtraSentences() {
             const extraEn = document.querySelectorAll('.extra-sentence');
@@ -1566,6 +1924,10 @@
             const panel = document.getElementById('settings-panel');
             if (panel) {
                 panel.classList.add('hidden');
+            }
+            const analysisPanel = document.getElementById('analysis-panel');
+            if (analysisPanel) {
+                analysisPanel.classList.add('hidden');
             }
             const modeFlip = document.getElementById('mode-flip');
             const modeList = document.getElementById('mode-list');
