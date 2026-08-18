@@ -79,28 +79,8 @@
 
         <!-- 語音設定面板 (預設隱藏) -->
         <div id="settings-panel" class="hidden w-full bg-white border border-slate-100 rounded-2xl shadow-xl p-5 mb-4 space-y-4 transition-all">
-            <h3 class="text-sm font-bold text-slate-700 border-b pb-2 flex items-center gap-1.5">
-                ⚙️ 語音發音參數設定
-            </h3>
-            <!-- 1. 語速微調區 -->
-            <div class="flex items-center justify-between text-xs">
-                <span class="text-slate-600 font-medium">調整語速：</span>
-                <div class="flex items-center gap-2">
-                    <button onclick="adjustSpeed(-0.1)" class="w-8 h-8 flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-lg transition active:scale-95 shadow-sm">-</button>
-                    <span id="speed-display-val" class="font-bold text-indigo-600 w-12 text-center text-sm">0.7x</span>
-                    <button onclick="adjustSpeed(0.1)" class="w-8 h-8 flex items-center justify-center bg-indigo-50 hover:bg-indigo-100 text-indigo-600 font-bold rounded-lg transition active:scale-95 shadow-sm">+</button>
-                </div>
-            </div>
-            <!-- 2. 口音語系切換 -->
-            <div class="flex items-center justify-between text-xs">
-                <span class="text-slate-600 font-medium">發音口音：</span>
-                <div class="flex bg-slate-100 p-0.5 rounded-lg">
-                    <button id="accent-us" onclick="selectAccent('US')" class="px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600">美式 (US)</button>
-                    <button id="accent-uk" onclick="selectAccent('UK')" class="px-3 py-1 rounded-md transition font-medium text-slate-500">英式 (UK)</button>
-                </div>
-            </div>
-            <!-- 3. Google 雲端進度同步 -->
-            <div class="border-t pt-3 flex flex-col gap-2">
+            <!-- 1. Google 雲端進度同步 -->
+            <div class="pb-3 flex flex-col gap-2">
                 <span class="text-xs text-slate-600 font-bold flex items-center gap-1">☁️ Google 雲端同步 (跨裝置)</span>
                 <div class="flex items-center justify-between">
                     <div id="g-user-info" class="text-[11px] text-slate-500 font-medium flex items-center gap-1.5">
@@ -109,6 +89,63 @@
                     <button id="btn-g-sync" onclick="handleGoogleSync()" class="px-3 py-1.5 text-xs font-semibold bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg shadow-sm transition active:scale-95 flex items-center gap-1">
                         連結帳號
                     </button>
+                </div>
+            </div>
+
+            <!-- 2. 🗣️ 語音發音參數設定 -->
+            <div class="border-t pt-3 space-y-3">
+                <h3 class="text-xs font-bold text-slate-600 flex items-center gap-1.5">
+                    🗣️ 語音發音參數設定
+                </h3>
+                <!-- 語速微調區 -->
+                <div class="flex items-center justify-between text-xs">
+                    <span class="text-slate-600 font-medium">調整語速：</span>
+                    <div class="flex items-center gap-2">
+                        <button onclick="adjustSpeed(-0.1)" class="w-8 h-8 flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-lg transition active:scale-95 shadow-sm">-</button>
+                        <span id="speed-display-val" class="font-bold text-indigo-600 w-12 text-center text-sm">0.7x</span>
+                        <button onclick="adjustSpeed(0.1)" class="w-8 h-8 flex items-center justify-center bg-indigo-50 hover:bg-indigo-100 text-indigo-600 font-bold rounded-lg transition active:scale-95 shadow-sm">+</button>
+                    </div>
+                </div>
+                <!-- 口音語系切換 -->
+                <div class="flex items-center justify-between text-xs">
+                    <span class="text-slate-600 font-medium">發音口音：</span>
+                    <div class="flex bg-slate-100 p-0.5 rounded-lg">
+                        <button id="accent-us" onclick="selectAccent('US')" class="px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600">美式 (US)</button>
+                        <button id="accent-uk" onclick="selectAccent('UK')" class="px-3 py-1 rounded-md transition font-medium text-slate-500">英式 (UK)</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. 🎯 測驗與複習參數設定 -->
+            <div class="border-t pt-3 space-y-3">
+                <h3 class="text-xs font-bold text-slate-600 flex items-center gap-1.5">
+                    🎯 測驗與複習參數設定
+                </h3>
+                <!-- 複習時間模式 -->
+                <div class="flex items-center justify-between text-xs">
+                    <span class="text-slate-600 font-medium">複習時間模式：</span>
+                    <div class="flex bg-slate-100 p-0.5 rounded-lg">
+                        <button id="time-mode-fast" onclick="selectTimeMode('fast')" class="px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600">快速(分)</button>
+                        <button id="time-mode-theory" onclick="selectTimeMode('theory')" class="px-3 py-1 rounded-md transition font-medium text-slate-500">理論(天)</button>
+                    </div>
+                </div>
+                <!-- 測驗目標題數 -->
+                <div class="flex items-center justify-between text-xs">
+                    <span class="text-slate-600 font-medium">測驗目標題數：</span>
+                    <div class="flex items-center gap-2">
+                        <button onclick="adjustTargetQuizCount(-1)" class="w-8 h-8 flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-lg transition active:scale-95 shadow-sm">-</button>
+                        <span id="quiz-count-display-val" class="font-bold text-indigo-600 w-12 text-center text-sm">2 題</span>
+                        <button onclick="adjustTargetQuizCount(1)" class="w-8 h-8 flex items-center justify-center bg-indigo-50 hover:bg-indigo-100 text-indigo-600 font-bold rounded-lg transition active:scale-95 shadow-sm">+</button>
+                    </div>
+                </div>
+                <!-- 自動測驗觸發門檻 -->
+                <div class="flex items-center justify-between text-xs">
+                    <span class="text-slate-600 font-medium">自動測驗門檻：</span>
+                    <div class="flex items-center gap-2">
+                        <button onclick="adjustAutoQuizThreshold(-1)" class="w-8 h-8 flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-lg transition active:scale-95 shadow-sm">-</button>
+                        <span id="auto-quiz-threshold-val" class="font-bold text-indigo-600 w-12 text-center text-sm">5 個</span>
+                        <button onclick="adjustAutoQuizThreshold(1)" class="w-8 h-8 flex items-center justify-center bg-indigo-50 hover:bg-indigo-100 text-indigo-600 font-bold rounded-lg transition active:scale-95 shadow-sm">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -126,7 +163,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.02</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.03</p>
             </div>
         </div>
 
@@ -518,8 +555,94 @@
         }
 
         // 語音設定與 Google API 參數
-        let currentSpeed = 0.7;
-        let currentAccent = 'US';
+        let currentSpeed = parseFloat(localStorage.getItem('toeic_speech_rate')) || 0.7;
+        let currentAccent = localStorage.getItem('toeic_speech_accent') || 'US';
+        
+        // 獲取與設定配置的動態讀取 API
+        const getTargetQuizCount = () => {
+            const val = parseInt(localStorage.getItem('toeic_target_quiz_count'));
+            return isNaN(val) ? 2 : Math.max(2, Math.min(5, val));
+        };
+        
+        const getAutoQuizThreshold = () => {
+            const val = parseInt(localStorage.getItem('toeic_auto_quiz_threshold'));
+            return isNaN(val) ? 5 : Math.max(3, Math.min(10, val));
+        };
+
+        window.selectTimeMode = function(mode) {
+            localStorage.setItem('toeic_review_time_mode', mode);
+            syncSettingsUI();
+            if (accessToken && cloudFileId) {
+                uploadToCloud(masteredWords, passedSentences, leitnerBox, quizHistory).catch(err => console.error(err));
+            }
+        };
+
+        window.adjustTargetQuizCount = function(val) {
+            let current = parseInt(localStorage.getItem('toeic_target_quiz_count')) || 2;
+            current = Math.max(2, Math.min(5, current + val));
+            localStorage.setItem('toeic_target_quiz_count', current);
+            syncSettingsUI();
+            if (accessToken && cloudFileId) {
+                uploadToCloud(masteredWords, passedSentences, leitnerBox, quizHistory).catch(err => console.error(err));
+            }
+        };
+
+        window.adjustAutoQuizThreshold = function(val) {
+            let current = parseInt(localStorage.getItem('toeic_auto_quiz_threshold')) || 5;
+            current = Math.max(3, Math.min(10, current + val));
+            localStorage.setItem('toeic_auto_quiz_threshold', current);
+            syncSettingsUI();
+            if (accessToken && cloudFileId) {
+                uploadToCloud(masteredWords, passedSentences, leitnerBox, quizHistory).catch(err => console.error(err));
+            }
+        };
+
+        window.syncSettingsUI = function() {
+            // 語速
+            const rate = parseFloat(localStorage.getItem('toeic_speech_rate')) || 0.7;
+            currentSpeed = rate;
+            const displayVal = document.getElementById('speed-display-val');
+            if (displayVal) displayVal.textContent = rate.toFixed(1) + 'x';
+            
+            // 口音
+            const accent = localStorage.getItem('toeic_speech_accent') || 'US';
+            currentAccent = accent;
+            const btnUs = document.getElementById('accent-us');
+            const btnUk = document.getElementById('accent-uk');
+            if (btnUs && btnUk) {
+                if (accent === 'US') {
+                    btnUs.className = "px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600";
+                    btnUk.className = "px-3 py-1 rounded-md transition font-medium text-slate-500";
+                } else {
+                    btnUs.className = "px-3 py-1 rounded-md transition font-medium text-slate-500";
+                    btnUk.className = "px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600";
+                }
+            }
+            
+            // 複習時間模式
+            const timeMode = localStorage.getItem('toeic_review_time_mode') || 'fast';
+            const btnFast = document.getElementById('time-mode-fast');
+            const btnTheory = document.getElementById('time-mode-theory');
+            if (btnFast && btnTheory) {
+                if (timeMode === 'fast') {
+                    btnFast.className = "px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600";
+                    btnTheory.className = "px-3 py-1 rounded-md transition font-medium text-slate-500";
+                } else {
+                    btnFast.className = "px-3 py-1 rounded-md transition font-medium text-slate-500";
+                    btnTheory.className = "px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600";
+                }
+            }
+            
+            // 測驗目標題數
+            const quizCount = getTargetQuizCount();
+            const quizDisplay = document.getElementById('quiz-count-display-val');
+            if (quizDisplay) quizDisplay.textContent = quizCount + ' 題';
+            
+            // 自動測驗門檻
+            const threshold = getAutoQuizThreshold();
+            const thresholdDisplay = document.getElementById('auto-quiz-threshold-val');
+            if (thresholdDisplay) thresholdDisplay.textContent = threshold + ' 個';
+        };
         let selectedVoice = null;
 
         const CLIENT_ID = '569992410924-9i2rcjfm2rhi0etj3ofqqmbrjja2lj5i.apps.googleusercontent.com';
@@ -706,12 +829,23 @@
                          localStorage.setItem('toeic_passed_sentences', JSON.stringify(mergedPassed));
                          localStorage.setItem('toeic_leitner_box', JSON.stringify(mergedLeitner));
 
-                         // 更新當前加載的 wordsData 單字狀態
-                         wordsData.forEach(item => {
-                             item.mastered = masteredWords.includes(item.word.toLowerCase());
-                         });
-                         
-                         updateMasteredCount();
+                          // 同步設定參數到本地
+                          if (cloudData.settings) {
+                              const s = cloudData.settings;
+                              if (s.speechRate) localStorage.setItem('toeic_speech_rate', s.speechRate);
+                              if (s.speechAccent) localStorage.setItem('toeic_speech_accent', s.speechAccent);
+                              if (s.reviewTimeMode) localStorage.setItem('toeic_review_time_mode', s.reviewTimeMode);
+                              if (s.targetQuizCount) localStorage.setItem('toeic_target_quiz_count', s.targetQuizCount);
+                              if (s.autoQuizThreshold) localStorage.setItem('toeic_auto_quiz_threshold', s.autoQuizThreshold);
+                              syncSettingsUI();
+                          }
+
+                          // 更新當前加載的 wordsData 單字狀態
+                          wordsData.forEach(item => {
+                              item.mastered = masteredWords.includes(item.word.toLowerCase());
+                          });
+                          
+                          updateMasteredCount();
                          
                          if (!document.getElementById('flashcard-view').classList.contains('hidden')) {
                              currentWords = getFilteredWords();
@@ -734,15 +868,19 @@
         }
 
         async function createCloudFile(masteredWords, passedSentences, leitnerBox, history = []) {
-            const metadata = {
-                name: 'toeic_game_progress.json',
-                parents: ['appDataFolder']
+            const settings = {
+                speechRate: localStorage.getItem('toeic_speech_rate') || '0.7',
+                speechAccent: localStorage.getItem('toeic_speech_accent') || 'US',
+                reviewTimeMode: localStorage.getItem('toeic_review_time_mode') || 'fast',
+                targetQuizCount: localStorage.getItem('toeic_target_quiz_count') || '2',
+                autoQuizThreshold: localStorage.getItem('toeic_auto_quiz_threshold') || '5'
             };
             const content = {
                 masteredWords: masteredWords,
                 passedSentences: passedSentences,
                 leitnerBox: leitnerBox,
-                quizHistory: history
+                quizHistory: history,
+                settings: settings
             };
             
             const boundary = 'foo_bar_baz';
@@ -779,12 +917,20 @@
         }
 
         async function uploadToCloud(masteredWords, passedSentences, leitnerBox, history = []) {
-            if (!cloudFileId) return;
+            if (!accessToken || !cloudFileId) return;
+            const settings = {
+                speechRate: localStorage.getItem('toeic_speech_rate') || '0.7',
+                speechAccent: localStorage.getItem('toeic_speech_accent') || 'US',
+                reviewTimeMode: localStorage.getItem('toeic_review_time_mode') || 'fast',
+                targetQuizCount: localStorage.getItem('toeic_target_quiz_count') || '2',
+                autoQuizThreshold: localStorage.getItem('toeic_auto_quiz_threshold') || '5'
+            };
             const content = {
                 masteredWords: masteredWords,
                 passedSentences: passedSentences,
                 leitnerBox: leitnerBox,
-                quizHistory: history
+                quizHistory: history,
+                settings: settings
             };
             
             await fetch(
@@ -919,17 +1065,43 @@
             }
         };
 
+        let previousViewBeforeSettings = 'card';
+
+        function restorePreviousView() {
+            const cardView = document.getElementById('flashcard-view');
+            const listView = document.getElementById('list-view');
+            const quizView = document.getElementById('quiz-view');
+            if (previousViewBeforeSettings === 'card' && cardView) cardView.classList.remove('hidden');
+            else if (previousViewBeforeSettings === 'list' && listView) listView.classList.remove('hidden');
+            else if (previousViewBeforeSettings === 'quiz' && quizView) quizView.classList.remove('hidden');
+        }
+
         function toggleSettingsPanel() {
             const panel = document.getElementById('settings-panel');
             const bookPanel = document.getElementById('book-unit-panel');
             if (!panel) return;
+            
             const isHidden = panel.classList.contains('hidden');
-            panel.classList.toggle('hidden', !isHidden);
-            if (isHidden && bookPanel) {
-                bookPanel.classList.add('hidden');
-            }
-            if (!panel.classList.contains('hidden')) {
+            if (isHidden) {
+                const cardView = document.getElementById('flashcard-view');
+                const listView = document.getElementById('list-view');
+                const quizView = document.getElementById('quiz-view');
+                
+                if (cardView && !cardView.classList.contains('hidden')) previousViewBeforeSettings = 'card';
+                else if (listView && !listView.classList.contains('hidden')) previousViewBeforeSettings = 'list';
+                else if (quizView && !quizView.classList.contains('hidden')) previousViewBeforeSettings = 'quiz';
+                
+                if (cardView) cardView.classList.add('hidden');
+                if (listView) listView.classList.add('hidden');
+                if (quizView) quizView.classList.add('hidden');
+                
+                panel.classList.remove('hidden');
+                if (bookPanel) bookPanel.classList.add('hidden');
+                syncSettingsUI();
                 renderQuizChart();
+            } else {
+                panel.classList.add('hidden');
+                restorePreviousView();
             }
         }
 
@@ -951,9 +1123,9 @@
             if (panel && !panel.classList.contains('hidden')) {
                 if (!panel.contains(e.target) && !btn.contains(e.target)) {
                     panel.classList.add('hidden');
+                    restorePreviousView();
                 }
             }
-
             const bookPanel = document.getElementById('book-unit-panel');
             const bookBtn = document.getElementById('btn-book-unit');
             if (bookPanel && !bookPanel.classList.contains('hidden')) {
@@ -967,14 +1139,21 @@
             currentSpeed = Math.round((currentSpeed + amount) * 10) / 10;
             if (currentSpeed < 0.5) currentSpeed = 0.5;
             if (currentSpeed > 2.0) currentSpeed = 2.0;
-            document.getElementById('speed-display-val').textContent = currentSpeed + 'x';
+            localStorage.setItem('toeic_speech_rate', currentSpeed);
+            syncSettingsUI();
+            if (accessToken && cloudFileId) {
+                uploadToCloud(masteredWords, passedSentences, leitnerBox, quizHistory).catch(err => console.error(err));
+            }
         }
 
         function selectAccent(accent) {
             currentAccent = accent;
-            document.getElementById('accent-us').className = accent === 'US' ? 'px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600' : 'px-3 py-1 rounded-md transition font-medium text-slate-500';
-            document.getElementById('accent-uk').className = accent === 'UK' ? 'px-3 py-1 rounded-md transition font-medium shadow-sm bg-white text-indigo-600' : 'px-3 py-1 rounded-md transition font-medium text-slate-500';
+            localStorage.setItem('toeic_speech_accent', accent);
+            syncSettingsUI();
             loadVoices();
+            if (accessToken && cloudFileId) {
+                uploadToCloud(masteredWords, passedSentences, leitnerBox, quizHistory).catch(err => console.error(err));
+            }
         }
 
 
@@ -1249,9 +1428,9 @@
                 renderUnitSelect(book);
             }
 
-            if (sessionMasteredCount >= 5) {
+            if (sessionMasteredCount >= getAutoQuizThreshold()) {
                 sessionMasteredCount = 0;
-                alert("🎉 恭喜！您剛剛新掌握了 5 個單字！現在即刻進入測驗挑戰，科學複習驗證記憶成果！");
+                alert(`🎉 恭喜！您剛剛新掌握了 ${getAutoQuizThreshold()} 個單字！現在即刻進入測驗挑戰，科學複習驗證記憶成果！`);
                 switchMode('quiz');
                 return;
             }
@@ -1531,12 +1710,12 @@
             currentMastered.forEach(wordObj => {
                 const wordKey = wordObj.word.toLowerCase();
                 const passedList = passedSentences[wordKey] || [];
-                if (passedList.length < 2) {
+                if (passedList.length < getTargetQuizCount()) {
                     const examples = wordObj.examples || [];
                     const indices = examples.map((_, idx) => idx);
                     // 隨機打亂 indices 並取前 2 個
                     indices.sort(() => Math.random() - 0.5);
-                    const selectedIndices = indices.slice(0, Math.min(2, examples.length));
+                    const selectedIndices = indices.slice(0, Math.min(getTargetQuizCount(), examples.length));
                     
                     selectedIndices.forEach(idx => {
                         quizPool.push({
@@ -1551,16 +1730,21 @@
             // 2. 基於 Leitner 複習箱子選題（溫故知新複習考）：
             // 篩選當前單元中「已完全通過 2 個例句」且「在 Leitner 盒子中已判定為過期 (Due)」的單字
             const now = Date.now();
-            const intervals = {
-                1: 60 * 1000,      // Box 1: 1 分鐘
-                2: 300 * 1000,     // Box 2: 5 分鐘
-                3: 900 * 1000      // Box 3: 15 分鐘
+            const isTheoryMode = localStorage.getItem('toeic_review_time_mode') === 'theory';
+            const intervals = isTheoryMode ? {
+                1: 1 * 24 * 60 * 60 * 1000, // Box 1: 1 天
+                2: 3 * 24 * 60 * 60 * 1000, // Box 2: 3 天
+                3: 7 * 24 * 60 * 60 * 1000  // Box 3: 7 天
+            } : {
+                1: 5 * 60 * 1000,    // Box 1: 5 分鐘
+                2: 30 * 60 * 1000,   // Box 2: 30 分鐘
+                3: 150 * 60 * 1000   // Box 3: 150 分鐘
             };
 
             const reviewWords = currentMastered.filter(wordObj => {
                 const wordKey = wordObj.word.toLowerCase();
                 const passedList = passedSentences[wordKey] || [];
-                if (passedList.length < 2) return false;
+                if (passedList.length < getTargetQuizCount()) return false;
 
                 const box = leitnerBox[wordKey] || { boxLevel: 1, lastTested: 0 };
                 const interval = intervals[box.boxLevel] || intervals[1];
@@ -1846,6 +2030,7 @@
             }
         }
 
+        syncSettingsUI();
         if (typeof google !== 'undefined') {
             initGoogleAuth();
             autoConnectGoogle();
