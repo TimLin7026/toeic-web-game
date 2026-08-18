@@ -163,7 +163,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.05</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.06</p>
             </div>
         </div>
 
@@ -1615,10 +1615,10 @@
                 row.className = `bg-white p-3.5 rounded-xl border ${item.mastered ? 'border-emerald-200 bg-emerald-50/20' : 'border-slate-100'} shadow-sm flex justify-between items-center transition`;
                 row.innerHTML = `
                     <div class="flex items-center gap-3">
-                        <button onclick="toggleListMaster('${item.word}')" class="p-1.5 rounded-lg ${item.mastered ? 'bg-emerald-500 text-white' : 'bg-slate-100 text-slate-400 hover:bg-slate-200'} transition" title="${item.mastered ? '標記為未掌握' : '標記為已掌握'}">
+                        <button onclick="toggleListMaster('${item.word}')" class="p-1.5 rounded-lg ${item.mastered ? 'bg-emerald-500 text-white' : 'bg-slate-100 text-slate-400 hover:bg-slate-200'} transition shadow-sm" title="${item.mastered ? '標記為未掌握' : '標記為已掌握'}">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                         </button>
-                        <div>
+                        <div class="cursor-pointer hover:underline text-left" onclick="jumpToWordCard('${item.word}')">
                             <span class="font-bold text-slate-800 text-base flex items-center gap-2">
                                 ${item.word}
                                 ${item.mastered ? '<span class="text-[10px] bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-normal">已掌握</span>' : ''}
@@ -1633,6 +1633,38 @@
                 container.appendChild(row);
             });
         }
+
+        window.jumpToWordCard = function(wordText) {
+            if (isSpeaking) return;
+            const wordKey = wordText.toLowerCase();
+            
+            // 智慧判定字卡篩選器是否會將該單字過濾，若會則自動退回 'all'
+            const filterSelect = document.getElementById('filter-select');
+            const item = wordsData.find(w => w.word.toLowerCase() === wordKey);
+            if (item && filterSelect) {
+                const currentFilter = filterSelect.value;
+                if ((currentFilter === 'unlearned' && item.mastered) || (currentFilter === 'learned' && !item.mastered)) {
+                    filterSelect.value = 'all';
+                    currentWords = getFilteredWords();
+                }
+            }
+            
+            const idx = currentWords.findIndex(w => w.word.toLowerCase() === wordKey);
+            if (idx !== -1) {
+                currentIndex = idx;
+                switchMode('flip');
+            } else {
+                if (filterSelect) {
+                    filterSelect.value = 'all';
+                    currentWords = getFilteredWords();
+                    const retryIdx = currentWords.findIndex(w => w.word.toLowerCase() === wordKey);
+                    if (retryIdx !== -1) {
+                        currentIndex = retryIdx;
+                        switchMode('flip');
+                    }
+                }
+            }
+        };
 
         window.toggleListMaster = function(wordText) {
             if (isSpeaking) return;
