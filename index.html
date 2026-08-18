@@ -163,7 +163,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.03</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.04</p>
             </div>
         </div>
 
@@ -1065,15 +1065,15 @@
             }
         };
 
-        let previousViewBeforeSettings = 'card';
+        let previousViewBeforePanel = 'card';
 
         function restorePreviousView() {
             const cardView = document.getElementById('flashcard-view');
             const listView = document.getElementById('list-view');
             const quizView = document.getElementById('quiz-view');
-            if (previousViewBeforeSettings === 'card' && cardView) cardView.classList.remove('hidden');
-            else if (previousViewBeforeSettings === 'list' && listView) listView.classList.remove('hidden');
-            else if (previousViewBeforeSettings === 'quiz' && quizView) quizView.classList.remove('hidden');
+            if (previousViewBeforePanel === 'card' && cardView) cardView.classList.remove('hidden');
+            else if (previousViewBeforePanel === 'list' && listView) listView.classList.remove('hidden');
+            else if (previousViewBeforePanel === 'quiz' && quizView) quizView.classList.remove('hidden');
         }
 
         function toggleSettingsPanel() {
@@ -1087,9 +1087,9 @@
                 const listView = document.getElementById('list-view');
                 const quizView = document.getElementById('quiz-view');
                 
-                if (cardView && !cardView.classList.contains('hidden')) previousViewBeforeSettings = 'card';
-                else if (listView && !listView.classList.contains('hidden')) previousViewBeforeSettings = 'list';
-                else if (quizView && !quizView.classList.contains('hidden')) previousViewBeforeSettings = 'quiz';
+                if (cardView && !cardView.classList.contains('hidden')) previousViewBeforePanel = 'card';
+                else if (listView && !listView.classList.contains('hidden')) previousViewBeforePanel = 'list';
+                else if (quizView && !quizView.classList.contains('hidden')) previousViewBeforePanel = 'quiz';
                 
                 if (cardView) cardView.classList.add('hidden');
                 if (listView) listView.classList.add('hidden');
@@ -1109,10 +1109,26 @@
             const panel = document.getElementById('book-unit-panel');
             const settingsPanel = document.getElementById('settings-panel');
             if (!panel) return;
+            
             const isHidden = panel.classList.contains('hidden');
-            panel.classList.toggle('hidden', !isHidden);
-            if (isHidden && settingsPanel) {
-                settingsPanel.classList.add('hidden');
+            if (isHidden) {
+                const cardView = document.getElementById('flashcard-view');
+                const listView = document.getElementById('list-view');
+                const quizView = document.getElementById('quiz-view');
+                
+                if (cardView && !cardView.classList.contains('hidden')) previousViewBeforePanel = 'card';
+                else if (listView && !listView.classList.contains('hidden')) previousViewBeforePanel = 'list';
+                else if (quizView && !quizView.classList.contains('hidden')) previousViewBeforePanel = 'quiz';
+                
+                if (cardView) cardView.classList.add('hidden');
+                if (listView) listView.classList.add('hidden');
+                if (quizView) quizView.classList.add('hidden');
+                
+                panel.classList.remove('hidden');
+                if (settingsPanel) settingsPanel.classList.add('hidden');
+            } else {
+                panel.classList.add('hidden');
+                restorePreviousView();
             }
         }
 
@@ -1131,6 +1147,7 @@
             if (bookPanel && !bookPanel.classList.contains('hidden')) {
                 if (!bookPanel.contains(e.target) && !bookBtn.contains(e.target) && !e.target.closest('#book-select-modal')) {
                     bookPanel.classList.add('hidden');
+                    restorePreviousView();
                 }
             }
         });
