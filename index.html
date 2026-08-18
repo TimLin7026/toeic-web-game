@@ -80,30 +80,43 @@
                 </p>
             </div>
             
-            <!-- 單元記憶深淺度分佈 -->
-            <div id="unit-leitner-distribution" class="border-t pt-3 text-left space-y-2 mt-2">
+            <!-- 單元記憶深淺度分佈 (與分析面板樣式一致，含獨立進度條) -->
+            <div id="unit-leitner-distribution" class="border-t pt-3.5 text-left space-y-2 mt-2">
                 <span class="text-[11px] text-slate-500 font-bold flex items-center gap-1">🧠 單元記憶分佈</span>
-                <div class="grid grid-cols-2 gap-2 text-[10px]">
-                    <div class="flex items-center justify-between text-slate-500">
-                        <span>長期 (Box 3): <span id="unit-box3-ratio" class="font-bold text-emerald-600">0% (0字)</span></span>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between text-[11px] text-slate-500">
+                        <span>長期記憶 (Box 3)</span>
+                        <span id="unit-box3-ratio" class="font-semibold text-emerald-600">0% (0字)</span>
                     </div>
-                    <div class="flex items-center justify-between text-slate-500">
-                        <span>中期 (Box 2): <span id="unit-box2-ratio" class="font-bold text-amber-500">0% (0字)</span></span>
+                    <div class="w-full bg-slate-100 rounded-full h-2">
+                        <div id="unit-box3-bar" class="bg-emerald-500 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
                     </div>
-                    <div class="flex items-center justify-between text-slate-500">
-                        <span>短期 (Box 1): <span id="unit-box1-ratio" class="font-bold text-orange-500">0% (0字)</span></span>
+                    
+                    <div class="flex items-center justify-between text-[11px] text-slate-500">
+                        <span>中期記憶 (Box 2)</span>
+                        <span id="unit-box2-ratio" class="font-semibold text-amber-500">0% (0字)</span>
                     </div>
-                    <div class="flex items-center justify-between text-slate-500">
-                        <span>未掌握: <span id="unit-box0-ratio" class="font-bold text-slate-400">0% (0字)</span></span>
+                    <div class="w-full bg-slate-100 rounded-full h-2">
+                        <div id="unit-box2-bar" class="bg-amber-400 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between text-[11px] text-slate-500">
+                        <span>短期記憶 (Box 1)</span>
+                        <span id="unit-box1-ratio" class="font-semibold text-orange-500">0% (0字)</span>
+                    </div>
+                    <div class="w-full bg-slate-100 rounded-full h-2">
+                        <div id="unit-box1-bar" class="bg-orange-400 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between text-[11px] text-slate-500">
+                        <span>未學習/未掌握</span>
+                        <span id="unit-box0-ratio" class="font-semibold text-slate-400">0% (0字)</span>
+                    </div>
+                    <div class="w-full bg-slate-100 rounded-full h-2">
+                        <div id="unit-box0-bar" class="bg-slate-300 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
                     </div>
                 </div>
-                <!-- 合併的單元進度條 -->
-                <div class="w-full bg-slate-100 rounded-full h-2 flex overflow-hidden">
-                    <div id="unit-box3-bar" class="bg-emerald-500 h-2 transition-all duration-500" style="width: 0%"></div>
-                    <div id="unit-box2-bar" class="bg-amber-400 h-2 transition-all duration-500" style="width: 0%"></div>
-                    <div id="unit-box1-bar" class="bg-orange-400 h-2 transition-all duration-500" style="width: 0%"></div>
-                    <div id="unit-box0-bar" class="bg-slate-300 h-2 transition-all duration-500" style="width: 0%"></div>
-                </div>
+            </div>
             </div>
         </div>
 
@@ -180,7 +193,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.15</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.16</p>
             </div>
         </div>
 
@@ -486,7 +499,8 @@
         let sessionMasteredCount = 0; // 本 session 新掌握單字累計 (達 5 字強制測驗)
 
         function saveProgress() {
-            syncAllWordsMasteredStatus(); // 存檔前先更新全書掌握狀態
+            syncAllWordsMasteredStatus();
+                console.log("【除錯】allWordsData 預載入已執行。總單字量:", allWordsData.length); // 存檔前先更新全書掌握狀態
             checkUnitCompletion();
             checkUnitCompletion(); // 存檔前先檢查並更新當前單元的終結狀態
             localStorage.setItem('toeic_mastered_words', JSON.stringify(masteredWords));
@@ -1569,6 +1583,7 @@
         // 🧠 1. 渲染記憶深淺度分佈
         function renderLeitnerDistribution() {
             const total = allWordsData.length;
+            console.log("【除錯】正在渲染全書記憶分佈。全書總單字數:", total);
             if (total === 0) return;
             
             let box3Count = 0;
