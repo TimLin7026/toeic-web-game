@@ -163,7 +163,7 @@
 
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.07</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.08</p>
             </div>
         </div>
 
@@ -1618,7 +1618,7 @@
                         <button onclick="toggleListMaster('${item.word}')" class="p-1.5 rounded-lg ${item.mastered ? 'bg-emerald-500 text-white' : 'bg-slate-100 text-slate-400 hover:bg-slate-200'} transition shadow-sm" title="${item.mastered ? '標記為未掌握' : '標記為已掌握'}">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                         </button>
-                        <div class="cursor-pointer hover:underline text-left" onclick="jumpToWordCard('${item.word}')">
+                        <div class="cursor-pointer text-left" onclick="jumpToWordCard('${item.word}')">
                             <span class="font-bold text-slate-800 text-base flex items-center gap-2">
                                 ${item.word}
                                 ${item.mastered ? '<span class="text-[10px] bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-normal">已掌握</span>' : ''}
@@ -1638,11 +1638,12 @@
             if (isSpeaking) return;
             const wordKey = wordText.toLowerCase();
             
-            // 跳轉時，將字卡模式下的篩選器設定為與列表篩選器一致
+            // 同步篩選器並更新全域變數 currentFilter
             const listFilterSelect = document.getElementById('list-filter-select');
             const filterSelect = document.getElementById('filter-select');
             if (listFilterSelect && filterSelect) {
                 filterSelect.value = listFilterSelect.value;
+                currentFilter = filterSelect.value; // 修正關鍵：同步更新全域變數
                 currentWords = getFilteredWords();
             }
             
@@ -1651,9 +1652,10 @@
                 currentIndex = idx;
                 switchMode('flip');
             } else {
-                // 萬一在此篩選下找不到，再退回 'all' 兜底
+                // 萬一在當前篩選下找不到，再退回 'all' 兜底
                 if (filterSelect) {
                     filterSelect.value = 'all';
+                    currentFilter = 'all'; // 同步更新全域變數
                     currentWords = getFilteredWords();
                     const retryIdx = currentWords.findIndex(w => w.word.toLowerCase() === wordKey);
                     if (retryIdx !== -1) {
