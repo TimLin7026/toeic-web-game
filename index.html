@@ -19,39 +19,39 @@
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between">
 
     <!-- 頁首：置中集中功能列 -->
-    <header id="app-header" class="bg-white shadow-sm py-3 px-6 sticky top-0 z-10 flex justify-center items-center gap-3">
-        <!-- 設定與模式切換 -->
-        <div class="flex items-center gap-3 flex-wrap justify-center">
+    <header id="app-header" class="bg-white shadow-sm py-2 px-3 sm:px-6 sticky top-0 z-10 flex justify-center items-center">
+        <!-- 所有按鈕直接扁平排成一行，在小螢幕上微調間距，防折行 -->
+        <div class="flex items-center gap-1.5 sm:gap-2.5 justify-center flex-nowrap">
             <!-- 齒輪設定按鈕 -->
-            <div class="relative inline-flex">
-                <button id="btn-settings" onclick="toggleSettingsPanel()" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center" title="語音參數設定">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="relative inline-flex flex-shrink-0">
+                <button id="btn-settings" onclick="toggleSettingsPanel()" class="p-1.5 sm:p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center" title="語音參數設定">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                     </svg>
                 </button>
-                <!-- Google 未連結提示 badge -->
-                <span id="google-sync-badge" class="hidden absolute -top-1 -right-1 w-4 h-4 bg-rose-500 text-white text-[9px] font-bold rounded-full flex items-center justify-center leading-none shadow-sm" title="尚未連結 Google 雲端同步">!</span>
+                <span id="google-sync-badge" class="hidden absolute -top-1 -right-1 w-3.5 h-3.5 sm:w-4 sm:h-4 bg-rose-500 text-white text-[8px] sm:text-[9px] font-bold rounded-full flex items-center justify-center leading-none shadow-sm" title="尚未連結 Google 雲端同步">!</span>
             </div>
 
             <!-- 教材單元選擇 📖 按鈕 -->
-            <button id="btn-book-unit" onclick="toggleBookUnitPanel()" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center" title="選擇教材與單元">
-                <span class="text-base leading-none">📖</span>
+            <button id="btn-book-unit" onclick="toggleBookUnitPanel()" class="p-1.5 sm:p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center flex-shrink-0" title="選擇教材與單元">
+                <span class="text-sm sm:text-base leading-none">📖</span>
             </button>
 
-            <div class="flex gap-1.5">
-                <button id="mode-flip" onclick="switchMode('flip')" class="px-3 py-1.5 text-xs font-medium bg-indigo-50 text-indigo-600 rounded-lg shadow-sm hover:bg-indigo-100 transition">字卡</button>
-                <button id="mode-list" onclick="switchMode('list')" class="px-3 py-1.5 text-xs font-medium bg-slate-100 text-slate-600 rounded-lg shadow-sm hover:bg-slate-200 transition">列表</button>
-                <button id="mode-quiz" onclick="switchMode('quiz')" class="px-3 py-1.5 text-xs font-medium bg-emerald-50 text-emerald-600 rounded-lg shadow-sm hover:bg-emerald-100 transition border border-emerald-200">測驗</button>
+            <!-- 模式切換與分析、商城平鋪一體化 -->
+            <button id="mode-flip" onclick="switchMode('flip')" class="px-2.5 sm:px-3.5 py-1.5 text-[11px] sm:text-xs font-bold bg-indigo-50 text-indigo-600 rounded-lg shadow-sm hover:bg-indigo-100 transition flex-shrink-0">字卡</button>
+            <button id="mode-list" onclick="switchMode('list')" class="px-2.5 sm:px-3.5 py-1.5 text-[11px] sm:text-xs font-bold bg-slate-100 text-slate-600 rounded-lg shadow-sm hover:bg-slate-200 transition flex-shrink-0">列表</button>
+            <button id="mode-quiz" onclick="switchMode('quiz')" class="px-2.5 sm:px-3.5 py-1.5 text-[11px] sm:text-xs font-bold bg-emerald-50 text-emerald-600 rounded-lg shadow-sm hover:bg-emerald-100 transition border border-emerald-200 flex-shrink-0">測驗</button>
+
             <!-- 成效分析 📈 按鈕 -->
-            <button id="btn-analysis" onclick="toggleAnalysisPanel()" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center" title="成效分析與歷次測驗分數">
-                <span class="text-base leading-none">📈</span>
+            <button id="btn-analysis" onclick="toggleAnalysisPanel()" class="p-1.5 sm:p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center flex-shrink-0" title="成效分析與歷次測驗分數">
+                <span class="text-sm sm:text-base leading-none">📈</span>
             </button>
-            <!-- 積分挑戰 🪙 按鈕 -->
-            <button id="btn-shop" onclick="toggleShopPanel()" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center" title="積分挑戰與商城">
-                <span class="text-base leading-none">🪙</span>
+
+            <!-- 積分挑戰 💰 按鈕 -->
+            <button id="btn-shop" onclick="toggleShopPanel()" class="p-1.5 sm:p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center flex-shrink-0" title="積分挑戰與商城">
+                <span class="text-sm sm:text-base leading-none">💰</span>
             </button>
-            </div>
         </div>
     </header>
 
@@ -205,7 +205,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.01</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.02</p>
             </div>
         </div>
 
@@ -1347,7 +1347,6 @@
                 reviewTimeMode: localStorage.getItem('toeic_review_time_mode') || 'fast',
                 targetQuizCount: localStorage.getItem('toeic_target_quiz_count') || '2',
                 autoQuizThreshold: localStorage.getItem('toeic_auto_quiz_threshold') || '3',
-                completedUnits: completedUnits,
                 completedUnits: completedUnits
             };
             const content = {
@@ -1355,7 +1354,8 @@
                 passedSentences: passedSentences,
                 leitnerBox: leitnerBox,
                 quizHistory: history,
-                settings: settings
+                settings: settings,
+                shopData: JSON.parse(localStorage.getItem('toeic_shop_data') || '{}')
             };
             
             const boundary = 'foo_bar_baz';
