@@ -218,7 +218,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.09</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.10</p>
             </div>
         </div>
 
@@ -1115,6 +1115,10 @@
             document.getElementById('g-user-info').innerHTML = '<span>未連結 Google 帳號，進度僅存在此瀏覽器中。</span>';
             document.getElementById('btn-g-sync').textContent = '連結帳號';
             document.getElementById('btn-g-sync').className = 'px-3 py-1.5 text-xs font-semibold bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg shadow-sm transition active:scale-95 flex items-center gap-1';
+            
+            // 中斷連結 → 雙重同步亮起未連結警示紅點，並重新渲染挑戰商城
+            updateGoogleSyncBadge(true);
+            if (typeof renderShop === 'function') renderShop();
         }
 
         async function fetchUserInfo() {
