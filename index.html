@@ -48,9 +48,9 @@
                 <span class="text-sm sm:text-base leading-none">📈</span>
             </button>
 
-            <!-- 積分挑戰 💰 按鈕 -->
+            <!-- 積分挑戰 🪙 按鈕 -->
             <button id="btn-shop" onclick="toggleShopPanel()" class="p-1.5 sm:p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center flex-shrink-0" title="積分挑戰與商城">
-                <span class="text-sm sm:text-base leading-none">💰</span>
+                <span class="text-sm sm:text-base leading-none">🪙</span>
             </button>
         </div>
     </header>
@@ -205,7 +205,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.02</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.03</p>
             </div>
         </div>
 
@@ -3147,7 +3147,7 @@
                 
                 panel.classList.remove('hidden');
                 if (btn) {
-                    btn.className = "p-2 bg-amber-500 text-white rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center";
+                    btn.className = "p-1.5 sm:p-2 bg-amber-100 text-amber-700 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center flex-shrink-0";
                 }
                 
                 // 隱藏其他面板
@@ -3161,7 +3161,7 @@
             } else {
                 panel.classList.add('hidden');
                 if (btn) {
-                    btn.className = "p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center";
+                    btn.className = "p-1.5 sm:p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center flex-shrink-0";
                 }
                 restorePreviousView();
             }
