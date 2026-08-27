@@ -218,7 +218,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.10</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.11</p>
             </div>
         </div>
 
@@ -1063,6 +1063,7 @@
         let accessToken = localStorage.getItem('g_access_token') || null;
         let cloudFileId = localStorage.getItem('g_cloud_file_id') || null;
         let userEmail = localStorage.getItem('g_user_email') || null;
+        let tokenResolveQueue = []; // 用來放置等待新 token 的 Promise resolve 函數隊列
 
         function initGoogleAuth() {
             if (typeof google !== 'undefined') {
@@ -1071,14 +1072,32 @@
                     scope: SCOPES,
                     callback: async (resp) => {
                         if (resp.error) {
-                            alert('Google 授權失敗：' + resp.error);
+                            console.error('Google 授權失敗：', resp.error);
+                            // 若有等待中的 Promise，全部 reject
+                            while (tokenResolveQueue.length > 0) {
+                                const resolveFn = tokenResolveQueue.shift();
+                                resolveFn(null);
+                            }
                             return;
                         }
                         accessToken = resp.access_token;
                         localStorage.setItem('g_access_token', accessToken);
                         localStorage.setItem('g_connected', 'true'); // 標記為已連結狀態
+                        
+                        // 紀錄 Token 到期絕對時間戳 (Access Token 一般為 3600 秒)
+                        if (resp.expires_in) {
+                            const expireTime = new Date().getTime() + (resp.expires_in * 1000);
+                            localStorage.setItem('g_token_expire_time', expireTime);
+                        }
+                        
                         // 連結成功 → 隱藏提示 badge
                         updateGoogleSyncBadge(false);
+                        
+                        // 釋放等待 token 的 Promise 佇列
+                        while (tokenResolveQueue.length > 0) {
+                            const resolveFn = tokenResolveQueue.shift();
+                            resolveFn(accessToken);
+                        }
                         
                         await fetchUserInfo();
                         await syncWithCloud();
@@ -1121,8 +1140,55 @@
             if (typeof renderShop === 'function') renderShop();
         }
 
+        async function ensureValidToken() {
+            const isConnected = localStorage.getItem('g_connected') === 'true';
+            if (!isConnected) {
+                throw new Error('Google is not connected');
+            }
+
+            const now = new Date().getTime();
+            const expireTime = parseInt(localStorage.getItem('g_token_expire_time') || '0');
+
+            // 預防性檢查：若 token 存在且剩餘有效時間大於 120 秒 (2 分鐘)
+            if (accessToken && expireTime && (expireTime - now > 120 * 1000)) {
+                return accessToken;
+            }
+
+            console.log('【Google 自動刷新】Token 已過期或即將過期，正在執行背景靜默刷新...');
+            if (!tokenClient) {
+                initGoogleAuth();
+            }
+
+            if (!tokenClient) {
+                throw new Error('Google Auth SDK not initialized');
+            }
+
+            return new Promise((resolve, reject) => {
+                tokenResolveQueue.push((newToken) => {
+                    if (newToken) {
+                        resolve(newToken);
+                    } else {
+                        reject(new Error('Silent refresh token failed'));
+                    }
+                });
+
+                // 發起背景靜默申請 (prompt 為空)
+                tokenClient.requestAccessToken({ prompt: '' });
+
+                // 10 秒超時保護
+                setTimeout(() => {
+                    const idx = tokenResolveQueue.findIndex(fn => fn.toString().includes('Silent refresh token failed'));
+                    if (idx > -1) {
+                        tokenResolveQueue.splice(idx, 1);
+                        reject(new Error('Silent refresh token timeout'));
+                    }
+                }, 10000);
+            });
+        }
+
         async function fetchUserInfo() {
             try {
+                accessToken = await ensureValidToken();
                 const res = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
                     headers: { 'Authorization': `Bearer ${accessToken}` }
                 });
@@ -1135,7 +1201,8 @@
                     throw new Error('Get user info failed');
                 }
             } catch (e) {
-                console.error(e);
+                console.error('【Google 獲取用戶資訊失敗】', e);
+                // 只有在 token 確定刷新失敗（而非單純過期）時才斷開連結
                 disconnectGoogle();
             }
         }
@@ -1154,7 +1221,12 @@
         }
 
         async function syncWithCloud() {
-            if (!accessToken) return;
+            try {
+                accessToken = await ensureValidToken();
+            } catch (e) {
+                console.log('【雲端下載同步】Google 帳號未連結，略過下載同步。');
+                return;
+            }
             try {
                 // 1. 搜尋 AppData 中的檔案
                 const searchRes = await fetch(
@@ -1357,6 +1429,12 @@
         }
 
         async function createCloudFile(masteredWords, passedSentences, leitnerBox, history = []) {
+            try {
+                accessToken = await ensureValidToken();
+            } catch (e) {
+                console.log('【雲端建檔】Google 帳號未連結，略過建檔。');
+                return;
+            }
             const settings = {
                 speechRate: localStorage.getItem('toeic_speech_rate') || '0.7',
                 speechAccent: localStorage.getItem('toeic_speech_accent') || 'US',
@@ -1408,7 +1486,13 @@
         }
 
         async function uploadToCloud(masteredWords, passedSentences, leitnerBox, history = []) {
-            if (!accessToken || !cloudFileId) return;
+            try {
+                accessToken = await ensureValidToken();
+            } catch (e) {
+                console.log('【雲端上傳同步】Google 帳號未連結，略過上傳。');
+                return;
+            }
+            if (!cloudFileId) return;
             const settings = {
                 speechRate: localStorage.getItem('toeic_speech_rate') || '0.7',
                 speechAccent: localStorage.getItem('toeic_speech_accent') || 'US',
