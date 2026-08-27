@@ -218,7 +218,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.11</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.13</p>
             </div>
         </div>
 
@@ -502,13 +502,16 @@
                     <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden border border-slate-200/50">
                         <div id="shop-newwords-bar" class="bg-indigo-600 h-full transition-all duration-300" style="width: 0%"></div>
                     </div>
-                    <p class="text-[9px] text-slate-400 mt-1">※ 每通過一次挑戰賽，此進度會歸零。需再學滿 15 個新單字才能開啟下一場挑戰。</p>
+                    <p class="text-[9px] text-slate-400 mt-1">※ 每通過一次挑戰賽，此進度會歸零。需再於「測驗」答對掌握滿 15 個新單字才能開啟下一場挑戰。</p>
                 </div>
             </div>
 
             <!-- 任務看板 -->
             <div class="bg-white border border-slate-100 rounded-2xl p-5 shadow-md flex flex-col gap-4">
-                <h3 class="text-xs font-extrabold text-slate-700 border-b pb-2 flex items-center gap-1.5">📅 每日任務進度板</h3>
+                <h3 class="text-xs font-extrabold text-slate-700 border-b pb-2 flex items-center justify-between flex-wrap gap-1.5">
+                    <span>📅 每日任務進度板</span>
+                    <span class="text-[9px] text-slate-400 font-normal">※ 需在「測驗」答對掌握才算數</span>
+                </h3>
                 
                 <div class="space-y-4">
                     <!-- 每日登入 (必須聯動 Google) -->
@@ -1660,6 +1663,12 @@
             if (previousViewBeforePanel === 'card' && cardView) cardView.classList.remove('hidden');
             else if (previousViewBeforePanel === 'list' && listView) listView.classList.remove('hidden');
             else if (previousViewBeforePanel === 'quiz' && quizView) quizView.classList.remove('hidden');
+            
+            // 還原主畫面時，自動同步收摺 Row 2 輔助選單
+            const helperMenu = document.getElementById('helper-menu-panel');
+            if (helperMenu) {
+                helperMenu.classList.add('hidden');
+            }
         }
 
         function toggleSettingsPanel() {
