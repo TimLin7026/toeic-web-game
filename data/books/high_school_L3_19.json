@@ -1,1781 +1,1821 @@
 [
     {
+        "id": 1,
         "word": "bacon",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "培根",
+        "examples": [
             {
-                "en": "The hotel breakfast buffet features crispy bacon and scrambled eggs.",
-                "zh": "這家飯店的自助早餐提供酥脆的培根和炒蛋。"
+                "en": "I usually have eggs and bacon for breakfast.",
+                "zh": "我通常早餐吃蛋和培根。"
             },
             {
-                "en": "We have been sourcing our bacon from a local farm for three years.",
-                "zh": "三年來我們一直從當地農場採購培根。"
+                "en": "The smell of frying bacon made my mouth water.",
+                "zh": "煎培根的香味讓我垂涎三尺。"
             },
             {
-                "en": "If you want a healthier option, turkey bacon will be served instead.",
-                "zh": "如果您想要更健康的選擇，我們將改供應火雞培根。"
+                "en": "He added some crispy bacon to the salad.",
+                "zh": "他在沙拉裡加了一些酥脆的培根。"
             },
             {
-                "en": "The chef was frying bacon when the fire alarm suddenly went off.",
-                "zh": "主廚正在煎培根時，火災警報器突然響了。"
+                "en": "I ordered a bacon and cheese sandwich for lunch.",
+                "zh": "我午餐點了一份培根起司三明治。"
             },
             {
-                "en": "They had already consumed all the bacon before the guests arrived.",
-                "zh": "在客人抵達之前，他們已經把所有的培根吃光了。"
+                "en": "Eating too much bacon is not good for your health.",
+                "zh": "吃太多培根對你的健康不好。"
             }
-        ],
-        "id": 1
+        ]
     },
     {
+        "id": 2,
         "word": "barber",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "理髮師",
+        "examples": [
             {
-                "en": "The new barber in town offers excellent grooming services for professionals.",
-                "zh": "鎮上新來的理髮師為專業人士提供極佳的修容服務。"
+                "en": "The barber trimmed my hair perfectly.",
+                "zh": "理髮師把我的頭髮修剪得很完美。"
             },
             {
-                "en": "Mr. Smith is getting his hair cut by his favorite barber right now.",
-                "zh": "史密斯先生現在正由他最喜歡的理髮師剪頭髮。"
+                "en": "He goes to the same barber every month.",
+                "zh": "他每個月都去同一位理髮師那裡剪頭髮。"
             },
             {
-                "en": "I will visit the barber tomorrow to prepare for my upcoming job interview.",
-                "zh": "我明天會去理髮師那裡為即將到來的工作面試做準備。"
+                "en": "There is a new barber shop around the corner.",
+                "zh": "轉角處新開了一家理髮店。"
             },
             {
-                "en": "By the time he opened his own shop, he had worked as a barber for a decade.",
-                "zh": "當他開設自己的店面時，他已經當了十年的理髮師。"
+                "en": "The barber chatted with his customer while shaving his beard.",
+                "zh": "理髮師在幫客人刮鬍子時與他聊天。"
             },
             {
-                "en": "Has the barber finished trimming your beard yet?",
-                "zh": "理髮師已經修剪完你的鬍子了嗎？"
+                "en": "My father learned to cut hair from an experienced barber.",
+                "zh": "我父親向一位經驗豐富的理髮師學習剪髮。"
             }
-        ],
-        "id": 2
+        ]
     },
     {
+        "id": 3,
         "word": "bulb",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "電燈泡；球莖",
+        "examples": [
             {
-                "en": "Please replace the broken bulb in the conference room before the meeting.",
-                "zh": "請在會議前更換會議室裡壞掉的電燈泡。"
+                "en": "The light bulb in the living room has burned out.",
+                "zh": "客廳的電燈泡燒壞了。"
             },
             {
-                "en": "Our company has switched to energy-efficient LED bulbs to reduce costs.",
-                "zh": "我們公司已經改用節能的LED燈泡以降低成本。"
+                "en": "We planted tulip bulbs in the garden last autumn.",
+                "zh": "我們去年秋天在花園裡種了鬱金香的球莖。"
             },
             {
-                "en": "The maintenance worker was installing a new bulb when the power failed.",
-                "zh": "維修人員正在安裝新燈泡時停電了。"
+                "en": "Please change the bulb before it gets too dark.",
+                "zh": "請在天色變暗之前換一下燈泡。"
             },
             {
-                "en": "These smart bulbs can be controlled directly from your smartphone.",
-                "zh": "這些智慧燈泡可以直接從您的智慧型手機控制。"
+                "en": "These energy-saving bulbs last much longer than the old ones.",
+                "zh": "這些節能燈泡比舊的耐用得多。"
             },
             {
-                "en": "They will have replaced all the old bulbs by the end of this month.",
-                "zh": "到這個月底，他們將會更換所有舊的燈泡。"
+                "en": "The room went dark suddenly when the bulb shattered.",
+                "zh": "燈泡碎裂時，房間瞬間變暗了。"
             }
-        ],
-        "id": 3
+        ]
     },
     {
+        "id": 4,
         "word": "cabin",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "小木屋；船艙；機艙",
+        "examples": [
             {
-                "en": "The executive team rented a luxurious cabin for their weekend retreat.",
-                "zh": "高階主管團隊為他們的週末靜修租了一間豪華小木屋。"
+                "en": "They spent their weekend in a cozy log cabin in the woods.",
+                "zh": "他們在森林裡一間舒適的小木屋度過了週末。"
             },
             {
-                "en": "Flight attendants are preparing the cabin for departure.",
-                "zh": "空服員正在準備客艙以供起飛。"
+                "en": "The passengers were told to stay in the cabin during the storm.",
+                "zh": "乘客被告知在暴風雨期間要留在船艙內。"
             },
             {
-                "en": "We will be staying in a cozy cabin near the lake next winter.",
-                "zh": "明年冬天我們將住在湖畔一間舒適的小木屋裡。"
+                "en": "Cabin crew, please prepare for landing.",
+                "zh": "機組人員，請準備降落。"
             },
             {
-                "en": "After they had cleaned the cabin, they started a fire in the fireplace.",
-                "zh": "在他們打掃完小木屋後，他們在壁爐裡生了火。"
+                "en": "The pilot announced that the cabin pressure was normal.",
+                "zh": "機長宣布機艙壓力正常。"
             },
             {
-                "en": "Have you ever considered building a cabin in the woods?",
-                "zh": "你曾考慮過在樹林裡建一間小木屋嗎？"
+                "en": "We rented a small cabin near the lake for our summer vacation.",
+                "zh": "我們租了一間湖畔的小木屋度暑假。"
             }
-        ],
-        "id": 4
+        ]
     },
     {
+        "id": 5,
         "word": "chimney",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "煙囪",
+        "examples": [
             {
-                "en": "The factory's chimney emits a significant amount of smoke every day.",
-                "zh": "這家工廠的煙囪每天排放大量的煙霧。"
+                "en": "Smoke was rising slowly from the chimney.",
+                "zh": "煙緩緩從煙囪中升起。"
             },
             {
-                "en": "They are cleaning the chimney to prevent any potential fire hazards.",
-                "zh": "他們正在清理煙囪以防止任何潛在的火災隱患。"
+                "en": "Santa Claus is said to come down the chimney to deliver gifts.",
+                "zh": "據說聖誕老人會從煙囪下來送禮物。"
             },
             {
-                "en": "A bird had built its nest in our chimney before winter arrived.",
-                "zh": "在冬天到來之前，有隻鳥在我們的煙囪裡築了巢。"
+                "en": "The old factory has a tall brick chimney.",
+                "zh": "這家舊工廠有一根高大的磚造煙囪。"
             },
             {
-                "en": "We will need a professional to inspect the chimney next week.",
-                "zh": "我們下週需要請專業人士來檢查煙囪。"
+                "en": "The strong wind blew down the chimney of the old house.",
+                "zh": "強風吹倒了老房子的煙囪。"
             },
             {
-                "en": "Smoke was rising from the chimney when we approached the house.",
-                "zh": "當我們靠近那棟房子時，煙正從煙囪升起。"
+                "en": "Birds sometimes build their nests near the warm chimney.",
+                "zh": "鳥兒有時會在溫暖的煙囪附近築巢。"
             }
-        ],
-        "id": 5
+        ]
     },
     {
+        "id": 6,
         "word": "clip",
-        "sentences": [
+        "part_of_speech": "n., v.",
+        "meaning": "夾子；剪報；迴紋針；修剪",
+        "examples": [
             {
-                "en": "Please use a clip to secure these important documents together.",
-                "zh": "請用夾子將這些重要文件固定在一起。"
+                "en": "She used a hair clip to keep her hair out of her face.",
+                "zh": "她用髮夾把頭髮夾住，以免遮到臉。"
             },
             {
-                "en": "The manager showed a short video clip during the presentation.",
-                "zh": "經理在簡報時播放了一小段影片剪輯。"
+                "en": "Please clip these documents together.",
+                "zh": "請把這些文件夾在一起。"
             },
             {
-                "en": "She was clipping the coupons when the mail carrier knocked on the door.",
-                "zh": "當郵差敲門時，她正在剪折價券。"
+                "en": "He clipped a short article from the morning newspaper.",
+                "zh": "他從晨報上剪下了一篇短文。"
             },
             {
-                "en": "I will clip the relevant articles from the newspaper for your reference.",
-                "zh": "我會從報紙上剪下相關文章供您參考。"
+                "en": "The teacher used a paper clip to hold the test papers together.",
+                "zh": "老師用迴紋針把考卷夾在一起。"
             },
             {
-                "en": "He has already clipped all the loose wires to the wall.",
-                "zh": "他已經用夾子把所有鬆脫的電線固定在牆上了。"
+                "en": "He was watching a short video clip on his smartphone.",
+                "zh": "他正在智慧型手機上看一段短片。"
             }
-        ],
-        "id": 6
+        ]
     },
     {
+        "id": 7,
         "word": "countable",
-        "sentences": [
+        "part_of_speech": "adj.",
+        "meaning": "可數的",
+        "examples": [
             {
-                "en": "In English grammar, 'equipment' is an uncountable noun, but 'tool' is countable.",
-                "zh": "在英文文法中，'equipment' 是不可數名詞，但 'tool' 是可數的。"
+                "en": "The word 'apple' is a countable noun.",
+                "zh": "「蘋果」這個字是可數名詞。"
             },
             {
-                "en": "The mistakes in the financial report are fortunately countable.",
-                "zh": "幸運的是，財務報告中的錯誤寥寥可數。"
+                "en": "You should use 'many' with countable items.",
+                "zh": "你應該將 'many' 用在可數的物品上。"
             },
             {
-                "en": "Teachers always remind students to check if a noun is countable.",
-                "zh": "老師總是提醒學生檢查名詞是否可數。"
+                "en": "Countable things can be easily quantified.",
+                "zh": "可數的事物可以輕易地被量化。"
             },
             {
-                "en": "We have identified a countable number of issues in the current system.",
-                "zh": "我們在現有系統中發現了數量可數的問題。"
+                "en": "In English, 'furniture' is an uncountable noun, while 'chair' is a countable one.",
+                "zh": "在英文中，'furniture'是不可數名詞，而'chair'是可數名詞。"
             },
             {
-                "en": "If the items were countable, the inventory process would be much easier.",
-                "zh": "如果這些物品是可數的，盤點過程會容易得多。"
+                "en": "Are there any countable benefits to this new policy?",
+                "zh": "這項新政策有任何具體可數的益處嗎？"
             }
-        ],
-        "id": 7
+        ]
     },
     {
+        "id": 8,
         "word": "fairy",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "仙子；小精靈",
+        "examples": [
             {
-                "en": "The amusement park features a magical show with fairies and elves.",
-                "zh": "這座遊樂園有一場以仙子和精靈為主題的魔幻表演。"
+                "en": "The little girl believes that fairies live in the garden.",
+                "zh": "小女孩相信花園裡住著仙子。"
             },
             {
-                "en": "She dressed up as a fairy for the company's annual costume party.",
-                "zh": "她在公司的年度變裝派對上打扮成小仙子。"
+                "en": "She dressed up as a beautiful fairy for the costume party.",
+                "zh": "她在化妝舞會上打扮成美麗的仙子。"
             },
             {
-                "en": "My daughter has always believed that a tooth fairy visits at night.",
-                "zh": "我女兒一直相信牙仙子會在晚上來訪。"
+                "en": "The tooth fairy left a coin under his pillow.",
+                "zh": "牙仙子在他的枕頭底下留了一枚硬幣。"
             },
             {
-                "en": "They were telling fairy stories to the children when it started to rain.",
-                "zh": "開始下雨時，他們正在給孩子們講小仙子的故事。"
+                "en": "The story is about a young boy who befriends a magical fairy.",
+                "zh": "這個故事講述一個小男孩與一位神奇仙子做朋友的經歷。"
             },
             {
-                "en": "The designer will create a fairy-themed window display for the holidays.",
-                "zh": "設計師將為假期設計一個以仙子為主題的櫥窗展示。"
+                "en": "She bought a beautiful fairy costume for Halloween.",
+                "zh": "她為萬聖節買了一套美麗的仙子服裝。"
             }
-        ],
-        "id": 8
+        ]
     },
     {
+        "id": 9,
         "word": "fairy tale",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "童話故事",
+        "examples": [
             {
-                "en": "The startup's rapid success sounded like a corporate fairy tale.",
-                "zh": "這家新創公司的迅速成功聽起來像是一個企業童話。"
+                "en": "My mother used to read me fairy tales before bedtime.",
+                "zh": "我小時候，媽媽總會在睡前念童話故事給我聽。"
             },
             {
-                "en": "He doesn't believe in the fairy tale that hard work always guarantees wealth.",
-                "zh": "他不相信努力工作就一定能致富的童話。"
+                "en": "Not every fairy tale has a happy ending.",
+                "zh": "並非所有的童話故事都有快樂的結局。"
             },
             {
-                "en": "Their marketing campaign was heavily inspired by a classic fairy tale.",
-                "zh": "他們的行銷活動深受一個經典童話故事的啟發。"
+                "en": "Their love story is like a beautiful fairy tale.",
+                "zh": "他們的愛情故事就像一個美麗的童話。"
             },
             {
-                "en": "By the time the movie ended, it had completely reimagined the fairy tale.",
-                "zh": "到電影結束時，它已經徹底重新詮釋了這個童話故事。"
+                "en": "The movie is based on a classic German fairy tale.",
+                "zh": "這部電影改編自經典的德國童話故事。"
             },
             {
-                "en": "We are planning to publish a modern business fairy tale next year.",
-                "zh": "我們計畫明年出版一本現代商業童話。"
+                "en": "Sometimes reality is much more complex than a fairy tale.",
+                "zh": "有時現實比童話故事複雜得多。"
             }
-        ],
-        "id": 9
+        ]
     },
     {
+        "id": 10,
         "word": "firework",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "煙火",
+        "examples": [
             {
-                "en": "The city council has organized a spectacular firework display for New Year's Eve.",
-                "zh": "市議會為跨年夜組織了一場壯觀的煙火表演。"
+                "en": "We watched the spectacular fireworks light up the night sky.",
+                "zh": "我們觀看壯觀的煙火照亮夜空。"
             },
             {
-                "en": "We were watching the firework show when the sudden rainstorm hit.",
-                "zh": "我們正在看煙火秀時，突然下起了暴雨。"
+                "en": "They are going to set off fireworks on New Year's Eve.",
+                "zh": "他們打算在跨年夜施放煙火。"
             },
             {
-                "en": "They will set off fireworks to celebrate the grand opening of the mall.",
-                "zh": "他們將施放煙火來慶祝購物中心的盛大開幕。"
+                "en": "The firework display was the highlight of the festival.",
+                "zh": "煙火秀是這個節慶的最高潮。"
             },
             {
-                "en": "The company had never sponsored a firework event before last year.",
-                "zh": "在去年之前，這家公司從未贊助過煙火活動。"
+                "en": "The city government spent millions on the National Day fireworks.",
+                "zh": "市政府在國慶煙火上花費了數百萬。"
             },
             {
-                "en": "Safety regulations must be strictly followed when handling fireworks.",
-                "zh": "處理煙火時必須嚴格遵守安全規定。"
+                "en": "The loud bang of the firework scared the dog.",
+                "zh": "煙火巨大的爆炸聲嚇到了那隻狗。"
             }
-        ],
-        "id": 10
+        ]
     },
     {
+        "id": 11,
         "word": "first-aid kit",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "急救箱",
+        "examples": [
             {
-                "en": "Every department is required to have a fully stocked first-aid kit.",
-                "zh": "每個部門都必須配備一個裝滿用品的急救箱。"
+                "en": "Always keep a first-aid kit in your car for emergencies.",
+                "zh": "車上要隨時準備一個急救箱以備不時之需。"
             },
             {
-                "en": "She grabbed the first-aid kit immediately after her colleague cut his finger.",
-                "zh": "在同事割傷手指後，她立刻拿來了急救箱。"
+                "en": "The hiker quickly pulled out his first-aid kit to treat the wound.",
+                "zh": "這名登山客迅速拿出急救箱來處理傷口。"
             },
             {
-                "en": "We will update the supplies in all first-aid kits tomorrow.",
-                "zh": "我們明天將更新所有急救箱裡的用品。"
+                "en": "We need to restock the supplies in our first-aid kit.",
+                "zh": "我們需要補充急救箱裡的用品。"
             },
             {
-                "en": "The safety officer has just inspected the first-aid kit in the warehouse.",
-                "zh": "安全主任剛剛檢查過倉庫裡的急救箱。"
+                "en": "The school nurse took a bandage from the first-aid kit.",
+                "zh": "學校護理師從急救箱裡拿出一塊繃帶。"
             },
             {
-                "en": "They were looking for a first-aid kit when the ambulance arrived.",
-                "zh": "救護車抵達時，他們正在尋找急救箱。"
+                "en": "Every home should have a well-stocked first-aid kit.",
+                "zh": "每個家庭都應該準備一個物品齊全的急救箱。"
             }
-        ],
-        "id": 11
+        ]
     },
     {
+        "id": 12,
         "word": "gallon",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "加侖",
+        "examples": [
             {
-                "en": "The price of gasoline has reached four dollars per gallon this week.",
-                "zh": "本週汽油價格已達到每加侖四美元。"
+                "en": "The engine consumes about a gallon of fuel every ten miles.",
+                "zh": "這具引擎每十英里大約消耗一加侖的燃料。"
             },
             {
-                "en": "We need to order several gallons of paint for the office renovation.",
-                "zh": "我們需要訂購幾加侖的油漆來裝修辦公室。"
+                "en": "He drank nearly half a gallon of water after the marathon.",
+                "zh": "馬拉松比賽後，他喝了將近半加侖的水。"
             },
             {
-                "en": "The machine had processed hundreds of gallons of water before it broke down.",
-                "zh": "這台機器在故障前已經處理了數百加侖的水。"
+                "en": "Milk is usually sold by the gallon in this country.",
+                "zh": "在這個國家，牛奶通常以加侖為單位販售。"
             },
             {
-                "en": "They are pumping a gallon of fuel into the generator right now.",
-                "zh": "他們現在正將一加侖的燃料抽入發電機中。"
+                "en": "He bought two gallons of paint to decorate his bedroom.",
+                "zh": "他買了兩加侖的油漆來裝飾他的臥室。"
             },
             {
-                "en": "By the end of the day, the restaurant will have used twenty gallons of cooking oil.",
-                "zh": "到今天結束時，這家餐廳將用掉二十加侖的食用油。"
+                "en": "The car gets about thirty miles to the gallon.",
+                "zh": "這輛車每加侖大約能跑三十英里。"
             }
-        ],
-        "id": 12
+        ]
     },
     {
+        "id": 13,
         "word": "gentle",
-        "sentences": [
+        "part_of_speech": "adj.",
+        "meaning": "溫和的；高雅的；柔和的",
+        "examples": [
             {
-                "en": "The manager gave a gentle reminder about the upcoming project deadline.",
-                "zh": "經理對即將到來的專案截止日期給予了溫和的提醒。"
+                "en": "The doctor's gentle voice calmed the crying child.",
+                "zh": "醫生溫和的聲音安撫了哭泣的孩子。"
             },
             {
-                "en": "Please use a gentle detergent to wash these delicate fabrics.",
-                "zh": "請使用溫和的洗滌劑來清洗這些嬌貴的布料。"
+                "en": "You need to be very gentle when handling these fragile glasses.",
+                "zh": "處理這些易碎的玻璃杯時，你需要非常輕柔。"
             },
             {
-                "en": "He was speaking in a gentle voice to calm the angry customer.",
-                "zh": "他正用溫和的聲音說話以安撫憤怒的顧客。"
+                "en": "A gentle breeze blew across the lake.",
+                "zh": "一陣微風輕拂過湖面。"
             },
             {
-                "en": "The transition to the new software has been remarkably gentle for the staff.",
-                "zh": "對員工來說，過渡到新軟體的過程非常平順。"
+                "en": "The nurse was very gentle when giving the injection.",
+                "zh": "護理師打針時非常溫柔。"
             },
             {
-                "en": "We will adopt a more gentle approach in our future negotiations.",
-                "zh": "我們在未來的談判中將採取更溫和的方法。"
+                "en": "A gentle touch on the shoulder gave him a lot of comfort.",
+                "zh": "肩膀上溫柔的觸碰給了他許多安慰。"
             }
-        ],
-        "id": 13
+        ]
     },
     {
+        "id": 14,
         "word": "greenhouse",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "溫室",
+        "examples": [
             {
-                "en": "The agricultural company grows organic tomatoes in a temperature-controlled greenhouse.",
-                "zh": "這家農業公司在控溫溫室中種植有機番茄。"
+                "en": "Tomatoes can be grown in a greenhouse throughout the winter.",
+                "zh": "番茄可以在溫室裡種植一整個冬天。"
             },
             {
-                "en": "They are building a new greenhouse to expand their floral business.",
-                "zh": "他們正在建造一個新的溫室以擴展花卉業務。"
+                "en": "The temperature inside the greenhouse is carefully controlled.",
+                "zh": "溫室內的溫度受到嚴格控制。"
             },
             {
-                "en": "We had completely repaired the greenhouse before the winter storms arrived.",
-                "zh": "在冬季風暴來臨之前，我們已經完全修復了溫室。"
+                "en": "She built a small greenhouse in her backyard to grow rare orchids.",
+                "zh": "她在後院建了一個小溫室來種植珍稀的蘭花。"
             },
             {
-                "en": "The automated system will monitor the humidity inside the greenhouse continuously.",
-                "zh": "自動化系統將持續監測溫室內的濕度。"
+                "en": "Plants grow faster in a greenhouse because of the trapped heat.",
+                "zh": "植物在溫室裡因為熱量被困住而生長得更快。"
             },
             {
-                "en": "Researchers have tested various fertilizers in the greenhouse this year.",
-                "zh": "研究人員今年在溫室裡測試了各種肥料。"
+                "en": "The university built a large greenhouse for agricultural research.",
+                "zh": "大學建造了一個大型溫室用於農業研究。"
             }
-        ],
-        "id": 14
+        ]
     },
     {
+        "id": 15,
         "word": "greenhouse effect",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "溫室效應",
+        "examples": [
             {
-                "en": "The environmental report highlighted the severe impact of the greenhouse effect.",
-                "zh": "這份環境報告強調了溫室效應的嚴重影響。"
+                "en": "The greenhouse effect is causing global temperatures to rise.",
+                "zh": "溫室效應導致全球氣溫上升。"
             },
             {
-                "en": "Scientists are discussing how to mitigate the greenhouse effect during the summit.",
-                "zh": "科學家們正在高峰會期間討論如何減緩溫室效應。"
+                "en": "Carbon dioxide plays a major role in the greenhouse effect.",
+                "zh": "二氧化碳在溫室效應中扮演了主要角色。"
             },
             {
-                "en": "Our corporation has pledged to reduce emissions that contribute to the greenhouse effect.",
-                "zh": "我們公司已承諾減少會加劇溫室效應的排放物。"
+                "en": "Scientists have warned us about the dangers of the greenhouse effect for decades.",
+                "zh": "數十來年，科學家一直警告我們溫室效應的危險。"
             },
             {
-                "en": "If we don't act now, the greenhouse effect will cause irreversible damage.",
-                "zh": "如果我們現在不採取行動，溫室效應將造成不可逆轉的損害。"
+                "en": "Reducing carbon emissions can help slow down the greenhouse effect.",
+                "zh": "減少碳排放有助於減緩溫室效應。"
             },
             {
-                "en": "They had studied the greenhouse effect for years before publishing their findings.",
-                "zh": "在發表研究結果之前，他們已經研究溫室效應多年了。"
+                "en": "The greenhouse effect traps the sun's heat in the Earth's atmosphere.",
+                "zh": "溫室效應將太陽的熱量困在地球大氣層中。"
             }
-        ],
-        "id": 15
+        ]
     },
     {
+        "id": 16,
         "word": "haircut",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "理髮；髮型",
+        "examples": [
             {
-                "en": "The CEO got a neat haircut before the annual shareholders' meeting.",
-                "zh": "執行長在年度股東大會前理了一個俐落的髮型。"
+                "en": "You look completely different with your new haircut.",
+                "zh": "你剪了新髮型後看起來完全不一樣了。"
             },
             {
-                "en": "I am getting a haircut this afternoon to look professional for the conference.",
-                "zh": "我今天下午要去理髮，為了在會議上看起來更專業。"
+                "en": "I think it's time for you to get a haircut.",
+                "zh": "我覺得你該去理髮了。"
             },
             {
-                "en": "He desperately needs a haircut because his bangs are covering his eyes.",
-                "zh": "他極需理髮，因為他的瀏海都遮住眼睛了。"
+                "en": "His haircut is very trendy right now.",
+                "zh": "他的髮型現在非常流行。"
             },
             {
-                "en": "She had given herself a bad haircut before going to a professional salon.",
-                "zh": "在去專業沙龍之前，她自己剪了一個很糟的髮型。"
+                "en": "I went to the salon to get a haircut before the job interview.",
+                "zh": "我在面試前去髮廊剪了頭髮。"
             },
             {
-                "en": "Will you get a haircut before the photoshoot next week?",
-                "zh": "下週拍照前你會去理髮嗎？"
+                "en": "His terrible haircut made him the laughingstock of the class.",
+                "zh": "他那糟糕的髮型讓他成了班上的笑柄。"
             }
-        ],
-        "id": 16
+        ]
     },
     {
+        "id": 17,
         "word": "hairdresser",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "美髮師；理髮師",
+        "examples": [
             {
-                "en": "The famous hairdresser charges a premium for styling celebrities.",
-                "zh": "這位著名的美髮師為名人做造型收取高額費用。"
+                "en": "My hairdresser advised me not to dye my hair too often.",
+                "zh": "我的美髮師建議我不要太常染髮。"
             },
             {
-                "en": "I have been visiting the same hairdresser since I moved to this city.",
-                "zh": "自從我搬到這個城市以來，我一直光顧同一位美髮師。"
+                "en": "She has worked as a hairdresser for over twenty years.",
+                "zh": "她已經當了超過二十年的美髮師。"
             },
             {
-                "en": "My hairdresser suggested a new color treatment to cover the gray hair.",
-                "zh": "我的美髮師建議用新的染髮療程來遮蓋白髮。"
+                "en": "You should ask your hairdresser to recommend a good shampoo.",
+                "zh": "你應該請你的美髮師推薦一款好用的洗髮精。"
             },
             {
-                "en": "They are hiring an experienced hairdresser for their new boutique salon.",
-                "zh": "他們正在為新的精品沙龍聘請一位經驗豐富的美髮師。"
+                "en": "The hairdresser styled her hair beautifully for the prom.",
+                "zh": "美髮師為她的舞會做了一個漂亮的髮型。"
             },
             {
-                "en": "By the time the wedding started, the hairdresser had styled all the bridesmaids.",
-                "zh": "婚禮開始時，美髮師已經為所有伴娘做好了造型。"
+                "en": "A good hairdresser knows exactly what look suits their client best.",
+                "zh": "一位優秀的美髮師非常清楚什麼造型最適合他們的客戶。"
             }
-        ],
-        "id": 17
+        ]
     },
     {
+        "id": 18,
         "word": "hairstyle",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "髮型",
+        "examples": [
             {
-                "en": "Changing your hairstyle can sometimes boost your confidence at work.",
-                "zh": "改變髮型有時能提升你在工作上的自信。"
+                "en": "She likes to try a new hairstyle every few months.",
+                "zh": "她喜歡每隔幾個月就嘗試一種新髮型。"
             },
             {
-                "en": "She is sporting a modern hairstyle that matches her dynamic personality.",
-                "zh": "她頂著一個符合她充滿活力個性的現代髮型。"
+                "en": "That vintage hairstyle suits her face perfectly.",
+                "zh": "那種復古髮型非常適合她的臉型。"
             },
             {
-                "en": "The fashion magazine featured the most popular corporate hairstyles of the year.",
-                "zh": "這本時尚雜誌介紹了年度最受歡迎的企業界髮型。"
+                "en": "What kind of hairstyle are you looking for today?",
+                "zh": "你今天想做什麼樣的髮型呢？"
             },
             {
-                "en": "He will have to adopt a more conservative hairstyle for his new role.",
-                "zh": "為了他的新職位，他將必須採用更保守的髮型。"
+                "en": "She flipped through a magazine to find a trendy hairstyle.",
+                "zh": "她翻閱雜誌尋找時髦的髮型。"
             },
             {
-                "en": "They had debated about the actor's hairstyle before finalizing the film's look.",
-                "zh": "在確定電影造型之前，他們曾對演員的髮型進行過討論。"
+                "en": "Changing your hairstyle is an easy way to refresh your look.",
+                "zh": "改變髮型是煥然一新的簡單方法。"
             }
-        ],
-        "id": 18
+        ]
     },
     {
+        "id": 19,
         "word": "hatch",
-        "sentences": [
+        "part_of_speech": "v., n.",
+        "meaning": "孵化；策劃；艙口",
+        "examples": [
             {
-                "en": "The marketing team hatched a brilliant plan to increase sales over the holidays.",
-                "zh": "行銷團隊策劃了一個絕妙的計畫來增加假期的銷售額。"
+                "en": "The eggs take about three weeks to hatch.",
+                "zh": "這些蛋大約需要三個星期才能孵化。"
             },
             {
-                "en": "The engineers are checking the escape hatch on the newly designed submarine.",
-                "zh": "工程師正在檢查新設計潛艇上的逃生艙門。"
+                "en": "They hatched a secret plan to surprise him on his birthday.",
+                "zh": "他們策劃了一個祕密計畫，要在他的生日給他驚喜。"
             },
             {
-                "en": "The eggs had already hatched by the time the researchers returned to the lab.",
-                "zh": "當研究人員回到實驗室時，卵已經孵化了。"
+                "en": "All the baby chicks hatched safely yesterday.",
+                "zh": "所有的小雞昨天都平安孵化了。"
             },
             {
-                "en": "We will open the cargo hatch as soon as the plane is safely parked.",
-                "zh": "飛機一安全停妥，我們就會打開貨艙門。"
+                "en": "The tiny turtles hatched and immediately crawled toward the ocean.",
+                "zh": "小海龜孵化後立刻爬向海洋。"
             },
             {
-                "en": "A new startup idea was hatching in his mind during the conference.",
-                "zh": "在會議期間，一個新的新創點子正在他腦海中醞釀(孵化)。"
+                "en": "They hatched a plot to overthrow the current government.",
+                "zh": "他們策劃了一場推翻現任政府的陰謀。"
             }
-        ],
-        "id": 19
+        ]
     },
     {
+        "id": 20,
         "word": "hollow",
-        "sentences": [
+        "part_of_speech": "adj., n.",
+        "meaning": "中空的；虛偽的；凹陷處",
+        "examples": [
             {
-                "en": "The manufacturer uses hollow steel tubes to reduce the overall weight of the bike.",
-                "zh": "製造商使用中空的鋼管以減輕自行車的整體重量。"
+                "en": "The squirrel hid its nuts inside a hollow tree.",
+                "zh": "松鼠把堅果藏在空心的樹幹裡。"
             },
             {
-                "en": "His apology sounded hollow after making the same mistake repeatedly.",
-                "zh": "在屢次犯下同樣的錯誤後，他的道歉聽起來很虛偽(空洞)。"
+                "en": "His promises sounded hollow and insincere.",
+                "zh": "他的承諾聽起來很虛偽且不真誠。"
             },
             {
-                "en": "They are hollowing out the wooden block to create a custom instrument.",
-                "zh": "他們正在把木塊挖空，以製作客製化樂器。"
+                "en": "When tapped, the wall made a hollow sound.",
+                "zh": "敲擊時，這面牆發出了空洞的聲音。"
             },
             {
-                "en": "The hikers took shelter in a small hollow to escape the sudden rain.",
-                "zh": "登山客躲進一個小坑洞裡以躲避突如其來的雨。"
+                "en": "The owl made its nest inside the hollow trunk of an old oak.",
+                "zh": "貓頭鷹在一棵老橡樹的空心樹幹裡築巢。"
             },
             {
-                "en": "By tomorrow, the machine will have hollowed all the plastic molds.",
-                "zh": "到明天，機器將會挖空所有的塑膠模具。"
+                "en": "His apology rang hollow because he repeated the same mistake.",
+                "zh": "他的道歉顯得十分虛偽，因為他又犯了同樣的錯誤。"
             }
-        ],
-        "id": 20
+        ]
     },
     {
+        "id": 21,
         "word": "housekeeper",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "管家",
+        "examples": [
             {
-                "en": "The hotel housekeeper ensured that every room was spotless before check-in time.",
-                "zh": "飯店管家確保每個房間在入住時間前都一塵不染。"
+                "en": "They hired a housekeeper to take care of the large mansion.",
+                "zh": "他們僱用了一位管家來打理這棟豪宅。"
             },
             {
-                "en": "We are currently seeking a reliable housekeeper for our executive retreat center.",
-                "zh": "我們目前正在為高階主管靜修中心尋找一位可靠的管家。"
+                "en": "The housekeeper ensures that everything in the house is perfectly clean.",
+                "zh": "管家確保屋裡的每樣東西都非常乾淨。"
             },
             {
-                "en": "The housekeeper had organized the entire closet before the guests arrived.",
-                "zh": "在客人抵達前，管家已經把整個衣櫥整理好了。"
+                "en": "She has been working as a housekeeper for the wealthy family for years.",
+                "zh": "她已經在這戶富裕人家當管家好幾年了。"
             },
             {
-                "en": "She has worked as a head housekeeper at this resort for over a decade.",
-                "zh": "她已經在這家度假村擔任首席管家超過十年了。"
+                "en": "The hotel housekeeper changed the bed sheets and provided fresh towels.",
+                "zh": "飯店房務員更換了床單並提供了乾淨的毛巾。"
             },
             {
-                "en": "Will the housekeeper restock the minibar this afternoon?",
-                "zh": "管家今天下午會補充迷你吧的飲料嗎？"
+                "en": "We need an honest housekeeper to manage our daily chores.",
+                "zh": "我們需要一位誠實的管家來處理日常家務。"
             }
-        ],
-        "id": 21
+        ]
     },
     {
+        "id": 22,
         "word": "hug",
-        "sentences": [
+        "part_of_speech": "v., n.",
+        "meaning": "擁抱",
+        "examples": [
             {
-                "en": "The colleagues shared a quick hug to celebrate the successful product launch.",
-                "zh": "同事們迅速擁抱了一下，慶祝產品成功發表。"
+                "en": "She gave her mother a tight hug before leaving.",
+                "zh": "離開前，她緊緊擁抱了母親。"
             },
             {
-                "en": "She is hugging her old friend whom she hasn't seen since college.",
-                "zh": "她正擁抱著自大學以來就沒見過面的老朋友。"
+                "en": "The little boy hugged his teddy bear and fell asleep.",
+                "zh": "小男孩抱著他的泰迪熊睡著了。"
             },
             {
-                "en": "He gave his daughter a tight hug before boarding his business flight.",
-                "zh": "在搭乘商務航班前，他緊緊地擁抱了女兒。"
+                "en": "They hugged each other when they heard the good news.",
+                "zh": "聽到好消息時，他們互相擁抱。"
             },
             {
-                "en": "They had hugged each other warmly before signing the partnership agreement.",
-                "zh": "在簽署合作協議之前，他們熱情地擁抱了對方。"
+                "en": "They exchanged a warm hug at the airport before parting ways.",
+                "zh": "他們在機場分道揚鑣前給了彼此一個溫暖的擁抱。"
             },
             {
-                "en": "I will hug my parents as soon as I arrive at the airport.",
-                "zh": "我一到機場就會擁抱我的父母。"
+                "en": "The frightened puppy hugged my leg and refused to let go.",
+                "zh": "那隻受驚的小狗緊緊抱住我的腿不肯放開。"
             }
-        ],
-        "id": 22
+        ]
     },
     {
+        "id": 23,
         "word": "hut",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "小屋；簡陋棚屋",
+        "examples": [
             {
-                "en": "The indigenous tribe lives in a small hut built from bamboo and leaves.",
-                "zh": "這個原住民部落住在用竹子和樹葉建造的小屋裡。"
+                "en": "The hermit lives in a small wooden hut in the mountains.",
+                "zh": "這位隱士住在山上的一間木造小屋裡。"
             },
             {
-                "en": "We rented a beach hut to store our surfing gear for the weekend.",
-                "zh": "我們租了一間海灘小屋來存放週末的衝浪裝備。"
+                "en": "They sought shelter from the rain in an abandoned hut.",
+                "zh": "他們在一間廢棄的棚屋裡避雨。"
             },
             {
-                "en": "The guide was waiting by the wooden hut when the tourists arrived.",
-                "zh": "當遊客到達時，嚮導正在木屋旁等候。"
+                "en": "The village consists of a dozen mud huts.",
+                "zh": "這個村莊由十幾個泥草屋組成。"
             },
             {
-                "en": "They will construct a temporary hut to serve as a command center during the festival.",
-                "zh": "他們將建造一個臨時小屋作為慶典期間的指揮中心。"
+                "en": "The fishermen built a simple hut on the beach to store their gear.",
+                "zh": "漁夫們在海灘上建了一個簡陋的小屋來存放裝備。"
             },
             {
-                "en": "The storm had completely destroyed the fishing hut before dawn.",
-                "zh": "黎明前，風暴已經完全摧毀了那間釣魚小屋。"
+                "en": "We found an empty hut deep in the forest during our hike.",
+                "zh": "在健行期間，我們在森林深處發現了一間空無一人的棚屋。"
             }
-        ],
-        "id": 23
+        ]
     },
     {
+        "id": 24,
         "word": "kangaroo",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "袋鼠",
+        "examples": [
             {
-                "en": "The wildlife park in Australia allows visitors to feed the kangaroos.",
-                "zh": "澳洲的野生動物園允許遊客餵食袋鼠。"
+                "en": "We saw a kangaroo hopping across the road in Australia.",
+                "zh": "在澳洲，我們看到一隻袋鼠跳過馬路。"
             },
             {
-                "en": "A kangaroo hopped across the road while we were driving to Sydney.",
-                "zh": "當我們開車前往雪梨時，一隻袋鼠跳過了馬路。"
+                "en": "The mother kangaroo carries her baby in her pouch.",
+                "zh": "母袋鼠把寶寶裝在育兒袋裡。"
             },
             {
-                "en": "They have been studying the behavior of red kangaroos for several years.",
-                "zh": "他們已經研究紅大袋鼠的行為好幾年了。"
+                "en": "Kangaroos can leap incredible distances with their powerful hind legs.",
+                "zh": "袋鼠能用強壯的後腿跳躍驚人的距離。"
             },
             {
-                "en": "The company uses a kangaroo logo to emphasize its Australian heritage.",
-                "zh": "這家公司使用袋鼠標誌來強調其澳洲傳統。"
+                "en": "The cartoon featured a boxing kangaroo with giant gloves.",
+                "zh": "這部卡通裡有一隻戴著巨大手套的拳擊袋鼠。"
             },
             {
-                "en": "We will see plenty of kangaroos if we visit the sanctuary tomorrow.",
-                "zh": "如果我們明天去保護區，就會看到很多袋鼠。"
+                "en": "Kangaroos use their thick tails for balance when hopping.",
+                "zh": "袋鼠在跳躍時利用粗壯的尾巴來保持平衡。"
             }
-        ],
-        "id": 24
+        ]
     },
     {
+        "id": 25,
         "word": "kit",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "工具箱；成套裝備",
+        "examples": [
             {
-                "en": "The new employee was given a welcome kit containing a mug, notebook, and pen.",
-                "zh": "新進員工收到了一個包含馬克杯、筆記本和筆的迎新禮包(工具組)。"
+                "en": "He bought a tool kit to repair his bicycle.",
+                "zh": "他買了一個工具箱來修理腳踏車。"
             },
             {
-                "en": "You should always keep an emergency repair kit in your vehicle.",
-                "zh": "你應該隨時在車裡放一套緊急維修工具箱。"
+                "en": "The model airplane comes as a kit that you assemble yourself.",
+                "zh": "這架模型飛機是成套裝備，需要你自己組裝。"
             },
             {
-                "en": "The marketing team is assembling a press kit for the upcoming product launch.",
-                "zh": "行銷團隊正在為即將到來的產品發表會組合媒體公關包。"
+                "en": "Don't forget your sewing kit if a button falls off.",
+                "zh": "如果扣子掉了，別忘了你的針線包。"
             },
             {
-                "en": "He had already purchased a DIY furniture kit before reading the complex instructions.",
-                "zh": "在閱讀複雜的說明書之前，他已經買了一組DIY家具組。"
+                "en": "The emergency survival kit includes a flashlight and some rations.",
+                "zh": "緊急求生包裡包含一個手電筒和一些口糧。"
             },
             {
-                "en": "We will distribute the testing kits to all regional clinics by next Friday.",
-                "zh": "我們將在下週五前將檢測試劑盒分發給所有區域診所。"
+                "en": "He bought a drum kit and practiced playing it every evening.",
+                "zh": "他買了一套爵士鼓，並在每天傍晚練習。"
             }
-        ],
-        "id": 25
+        ]
     },
     {
+        "id": 26,
         "word": "koala",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "無尾熊",
+        "examples": [
             {
-                "en": "The conservation group successfully rescued a koala from the bushfire.",
-                "zh": "保育團體成功從叢林大火中救出一隻無尾熊。"
+                "en": "The koala was sleeping peacefully on a eucalyptus branch.",
+                "zh": "這隻無尾熊在尤加利樹枝上安詳地睡著。"
             },
             {
-                "en": "Koalas sleep up to twenty hours a day to conserve their energy.",
-                "zh": "無尾熊每天睡覺長達二十小時以保存體力。"
+                "en": "Koalas feed mainly on eucalyptus leaves.",
+                "zh": "無尾熊主要以尤加利葉為食。"
             },
             {
-                "en": "We were observing a koala chewing eucalyptus leaves when the guide called us.",
-                "zh": "當嚮導叫我們時，我們正在觀察一隻無尾熊咀嚼尤加利葉。"
+                "en": "We took a lot of pictures of the adorable koala at the zoo.",
+                "zh": "我們在動物園拍了許多那隻可愛無尾熊的照片。"
             },
             {
-                "en": "The zoo has launched a campaign to sponsor koala habitats.",
-                "zh": "動物園發起了一項贊助無尾熊棲息地的活動。"
+                "en": "The koala's thick fur keeps it warm during cold nights.",
+                "zh": "無尾熊厚實的毛皮能讓牠在寒冷的夜晚保暖。"
             },
             {
-                "en": "By the time we reached the sanctuary, the koalas had finished their meal.",
-                "zh": "當我們到達保護區時，無尾熊們已經吃完飯了。"
+                "en": "Habitat loss is a major threat to the survival of the koala.",
+                "zh": "棲息地喪失是無尾熊生存的一大威脅。"
             }
-        ],
-        "id": 26
+        ]
     },
     {
+        "id": 27,
         "word": "label",
-        "sentences": [
+        "part_of_speech": "n., v.",
+        "meaning": "標籤；商標；貼標籤於",
+        "examples": [
             {
-                "en": "Please ensure that every shipping box has a clear barcode label.",
-                "zh": "請確保每個運輸箱上都有清晰的條碼標籤。"
+                "en": "Please write your name on the label.",
+                "zh": "請在標籤上寫下你的名字。"
             },
             {
-                "en": "The FDA requires food manufacturers to label all artificial ingredients accurately.",
-                "zh": "美國食品藥物管理局要求食品製造商準確標示所有人工成分。"
+                "en": "I labeled all the boxes so we know what's inside.",
+                "zh": "我給所有箱子都貼了標籤，這樣我們就知道裡面裝了什麼。"
             },
             {
-                "en": "He was labeling the chemical samples when the supervisor entered the lab.",
-                "zh": "當主管進入實驗室時，他正在為化學樣品貼標籤。"
+                "en": "The price is printed on the label attached to the shirt.",
+                "zh": "價格印在附在襯衫上的標籤上。"
             },
             {
-                "en": "Our products have been labeled as eco-friendly by a recognized organization.",
-                "zh": "我們的產品已被公認機構歸類(貼上標籤)為環保產品。"
+                "en": "Please carefully read the label on the medicine bottle before taking it.",
+                "zh": "服用前請仔細閱讀藥瓶上的標籤。"
             },
             {
-                "en": "We will label the discounted items with a bright red sticker.",
-                "zh": "我們將用鮮紅色的貼紙標示打折商品。"
+                "en": "The media unfairly labeled him as a troublemaker.",
+                "zh": "媒體不公平地將他貼上麻煩製造者的標籤。"
             }
-        ],
-        "id": 27
+        ]
     },
     {
+        "id": 28,
         "word": "lace",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "蕾絲；鞋帶",
+        "examples": [
             {
-                "en": "The bridal boutique imports high-quality lace from France for its custom gowns.",
-                "zh": "這家婚紗精品店從法國進口高品質蕾絲來製作訂製禮服。"
+                "en": "Her wedding dress was decorated with delicate lace.",
+                "zh": "她的婚紗裝飾著精緻的蕾絲。"
             },
             {
-                "en": "He is lacing up his running shoes to prepare for the charity marathon.",
-                "zh": "他正在綁緊跑鞋的鞋帶，準備參加慈善馬拉松。"
+                "en": "Your shoe lace is untied; be careful not to trip.",
+                "zh": "你的鞋帶鬆了；小心別絆倒。"
             },
             {
-                "en": "The vintage dress was decorated with intricate white lace around the collar.",
-                "zh": "這件復古洋裝的領口周圍裝飾著精緻的白色蕾絲。"
+                "en": "He bought a beautifully crafted lace tablecloth.",
+                "zh": "他買了一條做工精美的蕾絲桌布。"
             },
             {
-                "en": "By the time the race started, his shoelace had completely unraveled.",
-                "zh": "比賽開始時，他的鞋帶已經完全鬆開了。"
+                "en": "Her vintage dress featured delicate lace around the collar.",
+                "zh": "她的復古洋裝領口周圍有精緻的蕾絲。"
             },
             {
-                "en": "She will lace the fabric tightly to give the corset its proper shape.",
-                "zh": "她將把布料綁緊，使馬甲呈現適當的形狀。"
+                "en": "He stooped down to tie his shoelace before the race started.",
+                "zh": "比賽開始前，他彎下腰來綁鞋帶。"
             }
-        ],
-        "id": 28
+        ]
     },
     {
+        "id": 29,
         "word": "laundromat",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "自助洗衣店",
+        "examples": [
             {
-                "en": "The student does his washing at the local laundromat every Sunday evening.",
-                "zh": "這位學生每個星期天晚上都在當地的自助洗衣店洗衣服。"
+                "en": "I go to the laundromat every Sunday to wash my clothes.",
+                "zh": "我每個星期天都去自助洗衣店洗衣服。"
             },
             {
-                "en": "They are planning to open a 24-hour laundromat in the busy downtown area.",
-                "zh": "他們計畫在繁華的市中心開一家24小時營業的自助洗衣店。"
+                "en": "The laundromat on the corner is open 24 hours a day.",
+                "zh": "轉角那間自助洗衣店24小時營業。"
             },
             {
-                "en": "I was waiting for my clothes to dry at the laundromat when I read the report.",
-                "zh": "當我在自助洗衣店等衣服烘乾時，我閱讀了那份報告。"
+                "en": "He read a magazine while waiting for his clothes at the laundromat.",
+                "zh": "他在自助洗衣店等衣服時看了一本雜誌。"
             },
             {
-                "en": "The laundromat had already closed by the time he finished his night shift.",
-                "zh": "當他結束大夜班時，自助洗衣店已經關門了。"
+                "en": "I forgot my detergent, so I had to buy some at the laundromat.",
+                "zh": "我忘了帶洗衣精，只好在自助洗衣店買一些。"
             },
             {
-                "en": "We will need to get quarters before heading to the laundromat.",
-                "zh": "去自助洗衣店之前，我們需要先換一些25美分的硬幣。"
+                "en": "The old laundromat was closed down and replaced by a cafe.",
+                "zh": "那間舊的自助洗衣店倒閉了，取而代之的是一間咖啡館。"
             }
-        ],
-        "id": 29
+        ]
     },
     {
+        "id": 30,
         "word": "laundry",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "送洗的衣服；洗衣店",
+        "examples": [
             {
-                "en": "The hotel offers a complimentary laundry service for its VIP guests.",
-                "zh": "這家飯店為VIP貴賓提供免費的洗衣服務。"
+                "en": "It is your turn to do the laundry this week.",
+                "zh": "這個星期輪到你洗衣服了。"
             },
             {
-                "en": "She has been doing the laundry all morning to prepare for her business trip.",
-                "zh": "她整個早上都在洗衣服，為了出差做準備。"
+                "en": "The laundry basket is full of dirty clothes.",
+                "zh": "洗衣籃裡裝滿了髒衣服。"
             },
             {
-                "en": "Please put your dirty clothes in the laundry basket behind the door.",
-                "zh": "請把你換下來的髒衣服放在門後的洗衣籃裡。"
+                "en": "She hung the clean laundry out to dry in the sun.",
+                "zh": "她把洗好的乾淨衣服晾在外面曬太陽。"
             },
             {
-                "en": "The laundry was folded and placed in the closet before he arrived home.",
-                "zh": "在他到家前，洗好的衣物已經摺好並放在衣櫥裡了。"
+                "en": "She sorted the laundry into whites and colors before washing.",
+                "zh": "她在洗衣服前將衣物分為白色和彩色。"
             },
             {
-                "en": "We will drop off the suits at the dry laundry tomorrow.",
-                "zh": "我們明天會把西裝送到乾洗店。"
+                "en": "I have to do the laundry this weekend because I've run out of clean shirts.",
+                "zh": "這週末我必須洗衣服，因為我已經沒有乾淨的襯衫了。"
             }
-        ],
-        "id": 30
+        ]
     },
     {
+        "id": 31,
         "word": "leak",
-        "sentences": [
+        "part_of_speech": "v., n.",
+        "meaning": "洩漏；漏水；漏洞",
+        "examples": [
             {
-                "en": "The plumber fixed the leak in the office bathroom to prevent water damage.",
-                "zh": "水電工修好了辦公室洗手間的漏水，以防止水災。"
+                "en": "The pipe under the sink started to leak.",
+                "zh": "水槽底下的水管開始漏水了。"
             },
             {
-                "en": "A prominent journalist leaked the confidential merger documents to the press.",
-                "zh": "一位知名記者將機密的合併文件洩漏給了新聞界。"
+                "en": "We must fix the leak in the roof before it rains.",
+                "zh": "我們必須在下雨前修好屋頂的漏洞。"
             },
             {
-                "en": "Gas is leaking from the pipeline, so the area must be evacuated immediately.",
-                "zh": "氣體正從管線中滲漏，因此必須立即疏散該區域。"
+                "en": "Someone leaked the secret information to the press.",
+                "zh": "有人將機密資訊洩漏給了新聞界。"
             },
             {
-                "en": "The company had investigated the data leak before releasing an official statement.",
-                "zh": "公司在發表官方聲明之前，已經調查了資料外洩事件。"
+                "en": "The plumber came to fix a severe leak in our bathroom.",
+                "zh": "水電工來修理我們浴室裡嚴重的漏水問題。"
             },
             {
-                "en": "We will install new seals to ensure the container does not leak.",
-                "zh": "我們將安裝新的密封件，以確保容器不會滲漏。"
+                "en": "The company fired the employee who leaked the confidential report.",
+                "zh": "公司開除了那位洩漏機密報告的員工。"
             }
-        ],
-        "id": 31
+        ]
     },
     {
+        "id": 32,
         "word": "magnet",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "磁鐵；有吸引力的人或物",
+        "examples": [
             {
-                "en": "The new tech hub has become a magnet for talented software engineers.",
-                "zh": "新的科技中心已成為吸引優秀軟體工程師的磁鐵。"
+                "en": "She stuck the note to the refrigerator with a magnet.",
+                "zh": "她用一塊磁鐵把紙條貼在冰箱上。"
             },
             {
-                "en": "We use a strong industrial magnet to separate the metal scrap on the conveyor belt.",
-                "zh": "我們使用強力的工業磁鐵來分離輸送帶上的金屬廢料。"
+                "en": "The new shopping mall is a magnet for teenagers.",
+                "zh": "這家新開幕的購物中心對青少年非常有吸引力。"
             },
             {
-                "en": "He is attaching the presentation notes to the whiteboard with a magnet.",
-                "zh": "他正用磁鐵將簡報筆記固定在白板上。"
+                "en": "Iron is easily attracted to a magnet.",
+                "zh": "鐵很容易被磁鐵吸引。"
             },
             {
-                "en": "The souvenir shop had sold out of refrigerator magnets before noon.",
-                "zh": "這家紀念品店在中午前就把冰箱磁鐵賣光了。"
+                "en": "The strong magnet easily picked up the scattered nails.",
+                "zh": "這塊強力磁鐵輕鬆吸起了散落的釘子。"
             },
             {
-                "en": "Will this giant magnet affect the electronic equipment nearby?",
-                "zh": "這塊巨大的磁鐵會影響附近的電子設備嗎？"
+                "en": "The beautiful scenery makes this town a magnet for tourists.",
+                "zh": "美麗的風景使這個小鎮對遊客極具吸引力。"
             }
-        ],
-        "id": 32
+        ]
     },
     {
+        "id": 33,
         "word": "nail clipper",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "指甲剪",
+        "examples": [
             {
-                "en": "You cannot bring a large nail clipper in your carry-on luggage at some airports.",
-                "zh": "在某些機場，你不能將大型指甲剪帶入隨身行李中。"
+                "en": "Could you lend me your nail clipper? My nail is broken.",
+                "zh": "可以借我你的指甲剪嗎？我的指甲斷了。"
             },
             {
-                "en": "He bought a high-quality stainless steel nail clipper from the pharmacy.",
-                "zh": "他從藥局買了一把高品質的不鏽鋼指甲剪。"
+                "en": "He used a nail clipper to trim his fingernails neatly.",
+                "zh": "他用指甲剪把手指甲修剪得整整齊齊。"
             },
             {
-                "en": "She was using the nail clipper when the phone suddenly rang.",
-                "zh": "當電話突然響起時，她正在使用指甲剪。"
+                "en": "Always clean your nail clippers after using them.",
+                "zh": "使用後務必清潔你的指甲剪。"
             },
             {
-                "en": "I had misplaced my nail clipper before packing my travel bag.",
-                "zh": "在整理旅行袋之前，我把指甲剪放錯地方了。"
+                "en": "I couldn't find my nail clipper, so I had to use small scissors.",
+                "zh": "我找不到我的指甲剪，只好用小剪刀。"
             },
             {
-                "en": "We will include a small nail clipper in the hotel amenity kit.",
-                "zh": "我們會在飯店備品包中放一把小指甲剪。"
+                "en": "The hotel provided complimentary toiletries, including a tiny nail clipper.",
+                "zh": "飯店提供了免費的盥洗用品，包括一把小小的指甲剪。"
             }
-        ],
-        "id": 33
+        ]
     },
     {
+        "id": 34,
         "word": "panda",
-        "sentences": [
+        "part_of_speech": "n.",
+        "meaning": "貓熊",
+        "examples": [
             {
-                "en": "The zoo's marketing campaign heavily features the newly arrived giant panda.",
-                "zh": "動物園的行銷活動大量主打新到來的大熊貓。"
+                "en": "The giant panda is native to central China.",
+                "zh": "大貓熊原產於中國中部。"
             },
             {
-                "en": "Researchers have been tracking the panda population in the wild for decades.",
-                "zh": "研究人員數十年來一直在追蹤野外的熊貓數量。"
+                "en": "We stood in line for hours just to see the baby panda.",
+                "zh": "我們排了幾個小時的隊，就為了看熊貓寶寶。"
             },
             {
-                "en": "A panda was eating bamboo peacefully while the tourists took numerous photos.",
-                "zh": "當遊客拍下無數照片時，一隻熊貓正平靜地吃著竹子。"
+                "en": "Pandas spend most of their day eating bamboo.",
+                "zh": "貓熊每天大部分的時間都在吃竹子。"
             },
             {
-                "en": "The conservation center will release the captive-bred panda into the mountains next year.",
-                "zh": "保育中心明年會將人工繁殖的熊貓放歸山林。"
+                "en": "The panda slowly munched on bamboo shoots in the enclosure.",
+                "zh": "貓熊在圍欄裡慢慢咀嚼著竹筍。"
             },
             {
-                "en": "They had established a panda sanctuary long before the species became endangered.",
-                "zh": "早在該物種瀕臨滅絕之前，他們就已經建立了一個熊貓保護區。"
+                "en": "The birth of the twin pandas was celebrated all over the country.",
+                "zh": "全國上下都在慶祝這對雙胞胎貓熊的誕生。"
             }
-        ],
-        "id": 34
+        ]
     },
     {
+        "id": 35,
         "word": "peak",
-        "sentences": [
+        "part_of_speech": "n., adj.",
+        "meaning": "山頂；頂峰；高峰的",
+        "examples": [
             {
-                "en": "The logistics company experiences its peak season right before the winter holidays.",
-                "zh": "物流公司在寒假前正好迎來旺季(巔峰期)。"
+                "en": "The mountain peak was covered with snow all year round.",
+                "zh": "這座山頂終年被白雪覆蓋。"
             },
             {
-                "en": "Demand for electric vehicles is expected to peak within the next five years.",
-                "zh": "對電動車的需求預計將在未來五年內達到巔峰。"
+                "en": "Traffic is always terrible during the peak hours.",
+                "zh": "尖峰時段的交通總是糟透了。"
             },
             {
-                "en": "She reached the peak of her acting career after winning the international award.",
-                "zh": "在贏得國際大獎後，她達到了演藝事業的巔峰。"
+                "en": "The singer's career reached its peak in the late 90s.",
+                "zh": "這位歌手的事業在90年代末達到頂峰。"
             },
             {
-                "en": "They were climbing the mountain peak when the weather suddenly deteriorated.",
-                "zh": "當天氣突然惡化時，他們正在攀登頂峰。"
+                "en": "The hikers were exhausted when they finally reached the peak.",
+                "zh": "登山客最終抵達山頂時已經筋疲力盡了。"
             },
             {
-                "en": "Stock prices had peaked just before the central bank announced the interest rate hike.",
-                "zh": "就在中央銀行宣布升息之前，股價已經達到了頂點。"
+                "en": "The hotel rates are much higher during the peak season.",
+                "zh": "飯店的房價在旺季時高出許多。"
             }
-        ],
-        "id": 35
+        ]
     },
     {
-        "unit": 19,
-        "word": "pearl",
-        "meaning": "n. 珍珠",
         "id": 36,
-        "mastered": false,
-        "sentences": [
+        "word": "pearl",
+        "part_of_speech": "n.",
+        "meaning": "n. 珍珠",
+        "examples": [
             {
-                "en": "The CEO presented her with a stunning pearl necklace for her retirement.",
-                "zh": "執行長送給她一條驚豔的珍珠項鍊作為退休禮物。"
+                "en": "She wore a beautiful necklace made of real pearls.",
+                "zh": "她戴了一條由真珍珠製成的美麗項鍊。"
             },
             {
-                "en": "Our new software application is the pearl of the company's portfolio.",
-                "zh": "我們的新軟體應用程式是公司產品組合中的明珠。"
+                "en": "The diver found a shiny pearl inside the oyster.",
+                "zh": "潛水員在牡蠣裡發現了一顆閃亮的珍珠。"
             },
             {
-                "en": "He dropped a few pearls of wisdom during the orientation session.",
-                "zh": "他在新生訓練時分享了一些金玉良言。"
+                "en": "Pearls are often seen as a symbol of purity and elegance.",
+                "zh": "珍珠通常被視為純潔和優雅的象徵。"
             },
             {
-                "en": "These cultured pearls are imported directly from Southeast Asia.",
-                "zh": "這些養殖珍珠是直接從東南亞進口的。"
+                "en": "She received a pair of elegant pearl earrings for her anniversary.",
+                "zh": "她收到了一副優雅的珍珠耳環作為週年紀念禮物。"
             },
             {
-                "en": "She has always preferred subtle jewelry, like a simple pearl earring.",
-                "zh": "她總是偏好低調的珠寶，像是一對簡單的珍珠耳環。"
+                "en": "The divers risk their lives searching for precious pearls in the ocean.",
+                "zh": "潛水員冒著生命危險在海洋中尋找珍貴的珍珠。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "pint",
-        "meaning": "n. 品脫",
         "id": 37,
-        "mastered": false,
-        "sentences": [
+        "word": "pint",
+        "part_of_speech": "n.",
+        "meaning": "n. 品脫",
+        "examples": [
             {
-                "en": "He ordered a pint of beer after a long day of negotiations.",
-                "zh": "經過漫長的一天談判後，他點了一品脫啤酒。"
+                "en": "He ordered a pint of beer at the pub.",
+                "zh": "他在酒吧點了一品脫的啤酒。"
             },
             {
-                "en": "Please buy a pint of milk from the grocery store on your way home.",
-                "zh": "請你在回家的路上從雜貨店買一品脫牛奶。"
+                "en": "I bought a pint of milk from the grocery store.",
+                "zh": "我從雜貨店買了一品脫的牛奶。"
             },
             {
-                "en": "The bartender poured a perfect pint for the regular customer.",
-                "zh": "酒保為常客倒了一杯完美的品脫啤酒。"
+                "en": "She donated a pint of blood to the hospital yesterday.",
+                "zh": "她昨天向醫院捐了一品脫的血。"
             },
             {
-                "en": "We consume several pints of cream every week in the bakery.",
-                "zh": "我們麵包店每週會消耗好幾品脫的鮮奶油。"
+                "en": "He drank a pint of water to quench his thirst.",
+                "zh": "他喝了一品脫的水來解渴。"
             },
             {
-                "en": "They celebrated their successful merger by sharing a few pints at the local pub.",
-                "zh": "他們在當地酒吧喝了幾杯啤酒，慶祝合併成功。"
+                "en": "Would you like to join us for a pint after work?",
+                "zh": "下班後你想跟我們一起去喝杯啤酒嗎？"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "poster",
-        "meaning": "n. 海報",
         "id": 38,
-        "mastered": false,
-        "sentences": [
+        "word": "poster",
+        "part_of_speech": "n.",
+        "meaning": "n. 海報",
+        "examples": [
             {
-                "en": "The marketing team designed a creative poster for the upcoming seminar.",
-                "zh": "行銷團隊為即將到來的研討會設計了一張富有創意的海報。"
+                "en": "There is a large movie poster hanging on the wall.",
+                "zh": "牆上掛著一張巨大的電影海報。"
             },
             {
-                "en": "Please ensure the promotional posters are displayed in the lobby.",
-                "zh": "請確保大廳展示了宣傳海報。"
+                "en": "The teacher pinned an educational poster to the bulletin board.",
+                "zh": "老師把一張具教育意義的海報釘在佈告欄上。"
             },
             {
-                "en": "We are printing 500 posters to advertise the new product launch.",
-                "zh": "我們正在印製500張海報來宣傳新產品發佈。"
+                "en": "They designed a brilliant poster for the upcoming concert.",
+                "zh": "他們為即將到來的演唱會設計了一張出色的海報。"
             },
             {
-                "en": "The vintage poster on the wall gives the cafe a unique atmosphere.",
-                "zh": "牆上的復古海報賦予了這家咖啡館獨特的氛圍。"
+                "en": "They printed a thousand posters to promote the school fair.",
+                "zh": "他們印了一千張海報來宣傳學校園遊會。"
             },
             {
-                "en": "He was tasked with distributing posters across different university campuses.",
-                "zh": "他的任務是在不同的大學校園發放海報。"
+                "en": "Her room is decorated with posters of her favorite pop bands.",
+                "zh": "她的房間裡裝飾著她最喜歡的流行樂團的海報。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "razor",
-        "meaning": "n. 刮鬍刀",
         "id": 39,
-        "mastered": false,
-        "sentences": [
+        "word": "razor",
+        "part_of_speech": "n.",
+        "meaning": "n. 刮鬍刀",
+        "examples": [
             {
-                "en": "He bought a new electric razor to speed up his morning routine.",
-                "zh": "他買了一把新的電動刮鬍刀以加快他早上的準備時間。"
+                "en": "He bought an electric razor to save time in the morning.",
+                "zh": "他買了一把電動刮鬍刀以節省早上的時間。"
             },
             {
-                "en": "The hotel provides complimentary razors and shaving cream upon request.",
-                "zh": "飯店可應要求提供免費的刮鬍刀和刮鬍泡。"
+                "en": "The razor is too dull and might cut your skin.",
+                "zh": "這把刮鬍刀太鈍了，可能會割傷你的皮膚。"
             },
             {
-                "en": "Be careful when using that razor, as it is extremely sharp.",
-                "zh": "使用那把刮鬍刀時要小心，因為它非常鋒利。"
+                "en": "Make sure you clean the razor after each use.",
+                "zh": "每次使用後，一定要確保把刮鬍刀清洗乾淨。"
             },
             {
-                "en": "The company manufactures high-quality razors for men and women.",
-                "zh": "該公司生產供男女使用的高品質刮鬍刀。"
+                "en": "He accidentally cut his chin while shaving with a dull razor.",
+                "zh": "他用鈍刮鬍刀刮鬍子時不小心割傷了下巴。"
             },
             {
-                "en": "I need to replace my disposable razor before the business trip.",
-                "zh": "在出差前，我需要更換我的拋棄式刮鬍刀。"
+                "en": "The barber used a straight razor to give him a precise shave.",
+                "zh": "理髮師用一把直剃刀為他精準地刮鬍子。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "razor blade",
-        "meaning": "刮鬍刀的刀片",
         "id": 40,
-        "mastered": false,
-        "sentences": [
+        "word": "razor blade",
+        "part_of_speech": "n.",
+        "meaning": "刮鬍刀的刀片",
+        "examples": [
             {
-                "en": "You should change the razor blade regularly for a smoother shave.",
-                "zh": "你應該定期更換刮鬍刀片以獲得更滑順的刮鬍體驗。"
+                "en": "You should change the razor blade when it stops shaving smoothly.",
+                "zh": "當刮起來不順暢時，你就應該更換刮鬍刀片。"
             },
             {
-                "en": "He accidentally cut his chin because the razor blade was too dull.",
-                "zh": "他不小心割傷了下巴，因為刮鬍刀片太鈍了。"
+                "en": "Be careful when handling a new razor blade; it's extremely sharp.",
+                "zh": "拿新刮鬍刀片時要小心，它非常鋒利。"
             },
             {
-                "en": "The pharmacy sells packs of razor blades at a discounted price.",
-                "zh": "藥局以折扣價出售包裝好的刮鬍刀片。"
+                "en": "He bought a pack of razor blades at the pharmacy.",
+                "zh": "他在藥局買了一盒刮鬍刀片。"
             },
             {
-                "en": "She carefully disposed of the used razor blade in a safe container.",
-                "zh": "她小心地將用過的刮鬍刀片丟棄在安全的容器中。"
+                "en": "You should dispose of used razor blades safely in a proper container.",
+                "zh": "你應該將用過的刮鬍刀片安全地丟棄在合適的容器中。"
             },
             {
-                "en": "Modern razor blades are designed with advanced technology to prevent irritation.",
-                "zh": "現代的刮鬍刀片採用先進技術設計，以防止皮膚過敏。"
+                "en": "A rusty razor blade can cause a serious infection.",
+                "zh": "生鏽的刮鬍刀片可能會引起嚴重的感染。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "reach one's peak",
-        "meaning": "到達~巔峰狀態",
         "id": 41,
-        "mastered": false,
-        "sentences": [
+        "word": "reach one's peak",
+        "part_of_speech": "phrase",
+        "meaning": "到達~巔峰狀態",
+        "examples": [
             {
-                "en": "Our sales usually reach their peak during the holiday season.",
-                "zh": "我們的銷售額通常在假日季節達到巔峰。"
+                "en": "The athlete reached his peak in his mid-twenties.",
+                "zh": "這位運動員在二十五歲左右達到了他的巔峰狀態。"
             },
             {
-                "en": "The athlete has finally reached her peak after years of rigorous training.",
-                "zh": "經過多年的嚴格訓練，這位運動員終於達到了她的巔峰狀態。"
+                "en": "Her artistic creativity reached its peak during her trip to Europe.",
+                "zh": "她的藝術創造力在歐洲旅行期間達到了巔峰。"
             },
             {
-                "en": "His career reached its peak when he was appointed as the regional director.",
-                "zh": "當他被任命為區域總監時，他的職業生涯達到了巔峰。"
+                "en": "Sales typically reach their peak right before the holidays.",
+                "zh": "銷售量通常在假期前夕達到巔峰。"
             },
             {
-                "en": "The demand for this model is expected to reach its peak next month.",
-                "zh": "預計對這款車型的需求將在下個月達到巔峰。"
+                "en": "The tennis player reached her peak when she won the grand slam.",
+                "zh": "這位網球選手在贏得大滿貫時達到了她的巔峰。"
             },
             {
-                "en": "Stock prices reached their peak before the economic downturn began.",
-                "zh": "股價在經濟衰退開始前達到了最高點。"
+                "en": "Economic growth is expected to reach its peak next quarter.",
+                "zh": "經濟成長預計將在下個季度達到巔峰。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "ready-made",
-        "meaning": "a. 做好的、現成的",
         "id": 42,
-        "mastered": false,
-        "sentences": [
+        "word": "ready-made",
+        "part_of_speech": "adj.",
+        "meaning": "a. 做好的、現成的",
+        "examples": [
             {
-                "en": "We bought some ready-made sandwiches for a quick lunch at the office.",
-                "zh": "我們買了一些現成的三明治，在辦公室快速解決午餐。"
+                "en": "I don't have time to cook, so I bought some ready-made meals.",
+                "zh": "我沒時間做飯，所以我買了一些現成的微波食品。"
             },
             {
-                "en": "The boutique offers both tailor-made suits and ready-made garments.",
-                "zh": "這家精品店提供量身訂做的西裝和現成的服裝。"
+                "en": "He avoids ready-made clothing because it rarely fits him well.",
+                "zh": "他盡量不買現成的衣服，因為尺寸很少合身。"
             },
             {
-                "en": "There is no ready-made solution for this complex logistical problem.",
-                "zh": "對於這個複雜的物流問題，沒有現成的解決方案。"
+                "en": "They used a ready-made template for their website design.",
+                "zh": "他們為網站設計使用了一個現成的模板。"
             },
             {
-                "en": "She relied on a ready-made template to create the presentation slides.",
-                "zh": "她依賴現成的範本來製作簡報投影片。"
+                "en": "These ready-made curtains perfectly match the color of my room.",
+                "zh": "這些現成的窗簾和我的房間顏色完美搭配。"
             },
             {
-                "en": "Ready-made meals have become increasingly popular among busy professionals.",
-                "zh": "現成餐點在忙碌的專業人士中變得越來越受歡迎。"
+                "en": "He submitted a ready-made business plan he found online.",
+                "zh": "他提交了一份在網路上找到的現成商業企劃書。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "reveal",
-        "meaning": "vt. 洩漏、透露",
         "id": 43,
-        "mastered": false,
-        "sentences": [
+        "word": "reveal",
+        "part_of_speech": "vt.",
+        "meaning": "vt. 洩漏、透露",
+        "examples": [
             {
-                "en": "The audit report revealed several discrepancies in the financial statements.",
-                "zh": "審計報告揭露了財務報表中的幾處差異。"
+                "en": "The magician refused to reveal the secret behind his trick.",
+                "zh": "魔術師拒絕透露他戲法背後的祕密。"
             },
             {
-                "en": "She refused to reveal the details of the confidential agreement.",
-                "zh": "她拒絕透露這份機密協議的細節。"
+                "en": "Her facial expression revealed her true feelings.",
+                "zh": "她的臉部表情洩漏了她的真實感受。"
             },
             {
-                "en": "The company will reveal its latest smartphone model at the expo tomorrow.",
-                "zh": "公司將於明天的博覽會上揭曉其最新款智慧型手機。"
+                "en": "The test results revealed that she was perfectly healthy.",
+                "zh": "檢查結果顯示她非常健康。"
             },
             {
-                "en": "A recent survey reveals that customer satisfaction has dropped significantly.",
-                "zh": "一項最近的調查顯示，顧客滿意度已大幅下降。"
+                "en": "The newspaper revealed the scandal involving the corrupt politician.",
+                "zh": "報紙揭露了那位腐敗政客的醜聞。"
             },
             {
-                "en": "His facial expression revealed his disappointment with the quarterly results.",
-                "zh": "他的臉部表情透露出他對季度業績的失望。"
+                "en": "The curtain was drawn back to reveal a magnificent painting.",
+                "zh": "拉開窗簾後，展示出一幅宏偉的畫作。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "sausage",
-        "meaning": "n. 香腸",
         "id": 44,
-        "mastered": false,
-        "sentences": [
+        "word": "sausage",
+        "part_of_speech": "n.",
+        "meaning": "n. 香腸",
+        "examples": [
             {
-                "en": "They served grilled sausages and scrambled eggs for the business breakfast.",
-                "zh": "他們在商務早餐中供應烤香腸和炒蛋。"
+                "en": "We grilled some sausages in the backyard for dinner.",
+                "zh": "我們晚餐在後院烤了一些香腸。"
             },
             {
-                "en": "The local butcher makes the best spicy Italian sausage in town.",
-                "zh": "當地的肉舖做出了鎮上最棒的辣味義大利香腸。"
+                "en": "He likes to put mustard and ketchup on his sausage.",
+                "zh": "他喜歡在香腸上加芥末醬和番茄醬。"
             },
             {
-                "en": "We ordered a large pizza with pepperoni, mushrooms, and sausage.",
-                "zh": "我們點了一個有義大利辣味香腸、蘑菇和香腸的大披薩。"
+                "en": "The traditional breakfast includes eggs, beans, and a sausage.",
+                "zh": "這份傳統早餐包含蛋、豆子和一條香腸。"
             },
             {
-                "en": "The food processing plant produces thousands of sausages daily.",
-                "zh": "這家食品加工廠每天生產數千條香腸。"
+                "en": "I bought some spicy Italian sausage for tonight's pasta dish.",
+                "zh": "我買了一些辣味義大利香腸來做今晚的義大利麵。"
             },
             {
-                "en": "She decided to try the traditional German sausage at the market.",
-                "zh": "她決定在市場上品嚐傳統的德國香腸。"
+                "en": "The factory produces tons of pork sausage every single day.",
+                "zh": "這家工廠每天生產數噸的豬肉香腸。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "shopkeeper",
-        "meaning": "n. 店主人、商店老闆",
         "id": 45,
-        "mastered": false,
-        "sentences": [
+        "word": "shopkeeper",
+        "part_of_speech": "n.",
+        "meaning": "n. 店主人、商店老闆",
+        "examples": [
             {
-                "en": "The shopkeeper greeted every customer with a warm and friendly smile.",
-                "zh": "店老闆以熱情友好的微笑迎接每一位顧客。"
+                "en": "The shopkeeper greeted us with a warm smile when we entered.",
+                "zh": "我們走進去時，老闆用溫暖的微笑迎接我們。"
             },
             {
-                "en": "Local shopkeepers are protesting against the new tax regulations.",
-                "zh": "當地的商店老闆們正在抗議新的稅收規定。"
+                "en": "The old shopkeeper knows everyone in this neighborhood.",
+                "zh": "這位老店主認識這個社區的每個人。"
             },
             {
-                "en": "The shopkeeper agreed to give us a discount if we bought in bulk.",
-                "zh": "如果我們大量購買，店主人同意給我們折扣。"
+                "en": "She bargained with the shopkeeper for a better price.",
+                "zh": "她跟老闆討價還價，希望能算便宜一點。"
             },
             {
-                "en": "As a diligent shopkeeper, he always ensures the shelves are fully stocked.",
-                "zh": "身為一名勤奮的店老闆，他總是確保貨架上備滿了商品。"
+                "en": "The shopkeeper chased away the stray dog that entered his store.",
+                "zh": "店主把跑進他店裡的流浪狗趕走了。"
             },
             {
-                "en": "The experienced shopkeeper knows exactly what her clients need.",
-                "zh": "這位經驗豐富的店老闆確切地知道她的客戶需要什麼。"
+                "en": "An honest shopkeeper always returns the exact change to his customers.",
+                "zh": "誠實的商店老闆總是會找給顧客正確的零錢。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "spaghetti",
-        "meaning": "n. 義大利麵(類似油麵粗細的麵條)",
         "id": 46,
-        "mastered": false,
-        "sentences": [
+        "word": "spaghetti",
+        "part_of_speech": "n.",
+        "meaning": "n. 義大利麵(類似油麵粗細的麵條)",
+        "examples": [
             {
-                "en": "We had spaghetti with meatballs for dinner after the long conference.",
-                "zh": "在漫長的會議結束後，我們的晚餐吃了肉丸義大利麵。"
+                "en": "I cooked a large pot of spaghetti with meatballs for dinner.",
+                "zh": "我晚餐煮了一大鍋肉丸義大利麵。"
             },
             {
-                "en": "The Italian restaurant downtown is famous for its authentic spaghetti.",
-                "zh": "市區那家義大利餐廳以其道地的義大利麵而聞名。"
+                "en": "The children love eating spaghetti in tomato sauce.",
+                "zh": "孩子們喜歡吃番茄醬義大利麵。"
             },
             {
-                "en": "He accidentally spilled spaghetti sauce on his white dress shirt.",
-                "zh": "他不小心把義大利麵醬灑在了他的白色襯衫上。"
+                "en": "Don't break the spaghetti before boiling it.",
+                "zh": "在煮義大利麵之前不要把它折斷。"
             },
             {
-                "en": "Boil the spaghetti for about ten minutes until it is al dente.",
-                "zh": "將義大利麵煮約十分鐘，直到口感彈牙。"
+                "en": "She twirled the spaghetti on her fork like a professional.",
+                "zh": "她像個專業人士一樣用叉子捲起義大利麵。"
             },
             {
-                "en": "They offer a gluten-free option for those who cannot eat regular spaghetti.",
-                "zh": "他們為那些不能吃一般義大利麵的人提供無麩質的選擇。"
+                "en": "This restaurant is famous for its authentic homemade spaghetti.",
+                "zh": "這家餐廳以道地的手工義大利麵聞名。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "spice",
-        "meaning": "n. 香料, n. 情趣、風味, vt. 加香料於~, vt. 為~增添情趣、風味",
         "id": 47,
-        "mastered": false,
-        "sentences": [
+        "word": "spice",
+        "part_of_speech": "n., v.",
+        "meaning": "n. 香料, n. 情趣、風味, vt. 加香料於~, vt. 為~增添情趣、風味",
+        "examples": [
             {
-                "en": "The chef added a special blend of spices to enhance the dish's flavor.",
-                "zh": "主廚加入了一種特別混合的香料以提升菜餚的風味。"
+                "en": "Cinnamon is a common spice used in baking.",
+                "zh": "肉桂是烘焙中常用的香料。"
             },
             {
-                "en": "We need to spice up our marketing campaign to attract younger consumers.",
-                "zh": "我們需要為行銷活動增添一些趣味，以吸引年輕消費者。"
+                "en": "She spiced the soup with pepper and salt.",
+                "zh": "她在湯裡加了胡椒和鹽來調味。"
             },
             {
-                "en": "India is globally recognized for exporting a wide variety of spices.",
-                "zh": "印度因出口種類繁多的香料而聞名全球。"
+                "en": "They went on a surprise trip to add some spice to their marriage.",
+                "zh": "他們來了一場驚喜之旅，為他們的婚姻增添情趣。"
             },
             {
-                "en": "A little friendly competition can add some spice to the workplace.",
-                "zh": "一點友善的競爭可以為職場增添一些情趣。"
+                "en": "Nutmeg is a popular spice used in many traditional recipes.",
+                "zh": "肉豆蔻是許多傳統食譜中常用的熱門香料。"
             },
             {
-                "en": "The soup was too bland, so I spiced it up with some black pepper.",
-                "zh": "湯太清淡了，所以我加了一些黑胡椒來調味。"
+                "en": "She tries to spice up her daily routine by learning new hobbies.",
+                "zh": "她試圖透過學習新嗜好來為日常作息增添情趣。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "starve",
-        "meaning": "vt. 餓死",
         "id": 48,
-        "mastered": false,
-        "sentences": [
+        "word": "starve",
+        "part_of_speech": "vi., vt.",
+        "meaning": "vt. 餓死",
+        "examples": [
             {
-                "en": "The rescue team saved the abandoned animals before they could starve.",
-                "zh": "救援隊在被遺棄的動物餓死之前救了牠們。"
+                "en": "Many wild animals starve to death during the harsh winter.",
+                "zh": "在嚴酷的冬天裡，許多野生動物會餓死。"
             },
             {
-                "en": "If we don't secure the funding, our project will starve for resources.",
-                "zh": "如果我們沒有獲得資金，我們的專案將會缺乏資源。"
+                "en": "The dictator deliberately starved the political prisoners.",
+                "zh": "這位獨裁者故意將政治犯餓死。"
             },
             {
-                "en": "During the severe drought, many crops failed and livestock began to starve.",
-                "zh": "在嚴重乾旱期間，許多農作物歉收，牲畜開始餓死。"
+                "en": "I’m so hungry I feel like I’m going to starve.",
+                "zh": "我好餓，我覺得我快餓死了。"
             },
             {
-                "en": "They tried to starve the enemy forces by cutting off their supply lines.",
-                "zh": "他們試圖切斷敵軍的補給線來使他們挨餓。"
+                "en": "Without food and water, the lost explorer would surely starve.",
+                "zh": "沒有食物和水，迷路的探險家肯定會餓死。"
             },
             {
-                "en": "No one should have to starve in a society with abundant food production.",
-                "zh": "在一個糧食生產豐富的社會裡，任何人都不應該挨餓。"
+                "en": "The long drought caused the cattle to starve in the fields.",
+                "zh": "長期的乾旱導致牛隻在田野中餓死。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "starving",
-        "meaning": "a. 快餓死了、很餓",
         "id": 49,
-        "mastered": false,
-        "sentences": [
+        "word": "starving",
+        "part_of_speech": "adj.",
+        "meaning": "a. 快餓死了、很餓",
+        "examples": [
             {
-                "en": "Let's order some food right now; I am absolutely starving after that meeting.",
-                "zh": "我們現在就點些吃的吧；開完那場會議後我快餓死了。"
+                "en": "When is dinner ready? I'm absolutely starving!",
+                "zh": "晚餐什麼時候準備好？我快餓扁了！"
             },
             {
-                "en": "The organization provides meals for starving children in developing countries.",
-                "zh": "該組織為開發中國家飢餓的兒童提供膳食。"
+                "en": "The charity provides food for starving children in poor areas.",
+                "zh": "這個慈善機構為貧困地區飢餓的兒童提供食物。"
             },
             {
-                "en": "We found a starving kitten in the alley and took it to the vet.",
-                "zh": "我們在小巷裡發現了一隻快餓死的小貓，並帶牠去看了獸醫。"
+                "en": "They rescued a starving stray dog from the streets.",
+                "zh": "他們從街上救了一隻挨餓的流浪狗。"
             },
             {
-                "en": "He worked through his lunch break and was starving by late afternoon.",
-                "zh": "他午休時間也在工作，到了傍晚時分已經餓壞了。"
+                "en": "The starving refugees gratefully accepted the bread and water.",
+                "zh": "飢餓的難民滿懷感激地接受了麵包和水。"
             },
             {
-                "en": "The hikers were freezing and starving when they finally reached the cabin.",
-                "zh": "登山客終於抵達小木屋時，他們又冷又餓。"
+                "en": "We rushed to the cafeteria because we were absolutely starving.",
+                "zh": "我們衝向自助餐廳，因為我們實在快餓扁了。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "summit",
-        "meaning": "山峰；高階層的",
         "id": 50,
-        "mastered": false,
-        "sentences": [
+        "word": "summit",
+        "part_of_speech": "n., adj.",
+        "meaning": "山峰；高階層的",
+        "examples": [
             {
-                "en": "World leaders gathered at the economic summit to discuss global trade.",
-                "zh": "世界各國領導人齊聚經濟高峰會，討論全球貿易。"
+                "en": "It took the climbers three days to reach the summit of the mountain.",
+                "zh": "登山客花了三天時間才到達山峰。"
             },
             {
-                "en": "The climbers successfully reached the summit of Mount Everest on Tuesday.",
-                "zh": "登山者於星期二成功登頂聖母峰。"
+                "en": "The world leaders gathered for an economic summit in Paris.",
+                "zh": "各國領袖齊聚巴黎參加經濟高峰會。"
             },
             {
-                "en": "An emergency summit was called to address the sudden financial crisis.",
-                "zh": "為應對突發的金融危機，召開了緊急高峰會。"
+                "en": "The view from the summit was absolutely breathtaking.",
+                "zh": "從山頂看去的景色絕對令人嘆為觀止。"
             },
             {
-                "en": "She is at the summit of her career, highly respected by all her peers.",
-                "zh": "她正處於職業生涯的巔峰，受到所有同行的極高尊敬。"
+                "en": "The expedition team finally planted their flag at the summit.",
+                "zh": "探險隊終於在山峰上插上了他們的旗幟。"
             },
             {
-                "en": "The environmental summit resulted in a landmark agreement on carbon emissions.",
-                "zh": "環境高峰會促成了一項關於碳排放的里程碑協議。"
+                "en": "The upcoming summit will focus on environmental protection policies.",
+                "zh": "即將舉行的高峰會將著重於環境保護政策。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "tag",
-        "meaning": "吊牌標籤；加上標籤、附上籤條；（在社群媒體上）標記",
         "id": 51,
-        "mastered": false,
-        "sentences": [
+        "word": "tag",
+        "part_of_speech": "n., v.",
+        "meaning": "吊牌標籤；加上標籤、附上籤條；（在社群媒體上）標記",
+        "examples": [
             {
-                "en": "Please check the price tag before you bring the item to the cashier.",
-                "zh": "在將商品拿到收銀台之前，請先檢查價格標籤。"
+                "en": "The price tag on the jacket says it costs fifty dollars.",
+                "zh": "夾克上的價格標籤寫著五十元。"
             },
             {
-                "en": "Don't forget to tag our official account when you post the event photos.",
-                "zh": "發布活動照片時，別忘了標記我們的官方帳號。"
+                "en": "Don't forget to tag me in the photos you post online.",
+                "zh": "別忘了在網路上發布的照片中標記我。"
             },
             {
-                "en": "All luggage must be properly tagged with the passenger's contact information.",
-                "zh": "所有行李都必須正確貼上包含乘客聯絡資訊的標籤。"
+                "en": "Every piece of luggage needs to be tagged before the flight.",
+                "zh": "每件行李在登機前都需要附上標籤。"
             },
             {
-                "en": "She cut off the tag from her new dress because it was scratching her neck.",
-                "zh": "她剪掉了新洋裝上的吊牌，因為它刮到了她的脖子。"
+                "en": "She forgot to remove the price tag before wrapping the gift.",
+                "zh": "她在包裝禮物前忘了撕下價格標籤。"
             },
             {
-                "en": "The warehouse staff tags every newly arrived pallet with a barcode.",
-                "zh": "倉庫工作人員會為每個新到的棧板貼上條碼標籤。"
+                "en": "The scientists tagged the wild dolphins to track their migration.",
+                "zh": "科學家在野生海豚身上附上標籤以追蹤牠們的遷徙。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "tag along",
-        "meaning": "尾隨、跟隨",
         "id": 52,
-        "mastered": false,
-        "sentences": [
+        "word": "tag along",
+        "part_of_speech": "phrase",
+        "meaning": "尾隨、跟隨",
+        "examples": [
             {
-                "en": "Do you mind if I tag along to the networking event tonight?",
-                "zh": "你介意我今晚跟著去參加那個社交活動嗎？"
+                "en": "My little brother always wants to tag along when I go out with friends.",
+                "zh": "我和朋友出去時，我弟弟總是想要跟著去。"
             },
             {
-                "en": "Her younger brother always tries to tag along when she goes out with friends.",
-                "zh": "她和朋友出去時，她弟弟總是想跟著去。"
+                "en": "Mind if I tag along? I have nothing else to do today.",
+                "zh": "介意我跟著去嗎？我今天也沒什麼事做。"
             },
             {
-                "en": "I decided to tag along on the business trip to assist with the presentation.",
-                "zh": "我決定跟隨去出差，以協助進行簡報。"
+                "en": "She tagged along with us to the cinema, even though she wasn't invited.",
+                "zh": "儘管沒被邀請，她還是跟著我們一起去電影院了。"
             },
             {
-                "en": "He let the intern tag along to observe how client meetings are conducted.",
-                "zh": "他讓實習生跟隨旁觀，以觀察如何進行客戶會議。"
+                "en": "He decided to tag along when we went grocery shopping.",
+                "zh": "當我們去買日常用品時，他決定跟著去。"
             },
             {
-                "en": "They are going to the trade fair, and I might just tag along to see the exhibits.",
-                "zh": "他們要去參加貿易展，我也許會跟著去看看展品。"
+                "en": "I don't mind if you tag along to the library.",
+                "zh": "我不介意你跟著去圖書館。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "tailor",
-        "meaning": "裁縫",
         "id": 53,
-        "mastered": false,
-        "sentences": [
+        "word": "tailor",
+        "part_of_speech": "n.",
+        "meaning": "裁縫",
+        "examples": [
             {
-                "en": "He took his new trousers to the tailor to have them hemmed.",
-                "zh": "他把新褲子拿到裁縫那裡去改短褲管。"
+                "en": "The tailor measured him carefully before making the suit.",
+                "zh": "裁縫師在做西裝前仔細地為他量身。"
             },
             {
-                "en": "A skilled tailor can make a suit fit perfectly on any body shape.",
-                "zh": "技術熟練的裁縫可以製作出完美貼合任何身型的西裝。"
+                "en": "She brought her torn skirt to the local tailor to be fixed.",
+                "zh": "她把破掉的裙子拿去給當地的裁縫師修補。"
             },
             {
-                "en": "We need to find a reliable tailor to alter the uniforms for our staff.",
-                "zh": "我們需要找一位可靠的裁縫來修改我們員工的制服。"
+                "en": "He is an experienced tailor who can create any style of clothing.",
+                "zh": "他是一位經驗豐富的裁縫，能製作任何款式的衣服。"
             },
             {
-                "en": "The tailor measured his shoulders carefully before cutting the expensive fabric.",
-                "zh": "在裁剪昂貴的布料之前，裁縫仔細地測量了他的肩膀。"
+                "en": "The royal tailor crafted an exquisite gown for the princess.",
+                "zh": "皇家裁縫為公主製作了一件精美的禮服。"
             },
             {
-                "en": "Her grandfather worked as a master tailor in London for over forty years.",
-                "zh": "她的祖父在倫敦擔任了四十多年的大師級裁縫。"
+                "en": "My grandfather always went to the same tailor for his trousers.",
+                "zh": "我爺爺總是去同一位裁縫那裡訂做褲子。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "tailor-made",
-        "meaning": "a. 訂做的、量身打造的",
         "id": 54,
-        "mastered": false,
-        "sentences": [
+        "word": "tailor-made",
+        "part_of_speech": "adj.",
+        "meaning": "a. 訂做的、量身打造的",
+        "examples": [
             {
-                "en": "We offer tailor-made financial solutions to meet our clients' specific needs.",
-                "zh": "我們提供量身打造的財務解決方案，以滿足客戶的特定需求。"
+                "en": "The training program was tailor-made for new employees.",
+                "zh": "這套培訓計畫是為新進員工量身打造的。"
             },
             {
-                "en": "He wore a beautiful tailor-made suit to the awards ceremony.",
-                "zh": "他穿著一套漂亮的訂做西裝出席頒獎典禮。"
+                "en": "He wore a tailor-made suit to his daughter's wedding.",
+                "zh": "他穿了一套訂製的西裝參加女兒的婚禮。"
             },
             {
-                "en": "This training program is tailor-made for newly hired mid-level managers.",
-                "zh": "這個培訓計畫是為新聘的中階主管量身打造的。"
+                "en": "The travel agency offers tailor-made tours to suit your interests.",
+                "zh": "這家旅行社提供量身打造的行程以迎合你的興趣。"
             },
             {
-                "en": "They enjoyed a tailor-made vacation package that included all their favorite activities.",
-                "zh": "他們享受了一個量身訂做的度假方案，其中包含了所有他們喜歡的活動。"
+                "en": "The software was tailor-made to meet the specific needs of our company.",
+                "zh": "這套軟體是為滿足我們公司的特定需求而量身打造的。"
             },
             {
-                "en": "The consultant provided a tailor-made strategy to improve our online sales.",
-                "zh": "顧問提供了一套量身打造的策略，以提升我們的線上銷售額。"
+                "en": "He proudly wore his newly arrived tailor-made jacket.",
+                "zh": "他驕傲地穿著剛收到的訂做夾克。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "tease",
-        "meaning": "vt. 取笑、譏諷",
         "id": 55,
-        "mastered": false,
-        "sentences": [
+        "word": "tease",
+        "part_of_speech": "v.",
+        "meaning": "vt. 取笑、譏諷",
+        "examples": [
             {
-                "en": "Colleagues would often tease him about his obsession with color-coded folders.",
-                "zh": "同事們經常取笑他對用顏色分類資料夾的執著。"
+                "en": "The kids used to tease him about his thick glasses.",
+                "zh": "孩子們以前常拿他那副厚重的眼鏡取笑他。"
             },
             {
-                "en": "Please don't tease the new employee for making a minor mistake.",
-                "zh": "請不要因為新員工犯了一個小錯誤就取笑他。"
+                "en": "Don't get angry, I was only teasing you.",
+                "zh": "別生氣，我只是在跟你開玩笑而已。"
             },
             {
-                "en": "She knew they were just teasing her, but she still felt a bit embarrassed.",
-                "zh": "她知道他們只是在跟她開玩笑，但她還是覺得有點尷尬。"
+                "en": "She hates being teased about her height.",
+                "zh": "她討厭別人拿她的身高來開玩笑。"
             },
             {
-                "en": "The boss likes to playfully tease the team when they exceed their targets.",
-                "zh": "當團隊超越目標時，老闆喜歡開玩笑地取笑他們。"
+                "en": "It's cruel to tease an animal that is locked in a cage.",
+                "zh": "取笑被關在籠子裡的動物是很殘忍的。"
             },
             {
-                "en": "Children shouldn't be allowed to maliciously tease their classmates.",
-                "zh": "不應允許孩子們惡意取笑他們的同學。"
+                "en": "Her older brothers would constantly tease her about her crush.",
+                "zh": "她的哥哥們經常拿她暗戀的對象來取笑她。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "tender",
-        "meaning": "a. 溫柔的, a. (肉質) 軟嫩",
         "id": 56,
-        "mastered": false,
-        "sentences": [
+        "word": "tender",
+        "part_of_speech": "adj.",
+        "meaning": "a. 溫柔的, a. (肉質) 軟嫩",
+        "examples": [
             {
-                "en": "The steak was so tender that it practically melted in my mouth.",
-                "zh": "這牛排非常軟嫩，幾乎是入口即化。"
+                "en": "The steak was so tender that it melted in my mouth.",
+                "zh": "這塊牛排非常軟嫩，入口即化。"
             },
             {
-                "en": "He sent a tender message to his wife on their tenth anniversary.",
-                "zh": "在他們十週年紀念日，他傳了一則溫柔的訊息給妻子。"
+                "en": "He kissed his wife on the forehead with tender affection.",
+                "zh": "他滿懷溫柔愛意地親吻了妻子的額頭。"
             },
             {
-                "en": "Cook the chicken slowly on low heat to ensure it remains tender and juicy.",
-                "zh": "用小火慢煮雞肉，以確保它保持軟嫩多汁。"
+                "en": "She has a tender heart and often helps those in need.",
+                "zh": "她有一顆柔軟的心，經常幫助有需要的人。"
             },
             {
-                "en": "The CEO surprised everyone with his tender response to the tragedy.",
-                "zh": "執行長對這場悲劇的溫柔回應讓每個人都感到驚訝。"
+                "en": "The chicken was slow-cooked until it became perfectly tender.",
+                "zh": "雞肉經過慢火燉煮，直到變得非常軟嫩。"
             },
             {
-                "en": "She had a tender heart and often volunteered at the local animal shelter.",
-                "zh": "她有一顆溫柔的心，經常在當地的動物收容所做義工。"
+                "en": "He sang a tender lullaby to help his daughter fall asleep.",
+                "zh": "他唱了一首溫柔的搖籃曲，哄女兒入睡。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "tenderness",
-        "meaning": "n. 溫柔、(肉質) 軟嫩",
         "id": 57,
-        "mastered": false,
-        "sentences": [
+        "word": "tenderness",
+        "part_of_speech": "n.",
+        "meaning": "n. 溫柔、(肉質) 軟嫩",
+        "examples": [
             {
-                "en": "The chef marinated the beef overnight to maximize its tenderness.",
-                "zh": "主廚將牛肉醃製過夜以使其達到最軟嫩的狀態。"
+                "en": "The chef demonstrated how to achieve the perfect tenderness of the meat.",
+                "zh": "主廚示範了如何讓肉質達到完美的軟嫩度。"
             },
             {
-                "en": "She spoke with such tenderness that it calmed the nervous applicant immediately.",
-                "zh": "她說話時帶著無比的溫柔，立刻安撫了緊張的求職者。"
+                "en": "He looked at his newborn baby with extreme tenderness.",
+                "zh": "他用極其溫柔的目光看著剛出生的寶寶。"
             },
             {
-                "en": "The restaurant is renowned for the remarkable tenderness of its lamb chops.",
-                "zh": "這家餐廳以其羊排令人驚豔的軟嫩度而聞名。"
+                "en": "She spoke to the frightened puppy with great tenderness.",
+                "zh": "她非常溫柔地對著那隻受驚的小狗說話。"
             },
             {
-                "en": "His actions demonstrated a surprising tenderness toward his elderly parents.",
-                "zh": "他的行為表現出對年邁父母令人驚訝的溫柔。"
+                "en": "She was touched by the unexpected tenderness in his voice.",
+                "zh": "他聲音中出乎意料的溫柔讓她很感動。"
             },
             {
-                "en": "We test the meat's tenderness using specialized culinary equipment.",
-                "zh": "我們使用專門的烹飪設備來測試肉的軟嫩度。"
+                "en": "The tenderness of this roasted beef is simply unbelievable.",
+                "zh": "這塊烤牛肉的軟嫩度簡直令人難以置信。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "tough",
-        "meaning": "a. (肉) 硬的, a. 困難的, a. 不屈的、強硬的",
         "id": 58,
-        "mastered": false,
-        "sentences": [
+        "word": "tough",
+        "part_of_speech": "adj.",
+        "meaning": "a. (肉) 硬的, a. 困難的, a. 不屈的、強硬的",
+        "examples": [
             {
-                "en": "It was a tough decision to close down the underperforming branch.",
-                "zh": "關閉表現不佳的分公司是一個艱難的決定。"
+                "en": "The meat was so tough that I could barely chew it.",
+                "zh": "這肉太硬了，我幾乎咬不動。"
             },
             {
-                "en": "The meat was overcooked and far too tough to chew properly.",
-                "zh": "這塊肉煮得太老了，硬得無法好好咀嚼。"
+                "en": "It was a tough decision to leave my hometown and move abroad.",
+                "zh": "離開家鄉搬到國外是個艱難的決定。"
             },
             {
-                "en": "Our new manager is known for being a tough negotiator in contract discussions.",
-                "zh": "我們的新經理在合約討論中以作風強硬的談判專家而聞名。"
+                "en": "The coach has a tough attitude during training sessions.",
+                "zh": "教練在訓練期間態度非常強硬。"
             },
             {
-                "en": "Despite the tough market conditions, the startup managed to secure funding.",
-                "zh": "儘管市場環境艱困，這家新創公司仍設法獲得了資金。"
+                "en": "Surviving in the desert requires a tough mindset and preparation.",
+                "zh": "在沙漠中生存需要堅強的心智和準備。"
             },
             {
-                "en": "She has had a tough year, but her resilience helped her pull through.",
-                "zh": "她度過了艱難的一年，但她的韌性幫助她度過了難關。"
+                "en": "The boss is known for his tough negotiation skills.",
+                "zh": "這位老闆以他強硬的談判技巧聞名。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "tutor",
-        "meaning": "n. 家教, vt. 擔任家教、(個別) 指導",
         "id": 59,
-        "mastered": false,
-        "sentences": [
+        "word": "tutor",
+        "part_of_speech": "n., v.",
+        "meaning": "n. 家教, vt. 擔任家教、(個別) 指導",
+        "examples": [
             {
-                "en": "They hired a private tutor to help their son improve his math grades.",
-                "zh": "他們請了一位私人英家教來幫助他們的兒子提高數學成績。"
+                "en": "They hired a private tutor to help their son with his math homework.",
+                "zh": "他們請了一位私人圖家教來幫兒子輔導數學作業。"
             },
             {
-                "en": "She used to tutor college students in economics during her free time.",
-                "zh": "她過去常在空閒時間擔任大學生的經濟學家教。"
+                "en": "She tutors high school students in chemistry every weekend.",
+                "zh": "她每個週末都指導高中生化學。"
             },
             {
-                "en": "The online platform connects freelance tutors with students worldwide.",
-                "zh": "這個線上平台將自由接案的家教與世界各地的學生聯繫起來。"
+                "en": "Working as a tutor is a good way for college students to earn money.",
+                "zh": "當家教是大學生賺錢的好方法。"
             },
             {
-                "en": "He tutored the new recruit on how to operate the complicated machinery.",
-                "zh": "他親自指導新進員工如何操作這台複雜的機器。"
+                "en": "His former math tutor helped him pass the difficult entrance exam.",
+                "zh": "他的前數學家教幫他通過了困難的入學考試。"
             },
             {
-                "en": "Becoming a language tutor is a great way to earn extra income on weekends.",
-                "zh": "成為語言家教是在週末賺取額外收入的好方法。"
+                "en": "She volunteers to tutor disadvantaged children in the community.",
+                "zh": "她自願為社區裡的弱勢兒童提供個別指導。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "uncountable",
-        "meaning": "a. 不可數的",
         "id": 60,
-        "mastered": false,
-        "sentences": [
+        "word": "uncountable",
+        "part_of_speech": "adj.",
+        "meaning": "a. 不可數的",
+        "examples": [
             {
-                "en": "In English grammar, words like 'water' and 'information' are uncountable nouns.",
-                "zh": "在英語文法中，像「水」和「資訊」這樣的詞是不可數名詞。"
+                "en": "Water is an uncountable noun in English grammar.",
+                "zh": "在英文文法中，「水」是一個不可數名詞。"
             },
             {
-                "en": "The universe contains an almost uncountable number of stars.",
-                "zh": "宇宙包含了幾乎數不清的星星。"
+                "en": "You should use 'much' instead of 'many' with uncountable nouns.",
+                "zh": "你應該將 'much' 而非 'many' 與不可數名詞連用。"
             },
             {
-                "en": "She has made uncountable contributions to the success of this charity.",
-                "zh": "她為這個慈善機構的成功做出了不可勝數的貢獻。"
+                "en": "Abstract concepts like happiness are usually uncountable.",
+                "zh": "像幸福這樣抽象的概念通常是不可數的。"
             },
             {
-                "en": "Please note that 'furniture' is considered uncountable and does not take an 's'.",
-                "zh": "請注意，「家具」被視為不可數，因此不加 's'。"
+                "en": "The concept of 'information' is considered an uncountable noun.",
+                "zh": "「資訊」這個概念被視為不可數名詞。"
             },
             {
-                "en": "There are uncountable reasons why we should invest in renewable energy.",
-                "zh": "我們應該投資再生能源的原因多得數不清。"
+                "en": "Words like 'music' and 'love' are usually uncountable.",
+                "zh": "像「音樂」和「愛」這樣的詞彙通常是不可數的。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "wax",
-        "meaning": "n. 蠟, vt. 塗、打蠟, vt. 熱蠟除毛",
         "id": 61,
-        "mastered": false,
-        "sentences": [
+        "word": "wax",
+        "part_of_speech": "n., v.",
+        "meaning": "n. 蠟, vt. 塗、打蠟, vt. 熱蠟除毛",
+        "examples": [
             {
-                "en": "We need to wax the conference room floor before the executives arrive.",
-                "zh": "我們需要在高層抵達之前為會議室的地板打蠟。"
+                "en": "The candle is made of natural beeswax.",
+                "zh": "這根蠟燭是由天然蜂蠟製成的。"
             },
             {
-                "en": "The artisan used high-quality beeswax to make these scented candles.",
-                "zh": "工匠使用高品質的蜂蠟來製作這些香氛蠟燭。"
+                "en": "He spent the afternoon washing and waxing his car.",
+                "zh": "他花了一個下午洗車並為車子打蠟。"
             },
             {
-                "en": "She went to the salon to get her legs waxed before the beach holiday.",
-                "zh": "在去海灘度假之前，她去了美容院做腿部熱蠟除毛。"
+                "en": "She went to the salon to get her legs waxed before the beach trip.",
+                "zh": "去海灘旅行前，她去美容院做了腿部熱蠟除毛。"
             },
             {
-                "en": "Applying a layer of wax will protect your car's paint from the elements.",
-                "zh": "塗上一層蠟可以保護你的車漆免受天氣因素的影響。"
+                "en": "The floor was shining brightly after the janitor waxed it.",
+                "zh": "工友打蠟後，地板閃閃發亮。"
             },
             {
-                "en": "The museum features incredibly realistic figures made entirely out of wax.",
-                "zh": "這家博物館展出完全由蠟製成的、極其逼真的人物模型。"
+                "en": "She dripped some hot wax to seal the envelope completely.",
+                "zh": "她滴了一些熱蠟將信封完全封住。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "weed",
-        "meaning": "n. 雜草, vi./vt. 除草, vt. 剔除、淘汰",
         "id": 62,
-        "mastered": false,
-        "sentences": [
+        "word": "weed",
+        "part_of_speech": "n., v.",
+        "meaning": "n. 雜草, vi./vt. 除草, vt. 剔除、淘汰",
+        "examples": [
             {
-                "en": "We need to weed out the unqualified candidates during the first interview round.",
-                "zh": "我們需要在第一輪面試時淘汰掉不合格的候選人。"
+                "en": "My grandfather spends hours pulling out weeds in his garden.",
+                "zh": "我爺爺花好幾個小時在花園裡拔雜草。"
             },
             {
-                "en": "He spent the entire Saturday morning weeding his vegetable garden.",
-                "zh": "他花了整個星期六早上在他的菜園裡除草。"
+                "en": "It's hard work weeding the flower beds under the hot sun.",
+                "zh": "在烈日下為花床除草是件苦差事。"
             },
             {
-                "en": "The gardener applied a safe chemical to prevent weeds from growing on the lawn.",
-                "zh": "園丁施用了一種安全的化學物質來防止草坪上長出雜草。"
+                "en": "The company decided to weed out the poorly performing branches.",
+                "zh": "這家公司決定淘汰表現不佳的分公司。"
             },
             {
-                "en": "It is essential to weed through the incoming emails to find the urgent ones.",
-                "zh": "仔細篩選收到的電子郵件以找出緊急的郵件是必要的。"
+                "en": "The strict exam is designed to weed out unqualified applicants.",
+                "zh": "這項嚴格的考試旨在淘汰不合格的申請者。"
             },
             {
-                "en": "These invasive weeds are destroying the native plants in the local park.",
-                "zh": "這些入侵的雜草正在破壞當地公園裡的原生植物。"
+                "en": "The garden is overgrown with weeds and needs a lot of work.",
+                "zh": "花園裡長滿了雜草，需要花很多功夫整理。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "wheat",
-        "meaning": "n. 小麥",
         "id": 63,
-        "mastered": false,
-        "sentences": [
+        "word": "wheat",
+        "part_of_speech": "n.",
+        "meaning": "n. 小麥",
+        "examples": [
             {
-                "en": "The price of wheat has increased significantly due to the recent droughts.",
-                "zh": "由於近期的乾旱，小麥價格大幅上漲。"
+                "en": "The farmers are busy harvesting wheat in the fields.",
+                "zh": "農民們正忙著在田裡收割小麥。"
             },
             {
-                "en": "Our bakery prides itself on using only organic whole wheat flour.",
-                "zh": "我們麵包店引以為豪的是只使用有機全麥麵粉。"
+                "en": "Most bread is made from wheat flour.",
+                "zh": "大多數的麵包都是用小麥麵粉製成的。"
             },
             {
-                "en": "The country is one of the world's leading exporters of corn and wheat.",
-                "zh": "該國是世界上主要的玉米和小麥出口國之一。"
+                "en": "A golden sea of wheat waved in the wind.",
+                "zh": "金黃色的小麥海在風中搖曳。"
             },
             {
-                "en": "They harvested the golden wheat fields just before the heavy rains started.",
-                "zh": "他們在大雨開始前收割了金黃色的小麥田。"
+                "en": "Whole wheat bread is generally considered healthier than white bread.",
+                "zh": "全麥麵包通常被認為比白麵包更健康。"
             },
             {
-                "en": "Many people with celiac disease must avoid products containing wheat.",
-                "zh": "許多患有乳糜瀉的人必須避免食用含有小麥的產品。"
+                "en": "The local economy relies heavily on the production of wheat.",
+                "zh": "當地經濟嚴重依賴小麥的生產。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "whistle",
-        "meaning": "n. 口哨, n. 哨子, vi./vt. 吹口哨, vi./vt. 吹哨子",
         "id": 64,
-        "mastered": false,
-        "sentences": [
+        "word": "whistle",
+        "part_of_speech": "n., v.",
+        "meaning": "n. 口哨, n. 哨子, vi./vt. 吹口哨, vi./vt. 吹哨子",
+        "examples": [
             {
-                "en": "The factory supervisor blew his whistle to signal the end of the shift.",
-                "zh": "工廠主管吹響了哨子，示意換班結束。"
+                "en": "The referee blew his whistle to indicate a foul.",
+                "zh": "裁判吹響哨子示意犯規。"
             },
             {
-                "en": "He likes to whistle a cheerful tune while he walks to the office.",
-                "zh": "他喜歡在走向辦公室時吹著歡快的口哨。"
+                "en": "He walked down the street whistling a happy tune.",
+                "zh": "他吹著快樂的口哨走在街上。"
             },
             {
-                "en": "The referee blew the whistle and awarded a penalty kick to the home team.",
-                "zh": "裁判吹響哨子，判給主隊一個十二碼罰球。"
+                "en": "The train gave a loud whistle as it approached the station.",
+                "zh": "火車進站時發出了一聲響亮的汽笛聲。"
             },
             {
-                "en": "You can hear the train whistle blowing from miles away in this quiet town.",
-                "zh": "在這個安靜的小鎮裡，你可以在幾英里外聽到火車的鳴笛聲。"
+                "en": "The guard blew his whistle to warn the approaching hikers.",
+                "zh": "守衛吹響哨子警告正在靠近的登山客。"
             },
             {
-                "en": "She learned how to whistle loudly using two fingers to hail a cab.",
-                "zh": "她學會了如何用兩根手指大聲吹口哨來叫計程車。"
+                "en": "She taught her little brother how to whistle using his fingers.",
+                "zh": "她教她弟弟如何用手指吹口哨。"
             }
         ]
     },
     {
-        "unit": 19,
-        "word": "wicked",
-        "meaning": "a. 邪惡的",
         "id": 65,
-        "mastered": false,
-        "sentences": [
+        "word": "wicked",
+        "part_of_speech": "adj.",
+        "meaning": "a. 邪惡的",
+        "examples": [
             {
-                "en": "The novel's antagonist is a wicked corporate executive trying to steal the patent.",
-                "zh": "這部小說的反派是一個試圖竊取專利的邪惡企業高層。"
+                "en": "The wicked witch cast a spell on the innocent princess.",
+                "zh": "邪惡的女巫對無辜的公主施了咒語。"
             },
             {
-                "en": "She gave him a wicked grin before revealing her brilliant marketing strategy.",
-                "zh": "在透露她出色的行銷策略之前，她對他露出了一個淘氣的笑容。"
+                "en": "He had a wicked scheme to steal the company's money.",
+                "zh": "他有一個偷取公司資金的邪惡陰謀。"
             },
             {
-                "en": "The villagers believed the old abandoned castle was cursed by a wicked witch.",
-                "zh": "村民們相信那座廢棄的古堡被一個邪惡的女巫詛咒了。"
+                "en": "She gave me a wicked smile before walking away.",
+                "zh": "她走開前給了我一個不懷好意的微笑。"
             },
             {
-                "en": "They had a wicked sense of humor that kept the team laughing during stressful times.",
-                "zh": "他們有一種促狹的幽默感，讓團隊在充滿壓力的時期也能開懷大笑。"
+                "en": "The knight fought bravely to defeat the wicked dragon.",
+                "zh": "騎士英勇奮戰以打敗邪惡的龍。"
             },
             {
-                "en": "It was considered a wicked act to betray your business partners for personal gain.",
-                "zh": "為了個人利益而出賣商業夥伴被視為一種邪惡的行為。"
+                "en": "Spreading such false rumors is a truly wicked thing to do.",
+                "zh": "散布這樣的虛假謠言真是一件邪惡的事。"
             }
         ]
     }

@@ -2,8 +2,8 @@
     {
         "id": 1,
         "word": "a ray of",
+        "part_of_speech": "phrase",
         "meaning": "一絲、一線",
-        "mastered": false,
         "examples": [
             {
                 "en": "The successful marketing campaign offered a ray of hope for the company's financial recovery.",
@@ -30,8 +30,8 @@
     {
         "id": 2,
         "word": "alley",
+        "part_of_speech": "n.",
         "meaning": "巷子",
-        "mastered": false,
         "examples": [
             {
                 "en": "The delivery truck had to back slowly into the narrow alley behind the warehouse.",
@@ -58,8 +58,8 @@
     {
         "id": 3,
         "word": "awake",
+        "part_of_speech": "adj., v.",
         "meaning": "醒著的；醒來；喚醒（用於比喻的意思）",
-        "mastered": false,
         "examples": [
             {
                 "en": "The constant ringing of the customer service phone kept the night shift staff awake.",
@@ -86,8 +86,8 @@
     {
         "id": 4,
         "word": "awake to sth.",
+        "part_of_speech": "phrase",
         "meaning": "察覺、醒悟到某事",
-        "mastered": false,
         "examples": [
             {
                 "en": "The company finally awoke to the reality that their business model was outdated.",
@@ -114,8 +114,8 @@
     {
         "id": 5,
         "word": "awaken",
+        "part_of_speech": "v.",
         "meaning": "醒來；喚醒",
-        "mastered": false,
         "examples": [
             {
                 "en": "The innovative proposal awakened a sense of creativity among the design team.",
@@ -142,8 +142,8 @@
     {
         "id": 6,
         "word": "bacteria",
+        "part_of_speech": "n.",
         "meaning": "細菌",
-        "mastered": false,
         "examples": [
             {
                 "en": "The food processing plant uses strict sanitation measures to prevent bacteria growth.",
@@ -170,8 +170,8 @@
     {
         "id": 7,
         "word": "bait",
+        "part_of_speech": "n., v.",
         "meaning": "餌；逗弄使某人生氣；引誘",
-        "mastered": false,
         "examples": [
             {
                 "en": "The retailer used a massive discount as bait to attract new customers.",
@@ -198,8 +198,8 @@
     {
         "id": 8,
         "word": "beast",
+        "part_of_speech": "n.",
         "meaning": "野獸（大型獸類）",
-        "mastered": false,
         "examples": [
             {
                 "en": "Managing this massive multinational project can sometimes feel like taming a wild beast.",
@@ -226,8 +226,8 @@
     {
         "id": 9,
         "word": "berry",
+        "part_of_speech": "n.",
         "meaning": "莓果類、漿果",
-        "mastered": false,
         "examples": [
             {
                 "en": "The local farm supplies fresh berries to several high-end restaurants in the city.",
@@ -254,8 +254,8 @@
     {
         "id": 10,
         "word": "blueberry",
+        "part_of_speech": "n.",
         "meaning": "藍莓",
-        "mastered": false,
         "examples": [
             {
                 "en": "The bakery's signature blueberry muffins are always the first to sell out every morning.",
@@ -282,8 +282,8 @@
     {
         "id": 11,
         "word": "brake",
+        "part_of_speech": "n., v.",
         "meaning": "煞車",
-        "mastered": false,
         "examples": [
             {
                 "en": "The driver had to slam on the brakes to avoid hitting the delivery cart.",
@@ -310,8 +310,8 @@
     {
         "id": 12,
         "word": "bud",
+        "part_of_speech": "n., v.",
         "meaning": "嫩芽、花苞、蓓蕾；萌芽、開始發展",
-        "mastered": false,
         "examples": [
             {
                 "en": "The project is still in the bud, but it shows tremendous potential for the future.",
@@ -338,8 +338,8 @@
     {
         "id": 13,
         "word": "budding",
+        "part_of_speech": "adj.",
         "meaning": "剛萌芽、剛開始發展的",
-        "mastered": false,
         "examples": [
             {
                 "en": "The venture capital firm is looking to invest in budding technology startups.",
@@ -366,8 +366,8 @@
     {
         "id": 14,
         "word": "buffet",
+        "part_of_speech": "n.",
         "meaning": "(吃到飽的) 歐式自助餐",
-        "mastered": false,
         "examples": [
             {
                 "en": "The hotel offers a complimentary breakfast buffet for all of its corporate guests.",
@@ -394,8 +394,8 @@
     {
         "id": 15,
         "word": "bump",
+        "part_of_speech": "v., n.",
         "meaning": "撞擊；腫塊；路面的突起；撞到",
-        "mastered": false,
         "examples": [
             {
                 "en": "Sales saw a slight bump after we launched the holiday promotional campaign.",
@@ -422,8 +422,8 @@
     {
         "id": 16,
         "word": "bump into",
+        "part_of_speech": "phrase",
         "meaning": "碰到、不期而遇",
-        "mastered": false,
         "examples": [
             {
                 "en": "I was surprised to bump into our former CEO at the industry conference in London.",
@@ -450,8 +450,8 @@
     {
         "id": 17,
         "word": "cafeteria",
+        "part_of_speech": "n.",
         "meaning": "(自助後計價的) 自助餐廳",
-        "mastered": false,
         "examples": [
             {
                 "en": "The newly renovated company cafeteria offers healthier meal options for employees.",
@@ -478,8 +478,8 @@
     {
         "id": 18,
         "word": "carpenter",
+        "part_of_speech": "n.",
         "meaning": "木匠",
-        "mastered": false,
         "examples": [
             {
                 "en": "We hired a skilled carpenter to build custom wooden shelves for the new office.",
@@ -506,8 +506,8 @@
     {
         "id": 19,
         "word": "chat",
+        "part_of_speech": "v., n.",
         "meaning": "閒聊、聊天；閒談",
-        "mastered": false,
         "examples": [
             {
                 "en": "The colleagues had a quick chat by the water cooler about the upcoming holiday.",
@@ -534,8 +534,8 @@
     {
         "id": 20,
         "word": "cheer",
+        "part_of_speech": "v., n.",
         "meaning": "使高興、鼓舞；歡呼、為～加油；喝采；乾杯 (敬酒時說的話)",
-        "mastered": false,
         "examples": [
             {
                 "en": "The unexpected year-end bonus really cheered up the entire sales department.",
@@ -562,8 +562,8 @@
     {
         "id": 21,
         "word": "cheerful",
+        "part_of_speech": "adj.",
         "meaning": "愉快的；令人愉快的",
-        "mastered": false,
         "examples": [
             {
                 "en": "The receptionist always greets incoming clients with a bright and cheerful smile.",
@@ -590,8 +590,8 @@
     {
         "id": 22,
         "word": "cherry",
+        "part_of_speech": "n., adj.",
         "meaning": "櫻桃；櫻桃口味的；櫻桃木的",
-        "mastered": false,
         "examples": [
             {
                 "en": "The newly installed conference table is made of solid cherry wood.",
@@ -618,8 +618,8 @@
     {
         "id": 23,
         "word": "cherry blossom",
+        "part_of_speech": "n.",
         "meaning": "櫻花",
-        "mastered": false,
         "examples": [
             {
                 "en": "The tourism board is promoting a travel package for the upcoming cherry blossom season.",
@@ -646,8 +646,8 @@
     {
         "id": 24,
         "word": "china",
+        "part_of_speech": "n.",
         "meaning": "瓷器",
-        "mastered": false,
         "examples": [
             {
                 "en": "The upscale restaurant uses fine bone china to serve its VIP guests.",
@@ -674,8 +674,8 @@
     {
         "id": 25,
         "word": "chip",
+        "part_of_speech": "n., v.",
         "meaning": "渣、屑、碎片；晶片；薄片；切下或打掉一小片",
-        "mastered": false,
         "examples": [
             {
                 "en": "The global shortage of semiconductor chips has severely impacted automobile production.",
@@ -702,8 +702,8 @@
     {
         "id": 26,
         "word": "chop",
+        "part_of_speech": "v., n.",
         "meaning": "劈、砍、剁（碎）；帶骨的肉排；砍、劈",
-        "mastered": false,
         "examples": [
             {
                 "en": "The management was forced to chop the marketing budget by 20% due to declining revenue.",
@@ -730,8 +730,8 @@
     {
         "id": 27,
         "word": "circus",
+        "part_of_speech": "n.",
         "meaning": "馬戲團",
-        "mastered": false,
         "examples": [
             {
                 "en": "Organizing the international trade show felt like managing a chaotic circus.",
@@ -758,8 +758,8 @@
     {
         "id": 28,
         "word": "clinic",
+        "part_of_speech": "n.",
         "meaning": "診所；臨床教學",
-        "mastered": false,
         "examples": [
             {
                 "en": "The company provides a free on-site health clinic for all its full-time employees.",
@@ -786,8 +786,8 @@
     {
         "id": 29,
         "word": "clown",
+        "part_of_speech": "n., v.",
         "meaning": "小丑；扮小丑、搞笑",
-        "mastered": false,
         "examples": [
             {
                 "en": "He is always clowning around in the office, which sometimes distracts his colleagues.",
@@ -814,8 +814,8 @@
     {
         "id": 30,
         "word": "constant",
+        "part_of_speech": "adj., n.",
         "meaning": "持續的、經常的；恆定、永恆不變的事物；常數",
-        "mastered": false,
         "examples": [
             {
                 "en": "The server requires constant monitoring to ensure the website does not crash during peak hours.",
@@ -842,8 +842,8 @@
     {
         "id": 31,
         "word": "constantly",
+        "part_of_speech": "unknown",
         "meaning": "持續地、經常地",
-        "mastered": false,
         "examples": [
             {
                 "en": "The digital landscape is constantly evolving, requiring marketers to adapt quickly.",
@@ -870,8 +870,8 @@
     {
         "id": 32,
         "word": "cradle",
+        "part_of_speech": "unknown",
         "meaning": "搖籃；溫柔地抱著；孕育地、發源地",
-        "mastered": false,
         "examples": [
             {
                 "en": "Silicon Valley is widely considered the cradle of modern technological innovation.",
@@ -898,8 +898,8 @@
     {
         "id": 33,
         "word": "cranberry",
+        "part_of_speech": "unknown",
         "meaning": "蔓越莓",
-        "mastered": false,
         "examples": [
             {
                 "en": "Our beverage division launched a new line of cranberry juices infused with vitamins.",
@@ -926,8 +926,8 @@
     {
         "id": 34,
         "word": "dairy",
+        "part_of_speech": "unknown",
         "meaning": "酪農場；乳製品販賣店",
-        "mastered": false,
         "examples": [
             {
                 "en": "The local dairy supplies fresh milk to all the coffee shops in the downtown area.",
@@ -954,8 +954,8 @@
     {
         "id": 35,
         "word": "dairy product",
+        "part_of_speech": "unknown",
         "meaning": "乳製品",
-        "mastered": false,
         "examples": [
             {
                 "en": "Due to a rise in lactose intolerance, sales of traditional dairy products have slightly declined.",
@@ -980,7 +980,10 @@
         ]
     },
     {
+        "id": 36,
         "word": "dam",
+        "part_of_speech": "unknown",
+        "meaning": "水壩",
         "examples": [
             {
                 "en": "The government is funding the construction of a new dam to secure the region's water supply.",
@@ -1002,11 +1005,13 @@
                 "en": "The manager's patient tone helped to dam the rising panic among the team members.",
                 "zh": "經理耐心的語氣有助於壓制團隊成員中不斷上升的恐慌情緒。"
             }
-        ],
-        "id": 36
+        ]
     },
     {
+        "id": 37,
         "word": "darling",
+        "part_of_speech": "unknown",
+        "meaning": "親愛的；心愛的人",
         "examples": [
             {
                 "en": "The innovative startup has quickly become the darling of venture capitalists in Silicon Valley.",
@@ -1028,11 +1033,13 @@
                 "en": "The CEO's new pet project is her absolute darling, receiving the majority of the research budget.",
                 "zh": "執行長的新企劃是她的絕對心頭好，獲得了大部分的研究預算。"
             }
-        ],
-        "id": 37
+        ]
     },
     {
+        "id": 38,
         "word": "deepen",
+        "part_of_speech": "unknown",
+        "meaning": "加深；使變深",
         "examples": [
             {
                 "en": "The economic recession continues to deepen, causing widespread anxiety in the market.",
@@ -1054,11 +1061,13 @@
                 "en": "The company's commitment to sustainability will deepen its positive brand image.",
                 "zh": "公司對永續發展的承諾將加深其正面的品牌形象。"
             }
-        ],
-        "id": 38
+        ]
     },
     {
+        "id": 39,
         "word": "depth",
+        "part_of_speech": "unknown",
+        "meaning": "深度；深處",
         "examples": [
             {
                 "en": "The candidate's impressive depth of knowledge in marketing strategy secured him the executive position.",
@@ -1080,11 +1089,13 @@
                 "en": "The investors were concerned about the sudden drop, but they underestimated the depth of the market's resilience.",
                 "zh": "投資者對突然的下跌感到擔憂，但他們低估了市場韌性的深度。"
             }
-        ],
-        "id": 39
+        ]
     },
     {
+        "id": 40,
         "word": "dime",
+        "part_of_speech": "unknown",
+        "meaning": "一角硬幣",
         "examples": [
             {
                 "en": "In today's competitive job market, experienced software engineers are not a dime a dozen.",
@@ -1106,11 +1117,13 @@
                 "en": "The consultant claimed he could increase our profits, but we haven't seen a dime of improvement yet.",
                 "zh": "顧問聲稱他能增加我們的利潤，但我們還沒有看到一絲一毫的改善。"
             }
-        ],
-        "id": 40
+        ]
     },
     {
+        "id": 41,
         "word": "dip",
+        "part_of_speech": "unknown",
+        "meaning": "浸；泡；下降",
         "examples": [
             {
                 "en": "Sales of winter apparel usually dip significantly during the summer months.",
@@ -1132,11 +1145,13 @@
                 "en": "Let's dip into our contingency fund to cover these unexpected maintenance costs.",
                 "zh": "我們動用應急基金來支付這些預期外的維修費用吧。"
             }
-        ],
-        "id": 41
+        ]
     },
     {
+        "id": 42,
         "word": "ditch",
+        "part_of_speech": "unknown",
+        "meaning": "水溝；溝渠",
         "examples": [
             {
                 "en": "The company decided to ditch its outdated software system in favor of a modern cloud-based solution.",
@@ -1158,11 +1173,13 @@
                 "en": "He had to ditch his original presentation and improvise when the projector stopped working.",
                 "zh": "當投影機故障時，他不得不放棄原來的簡報並即興發揮。"
             }
-        ],
-        "id": 42
+        ]
     },
     {
+        "id": 43,
         "word": "dock",
+        "part_of_speech": "unknown",
+        "meaning": "碼頭；船塢",
         "examples": [
             {
                 "en": "The cargo ship is scheduled to dock at terminal 4 early tomorrow morning.",
@@ -1184,11 +1201,13 @@
                 "en": "Once the space shuttle docks with the international space station, the astronauts can begin transferring supplies.",
                 "zh": "一旦太空梭與國際太空站對接，太空人就可以開始轉移物資。"
             }
-        ],
-        "id": 43
+        ]
     },
     {
+        "id": 44,
         "word": "drain",
+        "part_of_speech": "unknown",
+        "meaning": "消耗；排水；排水管；流失",
         "examples": [
             {
                 "en": "The persistent overtime work has completely drained the marketing team of their creativity.",
@@ -1210,11 +1229,13 @@
                 "en": "You must wash the fresh produce thoroughly and let it drain before packing.",
                 "zh": "你必須徹底清洗新鮮農產品，並讓其流乾水分後再包裝。"
             }
-        ],
-        "id": 44
+        ]
     },
     {
+        "id": 45,
         "word": "dump",
+        "part_of_speech": "unknown",
+        "meaning": "傾倒；丟棄；垃圾場",
         "examples": [
             {
                 "en": "It is strictly illegal for factories to dump hazardous chemical waste into the nearby river.",
@@ -1236,11 +1257,13 @@
                 "en": "I can't believe he would just dump all this extra paperwork on my desk without asking.",
                 "zh": "我不敢相信他居然沒問一聲就把所有這些額外的文書工作丟在我的桌上。"
             }
-        ],
-        "id": 45
+        ]
     },
     {
+        "id": 46,
         "word": "envy",
+        "part_of_speech": "unknown",
+        "meaning": "羨慕；嫉妒",
         "examples": [
             {
                 "en": "Her seamless presentation skills were the envy of all her colleagues in the sales department.",
@@ -1262,11 +1285,13 @@
                 "en": "I don't envy the manager who has to announce the upcoming round of layoffs.",
                 "zh": "我一點也不羨慕那位必須宣布即將到來的一輪裁員的經理。"
             }
-        ],
-        "id": 46
+        ]
     },
     {
+        "id": 47,
         "word": "go down the drain",
+        "part_of_speech": "unknown",
+        "meaning": "付諸東流；化為泡影",
         "examples": [
             {
                 "en": "If we don't secure this contract, all our hard work over the past six months will go down the drain.",
@@ -1288,11 +1313,13 @@
                 "en": "I refuse to let this golden opportunity go down the drain because of a minor administrative error.",
                 "zh": "我拒絕讓這個千載難逢的機會因為一個小小的行政錯誤而白費。"
             }
-        ],
-        "id": 47
+        ]
     },
     {
+        "id": 48,
         "word": "gossip",
+        "part_of_speech": "unknown",
+        "meaning": "八卦；閒聊；流言蜚語",
         "examples": [
             {
                 "en": "The HR department issued a reminder that spreading malicious office gossip is against company policy.",
@@ -1314,11 +1341,13 @@
                 "en": "They often gather by the water cooler to gossip, which occasionally affects their productivity.",
                 "zh": "他們經常聚集在飲水機旁閒聊，這偶爾會影響他們的生產力。"
             }
-        ],
-        "id": 48
+        ]
     },
     {
+        "id": 49,
         "word": "harbor",
+        "part_of_speech": "unknown",
+        "meaning": "港口；避風港；懷有(想法等)",
         "examples": [
             {
                 "en": "The natural harbor provides excellent protection for cargo ships during severe storms.",
@@ -1340,11 +1369,13 @@
                 "en": "The old warehouse near the harbor has been renovated into a trendy commercial space.",
                 "zh": "靠近港口的舊倉庫已被翻新成時尚的商業空間。"
             }
-        ],
-        "id": 49
+        ]
     },
     {
+        "id": 50,
         "word": "in bud",
+        "part_of_speech": "unknown",
+        "meaning": "發芽；含苞待放",
         "examples": [
             {
                 "en": "The cherry trees along the avenue are already in bud, signaling the arrival of early spring.",
@@ -1366,11 +1397,13 @@
                 "en": "The startup's promising technology was in bud, attracting the attention of several angel investors.",
                 "zh": "這家新創公司前景看好的技術正處於萌芽階段，吸引了幾位天使投資人的目光。"
             }
-        ],
-        "id": 50
+        ]
     },
     {
+        "id": 51,
         "word": "invent",
+        "part_of_speech": "unknown",
+        "meaning": "發明；創造；虛構",
         "examples": [
             {
                 "en": "The software engineer managed to invent a revolutionary algorithm that drastically reduces processing time.",
@@ -1392,11 +1425,13 @@
                 "en": "She hopes to invent a household device that can make daily chores much more efficient.",
                 "zh": "她希望能發明一種可以讓日常家務變得更有效率的家用設備。"
             }
-        ],
-        "id": 51
+        ]
     },
     {
+        "id": 52,
         "word": "inventor",
+        "part_of_speech": "unknown",
+        "meaning": "發明家",
         "examples": [
             {
                 "en": "The brilliant inventor holds over fifty patents in the field of renewable energy technology.",
@@ -1418,11 +1453,13 @@
                 "en": "It took the inventor several years of trial and error before perfecting the final design.",
                 "zh": "這位發明家花了幾年的時間反覆試驗，才完善了最終的設計。"
             }
-        ],
-        "id": 52
+        ]
     },
     {
+        "id": 53,
         "word": "jar",
+        "part_of_speech": "unknown",
+        "meaning": "玻璃罐；罐子",
         "examples": [
             {
                 "en": "The local artisan sells homemade organic jam packed in beautifully decorated glass jars.",
@@ -1444,11 +1481,13 @@
                 "en": "The CEO's informal attire struck a jarring contrast with the strictly formal boardroom environment.",
                 "zh": "執行長非正式的服裝與極度正式的會議室環境形成了令人不快（不和諧）的對比。"
             }
-        ],
-        "id": 53
+        ]
     },
     {
+        "id": 54,
         "word": "lane",
+        "part_of_speech": "unknown",
+        "meaning": "小路；車道；巷",
         "examples": [
             {
                 "en": "The logistics company requested drivers to use the designated truck lane to expedite deliveries.",
@@ -1470,11 +1509,13 @@
                 "en": "Life in the fast lane of corporate finance eventually took a toll on her health.",
                 "zh": "企業金融界快節奏（快車道）的生活最終損害了她的健康。"
             }
-        ],
-        "id": 54
+        ]
     },
     {
+        "id": 55,
         "word": "mulberry",
+        "part_of_speech": "unknown",
+        "meaning": "桑葚；桑樹",
         "examples": [
             {
                 "en": "The farm produces a highly sought-after organic mulberry jam that sells out quickly online.",
@@ -1496,11 +1537,13 @@
                 "en": "Historically, mulberry cultivation was essential for the thriving local silk industry.",
                 "zh": "在歷史上，桑樹的種植對於當地繁榮的絲綢工業至關重要。"
             }
-        ],
-        "id": 55
+        ]
     },
     {
+        "id": 56,
         "word": "novel",
+        "part_of_speech": "unknown",
+        "meaning": "新奇的；小說",
         "examples": [
             {
                 "en": "The research team proposed a completely novel approach to resolving the supply chain bottlenecks.",
@@ -1522,11 +1565,13 @@
                 "en": "She spent her vacation reading a fascinating science fiction novel by her favorite author.",
                 "zh": "她利用假期閱讀了她最喜歡的作家所寫的一本引人入勝的科幻小說。"
             }
-        ],
-        "id": 56
+        ]
     },
     {
+        "id": 57,
         "word": "novelist",
+        "part_of_speech": "unknown",
+        "meaning": "小說家",
         "examples": [
             {
                 "en": "The renowned novelist will be hosting a book signing event at the central library this weekend.",
@@ -1548,11 +1593,13 @@
                 "en": "Before working as an advertising copywriter, she tried making a living as a freelance novelist.",
                 "zh": "在擔任廣告文案之前，她曾嘗試以自由小說家的身分謀生。"
             }
-        ],
-        "id": 57
+        ]
     },
     {
+        "id": 58,
         "word": "novelty",
+        "part_of_speech": "unknown",
+        "meaning": "新奇；新奇的事物",
         "examples": [
             {
                 "en": "Once the novelty of the new office layout wears off, employees usually return to their old habits.",
@@ -1574,11 +1621,13 @@
                 "en": "The marketing team hopes the novelty of the interactive packaging will boost product sales.",
                 "zh": "行銷團隊希望互動式包裝的新奇感能促進產品銷售。"
             }
-        ],
-        "id": 58
+        ]
     },
     {
+        "id": 59,
         "word": "penny",
+        "part_of_speech": "unknown",
+        "meaning": "便士；分硬幣",
         "examples": [
             {
                 "en": "He promised that producing the updated software wouldn't cost the clients a single penny more.",
@@ -1600,11 +1649,13 @@
                 "en": "The charity organization is incredibly transparent about how they spend every penny donated to them.",
                 "zh": "這家慈善機構對他們如何花費捐贈給他們的每一分錢都非常透明。"
             }
-        ],
-        "id": 59
+        ]
     },
     {
+        "id": 60,
         "word": "porcelain",
+        "part_of_speech": "unknown",
+        "meaning": "瓷器；瓷製的",
         "examples": [
             {
                 "en": "The museum recently acquired a priceless collection of antique porcelain from the Ming Dynasty.",
@@ -1626,11 +1677,13 @@
                 "en": "The floor of the luxury hotel lobby was beautifully tiled with highly polished porcelain.",
                 "zh": "這家豪華酒店大廳的地板鋪設了拋光精美的瓷磚。"
             }
-        ],
-        "id": 60
+        ]
     },
     {
+        "id": 61,
         "word": "pour",
+        "part_of_speech": "unknown",
+        "meaning": "傾倒；下大雨；倒灌",
         "examples": [
             {
                 "en": "The government decided to pour millions of dollars into developing renewable energy infrastructure.",
@@ -1652,11 +1705,13 @@
                 "en": "He is willing to pour all his energy and time into making this ambitious project a success.",
                 "zh": "他願意傾注所有的精力和時間，讓這個雄心勃勃的專案取得成功。"
             }
-        ],
-        "id": 61
+        ]
     },
     {
+        "id": 62,
         "word": "quarter",
+        "part_of_speech": "unknown",
+        "meaning": "四分之一；兩角五分硬幣；季度",
         "examples": [
             {
                 "en": "The corporation reported a significant increase in net profit for the third fiscal quarter.",
@@ -1678,11 +1733,13 @@
                 "en": "In the historic quarter of the city, many traditional craft shops continue to operate.",
                 "zh": "在這個城市的歷史街區（四分之一區域），許多傳統手工藝品店仍在營運。"
             }
-        ],
-        "id": 62
+        ]
     },
     {
+        "id": 63,
         "word": "raspberry",
+        "part_of_speech": "unknown",
+        "meaning": "覆盆子",
         "examples": [
             {
                 "en": "The bakery's most popular pastry features a rich dark chocolate filling and fresh raspberry sauce.",
@@ -1704,18 +1761,20 @@
                 "en": "Our new lip balm product comes in three exciting flavors: mint, vanilla, and raspberry.",
                 "zh": "我們的新護唇膏產品有三種令人興奮的口味：薄荷、香草和覆盆子。"
             }
-        ],
-        "id": 63
+        ]
     },
     {
+        "id": 64,
         "word": "ray",
+        "part_of_speech": "unknown",
+        "meaning": "光線；射線；一絲",
         "examples": [
             {
                 "en": "The sudden increase in quarterly sales provided a ray of hope for the struggling retail company.",
                 "zh": "季度銷售額的突然增長，為這家陷入困境的零售公司提供了一線（光線）希望。"
             },
             {
-                "en": " prolonged exposure to ultraviolet rays without protection can cause severe damage to the skin.",
+                "en": "prolonged exposure to ultraviolet rays without protection can cause severe damage to the skin.",
                 "zh": "在沒有防護的情況下長時間暴露於紫外線光線中，會對皮膚造成嚴重的傷害。"
             },
             {
@@ -1730,11 +1789,13 @@
                 "en": "The newly elected mayor is seen as a ray of sunshine in an otherwise bleak political landscape.",
                 "zh": "新當選的市長被視為原本黯淡政治版圖中的一線陽光。"
             }
-        ],
-        "id": 64
+        ]
     },
     {
+        "id": 65,
         "word": "spoil",
+        "part_of_speech": "unknown",
+        "meaning": "溺愛；破壞；變質",
         "examples": [
             {
                 "en": "The widespread power outage caused all the perishable food in the supermarket freezers to spoil.",
@@ -1756,11 +1817,13 @@
                 "en": "The constant pampering from his wealthy parents threatened to spoil his work ethic completely.",
                 "zh": "他富裕父母不斷的嬌慣差點完全破壞了他的職業道德（讓他被寵壞）。"
             }
-        ],
-        "id": 65
+        ]
     },
     {
+        "id": 66,
         "word": "spoilt",
+        "part_of_speech": "unknown",
+        "meaning": "被溺愛的；被破壞的(spoil的過去式/過去分詞)",
         "examples": [
             {
                 "en": "Many critics dismissed the heir as a spoilt child who had never worked a day in his life.",
@@ -1782,11 +1845,13 @@
                 "en": "The picturesque landscape was spoilt by the construction of an ugly industrial facility.",
                 "zh": "如畫的風景被一座醜陋工業設施的建設給破壞了。"
             }
-        ],
-        "id": 66
+        ]
     },
     {
+        "id": 67,
         "word": "stick",
+        "part_of_speech": "unknown",
+        "meaning": "黏貼；堅持；棍棒；刺",
         "examples": [
             {
                 "en": "The negotiation team must stick to their initial demands regarding the pricing structure.",
@@ -1808,11 +1873,13 @@
                 "en": "He used a long wooden stick to gently push the fallen debris out of the drainage pipe.",
                 "zh": "他用一根長木棍輕輕地將掉落的碎屑推出排水管。"
             }
-        ],
-        "id": 67
+        ]
     },
     {
+        "id": 68,
         "word": "sticker",
+        "part_of_speech": "unknown",
+        "meaning": "貼紙",
         "examples": [
             {
                 "en": "All employees must display a valid parking sticker on their vehicles to access the company garage.",
@@ -1834,11 +1901,13 @@
                 "en": "The campaign organizers handed out bumper stickers to supporters to raise awareness for the cause.",
                 "zh": "活動組織者向支持者分發保險桿貼紙，以提高人們對該事業的認識。"
             }
-        ],
-        "id": 68
+        ]
     },
     {
+        "id": 69,
         "word": "sticky",
+        "part_of_speech": "unknown",
+        "meaning": "黏的；棘手的",
         "examples": [
             {
                 "en": "The spilled syrup left a sticky residue on the conference room table that was hard to clean.",
@@ -1860,11 +1929,13 @@
                 "en": "Make sure to wash your hands immediately after using that incredibly sticky industrial glue.",
                 "zh": "使用那種極度黏稠的工業膠水後，請務必立即洗手。"
             }
-        ],
-        "id": 69
+        ]
     },
     {
+        "id": 70,
         "word": "strawberry",
+        "part_of_speech": "unknown",
+        "meaning": "草莓",
         "examples": [
             {
                 "en": "The local farm allows visitors to pick fresh strawberries during the peak harvest season.",
@@ -1886,15 +1957,13 @@
                 "en": "Due to a poor harvest, the market price for organic strawberries has skyrocketed this month.",
                 "zh": "由於收成不佳，有機草莓的市場價格本月飆升。"
             }
-        ],
-        "id": 70
+        ]
     },
     {
-        "unit": 17,
-        "word": "stuff",
-        "meaning": "事物、東西（不可數）；填塞",
         "id": 71,
-        "mastered": false,
+        "word": "stuff",
+        "part_of_speech": "unknown",
+        "meaning": "事物、東西（不可數）；填塞",
         "examples": [
             {
                 "en": "Please move your stuff off the desk so we can set up the projector for the presentation.",
@@ -1919,11 +1988,10 @@
         ]
     },
     {
-        "unit": 17,
-        "word": "stuffed",
-        "meaning": "塞滿的",
         "id": 72,
-        "mastered": false,
+        "word": "stuffed",
+        "part_of_speech": "unknown",
+        "meaning": "塞滿的",
         "examples": [
             {
                 "en": "The suggestion box was completely stuffed with complaints from dissatisfied customers.",
@@ -1948,11 +2016,10 @@
         ]
     },
     {
-        "unit": 17,
-        "word": "stuffed / plush toy",
-        "meaning": "填充玩具、絨毛玩具",
         "id": 73,
-        "mastered": false,
+        "word": "stuffed / plush toy",
+        "part_of_speech": "unknown",
+        "meaning": "填充玩具、絨毛玩具",
         "examples": [
             {
                 "en": "The charity organization is collecting new stuffed toys to give to children in the hospital.",
@@ -1977,11 +2044,10 @@
         ]
     },
     {
-        "unit": 17,
-        "word": "the envy of N",
-        "meaning": "令 N 羨慕 (嫉妒) 的對象",
         "id": 74,
-        "mastered": false,
+        "word": "the envy of N",
+        "part_of_speech": "unknown",
+        "meaning": "令 N 羨慕 (嫉妒) 的對象",
         "examples": [
             {
                 "en": "Their state-of-the-art research facility has become the envy of competitors in the industry.",
@@ -2006,11 +2072,10 @@
         ]
     },
     {
-        "unit": 17,
-        "word": "x-ray",
-        "meaning": "X光",
         "id": 75,
-        "mastered": false,
+        "word": "x-ray",
+        "part_of_speech": "unknown",
+        "meaning": "X光",
         "examples": [
             {
                 "en": "All passengers must place their carry-on luggage on the conveyor belt for the x-ray machine.",

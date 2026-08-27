@@ -6,6 +6,7 @@
     <title>單字訓練營</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="js/shop_manager.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Noto Sans TC', sans-serif; }
@@ -18,7 +19,7 @@
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between">
 
     <!-- 頁首：置中集中功能列 -->
-    <header class="bg-white shadow-sm py-3 px-6 sticky top-0 z-10 flex justify-center items-center gap-3">
+    <header id="app-header" class="bg-white shadow-sm py-3 px-6 sticky top-0 z-10 flex justify-center items-center gap-3">
         <!-- 設定與模式切換 -->
         <div class="flex items-center gap-3 flex-wrap justify-center">
             <!-- 齒輪設定按鈕 -->
@@ -45,6 +46,10 @@
             <!-- 成效分析 📈 按鈕 -->
             <button id="btn-analysis" onclick="toggleAnalysisPanel()" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center" title="成效分析與歷次測驗分數">
                 <span class="text-base leading-none">📈</span>
+            </button>
+            <!-- 積分挑戰 🪙 按鈕 -->
+            <button id="btn-shop" onclick="toggleShopPanel()" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center" title="積分挑戰與商城">
+                <span class="text-base leading-none">🪙</span>
             </button>
             </div>
         </div>
@@ -200,7 +205,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260818.20</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.01</p>
             </div>
         </div>
 
@@ -289,9 +294,7 @@
                     </select>
                     <span id="current-progress" class="text-xs font-semibold text-slate-500">35</span>
                 </div>
-                <button id="btn-shuffle" class="hidden flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition" title="重新洗牌與初始化">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                </button>
+
             </div>
 
             <!-- 3D 翻轉卡片 -->
@@ -312,6 +315,7 @@
                         <div class="flex flex-col items-center my-auto w-full space-y-2.5">
                             <div class="flex items-center gap-2.5 mb-1 justify-center flex-wrap">
                                 <h2 id="card-word" class="text-3xl font-extrabold tracking-wide text-slate-800">spoil</h2>
+                                <span id="card-part-of-speech" class="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full font-bold hidden"></span>
                                 <button onclick="event.stopPropagation(); playAudio(currentWords[currentIndex].word);" class="p-1.5 bg-white/60 hover:bg-white/80 text-emerald-700 border border-emerald-200/50 rounded-full transition transform active:scale-95 flex-shrink-0" title="播放單字發音">
                                     <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                                 </button>
@@ -344,8 +348,8 @@
                         </div>
                         <div class="flex flex-col items-center my-auto w-full space-y-2.5">
                             <h2 id="card-meaning" class="text-2xl font-bold text-slate-700">破壞</h2>
-                            <div class="flex items-center gap-1.5 justify-center">
-                                <p class="text-xs font-semibold text-emerald-600" id="card-word-back">spoil</p>
+                            <div class="flex items-center gap-1.5 justify-center flex-wrap">
+                                <p class="text-xs font-semibold text-emerald-600 flex items-center gap-1" id="card-word-back-container"><span id="card-word-back">spoil</span><span id="card-part-of-speech-back" class="text-[10px] text-slate-400 font-normal"></span></p>
                                 <button onclick="event.stopPropagation(); playAudio(currentWords[currentIndex].word);" class="p-1 bg-slate-100 hover:bg-slate-200 rounded-full transition transform active:scale-95 flex-shrink-0" title="播放發音">
                                     <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                                 </button>
@@ -440,8 +444,12 @@
                 </div>
 
                 <div class="space-y-3">
-                    <input type="text" id="quiz-input" placeholder="請輸入完整英文單字..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-base focus:outline-none focus:ring-2 focus:ring-emerald-500 text-center font-bold tracking-wider" autocomplete="off">
-                    <button onclick="submitQuizAnswer()" class="w-full py-3 bg-emerald-600 text-white font-semibold rounded-xl shadow-md hover:bg-emerald-700 transition active:scale-95 text-sm">提交答案</button>
+                    <div id="quiz-input-group" class="space-y-3">
+                        <input type="text" id="quiz-input" placeholder="請輸入完整英文單字..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-base focus:outline-none focus:ring-2 focus:ring-emerald-500 text-center font-bold tracking-wider" autocomplete="off">
+                        <button id="quiz-submit-btn" onclick="submitQuizAnswer()" class="w-full py-3 bg-emerald-600 text-white font-semibold rounded-xl shadow-md hover:bg-emerald-700 transition active:scale-95 text-sm">提交答案</button>
+                    </div>
+                    <button id="quiz-next-btn" onclick="goToNextQuizQuestion()" class="w-full py-3 bg-indigo-600 text-white font-semibold rounded-xl shadow-md hover:bg-indigo-700 transition active:scale-95 text-sm hidden">下一題</button>
+                    <button id="quiz-abandon-btn" onclick="confirmAbandonTournament()" class="w-full py-2 bg-rose-50 hover:bg-rose-100 text-rose-600 font-bold rounded-xl transition active:scale-95 text-xs hidden">放棄挑戰</button>
                 </div>
                 <p id="quiz-feedback" class="text-center text-xs font-semibold mt-3 h-5"></p>
             </div>
@@ -452,6 +460,197 @@
                 <button onclick="switchMode('flip')" class="w-full py-3 bg-indigo-600 text-white font-semibold rounded-xl shadow-md hover:bg-indigo-700 transition active:scale-95 text-sm">返回字卡練習</button>
             </div>
         </div>
+
+        <!-- 4. 🪙 積分與商城模式容器 (預設隱藏) -->
+        <div id="shop-view" class="hidden flex flex-col gap-4">
+            <!-- 頂部積分展示與連線 -->
+            <div class="bg-amber-50/60 border border-amber-100 rounded-2xl p-5 flex flex-col gap-4 shadow-sm relative overflow-hidden">
+                <div class="flex justify-between items-start">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-amber-400 text-white rounded-full flex items-center justify-center text-xl shadow-inner font-bold">🪙</div>
+                        <div>
+                            <div class="text-xl font-extrabold text-slate-800 flex items-baseline gap-1" id="shop-points-display">
+                                0 <span class="text-xs text-amber-600 font-normal">積分</span>
+                            </div>
+                            <div class="text-[10px] text-slate-400 mt-0.5">連續學習天數：<span id="shop-streak-display" class="font-bold text-slate-600">0</span> 天</div>
+                        </div>
+                    </div>
+                    <!-- Google 連線顯示位置 -->
+                    <div class="text-right flex flex-col items-end" id="shop-google-status">
+                        <!-- 動態渲染 -->
+                    </div>
+                </div>
+
+                <div class="border-t border-amber-100/50 pt-3 flex flex-col gap-1.5">
+                    <div class="flex justify-between items-center text-xs font-bold text-slate-700">
+                        <span>本輪新學單字累積（解鎖挑戰賽）：</span>
+                        <span id="shop-newwords-ratio" class="text-indigo-600">0 / 15 字</span>
+                    </div>
+                    <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden border border-slate-200/50">
+                        <div id="shop-newwords-bar" class="bg-indigo-600 h-full transition-all duration-300" style="width: 0%"></div>
+                    </div>
+                    <p class="text-[9px] text-slate-400 mt-1">※ 每通過一次挑戰賽，此進度會歸零。需再學滿 15 個新單字才能開啟下一場挑戰。</p>
+                </div>
+            </div>
+
+            <!-- 任務看板 -->
+            <div class="bg-white border border-slate-100 rounded-2xl p-5 shadow-md flex flex-col gap-4">
+                <h3 class="text-xs font-extrabold text-slate-700 border-b pb-2 flex items-center gap-1.5">📅 每日任務進度板</h3>
+                
+                <div class="space-y-4">
+                    <!-- 每日登入 (必須聯動 Google) -->
+                    <div class="flex flex-col gap-1">
+                        <div class="flex justify-between items-center text-[11px]">
+                            <span class="font-bold text-slate-700">【基本盤】每日 Google 帳號連結登入 (+20分)</span>
+                            <span id="quest-login-btn" class="text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded border border-slate-200">未達成</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex-1 bg-slate-100 rounded-full h-1.5 overflow-hidden">
+                                <div id="quest-login-bar" class="bg-emerald-500 h-full transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                            <span id="quest-login-ratio" class="text-[10px] text-slate-400 font-bold min-w-9 text-right">0 / 1</span>
+                        </div>
+                    </div>
+
+                    <!-- 新學 5 單字 -->
+                    <div class="flex flex-col gap-1">
+                        <div class="flex justify-between items-center text-[11px]">
+                            <span class="font-bold text-slate-700">【基本盤】每日新學 5 個單字 (+10分)</span>
+                            <span id="quest-learn5-btn" class="text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded border border-slate-200">未達成</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex-1 bg-slate-100 rounded-full h-1.5 overflow-hidden">
+                                <div id="quest-learn5-bar" class="bg-emerald-500 h-full transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                            <span id="quest-learn5-ratio" class="text-[10px] text-slate-400 font-bold min-w-9 text-right">0 / 5</span>
+                        </div>
+                    </div>
+
+                    <!-- 新學 10 單字 -->
+                    <div class="flex flex-col gap-1">
+                        <div class="flex justify-between items-center text-[11px]">
+                            <span class="font-bold text-slate-700">【基本盤】每日新學 10 個單字 (+15分)</span>
+                            <span id="quest-learn10-btn" class="text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded border border-slate-200">未達成</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex-1 bg-slate-100 rounded-full h-1.5 overflow-hidden">
+                                <div id="quest-learn10-bar" class="bg-emerald-500 h-full transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                            <span id="quest-learn10-ratio" class="text-[10px] text-slate-400 font-bold min-w-9 text-right">0 / 10</span>
+                        </div>
+                    </div>
+
+                    <!-- 基本任務 (新學 15 單字) -->
+                    <div class="flex flex-col gap-1">
+                        <div class="flex justify-between items-center text-[11px]">
+                            <span class="font-bold text-slate-700">【基本盤】每日新學 15 個單字 (+25分)</span>
+                            <span id="quest-basic-btn" class="text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded border border-slate-200">未達成</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex-1 bg-slate-100 rounded-full h-1.5 overflow-hidden">
+                                <div id="quest-basic-bar" class="bg-emerald-500 h-full transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                            <span id="quest-basic-ratio" class="text-[10px] text-slate-400 font-bold min-w-9 text-right">0 / 15</span>
+                        </div>
+                    </div>
+
+                    <!-- 進階任務一 -->
+                    <div class="flex flex-col gap-1">
+                        <div class="flex justify-between items-center text-[11px]">
+                            <span class="font-bold text-slate-700">【進階一】完成一次 100% 模擬考 (+20分)</span>
+                            <span id="quest-mock-status" class="text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded border border-slate-200">未達成</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex-1 bg-slate-100 rounded-full h-1.5 overflow-hidden">
+                                <div id="quest-mock-bar" class="bg-indigo-500 h-full transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                            <span id="quest-mock-ratio" class="text-[10px] text-slate-400 font-bold min-w-9 text-right">0 / 1</span>
+                        </div>
+                    </div>
+
+                    <!-- 進階任務二 -->
+                    <div class="flex flex-col gap-1">
+                        <div class="flex justify-between items-center text-[11px]">
+                            <span class="font-bold text-slate-700">【進階二】高強度學習 25 個單字 (+30分)</span>
+                            <span id="quest-intensity-btn" class="text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded border border-slate-200">未達成</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex-1 bg-slate-100 rounded-full h-1.5 overflow-hidden">
+                                <div id="quest-intensity-bar" class="bg-indigo-500 h-full transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                            <span id="quest-intensity-ratio" class="text-[10px] text-slate-400 font-bold min-w-9 text-right">0 / 25</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 獎金挑戰賽入口 (漸層炫彩卡片排列) -->
+            <div class="flex flex-col gap-3">
+                <!-- 模擬挑戰入口 -->
+                <div class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-2xl p-4 shadow-sm flex justify-between items-center transition hover:shadow-md border border-indigo-400/50">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-white/20 text-white rounded-xl flex items-center justify-center text-lg shadow-inner">🎯</div>
+                        <div>
+                            <h4 class="text-xs font-bold text-white flex items-center gap-1.5">模擬挑戰考 <span class="text-[9px] bg-white/25 text-white px-1.5 py-0.5 rounded-full font-bold">免耗積分</span></h4>
+                            <p class="text-[10px] text-indigo-100 mt-0.5">20 題四選一，科學模擬複習練習</p>
+                        </div>
+                    </div>
+                    <button onclick="startTournamentSession(true, false)" class="px-3.5 py-2 bg-white text-indigo-700 font-extrabold rounded-xl shadow-sm hover:shadow hover:bg-slate-50 transition active:scale-95 text-xs">開始練習</button>
+                </div>
+
+                <!-- 100 獎金挑戰 -->
+                <div id="card-tourney-100" class="bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-2xl p-4 shadow-sm flex flex-col gap-2.5 transition hover:shadow-md border border-amber-400/50 relative overflow-hidden">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 bg-white/20 text-white rounded-xl flex items-center justify-center text-lg shadow-inner">🏆</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-white flex items-center gap-1.5">獎金挑戰賽 <span class="text-[9px] bg-white/25 text-white px-1.5 py-0.5 rounded-full font-bold">贏取 $100</span></h4>
+                                <p class="text-[10px] text-amber-50 mt-0.5">消耗 100 積分 | 20 題，限 100% 答對</p>
+                            </div>
+                        </div>
+                        <button id="btn-tourney-100" onclick="startTournamentSession(false, false)" class="px-3.5 py-2 bg-white text-amber-700 font-extrabold rounded-xl shadow-sm hover:shadow hover:bg-slate-50 transition active:scale-95 text-xs">+$100</button>
+                    </div>
+                    <p id="tourney-eligibility-100" class="text-[9px] text-white bg-red-600/80 px-2.5 py-1.5 rounded-xl border border-red-500/50 hidden font-bold mt-1.5"></p>
+                </div>
+
+                <!-- 200 雙倍獎金挑戰 -->
+                <div id="card-tourney-200" class="bg-gradient-to-r from-rose-500 to-red-600 text-white rounded-2xl p-4 shadow-sm flex flex-col gap-2.5 transition hover:shadow-md border border-rose-400/50 relative overflow-hidden">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 bg-white/20 text-white rounded-xl flex items-center justify-center text-lg shadow-inner">🔥</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-white flex items-center gap-1.5">雙倍獎金挑戰賽 <span class="text-[9px] bg-white/25 text-white px-1.5 py-0.5 rounded-full font-bold">贏取 $200</span></h4>
+                                <p class="text-[10px] text-rose-50 mt-0.5">消耗 150 積分 | 40 題，限 100% 答對</p>
+                            </div>
+                        </div>
+                        <button id="btn-tourney-200" onclick="startTournamentSession(false, true)" class="px-3.5 py-2 bg-white text-rose-700 font-extrabold rounded-xl shadow-sm hover:shadow hover:bg-slate-50 transition active:scale-95 text-xs">+$200</button>
+                    </div>
+                    <p id="tourney-eligibility-200" class="text-[9px] text-white bg-red-600/80 px-2.5 py-1.5 rounded-xl border border-red-500/50 hidden font-bold mt-1.5"></p>
+                </div>
+            </div>
+
+            <!-- 獎勵核銷歷史 -->
+            <div class="bg-white border border-slate-100 rounded-2xl p-5 shadow-md">
+                <h3 class="text-xs font-extrabold text-slate-700 border-b pb-2 flex items-center gap-1.5">🧾 挑戰賽獎金核銷歷史</h3>
+                <div class="overflow-x-auto mt-2">
+                    <table class="w-full text-xs text-left">
+                        <thead>
+                            <tr class="border-b border-slate-100 text-slate-400">
+                                <th class="py-2">日期</th>
+                                <th class="py-2">商品</th>
+                                <th class="py-2">狀態</th>
+                                <th class="py-2 text-right">核銷</th>
+                            </tr>
+                        </thead>
+                        <tbody id="redemption-history-table" class="divide-y divide-slate-50">
+                            <!-- JS 動態渲染 -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
 
     </main>
 
@@ -544,7 +743,7 @@
 
         async function loadBooksList() {
             try {
-                const res = await fetch('data/books_list.json');
+                const res = await fetch(`data/books_list.json?t=${Date.now()}`);
                 if (!res.ok) throw new Error(`HTTP 載入失敗! 狀態碼: ${res.status} (${res.statusText})`);
                 booksList = await res.json();
                 
@@ -553,7 +752,7 @@
                 for (const book of booksList) {
                     for (const unit of book.units) {
                         try {
-                            const uRes = await fetch(`data/books/${book.id}_${unit}.json`);
+                            const uRes = await fetch(`data/books/${book.id}_${unit}.json?t=${Date.now()}`);
                             const uData = await uRes.json();
                             uData.forEach(w => {
                                 w.bookId = book.id;
@@ -676,7 +875,7 @@
         async function loadUnitWords() {
             if (!currentBook || !currentUnit) return;
             try {
-                const res = await fetch(`data/books/${currentBook}_${currentUnit}.json`);
+                const res = await fetch(`data/books/${currentBook}_${currentUnit}.json?t=${Date.now()}`);
                 if (!res.ok) throw new Error(`HTTP 載入失敗! 狀態碼: ${res.status} (${res.statusText})`);
                 wordsData = await res.json();
                 
@@ -975,6 +1174,74 @@
                          let cloudLeitner = cloudData.leitnerBox || {};
                          let cloudHistory = cloudData.quizHistory || [];
                          
+                         // 解包並合併商城點數與兌換歷史
+                         if (cloudData.shopData) {
+                             const localShop = JSON.parse(localStorage.getItem('toeic_shop_data') || '{}');
+                             const mergedShop = { ...localShop, ...cloudData.shopData };
+                              
+                              const todayStr = (typeof ShopManager !== 'undefined') ? ShopManager.getTodayDateString() : new Date().toISOString().split('T')[0];
+                              
+                              // 判定日期取最新的（如果有一方是今天，則合併結果的日期為今天）
+                              let finalDate = localShop.lastActiveDate || "";
+                              if (cloudData.shopData.lastActiveDate === todayStr || localShop.lastActiveDate === todayStr) {
+                                  finalDate = todayStr;
+                              } else if (cloudData.shopData.lastActiveDate) {
+                                  finalDate = cloudData.shopData.lastActiveDate;
+                              }
+                              mergedShop.lastActiveDate = finalDate;
+
+                              // 如果今天已經被判定為新的一天且已經重置過，那麼今日新學單字清單應為空 (或者取今天已新學的部分)
+                              if (finalDate === todayStr) {
+                                  let localLearned = localShop.lastActiveDate === todayStr ? (localShop.todayLearnedWordIds || []) : [];
+                                  let cloudLearned = cloudData.shopData.lastActiveDate === todayStr ? (cloudData.shopData.todayLearnedWordIds || []) : [];
+                                  mergedShop.todayLearnedWordIds = Array.from(new Set([...localLearned, ...cloudLearned]));
+                                  
+                                  const localClaimed = localShop.lastActiveDate === todayStr ? (localShop.claimedQuests || {}) : {};
+                                  const cloudClaimed = cloudData.shopData.lastActiveDate === todayStr ? (cloudData.shopData.claimedQuests || {}) : {};
+                                  mergedShop.claimedQuests = {
+                                      login: !!(localClaimed.login || cloudClaimed.login),
+                                      learn5: !!(localClaimed.learn5 || cloudClaimed.learn5),
+                                      learn10: !!(localClaimed.learn10 || cloudClaimed.learn10),
+                                      basic: !!(localClaimed.basic || cloudClaimed.basic),
+                                      mock: !!(localClaimed.mock || cloudClaimed.mock),
+                                      intensity: !!(localClaimed.intensity || cloudClaimed.intensity)
+                                  };
+
+                                  const localMock = localShop.lastActiveDate === todayStr ? !!localShop.todayMockPerfect : false;
+                                  const cloudMock = cloudData.shopData.lastActiveDate === todayStr ? !!cloudData.shopData.todayMockPerfect : false;
+                                  mergedShop.todayMockPerfect = localMock || cloudMock;
+                              } else {
+                                  mergedShop.todayLearnedWordIds = cloudData.shopData.todayLearnedWordIds || [];
+                                  mergedShop.claimedQuests = cloudData.shopData.claimedQuests || {};
+                                  mergedShop.todayMockPerfect = !!cloudData.shopData.todayMockPerfect;
+                              }
+                             
+                             // 點數取最高者，防重複洗點
+                             mergedShop.points = Math.max(localShop.points || 0, cloudData.shopData.points || 0);
+                             
+                             // 新掌握計數與已挑戰單字 ID 去重合併
+                             mergedShop.newBox1Count = Math.max(localShop.newBox1Count || 0, cloudData.shopData.newBox1Count || 0);
+                             mergedShop.challengedWordIds = Array.from(new Set([
+                                 ...(localShop.challengedWordIds || []),
+                                 ...(cloudData.shopData.challengedWordIds || [])
+                             ]));
+                             
+                             // 合併兌換歷史 (依 id 去重，以最新的為準)
+                             const localHistory = localShop.redemptionHistory || [];
+                             const cloudHist = cloudData.shopData.redemptionHistory || [];
+                             const histMap = {};
+                             [...localHistory, ...cloudHist].forEach(item => {
+                                 histMap[item.id] = item;
+                             });
+                             mergedShop.redemptionHistory = Object.values(histMap).sort((a, b) => b.id.localeCompare(a.id));
+                             
+                             localStorage.setItem('toeic_shop_data', JSON.stringify(mergedShop));
+                             localStorage.setItem('toeic_points', mergedShop.points.toString());
+                             if (typeof ShopManager !== 'undefined') {
+                                 ShopManager.loadFromLocalStorage();
+                             }
+                         }
+                         
                          // 3. 以時間戳最新的學習進度記錄合併為主
                           const mergedLeitner = { ...localLeitner };
                           for (const key in cloudLeitner) {
@@ -1032,6 +1299,7 @@
                           // 同步設定參數到本地
                           if (cloudData.settings) {
                               const s = cloudData.settings;
+                              console.log('【雲端下載同步】成功取得並應用雲端偏好設定：', s);
                               if (s.speechRate) localStorage.setItem('toeic_speech_rate', s.speechRate);
                               if (s.speechAccent) localStorage.setItem('toeic_speech_accent', s.speechAccent);
                               if (s.reviewTimeMode) localStorage.setItem('toeic_review_time_mode', s.reviewTimeMode);
@@ -1061,6 +1329,7 @@
                          
                          // 5. 寫回雲端
                          await uploadToCloud(mergedMastered, mergedPassed, mergedLeitner, mergedHistory);
+                          if (typeof renderShop === 'function') renderShop();
                     }
                 } else {
                     // 建立新檔案
@@ -1129,27 +1398,38 @@
                 speechAccent: localStorage.getItem('toeic_speech_accent') || 'US',
                 reviewTimeMode: localStorage.getItem('toeic_review_time_mode') || 'fast',
                 targetQuizCount: localStorage.getItem('toeic_target_quiz_count') || '2',
-                autoQuizThreshold: localStorage.getItem('toeic_auto_quiz_threshold') || '3'
+                autoQuizThreshold: localStorage.getItem('toeic_auto_quiz_threshold') || '3',
+                completedUnits: completedUnits
             };
             const content = {
                 masteredWords: masteredWords,
                 passedSentences: passedSentences,
                 leitnerBox: leitnerBox,
                 quizHistory: history,
-                settings: settings
+                settings: settings,
+                shopData: JSON.parse(localStorage.getItem('toeic_shop_data') || '{}')
             };
             
-            await fetch(
-                `https://www.googleapis.com/upload/drive/v3/files/${cloudFileId}?uploadType=media`,
-                {
-                    method: 'PATCH',
-                    headers: {
-                        'Authorization': `Bearer ${accessToken}`,
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(content)
+            try {
+                const res = await fetch(
+                    `https://www.googleapis.com/upload/drive/v3/files/${cloudFileId}?uploadType=media`,
+                    {
+                        method: 'PATCH',
+                        headers: {
+                            'Authorization': `Bearer ${accessToken}`,
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(content)
+                    }
+                );
+                if (res.ok) {
+                    console.log('【雲端同步成功】成功將最新設定與學習進度同步至 Google 雲端！當前口音：', settings.speechAccent);
+                } else {
+                    console.error('【雲端同步失敗】狀態碼：', res.status, await res.text());
                 }
-            );
+            } catch (e) {
+                console.error('【雲端同步異常】無法發送上傳請求：', e);
+            }
         }
 
         // Web Audio API 音效合成控制
@@ -1292,6 +1572,16 @@
                 const cardView = document.getElementById('flashcard-view');
                 const listView = document.getElementById('list-view');
                 const quizView = document.getElementById('quiz-view');
+                const shopView = document.getElementById('shop-view');
+                
+                // 若當下開著積分挑戰，隱藏它並將按鈕還原為灰色
+                if (shopView && !shopView.classList.contains('hidden')) {
+                    shopView.classList.add('hidden');
+                    const shopBtn = document.getElementById('btn-shop');
+                    if (shopBtn) {
+                        shopBtn.className = "p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center";
+                    }
+                }
                 
                 if (cardView && !cardView.classList.contains('hidden')) previousViewBeforePanel = 'card';
                 else if (listView && !listView.classList.contains('hidden')) previousViewBeforePanel = 'list';
@@ -1323,6 +1613,16 @@
                 const cardView = document.getElementById('flashcard-view');
                 const listView = document.getElementById('list-view');
                 const quizView = document.getElementById('quiz-view');
+                const shopView = document.getElementById('shop-view');
+                
+                // 若當下開著積分挑戰，隱藏它並將按鈕還原為灰色
+                if (shopView && !shopView.classList.contains('hidden')) {
+                    shopView.classList.add('hidden');
+                    const shopBtn = document.getElementById('btn-shop');
+                    if (shopBtn) {
+                        shopBtn.className = "p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center";
+                    }
+                }
                 
                 if (cardView && !cardView.classList.contains('hidden')) previousViewBeforePanel = 'card';
                 else if (listView && !listView.classList.contains('hidden')) previousViewBeforePanel = 'list';
@@ -1450,7 +1750,7 @@
         }
 
         function playQuizAudio() {
-            if (lives === 1 && quizPool.length > 0 && quizIndex < quizPool.length) {
+            if (quizPool.length > 0 && quizIndex < quizPool.length) {
                 playAudio(quizPool[quizIndex].wordObj.word);
             }
         }
@@ -1482,6 +1782,20 @@
             document.getElementById('card-word').textContent = wordObj.word;
             document.getElementById('card-word-back').textContent = wordObj.word;
             document.getElementById('card-meaning').textContent = wordObj.meaning;
+            
+            const posEl = document.getElementById('card-part-of-speech');
+            const posBackEl = document.getElementById('card-part-of-speech-back');
+            if (posEl) {
+                if (wordObj.part_of_speech) {
+                    posEl.textContent = wordObj.part_of_speech;
+                    posEl.classList.remove('hidden');
+                } else {
+                    posEl.classList.add('hidden');
+                }
+            }
+            if (posBackEl) {
+                posBackEl.textContent = wordObj.part_of_speech ? `(${wordObj.part_of_speech})` : '';
+            }
             
             // 動態渲染英文例句
             const containerEn = document.getElementById('card-sentences-container-en');
@@ -1823,6 +2137,16 @@
                 const cardView = document.getElementById('flashcard-view');
                 const listView = document.getElementById('list-view');
                 const quizView = document.getElementById('quiz-view');
+                const shopView = document.getElementById('shop-view');
+                
+                // 若當下開著積分挑戰，隱藏它並將按鈕還原為灰色
+                if (shopView && !shopView.classList.contains('hidden')) {
+                    shopView.classList.add('hidden');
+                    const shopBtn = document.getElementById('btn-shop');
+                    if (shopBtn) {
+                        shopBtn.className = "p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center";
+                    }
+                }
                 
                 if (cardView && !cardView.classList.contains('hidden')) previousViewBeforePanel = 'card';
                 else if (listView && !listView.classList.contains('hidden')) previousViewBeforePanel = 'list';
@@ -2059,6 +2383,14 @@
             flashcardView.classList.add('hidden');
             listView.classList.add('hidden');
             quizView.classList.add('hidden');
+            const shopView = document.getElementById('shop-view');
+            if (shopView) {
+                shopView.classList.add('hidden');
+            }
+            const shopBtn = document.getElementById('btn-shop');
+            if (shopBtn) {
+                shopBtn.className = "p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center";
+            }
 
             if (mode === 'flip') {
                 modeFlip.className = "px-3 py-1.5 text-xs font-medium bg-indigo-50 text-indigo-600 rounded-lg shadow-sm hover:bg-indigo-100 transition";
@@ -2071,7 +2403,17 @@
             } else if (mode === 'quiz') {
                 modeQuiz.className = "px-3 py-1.5 text-xs font-medium bg-emerald-600 text-white rounded-lg shadow-sm font-bold transition";
                 quizView.classList.remove('hidden');
-                initQuizScreen();
+                
+                // 強制隱藏提示起跑頁，直接顯示答題頁
+                document.getElementById('quiz-start-screen').classList.add('hidden');
+                document.getElementById('quiz-question-screen').classList.remove('hidden');
+                document.getElementById('quiz-result-screen').classList.add('hidden');
+                
+                if (typeof activeTournamentType !== 'undefined' && activeTournamentType !== null) {
+                    // 挑戰賽或模擬考已經在初始化中加載了題目，此處不重複處理
+                } else {
+                    startQuiz();
+                }
             }
         }
 
@@ -2106,8 +2448,9 @@
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                         </button>
                         <div class="cursor-pointer text-left" onclick="jumpToWordCard('${item.word}')">
-                            <span class="font-bold text-slate-800 text-base flex items-center gap-2">
+                            <span class="font-bold text-slate-800 text-base flex items-center gap-2 flex-wrap">
                                 ${item.word}
+                                ${item.part_of_speech ? '<span class="text-[10px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded font-bold">' + item.part_of_speech + '</span>' : ''}
                                 ${item.mastered ? '<span class="text-[10px] bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-normal">已掌握</span>' : ''}
                             </span>
                             <span class="text-xs text-slate-500 block">${item.meaning} - <span class="italic text-slate-400">${firstEx}</span></span>
@@ -2196,6 +2539,8 @@
         document.getElementById('list-filter-select').addEventListener('change', renderList);
 
         // 測驗模式邏輯 (智慧過濾已完全通過 3 個題庫的單字)
+        let activeTournamentType = null; // 模擬考: 'mock', 挑戰賽: 'tourney-100', 雙倍: 'tourney-200'
+        let quizWrongCount = 0; // 全卷答錯題目數
         let quizPool = [];
         let quizIndex = 0;
         let lives = 2;
@@ -2208,19 +2553,71 @@
             return i; // 回傳長度
         }
 
-        // 在句子中找出與 baseWord 前綴最長匹配的詞形變化單字
-        // 回傳 { inflected: "dairies", prefixLen: 4 } 或 null
+        // 計算編輯距離 (Levenshtein Distance) 用於比對不規則過去式/變體
+        function getEditDistance(a, b) {
+            if (a.length === 0) return b.length;
+            if (b.length === 0) return a.length;
+            const matrix = [];
+            for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+            for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+            for (let i = 1; i <= b.length; i++) {
+                for (let j = 1; j <= a.length; j++) {
+                    if (b[i-1] === a[j-1]) {
+                        matrix[i][j] = matrix[i-1][j-1];
+                    } else {
+                        matrix[i][j] = Math.min(
+                            matrix[i-1][j-1] + 1, // 替換
+                            Math.min(
+                                matrix[i][j-1] + 1, // 插入
+                                matrix[i-1][j] + 1  // 刪除
+                            )
+                        );
+                    }
+                }
+            }
+            return matrix[b.length][a.length];
+        }
+
+        // 在句子中找出與 baseWord 前綴匹配或編輯距離相近的詞形變化單字
+        // 回傳 { inflected: "Awoke", prefixLen: 2 } 且還原句子中的大小寫
         function findInflectedWord(sentence, baseWord) {
             const words = sentence.toLowerCase().match(/[a-z]+/g) || [];
             const base = baseWord.toLowerCase();
             let best = null;
-            let bestLen = 0;
+            let bestScore = 0;
+            
             for (const w of words) {
+                if (w === base) continue;
+                
                 const len = longestCommonPrefix(base, w);
-                // 至少 3 字符共同前綴，且不是完全相同（避免重複）
-                if (len >= 3 && len > bestLen && w !== base) {
-                    bestLen = len;
+                const dist = getEditDistance(base, w);
+                const lenDiff = Math.abs(base.length - w.length);
+                
+                let isInflected = false;
+                let score = 0;
+                
+                if (dist <= 2 && len >= 1) {
+                    // 1. 編輯距離極近（例如 awake/awoke, build/built），且首字母相同
+                    isInflected = true;
+                    score = 100 - dist * 20;
+                } else if (len >= 3 && lenDiff <= 4) {
+                    // 2. 規則變化：前綴相同 >= 3，且長度相差不大（例如 rule/ruling/rules）
+                    isInflected = true;
+                    score = len * 10 - lenDiff * 5;
+                }
+                
+                if (isInflected && score > bestScore) {
+                    bestScore = score;
                     best = { inflected: w, prefixLen: len };
+                }
+            }
+            
+            // 找回句子中實際的大小寫格式，例如 "Awoke" 而不是 "awoke"
+            if (best) {
+                const regex = new RegExp(`\\b${best.inflected}\\b`, 'i');
+                const match = sentence.match(regex);
+                if (match) {
+                    best.inflected = match[0];
                 }
             }
             return best;
@@ -2321,6 +2718,36 @@
 
         function loadQuizQuestion() {
             if (quizIndex >= quizPool.length) {
+                // 挑戰賽/模擬考結算
+                if (typeof activeTournamentType !== 'undefined' && activeTournamentType !== null) {
+                    const isDouble = activeTournamentType === 'tourney-200';
+                    const isSuccess = quizWrongCount === 0;
+                    if (activeTournamentType === 'mock') {
+                        if (isSuccess) {
+                            ShopManager.data.todayMockPerfect = true;
+                            ShopManager.saveToLocalStorage();
+                            ShopManager.onWordNewLearned('');
+                            alert("🎉 恭喜！您已滿分通過「模擬挑戰考」！今日任務【進階一】已達成！");
+                        } else {
+                            alert("😢 遺憾！模擬挑戰考未達 100% 答對，挑戰失敗。");
+                        }
+                    } else {
+                        ShopManager.completeTournament(isDouble, isSuccess);
+                    }
+                    
+                    const header = document.getElementById('app-header');
+                    if (header) header.classList.remove('hidden');
+                    
+                    const abandonBtn = document.getElementById('quiz-abandon-btn');
+                    if (abandonBtn) abandonBtn.classList.add('hidden');
+                    
+                    activeTournamentType = null;
+                    renderShop();
+                    switchMode('flip');
+                    toggleShopPanel();
+                    return;
+                }
+
                 document.getElementById('quiz-question-screen').classList.add('hidden');
                 document.getElementById('quiz-result-screen').classList.remove('hidden');
                 // 測驗結束後重置 session 計數，讓下次重新累計 5 個單字
@@ -2361,6 +2788,11 @@
             document.getElementById('quiz-total-q').textContent = quizPool.length;
             document.getElementById('quiz-input').value = '';
             document.getElementById('quiz-feedback').textContent = '';
+            // 重置下一題與輸入群組的顯隱狀態
+            const nextBtn = document.getElementById('quiz-next-btn');
+            const inputGroup = document.getElementById('quiz-input-group');
+            if (nextBtn) nextBtn.classList.add('hidden');
+            if (inputGroup) inputGroup.classList.remove('hidden');
             // 切換新題時隱藏中文提示
             const zhHintEl = document.getElementById('quiz-zh-hint');
             if (zhHintEl) zhHintEl.classList.add('hidden');
@@ -2419,17 +2851,10 @@
             
             const audioBtn = document.getElementById('quiz-audio-btn');
             if (audioBtn) {
-                if (lives === 1) {
-                    audioBtn.disabled = false;
-                    audioBtn.classList.remove('opacity-40', 'cursor-not-allowed');
-                    audioBtn.classList.add('opacity-100', 'cursor-pointer');
-                    audioBtn.title = "點擊播放發音提示";
-                } else {
-                    audioBtn.disabled = true;
-                    audioBtn.classList.add('opacity-40', 'cursor-not-allowed');
-                    audioBtn.classList.remove('opacity-100', 'cursor-pointer');
-                    audioBtn.title = "生命值剩 1 時解鎖發音提示";
-                }
+                audioBtn.disabled = false;
+                audioBtn.classList.remove('opacity-40', 'cursor-not-allowed');
+                audioBtn.classList.add('opacity-100', 'cursor-pointer');
+                audioBtn.title = "點擊播放發音提示";
             }
 
             // 剩一命時，顯示中文翻譯提示
@@ -2463,10 +2888,32 @@
             const inflectedKey = currentItem.inflectedWord ? currentItem.inflectedWord.toLowerCase() : null;
             const isCorrect = userAns === wordKey || (inflectedKey && userAns === inflectedKey);
 
+            // 還原挖空並以綠色加粗底線高亮顯示正確的單字
+            function showCorrectSentence() {
+                const target = currentItem.wordObj.word;
+                const highlight = currentItem.inflectedWord || target;
+                const regex = new RegExp(`\\b${highlight}\\b`, 'gi');
+                const highlightedSentence = currentItem.sentence.replace(regex, `<strong class="text-emerald-600 font-extrabold underline decoration-2 decoration-emerald-500">${highlight}</strong>`);
+                document.getElementById('quiz-example').innerHTML = highlightedSentence;
+            }
+
             if (isCorrect) {
                 playCorrectSound();
+                showCorrectSentence();
                 feedbackEl.textContent = "🎉 答對了！太棒了！";
                 feedbackEl.className = "text-center text-xs font-semibold mt-3 h-5 text-emerald-600";
+
+                // 正確答完題，也要顯示中文翻譯
+                const zhHint = document.getElementById('quiz-zh-hint');
+                const zhHintText = document.getElementById('quiz-zh-hint-text');
+                if (zhHint && zhHintText && currentItem) {
+                    const examples = currentItem.wordObj.examples || [];
+                    const zh = examples[currentItem.sentenceIndex] ? examples[currentItem.sentenceIndex].zh : '';
+                    if (zh) {
+                        zhHintText.textContent = zh;
+                        zhHint.classList.remove('hidden');
+                    }
+                }
 
                 // 記錄該例句題庫已通過 (全域儲存)
                 if (!passedSentences[wordKey]) {
@@ -2479,10 +2926,20 @@
 
                 // 答對時 Leitner 晉級 (最高至 Box 3)
                 let box = leitnerBox[wordKey] || { boxLevel: 1, lastTested: 0 };
+                const oldMaxBox = box.maxBox || 0;
                 box.boxLevel = Math.min((box.boxLevel || 1) + 1, 3);
                 box.lastTested = Date.now();
                 box.mastered = true;
                 box.lastUpdated = Date.now();
+                
+                if (oldMaxBox === 0) {
+                    box.maxBox = box.boxLevel;
+                    if (typeof ShopManager !== 'undefined' && (!activeTournamentType)) {
+                        ShopManager.onWordNewLearned(wordKey);
+                    }
+                } else if (box.boxLevel > oldMaxBox) {
+                    box.maxBox = box.boxLevel;
+                }
                 leitnerBox[wordKey] = box;
                 localStorage.setItem('toeic_leitner_box', JSON.stringify(leitnerBox));
 
@@ -2490,10 +2947,14 @@
                     uploadToCloud(masteredWords, passedSentences, leitnerBox, quizHistory).catch(err => console.error(err));
                 }
 
-                setTimeout(() => {
-                    quizIndex++;
-                    loadQuizQuestion();
-                }, 1000);
+                // 隱藏輸入框與提交按鈕，顯示下一題按鈕
+                const inputGroup = document.getElementById('quiz-input-group');
+                const nextBtn = document.getElementById('quiz-next-btn');
+                if (inputGroup) inputGroup.classList.add('hidden');
+                if (nextBtn) {
+                    nextBtn.classList.remove('hidden');
+                    nextBtn.focus();
+                }
             } else {
                 playWrongSound();
                 lives--;
@@ -2502,6 +2963,36 @@
                     feedbackEl.textContent = `❌ 答錯囉！還剩 ${lives} 次機會（已解鎖語音提示），請再試一次！`;
                     feedbackEl.className = "text-center text-xs font-semibold mt-3 h-5 text-rose-500";
                 } else {
+                    // 挑戰賽/模擬考答錯出局攔截
+                    if (typeof activeTournamentType !== 'undefined' && activeTournamentType !== null) {
+                        quizWrongCount++; // 累加答錯題數
+                        showCorrectSentence();
+                        // 答錯完題，也要顯示中文翻譯
+                        const zhHint = document.getElementById('quiz-zh-hint');
+                        const zhHintText = document.getElementById('quiz-zh-hint-text');
+                        if (zhHint && zhHintText && currentItem) {
+                            const examples = currentItem.wordObj.examples || [];
+                            const zh = examples[currentItem.sentenceIndex] ? examples[currentItem.sentenceIndex].zh : '';
+                            if (zh) {
+                                zhHintText.textContent = zh;
+                                zhHint.classList.remove('hidden');
+                            }
+                        }
+
+                        feedbackEl.textContent = `💥 殘念！正確答案是：【 ${currentObj.word} 】。`;
+                        feedbackEl.className = "text-center text-xs font-semibold mt-3 h-5 text-rose-500";
+                        
+                        const inputGroup = document.getElementById('quiz-input-group');
+                        const nextBtn = document.getElementById('quiz-next-btn');
+                        if (inputGroup) inputGroup.classList.add('hidden');
+                        if (nextBtn) {
+                            nextBtn.textContent = "下一題";
+                            nextBtn.classList.remove('hidden');
+                            nextBtn.focus();
+                        }
+                        return;
+                    }
+
                     // 答錯且次數用完，取消掌握，清空通關例句，Leitner 降級 (退回 Box 1)
                     currentObj.mastered = false;
                     masteredWords = masteredWords.filter(w => w !== wordKey);
@@ -2528,15 +3019,45 @@
                         uploadToCloud(masteredWords, passedSentences, leitnerBox, quizHistory).catch(err => console.error(err));
                     }
 
+                    showCorrectSentence();
                     feedbackEl.textContent = `💥 殘念！正確答案是：【 ${currentObj.word} 】。已自動取消該單字的掌握標記並退回 Box 1。`;
                     feedbackEl.className = "text-center text-xs font-semibold mt-3 h-5 text-amber-600";
-                    setTimeout(() => {
-                        quizIndex++;
-                        loadQuizQuestion();
-                    }, 2200);
+                    // 隱藏輸入框與提交按鈕，顯示下一題按鈕
+                    const inputGroup = document.getElementById('quiz-input-group');
+                    const nextBtn = document.getElementById('quiz-next-btn');
+                    if (inputGroup) inputGroup.classList.add('hidden');
+                    if (nextBtn) {
+                        nextBtn.classList.remove('hidden');
+                        nextBtn.focus();
+                    }
                 }
             }
         }
+
+        window.goToNextQuizQuestion = function() {
+            quizIndex++;
+            loadQuizQuestion();
+        };
+
+        window.confirmAbandonTournament = function() {
+            const confirmed = confirm("⚠️ 放棄挑戰確認：\n您確定要放棄當前的挑戰與測驗嗎？\n提前放棄不會扣除您的參賽積分，無任何獎勵，且不會進入冷卻時間！");
+            if (confirmed) {
+                activeTournamentType = null;
+                
+                const header = document.getElementById('app-header');
+                if (header) header.classList.remove('hidden');
+                
+                const abandonBtn = document.getElementById('quiz-abandon-btn');
+                if (abandonBtn) abandonBtn.classList.add('hidden');
+                
+                const nextBtn = document.getElementById('quiz-next-btn');
+                if (nextBtn) nextBtn.textContent = "下一題";
+                
+                renderShop();
+                switchMode('flip');
+                toggleShopPanel();
+            }
+        };
 
         document.getElementById('quiz-input').addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
@@ -2578,6 +3099,447 @@
                 }
             });
         }
+        // ==========================================
+        // 🪙 積分挑戰與獎金挑戰賽 UI 驅動邏輯
+        // ==========================================
+
+        let cooldownInterval = null;
+
+        // 初始化 ShopManager
+        if (typeof ShopManager !== 'undefined') {
+            ShopManager.init();
+        }
+
+        // 覆寫重置進度函數，對接雙重重置
+        window.resetProgress = function() {
+            if (typeof ShopManager === 'undefined') return;
+            // 彈窗詢問是「一般重置」還是「完全重置」
+            const isComplete = confirm("💡 重置選項：\n\n確定 [完全重置] 請點「確定」，需輸入家長密碼且積分可重新獲得；\n若是想 [自主複習] 請點「取消」，不需密碼且無法重複獲分。");
+            
+            ShopManager.resetProgress(wordsData, isComplete, () => {
+                saveProgress();
+                alert("進度已重置完成，頁面即將重新載入！");
+                location.reload();
+            });
+        };
+
+        // 控制積分挑戰面板獨佔開啟與隱藏還原
+        window.toggleShopPanel = function() {
+            const panel = document.getElementById('shop-view');
+            const bookPanel = document.getElementById('book-unit-panel');
+            if (!panel) return;
+            
+            const isHidden = panel.classList.contains('hidden');
+            const btn = document.getElementById('btn-shop');
+            
+            if (isHidden) {
+                const cardView = document.getElementById('flashcard-view');
+                const listView = document.getElementById('list-view');
+                const quizView = document.getElementById('quiz-view');
+                
+                if (cardView && !cardView.classList.contains('hidden')) previousViewBeforePanel = 'card';
+                else if (listView && !listView.classList.contains('hidden')) previousViewBeforePanel = 'list';
+                else if (quizView && !quizView.classList.contains('hidden')) previousViewBeforePanel = 'quiz';
+                
+                if (cardView) cardView.classList.add('hidden');
+                if (listView) listView.classList.add('hidden');
+                if (quizView) quizView.classList.add('hidden');
+                
+                panel.classList.remove('hidden');
+                if (btn) {
+                    btn.className = "p-2 bg-amber-500 text-white rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center";
+                }
+                
+                // 隱藏其他面板
+                const settingsPanel = document.getElementById('settings-panel');
+                if (settingsPanel) settingsPanel.classList.add('hidden');
+                const analysisPanel = document.getElementById('analysis-panel');
+                if (analysisPanel) analysisPanel.classList.add('hidden');
+                if (bookPanel) bookPanel.classList.add('hidden');
+                
+                renderShop();
+            } else {
+                panel.classList.add('hidden');
+                if (btn) {
+                    btn.className = "p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center";
+                }
+                restorePreviousView();
+            }
+        };
+
+        // 渲染商城與任務畫面
+        window.renderShop = function() {
+            if (typeof ShopManager === 'undefined') return;
+            ShopManager.checkAndResetDaily();
+            ShopManager.loadFromLocalStorage();
+
+            // 1. 點數與天數顯示
+            document.getElementById('shop-points-display').innerHTML = `${ShopManager.data.points} <span class="text-xs text-amber-600 font-normal">積分</span>`;
+            document.getElementById('shop-streak-display').textContent = ShopManager.data.streakDays || 0;
+
+            // 2. Google 同步狀態顯示
+            const isGoogleConnected = localStorage.getItem('g_connected') === 'true';
+            const emailToShow = localStorage.getItem('g_user_email') || '已連結';
+            const googleStatusEl = document.getElementById('shop-google-status');
+            if (googleStatusEl) {
+                if (isGoogleConnected) {
+                    googleStatusEl.innerHTML = `
+                        <span class="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded border border-emerald-100 font-bold">🟢 雲端已連結</span>
+                        <p class="text-[8px] text-slate-400 mt-0.5">${emailToShow}</p>
+                    `;
+                } else {
+                    googleStatusEl.innerHTML = `
+                        <span class="text-[10px] bg-slate-100 text-slate-500 px-2 py-0.5 rounded border border-slate-200 font-bold">🔴 尚未連動</span>
+                        <p class="text-[8px] text-rose-500 mt-0.5">無法參與挑戰</p>
+                    `;
+                }
+            }
+
+            // 3. 累積新字進度條
+            const newWordsCount = ShopManager.data.newBox1Count || 0;
+            const newWordsPercent = Math.min(100, (newWordsCount / 15) * 100);
+            document.getElementById('shop-newwords-ratio').textContent = `${newWordsCount} / 15 字`;
+            document.getElementById('shop-newwords-bar').style.width = `${newWordsPercent}%`;
+
+            // 4. 每日與進階任務狀態更新
+            const todayLearnedCount = ShopManager.data.todayLearnedWordIds ? ShopManager.data.todayLearnedWordIds.length : 0;
+
+            // 每日登入任務
+            const loginPercent = isGoogleConnected ? 100 : 0;
+            document.getElementById('quest-login-bar').style.width = `${loginPercent}%`;
+            document.getElementById('quest-login-ratio').textContent = `${isGoogleConnected ? 1 : 0} / 1`;
+            const loginBtn = document.getElementById('quest-login-btn');
+            if (ShopManager.data.claimedQuests.login) {
+                loginBtn.textContent = "已完成 +20分";
+                loginBtn.className = "text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded border border-emerald-100 font-bold";
+            } else {
+                loginBtn.textContent = isGoogleConnected ? "待發放" : "請先連結雲端";
+                loginBtn.className = isGoogleConnected 
+                    ? "text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded border border-slate-200 font-medium"
+                    : "text-[10px] bg-rose-50 text-rose-500 px-2 py-0.5 rounded border border-rose-100 font-bold";
+            }
+
+            // 每日新學 5 單字
+            const learn5Percent = Math.min(100, (todayLearnedCount / 5) * 100);
+            document.getElementById('quest-learn5-bar').style.width = `${learn5Percent}%`;
+            document.getElementById('quest-learn5-ratio').textContent = `${todayLearnedCount} / 5`;
+            const learn5Btn = document.getElementById('quest-learn5-btn');
+            if (ShopManager.data.claimedQuests.learn5) {
+                learn5Btn.textContent = "已完成 +10分";
+                learn5Btn.className = "text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded border border-emerald-100 font-bold";
+            } else {
+                learn5Btn.textContent = todayLearnedCount >= 5 ? "待發放" : "未達成";
+                learn5Btn.className = "text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded border border-slate-200 font-medium";
+            }
+
+            // 每日新學 10 單字
+            const learn10Percent = Math.min(100, (todayLearnedCount / 10) * 100);
+            document.getElementById('quest-learn10-bar').style.width = `${learn10Percent}%`;
+            document.getElementById('quest-learn10-ratio').textContent = `${todayLearnedCount} / 10`;
+            const learn10Btn = document.getElementById('quest-learn10-btn');
+            if (ShopManager.data.claimedQuests.learn10) {
+                learn10Btn.textContent = "已完成 +15分";
+                learn10Btn.className = "text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded border border-emerald-100 font-bold";
+            } else {
+                learn10Btn.textContent = todayLearnedCount >= 10 ? "待發放" : "未達成";
+                learn10Btn.className = "text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded border border-slate-200 font-medium";
+            }
+
+            // 基本任務 (新學 15 單字, +25分)
+            const basicPercent = Math.min(100, (todayLearnedCount / 15) * 100);
+            document.getElementById('quest-basic-bar').style.width = `${basicPercent}%`;
+            document.getElementById('quest-basic-ratio').textContent = `${todayLearnedCount} / 15`;
+            const basicBtn = document.getElementById('quest-basic-btn');
+            if (ShopManager.data.claimedQuests.basic) {
+                basicBtn.textContent = "已完成 +25分";
+                basicBtn.className = "text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded border border-emerald-100 font-bold";
+            } else {
+                basicBtn.textContent = todayLearnedCount >= 15 ? "待發放" : "未達成";
+                basicBtn.className = "text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded border border-slate-200 font-medium";
+            }
+
+            // 進階任務一：模擬考滿分 (20分)
+            const mockPassed = ShopManager.data.todayMockPerfect ? 1 : 0;
+            const mockPercent = mockPassed * 100;
+            document.getElementById('quest-mock-bar').style.width = `${mockPercent}%`;
+            document.getElementById('quest-mock-ratio').textContent = `${mockPassed} / 1`;
+            const mockStatus = document.getElementById('quest-mock-status');
+            if (ShopManager.data.claimedQuests.mock) {
+                mockStatus.textContent = "已完成 +20分";
+                mockStatus.className = "text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded border border-emerald-100 font-bold";
+            } else {
+                mockStatus.textContent = ShopManager.data.todayMockPerfect ? "待發放" : "未達成";
+                mockStatus.className = "text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded border border-slate-200 font-medium";
+            }
+
+            // 進階任務二：高強度背詞 (30分)
+            const intensityPercent = Math.min(100, (todayLearnedCount / 25) * 100);
+            document.getElementById('quest-intensity-bar').style.width = `${intensityPercent}%`;
+            document.getElementById('quest-intensity-ratio').textContent = `${todayLearnedCount} / 25`;
+            const intensityBtn = document.getElementById('quest-intensity-btn');
+            if (ShopManager.data.claimedQuests.intensity) {
+                intensityBtn.textContent = "已完成 +30分";
+                intensityBtn.className = "text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded border border-emerald-100 font-bold";
+            } else {
+                intensityBtn.textContent = todayLearnedCount >= 25 ? "待發放" : "未達成";
+                intensityBtn.className = "text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded border border-slate-200 font-medium";
+            }
+
+            // 5. 挑戰賽限制條件與按鈕更新
+            updateTournamentCard(false, 'btn-tourney-100', 'tourney-eligibility-100', 'card-tourney-100');
+            updateTournamentCard(true, 'btn-tourney-200', 'tourney-eligibility-200', 'card-tourney-200');
+
+            // 6. 兌換歷史紀錄渲染
+            renderRedemptionHistory();
+        };
+
+        // 更新挑戰賽卡片按鈕狀態與紅字警告
+        function updateTournamentCard(isDouble, btnId, eligibilityId, cardId) {
+            const btn = document.getElementById(btnId);
+            const errEl = document.getElementById(eligibilityId);
+            const card = document.getElementById(cardId);
+            if (!btn || !errEl) return;
+
+            const res = ShopManager.checkTournamentEligibility(isDouble);
+
+            // 清理冷卻遮罩
+            const mask = card.querySelector('.cooldown-mask');
+            if (mask) mask.remove();
+
+            // 檢查是否處於冷卻中
+            const now = Date.now();
+            if (now < ShopManager.data.cooldownUntil) {
+                btn.disabled = true;
+                errEl.classList.add('hidden');
+                
+                // 插入冷卻半透明覆蓋遮罩
+                const overlay = document.createElement('div');
+                overlay.className = 'cooldown-mask absolute inset-0 bg-slate-900/40 backdrop-blur-[1.5px] flex items-center justify-center text-xs font-bold text-white';
+                overlay.innerHTML = `⏳ 冷卻中，請等待 <span class="cooldown-timer ml-1">${Math.ceil((ShopManager.data.cooldownUntil - now) / 1000)}</span> 秒`;
+                card.appendChild(overlay);
+
+                startCooldownTimer();
+                return;
+            }
+
+            if (res.eligible) {
+                btn.disabled = false;
+                btn.classList.remove('opacity-50', 'cursor-not-allowed');
+                errEl.classList.add('hidden');
+            } else {
+                btn.disabled = false; // 保持可點擊以提供點擊後的 Alert 提示
+                btn.classList.add('opacity-50', 'cursor-not-allowed');
+                errEl.classList.remove('hidden');
+                errEl.innerHTML = `⚠️ ${res.reason}`;
+            }
+        }
+
+        // 倒數計時器
+        function startCooldownTimer() {
+            if (cooldownInterval) return;
+            cooldownInterval = setInterval(() => {
+                const now = Date.now();
+                const diff = ShopManager.data.cooldownUntil - now;
+                const timers = document.querySelectorAll('.cooldown-timer');
+                
+                if (diff <= 0) {
+                    clearInterval(cooldownInterval);
+                    cooldownInterval = null;
+                    renderShop();
+                } else {
+                    const secs = Math.ceil(diff / 1000);
+                    timers.forEach(t => {
+                        t.textContent = `${Math.floor(secs / 60)}分${secs % 60}秒`;
+                    });
+                }
+            }, 1000);
+        }
+
+        // 渲染兌換歷史紀錄
+        function renderRedemptionHistory() {
+            const container = document.getElementById('redemption-history-table');
+            if (!container) return;
+
+            const history = ShopManager.data.redemptionHistory || [];
+            if (history.length === 0) {
+                container.innerHTML = `<tr><td colspan="4" class="py-4 text-center text-slate-400">尚無獎金兌換紀錄</td></tr>`;
+                return;
+            }
+
+            container.innerHTML = history.map(r => {
+                const statusColor = r.status === '已領取' ? 'text-slate-400' : 'text-amber-600 font-bold';
+                const actionBtn = r.status === '待領取' 
+                    ? `<button onclick="confirmClaimPrize('${r.id}')" class="px-2.5 py-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-600 font-bold rounded shadow-sm border border-emerald-100 transition active:scale-95">確認領取</button>`
+                    : `<span class="text-slate-300">無</span>`;
+
+                return `
+                    <tr class="border-b border-slate-50 text-slate-600">
+                        <td class="py-2.5">${r.date}</td>
+                        <td class="py-2.5">${r.item}</td>
+                        <td class="py-2.5 ${statusColor}">${r.status}</td>
+                        <td class="py-2.5 text-right">${actionBtn}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        // 點擊確認已領取
+        window.confirmClaimPrize = function(recordId) {
+            if (typeof ShopManager === 'undefined') return;
+            const success = ShopManager.claimPrize(recordId);
+            if (success) {
+                renderShop();
+            }
+        };
+
+        // 🏆 挑戰賽與模擬考測驗引擎
+        // 🏆 挑戰賽與模擬考測驗引擎 (整併至原生 quiz-view)
+        window.startTournamentSession = function(isMock, isDouble) {
+            if (typeof ShopManager === 'undefined') return;
+            
+            if (!isMock) {
+                const res = ShopManager.checkTournamentEligibility(isDouble);
+                if (!res.eligible) {
+                    alert(`無法參賽：\n\n${res.reason}`);
+                    return;
+                }
+            }
+
+            // 顯示測驗提示與隨機激勵幹話
+            const mockQuotes = [
+                "模擬考就像人生，雖然給你兩次拼寫機會，但不認真背，還不是得乖乖重來？加油，別在第一題就躺平了！",
+                "據說模擬考不認真寫的人，單字會默默出家，從記憶裡徹底消失。為了你寶貴的記憶力，拼了！",
+                "答對不會暴富，但答錯一定會懷疑人生！來吧，向系統證明你的大腦不只用來裝珍奶！",
+                "只要題目夠難，放棄就夠快？不准逃跑！這 20 題的考驗，是通往大師之路上最溫柔的折磨！",
+                "雖然模擬考是免費的，但也別把自己的大腦當作免費的沙包。認真點，你的單字量正在抗議！",
+                "每答對一題，你就離單字大師近了一步；每答錯一題，你只是多了一次懷疑自己智商的機會。",
+                "聽說背單字能預防大腦生鏽，今天就讓你的鍵盤敲出智慧的火花，開始你的表演！",
+                "不要問單字能為你做什麼，問問你自己，到底能不能把這 20 個單字拼完整！",
+                "如果單字會說話，它們現在一定在拼命尖叫，求你別再拼錯它們了！",
+                "模擬考是最好的鏡子，能照出你到底是『真的記住』還是『眼睛看過就忘』。照鏡子的時間到了！"
+            ];
+            const tourney100Quotes = [
+                "為了那香噴噴的 $100 零用錢，拿出你單字王的尊嚴！別讓這 20 題成為你和零用錢之間最遙遠的距離！",
+                "看到那亮晶晶的 $100 現金了嗎？它正在對著你招手，並小聲地說：『快拼對我，帶我回家！』",
+                "100 塊雖然買不到快樂，但拼對 20 題的成就感再加上 100 塊絕對能讓你快樂一整天！",
+                "用你的實力證明：你的英文單字不只能通過期末考，還能直接變現！衝啊，單字提款機啟動！",
+                "這不是背單字，這是用智慧合法掠奪家長的錢包！此時不戰，更待何時？",
+                "20 個單字換 100 塊，這平均一個字值 5 塊錢！這可是比去超商打工還划算的買賣！",
+                "別讓你的 100 積分白白流失，成功了才是英雄，失敗了也只是拍拍灰塵重來。衝吧，單字勇士！",
+                "今天的天氣很適合拼對 20 個單字，然後理直氣壯地去領取屬於你的 100 塊零用錢！",
+                "如果這 20 題難倒了你，家長在發零用錢時的笑容可能會變得非常意味深長... 證明給他們看！",
+                "用大腦賺取第一桶金的機會來了！這 100 塊不是發放的，是你憑本事從單字地獄裡搶回來的！"
+            ];
+            const tourney200Quotes = [
+                "40 題的考驗可不是開玩笑的！用你的指尖征服它們，把這雙倍的 $200 現金帶回家，今晚給自己加菜！",
+                "雙倍的獎勵，背後是雙倍的折磨！別在中途抽筋了，這 40 題答完，你就是家裡最富有的單字土豪！",
+                "據說只有大腦發光的人才能在 40 題的雙倍地獄中生存下來。深呼吸，讓世界看看你閃閃發光的腦袋！",
+                "這不是一場測驗，這是一場與 40 個單字的鋪天蓋地大搏鬥！打敗它們，拿走 $200，今晚珍奶直接升級大杯加雙倍珍珠！",
+                "40 題聽起來像天降懲罰，但看在 200 塊的份上，這點折磨算什麼？咬緊牙關，大吉大利，今晚吃雞！",
+                "一個字值 5 塊，40 個字就是 200 塊！這是一場高回報的智力戰爭，上吧，用你的字庫碾壓對手！",
+                "200 塊正在向你微笑，而 40 個單字正在向你咆哮。拿出你的氣勢，用正確的拼寫讓它們閉嘴！",
+                "聽說能通過 40 題挑戰的人，未來連做夢都在用英文數錢。來，開始你的數錢之旅！",
+                "這 40 題是專門為真正的單字王準備的。普通人早就退縮了，但你可不是普通人，對吧？",
+                "家長的錢包已經瑟瑟發抖，因為你即將帶著 40 個正確拼寫去敲他們的房門！拿下這 200 塊！"
+            ];
+
+            let msg = "";
+            if (isMock) {
+                const quote = mockQuotes[Math.floor(Math.random() * mockQuotes.length)];
+                msg = `📝 即將進入【模擬挑戰考】！\n\n◆ 規則：共 20 題，每題有 2 次拼寫機會（2命制）。\n◆ 獎勵：100% 答對即可解鎖每日任務並獲得積分！\n\n💡 激勵：${quote}`;
+            } else if (isDouble) {
+                const quote = tourney200Quotes[Math.floor(Math.random() * tourney200Quotes.length)];
+                msg = `🔥 即將進入【雙倍挑戰賽】！\n\n◆ 規則：共 40 題，每題有 2 次拼寫機會（2命制，高強度馬拉松！）。\n◆ 獎勵：100% 答對可獲得 $200 零用錢兌換券！\n◆ 參賽：挑戰成功扣 150 積分，失敗或放棄不扣分。\n\n💡 激勵：${quote}`;
+            } else {
+                const quote = tourney100Quotes[Math.floor(Math.random() * tourney100Quotes.length)];
+                msg = `🏆 即將進入【一般挑戰賽】！\n\n◆ 規則：共 20 題，每題有 2 次拼寫機會（2命制）。\n◆ 獎勵：100% 答對可獲得 $100 零用錢兌換券！\n◆ 參賽：挑戰成功扣 100 積分，失敗或放棄不扣分。\n\n💡 激勵：${quote}`;
+            }
+            alert(msg);
+
+            const learnedPool = allWordsData.filter(w => {
+                const key = w.word.toLowerCase();
+                return (leitnerBox[key]?.boxLevel || 0) > 0;
+            });
+
+            let reqCount = 20;
+            if (isDouble) {
+                reqCount = 40;
+            }
+
+            if (learnedPool.length < reqCount) {
+                alert(`⚠️ 無法開啟${isMock ? '模擬考' : '挑戰賽'}！\n當前系統中已學單字量僅有 ${learnedPool.length} 個，不足發考卷所需的 ${reqCount} 個單字，請先去學習新字！`);
+                return;
+            }
+
+            const box1 = learnedPool.filter(w => (leitnerBox[w.word.toLowerCase()]?.boxLevel || 1) === 1);
+            const box2 = learnedPool.filter(w => (leitnerBox[w.word.toLowerCase()]?.boxLevel || 1) === 2);
+            const box3 = learnedPool.filter(w => (leitnerBox[w.word.toLowerCase()]?.boxLevel || 1) === 3);
+
+            box3.sort((a, b) => {
+                const ta = leitnerBox[a.word.toLowerCase()]?.lastTested || 0;
+                const tb = leitnerBox[b.word.toLowerCase()]?.lastTested || 0;
+                return ta - tb;
+            });
+
+            const req1 = Math.round(reqCount * 0.4);
+            const req2 = Math.round(reqCount * 0.4);
+            const req3 = reqCount - req1 - req2;
+
+            let chosen = [];
+            const pick1 = box1.slice(0, req1);
+            const pick2 = box2.slice(0, req2);
+            const pick3 = box3.slice(0, req3);
+
+            chosen = [...pick1, ...pick2, ...pick3];
+
+            if (chosen.length < reqCount) {
+                const remain = learnedPool.filter(w => !chosen.includes(w));
+                remain.sort(() => Math.random() - 0.5);
+                chosen = [...chosen, ...remain.slice(0, reqCount - chosen.length)];
+            }
+
+            chosen.sort(() => Math.random() - 0.5);
+
+            // 設定挑戰賽狀態
+            activeTournamentType = isMock ? 'mock' : (isDouble ? 'tourney-200' : 'tourney-100');
+
+            // 組裝 quizPool (對接原生測驗)
+            quizPool = chosen.map(wordObj => {
+                const examples = wordObj.examples || [];
+                const idx = Math.floor(Math.random() * examples.length);
+                const ex = examples[idx] || { en: "No example." };
+                return {
+                    wordObj: wordObj,
+                    sentence: ex.en,
+                    sentenceIndex: idx,
+                    isReview: false
+                };
+            });
+
+            quizIndex = 0;
+            quizWrongCount = 0;
+            lives = 2; // 全部為二命制
+
+            // 隱藏頂部導覽列以防逃跑
+            const header = document.getElementById('app-header');
+            if (header) header.classList.add('hidden');
+
+            // 隱藏商城面板本身
+            const shopView = document.getElementById('shop-view');
+            if (shopView) shopView.classList.add('hidden');
+
+            // 顯示放棄挑戰按鈕
+            const abandonBtn = document.getElementById('quiz-abandon-btn');
+            if (abandonBtn) abandonBtn.classList.remove('hidden');
+
+            // 切換至測驗模式並加載新題目
+            switchMode('quiz');
+            loadQuizQuestion();
+        };
+
+        window.addEventListener('load', () => {
+            renderShop();
+        });
     </script>
     <!-- 教材選擇彈窗 (Modal) -->
     <div id="book-select-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
