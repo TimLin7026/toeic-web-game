@@ -19,9 +19,27 @@
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between">
 
     <!-- 頁首：置中集中功能列 -->
-    <header id="app-header" class="bg-white shadow-sm py-2 px-3 sm:px-6 sticky top-0 z-10 flex justify-center items-center">
-        <!-- 所有按鈕直接扁平排成一行，在小螢幕上微調間距，防折行 -->
-        <div class="flex items-center gap-1.5 sm:gap-2.5 justify-center flex-nowrap">
+    <header id="app-header" class="bg-white shadow-sm sticky top-0 z-10 flex flex-col justify-center">
+        <!-- Row 1: 核心切換列 -->
+        <div class="py-2.5 px-3 sm:px-6 flex justify-center items-center">
+            <div class="flex items-center gap-3 sm:gap-4.5 justify-center flex-nowrap w-full max-w-md">
+                <!-- ☰ 漢堡選單按鈕 -->
+                <div class="relative inline-flex flex-shrink-0">
+                    <button id="btn-hamburger" onclick="toggleHelperMenu()" class="h-10 sm:h-11 w-12 sm:w-14 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center font-bold flex-shrink-0" title="展開輔助選單">
+                        <span class="text-sm sm:text-base leading-none">☰</span>
+                    </button>
+                    <span id="google-sync-badge-hamburger" class="hidden absolute -top-1 -right-1 w-3.5 h-3.5 sm:w-4 sm:h-4 bg-rose-500 text-white text-[8px] sm:text-[9px] font-bold rounded-full flex items-center justify-center leading-none shadow-sm" title="尚未連結 Google 雲端同步">!</span>
+                </div>
+                
+                <!-- 主要切換按鈕 -->
+                <button id="mode-flip" onclick="switchMode('flip')" class="h-10 sm:h-11 w-16 sm:w-20 text-[11px] sm:text-xs font-bold bg-indigo-50 text-indigo-600 rounded-lg shadow-sm hover:bg-indigo-100 transition flex-shrink-0 flex items-center justify-center">字卡</button>
+                <button id="mode-list" onclick="switchMode('list')" class="h-10 sm:h-11 w-16 sm:w-20 text-[11px] sm:text-xs font-bold bg-slate-100 text-slate-600 rounded-lg shadow-sm hover:bg-slate-200 transition flex-shrink-0 flex items-center justify-center">列表</button>
+                <button id="mode-quiz" onclick="switchMode('quiz')" class="h-10 sm:h-11 w-16 sm:w-20 text-[11px] sm:text-xs font-bold bg-emerald-50 text-emerald-600 rounded-lg shadow-sm hover:bg-emerald-100 transition border border-emerald-200 flex-shrink-0 flex items-center justify-center">測驗</button>
+            </div>
+        </div>
+        
+        <!-- Row 2: 漢堡選單內收納的輔助功能按鈕列 (預設隱藏) -->
+        <div id="helper-menu-panel" class="hidden bg-slate-50 border-t border-slate-100/60 py-2 flex justify-center gap-6 sm:gap-8 flex-nowrap">
             <!-- 齒輪設定按鈕 -->
             <div class="relative inline-flex flex-shrink-0">
                 <button id="btn-settings" onclick="toggleSettingsPanel()" class="p-1.5 sm:p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center" title="語音參數設定">
@@ -30,18 +48,13 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                     </svg>
                 </button>
-                <span id="google-sync-badge" class="hidden absolute -top-1 -right-1 w-3.5 h-3.5 sm:w-4 sm:h-4 bg-rose-500 text-white text-[8px] sm:text-[9px] font-bold rounded-full flex items-center justify-center leading-none shadow-sm" title="尚未連結 Google 雲端同步">!</span>
+                <span id="google-sync-badge-settings" class="hidden absolute -top-1 -right-1 w-3.5 h-3.5 sm:w-4 sm:h-4 bg-rose-500 text-white text-[8px] sm:text-[9px] font-bold rounded-full flex items-center justify-center leading-none shadow-sm" title="尚未連結 Google 雲端同步">!</span>
             </div>
 
             <!-- 教材單元選擇 📖 按鈕 -->
             <button id="btn-book-unit" onclick="toggleBookUnitPanel()" class="p-1.5 sm:p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center flex-shrink-0" title="選擇教材與單元">
                 <span class="text-sm sm:text-base leading-none">📖</span>
             </button>
-
-            <!-- 模式切換與分析、商城平鋪一體化 -->
-            <button id="mode-flip" onclick="switchMode('flip')" class="px-2.5 sm:px-3.5 py-1.5 text-[11px] sm:text-xs font-bold bg-indigo-50 text-indigo-600 rounded-lg shadow-sm hover:bg-indigo-100 transition flex-shrink-0">字卡</button>
-            <button id="mode-list" onclick="switchMode('list')" class="px-2.5 sm:px-3.5 py-1.5 text-[11px] sm:text-xs font-bold bg-slate-100 text-slate-600 rounded-lg shadow-sm hover:bg-slate-200 transition flex-shrink-0">列表</button>
-            <button id="mode-quiz" onclick="switchMode('quiz')" class="px-2.5 sm:px-3.5 py-1.5 text-[11px] sm:text-xs font-bold bg-emerald-50 text-emerald-600 rounded-lg shadow-sm hover:bg-emerald-100 transition border border-emerald-200 flex-shrink-0">測驗</button>
 
             <!-- 成效分析 📈 按鈕 -->
             <button id="btn-analysis" onclick="toggleAnalysisPanel()" class="p-1.5 sm:p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center flex-shrink-0" title="成效分析與歷次測驗分數">
@@ -205,7 +218,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.04</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.09</p>
             </div>
         </div>
 
@@ -1064,9 +1077,8 @@
                         accessToken = resp.access_token;
                         localStorage.setItem('g_access_token', accessToken);
                         localStorage.setItem('g_connected', 'true'); // 標記為已連結狀態
-                        // 連結成功 → 隱藏齒輪按鈕上的提示 badge
-                        const badge = document.getElementById('google-sync-badge');
-                        if (badge) badge.classList.add('hidden');
+                        // 連結成功 → 隱藏提示 badge
+                        updateGoogleSyncBadge(false);
                         
                         await fetchUserInfo();
                         await syncWithCloud();
@@ -2359,6 +2371,10 @@
         // 模式切換邏輯
         function switchMode(mode) {
             if (isSpeaking) return;
+            const helperMenu = document.getElementById('helper-menu-panel');
+            if (helperMenu) {
+                helperMenu.classList.add('hidden');
+            }
             const flashcardView = document.getElementById('flashcard-view');
             const listView = document.getElementById('list-view');
             const quizView = document.getElementById('quiz-view');
@@ -2376,9 +2392,9 @@
             const modeList = document.getElementById('mode-list');
             const modeQuiz = document.getElementById('mode-quiz');
 
-            modeFlip.className = "px-3 py-1.5 text-xs font-medium bg-slate-100 text-slate-600 rounded-lg shadow-sm hover:bg-slate-200 transition";
-            modeList.className = "px-3 py-1.5 text-xs font-medium bg-slate-100 text-slate-600 rounded-lg shadow-sm hover:bg-slate-200 transition";
-            modeQuiz.className = "px-3 py-1.5 text-xs font-medium bg-emerald-50 text-emerald-600 rounded-lg shadow-sm hover:bg-emerald-100 transition border border-emerald-200";
+            modeFlip.className = "h-10 sm:h-11 w-16 sm:w-20 text-[11px] sm:text-xs font-bold bg-slate-100 text-slate-600 rounded-lg shadow-sm hover:bg-slate-200 transition flex-shrink-0 flex items-center justify-center";
+            modeList.className = "h-10 sm:h-11 w-16 sm:w-20 text-[11px] sm:text-xs font-bold bg-slate-100 text-slate-600 rounded-lg shadow-sm hover:bg-slate-200 transition flex-shrink-0 flex items-center justify-center";
+            modeQuiz.className = "h-10 sm:h-11 w-16 sm:w-20 text-[11px] sm:text-xs font-bold bg-emerald-50 text-emerald-600 rounded-lg shadow-sm hover:bg-emerald-100 transition border border-emerald-200 flex-shrink-0 flex items-center justify-center";
 
             flashcardView.classList.add('hidden');
             listView.classList.add('hidden');
@@ -2389,19 +2405,19 @@
             }
             const shopBtn = document.getElementById('btn-shop');
             if (shopBtn) {
-                shopBtn.className = "p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center";
+                shopBtn.className = "p-1.5 sm:p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center flex-shrink-0";
             }
 
             if (mode === 'flip') {
-                modeFlip.className = "px-3 py-1.5 text-xs font-medium bg-indigo-50 text-indigo-600 rounded-lg shadow-sm hover:bg-indigo-100 transition";
+                modeFlip.className = "h-10 sm:h-11 w-16 sm:w-20 text-[11px] sm:text-xs font-bold bg-indigo-50 text-indigo-600 rounded-lg shadow-sm hover:bg-indigo-100 transition flex-shrink-0 flex items-center justify-center";
                 flashcardView.classList.remove('hidden');
                 updateCard();
             } else if (mode === 'list') {
-                modeList.className = "px-3 py-1.5 text-xs font-medium bg-indigo-50 text-indigo-600 rounded-lg shadow-sm hover:bg-indigo-100 transition";
+                modeList.className = "h-10 sm:h-11 w-16 sm:w-20 text-[11px] sm:text-xs font-bold bg-indigo-50 text-indigo-600 rounded-lg shadow-sm hover:bg-indigo-100 transition flex-shrink-0 flex items-center justify-center";
                 listView.classList.remove('hidden');
                 renderList();
             } else if (mode === 'quiz') {
-                modeQuiz.className = "px-3 py-1.5 text-xs font-medium bg-emerald-600 text-white rounded-lg shadow-sm font-bold transition";
+                modeQuiz.className = "h-10 sm:h-11 w-16 sm:w-20 text-[11px] sm:text-xs font-bold bg-emerald-600 text-white rounded-lg shadow-sm transition flex-shrink-0 flex items-center justify-center";
                 quizView.classList.remove('hidden');
                 
                 // 強制隱藏提示起跑頁，直接顯示答題頁
@@ -3081,9 +3097,20 @@
                     tokenClient.requestAccessToken({ prompt: '' });
                 }
             } else if (!isConnected) {
-                // 從未連結過 Google → 在齒輪按鈕顯示 ! 提示 badge
-                const badge = document.getElementById('google-sync-badge');
-                if (badge) badge.classList.remove('hidden');
+                // 從未連結過 Google → 顯示 ! 提示 badge
+                updateGoogleSyncBadge(true);
+            }
+        }
+
+        function updateGoogleSyncBadge(visible) {
+            const b1 = document.getElementById('google-sync-badge-hamburger');
+            const b2 = document.getElementById('google-sync-badge-settings');
+            if (visible) {
+                if (b1) b1.classList.remove('hidden');
+                if (b2) b2.classList.remove('hidden');
+            } else {
+                if (b1) b1.classList.add('hidden');
+                if (b2) b2.classList.add('hidden');
             }
         }
 
@@ -3100,6 +3127,22 @@
             });
         }
         // ==========================================
+        // 控制漢堡選單 Row 2 的顯示與隱藏
+        window.toggleHelperMenu = function() {
+            const panel = document.getElementById('helper-menu-panel');
+            const btn = document.getElementById('btn-hamburger');
+            if (!panel) return;
+            const isHidden = panel.classList.contains('hidden');
+            if (isHidden) {
+                panel.classList.remove('hidden');
+                if (btn) btn.className = "h-10 sm:h-11 w-12 sm:w-14 bg-slate-200 text-slate-700 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center font-bold flex-shrink-0";
+            } else {
+                panel.classList.add('hidden');
+                if (btn) btn.className = "h-10 sm:h-11 w-12 sm:w-14 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg shadow-sm transition active:scale-95 flex items-center justify-center font-bold flex-shrink-0";
+                restorePreviousView();
+            }
+        };
+
         // 🪙 積分挑戰與獎金挑戰賽 UI 驅動邏輯
         // ==========================================
 
