@@ -256,8 +256,8 @@
                 // 只有挑戰成功才會扣除積分
                 this.data.points = Math.max(0, this.data.points - requiredPoints);
                 
-                // 重置新掌握單字計數器
-                this.data.newBox1Count = 0;
+                // 扣除 15 個已學單字計數，支持機會累積
+                this.data.newBox1Count = Math.max(0, this.data.newBox1Count - 15);
 
                 // 將今日學到的新字與目前進度中的單字 ID 加入 challengedWordIds，標記為已挑戰
                 if (window.wordList) {

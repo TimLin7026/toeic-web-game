@@ -218,7 +218,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260831.05</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260831.08</p>
             </div>
         </div>
 
@@ -451,8 +451,13 @@
                             <span id="quiz-level-badge" class="text-[9px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded font-bold border border-slate-200/40">初級</span>
                         </div>
                         <p class="text-sm font-medium text-slate-800 mt-1" id="quiz-example">Don't let one mistake _____ your day.</p>
-                        <!-- 一命時才顯示的中文翻譯提示 -->
-                        <p id="quiz-zh-hint" class="hidden text-xs text-amber-600 mt-2 font-medium border-t border-amber-100 pt-1.5">💡 中文提示：<span id="quiz-zh-hint-text"></span></p>
+                        <!-- 一命時才顯示的中文翻譯提示 (附帶英文全句朗讀喇叭) -->
+                        <div id="quiz-zh-hint" class="hidden mt-2 border-t border-amber-100 pt-1.5 flex justify-between items-center text-xs text-amber-600 font-medium">
+                            <p>💡 中文提示：<span id="quiz-zh-hint-text"></span></p>
+                            <button id="quiz-zh-audio-btn" onclick="playQuizSentenceAudio()" class="p-1 hover:bg-amber-100 text-amber-700 rounded transition flex-shrink-0 ml-2" title="朗讀英文整句例句">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                            </button>
+                        </div>
                     </div>
                     <button id="quiz-audio-btn" onclick="playQuizAudio()" class="p-2.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-600 rounded-full transition flex-shrink-0 opacity-40 cursor-not-allowed ml-3" disabled title="生命值剩 1 時解鎖發音提示">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
@@ -498,14 +503,22 @@
                 </div>
 
                 <div class="border-t border-amber-100/50 pt-3 flex flex-col gap-1.5">
-                    <div class="flex justify-between items-center text-xs font-bold text-slate-700">
-                        <span>本輪新學單字累積（解鎖挑戰賽）：</span>
-                        <span id="shop-newwords-ratio" class="text-indigo-600">0 / 15 字</span>
+                    <div class="flex flex-col gap-1">
+                        <!-- 上層：主標題對齊機會 Badge -->
+                        <div class="flex justify-between items-center text-xs font-bold text-slate-700 flex-wrap gap-y-1">
+                            <span>本輪新學單字累積：</span>
+                            <span id="shop-challenge-tickets" class="text-[10px] bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full font-bold border border-indigo-100/30">獲得 0 次挑戰機會</span>
+                        </div>
+                        <!-- 中層：說明文字對齊數值進度 (小字) -->
+                        <div class="flex justify-between items-center text-[10px] text-slate-400">
+                            <span>解鎖挑戰賽進度</span>
+                            <span id="shop-newwords-ratio" class="text-indigo-600">0 / 15 字</span>
+                        </div>
                     </div>
                     <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden border border-slate-200/50">
                         <div id="shop-newwords-bar" class="bg-indigo-600 h-full transition-all duration-300" style="width: 0%"></div>
                     </div>
-                    <p class="text-[9px] text-slate-400 mt-1">※ 每通過一次挑戰賽，此進度會歸零。需再於「測驗」答對掌握滿 15 個新單字才能開啟下一場挑戰。</p>
+                    <p class="text-[9px] text-slate-400 mt-1">※ 每通過一次挑戰賽，此進度會扣除 1次挑戰機會。需再於「測驗」答對掌握新單字以累積下一場挑戰機會。</p>
                 </div>
             </div>
 
@@ -1871,6 +1884,12 @@
             }
         }
 
+        function playQuizSentenceAudio() {
+            if (quizPool.length > 0 && quizIndex < quizPool.length) {
+                playAudio(quizPool[quizIndex].sentence);
+            }
+        }
+
         // 更新字卡介面
         function updateCard() {
             if (isSpeaking) return;
@@ -3032,13 +3051,8 @@
                 document.getElementById('quiz-example').innerHTML = highlightedSentence;
             }
 
-            if (isCorrect) {
-                playCorrectSound();
-                showCorrectSentence();
-                feedbackEl.textContent = "🎉 答對了！太棒了！";
-                feedbackEl.className = "text-center text-xs font-semibold mt-3 h-5 text-emerald-600";
-
-                // 正確答完題，也要顯示中文翻譯
+            // 輔助顯示中文翻譯與語音按鈕
+            function showChineseTranslation() {
                 const zhHint = document.getElementById('quiz-zh-hint');
                 const zhHintText = document.getElementById('quiz-zh-hint-text');
                 if (zhHint && zhHintText && currentItem) {
@@ -3049,6 +3063,16 @@
                         zhHint.classList.remove('hidden');
                     }
                 }
+            }
+
+            if (isCorrect) {
+                playCorrectSound();
+                showCorrectSentence();
+                feedbackEl.textContent = "🎉 答對了！太棒了！";
+                feedbackEl.className = "text-center text-xs font-semibold mt-3 h-5 text-emerald-600";
+
+                // 正確答完題，顯示中文翻譯
+                showChineseTranslation();
 
                 // 記錄該例句題庫已通過 (全域儲存)
                 if (!passedSentences[wordKey]) {
@@ -3102,17 +3126,9 @@
                     if (typeof activeTournamentType !== 'undefined' && activeTournamentType !== null) {
                         quizWrongCount++; // 累加答錯題數
                         showCorrectSentence();
-                        // 答錯完題，也要顯示中文翻譯
-                        const zhHint = document.getElementById('quiz-zh-hint');
-                        const zhHintText = document.getElementById('quiz-zh-hint-text');
-                        if (zhHint && zhHintText && currentItem) {
-                            const examples = currentItem.wordObj.examples || [];
-                            const zh = examples[currentItem.sentenceIndex] ? examples[currentItem.sentenceIndex].zh : '';
-                            if (zh) {
-                                zhHintText.textContent = zh;
-                                zhHint.classList.remove('hidden');
-                            }
-                        }
+                        
+                        // 答錯完題，顯示中文翻譯
+                        showChineseTranslation();
 
                         feedbackEl.textContent = `💥 殘念！正確答案是：【 ${currentObj.word} 】。`;
                         feedbackEl.className = "text-center text-xs font-semibold mt-3 h-5 text-rose-500";
@@ -3144,7 +3160,7 @@
                     localStorage.setItem('toeic_passed_sentences', JSON.stringify(passedSentences));
                     localStorage.setItem('toeic_leitner_box', JSON.stringify(leitnerBox));
 
-                    // 刷新下拉選單進度顯示
+                    // 刷新下拉選單進期顯示
                     const book = booksList.find(b => b.id === currentBook);
                     if (book) {
                         renderUnitSelect(book);
@@ -3155,6 +3171,10 @@
                     }
 
                     showCorrectSentence();
+                    
+                    // 一般測驗答錯次數用完，也要顯示中文翻譯
+                    showChineseTranslation();
+
                     feedbackEl.textContent = `💥 殘念！正確答案是：【 ${currentObj.word} 】。已自動取消該單字的掌握標記並退回 Box 1。`;
                     feedbackEl.className = "text-center text-xs font-semibold mt-3 h-5 text-amber-600";
                     // 隱藏輸入框與提交按鈕，顯示下一題按鈕
@@ -3357,10 +3377,13 @@
                 }
             }
 
-            // 3. 累積新字進度條
+            // 3. 累積新字進度條與挑戰機會計算
             const newWordsCount = ShopManager.data.newBox1Count || 0;
-            const newWordsPercent = Math.min(100, (newWordsCount / 15) * 100);
-            document.getElementById('shop-newwords-ratio').textContent = `${newWordsCount} / 15 字`;
+            const tickets = Math.floor(newWordsCount / 15);
+            const remainder = newWordsCount % 15;
+            const newWordsPercent = (remainder / 15) * 100;
+            document.getElementById('shop-challenge-tickets').textContent = `獲得 ${tickets} 次挑戰機會`;
+            document.getElementById('shop-newwords-ratio').textContent = `${remainder} / 15 字`;
             document.getElementById('shop-newwords-bar').style.width = `${newWordsPercent}%`;
 
             // 4. 每日與進階任務狀態更新
