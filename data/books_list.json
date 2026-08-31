@@ -1,6 +1,17 @@
 [
     {
         "id": "high_school_L3",
+        "name": "高中單字 L3 (托益版)",
+        "units": [
+            17,
+            18,
+            19,
+            20,
+            21
+        ]
+    },
+    {
+        "id": "simple_high_school_L3",
         "name": "高中單字 L3",
         "units": [
             17,

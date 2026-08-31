@@ -59,8 +59,23 @@ def check_and_format_json(file_path):
                 # 相容並自動轉換 english -> en, chinese -> zh 鍵名
                 en_val = ex.get("en", ex.get("english", "")).strip()
                 zh_val = ex.get("zh", ex.get("chinese", "")).strip()
+                level_val = ex.get("level", ex.get("grade", "")).strip()
+                
+                # 自動補齊難易度分級 (2個初級, 2個中級, 1個中高級)
+                if not level_val:
+                    if ex_idx in [0, 1]:
+                        level_val = "初級"
+                    elif ex_idx in [2, 3]:
+                        level_val = "中級"
+                    else:
+                        level_val = "中高級"
+                
                 if en_val and zh_val:
-                    cleaned_examples.append({"en": en_val, "zh": zh_val})
+                    cleaned_examples.append({
+                        "en": en_val,
+                        "zh": zh_val,
+                        "level": level_val
+                    })
                     continue
             print(f"[!] 錯誤: 單字 '{word}' 第 {ex_idx + 1} 句例句格式不合規 (需包含 en 與 zh)。")
             issues_found += 1

@@ -1,0 +1,1322 @@
+[
+    {
+        "id": 1,
+        "word": "stitch",
+        "part_of_speech": "vi. / vt.",
+        "meaning": "縫",
+        "examples": [
+            {
+                "en": "She stitched a lovely flower onto her bag.",
+                "zh": "她在包包上縫了一朵可愛的花。",
+                "level": "初級"
+            },
+            {
+                "en": "He knows how to stitch a torn shirt.",
+                "zh": "他懂得縫補破掉的襯衫。",
+                "level": "初級"
+            },
+            {
+                "en": "The button needs to be stitched back to the pants.",
+                "zh": "這鈕釦必須縫回褲子上。",
+                "level": "中級"
+            },
+            {
+                "en": "The doctor said that his wound might need a number of stitches.",
+                "zh": "醫生說他的傷口可能要縫好幾針。",
+                "level": "中級"
+            },
+            {
+                "en": "Skilled artisans meticulously hand-stitch leather components for luxury bags.",
+                "zh": "技術純熟的工匠為奢侈包款手工細緻縫製皮革零件。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "word": "vest",
+        "part_of_speech": "n.",
+        "meaning": "背心",
+        "examples": [
+            {
+                "en": "He wore a warm vest under his coat.",
+                "zh": "他在大衣裡面穿了一件暖和的背心。",
+                "level": "初級"
+            },
+            {
+                "en": "The police officers wore bulletproof vests.",
+                "zh": "警察穿著防彈背心。",
+                "level": "初級"
+            },
+            {
+                "en": "I knitted a vest for my son.",
+                "zh": "我替兒子織了一件背心。",
+                "level": "中級"
+            },
+            {
+                "en": "Cyclists should wear reflective vests at night for safety.",
+                "zh": "騎士晚上為了安全應該穿反光背心。",
+                "level": "中級"
+            },
+            {
+                "en": "Construction workers are mandated to wear high-visibility safety vests on site.",
+                "zh": "建築工人被強制要求在工地上穿著高能見度的安全背心。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "word": "scout",
+        "part_of_speech": "n.",
+        "meaning": "童子軍",
+        "examples": [
+            {
+                "en": "The scouts built a campfire in the woods.",
+                "zh": "童子軍在樹林裡升起營火。",
+                "level": "初級"
+            },
+            {
+                "en": "He was a boy scout during his youth.",
+                "zh": "他年輕時曾是個童軍。",
+                "level": "初級"
+            },
+            {
+                "en": "There are a lot more boy scouts than girl scouts.",
+                "zh": "男童軍的人數比女童軍多許多。",
+                "level": "中級"
+            },
+            {
+                "en": "We sent a scout ahead to see whether the enemy was around.",
+                "zh": "我們先派出偵查員查看附近是否有敵軍。",
+                "level": "中級"
+            },
+            {
+                "en": "Talent scouts actively search for promising athletes at regional collegiate sports events.",
+                "zh": "體育星探在區域大學體育賽事中積極尋找有潛力的運動員。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "word": "property",
+        "part_of_speech": "n.",
+        "meaning": "財產",
+        "examples": [
+            {
+                "en": "Private property must be respected by everyone.",
+                "zh": "私人財產必須受到每個人的尊重。",
+                "level": "初級"
+            },
+            {
+                "en": "He bought a piece of land as property.",
+                "zh": "他買了一塊土地作為房地產。",
+                "level": "初級"
+            },
+            {
+                "en": "The house is my personal property.",
+                "zh": "這房子是我的個人財產。",
+                "level": "中級"
+            },
+            {
+                "en": "The plant has medicinal properties.",
+                "zh": "這種植物具有藥性。",
+                "level": "中級"
+            },
+            {
+                "en": "Intellectual property rights are crucial for safeguarding technological innovation.",
+                "zh": "智慧財產權對於維護技術創新至關重要。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "word": "stale",
+        "part_of_speech": "adj.",
+        "meaning": "不新鮮的、走味的",
+        "examples": [
+            {
+                "en": "The bread became stale after a few days.",
+                "zh": "這麵包過幾天後就變得不新鮮了。",
+                "level": "初級"
+            },
+            {
+                "en": "Throw away those stale biscuits.",
+                "zh": "把那些不新鮮的餅乾丟掉。",
+                "level": "初級"
+            },
+            {
+                "en": "The innkeeper gave us some stale toast for breakfast.",
+                "zh": "旅館老闆提供不新鮮的吐司做我們的早餐。",
+                "level": "中級"
+            },
+            {
+                "en": "We grew tired of his stale jokes.",
+                "zh": "我們對那些老掉牙的笑話感到厭煩。",
+                "level": "中級"
+            },
+            {
+                "en": "Revitalizing a stagnant corporate culture requires fresh ideas rather than stale strategies.",
+                "zh": "振興停滯的企業文化需要新點子，而不是陳舊的策略。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "word": "shovel",
+        "part_of_speech": "n.",
+        "meaning": "鏟子、圓鍬",
+        "examples": [
+            {
+                "en": "He used a shovel to dig a hole in the yard.",
+                "zh": "他用鏟子在院子裡挖了一個洞。",
+                "level": "初級"
+            },
+            {
+                "en": "Keep the snow shovel near the front door.",
+                "zh": "把除雪鏟放在前門附近。",
+                "level": "初級"
+            },
+            {
+                "en": "She dug a hole with a shovel.",
+                "zh": "她用鏟子挖出一個洞。",
+                "level": "中級"
+            },
+            {
+                "en": "The girl threw a shovel of sand on my face by accident.",
+                "zh": "這女孩不小心把一鏟沙灑在我的臉上。",
+                "level": "中級"
+            },
+            {
+                "en": "Heavy snowfall forced the crew to clear the pathways using mechanical shovels.",
+                "zh": "大雪迫使工作人員使用機械鏟清除通道。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "word": "mend",
+        "part_of_speech": "vt.",
+        "meaning": "修理、修補",
+        "examples": [
+            {
+                "en": "Can you mend my broken watch?",
+                "zh": "你能修理我壞掉的手錶嗎？",
+                "level": "初級"
+            },
+            {
+                "en": "She tried to mend the torn dress.",
+                "zh": "她試圖修補破掉的洋裝。",
+                "level": "初級"
+            },
+            {
+                "en": "The shoes are a bit worn and need mending.",
+                "zh": "這雙鞋子有些磨損需要修補一下。",
+                "level": "中級"
+            },
+            {
+                "en": "The child's wounds are mending quickly.",
+                "zh": "這名小孩的傷口癒合得很快。",
+                "level": "中級"
+            },
+            {
+                "en": "Diplomatic efforts are underway to mend the fractured international relations.",
+                "zh": "外交努力正在進行中，以修補破裂的國際關係。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "word": "drip",
+        "part_of_speech": "vi. / vt.",
+        "meaning": "(使) 滴下",
+        "examples": [
+            {
+                "en": "Water was dripping from the leaky faucet.",
+                "zh": "水從漏水的水龍頭滴下來。",
+                "level": "初級"
+            },
+            {
+                "en": "Raindrops dripped down the window glass.",
+                "zh": "雨滴從窗玻璃上滴落。",
+                "level": "初級"
+            },
+            {
+                "en": "Sweat was dripping off his nose.",
+                "zh": "汗水從他的鼻子滴下。",
+                "level": "中級"
+            },
+            {
+                "en": "The drip of the rain made a pleasant sound.",
+                "zh": "雨滴聲很悅耳。",
+                "level": "中級"
+            },
+            {
+                "en": "Intravenous fluids dripped slowly into the patient's arm throughout the night.",
+                "zh": "靜脈輸液整晚緩慢地滴入病人的手臂中。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "word": "mushroom",
+        "part_of_speech": "n.",
+        "meaning": "蘑菇",
+        "examples": [
+            {
+                "en": "She added sliced mushrooms to the pasta.",
+                "zh": "她在義大利麵裡加入了切片蘑菇。",
+                "level": "初級"
+            },
+            {
+                "en": "Some wild mushrooms are poisonous to humans.",
+                "zh": "有些野生蘑菇對人類有毒。",
+                "level": "初級"
+            },
+            {
+                "en": "Can I have mushrooms on my pizza, please?",
+                "zh": "可以在我的披薩上放一些蘑菇嗎？",
+                "level": "中級"
+            },
+            {
+                "en": "The bomb exploded, and the smoke mushroomed into the sky.",
+                "zh": "炸彈爆炸後，煙霧如蕈狀般擴散至天空。",
+                "level": "中級"
+            },
+            {
+                "en": "Technology startups mushroomed across the metropolitan area following the new economic policy.",
+                "zh": "在新經濟政策頒布後，科技新創公司在大都會區如雨後春筍般湧現。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "word": "saucer",
+        "part_of_speech": "n.",
+        "meaning": "茶碟、(杯子下的) 托碟",
+        "examples": [
+            {
+                "en": "He placed the teacup back on the saucer.",
+                "zh": "他把茶杯放回茶碟上。",
+                "level": "初級"
+            },
+            {
+                "en": "The porcelain saucer matched the delicate teacup.",
+                "zh": "瓷製茶碟與精緻的茶杯很相配。",
+                "level": "初級"
+            },
+            {
+                "en": "Julia has a large collection of beautiful teacup and saucer sets.",
+                "zh": "茱莉亞收藏許多漂亮的茶杯及茶碟組。",
+                "level": "中級"
+            },
+            {
+                "en": "She accidentally chipped the rim of the glass saucer.",
+                "zh": "她不小心敲缺了玻璃茶碟的邊緣。",
+                "level": "中級"
+            },
+            {
+                "en": "Antique silver saucers are highly prized by collectors of vintage tableware.",
+                "zh": "古董銀茶碟深受復古餐具收藏家的珍視。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "word": "skate",
+        "part_of_speech": "vi.",
+        "meaning": "溜冰、溜滑輪",
+        "examples": [
+            {
+                "en": "Children love to skate on the frozen pond.",
+                "zh": "孩子們喜歡在結冰的池塘上溜冰。",
+                "level": "初級"
+            },
+            {
+                "en": "He learned how to skateboard at a young age.",
+                "zh": "他在很小的時候就學會了玩滑板。",
+                "level": "初級"
+            },
+            {
+                "en": "Putting on her skates and pads, she skated around on the frozen lake.",
+                "zh": "她穿上溜冰鞋和護具，在結冰的湖面溜來溜去。",
+                "level": "中級"
+            },
+            {
+                "en": "Would you like to go ice-skating?",
+                "zh": "你要去溜冰嗎？",
+                "level": "中級"
+            },
+            {
+                "en": "Professional figure skaters perform breathtaking spins and jumps during competitions.",
+                "zh": "專業花式溜冰選手在比賽中表演驚人的旋轉與跳躍。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "word": "operate",
+        "part_of_speech": "vt.",
+        "meaning": "操作",
+        "examples": [
+            {
+                "en": "He knows how to operate heavy machinery.",
+                "zh": "他知道如何操作重型機械。",
+                "level": "初級"
+            },
+            {
+                "en": "The machine is easy to operate.",
+                "zh": "這台機器操作很簡單。",
+                "level": "初級"
+            },
+            {
+                "en": "Do you know how to operate the new machine?",
+                "zh": "你知道如何操作這臺新機器嗎？",
+                "level": "中級"
+            },
+            {
+                "en": "The doctor had to operate on his spine.",
+                "zh": "醫生必須為他的脊椎動手術。",
+                "level": "中級"
+            },
+            {
+                "en": "Advanced automation allows technicians to operate industrial plants remotely.",
+                "zh": "先進的自動化技術允許技術人員遠端操作工廠設備。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "word": "assume",
+        "part_of_speech": "vt.",
+        "meaning": "假定、認定",
+        "examples": [
+            {
+                "en": "Don't assume everything you hear is true.",
+                "zh": "不要認定你聽到的每件事都是真的。",
+                "level": "初級"
+            },
+            {
+                "en": "We can assume that the plan will succeed.",
+                "zh": "我們可以假設這個計劃會成功。",
+                "level": "初級"
+            },
+            {
+                "en": "I assume that they are not coming.",
+                "zh": "我認定他們不會來。",
+                "level": "中級"
+            },
+            {
+                "en": "It is wrong for you to assume him (to be) a thief.",
+                "zh": "你不該認定他是小偷。",
+                "level": "中級"
+            },
+            {
+                "en": "Researchers often assume certain baseline conditions when formulating theoretical models.",
+                "zh": "研究人員在建構理論模型時，經常假設某些基準條件。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "word": "career",
+        "part_of_speech": "n.",
+        "meaning": "事(職)業",
+        "examples": [
+            {
+                "en": "She is pursuing a career in medicine.",
+                "zh": "她正在追求醫學事業。",
+                "level": "初級"
+            },
+            {
+                "en": "He started his teaching career twenty years ago.",
+                "zh": "他二十年前開始了他的教學生涯。",
+                "level": "初級"
+            },
+            {
+                "en": "After the play, he realized that his acting career was over.",
+                "zh": "他了解自己的演藝生涯在這部戲後畫下句點。",
+                "level": "中級"
+            },
+            {
+                "en": "Building a successful corporate career requires dedication and networking.",
+                "zh": "建立成功的企業職涯需要奉獻精神與人脈拓展。",
+                "level": "中級"
+            },
+            {
+                "en": "A sudden scandal abruptly derailed his promising political career.",
+                "zh": "一場突如其來的醜聞無預警地斷送了他大好的政治前程。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "word": "professor",
+        "part_of_speech": "n.",
+        "meaning": "教授",
+        "examples": [
+            {
+                "en": "The history professor gave an inspiring lecture.",
+                "zh": "歷史教授發表了一場鼓舞人心的演講。",
+                "level": "初級"
+            },
+            {
+                "en": "She asked her professor for academic advice.",
+                "zh": "她向教授尋求學術建議。",
+                "level": "初級"
+            },
+            {
+                "en": "Ted is a professor teaching literature.",
+                "zh": "泰德是一名文學教授。",
+                "level": "中級"
+            },
+            {
+                "en": "The university professor published several papers on quantum physics.",
+                "zh": "這位大學教授發表了數篇關於量子物理的論文。",
+                "level": "中級"
+            },
+            {
+                "en": "Renowned professors frequently collaborate on international research initiatives.",
+                "zh": "知名的教授經常在國際研究計畫上進行合作。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "word": "emotion",
+        "part_of_speech": "n.",
+        "meaning": "感情",
+        "examples": [
+            {
+                "en": "Tears can be a sign of deep emotion.",
+                "zh": "眼淚可能是強烈情感的表現。",
+                "level": "初級"
+            },
+            {
+                "en": "Music has the power to evoke strong emotion.",
+                "zh": "音樂有力量喚起強烈的情感。",
+                "level": "初級"
+            },
+            {
+                "en": "Her voice was full of emotion.",
+                "zh": "她的聲音充滿感情。",
+                "level": "中級"
+            },
+            {
+                "en": "Ann suffered from various emotional problems.",
+                "zh": "安遭受多種情緒問題之苦。",
+                "level": "中級"
+            },
+            {
+                "en": "Emotional intelligence is just as critical as academic aptitude in workplace success.",
+                "zh": "情商在職場成功中與學術性向同樣關鍵。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "word": "unique",
+        "part_of_speech": "adj.",
+        "meaning": "獨特的、獨一無二的",
+        "examples": [
+            {
+                "en": "Every person has a unique set of skills.",
+                "zh": "每個人都有一套獨特的技能。",
+                "level": "初級"
+            },
+            {
+                "en": "The hotel offers a unique holiday experience.",
+                "zh": "這家飯店提供獨特的假期體驗。",
+                "level": "初級"
+            },
+            {
+                "en": "Each person's fingerprints are unique.",
+                "zh": "每個人的指紋都是獨一無二的。",
+                "level": "中級"
+            },
+            {
+                "en": "The traditional architecture gives the town a unique charm.",
+                "zh": "傳統的建築賦予這個小鎮獨特的魅力。",
+                "level": "中級"
+            },
+            {
+                "en": "The cultural heritage of this indigenous tribe possesses unique historical value.",
+                "zh": "這個原住民部落的文化遺產具有獨特的歷史價值。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "word": "local",
+        "part_of_speech": "n.",
+        "meaning": "當地人",
+        "examples": [
+            {
+                "en": "A local showed us the best restaurant in town.",
+                "zh": "一位當地人帶我們去城裡最好的餐廳。",
+                "level": "初級"
+            },
+            {
+                "en": "Locals welcomed the tourists with great warmth.",
+                "zh": "當地人以無比的熱情歡迎遊客。",
+                "level": "初級"
+            },
+            {
+                "en": "The streets are like a maze. Only the locals won't get lost.",
+                "zh": "這些街道像迷宮一樣，只有當地人才不會迷路。",
+                "level": "中級"
+            },
+            {
+                "en": "He was sent to the local hospital after the car accident happened.",
+                "zh": "車禍發生後，他被送往當地的醫院。",
+                "level": "中級"
+            },
+            {
+                "en": "Local businesses joined forces to promote tourism within the region.",
+                "zh": "當地企業聯手促進該地區的觀光業。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "word": "locate",
+        "part_of_speech": "vt.",
+        "meaning": "找到～的位置",
+        "examples": [
+            {
+                "en": "Can you locate the nearest post office on the map?",
+                "zh": "你能在地圖上找到最近的郵局嗎？",
+                "level": "初級"
+            },
+            {
+                "en": "The police finally located the missing car.",
+                "zh": "警方終於找到了那輛失蹤的汽車。",
+                "level": "初級"
+            },
+            {
+                "en": "Can you locate this city on the map?",
+                "zh": "你能在地圖上找到這座城市的位置嗎？",
+                "level": "中級"
+            },
+            {
+                "en": "Our school is located on a hill.",
+                "zh": "我們的學校位於一座小山丘上。",
+                "level": "中級"
+            },
+            {
+                "en": "Advanced GPS technology helps rescue teams precisely locate stranded hikers.",
+                "zh": "先進的GPS技術有助於救援隊精確定位受困的登山客。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "word": "mostly",
+        "part_of_speech": "adv.",
+        "meaning": "大部分、多半",
+        "examples": [
+            {
+                "en": "The weather this week is mostly sunny.",
+                "zh": "這週的天氣大部分是晴天。",
+                "level": "初級"
+            },
+            {
+                "en": "The audience consisted mostly of students.",
+                "zh": "觀眾大部分由學生組成。",
+                "level": "初級"
+            },
+            {
+                "en": "Our students are mostly from Hsinchu and Miaoli.",
+                "zh": "我們的學生多半來自新竹與苗栗。",
+                "level": "中級"
+            },
+            {
+                "en": "The local economy relies mostly on agriculture and fishing.",
+                "zh": "當地經濟主要依賴農業和漁業。",
+                "level": "中級"
+            },
+            {
+                "en": "Consumer feedback was mostly positive regarding the newly released product line.",
+                "zh": "消費者對新發布的產品線的回饋大多是正面的。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "word": "urban",
+        "part_of_speech": "adj.",
+        "meaning": "都市的",
+        "examples": [
+            {
+                "en": "Many people move from rural areas to urban centers.",
+                "zh": "許多人從鄉村搬到都市中心。",
+                "level": "初級"
+            },
+            {
+                "en": "Urban planning is important for growing cities.",
+                "zh": "都市計畫對成長中的城市很重要。",
+                "level": "初級"
+            },
+            {
+                "en": "There are more job opportunities in urban areas.",
+                "zh": "都市地區有較多的工作機會。",
+                "level": "中級"
+            },
+            {
+                "en": "The government aims to expand green spaces in urban environments.",
+                "zh": "政府旨在擴大都市環境中的綠地空間。",
+                "level": "中級"
+            },
+            {
+                "en": "Rapid urban expansion often leads to severe traffic congestion and housing shortages.",
+                "zh": "快速的都市擴張經常導致嚴重的交通壅塞與房屋短缺。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "word": "anxious",
+        "part_of_speech": "adj.",
+        "meaning": "焦慮的 (~ about)",
+        "examples": [
+            {
+                "en": "She felt anxious before the job interview.",
+                "zh": "她在面試前感到焦慮。",
+                "level": "初級"
+            },
+            {
+                "en": "Parents are anxious about their children's safety.",
+                "zh": "父母對孩子們的安全感到擔憂。",
+                "level": "初級"
+            },
+            {
+                "en": "I am anxious about the coming exam.",
+                "zh": "我對於即將來臨的考試很焦慮。",
+                "level": "中級"
+            },
+            {
+                "en": "I was anxious to get the work done as soon as possible.",
+                "zh": "我急著盡快完成這頂工作。",
+                "level": "中級"
+            },
+            {
+                "en": "Investors grew increasingly anxious as market volatility reached unprecedented levels.",
+                "zh": "隨著市場波動達到空前水準，投資人變得愈發焦慮。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "word": "intelligent",
+        "part_of_speech": "adj.",
+        "meaning": "有聰明才智的 (學習理解能力佳)",
+        "examples": [
+            {
+                "en": "Dolphins are known to be intelligent animals.",
+                "zh": "海豚以聰明的動物聞名。",
+                "level": "初級"
+            },
+            {
+                "en": "He gave an intelligent answer to the question.",
+                "zh": "他對這個問題給出了聰明的回答。",
+                "level": "初級"
+            },
+            {
+                "en": "Helen is an intelligent student.",
+                "zh": "海倫是位聰明的學生。",
+                "level": "中級"
+            },
+            {
+                "en": "The intelligent system automatically adjusts temperature settings.",
+                "zh": "這個智慧系統會自動調整溫度設定。",
+                "level": "中級"
+            },
+            {
+                "en": "Artificial intelligence simulates intelligent human behavior through complex algorithms.",
+                "zh": "人工智慧透過複雜的演算法模擬具聰明才智的人類行為。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "word": "explore",
+        "part_of_speech": "vi. / vt.",
+        "meaning": "探索、探勘",
+        "examples": [
+            {
+                "en": "Children love to explore the woods.",
+                "zh": "孩子們喜歡探索樹林。",
+                "level": "初級"
+            },
+            {
+                "en": "They traveled to South America to explore ancient ruins.",
+                "zh": "他們前往南美洲探索古代遺跡。",
+                "level": "初級"
+            },
+            {
+                "en": "The best way to explore a place is to travel around on foot.",
+                "zh": "探索一個地方的最佳方式就是徒步漫遊。",
+                "level": "中級"
+            },
+            {
+                "en": "Columbus was a famous explorer.",
+                "zh": "哥倫布是一位著名的探險家。",
+                "level": "中級"
+            },
+            {
+                "en": "Space probes are launched to explore distant planets in our solar system.",
+                "zh": "發射太空探測器是為了探索我們太陽系中的遙遠行星。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "word": "organ",
+        "part_of_speech": "n.",
+        "meaning": "器官",
+        "examples": [
+            {
+                "en": "The heart is a vital organ in the human body.",
+                "zh": "心臟是人體中至關重要的器官。",
+                "level": "初級"
+            },
+            {
+                "en": "Regular exercise keeps our internal organs healthy.",
+                "zh": "規律運動能保持我們內部器官健康。",
+                "level": "初級"
+            },
+            {
+                "en": "In Taiwan, hundreds of people are waiting for organ transplants.",
+                "zh": "在臺灣，有數百人在等待器官移植。",
+                "level": "中級"
+            },
+            {
+                "en": "He plays the organ for the church.",
+                "zh": "他為教會彈管風琴。",
+                "level": "中級"
+            },
+            {
+                "en": "Medical advancements have greatly improved the success rate of organ donation surgeries.",
+                "zh": "醫療進步大幅提升了器官捐贈手術的成功率。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "word": "increase",
+        "part_of_speech": "vi. / vt.",
+        "meaning": "增加",
+        "examples": [
+            {
+                "en": "The store plans to increase its prices next month.",
+                "zh": "這家店計畫下個月調漲價格。",
+                "level": "初級"
+            },
+            {
+                "en": "Drinking water can increase your energy.",
+                "zh": "喝水可以增加你的活力。",
+                "level": "初級"
+            },
+            {
+                "en": "The population increased greatly in the first half of the century.",
+                "zh": "人口數在前半世紀大幅增加。",
+                "level": "中級"
+            },
+            {
+                "en": "The number of our students is on the increase.",
+                "zh": "我們的學生人數不斷增加。",
+                "level": "中級"
+            },
+            {
+                "en": "Global efforts are necessary to curb the continuous increase in carbon emissions.",
+                "zh": "全球必須共同努力來遏止碳排放量的持續增加。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "word": "junior",
+        "part_of_speech": "adj.",
+        "meaning": "較~年幼的 (~ to N)",
+        "examples": [
+            {
+                "en": "He is junior to me in the company.",
+                "zh": "他在公司裡資歷比我淺。",
+                "level": "初級"
+            },
+            {
+                "en": "She is my junior by two years.",
+                "zh": "她比我小兩歲。",
+                "level": "初級"
+            },
+            {
+                "en": "My younger brother is junior to me by two years.",
+                "zh": "我弟弟小我兩歲。",
+                "level": "中級"
+            },
+            {
+                "en": "I was just promoted to the junior executive.",
+                "zh": "我剛被拔擢為低階主管。",
+                "level": "中級"
+            },
+            {
+                "en": "Mentorship programs help junior employees navigate complex corporate structures.",
+                "zh": "師徒制計畫有助於資淺員工熟悉複雜的企業架構。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "word": "senior",
+        "part_of_speech": "adj.",
+        "meaning": "較~年長的 (~ to N)",
+        "examples": [
+            {
+                "en": "She is senior to her colleagues in experience.",
+                "zh": "她在經驗上比同事資深。",
+                "level": "初級"
+            },
+            {
+                "en": "He is a senior manager at the firm.",
+                "zh": "他是該公司的高級經理。",
+                "level": "初級"
+            },
+            {
+                "en": "He is senior to me by two years.",
+                "zh": "他大我兩歲。",
+                "level": "中級"
+            },
+            {
+                "en": "Mr. Jefferson is a senior member of the club.",
+                "zh": "傑佛遜先生是俱樂部的資深會員。",
+                "level": "中級"
+            },
+            {
+                "en": "Senior executives gathered to discuss long-term strategic investments.",
+                "zh": "高階主管齊聚一堂討論長期策略投資。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "word": "oral",
+        "part_of_speech": "adj.",
+        "meaning": "口頭的",
+        "examples": [
+            {
+                "en": "The teacher gave us an oral quiz.",
+                "zh": "老師給了我們一次口頭測驗。",
+                "level": "初級"
+            },
+            {
+                "en": "Oral communication skills are vital in business.",
+                "zh": "口頭溝通技巧在商務中至關重要。",
+                "level": "初級"
+            },
+            {
+                "en": "We had to take a fifteen-minute oral exam in English.",
+                "zh": "我們必須考十五分鐘的英文口試。",
+                "level": "中級"
+            },
+            {
+                "en": "Good oral hygiene reduces the risk of tooth decay.",
+                "zh": "良好的口腔衛生可以降低蛀牙風險。",
+                "level": "中級"
+            },
+            {
+                "en": "Candidates must deliver an impressive oral presentation during the final interview round.",
+                "zh": "候選人必須在決選面試中發表令人印象深刻的口頭簡報。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "word": "hourly",
+        "part_of_speech": "adj.",
+        "meaning": "每小時的",
+        "examples": [
+            {
+                "en": "The bus has an hourly schedule.",
+                "zh": "公車是每小時一個班次。",
+                "level": "初級"
+            },
+            {
+                "en": "Workers receive an hourly wage.",
+                "zh": "工人們領取時薪。",
+                "level": "初級"
+            },
+            {
+                "en": "The hotel provides hourly shuttle bus service.",
+                "zh": "這家旅館提供每小時一班的接駁車服務。",
+                "level": "中級"
+            },
+            {
+                "en": "The nurse will take her temperature hourly.",
+                "zh": "護士會每小時幫她量體溫。",
+                "level": "中級"
+            },
+            {
+                "en": "Automated monitoring systems record meteorological data on an hourly basis.",
+                "zh": "自動化監控系統每小時記錄一次氣象數據。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "word": "hopeful",
+        "part_of_speech": "adj.",
+        "meaning": "抱著希望的",
+        "examples": [
+            {
+                "en": "She is hopeful about her future career.",
+                "zh": "她對未來的事業抱持希望。",
+                "level": "初級"
+            },
+            {
+                "en": "We remain hopeful that things will improve.",
+                "zh": "我們依然抱持希望事情會改善。",
+                "level": "初級"
+            },
+            {
+                "en": "He was hopeful about the outcome of the meeting.",
+                "zh": "他對會議 結果滿懷希望。",
+                "level": "中級"
+            },
+            {
+                "en": "She felt hopeful despite the initial setbacks.",
+                "zh": "儘管遭遇初步挫折，她仍感到充滿希望。",
+                "level": "中級"
+            },
+            {
+                "en": "Economic indicators offer hopeful signs of a gradual market recovery.",
+                "zh": "經濟指標提供了市場逐步復甦的希望訊號。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "word": "fuel",
+        "part_of_speech": "n.",
+        "meaning": "燃料",
+        "examples": [
+            {
+                "en": "Cars need fuel to run.",
+                "zh": "汽車需要燃料才能行駛。",
+                "level": "初級"
+            },
+            {
+                "en": "The airplane is low on fuel.",
+                "zh": "這架飛機燃料不多了。",
+                "level": "初級"
+            },
+            {
+                "en": "The plane ran out of fuel and crashed into the jungle.",
+                "zh": "這架飛機燃料用盡，墜毀在叢林中。",
+                "level": "中級"
+            },
+            {
+                "en": "He pulls a ladder over and begins to fuel the airplane.",
+                "zh": "他拉了一把梯子過來，開始替飛機添加燃料。",
+                "level": "中級"
+            },
+            {
+                "en": "Alternative green energies aim to replace fossil fuels in power generation.",
+                "zh": "替代性綠色能源旨在發電過程中取代化石燃料。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "word": "lately",
+        "part_of_speech": "adv.",
+        "meaning": "近來、最近",
+        "examples": [
+            {
+                "en": "I haven't seen him lately.",
+                "zh": "我最近沒見到他。",
+                "level": "初級"
+            },
+            {
+                "en": "What have you been up to lately?",
+                "zh": "你最近都在忙些什麼？",
+                "level": "初級"
+            },
+            {
+                "en": "Have you been doing anything interesting lately?",
+                "zh": "你最近有沒有做什麼有趣的事？",
+                "level": "中級"
+            },
+            {
+                "en": "She has been feeling tired lately due to stress.",
+                "zh": "由於壓力，她最近一直感到疲倦。",
+                "level": "中級"
+            },
+            {
+                "en": "Consumer spending habits have shifted dramatically online lately.",
+                "zh": "消費者消費習慣最近在網路上發生了巨大轉變。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "word": "apologize",
+        "part_of_speech": "vi.",
+        "meaning": "道歉 (~ to sb. for sth.)",
+        "examples": [
+            {
+                "en": "You should apologize to your teacher.",
+                "zh": "你應該向你的老師道歉。",
+                "level": "初級"
+            },
+            {
+                "en": "He apologized for being late.",
+                "zh": "他為遲到道歉。",
+                "level": "初級"
+            },
+            {
+                "en": "She apologized to me for stepping on my foot.",
+                "zh": "她為踩到我的腳而道歉。",
+                "level": "中級"
+            },
+            {
+                "en": "The company publicly apologized for the service failure.",
+                "zh": "該公司為服務失誤公開道歉。",
+                "level": "中級"
+            },
+            {
+                "en": "A sincere politician knows when it is necessary to apologize for administrative mistakes.",
+                "zh": "一位真誠的政治家知道何時有必要為行政失誤道歉。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "word": "awkward",
+        "part_of_speech": "adj.",
+        "meaning": "笨拙的、尷尬的",
+        "examples": [
+            {
+                "en": "There was an awkward silence in the room.",
+                "zh": "房間裡有一陣尷尬的沉默。",
+                "level": "初級"
+            },
+            {
+                "en": "He felt awkward meeting her parents.",
+                "zh": "他見到她父母時感到很尷尬。",
+                "level": "初級"
+            },
+            {
+                "en": "Most foreigners are awkward with chopsticks.",
+                "zh": "大部分的外國人拙於使用筷子。",
+                "level": "中級"
+            },
+            {
+                "en": "His awkward question created an uncomfortable atmosphere.",
+                "zh": "他笨拙的問題營造出不舒服的氣氛。",
+                "level": "中級"
+            },
+            {
+                "en": "Navigating social etiquette during formal dinners can sometimes feel rather awkward.",
+                "zh": "在正式晚宴中處理社交禮儀有時會讓人感到相當尷尬。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "word": "ambulance",
+        "part_of_speech": "n.",
+        "meaning": "救護車",
+        "examples": [
+            {
+                "en": "An ambulance rushed to the scene of the accident.",
+                "zh": "救護車趕往事故現場。",
+                "level": "初級"
+            },
+            {
+                "en": "Call an ambulance right away!",
+                "zh": "馬上叫救護車！",
+                "level": "初級"
+            },
+            {
+                "en": "Mike was taken by ambulance to hospital.",
+                "zh": "麥克被救護車送到醫院去。",
+                "level": "中級"
+            },
+            {
+                "en": "The injured patient was loaded into the ambulance.",
+                "zh": "受傷的病患被抬上救護車。",
+                "level": "中級"
+            },
+            {
+                "en": "Paramedics inside the moving ambulance administered emergency life support.",
+                "zh": "行駛中的救護車內的救護人員實施了緊急生命支援。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "word": "superior",
+        "part_of_speech": "adj.",
+        "meaning": "優於 (~ to N)",
+        "examples": [
+            {
+                "en": "Our products are superior in quality.",
+                "zh": "我們的產品品質優良。",
+                "level": "初級"
+            },
+            {
+                "en": "This material is superior to that one.",
+                "zh": "這個材料優於那個。",
+                "level": "初級"
+            },
+            {
+                "en": "Your computer is superior to mine.",
+                "zh": "你的電腦比我的好。",
+                "level": "中級"
+            },
+            {
+                "en": "You should show some respect for your superiors.",
+                "zh": "應該對上司表示敬意。",
+                "level": "中級"
+            },
+            {
+                "en": "Advanced engineering grants this device superior performance capabilities.",
+                "zh": "先進的工程學賦予這款裝置優越的效能表現。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "word": "underlying",
+        "part_of_speech": "adj.",
+        "meaning": "根本的",
+        "examples": [
+            {
+                "en": "We need to find the underlying cause of the problem.",
+                "zh": "我們需要找到問題的根本原因。",
+                "level": "初級"
+            },
+            {
+                "en": "Stress is an underlying factor in many illnesses.",
+                "zh": "壓力是許多疾病的潛在因素。",
+                "level": "初級"
+            },
+            {
+                "en": "We need to address the underlying causes of poverty.",
+                "zh": "我們必須處理產生貧窮的根本原因。",
+                "level": "中級"
+            },
+            {
+                "en": "This funny movie has a serious underlying theme.",
+                "zh": "這部有趣的電影隱含嚴肅的主題。",
+                "level": "中級"
+            },
+            {
+                "en": "A deep analysis of the data revealed an underlying economic trend.",
+                "zh": "對數據的深入分析揭示了一個潛在的經濟趨勢。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "word": "ongoing",
+        "part_of_speech": "adj.",
+        "meaning": "不間斷的",
+        "examples": [
+            {
+                "en": "There is an ongoing investigation into the matter.",
+                "zh": "針對此事目前正進行調查。",
+                "level": "初級"
+            },
+            {
+                "en": "The project is an ongoing effort.",
+                "zh": "這項計畫是一項持續的努力。",
+                "level": "初級"
+            },
+            {
+                "en": "There has been ongoing debate about euthanasia.",
+                "zh": "關於安樂死始終爭議不斷。",
+                "level": "中級"
+            },
+            {
+                "en": "We can't say anything about the ongoing investigation.",
+                "zh": "對於正在進行中的調查，我們無可奉告。",
+                "level": "中級"
+            },
+            {
+                "en": "Maintenance crews perform ongoing checks to ensure structural safety.",
+                "zh": "維護人員進行不間斷的檢查以確保結構安全。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "word": "buzz",
+        "part_of_speech": "n.",
+        "meaning": "嗡嗡聲",
+        "examples": [
+            {
+                "en": "I heard a buzz near my ear.",
+                "zh": "我聽到耳邊有嗡嗡聲。",
+                "level": "初級"
+            },
+            {
+                "en": "The insect flew past with a loud buzz.",
+                "zh": "昆蟲帶著響亮的嗡嗡聲飛過。",
+                "level": "初級"
+            },
+            {
+                "en": "I can hear the buzz of bees in the garden.",
+                "zh": "我在花園裡可以聽見蜜蜂的嗡嗡聲。",
+                "level": "中級"
+            },
+            {
+                "en": "Many bees are buzzing around the flowers.",
+                "zh": "許多蜜蜂在花叢間飛來飛去。",
+                "level": "中級"
+            },
+            {
+                "en": "The new product launch generated immense buzz across social media platforms.",
+                "zh": "新產品發表會在各大社群媒體平台上引發了極大的轟動與討論。",
+                "level": "中高級"
+            }
+        ]
+    }
+]

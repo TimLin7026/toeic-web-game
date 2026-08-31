@@ -218,7 +218,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260827.13</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260831.03</p>
             </div>
         </div>
 
@@ -446,7 +446,10 @@
                 <!-- 題目內容與預設鎖定、剩 1 生命值才解鎖的語音按鈕 (無中文提示) -->
                 <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-4 flex justify-between items-center">
                     <div class="flex-1">
-                        <p class="text-xs text-slate-400 mb-1">請填入空格中的單字：</p>
+                        <div class="flex justify-between items-center mb-1">
+                            <p class="text-xs text-slate-400">請填入空格中的單字：</p>
+                            <span id="quiz-level-badge" class="text-[9px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded font-bold border border-slate-200/40">初級</span>
+                        </div>
                         <p class="text-sm font-medium text-slate-800 mt-1" id="quiz-example">Don't let one mistake _____ your day.</p>
                         <!-- 一命時才顯示的中文翻譯提示 -->
                         <p id="quiz-zh-hint" class="hidden text-xs text-amber-600 mt-2 font-medium border-t border-amber-100 pt-1.5">💡 中文提示：<span id="quiz-zh-hint-text"></span></p>
@@ -1067,6 +1070,7 @@
         let cloudFileId = localStorage.getItem('g_cloud_file_id') || null;
         let userEmail = localStorage.getItem('g_user_email') || null;
         let tokenResolveQueue = []; // 用來放置等待新 token 的 Promise resolve 函數隊列
+        let isSilentRefreshing = false; // 是否正在背景靜默刷新 Token
 
         function initGoogleAuth() {
             if (typeof google !== 'undefined') {
@@ -1076,6 +1080,7 @@
                     callback: async (resp) => {
                         if (resp.error) {
                             console.error('Google 授權失敗：', resp.error);
+                            isSilentRefreshing = false;
                             // 若有等待中的 Promise，全部 reject
                             while (tokenResolveQueue.length > 0) {
                                 const resolveFn = tokenResolveQueue.shift();
@@ -1100,6 +1105,12 @@
                         while (tokenResolveQueue.length > 0) {
                             const resolveFn = tokenResolveQueue.shift();
                             resolveFn(accessToken);
+                        }
+
+                        if (isSilentRefreshing) {
+                            console.log('【Google 自動刷新】背景靜默刷新 Token 成功，已釋放掛起請求，跳過重複同步。');
+                            isSilentRefreshing = false;
+                            return;
                         }
                         
                         await fetchUserInfo();
@@ -1166,11 +1177,14 @@
                 throw new Error('Google Auth SDK not initialized');
             }
 
+            isSilentRefreshing = true; // 標記正在進行靜默刷新
+
             return new Promise((resolve, reject) => {
                 tokenResolveQueue.push((newToken) => {
                     if (newToken) {
                         resolve(newToken);
                     } else {
+                        isSilentRefreshing = false;
                         reject(new Error('Silent refresh token failed'));
                     }
                 });
@@ -1183,18 +1197,37 @@
                     const idx = tokenResolveQueue.findIndex(fn => fn.toString().includes('Silent refresh token failed'));
                     if (idx > -1) {
                         tokenResolveQueue.splice(idx, 1);
+                        isSilentRefreshing = false;
                         reject(new Error('Silent refresh token timeout'));
                     }
                 }, 10000);
             });
         }
 
+        // 統一 Google API Fetch 包裝器 (支援 401 自動刷新重試)
+        async function callGoogleApi(url, options = {}) {
+            let token = await ensureValidToken();
+            if (!options.headers) options.headers = {};
+            options.headers['Authorization'] = `Bearer ${token}`;
+
+            let res = await fetch(url, options);
+
+            // 防禦重試：若是 401 錯誤，自動重整刷新 Token 並重試一次
+            if (res.status === 401) {
+                console.warn('【Google API 遭遇 401】Token 失效，強制清除過期標記並重新刷新重試...');
+                localStorage.setItem('g_token_expire_time', '0'); // 強制設為已過期
+                
+                token = await ensureValidToken();
+                options.headers['Authorization'] = `Bearer ${token}`;
+                res = await fetch(url, options);
+            }
+
+            return res;
+        }
+
         async function fetchUserInfo() {
             try {
-                accessToken = await ensureValidToken();
-                const res = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
-                    headers: { 'Authorization': `Bearer ${accessToken}` }
-                });
+                const res = await callGoogleApi('https://www.googleapis.com/oauth2/v3/userinfo');
                 if (res.ok) {
                     const data = await res.json();
                     userEmail = data.email;
@@ -1225,18 +1258,9 @@
 
         async function syncWithCloud() {
             try {
-                accessToken = await ensureValidToken();
-            } catch (e) {
-                console.log('【雲端下載同步】Google 帳號未連結，略過下載同步。');
-                return;
-            }
-            try {
                 // 1. 搜尋 AppData 中的檔案
-                const searchRes = await fetch(
-                    'https://www.googleapis.com/drive/v3/files?spaces=appDataFolder&q=name=%27toeic_game_progress.json%27', 
-                    {
-                        headers: { 'Authorization': `Bearer ${accessToken}` }
-                    }
+                const searchRes = await callGoogleApi(
+                    'https://www.googleapis.com/drive/v3/files?spaces=appDataFolder&q=name=%27toeic_game_progress.json%27'
                 );
                 
                 if (!searchRes.ok) throw new Error('Search failed');
@@ -1251,11 +1275,8 @@
                     localStorage.setItem('g_cloud_file_id', cloudFileId);
                     
                     // 2. 下載雲端檔案內容
-                    const fileRes = await fetch(
-                        `https://www.googleapis.com/drive/v3/files/${cloudFileId}?alt=media`,
-                        {
-                            headers: { 'Authorization': `Bearer ${accessToken}` }
-                        }
+                    const fileRes = await callGoogleApi(
+                        `https://www.googleapis.com/drive/v3/files/${cloudFileId}?alt=media`
                     );
                     
                     if (fileRes.ok) {
@@ -1432,12 +1453,6 @@
         }
 
         async function createCloudFile(masteredWords, passedSentences, leitnerBox, history = []) {
-            try {
-                accessToken = await ensureValidToken();
-            } catch (e) {
-                console.log('【雲端建檔】Google 帳號未連結，略過建檔。');
-                return;
-            }
             const settings = {
                 speechRate: localStorage.getItem('toeic_speech_rate') || '0.7',
                 speechAccent: localStorage.getItem('toeic_speech_accent') || 'US',
@@ -1468,12 +1483,11 @@
                 JSON.stringify(content) +
                 closeDelimiter;
                 
-            const res = await fetch(
+            const res = await callGoogleApi(
                 'https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart',
                 {
                     method: 'POST',
                     headers: {
-                        'Authorization': `Bearer ${accessToken}`,
                         'Content-Type': `multipart/related; boundary=${boundary}`
                     },
                     body: body
@@ -1489,12 +1503,6 @@
         }
 
         async function uploadToCloud(masteredWords, passedSentences, leitnerBox, history = []) {
-            try {
-                accessToken = await ensureValidToken();
-            } catch (e) {
-                console.log('【雲端上傳同步】Google 帳號未連結，略過上傳。');
-                return;
-            }
             if (!cloudFileId) return;
             const settings = {
                 speechRate: localStorage.getItem('toeic_speech_rate') || '0.7',
@@ -1514,12 +1522,11 @@
             };
             
             try {
-                const res = await fetch(
+                const res = await callGoogleApi(
                     `https://www.googleapis.com/upload/drive/v3/files/${cloudFileId}?uploadType=media`,
                     {
                         method: 'PATCH',
                         headers: {
-                            'Authorization': `Bearer ${accessToken}`,
                             'Content-Type': 'application/json'
                         },
                         body: JSON.stringify(content)
@@ -2942,6 +2949,21 @@
                 }
             }
             document.getElementById('quiz-example').textContent = sentence;
+
+            // 🎯 動態顯示當前例句難易度等級標籤 (初級/中級/中高級)
+            const levelBadge = document.getElementById('quiz-level-badge');
+            if (levelBadge && currentItem) {
+                const examples = currentItem.wordObj.examples || [];
+                const level = (examples[currentItem.sentenceIndex] && examples[currentItem.sentenceIndex].level) || '初級';
+                levelBadge.textContent = level;
+                if (level === '初級') {
+                    levelBadge.className = "text-[9px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded font-bold border border-slate-200/40";
+                } else if (level === '中級') {
+                    levelBadge.className = "text-[9px] bg-indigo-50 text-indigo-600 px-1.5 py-0.5 rounded font-bold border border-indigo-100/40";
+                } else if (level === '中高級') {
+                    levelBadge.className = "text-[9px] bg-amber-50 text-amber-600 px-1.5 py-0.5 rounded font-bold border border-amber-100/40";
+                }
+            }
 
             const reviewBadge = document.getElementById('quiz-review-badge');
             if (reviewBadge) {

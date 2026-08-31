@@ -1,0 +1,1322 @@
+[
+    {
+        "id": 1,
+        "word": "erase",
+        "part_of_speech": "vt.",
+        "meaning": "擦掉、消除",
+        "examples": [
+            {
+                "en": "Please erase the mistakes on the board.",
+                "zh": "請把黑板上的錯誤擦掉。",
+                "level": "初級"
+            },
+            {
+                "en": "You can erase the old files to save space.",
+                "zh": "你可以刪除舊檔案以節省空間。",
+                "level": "初級"
+            },
+            {
+                "en": "The computer crashed, and all our records were erased.",
+                "zh": "電腦當機了，我們所有的紀錄都被消除。",
+                "level": "中級"
+            },
+            {
+                "en": "It is hard to erase the bad memories of the accident.",
+                "zh": "要抹去那場事故的不良記憶是很困難的。",
+                "level": "中級"
+            },
+            {
+                "en": "Time cannot completely erase the profound impact of historical events.",
+                "zh": "時間無法完全抹滅歷史事件深遠的影響。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "word": "fancy",
+        "part_of_speech": "adj.",
+        "meaning": "昂貴的、豪華的",
+        "examples": [
+            {
+                "en": "They live in a fancy house.",
+                "zh": "他們住在一棟豪華的房子裡。",
+                "level": "初級"
+            },
+            {
+                "en": "I had dinner at a fancy restaurant.",
+                "zh": "我在一家豪華的餐廳享用晚餐。",
+                "level": "初級"
+            },
+            {
+                "en": "She bought a fancy dress for the graduation party.",
+                "zh": "她買了一件華麗的洋裝去參加畢業派對。",
+                "level": "中級"
+            },
+            {
+                "en": "He drives a fancy sports car to work every day.",
+                "zh": "他每天開著一輛酷炫的跑車去上班。",
+                "level": "中級"
+            },
+            {
+                "en": "The hotel offers fancy accommodations for international VIP guests.",
+                "zh": "該飯店為國際貴賓提供豪華的住宿設施。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "word": "flock",
+        "part_of_speech": "n.",
+        "meaning": "(鳥、羊等) 群",
+        "examples": [
+            {
+                "en": "A flock of birds flew across the blue sky.",
+                "zh": "一群鳥飛越藍色的天空。",
+                "level": "初級"
+            },
+            {
+                "en": "The shepherd watched his flock of sheep.",
+                "zh": "牧羊人看守著他的羊群。",
+                "level": "初級"
+            },
+            {
+                "en": "It is easy to spot flocks of geese as they migrate.",
+                "zh": "當成群的野雁遷徙時，很容易發現牠們的蹤跡。",
+                "level": "中級"
+            },
+            {
+                "en": "Tourists flock to the beach during the summer season.",
+                "zh": "夏天時遊客們蜂擁至海灘。",
+                "level": "中級"
+            },
+            {
+                "en": "A massive flock of migratory birds descended upon the wetlands.",
+                "zh": "一大群候鳥降落在濕地上。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "word": "grocery",
+        "part_of_speech": "n.",
+        "meaning": "雜貨",
+        "examples": [
+            {
+                "en": "I need to buy some groceries after work.",
+                "zh": "我下班後需要買一些雜貨/日用品。",
+                "level": "初級"
+            },
+            {
+                "en": "She went to the local grocery store.",
+                "zh": "她去了當地的一家雜貨店。",
+                "level": "初級"
+            },
+            {
+                "en": "I usually do grocery shopping on weekends.",
+                "zh": "我通常在週末採買生活用品。",
+                "level": "中級"
+            },
+            {
+                "en": "He forgot to pick up the milk from the grocery.",
+                "zh": "他忘記去雜貨店拿牛奶了。",
+                "level": "中級"
+            },
+            {
+                "en": "Rising grocery prices have added financial pressure to many households.",
+                "zh": "不斷上漲的雜貨價格給許多家庭增加了經濟壓力。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "word": "headline",
+        "part_of_speech": "n.",
+        "meaning": "頭條",
+        "examples": [
+            {
+                "en": "The big news made the front-page headline.",
+                "zh": "這則大新聞登上了頭條。",
+                "level": "初級"
+            },
+            {
+                "en": "I only read the headlines of the newspaper.",
+                "zh": "我只瀏覽報紙的標題。",
+                "level": "初級"
+            },
+            {
+                "en": "The scandal became the top headline across the country.",
+                "zh": "這起醜聞成為全國各大頭條。",
+                "level": "中級"
+            },
+            {
+                "en": "The actress hit the headlines by marrying a wealthy man.",
+                "zh": "這名女星因嫁入豪門上了頭條新聞。",
+                "level": "中級"
+            },
+            {
+                "en": "Recent economic reforms have dominated international media headlines.",
+                "zh": "近期的經濟改革主導了國際媒體的頭條新聞。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "word": "helmet",
+        "part_of_speech": "n.",
+        "meaning": "頭盔、安全帽",
+        "examples": [
+            {
+                "en": "He put on his motorcycle helmet.",
+                "zh": "他戴上他的機車安全帽。",
+                "level": "初級"
+            },
+            {
+                "en": "Always wear a helmet when riding a bike.",
+                "zh": "騎自行車時務必戴安全帽。",
+                "level": "初級"
+            },
+            {
+                "en": "Be sure to wear a safety helmet when you ride a motorcycle.",
+                "zh": "騎機車一定得戴安全帽。",
+                "level": "中級"
+            },
+            {
+                "en": "The construction worker forgot to wear his hard helmet.",
+                "zh": "那名建築工人忘記戴他的硬安全帽了。",
+                "level": "中級"
+            },
+            {
+                "en": "Advanced design in sports helmets significantly reduces the risk of concussion.",
+                "zh": "運動頭盔的先進設計顯著降低了腦震盪的風險。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "word": "homesick",
+        "part_of_speech": "adj.",
+        "meaning": "思鄉的、想家的",
+        "examples": [
+            {
+                "en": "He felt homesick during his first week abroad.",
+                "zh": "他在國外的第一週感到很想家。",
+                "level": "初級"
+            },
+            {
+                "en": "Studying far away often makes students homesick.",
+                "zh": "在遠方求學經常使學生感到思鄉。",
+                "level": "初級"
+            },
+            {
+                "en": "As I read my mother's letter, I felt more and more homesick.",
+                "zh": "當我讀母親的信時，想家的心情愈來愈強烈。",
+                "level": "中級"
+            },
+            {
+                "en": "She was so homesick that she decided to book an early flight home.",
+                "zh": "她是那麼地想家，以至於決定預訂早班機回家。",
+                "level": "中級"
+            },
+            {
+                "en": "Overcoming chronic homesickness is one of the toughest trials for expatriates.",
+                "zh": "克服長期的思鄉之情是外派人員最艱難的考驗之一。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "word": "outdoor",
+        "part_of_speech": "adj.",
+        "meaning": "戶外的",
+        "examples": [
+            {
+                "en": "We love outdoor activities.",
+                "zh": "我們喜歡戶外活動。",
+                "level": "初級"
+            },
+            {
+                "en": "The hotel has a large outdoor swimming pool.",
+                "zh": "這家飯店有一個大型戶外游泳池。",
+                "level": "初級"
+            },
+            {
+                "en": "He likes outdoor activities such as hiking and camping.",
+                "zh": "他喜歡諸如健行和露營等戶外活動。",
+                "level": "中級"
+            },
+            {
+                "en": "An outdoor market was held in the central square.",
+                "zh": "中央廣場舉辦了戶外市集。",
+                "level": "中級"
+            },
+            {
+                "en": "Participants in the outdoor expedition must prepare proper survival gear.",
+                "zh": "戶外探險的參與者必須準備合適的求生裝備。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "word": "jealous",
+        "part_of_speech": "adj.",
+        "meaning": "妒忌的 (~ of)",
+        "examples": [
+            {
+                "en": "Don't be jealous of other people's success.",
+                "zh": "不要嫉妒別人的成功。",
+                "level": "初級"
+            },
+            {
+                "en": "She felt jealous when he talked to another girl.",
+                "zh": "當他和另一個女孩聊天時，她感到吃醋。",
+                "level": "初級"
+            },
+            {
+                "en": "He has always been very jealous of his brother's good looks.",
+                "zh": "他一直都非常妒忌哥哥俊俏的外表。",
+                "level": "中級"
+            },
+            {
+                "en": "Some colleagues are jealous of her rapid promotion.",
+                "zh": "有些同事嫉妒她快速升遷。",
+                "level": "中級"
+            },
+            {
+                "en": "Unfounded professional jealousy can severely damage team collaboration.",
+                "zh": "毫無根據的職場嫉妒會嚴重破壞團隊協作。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "word": "jelly",
+        "part_of_speech": "n.",
+        "meaning": "果凍",
+        "examples": [
+            {
+                "en": "The children love eating fruit jelly.",
+                "zh": "孩子們喜歡吃水果果凍。",
+                "level": "初級"
+            },
+            {
+                "en": "I prefer grape jelly over strawberry jam.",
+                "zh": "比起草莓果醬，我更喜歡葡萄果凍。",
+                "level": "初級"
+            },
+            {
+                "en": "I've made a strawberry jelly for the children.",
+                "zh": "我做了草莓果凍給小朋友。",
+                "level": "中級"
+            },
+            {
+                "en": "Americans love peanut butter and jelly sandwich.",
+                "zh": "美國人愛吃花生果醬三明治。",
+                "level": "中級"
+            },
+            {
+                "en": "The dessert chef prepared a delicate gelatin jelly infused with local herbs.",
+                "zh": "甜點主廚準備了一款融入當地香草的精緻明膠果凍。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "word": "jewel",
+        "part_of_speech": "n.",
+        "meaning": "寶石、首飾",
+        "examples": [
+            {
+                "en": "The crown is decorated with precious jewels.",
+                "zh": "皇冠上裝飾著珍貴的寶石。",
+                "level": "初級"
+            },
+            {
+                "en": "She wore a shiny jewel on her necklace.",
+                "zh": "她的項鍊上戴著一顆閃亮的寶石。",
+                "level": "初級"
+            },
+            {
+                "en": "She loved dressing up and wearing priceless jewels.",
+                "zh": "她愛盛裝打扮並穿戴一些價值不斐的珠寶首飾。",
+                "level": "中級"
+            },
+            {
+                "en": "The museum exhibits historical jewels from the royal family.",
+                "zh": "博物館展出皇室的歷史珠寶。",
+                "level": "中級"
+            },
+            {
+                "en": "The expert examined the rare jewel under a microscope to verify its authenticity.",
+                "zh": "專家在顯微鏡下檢視這顆稀有寶石以驗證其真偽。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "word": "junk",
+        "part_of_speech": "n.",
+        "meaning": "垃圾、沒用的東西",
+        "examples": [
+            {
+                "en": "We need to clear out all the junk in the garage.",
+                "zh": "我們需要清理車庫裡所有沒用的東西。",
+                "level": "初級"
+            },
+            {
+                "en": "Don't buy so much junk food.",
+                "zh": "不要買那麼多垃圾食物。",
+                "level": "初級"
+            },
+            {
+                "en": "The garage is full of junk.",
+                "zh": "車庫裡頭塞滿了廢物。",
+                "level": "中級"
+            },
+            {
+                "en": "Eating too much junk food is not good for your health.",
+                "zh": "吃太多垃圾食物對你的健康有害。",
+                "level": "中級"
+            },
+            {
+                "en": "Sorting through years of accumulated junk proved to be an exhausting task.",
+                "zh": "挑選多年累積的雜物證明是一項令人疲憊的工作。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "word": "lung",
+        "part_of_speech": "n.",
+        "meaning": "肺",
+        "examples": [
+            {
+                "en": "Fresh air is good for our lungs.",
+                "zh": "新鮮空氣對我們的肺很好。",
+                "level": "初級"
+            },
+            {
+                "en": "Smoking causes serious damage to human lungs.",
+                "zh": "抽菸對人類的肺部造成嚴重的損害。",
+                "level": "初級"
+            },
+            {
+                "en": "He died of lung cancer.",
+                "zh": "他死於肺癌。",
+                "level": "中級"
+            },
+            {
+                "en": "Deep breathing exercises expand your lung capacity.",
+                "zh": "深呼吸運動能擴大你的肺活量。",
+                "level": "中級"
+            },
+            {
+                "en": "Air pollution poses an aggressive threat to respiratory function and lung tissue.",
+                "zh": "空氣汙染對呼吸功能和肺部組織構成嚴重的威脅。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "word": "meter",
+        "part_of_speech": "n.",
+        "meaning": "公尺",
+        "examples": [
+            {
+                "en": "The pool is fifty meters long.",
+                "zh": "這個游泳池長五十公尺。",
+                "level": "初級"
+            },
+            {
+                "en": "He jumped over a meter high.",
+                "zh": "他跳了一公尺多高。",
+                "level": "初級"
+            },
+            {
+                "en": "The desk is one meter long, half a meter wide.",
+                "zh": "這桌子長一公尺寬半公尺。",
+                "level": "中級"
+            },
+            {
+                "en": "The electricity meter is behind the door.",
+                "zh": "電表在門後。",
+                "level": "中級"
+            },
+            {
+                "en": "The track and field athlete cleared the high bar set at two meters.",
+                "zh": "這名田徑運動員跨越了設定在兩公尺高的橫桿。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "word": "knot",
+        "part_of_speech": "n.",
+        "meaning": "繩結",
+        "examples": [
+            {
+                "en": "He tied the rope in a tight knot.",
+                "zh": "他把繩子打了一個緊緊的結。",
+                "level": "初級"
+            },
+            {
+                "en": "Can you untie this knot for me?",
+                "zh": "你能幫我解開這個繩結嗎？",
+                "level": "初級"
+            },
+            {
+                "en": "Are you good at tying knots?",
+                "zh": "你擅長綁繩結嗎？",
+                "level": "中級"
+            },
+            {
+                "en": "Do you know how to knot a bow tie?",
+                "zh": "你知道如何打蝴蝶結嗎？",
+                "level": "中級"
+            },
+            {
+                "en": "Sailors must master various specialized knots to secure vessels safely.",
+                "zh": "水手必須掌握各種專門的繩結，以安全固定船隻。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "word": "litter",
+        "part_of_speech": "n.",
+        "meaning": "隨手丟棄的垃圾",
+        "examples": [
+            {
+                "en": "Please do not drop litter on the ground.",
+                "zh": "請不要在地上亂丟垃圾。",
+                "level": "初級"
+            },
+            {
+                "en": "The park was full of plastic litter.",
+                "zh": "公園裡滿是塑膠垃圾。",
+                "level": "初級"
+            },
+            {
+                "en": "People who drop litter can be fined in some cities.",
+                "zh": "在某些城市亂丟垃圾的人會被罰款。",
+                "level": "中級"
+            },
+            {
+                "en": "The sign says, \"Please Don't litter.\"",
+                "zh": "告示上寫著「請勿亂丟垃圾」。",
+                "level": "中級"
+            },
+            {
+                "en": "Volunteers gathered over twenty bags of street litter during the weekend cleanup.",
+                "zh": "志工在週末的大掃除中收集了二十多袋街道垃圾。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "word": "mall",
+        "part_of_speech": "n.",
+        "meaning": "大型購物中心",
+        "examples": [
+            {
+                "en": "They are shopping at the new mall.",
+                "zh": "他們正在新購物中心買東西。",
+                "level": "初級"
+            },
+            {
+                "en": "Let's meet at the mall tomorrow.",
+                "zh": "我們明天在購物中心碰面吧！",
+                "level": "初級"
+            },
+            {
+                "en": "The shopping mall is crowded on weekends.",
+                "zh": "週末時購物中心擠滿了人。",
+                "level": "中級"
+            },
+            {
+                "en": "She works in a clothing store inside the mall.",
+                "zh": "她在購物中心裡的一家服飾店工作。",
+                "level": "中級"
+            },
+            {
+                "en": "Modern shopping malls increasingly incorporate entertainment complexes to attract visitors.",
+                "zh": "現代大型購物中心越來越多地結合了娛樂綜合體來吸引遊客。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "word": "marvelous",
+        "part_of_speech": "adj.",
+        "meaning": "令人驚嘆的、不可思議的",
+        "examples": [
+            {
+                "en": "We had a marvelous time at the party.",
+                "zh": "我們在派對上玩得非常愉快。",
+                "level": "初級"
+            },
+            {
+                "en": "That is a marvelous idea!",
+                "zh": "那真是一個好主意！",
+                "level": "初級"
+            },
+            {
+                "en": "The Great Wall is a marvelous architectural feat.",
+                "zh": "萬里長城是個令人驚嘆的建築物。",
+                "level": "中級"
+            },
+            {
+                "en": "She did a marvelous job on the presentation.",
+                "zh": "她在簡報上的表現令人驚豔。",
+                "level": "中級"
+            },
+            {
+                "en": "The scientist made a marvelous discovery that changed modern medicine.",
+                "zh": "該科學家做出了一項改變現代醫學的驚人發現。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "word": "medal",
+        "part_of_speech": "n.",
+        "meaning": "獎牌",
+        "examples": [
+            {
+                "en": "He won a gold medal in the race.",
+                "zh": "他在比賽中贏得一面金牌。",
+                "level": "初級"
+            },
+            {
+                "en": "She proudly wore her medal around her neck.",
+                "zh": "她驕傲地將獎牌掛在脖子上。",
+                "level": "初級"
+            },
+            {
+                "en": "She won a gold medal at the last Olympics.",
+                "zh": "她在上屆奧運贏得一面金牌。",
+                "level": "中級"
+            },
+            {
+                "en": "The silver medal and the bronze medal go to Jane and Jack respectively.",
+                "zh": "銀牌與銅牌得主分別為珍與傑克。",
+                "level": "中級"
+            },
+            {
+                "en": "The war veteran was awarded a prestigious military medal for bravery.",
+                "zh": "這位退伍軍因英勇表現獲頒聲譽卓著的軍事獎章。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "word": "merry",
+        "part_of_speech": "adj.",
+        "meaning": "歡樂的",
+        "examples": [
+            {
+                "en": "Everyone was merry and singing songs.",
+                "zh": "每個人都很快樂並且唱著歌。",
+                "level": "初級"
+            },
+            {
+                "en": "We wished each other a merry Christmas.",
+                "zh": "我們互祝聖誕快樂。",
+                "level": "初級"
+            },
+            {
+                "en": "I wish you a merry Christmas.",
+                "zh": "祝你耶誕快樂。",
+                "level": "中級"
+            },
+            {
+                "en": "Children laughed and played with merry expressions.",
+                "zh": "孩子們帶著歡樂的表情嬉戲玩耍。",
+                "level": "中級"
+            },
+            {
+                "en": "The townspeople gathered in the square to celebrate with merry songs and dances.",
+                "zh": "城鎮居民聚集在廣場上，以歡樂的歌舞慶祝。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "word": "microphone",
+        "part_of_speech": "n.",
+        "meaning": "麥克風",
+        "examples": [
+            {
+                "en": "Please speak into the microphone.",
+                "zh": "請對著麥克風說話。",
+                "level": "初級"
+            },
+            {
+                "en": "The singer held the microphone tightly.",
+                "zh": "歌手緊緊握著麥克風。",
+                "level": "初級"
+            },
+            {
+                "en": "She spoke confidently into the microphone.",
+                "zh": "她自信地對著麥克風說話。",
+                "level": "中級"
+            },
+            {
+                "en": "The teacher's microphone stopped working during the lecture.",
+                "zh": "老師的麥克風在講課途中故障了。",
+                "level": "中級"
+            },
+            {
+                "en": "A high-sensitivity microphone can pick up subtle acoustic nuances from a distance.",
+                "zh": "高靈敏度麥克風可以遠距離收錄微小的聲學細微差別。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "word": "microwave",
+        "part_of_speech": "n.",
+        "meaning": "微波",
+        "examples": [
+            {
+                "en": "You can heat up the food in the microwave.",
+                "zh": "你可以用微波爐把食物加熱。",
+                "level": "初級"
+            },
+            {
+                "en": "I bought a new microwave yesterday.",
+                "zh": "我昨天買了一台新微波爐。",
+                "level": "初級"
+            },
+            {
+                "en": "I always heat up my lunch in the microwave oven.",
+                "zh": "我都用微波爐加熱便當。",
+                "level": "中級"
+            },
+            {
+                "en": "Some foods taste terrible after they are microwaved.",
+                "zh": "有些食物微波之後很難吃。",
+                "level": "中級"
+            },
+            {
+                "en": "Microwave technology has revolutionized how quickly we prepare daily meals.",
+                "zh": "微波技術徹底改變了我們準備日常餐點的速度。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "word": "nap",
+        "part_of_speech": "n.",
+        "meaning": "小睡",
+        "examples": [
+            {
+                "en": "He likes to take a nap in the afternoon.",
+                "zh": "他喜歡在下午睡個午覺。",
+                "level": "初級"
+            },
+            {
+                "en": "The baby is taking a nap right now.",
+                "zh": "寶寶現在正在睡午覺。",
+                "level": "初級"
+            },
+            {
+                "en": "I often take a nap after lunch.",
+                "zh": "我常在午餐後小睡片刻。",
+                "level": "中級"
+            },
+            {
+                "en": "Children under two nap both in the morning and in the afternoon.",
+                "zh": "兩歲以下的小孩早上和下午都會小睡一下。",
+                "level": "中級"
+            },
+            {
+                "en": "Taking a short power nap can significantly boost afternoon work efficiency.",
+                "zh": "小睡片刻可以顯著提升下午的工作效率。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "word": "collar",
+        "part_of_speech": "n.",
+        "meaning": "衣領",
+        "examples": [
+            {
+                "en": "He turned up his coat collar against the wind.",
+                "zh": "他豎起外套衣領來擋風。",
+                "level": "初級"
+            },
+            {
+                "en": "The dog's collar has its name on it.",
+                "zh": "這隻狗的項圈上有它的名字。",
+                "level": "初級"
+            },
+            {
+                "en": "The wind was so cold that he turned his coat collar up.",
+                "zh": "風太冷了，所以他把外套的領子立起來。",
+                "level": "中級"
+            },
+            {
+                "en": "He grabbed the puppy by its red collar.",
+                "zh": "他抓着小狗紅色的項圈。",
+                "level": "中級"
+            },
+            {
+                "en": "Government statistics show that hourly earnings of white-collar workers are about 30% higher.",
+                "zh": "政府統計資料顯示，白領階級的時薪比藍領階級高三成。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "word": "pal",
+        "part_of_speech": "n.",
+        "meaning": "朋友 (口語)",
+        "examples": [
+            {
+                "en": "He has been my best pal for years.",
+                "zh": "多年來他一直是我的好朋友。",
+                "level": "初級"
+            },
+            {
+                "en": "Hey pal, how are you doing today?",
+                "zh": "嘿，老兄，你今天過得怎麼樣？",
+                "level": "初級"
+            },
+            {
+                "en": "I am so happy to see my old pal Martin.",
+                "zh": "我真高興與老馬丁碰面了。",
+                "level": "中級"
+            },
+            {
+                "en": "Hi, pal, please keep your voice down.",
+                "zh": "嗨，兄弟，說話請小聲點。",
+                "level": "中級"
+            },
+            {
+                "en": "Finding a reliable pen pal can greatly enrich language learning experiences.",
+                "zh": "找到一位可靠的筆友可以極大地豐富語言學習體驗。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "word": "pancake",
+        "part_of_speech": "n.",
+        "meaning": "煎薄餅、鬆餅",
+        "examples": [
+            {
+                "en": "We ate pancakes with maple syrup for breakfast.",
+                "zh": "我們早餐吃了加楓糖漿的鬆餅。",
+                "level": "初級"
+            },
+            {
+                "en": "She made some delicious pancakes this morning.",
+                "zh": "她今天早上做了些美味的煎餅。",
+                "level": "初級"
+            },
+            {
+                "en": "Would you like your pancake with syrup or cream?",
+                "zh": "你的鬆餅要配糖漿還是奶油？",
+                "level": "中級"
+            },
+            {
+                "en": "Most Americans like to eat doughnuts and pancakes.",
+                "zh": "大部分的美國人喜歡吃甜甜圈和鬆餅。",
+                "level": "中級"
+            },
+            {
+                "en": "The culinary student mastered flipping thin pancakes on a hot skillet.",
+                "zh": "這位烹飪系學生精通了在熱平底鍋上翻轉薄煎餅的技巧。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "word": "parcel",
+        "part_of_speech": "n.",
+        "meaning": "包裹 (中、大型包裹)",
+        "examples": [
+            {
+                "en": "The mailman delivered a heavy parcel to our door.",
+                "zh": "郵差送了一個沉重的包裹到我們家門口。",
+                "level": "初級"
+            },
+            {
+                "en": "I need to mail this parcel to my parents.",
+                "zh": "我需要把這個包裹寄給我的父母。",
+                "level": "初級"
+            },
+            {
+                "en": "The parcel was wrapped in plain brown paper.",
+                "zh": "那個包裹裏用普通的牛皮紙包裹着。",
+                "level": "中級"
+            },
+            {
+                "en": "She parceled the letters and put them in the drawer.",
+                "zh": "她將信件紮好並放進抽屜。",
+                "level": "中級"
+            },
+            {
+                "en": "Customs officials inspected every international parcel for restricted items.",
+                "zh": "海關官員檢查了每一個國際包裹中的違禁物品。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "word": "passport",
+        "part_of_speech": "n.",
+        "meaning": "護照",
+        "examples": [
+            {
+                "en": "You must show your passport at the airport.",
+                "zh": "你必須在機場出示你的護照。",
+                "level": "初級"
+            },
+            {
+                "en": "I forgot to bring my passport for the trip.",
+                "zh": "我旅行忘了帶護照。",
+                "level": "初級"
+            },
+            {
+                "en": "He was a German, traveling on a Swiss passport.",
+                "zh": "他是德國人，持瑞士護照旅行。",
+                "level": "中級"
+            },
+            {
+                "en": "Make sure your passport is valid for at least six months.",
+                "zh": "確保你的護照效期至少還有六個月。",
+                "level": "中級"
+            },
+            {
+                "en": "Losing your passport while traveling abroad can cause severe administrative delays.",
+                "zh": "在國外旅行時遺失護照可能會造成嚴重的行政延誤。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "word": "pity",
+        "part_of_speech": "vt.",
+        "meaning": "同情、憐憫",
+        "examples": [
+            {
+                "en": "I feel pity for stray animals.",
+                "zh": "我對流浪動物感到同情。",
+                "level": "初級"
+            },
+            {
+                "en": "It is a pity that you can't come.",
+                "zh": "真遺憾你不能來。",
+                "level": "初級"
+            },
+            {
+                "en": "I pity her for having to work while we are on vacation.",
+                "zh": "我同情她在我們度假的時候必須工作。",
+                "level": "中級"
+            },
+            {
+                "en": "How can you marry the man out of pity?",
+                "zh": "怎麼能因同情而嫁給這個人？",
+                "level": "中級"
+            },
+            {
+                "en": "Rather than seeking pity, she overcame her hardships through sheer determination.",
+                "zh": "她沒有尋求同情，而是憑藉純粹的決心克服了艱難。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "word": "pollute",
+        "part_of_speech": "vt.",
+        "meaning": "污染",
+        "examples": [
+            {
+                "en": "Factories should not pollute the river.",
+                "zh": "工廠不應該污染河流。",
+                "level": "初級"
+            },
+            {
+                "en": "Plastic waste can seriously pollute the ocean.",
+                "zh": "塑膠垃圾會嚴重污染海洋。",
+                "level": "初級"
+            },
+            {
+                "en": "His mind is polluted by hatred.",
+                "zh": "仇恨汙染他的心智。",
+                "level": "中級"
+            },
+            {
+                "en": "Chemical waste from the plant polluted the local water supply.",
+                "zh": "工廠的化學廢料污染了當地的供水。",
+                "level": "中級"
+            },
+            {
+                "en": "Unregulated industrial discharge continues to pollute fragile coastal ecosystems.",
+                "zh": "不受規範的工業排放持續汙染脆弱的沿海生態系統。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "word": "rot",
+        "part_of_speech": "vi./vt.",
+        "meaning": "腐壞",
+        "examples": [
+            {
+                "en": "Fallen leaves will rot in the soil.",
+                "zh": "落葉會在土壤中腐爛。",
+                "level": "初級"
+            },
+            {
+                "en": "Keep the fruit dry so it won't rot.",
+                "zh": "保持水果乾燥才不會腐壞。",
+                "level": "初級"
+            },
+            {
+                "en": "Rain has got in and rotted the woodwork.",
+                "zh": "雨水滲進來，腐蝕了木造的部分。",
+                "level": "中級"
+            },
+            {
+                "en": "Remove decaying vegetables to prevent rot from spreading.",
+                "zh": "移除腐爛的蔬菜，以防腐壞情況擴散。",
+                "level": "中級"
+            },
+            {
+                "en": "High humidity and poor ventilation accelerate food spoilage and organic rot.",
+                "zh": "高濕度和通風不良會加速食物變質和有機腐敗。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "word": "rust",
+        "part_of_speech": "n.",
+        "meaning": "鐵鏽",
+        "examples": [
+            {
+                "en": "The old gate was covered with rust.",
+                "zh": "舊大門佈滿了鐵鏽。",
+                "level": "初級"
+            },
+            {
+                "en": "Metal will rust if left in the rain.",
+                "zh": "金屬如果淋雨會生鏽。",
+                "level": "初級"
+            },
+            {
+                "en": "The spade was covered with rust.",
+                "zh": "那鏟子上布滿鐵鏽。",
+                "level": "中級"
+            },
+            {
+                "en": "Iron rusts easily in moist environments.",
+                "zh": "鐵在潮濕環境中容易生鏽。",
+                "level": "中級"
+            },
+            {
+                "en": "Protective coatings are applied to steel structures to prevent oxidation and rust.",
+                "zh": "在鋼結構上塗上保護塗層以防止氧化和生鏽。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "word": "sack",
+        "part_of_speech": "n.",
+        "meaning": "大袋子 (用以運送水泥、穀物等)",
+        "examples": [
+            {
+                "en": "He carried a heavy sack of potatoes.",
+                "zh": "他扛了一大袋馬鈴薯。",
+                "level": "初級"
+            },
+            {
+                "en": "The farmer filled sacks with wheat.",
+                "zh": "農夫把袋子裝滿小麥。",
+                "level": "初級"
+            },
+            {
+                "en": "The corn was stored in large sacks.",
+                "zh": "玉米被存放在大袋子里。",
+                "level": "中級"
+            },
+            {
+                "en": "Workers loaded sacks of rice onto the truck.",
+                "zh": "工人們將一袋袋的米裝上卡車。",
+                "level": "中級"
+            },
+            {
+                "en": "Heavy-duty burlap sacks are traditionally used for transporting coffee beans.",
+                "zh": "耐用的麻袋傳統上用於運輸咖啡豆。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "word": "shampoo",
+        "part_of_speech": "n.",
+        "meaning": "洗髮精",
+        "examples": [
+            {
+                "en": "I need to buy a bottle of shampoo.",
+                "zh": "我需要買一瓶洗髮精。",
+                "level": "初級"
+            },
+            {
+                "en": "This shampoo smells like flowers.",
+                "zh": "這款洗髮精聞起來像花香。",
+                "level": "初級"
+            },
+            {
+                "en": "You need a gentle shampoo for your baby's fine hair.",
+                "zh": "你需要溫和的洗髮精來清潔寶寶柔細的頭髮。",
+                "level": "中級"
+            },
+            {
+                "en": "Can I use shower gel to shampoo my hair?",
+                "zh": "可以用沐浴露洗頭髮嗎？",
+                "level": "中級"
+            },
+            {
+                "en": "Dermatologists recommend organic botanical shampoo for sensitive scalps.",
+                "zh": "皮膚科醫生建議敏感性頭皮使用有機植物洗髮精。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "word": "shepherd",
+        "part_of_speech": "n.",
+        "meaning": "牧羊人",
+        "examples": [
+            {
+                "en": "The shepherd watched over his flock in the field.",
+                "zh": "牧羊人在田野裡看守他的羊群。",
+                "level": "初級"
+            },
+            {
+                "en": "A dog helped the shepherd guide the sheep.",
+                "zh": "一隻狗協助牧羊人引導羊群。",
+                "level": "初級"
+            },
+            {
+                "en": "The shepherd herds his sheep down the mountain.",
+                "zh": "牧羊人驅趕綿羊下山。",
+                "level": "中級"
+            },
+            {
+                "en": "A sheepdog can do twenty shepherds' job.",
+                "zh": "一隻牧羊犬可以做二十個牧羊人的工作。",
+                "level": "中級"
+            },
+            {
+                "en": "The experienced shepherd navigated the rugged terrain with his loyal collie.",
+                "zh": "經驗豐富的牧羊人帶著他的忠實牧羊犬在崎嶇的地形中前行。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "word": "slip",
+        "part_of_speech": "vi.",
+        "meaning": "失足、滑倒",
+        "examples": [
+            {
+                "en": "Be careful not to slip on the ice.",
+                "zh": "小心不要在冰上滑倒。",
+                "level": "初級"
+            },
+            {
+                "en": "He slipped and fell on the wet floor.",
+                "zh": "他在濕地板上滑倒了。",
+                "level": "初級"
+            },
+            {
+                "en": "The ground was so wet that I almost slipped.",
+                "zh": "地上很溼，我差一點滑倒。",
+                "level": "中級"
+            },
+            {
+                "en": "The glass slipped out of my hand and smashed on the floor.",
+                "zh": "玻璃杯從我手中滑落，碎了一地。",
+                "level": "中級"
+            },
+            {
+                "en": "It is not unusual to have a slip of the tongue when you talk really fast.",
+                "zh": "說話很快時難免會有口誤。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "word": "sorrow",
+        "part_of_speech": "n.",
+        "meaning": "悲傷",
+        "examples": [
+            {
+                "en": "She felt deep sorrow after losing her pet.",
+                "zh": "失去寵物後她感到深深的悲傷。",
+                "level": "初級"
+            },
+            {
+                "en": "Words cannot express my sorrow.",
+                "zh": "言辭無法表達我的悲傷。",
+                "level": "初級"
+            },
+            {
+                "en": "He expressed his sorrow at my father's death.",
+                "zh": "他對我父親的去世表達哀悼之情。",
+                "level": "中級"
+            },
+            {
+                "en": "The community shared their sorrow over the tragic accident.",
+                "zh": "社區居民為這場悲慘事故分擔他們的悲傷。",
+                "level": "中級"
+            },
+            {
+                "en": "Time eventually heals the profound sorrow associated with the loss of a loved one.",
+                "zh": "時間最終會治癒失去摯愛所帶來的深切悲傷。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "word": "spy",
+        "part_of_speech": "n.",
+        "meaning": "間諜",
+        "examples": [
+            {
+                "en": "The spy shared secret information with the enemy.",
+                "zh": "間諜與敵人分享了機密資訊。",
+                "level": "初級"
+            },
+            {
+                "en": "He was caught acting as a foreign spy.",
+                "zh": "他因擔任外國間諜而被捕。",
+                "level": "初級"
+            },
+            {
+                "en": "He was suspected of having been a spy during the war.",
+                "zh": "他遭懷疑曾在戰時擔任間諜。",
+                "level": "中級"
+            },
+            {
+                "en": "The woman hired a private detective to spy on her husband.",
+                "zh": "這名女子僱用一名私家偵探監視丈夫。",
+                "level": "中級"
+            },
+            {
+                "en": "The clandestine agent operated deep undercover as an enemy spy for decades.",
+                "zh": "這名祕密特工以敵方間諜身分深入臥底數十年。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "word": "stadium",
+        "part_of_speech": "n.",
+        "meaning": "運動場 (四周有看臺的)",
+        "examples": [
+            {
+                "en": "The baseball stadium was packed with fans.",
+                "zh": "棒球場擠滿了球迷。",
+                "level": "初級"
+            },
+            {
+                "en": "A huge concert was held in the national stadium.",
+                "zh": "國家體育場舉辦了一場巨大的音樂會。",
+                "level": "初級"
+            },
+            {
+                "en": "Thousands of football fans packed into the stadium to watch the game.",
+                "zh": "幾千名球迷擠進運動場來看球賽。",
+                "level": "中級"
+            },
+            {
+                "en": "We played basketball in the gymnasium.",
+                "zh": "我們在體育館打籃球。",
+                "level": "中級"
+            },
+            {
+                "en": "The multi-purpose stadium hosts both international track meets and soccer tournaments.",
+                "zh": "這座多功能體育場舉辦國際田徑賽事和足球錦標賽。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "word": "stool",
+        "part_of_speech": "n.",
+        "meaning": "凳子",
+        "examples": [
+            {
+                "en": "He sat on a wooden stool at the bar.",
+                "zh": "他坐在吧台的一張木凳上。",
+                "level": "初級"
+            },
+            {
+                "en": "She stood on a small stool to reach the shelf.",
+                "zh": "她站在小凳子上以搆到架子。",
+                "level": "初級"
+            },
+            {
+                "en": "The man fetched a stool and sat with the others.",
+                "zh": "那個人拿了一把凳子和其他人坐在一起。",
+                "level": "中級"
+            },
+            {
+                "en": "A stool test can help diagnose problems in the digestive tract.",
+                "zh": "糞便檢查有助於診斷消化道的問題。",
+                "level": "中級"
+            },
+            {
+                "en": "Laboratory technicians analyzed the biological sample collected during the stool examination.",
+                "zh": "實驗室技術人員分析了在糞便檢查期間採集的生物樣本。",
+                "level": "中高級"
+            }
+        ]
+    }
+]
