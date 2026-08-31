@@ -218,7 +218,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260831.03</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260831.05</p>
             </div>
         </div>
 
@@ -3618,14 +3618,23 @@
             }
             alert(msg);
 
-            const learnedPool = allWordsData.filter(w => {
-                const key = w.word.toLowerCase();
-                return (leitnerBox[key]?.boxLevel || 0) > 0;
-            });
-
             let reqCount = 20;
             if (isDouble) {
                 reqCount = 40;
+            }
+
+            let learnedPool = allWordsData.filter(w => {
+                const key = w.word.toLowerCase();
+                return w.bookId === currentBook && (leitnerBox[key]?.boxLevel || 0) > 0;
+            });
+
+            // 💡 後備合併機制：若當前選定教材掌握字數不足，自動合併其他教材的單字出題
+            if (learnedPool.length < reqCount) {
+                console.log(`【挑戰賽後備合併】當前教材已學單字量 (${learnedPool.length}) 不足 ${reqCount} 個，自動合併其他教材已學單字出題。`);
+                learnedPool = allWordsData.filter(w => {
+                    const key = w.word.toLowerCase();
+                    return (leitnerBox[key]?.boxLevel || 0) > 0;
+                });
             }
 
             if (learnedPool.length < reqCount) {

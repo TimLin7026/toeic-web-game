@@ -7,23 +7,28 @@
         "examples": [
             {
                 "en": "I didn't mean to insult her; it was just a slip of the tongue.",
-                "zh": "我無意侮辱她；那只是口誤。"
+                "zh": "我無意侮辱她；那只是口誤。",
+                "level": "TOEIC"
             },
             {
                 "en": "His slip of the pen caused a misunderstanding in the contract.",
-                "zh": "他的筆誤導致了合約上的誤會。"
+                "zh": "他的筆誤導致了合約上的誤會。",
+                "level": "TOEIC"
             },
             {
                 "en": "Please forgive my slip of the tongue during the presentation.",
-                "zh": "請原諒我在簡報時的口誤。"
+                "zh": "請原諒我在簡報時的口誤。",
+                "level": "TOEIC"
             },
             {
                 "en": "A slip of the pen can sometimes have serious legal consequences.",
-                "zh": "筆誤有時會產生嚴重的法律後果。"
+                "zh": "筆誤有時會產生嚴重的法律後果。",
+                "level": "TOEIC"
             },
             {
                 "en": "She quickly apologized for her slip of the tongue.",
-                "zh": "她為自己的口誤迅速道了歉。"
+                "zh": "她為自己的口誤迅速道了歉。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -35,23 +40,28 @@
         "examples": [
             {
                 "en": "We sat on a wooden bench in the park to rest.",
-                "zh": "我們坐在公園的木長凳上休息。"
+                "zh": "我們坐在公園的木長凳上休息。",
+                "level": "TOEIC"
             },
             {
                 "en": "The coach benched his best player due to an injury.",
-                "zh": "教練因為受傷而讓最好的球員坐冷板凳。"
+                "zh": "教練因為受傷而讓最好的球員坐冷板凳。",
+                "level": "TOEIC"
             },
             {
                 "en": "There is a stone bench under the large oak tree.",
-                "zh": "大橡樹下有一張石長凳。"
+                "zh": "大橡樹下有一張石長凳。",
+                "level": "TOEIC"
             },
             {
                 "en": "She left her jacket on the park bench.",
-                "zh": "她把外套忘在了公園長凳上。"
+                "zh": "她把外套忘在了公園長凳上。",
+                "level": "TOEIC"
             },
             {
                 "en": "The old man feeds the pigeons from his favorite bench every morning.",
-                "zh": "老人每天早上都在他最喜歡的長凳上餵鴿子。"
+                "zh": "老人每天早上都在他最喜歡的長凳上餵鴿子。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -63,23 +73,28 @@
         "examples": [
             {
                 "en": "Many blue-collar workers are demanding better working conditions.",
-                "zh": "許多藍領階級要求更好的工作條件。"
+                "zh": "許多藍領階級要求更好的工作條件。",
+                "level": "TOEIC"
             },
             {
                 "en": "He is proud of his blue-collar background and hard work.",
-                "zh": "他為自己的藍領背景和辛勤工作感到自豪。"
+                "zh": "他為自己的藍領背景和辛勤工作感到自豪。",
+                "level": "TOEIC"
             },
             {
                 "en": "The town's economy relies heavily on blue-collar jobs in manufacturing.",
-                "zh": "這個城鎮的經濟很大程度上依賴於製造業的藍領工作。"
+                "zh": "這個城鎮的經濟很大程度上依賴於製造業的藍領工作。",
+                "level": "TOEIC"
             },
             {
                 "en": "Blue-collar employees often face higher risks of workplace injuries.",
-                "zh": "藍領員工通常面臨較高的工傷風險。"
+                "zh": "藍領員工通常面臨較高的工傷風險。",
+                "level": "TOEIC"
             },
             {
                 "en": "My father spent his entire life doing blue-collar work in a factory.",
-                "zh": "我父親一輩子都在工廠做藍領工作。"
+                "zh": "我父親一輩子都在工廠做藍領工作。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -91,23 +106,28 @@
         "examples": [
             {
                 "en": "The caterpillar is about three centimeters long.",
-                "zh": "這條毛毛蟲大約三公分長。"
+                "zh": "這條毛毛蟲大約三公分長。",
+                "level": "TOEIC"
             },
             {
                 "en": "Please move the painting a few centimeters to the left.",
-                "zh": "請把畫向左移幾公分。"
+                "zh": "請把畫向左移幾公分。",
+                "level": "TOEIC"
             },
             {
                 "en": "A centimeter is a unit of length in the metric system.",
-                "zh": "公分是公制中的長度單位。"
+                "zh": "公分是公制中的長度單位。",
+                "level": "TOEIC"
             },
             {
                 "en": "The water level rose by several centimeters after the heavy rain.",
-                "zh": "大雨過後水位上升了幾公分。"
+                "zh": "大雨過後水位上升了幾公分。",
+                "level": "TOEIC"
             },
             {
                 "en": "She is only a few centimeters taller than her younger sister.",
-                "zh": "她只比她妹妹高幾公分。"
+                "zh": "她只比她妹妹高幾公分。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -119,23 +139,28 @@
         "examples": [
             {
                 "en": "He wore a shirt with a stiff white collar.",
-                "zh": "他穿著一件有硬白領的襯衫。"
+                "zh": "他穿著一件有硬白領的襯衫。",
+                "level": "TOEIC"
             },
             {
                 "en": "The dog managed to slip out of its collar and run away.",
-                "zh": "那隻狗成功掙脫了項圈跑掉了。"
+                "zh": "那隻狗成功掙脫了項圈跑掉了。",
+                "level": "TOEIC"
             },
             {
                 "en": "Please turn down your collar; it looks messy.",
-                "zh": "請把你的衣領翻下來；看起來很亂。"
+                "zh": "請把你的衣領翻下來；看起來很亂。",
+                "level": "TOEIC"
             },
             {
                 "en": "She bought a leather collar with a silver tag for her new puppy.",
-                "zh": "她為新小狗買了一個帶有銀色吊牌的皮項圈。"
+                "zh": "她為新小狗買了一個帶有銀色吊牌的皮項圈。",
+                "level": "TOEIC"
             },
             {
                 "en": "The police collared the thief before he could escape the building.",
-                "zh": "警察在小偷逃出大樓前逮捕了他。"
+                "zh": "警察在小偷逃出大樓前逮捕了他。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -147,23 +172,28 @@
         "examples": [
             {
                 "en": "I bought a chocolate doughnut and a cup of coffee for breakfast.",
-                "zh": "我買了一個巧克力甜甜圈和一杯咖啡當早餐。"
+                "zh": "我買了一個巧克力甜甜圈和一杯咖啡當早餐。",
+                "level": "TOEIC"
             },
             {
                 "en": "The bakery is famous for its freshly baked doughnuts.",
-                "zh": "這家麵包店以其剛出爐的甜甜圈聞名。"
+                "zh": "這家麵包店以其剛出爐的甜甜圈聞名。",
+                "level": "TOEIC"
             },
             {
                 "en": "He took a bite of the sugary doughnut and smiled.",
-                "zh": "他咬了一口撒滿糖的甜甜圈，笑了起來。"
+                "zh": "他咬了一口撒滿糖的甜甜圈，笑了起來。",
+                "level": "TOEIC"
             },
             {
                 "en": "Eating too many doughnuts can lead to weight gain.",
-                "zh": "吃太多甜甜圈會導致體重增加。"
+                "zh": "吃太多甜甜圈會導致體重增加。",
+                "level": "TOEIC"
             },
             {
                 "en": "They sell doughnuts with various fillings, like strawberry and custard.",
-                "zh": "他們賣各種餡料的甜甜圈，像是草莓和卡士達。"
+                "zh": "他們賣各種餡料的甜甜圈，像是草莓和卡士達。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -175,23 +205,28 @@
         "examples": [
             {
                 "en": "Please use a pencil so you can erase any mistakes easily.",
-                "zh": "請使用鉛筆，這樣你可以輕易擦掉錯誤。"
+                "zh": "請使用鉛筆，這樣你可以輕易擦掉錯誤。",
+                "level": "TOEIC"
             },
             {
                 "en": "He tried to erase the painful memories from his mind.",
-                "zh": "他試圖將痛苦的記憶從腦海中抹去。"
+                "zh": "他試圖將痛苦的記憶從腦海中抹去。",
+                "level": "TOEIC"
             },
             {
                 "en": "The teacher erased the notes on the blackboard after the class.",
-                "zh": "老師下課後擦掉了黑板上的筆記。"
+                "zh": "老師下課後擦掉了黑板上的筆記。",
+                "level": "TOEIC"
             },
             {
                 "en": "Make sure you don't accidentally erase all the important files on your computer.",
-                "zh": "確保你不會意外刪除電腦上所有重要的檔案。"
+                "zh": "確保你不會意外刪除電腦上所有重要的檔案。",
+                "level": "TOEIC"
             },
             {
                 "en": "Time cannot erase the impact she had on my life.",
-                "zh": "時間無法抹滅她對我人生的影響。"
+                "zh": "時間無法抹滅她對我人生的影響。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -203,23 +238,28 @@
         "examples": [
             {
                 "en": "They had dinner at a fancy restaurant to celebrate their anniversary.",
-                "zh": "他們在一家高級餐廳吃晚餐慶祝紀念日。"
+                "zh": "他們在一家高級餐廳吃晚餐慶祝紀念日。",
+                "level": "TOEIC"
             },
             {
                 "en": "I don't fancy going out tonight; I'd rather stay home.",
-                "zh": "我今晚不想出門；我寧願待在家。"
+                "zh": "我今晚不想出門；我寧願待在家。",
+                "level": "TOEIC"
             },
             {
                 "en": "She was wearing a very fancy dress at the party.",
-                "zh": "她在派對上穿著一件非常華麗的洋裝。"
+                "zh": "她在派對上穿著一件非常華麗的洋裝。",
+                "level": "TOEIC"
             },
             {
                 "en": "Do you fancy a cup of tea before we start working?",
-                "zh": "我們開始工作前你想喝杯茶嗎？"
+                "zh": "我們開始工作前你想喝杯茶嗎？",
+                "level": "TOEIC"
             },
             {
                 "en": "He bought a fancy new sports car with his bonus.",
-                "zh": "他用獎金買了一輛酷炫的新跑車。"
+                "zh": "他用獎金買了一輛酷炫的新跑車。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -231,23 +271,28 @@
         "examples": [
             {
                 "en": "A flock of birds flew across the sunset sky.",
-                "zh": "一群鳥飛過日落的天空。"
+                "zh": "一群鳥飛過日落的天空。",
+                "level": "TOEIC"
             },
             {
                 "en": "Tourists flock to the island every summer for its beautiful beaches.",
-                "zh": "每年夏天遊客成群結隊來到這座島嶼，因為這裡有美麗的海灘。"
+                "zh": "每年夏天遊客成群結隊來到這座島嶼，因為這裡有美麗的海灘。",
+                "level": "TOEIC"
             },
             {
                 "en": "The shepherd guided his flock of sheep back to the barn.",
-                "zh": "牧羊人引導他的羊群回到穀倉。"
+                "zh": "牧羊人引導他的羊群回到穀倉。",
+                "level": "TOEIC"
             },
             {
                 "en": "Thousands of fans flocked to the stadium to see the pop star.",
-                "zh": "成千上萬的粉絲湧入體育場看這位流行巨星。"
+                "zh": "成千上萬的粉絲湧入體育場看這位流行巨星。",
+                "level": "TOEIC"
             },
             {
                 "en": "They saw a flock of geese resting near the lake.",
-                "zh": "他們看到一群鵝在湖邊休息。"
+                "zh": "他們看到一群鵝在湖邊休息。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -259,23 +304,28 @@
         "examples": [
             {
                 "en": "The local grocer knows most of his customers by name.",
-                "zh": "當地的雜貨商能叫出大部分顧客的名字。"
+                "zh": "當地的雜貨商能叫出大部分顧客的名字。",
+                "level": "TOEIC"
             },
             {
                 "en": "My grandfather worked as a grocer for over forty years.",
-                "zh": "我祖父做了四十多年的雜貨商。"
+                "zh": "我祖父做了四十多年的雜貨商。",
+                "level": "TOEIC"
             },
             {
                 "en": "The grocer arranged the fresh vegetables neatly on the shelves.",
-                "zh": "雜貨商將新鮮蔬菜整齊地擺放在架子上。"
+                "zh": "雜貨商將新鮮蔬菜整齊地擺放在架子上。",
+                "level": "TOEIC"
             },
             {
                 "en": "We buy our daily supplies from the grocer at the corner.",
-                "zh": "我們向轉角的雜貨商購買日常用品。"
+                "zh": "我們向轉角的雜貨商購買日常用品。",
+                "level": "TOEIC"
             },
             {
                 "en": "The grocer warned us that the price of eggs would rise soon.",
-                "zh": "雜貨商警告我們雞蛋的價格很快就會上漲。"
+                "zh": "雜貨商警告我們雞蛋的價格很快就會上漲。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -287,23 +337,28 @@
         "examples": [
             {
                 "en": "I need to buy some groceries for dinner tonight.",
-                "zh": "我需要買些雜貨來做今晚的晚餐。"
+                "zh": "我需要買些雜貨來做今晚的晚餐。",
+                "level": "TOEIC"
             },
             {
                 "en": "She spent fifty dollars on groceries at the supermarket.",
-                "zh": "她在超市花了五十美元買雜貨。"
+                "zh": "她在超市花了五十美元買雜貨。",
+                "level": "TOEIC"
             },
             {
                 "en": "Carrying heavy bags of groceries up the stairs is exhausting.",
-                "zh": "提著沉重的雜貨袋上樓梯很累人。"
+                "zh": "提著沉重的雜貨袋上樓梯很累人。",
+                "level": "TOEIC"
             },
             {
                 "en": "They usually do their grocery shopping on Saturday mornings.",
-                "zh": "他們通常在星期六早上採買雜貨。"
+                "zh": "他們通常在星期六早上採買雜貨。",
+                "level": "TOEIC"
             },
             {
                 "en": "The delivery boy left the groceries at our front door.",
-                "zh": "外送員把雜貨留在了我們的前門。"
+                "zh": "外送員把雜貨留在了我們的前門。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -315,23 +370,28 @@
         "examples": [
             {
                 "en": "There is a small grocery store just down the street.",
-                "zh": "沿著這條街往下走有一家小雜貨店。"
+                "zh": "沿著這條街往下走有一家小雜貨店。",
+                "level": "TOEIC"
             },
             {
                 "en": "He stopped by the grocery store to pick up some milk.",
-                "zh": "他順路去雜貨店買些牛奶。"
+                "zh": "他順路去雜貨店買些牛奶。",
+                "level": "TOEIC"
             },
             {
                 "en": "The grocery store is open 24 hours a day for your convenience.",
-                "zh": "為了您的方便，這家雜貨店24小時營業。"
+                "zh": "為了您的方便，這家雜貨店24小時營業。",
+                "level": "TOEIC"
             },
             {
                 "en": "She works part-time as a cashier at a local grocery store.",
-                "zh": "她在當地的一家雜貨店兼職當收銀員。"
+                "zh": "她在當地的一家雜貨店兼職當收銀員。",
+                "level": "TOEIC"
             },
             {
                 "en": "They decided to open a new grocery store in the neighborhood.",
-                "zh": "他們決定在附近開一家新的雜貨店。"
+                "zh": "他們決定在附近開一家新的雜貨店。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -343,23 +403,28 @@
         "examples": [
             {
                 "en": "The graduation ceremony will be held in the school gymnasium.",
-                "zh": "畢業典禮將在學校體育館舉行。"
+                "zh": "畢業典禮將在學校體育館舉行。",
+                "level": "TOEIC"
             },
             {
                 "en": "Students gather in the gymnasium every morning for assembly.",
-                "zh": "學生每天早上在體育館集合開朝會。"
+                "zh": "學生每天早上在體育館集合開朝會。",
+                "level": "TOEIC"
             },
             {
                 "en": "The new gymnasium features a modern basketball court and a swimming pool.",
-                "zh": "新體育館設有現代化的籃球場和游泳池。"
+                "zh": "新體育館設有現代化的籃球場和游泳池。",
+                "level": "TOEIC"
             },
             {
                 "en": "He spends an hour in the gymnasium lifting weights after work.",
-                "zh": "他下班後在健身房花一小時舉重。"
+                "zh": "他下班後在健身房花一小時舉重。",
+                "level": "TOEIC"
             },
             {
                 "en": "During the storm, the gymnasium served as a temporary shelter.",
-                "zh": "風暴期間，體育館被當作臨時避難所。"
+                "zh": "風暴期間，體育館被當作臨時避難所。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -371,23 +436,28 @@
         "examples": [
             {
                 "en": "She took pity on the stray cat and brought it home.",
-                "zh": "她可憐那隻流浪貓並把它帶回家。"
+                "zh": "她可憐那隻流浪貓並把它帶回家。",
+                "level": "TOEIC"
             },
             {
                 "en": "The judge took pity on the young offender and gave him a lighter sentence.",
-                "zh": "法官同情這名年輕的罪犯，判了他較輕的刑罰。"
+                "zh": "法官同情這名年輕的罪犯，判了他較輕的刑罰。",
+                "level": "TOEIC"
             },
             {
                 "en": "Please have pity on the homeless people in this freezing weather.",
-                "zh": "在這種嚴寒天氣裡，請同情一下無家可歸的人。"
+                "zh": "在這種嚴寒天氣裡，請同情一下無家可歸的人。",
+                "level": "TOEIC"
             },
             {
                 "en": "He refused to ask for help because he didn't want anyone to take pity on him.",
-                "zh": "他拒絕尋求幫助，因為他不想讓任何人同情他。"
+                "zh": "他拒絕尋求幫助，因為他不想讓任何人同情他。",
+                "level": "TOEIC"
             },
             {
                 "en": "Taking pity on the lost child, the police officer bought him an ice cream.",
-                "zh": "警察同情這個迷路的孩子，給他買了一個冰淇淋。"
+                "zh": "警察同情這個迷路的孩子，給他買了一個冰淇淋。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -399,23 +469,28 @@
         "examples": [
             {
                 "en": "He nodded his head to show that he agreed with me.",
-                "zh": "他點點頭表示同意我的看法。"
+                "zh": "他點點頭表示同意我的看法。",
+                "level": "TOEIC"
             },
             {
                 "en": "She was appointed as the head of the marketing department.",
-                "zh": "她被任命為行銷部門的主管。"
+                "zh": "她被任命為行銷部門的主管。",
+                "level": "TOEIC"
             },
             {
                 "en": "They decided to head south for the winter to escape the cold.",
-                "zh": "他們決定往南走過冬以避寒。"
+                "zh": "他們決定往南走過冬以避寒。",
+                "level": "TOEIC"
             },
             {
                 "en": "The principal will head the committee responsible for the new curriculum.",
-                "zh": "校長將領導負責新課程的委員會。"
+                "zh": "校長將領導負責新課程的委員會。",
+                "level": "TOEIC"
             },
             {
                 "en": "Make sure to protect your head when you ride a motorcycle.",
-                "zh": "騎機車時務必保護好你的頭部。"
+                "zh": "騎機車時務必保護好你的頭部。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -427,23 +502,28 @@
         "examples": [
             {
                 "en": "Please write the main topic under the bold heading.",
-                "zh": "請將主旨寫在粗體標題下方。"
+                "zh": "請將主旨寫在粗體標題下方。",
+                "level": "TOEIC"
             },
             {
                 "en": "The chapter has a short heading that summarizes its content.",
-                "zh": "這一章有一個簡短的標題來總結其內容。"
+                "zh": "這一章有一個簡短的標題來總結其內容。",
+                "level": "TOEIC"
             },
             {
                 "en": "She looked for her name under the heading 'Accepted Candidates'.",
-                "zh": "她在「錄取名單」的標題下尋找自己的名字。"
+                "zh": "她在「錄取名單」的標題下尋找自己的名字。",
+                "level": "TOEIC"
             },
             {
                 "en": "Each paragraph should have a clear heading to guide the reader.",
-                "zh": "每個段落都應該有一個清晰的標題來引導讀者。"
+                "zh": "每個段落都應該有一個清晰的標題來引導讀者。",
+                "level": "TOEIC"
             },
             {
                 "en": "He quickly scanned the headings in the report before the meeting.",
-                "zh": "開會前他快速瀏覽了報告中的標題。"
+                "zh": "開會前他快速瀏覽了報告中的標題。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -455,23 +535,28 @@
         "examples": [
             {
                 "en": "The news of the royal wedding dominated the front-page headline.",
-                "zh": "皇家婚禮的新聞占據了頭版頭條。"
+                "zh": "皇家婚禮的新聞占據了頭版頭條。",
+                "level": "TOEIC"
             },
             {
                 "en": "She glanced at the headline of the newspaper but didn't read the article.",
-                "zh": "她瞥了一眼報紙的頭條，但沒有閱讀文章。"
+                "zh": "她瞥了一眼報紙的頭條，但沒有閱讀文章。",
+                "level": "TOEIC"
             },
             {
                 "en": "His shocking statement immediately made headlines around the world.",
-                "zh": "他令人震驚的聲明立刻成為全世界的頭條新聞。"
+                "zh": "他令人震驚的聲明立刻成為全世界的頭條新聞。",
+                "level": "TOEIC"
             },
             {
                 "en": "The editor decided to change the headline to make it more catchy.",
-                "zh": "編輯決定更改頭條，使其更吸引人。"
+                "zh": "編輯決定更改頭條，使其更吸引人。",
+                "level": "TOEIC"
             },
             {
                 "en": "Yesterday's headline about the economic crisis worried many investors.",
-                "zh": "昨天關於經濟危機的頭條新聞讓許多投資者感到擔憂。"
+                "zh": "昨天關於經濟危機的頭條新聞讓許多投資者感到擔憂。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -483,23 +568,28 @@
         "examples": [
             {
                 "en": "You must wear a helmet when riding a bicycle for safety.",
-                "zh": "為了安全起見，騎自行車時必須戴安全帽。"
+                "zh": "為了安全起見，騎自行車時必須戴安全帽。",
+                "level": "TOEIC"
             },
             {
                 "en": "The construction worker took off his yellow helmet to wipe his sweat.",
-                "zh": "建築工人摘下黃色安全帽擦汗。"
+                "zh": "建築工人摘下黃色安全帽擦汗。",
+                "level": "TOEIC"
             },
             {
                 "en": "The helmet protected his head during the severe crash.",
-                "zh": "在嚴重的車禍中，安全帽保護了他的頭部。"
+                "zh": "在嚴重的車禍中，安全帽保護了他的頭部。",
+                "level": "TOEIC"
             },
             {
                 "en": "She strapped her helmet on tightly before climbing the rock wall.",
-                "zh": "在攀岩之前，她緊緊繫好安全帽的帶子。"
+                "zh": "在攀岩之前，她緊緊繫好安全帽的帶子。",
+                "level": "TOEIC"
             },
             {
                 "en": "Motorcycle helmets come in various designs and colors.",
-                "zh": "機車安全帽有各種設計和顏色。"
+                "zh": "機車安全帽有各種設計和顏色。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -511,23 +601,28 @@
         "examples": [
             {
                 "en": "As a freshman living in the dorm, he often felt homesick.",
-                "zh": "作為一個住在宿舍的大一新生，他經常想家。"
+                "zh": "作為一個住在宿舍的大一新生，他經常想家。",
+                "level": "TOEIC"
             },
             {
                 "en": "Looking at old family photos made her incredibly homesick.",
-                "zh": "看著舊家庭照片讓她無比思鄉。"
+                "zh": "看著舊家庭照片讓她無比思鄉。",
+                "level": "TOEIC"
             },
             {
                 "en": "The exchange student burst into tears because she was too homesick.",
-                "zh": "這名交換學生因為太想家而哭了出來。"
+                "zh": "這名交換學生因為太想家而哭了出來。",
+                "level": "TOEIC"
             },
             {
                 "en": "Calling her parents every weekend helps ease her homesick feelings.",
-                "zh": "每週末打電話給父母有助於緩解她思鄉的情緒。"
+                "zh": "每週末打電話給父母有助於緩解她思鄉的情緒。",
+                "level": "TOEIC"
             },
             {
                 "en": "It is completely normal to feel homesick when you first study abroad.",
-                "zh": "剛出國留學時感到想家是完全正常的。"
+                "zh": "剛出國留學時感到想家是完全正常的。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -539,23 +634,28 @@
         "examples": [
             {
                 "en": "He returned to his hometown after working in the city for ten years.",
-                "zh": "在城市工作十年後，他回到了故鄉。"
+                "zh": "在城市工作十年後，他回到了故鄉。",
+                "level": "TOEIC"
             },
             {
                 "en": "My hometown is famous for its delicious street food and night markets.",
-                "zh": "我的故鄉以美味的街頭小吃和夜市而聞名。"
+                "zh": "我的故鄉以美味的街頭小吃和夜市而聞名。",
+                "level": "TOEIC"
             },
             {
                 "en": "She always speaks proudly of her small, peaceful hometown.",
-                "zh": "她總是自豪地談論她那寧靜的小故鄉。"
+                "zh": "她總是自豪地談論她那寧靜的小故鄉。",
+                "level": "TOEIC"
             },
             {
                 "en": "The mayor gave a speech to celebrate the history of their hometown.",
-                "zh": "市長發表演說慶祝他們故鄉的歷史。"
+                "zh": "市長發表演說慶祝他們故鄉的歷史。",
+                "level": "TOEIC"
             },
             {
                 "en": "Many young people leave their hometowns to seek better opportunities.",
-                "zh": "許多年輕人離開故鄉尋求更好的機會。"
+                "zh": "許多年輕人離開故鄉尋求更好的機會。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -567,23 +667,28 @@
         "examples": [
             {
                 "en": "Due to the rain, the event was moved to an indoor stadium.",
-                "zh": "因為下雨，活動移至室內體育館舉行。"
+                "zh": "因為下雨，活動移至室內體育館舉行。",
+                "level": "TOEIC"
             },
             {
                 "en": "Indoor plants can improve the air quality in your home.",
-                "zh": "室內植物可以改善你家中的空氣品質。"
+                "zh": "室內植物可以改善你家中的空氣品質。",
+                "level": "TOEIC"
             },
             {
                 "en": "Swimming in an indoor pool is perfect for winter exercises.",
-                "zh": "在室內游泳池游泳非常適合冬季運動。"
+                "zh": "在室內游泳池游泳非常適合冬季運動。",
+                "level": "TOEIC"
             },
             {
                 "en": "They set up an indoor playground for the children to enjoy.",
-                "zh": "他們為孩子們建立了一個室內遊樂場。"
+                "zh": "他們為孩子們建立了一個室內遊樂場。",
+                "level": "TOEIC"
             },
             {
                 "en": "Indoor lighting plays a crucial role in interior design.",
-                "zh": "室內照明在室內設計中扮演著至關重要的角色。"
+                "zh": "室內照明在室內設計中扮演著至關重要的角色。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -595,23 +700,28 @@
         "examples": [
             {
                 "en": "Let's stay indoors today since it's freezing outside.",
-                "zh": "外面太冷了，我們今天就待在室內吧。"
+                "zh": "外面太冷了，我們今天就待在室內吧。",
+                "level": "TOEIC"
             },
             {
                 "en": "The dog was kept indoors during the fireworks display.",
-                "zh": "放煙火時，那隻狗被關在室內。"
+                "zh": "放煙火時，那隻狗被關在室內。",
+                "level": "TOEIC"
             },
             {
                 "en": "It started pouring, so we quickly ran indoors.",
-                "zh": "開始傾盆大雨了，所以我們趕快跑進室內。"
+                "zh": "開始傾盆大雨了，所以我們趕快跑進室內。",
+                "level": "TOEIC"
             },
             {
                 "en": "Most of the children prefer playing video games indoors to playing outside.",
-                "zh": "大多數孩子寧願在室內玩電動遊戲也不願在外面玩。"
+                "zh": "大多數孩子寧願在室內玩電動遊戲也不願在外面玩。",
+                "level": "TOEIC"
             },
             {
                 "en": "Please leave your wet umbrella near the door when you come indoors.",
-                "zh": "進來室內時，請把濕雨傘放在門口附近。"
+                "zh": "進來室內時，請把濕雨傘放在門口附近。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -623,23 +733,28 @@
         "examples": [
             {
                 "en": "He felt jealous when he saw his girlfriend talking to another man.",
-                "zh": "當他看到女友和另一個男人說話時，他感到嫉妒。"
+                "zh": "當他看到女友和另一個男人說話時，他感到嫉妒。",
+                "level": "TOEIC"
             },
             {
                 "en": "She is naturally jealous of her sister's success and talent.",
-                "zh": "她天生嫉妒姊姊的成功和才華。"
+                "zh": "她天生嫉妒姊姊的成功和才華。",
+                "level": "TOEIC"
             },
             {
                 "en": "Don't be jealous of others; focus on your own goals.",
-                "zh": "不要嫉妒別人；專注於你自己的目標。"
+                "zh": "不要嫉妒別人；專注於你自己的目標。",
+                "level": "TOEIC"
             },
             {
                 "en": "His jealous remarks revealed his true feelings about the promotion.",
-                "zh": "他嫉妒的言辭透露了他對升職的真實感受。"
+                "zh": "他嫉妒的言辭透露了他對升職的真實感受。",
+                "level": "TOEIC"
             },
             {
                 "en": "A jealous attitude can ruin a perfectly good relationship.",
-                "zh": "嫉妒的態度可能會毀掉一段美好的關係。"
+                "zh": "嫉妒的態度可能會毀掉一段美好的關係。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -651,23 +766,28 @@
         "examples": [
             {
                 "en": "I made a peanut butter and jelly sandwich for lunch.",
-                "zh": "我做了一個花生醬果凍三明治當午餐。"
+                "zh": "我做了一個花生醬果凍三明治當午餐。",
+                "level": "TOEIC"
             },
             {
                 "en": "The children love eating fruit jelly as a dessert.",
-                "zh": "孩子們喜歡吃水果果凍當甜點。"
+                "zh": "孩子們喜歡吃水果果凍當甜點。",
+                "level": "TOEIC"
             },
             {
                 "en": "She bought a jar of strawberry jelly from the supermarket.",
-                "zh": "她從超市買了一罐草莓果醬。"
+                "zh": "她從超市買了一罐草莓果醬。",
+                "level": "TOEIC"
             },
             {
                 "en": "His legs felt like jelly after the rigorous marathon.",
-                "zh": "跑完嚴格的馬拉松後，他的腿軟得像果凍。"
+                "zh": "跑完嚴格的馬拉松後，他的腿軟得像果凍。",
+                "level": "TOEIC"
             },
             {
                 "en": "The baker spread some jelly over the surface of the cake.",
-                "zh": "麵包師傅在蛋糕表面塗了一些果醬。"
+                "zh": "麵包師傅在蛋糕表面塗了一些果醬。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -679,23 +799,28 @@
         "examples": [
             {
                 "en": "The queen wore a crown decorated with sparkling jewels.",
-                "zh": "女王戴著一頂裝飾著閃亮寶石的皇冠。"
+                "zh": "女王戴著一頂裝飾著閃亮寶石的皇冠。",
+                "level": "TOEIC"
             },
             {
                 "en": "This antique vase is the crown jewel of the museum's collection.",
-                "zh": "這個古董花瓶是博物館收藏中的瑰寶。"
+                "zh": "這個古董花瓶是博物館收藏中的瑰寶。",
+                "level": "TOEIC"
             },
             {
                 "en": "Thieves broke into the shop and stole several precious jewels.",
-                "zh": "小偷闖入商店並偷走了幾件珍貴的首飾。"
+                "zh": "小偷闖入商店並偷走了幾件珍貴的首飾。",
+                "level": "TOEIC"
             },
             {
                 "en": "She kept a hidden jewel in a small wooden box.",
-                "zh": "她把一顆隱藏的寶石放在一個小木盒裡。"
+                "zh": "她把一顆隱藏的寶石放在一個小木盒裡。",
+                "level": "TOEIC"
             },
             {
                 "en": "He is highly valued by the company and considered a real jewel.",
-                "zh": "他深受公司重視，被認為是真正的人才（瑰寶）。"
+                "zh": "他深受公司重視，被認為是真正的人才（瑰寶）。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -707,23 +832,28 @@
         "examples": [
             {
                 "en": "She inherited a large collection of gold and silver jewelry.",
-                "zh": "她繼承了一大批金銀珠寶。"
+                "zh": "她繼承了一大批金銀珠寶。",
+                "level": "TOEIC"
             },
             {
                 "en": "The jewelry store on the corner was robbed last night.",
-                "zh": "轉角那家珠寶店昨晚被搶劫了。"
+                "zh": "轉角那家珠寶店昨晚被搶劫了。",
+                "level": "TOEIC"
             },
             {
                 "en": "He bought her a piece of expensive jewelry for their anniversary.",
-                "zh": "他買了一件昂貴的珠寶給她作為紀念日禮物。"
+                "zh": "他買了一件昂貴的珠寶給她作為紀念日禮物。",
+                "level": "TOEIC"
             },
             {
                 "en": "Please store all your valuable jewelry in the hotel safe.",
-                "zh": "請將您所有貴重的珠寶存放在飯店保險箱中。"
+                "zh": "請將您所有貴重的珠寶存放在飯店保險箱中。",
+                "level": "TOEIC"
             },
             {
                 "en": "Making handmade jewelry has become her new favorite hobby.",
-                "zh": "製作手工珠寶成了她最新的愛好。"
+                "zh": "製作手工珠寶成了她最新的愛好。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -735,23 +865,28 @@
         "examples": [
             {
                 "en": "The garage is full of old junk that we need to throw away.",
-                "zh": "車庫裡滿是我們需要丟掉的舊垃圾。"
+                "zh": "車庫裡滿是我們需要丟掉的舊垃圾。",
+                "level": "TOEIC"
             },
             {
                 "en": "He spent the weekend clearing out the junk from the attic.",
-                "zh": "他花了整個週末清理閣樓裡的沒用東西。"
+                "zh": "他花了整個週末清理閣樓裡的沒用東西。",
+                "level": "TOEIC"
             },
             {
                 "en": "Don't believe what you read in that magazine; it's mostly junk.",
-                "zh": "別相信你在那本雜誌上讀到的東西；大部分都是廢話。"
+                "zh": "別相信你在那本雜誌上讀到的東西；大部分都是廢話。",
+                "level": "TOEIC"
             },
             {
                 "en": "I found some valuable antiques hidden among the junk at the flea market.",
-                "zh": "我在跳蚤市場的破爛中發現了一些有價值的古董。"
+                "zh": "我在跳蚤市場的破爛中發現了一些有價值的古董。",
+                "level": "TOEIC"
             },
             {
                 "en": "He decided to sell his junk car to a scrap yard.",
-                "zh": "他決定把他的報廢老爺車賣給廢料場。"
+                "zh": "他決定把他的報廢老爺車賣給廢料場。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -763,23 +898,28 @@
         "examples": [
             {
                 "en": "Eating too much junk food can lead to health problems like obesity.",
-                "zh": "吃太多垃圾食品會導致肥胖等健康問題。"
+                "zh": "吃太多垃圾食品會導致肥胖等健康問題。",
+                "level": "TOEIC"
             },
             {
                 "en": "Parents should limit the amount of junk food their children consume.",
-                "zh": "父母應該限制孩子攝取的垃圾食品數量。"
+                "zh": "父母應該限制孩子攝取的垃圾食品數量。",
+                "level": "TOEIC"
             },
             {
                 "en": "She decided to cut out junk food and start eating healthy meals.",
-                "zh": "她決定戒掉垃圾食品，開始吃健康的餐點。"
+                "zh": "她決定戒掉垃圾食品，開始吃健康的餐點。",
+                "level": "TOEIC"
             },
             {
                 "en": "Chips, soda, and candy are classic examples of junk food.",
-                "zh": "洋芋片、汽水和糖果是垃圾食品的典型例子。"
+                "zh": "洋芋片、汽水和糖果是垃圾食品的典型例子。",
+                "level": "TOEIC"
             },
             {
                 "en": "He grabbed some junk food from the convenience store on his way home.",
-                "zh": "他在回家的路上從便利商店買了一些垃圾食品。"
+                "zh": "他在回家的路上從便利商店買了一些垃圾食品。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -791,23 +931,28 @@
         "examples": [
             {
                 "en": "She had to undergo surgery to remove a stone from her kidney.",
-                "zh": "她必須接受手術取出腎臟裡的結石。"
+                "zh": "她必須接受手術取出腎臟裡的結石。",
+                "level": "TOEIC"
             },
             {
                 "en": "Drinking plenty of water is essential for maintaining healthy kidneys.",
-                "zh": "喝大量的水對維持健康的腎臟至關重要。"
+                "zh": "喝大量的水對維持健康的腎臟至關重要。",
+                "level": "TOEIC"
             },
             {
                 "en": "He generously donated a kidney to save his brother's life.",
-                "zh": "他慷慨地捐出一個腎臟來拯救他兄弟的生命。"
+                "zh": "他慷慨地捐出一個腎臟來拯救他兄弟的生命。",
+                "level": "TOEIC"
             },
             {
                 "en": "Kidney failure can be a life-threatening condition if left untreated.",
-                "zh": "如果不加以治療，腎衰竭可能是危及生命的疾病。"
+                "zh": "如果不加以治療，腎衰竭可能是危及生命的疾病。",
+                "level": "TOEIC"
             },
             {
                 "en": "The doctor ordered a blood test to check the patient's kidney function.",
-                "zh": "醫生要求驗血以檢查患者的腎功能。"
+                "zh": "醫生要求驗血以檢查患者的腎功能。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -819,23 +964,28 @@
         "examples": [
             {
                 "en": "The next gas station is about ten kilometers away.",
-                "zh": "下一個加油站大約在十公里外。"
+                "zh": "下一個加油站大約在十公里外。",
+                "level": "TOEIC"
             },
             {
                 "en": "He runs five kilometers every morning to stay fit.",
-                "zh": "他每天早上跑五公里以保持健康。"
+                "zh": "他每天早上跑五公里以保持健康。",
+                "level": "TOEIC"
             },
             {
                 "en": "The speed limit on this highway is one hundred kilometers per hour.",
-                "zh": "這條高速公路的速限是每小時一百公里。"
+                "zh": "這條高速公路的速限是每小時一百公里。",
+                "level": "TOEIC"
             },
             {
                 "en": "We hiked for several kilometers before reaching the mountain peak.",
-                "zh": "我們徒步走了幾公里才到達山頂。"
+                "zh": "我們徒步走了幾公里才到達山頂。",
+                "level": "TOEIC"
             },
             {
                 "en": "A kilometer is equivalent to one thousand meters.",
-                "zh": "一公里等於一千公尺。"
+                "zh": "一公里等於一千公尺。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -847,23 +997,28 @@
         "examples": [
             {
                 "en": "Make sure you tie a tight knot so the boat doesn't drift away.",
-                "zh": "務必打個緊結，以免船漂走。"
+                "zh": "務必打個緊結，以免船漂走。",
+                "level": "TOEIC"
             },
             {
                 "en": "She struggled to untie the knot in her shoelaces.",
-                "zh": "她費力地解開鞋帶上的結。"
+                "zh": "她費力地解開鞋帶上的結。",
+                "level": "TOEIC"
             },
             {
                 "en": "His stomach tied in a knot before he gave the speech.",
-                "zh": "他在演講前緊張得胃揪成一團。"
+                "zh": "他在演講前緊張得胃揪成一團。",
+                "level": "TOEIC"
             },
             {
                 "en": "The boy learned how to knot a tie from his father.",
-                "zh": "男孩從父親那裡學會了如何打領帶。"
+                "zh": "男孩從父親那裡學會了如何打領帶。",
+                "level": "TOEIC"
             },
             {
                 "en": "You need to master several basic knots for sailing.",
-                "zh": "為了航海，你需要掌握幾個基本的繩結。"
+                "zh": "為了航海，你需要掌握幾個基本的繩結。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -875,23 +1030,28 @@
         "examples": [
             {
                 "en": "People who leave litter in the park should be fined heavily.",
-                "zh": "在公園裡亂丟垃圾的人應該受到重罰。"
+                "zh": "在公園裡亂丟垃圾的人應該受到重罰。",
+                "level": "TOEIC"
             },
             {
                 "en": "Please use the trash cans and do not litter on the streets.",
-                "zh": "請使用垃圾桶，不要在街上亂丟垃圾。"
+                "zh": "請使用垃圾桶，不要在街上亂丟垃圾。",
+                "level": "TOEIC"
             },
             {
                 "en": "The beach was covered with plastic bottles and other litter.",
-                "zh": "海灘上佈滿了塑膠瓶和其他隨手丟棄的垃圾。"
+                "zh": "海灘上佈滿了塑膠瓶和其他隨手丟棄的垃圾。",
+                "level": "TOEIC"
             },
             {
                 "en": "The sign clearly reminds visitors not to litter the camping area.",
-                "zh": "標誌清楚地提醒遊客不要在露營區亂丟垃圾。"
+                "zh": "標誌清楚地提醒遊客不要在露營區亂丟垃圾。",
+                "level": "TOEIC"
             },
             {
                 "en": "A group of volunteers spent the morning picking up litter along the river.",
-                "zh": "一群志工花了一個上午在河岸邊撿垃圾。"
+                "zh": "一群志工花了一個上午在河岸邊撿垃圾。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -903,23 +1063,28 @@
         "examples": [
             {
                 "en": "Drinking excessive alcohol can cause severe damage to your liver.",
-                "zh": "過度飲酒會對你的肝臟造成嚴重損害。"
+                "zh": "過度飲酒會對你的肝臟造成嚴重損害。",
+                "level": "TOEIC"
             },
             {
                 "en": "The liver is the largest internal organ in the human body.",
-                "zh": "肝臟人體內最大的內部器官。"
+                "zh": "肝臟人體內最大的內部器官。",
+                "level": "TOEIC"
             },
             {
                 "en": "She was diagnosed with a rare liver disease and needs a transplant.",
-                "zh": "她被診斷出患有罕見的肝病，需要進行移植。"
+                "zh": "她被診斷出患有罕見的肝病，需要進行移植。",
+                "level": "TOEIC"
             },
             {
                 "en": "Certain medications must be processed by the liver.",
-                "zh": "某些藥物必須由肝臟處理。"
+                "zh": "某些藥物必須由肝臟處理。",
+                "level": "TOEIC"
             },
             {
                 "en": "Eating a balanced diet helps keep your liver functioning properly.",
-                "zh": "均衡飲食有助於保持肝臟正常運作。"
+                "zh": "均衡飲食有助於保持肝臟正常運作。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -931,23 +1096,28 @@
         "examples": [
             {
                 "en": "Smoking is one of the leading causes of lung cancer.",
-                "zh": "抽菸是肺癌的主要原因之一。"
+                "zh": "抽菸是肺癌的主要原因之一。",
+                "level": "TOEIC"
             },
             {
                 "en": "He took a deep breath, filling his lungs with fresh mountain air.",
-                "zh": "他深吸了一口氣，讓肺部充滿新鮮的山區空氣。"
+                "zh": "他深吸了一口氣，讓肺部充滿新鮮的山區空氣。",
+                "level": "TOEIC"
             },
             {
                 "en": "The doctor listened carefully to her lungs with a stethoscope.",
-                "zh": "醫生用聽診器仔細聽她的肺部。"
+                "zh": "醫生用聽診器仔細聽她的肺部。",
+                "level": "TOEIC"
             },
             {
                 "en": "Regular aerobic exercise can significantly improve your lung capacity.",
-                "zh": "規律的有氧運動可以顯著改善你的肺活量。"
+                "zh": "規律的有氧運動可以顯著改善你的肺活量。",
+                "level": "TOEIC"
             },
             {
                 "en": "The infection spread to his right lung, causing severe coughing.",
-                "zh": "感染蔓延到他的右肺，引起嚴重的咳嗽。"
+                "zh": "感染蔓延到他的右肺，引起嚴重的咳嗽。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -959,23 +1129,28 @@
         "examples": [
             {
                 "en": "We spent the entire afternoon shopping at the new mall.",
-                "zh": "我們整個下午都在新購物中心逛街。"
+                "zh": "我們整個下午都在新購物中心逛街。",
+                "level": "TOEIC"
             },
             {
                 "en": "The mall features a large cinema and various restaurants.",
-                "zh": "這家購物中心設有大型電影院和各種餐廳。"
+                "zh": "這家購物中心設有大型電影院和各種餐廳。",
+                "level": "TOEIC"
             },
             {
                 "en": "Teenagers often hang out with their friends at the mall.",
-                "zh": "青少年經常和朋友在購物中心閒逛。"
+                "zh": "青少年經常和朋友在購物中心閒逛。",
+                "level": "TOEIC"
             },
             {
                 "en": "Parking at the mall can be quite difficult on weekends.",
-                "zh": "週末在購物中心停車可能會相當困難。"
+                "zh": "週末在購物中心停車可能會相當困難。",
+                "level": "TOEIC"
             },
             {
                 "en": "They opened a small clothing boutique in the local mall.",
-                "zh": "他們在當地的購物中心開了一家小型服裝精品店。"
+                "zh": "他們在當地的購物中心開了一家小型服裝精品店。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -987,23 +1162,28 @@
         "examples": [
             {
                 "en": "The chef prepared a marvelous feast for the wedding guests.",
-                "zh": "廚師為婚禮賓客準備了一場極好的盛宴。"
+                "zh": "廚師為婚禮賓客準備了一場極好的盛宴。",
+                "level": "TOEIC"
             },
             {
                 "en": "We had a marvelous time exploring the ancient ruins in Rome.",
-                "zh": "我們在探索羅馬古蹟時度過了令人驚嘆的美好時光。"
+                "zh": "我們在探索羅馬古蹟時度過了令人驚嘆的美好時光。",
+                "level": "TOEIC"
             },
             {
                 "en": "What a marvelous idea it is to host a surprise party for him!",
-                "zh": "為他舉辦驚喜派對真是個極好的主意！"
+                "zh": "為他舉辦驚喜派對真是個極好的主意！",
+                "level": "TOEIC"
             },
             {
                 "en": "The view of the city from the top of the tower is simply marvelous.",
-                "zh": "從塔頂俯瞰城市的景色簡直令人驚嘆。"
+                "zh": "從塔頂俯瞰城市的景色簡直令人驚嘆。",
+                "level": "TOEIC"
             },
             {
                 "en": "She did a marvelous job organizing the charity event all by herself.",
-                "zh": "她獨自一人把這場慈善活動組織得極好。"
+                "zh": "她獨自一人把這場慈善活動組織得極好。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1015,23 +1195,28 @@
         "examples": [
             {
                 "en": "He proudly displayed the gold medal he won at the Olympics.",
-                "zh": "他驕傲地展示他在奧運會上贏得的金牌。"
+                "zh": "他驕傲地展示他在奧運會上贏得的金牌。",
+                "level": "TOEIC"
             },
             {
                 "en": "The soldier was awarded a medal of honor for his bravery in battle.",
-                "zh": "這名士兵因在戰鬥中的英勇表現而被授予榮譽勳章。"
+                "zh": "這名士兵因在戰鬥中的英勇表現而被授予榮譽勳章。",
+                "level": "TOEIC"
             },
             {
                 "en": "She came in second place and received a silver medal.",
-                "zh": "她獲得了第二名並獲得了一枚銀牌。"
+                "zh": "她獲得了第二名並獲得了一枚銀牌。",
+                "level": "TOEIC"
             },
             {
                 "en": "The marathon finishers were all given a commemorative medal.",
-                "zh": "馬拉松完賽者都獲得了一枚紀念獎牌。"
+                "zh": "馬拉松完賽者都獲得了一枚紀念獎牌。",
+                "level": "TOEIC"
             },
             {
                 "en": "Her dream is to earn a medal in the upcoming swimming championship.",
-                "zh": "她的夢想是在即將到來的游泳錦標賽中贏得獎牌。"
+                "zh": "她的夢想是在即將到來的游泳錦標賽中贏得獎牌。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1043,23 +1228,28 @@
         "examples": [
             {
                 "en": "We wish you a merry Christmas and a happy New Year.",
-                "zh": "我們祝你聖誕快樂，新年快樂。"
+                "zh": "我們祝你聖誕快樂，新年快樂。",
+                "level": "TOEIC"
             },
             {
                 "en": "The children's merry laughter echoed through the playground.",
-                "zh": "孩子們歡樂的笑聲在遊樂場迴盪。"
+                "zh": "孩子們歡樂的笑聲在遊樂場迴盪。",
+                "level": "TOEIC"
             },
             {
                 "en": "They had a merry evening singing and dancing around the campfire.",
-                "zh": "他們在營火旁唱歌跳舞，度過了一個愉快的夜晚。"
+                "zh": "他們在營火旁唱歌跳舞，度過了一個愉快的夜晚。",
+                "level": "TOEIC"
             },
             {
                 "en": "After a few glasses of wine, he became quite merry and talkative.",
-                "zh": "喝了幾杯酒後，他變得相當愉快且健談。"
+                "zh": "喝了幾杯酒後，他變得相當愉快且健談。",
+                "level": "TOEIC"
             },
             {
                 "en": "The villagers organized a merry celebration for the successful harvest.",
-                "zh": "村民們為豐收舉辦了一場歡樂的慶祝活動。"
+                "zh": "村民們為豐收舉辦了一場歡樂的慶祝活動。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1071,23 +1261,28 @@
         "examples": [
             {
                 "en": "The little girl wanted to ride the merry-go-round one more time.",
-                "zh": "小女孩想再坐一次旋轉木馬。"
+                "zh": "小女孩想再坐一次旋轉木馬。",
+                "level": "TOEIC"
             },
             {
                 "en": "The colorful horses on the merry-go-round moved up and down to the music.",
-                "zh": "旋轉木馬上色彩鮮豔的馬匹隨著音樂上下移動。"
+                "zh": "旋轉木馬上色彩鮮豔的馬匹隨著音樂上下移動。",
+                "level": "TOEIC"
             },
             {
                 "en": "He feels like his busy life is a never-ending merry-go-round.",
-                "zh": "他覺得自己忙碌的生活就像永無止境的旋轉木馬。"
+                "zh": "他覺得自己忙碌的生活就像永無止境的旋轉木馬。",
+                "level": "TOEIC"
             },
             {
                 "en": "The carnival featured a giant Ferris wheel and a vintage merry-go-round.",
-                "zh": "嘉年華設有巨大的摩天輪和復古的旋轉木馬。"
+                "zh": "嘉年華設有巨大的摩天輪和復古的旋轉木馬。",
+                "level": "TOEIC"
             },
             {
                 "en": "She waved to her parents as the merry-go-round spun around.",
-                "zh": "旋轉木馬轉動時，她向父母揮手。"
+                "zh": "旋轉木馬轉動時，她向父母揮手。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1099,23 +1294,28 @@
         "examples": [
             {
                 "en": "The athlete broke the world record in the 100-meter dash.",
-                "zh": "這名運動員打破了100公尺短跑的世界紀錄。"
+                "zh": "這名運動員打破了100公尺短跑的世界紀錄。",
+                "level": "TOEIC"
             },
             {
                 "en": "Please insert coins into the parking meter before you leave.",
-                "zh": "離開前請將硬幣投入停車計時器。"
+                "zh": "離開前請將硬幣投入停車計時器。",
+                "level": "TOEIC"
             },
             {
                 "en": "The fabric is sold by the meter at the local market.",
-                "zh": "這布料在當地市場是按公尺出售的。"
+                "zh": "這布料在當地市場是按公尺出售的。",
+                "level": "TOEIC"
             },
             {
                 "en": "The taxi driver turned on the meter as soon as we got in the car.",
-                "zh": "我們一上車，計程車司機就打開了計程表。"
+                "zh": "我們一上車，計程車司機就打開了計程表。",
+                "level": "TOEIC"
             },
             {
                 "en": "He installed a smart meter to monitor the household's electricity usage.",
-                "zh": "他安裝了一個智慧電表來監控家庭的用電量。"
+                "zh": "他安裝了一個智慧電表來監控家庭的用電量。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1127,23 +1327,28 @@
         "examples": [
             {
                 "en": "A millimeter is one-thousandth of a meter.",
-                "zh": "一公厘是一公尺的千分之一。"
+                "zh": "一公厘是一公尺的千分之一。",
+                "level": "TOEIC"
             },
             {
                 "en": "The thickness of this paper is about one millimeter.",
-                "zh": "這張紙的厚度大約是一公厘。"
+                "zh": "這張紙的厚度大約是一公厘。",
+                "level": "TOEIC"
             },
             {
                 "en": "The surgeon made a small incision of only a few millimeters.",
-                "zh": "外科醫生切開了一個只有幾公厘的小切口。"
+                "zh": "外科醫生切開了一個只有幾公厘的小切口。",
+                "level": "TOEIC"
             },
             {
                 "en": "Rainfall is often measured in millimeters.",
-                "zh": "降雨量通常以公厘來測量。"
+                "zh": "降雨量通常以公厘來測量。",
+                "level": "TOEIC"
             },
             {
                 "en": "The gap between the doors was less than a millimeter.",
-                "zh": "兩扇門之間的縫隙不到一公厘。"
+                "zh": "兩扇門之間的縫隙不到一公厘。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1155,23 +1360,28 @@
         "examples": [
             {
                 "en": "The country successfully test-fired a new long-range missile.",
-                "zh": "該國成功試射了一枚新型長程飛彈。"
+                "zh": "該國成功試射了一枚新型長程飛彈。",
+                "level": "TOEIC"
             },
             {
                 "en": "The missile was intercepted before it could reach its target.",
-                "zh": "這枚飛彈在擊中目標前就被攔截了。"
+                "zh": "這枚飛彈在擊中目標前就被攔截了。",
+                "level": "TOEIC"
             },
             {
                 "en": "They are developing advanced missile defense systems.",
-                "zh": "他們正在開發先進的飛彈防禦系統。"
+                "zh": "他們正在開發先進的飛彈防禦系統。",
+                "level": "TOEIC"
             },
             {
                 "en": "The submarine is capable of launching nuclear missiles.",
-                "zh": "這艘潛艇有能力發射核子飛彈。"
+                "zh": "這艘潛艇有能力發射核子飛彈。",
+                "level": "TOEIC"
             },
             {
                 "en": "The sudden missile attack caused widespread panic in the city.",
-                "zh": "突如其來的飛彈攻擊在城市中引起了廣泛的恐慌。"
+                "zh": "突如其來的飛彈攻擊在城市中引起了廣泛的恐慌。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1183,23 +1393,28 @@
         "examples": [
             {
                 "en": "Excuse me, mister, could you tell me the time?",
-                "zh": "打擾一下，先生，請問能告訴我現在幾點嗎？"
+                "zh": "打擾一下，先生，請問能告訴我現在幾點嗎？",
+                "level": "TOEIC"
             },
             {
                 "en": "The little boy politely said, 'Thank you, mister.'",
-                "zh": "小男孩有禮貌地說：「謝謝你，先生。」"
+                "zh": "小男孩有禮貌地說：「謝謝你，先生。」",
+                "level": "TOEIC"
             },
             {
                 "en": "Hey mister, you dropped your wallet on the ground.",
-                "zh": "嘿，先生，你的錢包掉在地上了。"
+                "zh": "嘿，先生，你的錢包掉在地上了。",
+                "level": "TOEIC"
             },
             {
                 "en": "She asked the mister at the front desk for some directions.",
-                "zh": "她向前台的先生詢問方向。"
+                "zh": "她向前台的先生詢問方向。",
+                "level": "TOEIC"
             },
             {
                 "en": "A friendly mister helped the elderly woman cross the street.",
-                "zh": "一位友善的先生幫助老太太過馬路。"
+                "zh": "一位友善的先生幫助老太太過馬路。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1211,23 +1426,28 @@
         "examples": [
             {
                 "en": "We drove all day and finally stopped at a cheap motel for the night.",
-                "zh": "我們開了一整天的車，最後在一家便宜的汽車旅館停下來過夜。"
+                "zh": "我們開了一整天的車，最後在一家便宜的汽車旅館停下來過夜。",
+                "level": "TOEIC"
             },
             {
                 "en": "The motel is conveniently located right next to the highway.",
-                "zh": "這家汽車旅館交通便利，就在高速公路旁。"
+                "zh": "這家汽車旅館交通便利，就在高速公路旁。",
+                "level": "TOEIC"
             },
             {
                 "en": "Our motel room had a small television and a coffee maker.",
-                "zh": "我們的汽車旅館房間裡有一台小電視和一台咖啡機。"
+                "zh": "我們的汽車旅館房間裡有一台小電視和一台咖啡機。",
+                "level": "TOEIC"
             },
             {
                 "en": "They decided to book a motel instead of a fancy hotel to save money.",
-                "zh": "他們決定預訂汽車旅館而不是高級飯店，以節省開銷。"
+                "zh": "他們決定預訂汽車旅館而不是高級飯店，以節省開銷。",
+                "level": "TOEIC"
             },
             {
                 "en": "The neon sign of the motel flickered in the darkness.",
-                "zh": "汽車旅館的霓虹燈招牌在黑暗中閃爍。"
+                "zh": "汽車旅館的霓虹燈招牌在黑暗中閃爍。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1239,23 +1459,28 @@
         "examples": [
             {
                 "en": "The washing machine stopped working because the motor broke down.",
-                "zh": "洗衣機停止運轉，因為馬達故障了。"
+                "zh": "洗衣機停止運轉，因為馬達故障了。",
+                "level": "TOEIC"
             },
             {
                 "en": "He replaced the old motor in his boat with a more powerful one.",
-                "zh": "他把船上的舊發動機換成了一個更強勁的。"
+                "zh": "他把船上的舊發動機換成了一個更強勁的。",
+                "level": "TOEIC"
             },
             {
                 "en": "Electric motors are widely used in many household appliances.",
-                "zh": "電動馬達廣泛應用於許多家用電器中。"
+                "zh": "電動馬達廣泛應用於許多家用電器中。",
+                "level": "TOEIC"
             },
             {
                 "en": "The engineer designed a highly efficient motor for the new drone.",
-                "zh": "工程師為新型無人機設計了一款高效能馬達。"
+                "zh": "工程師為新型無人機設計了一款高效能馬達。",
+                "level": "TOEIC"
             },
             {
                 "en": "We could hear the hum of the motor running in the background.",
-                "zh": "我們可以聽到背景中馬達運轉的嗡嗡聲。"
+                "zh": "我們可以聽到背景中馬達運轉的嗡嗡聲。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1267,23 +1492,28 @@
         "examples": [
             {
                 "en": "In the sentence 'The cat sleeps', 'cat' is a noun.",
-                "zh": "在句子「這隻貓在睡覺」中，「貓」是一個名詞。"
+                "zh": "在句子「這隻貓在睡覺」中，「貓」是一個名詞。",
+                "level": "TOEIC"
             },
             {
                 "en": "A proper noun always begins with a capital letter.",
-                "zh": "專有名詞總是首字母大寫。"
+                "zh": "專有名詞總是首字母大寫。",
+                "level": "TOEIC"
             },
             {
                 "en": "Many English words can function as both a noun and a verb.",
-                "zh": "許多英文單字既可以當名詞也可以當動詞。"
+                "zh": "許多英文單字既可以當名詞也可以當動詞。",
+                "level": "TOEIC"
             },
             {
                 "en": "The teacher asked the students to underline all the nouns in the paragraph.",
-                "zh": "老師要求學生在段落中畫出所有名詞的底線。"
+                "zh": "老師要求學生在段落中畫出所有名詞的底線。",
+                "level": "TOEIC"
             },
             {
                 "en": "Countable nouns refer to things that can be counted.",
-                "zh": "可數名詞指的是可以被計算的事物。"
+                "zh": "可數名詞指的是可以被計算的事物。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1295,23 +1525,28 @@
         "examples": [
             {
                 "en": "She drops her child off at the nursery before going to work.",
-                "zh": "她上班前把孩子送到托兒所。"
+                "zh": "她上班前把孩子送到托兒所。",
+                "level": "TOEIC"
             },
             {
                 "en": "The nursery is filled with young fruit trees and colorful flowers.",
-                "zh": "這家苗圃裡種滿了幼小的果樹和五顏六色的花朵。"
+                "zh": "這家苗圃裡種滿了幼小的果樹和五顏六色的花朵。",
+                "level": "TOEIC"
             },
             {
                 "en": "Working at a plant nursery requires a lot of gardening knowledge.",
-                "zh": "在植物苗圃工作需要許多園藝知識。"
+                "zh": "在植物苗圃工作需要許多園藝知識。",
+                "level": "TOEIC"
             },
             {
                 "en": "The local nursery provides excellent care and education for toddlers.",
-                "zh": "當地的托兒所為幼兒提供優質的照護和教育。"
+                "zh": "當地的托兒所為幼兒提供優質的照護和教育。",
+                "level": "TOEIC"
             },
             {
                 "en": "He bought some rose bushes from the nearby nursery.",
-                "zh": "他從附近的苗圃買了一些玫瑰花叢。"
+                "zh": "他從附近的苗圃買了一些玫瑰花叢。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1323,23 +1558,28 @@
         "examples": [
             {
                 "en": "These outdoor jackets are made of durable and waterproof nylon.",
-                "zh": "這些戶外夾克是由耐用且防水的尼龍製成。"
+                "zh": "這些戶外夾克是由耐用且防水的尼龍製成。",
+                "level": "TOEIC"
             },
             {
                 "en": "Nylon strings are often used for classical guitars.",
-                "zh": "尼龍弦常被用於古典吉他。"
+                "zh": "尼龍弦常被用於古典吉他。",
+                "level": "TOEIC"
             },
             {
                 "en": "She bought a pair of sheer nylon stockings for the formal event.",
-                "zh": "她為了正式場合買了一雙薄透的尼龍絲襪。"
+                "zh": "她為了正式場合買了一雙薄透的尼龍絲襪。",
+                "level": "TOEIC"
             },
             {
                 "en": "The invention of nylon revolutionized the textile industry.",
-                "zh": "尼龍的發明徹底改變了紡織工業。"
+                "zh": "尼龍的發明徹底改變了紡織工業。",
+                "level": "TOEIC"
             },
             {
                 "en": "A sturdy nylon backpack is perfect for hiking trips.",
-                "zh": "堅固的尼龍背包非常適合徒步旅行。"
+                "zh": "堅固的尼龍背包非常適合徒步旅行。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1351,23 +1591,28 @@
         "examples": [
             {
                 "en": "They bought tickets to see a classic Italian opera at the theater.",
-                "zh": "他們買了票去劇院看一齣經典的義大利歌劇。"
+                "zh": "他們買了票去劇院看一齣經典的義大利歌劇。",
+                "level": "TOEIC"
             },
             {
                 "en": "She has an amazing voice and dreams of becoming an opera singer.",
-                "zh": "她有著驚人的嗓音，夢想成為一名歌劇歌手。"
+                "zh": "她有著驚人的嗓音，夢想成為一名歌劇歌手。",
+                "level": "TOEIC"
             },
             {
                 "en": "The Sydney Opera House is one of the most famous buildings in the world.",
-                "zh": "雪梨歌劇院是世界上最著名的建築之一。"
+                "zh": "雪梨歌劇院是世界上最著名的建築之一。",
+                "level": "TOEIC"
             },
             {
                 "en": "He finds traditional opera a bit difficult to understand without subtitles.",
-                "zh": "他覺得如果沒有字幕，傳統歌劇有點難以理解。"
+                "zh": "他覺得如果沒有字幕，傳統歌劇有點難以理解。",
+                "level": "TOEIC"
             },
             {
                 "en": "The opera ended with a tragic and emotional finale.",
-                "zh": "這齣歌劇以悲劇且感人的結局收場。"
+                "zh": "這齣歌劇以悲劇且感人的結局收場。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1379,23 +1624,28 @@
         "examples": [
             {
                 "en": "She placed a soft pad under her knees while gardening.",
-                "zh": "她做園藝時在膝蓋下放了一個軟墊。"
+                "zh": "她做園藝時在膝蓋下放了一個軟墊。",
+                "level": "TOEIC"
             },
             {
                 "en": "The goalkeeper wears special pads to protect his legs.",
-                "zh": "守門員戴著特殊的護墊來保護腿部。"
+                "zh": "守門員戴著特殊的護墊來保護腿部。",
+                "level": "TOEIC"
             },
             {
                 "en": "I always keep a writing pad on my desk for taking quick notes.",
-                "zh": "我總是在桌上放一本便條紙墊以便快速記筆記。"
+                "zh": "我總是在桌上放一本便條紙墊以便快速記筆記。",
+                "level": "TOEIC"
             },
             {
                 "en": "He put a heating pad on his back to relieve the muscle pain.",
-                "zh": "他在背上放了一個熱敷墊來緩解肌肉疼痛。"
+                "zh": "他在背上放了一個熱敷墊來緩解肌肉疼痛。",
+                "level": "TOEIC"
             },
             {
                 "en": "Make sure the mouse pad is clean so the mouse can move smoothly.",
-                "zh": "確保滑鼠墊是乾淨的，這樣滑鼠才能順暢移動。"
+                "zh": "確保滑鼠墊是乾淨的，這樣滑鼠才能順暢移動。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1407,23 +1657,28 @@
         "examples": [
             {
                 "en": "A penny saved is a penny earned.",
-                "zh": "省一分錢就是賺一分錢。"
+                "zh": "省一分錢就是賺一分錢。",
+                "level": "TOEIC"
             },
             {
                 "en": "It didn't cost him a single penny to download the app.",
-                "zh": "下載這個應用程式沒有花他一分錢。"
+                "zh": "下載這個應用程式沒有花他一分錢。",
+                "level": "TOEIC"
             },
             {
                 "en": "She found a shiny new penny on the sidewalk.",
-                "zh": "她在人行道上發現了一枚閃亮的新便士。"
+                "zh": "她在人行道上發現了一枚閃亮的新便士。",
+                "level": "TOEIC"
             },
             {
                 "en": "The old man is so poor that he doesn't have a penny to his name.",
-                "zh": "那位老人窮得身無分文。"
+                "zh": "那位老人窮得身無分文。",
+                "level": "TOEIC"
             },
             {
                 "en": "I wouldn't give a penny for his terrible advice.",
-                "zh": "我一分錢也不會為他那糟糕的建議付帳。"
+                "zh": "我一分錢也不會為他那糟糕的建議付帳。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1435,23 +1690,28 @@
         "examples": [
             {
                 "en": "It is a great pity that you can't come to the party tonight.",
-                "zh": "你今晚不能來參加派對真是太可惜了。"
+                "zh": "你今晚不能來參加派對真是太可惜了。",
+                "level": "TOEIC"
             },
             {
                 "en": "She felt a deep sense of pity for the starving children.",
-                "zh": "她對那些挨餓的孩子感到深深的同情。"
+                "zh": "她對那些挨餓的孩子感到深深的同情。",
+                "level": "TOEIC"
             },
             {
                 "en": "Out of pity, he gave the homeless man some warm clothes.",
-                "zh": "出於同情，他給了那個無家可歸的人一些保暖衣物。"
+                "zh": "出於同情，他給了那個無家可歸的人一些保暖衣物。",
+                "level": "TOEIC"
             },
             {
                 "en": "I pity anyone who has to work outside in this heavy storm.",
-                "zh": "我同情任何必須在這場暴風雨中在戶外工作的人。"
+                "zh": "我同情任何必須在這場暴風雨中在戶外工作的人。",
+                "level": "TOEIC"
             },
             {
                 "en": "What a pity that they lost the final match by just one point!",
-                "zh": "他們在決賽中僅以一分之差落敗，真是可惜！"
+                "zh": "他們在決賽中僅以一分之差落敗，真是可惜！",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1463,23 +1723,28 @@
         "examples": [
             {
                 "en": "He looked at his beautiful garden with a great sense of pride.",
-                "zh": "他帶著極大的自豪感看著他美麗的花園。"
+                "zh": "他帶著極大的自豪感看著他美麗的花園。",
+                "level": "TOEIC"
             },
             {
                 "en": "She takes pride in her ability to speak three languages fluently.",
-                "zh": "她為自己能流利地說三種語言的能力感到自豪。"
+                "zh": "她為自己能流利地說三種語言的能力感到自豪。",
+                "level": "TOEIC"
             },
             {
                 "en": "His foolish pride prevented him from asking for help.",
-                "zh": "他愚蠢的驕傲使他不願尋求幫助。"
+                "zh": "他愚蠢的驕傲使他不願尋求幫助。",
+                "level": "TOEIC"
             },
             {
                 "en": "The team's victory brought pride to the entire school.",
-                "zh": "這支隊伍的勝利為全校帶來了榮耀。"
+                "zh": "這支隊伍的勝利為全校帶來了榮耀。",
+                "level": "TOEIC"
             },
             {
                 "en": "Swallow your pride and admit that you made a mistake.",
-                "zh": "放下你的自尊，承認你犯了錯吧。"
+                "zh": "放下你的自尊，承認你犯了錯吧。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1491,23 +1756,28 @@
         "examples": [
             {
                 "en": "In grammar, a pronoun is used to replace a noun.",
-                "zh": "在文法中，代名詞用來代替名詞。"
+                "zh": "在文法中，代名詞用來代替名詞。",
+                "level": "TOEIC"
             },
             {
                 "en": "Examples of personal pronouns include 'he', 'she', and 'they'.",
-                "zh": "人稱代名詞的例子包括「他」、「她」和「他們」。"
+                "zh": "人稱代名詞的例子包括「他」、「她」和「他們」。",
+                "level": "TOEIC"
             },
             {
                 "en": "Using pronouns helps avoid repeating the same noun over and over.",
-                "zh": "使用代名詞有助於避免不斷重複同一個名詞。"
+                "zh": "使用代名詞有助於避免不斷重複同一個名詞。",
+                "level": "TOEIC"
             },
             {
                 "en": "The pronoun 'it' usually refers to an animal or an object.",
-                "zh": "代名詞「it」通常指動物或物體。"
+                "zh": "代名詞「it」通常指動物或物體。",
+                "level": "TOEIC"
             },
             {
                 "en": "Make sure the pronoun agrees with the noun it refers to in gender and number.",
-                "zh": "確保代名詞在性別和數量上與它所指代的名詞一致。"
+                "zh": "確保代名詞在性別和數量上與它所指代的名詞一致。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1519,23 +1789,28 @@
         "examples": [
             {
                 "en": "We need a bicycle pump to inflate these flat tires.",
-                "zh": "我們需要一個自行車打氣筒來把這些癟輪胎打氣。"
+                "zh": "我們需要一個自行車打氣筒來把這些癟輪胎打氣。",
+                "level": "TOEIC"
             },
             {
                 "en": "The heart acts as a pump to circulate blood throughout the body.",
-                "zh": "心臟就像一個幫浦，使血液在全身循環。"
+                "zh": "心臟就像一個幫浦，使血液在全身循環。",
+                "level": "TOEIC"
             },
             {
                 "en": "They had to pump water out of the flooded basement all night.",
-                "zh": "他們整晚都得把淹水地下室裡的水抽出來。"
+                "zh": "他們整晚都得把淹水地下室裡的水抽出來。",
+                "level": "TOEIC"
             },
             {
                 "en": "He stopped at the gas station to pump some fuel into his car.",
-                "zh": "他在加油站停下來為他的車加油（打氣）。"
+                "zh": "他在加油站停下來為他的車加油（打氣）。",
+                "level": "TOEIC"
             },
             {
                 "en": "She pumped up the air mattress before the guests arrived.",
-                "zh": "客房抵達前，她把充氣床墊打滿了氣。"
+                "zh": "客房抵達前，她把充氣床墊打滿了氣。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1547,23 +1822,28 @@
         "examples": [
             {
                 "en": "He picked up the phone receiver as soon as it rang.",
-                "zh": "電話一響他就拿起了話筒。"
+                "zh": "電話一響他就拿起了話筒。",
+                "level": "TOEIC"
             },
             {
                 "en": "The letter was returned because the receiver's address was incorrect.",
-                "zh": "信件被退回，因為收件人的地址不正確。"
+                "zh": "信件被退回，因為收件人的地址不正確。",
+                "level": "TOEIC"
             },
             {
                 "en": "The quarterback threw a perfect pass to the wide receiver.",
-                "zh": "四分衛傳了一個完美的球給外接手（接球員）。"
+                "zh": "四分衛傳了一個完美的球給外接手（接球員）。",
+                "level": "TOEIC"
             },
             {
                 "en": "Our TV receiver seems to be broken; there is no signal.",
-                "zh": "我們的電視接收器似乎壞了；沒有訊號。"
+                "zh": "我們的電視接收器似乎壞了；沒有訊號。",
+                "level": "TOEIC"
             },
             {
                 "en": "Make sure you slam the receiver down gently when hanging up.",
-                "zh": "掛斷電話時，請務必輕輕放下話筒。"
+                "zh": "掛斷電話時，請務必輕輕放下話筒。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1575,23 +1855,28 @@
         "examples": [
             {
                 "en": "The journalist used a voice recorder during the interview.",
-                "zh": "記者在採訪時使用了一台錄音機。"
+                "zh": "記者在採訪時使用了一台錄音機。",
+                "level": "TOEIC"
             },
             {
                 "en": "Many students learn how to play the recorder in elementary school music class.",
-                "zh": "許多學生在小學音樂課上學習吹直笛。"
+                "zh": "許多學生在小學音樂課上學習吹直笛。",
+                "level": "TOEIC"
             },
             {
                 "en": "The flight data recorder was recovered from the airplane crash site.",
-                "zh": "飛行資料記錄器已從墜機現場尋獲。"
+                "zh": "飛行資料記錄器已從墜機現場尋獲。",
+                "level": "TOEIC"
             },
             {
                 "en": "He set the video recorder to tape his favorite TV show while he was out.",
-                "zh": "他把錄影機設定好，在出門時錄下他最喜歡的電視節目。"
+                "zh": "他把錄影機設定好，在出門時錄下他最喜歡的電視節目。",
+                "level": "TOEIC"
             },
             {
                 "en": "Please turn on the recorder so we can document this meeting.",
-                "zh": "請打開錄音機，以便我們記錄這次會議。"
+                "zh": "請打開錄音機，以便我們記錄這次會議。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1603,23 +1888,28 @@
         "examples": [
             {
                 "en": "They sought refuge in a nearby church during the heavy storm.",
-                "zh": "在一場大風暴中，他們在附近的教堂尋求避難。"
+                "zh": "在一場大風暴中，他們在附近的教堂尋求避難。",
+                "level": "TOEIC"
             },
             {
                 "en": "The national park serves as a wildlife refuge for endangered animals.",
-                "zh": "這座國家公園是瀕臨絕種動物的野生動物保護區。"
+                "zh": "這座國家公園是瀕臨絕種動物的野生動物保護區。",
+                "level": "TOEIC"
             },
             {
                 "en": "Many people fled across the border to find refuge from the war.",
-                "zh": "許多人逃越邊境，以躲避戰爭尋求庇護。"
+                "zh": "許多人逃越邊境，以躲避戰爭尋求庇護。",
+                "level": "TOEIC"
             },
             {
                 "en": "Reading books is her ultimate refuge from the stress of daily life.",
-                "zh": "閱讀書籍是她逃避日常壓力的最終避風港。"
+                "zh": "閱讀書籍是她逃避日常壓力的最終避風港。",
+                "level": "TOEIC"
             },
             {
                 "en": "The homeless shelter provides a safe refuge for those in need.",
-                "zh": "無家可歸者收容所為有需要的人提供了一個安全的避難所。"
+                "zh": "無家可歸者收容所為有需要的人提供了一個安全的避難所。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1631,23 +1921,28 @@
         "examples": [
             {
                 "en": "The government has set up camps to accommodate the incoming refugees.",
-                "zh": "政府已經設立營地來安置湧入的難民。"
+                "zh": "政府已經設立營地來安置湧入的難民。",
+                "level": "TOEIC"
             },
             {
                 "en": "Many refugees were forced to leave their homes because of the civil war.",
-                "zh": "許多難民因為內戰而被迫離開家園。"
+                "zh": "許多難民因為內戰而被迫離開家園。",
+                "level": "TOEIC"
             },
             {
                 "en": "The charity organization provides food and medical care for the refugees.",
-                "zh": "該慈善機構為難民提供食物和醫療照護。"
+                "zh": "該慈善機構為難民提供食物和醫療照護。",
+                "level": "TOEIC"
             },
             {
                 "en": "As a refugee, he faced many challenges starting a new life in a foreign country.",
-                "zh": "身為一名難民，他在異國開始新生活面臨了許多挑戰。"
+                "zh": "身為一名難民，他在異國開始新生活面臨了許多挑戰。",
+                "level": "TOEIC"
             },
             {
                 "en": "The international community is trying to find a solution to the refugee crisis.",
-                "zh": "國際社會正在努力尋找解決難民危機的方法。"
+                "zh": "國際社會正在努力尋找解決難民危機的方法。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1659,23 +1954,28 @@
         "examples": [
             {
                 "en": "She tied a beautiful red ribbon around the birthday present.",
-                "zh": "她在生日禮物上綁了一條美麗的紅緞帶。"
+                "zh": "她在生日禮物上綁了一條美麗的紅緞帶。",
+                "level": "TOEIC"
             },
             {
                 "en": "The little girl wore a pink ribbon in her hair.",
-                "zh": "小女孩的頭髮上戴著一條粉紅色緞帶。"
+                "zh": "小女孩的頭髮上戴著一條粉紅色緞帶。",
+                "level": "TOEIC"
             },
             {
                 "en": "The mayor cut the ribbon to officially open the new hospital.",
-                "zh": "市長剪綵正式啟用新醫院。"
+                "zh": "市長剪綵正式啟用新醫院。",
+                "level": "TOEIC"
             },
             {
                 "en": "A blue ribbon is often awarded as a symbol of first place in a competition.",
-                "zh": "藍絲帶通常被授予作為比賽第一名的象徵。"
+                "zh": "藍絲帶通常被授予作為比賽第一名的象徵。",
+                "level": "TOEIC"
             },
             {
                 "en": "He bought a spool of silk ribbon for her crafting project.",
-                "zh": "他買了一軸絲帶讓她做手工藝計畫。"
+                "zh": "他買了一軸絲帶讓她做手工藝計畫。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1687,23 +1987,28 @@
         "examples": [
             {
                 "en": "Two armed men tried to rob the local bank yesterday.",
-                "zh": "兩名武裝男子昨天試圖搶劫當地銀行。"
+                "zh": "兩名武裝男子昨天試圖搶劫當地銀行。",
+                "level": "TOEIC"
             },
             {
                 "en": "The poor lighting on this street makes it easy for criminals to rob pedestrians.",
-                "zh": "這條街照明不佳，使得罪犯很容易搶劫行人。"
+                "zh": "這條街照明不佳，使得罪犯很容易搶劫行人。",
+                "level": "TOEIC"
             },
             {
                 "en": "He was robbed of his wallet and phone while walking home late at night.",
-                "zh": "他在深夜走回家時被搶走了錢包和手機。"
+                "zh": "他在深夜走回家時被搶走了錢包和手機。",
+                "level": "TOEIC"
             },
             {
                 "en": "The injury robbed the young athlete of his chance to compete in the finals.",
-                "zh": "這場傷病剝奪了這位年輕運動員參加決賽的機會。"
+                "zh": "這場傷病剝奪了這位年輕運動員參加決賽的機會。",
+                "level": "TOEIC"
             },
             {
                 "en": "They planned to rob the jewelry store but were caught by the police.",
-                "zh": "他們計畫搶劫珠寶店，但被警察抓住了。"
+                "zh": "他們計畫搶劫珠寶店，但被警察抓住了。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1715,23 +2020,28 @@
         "examples": [
             {
                 "en": "The bank robber was wearing a mask to hide his face.",
-                "zh": "銀行搶匪戴著面具以掩蓋臉部。"
+                "zh": "銀行搶匪戴著面具以掩蓋臉部。",
+                "level": "TOEIC"
             },
             {
                 "en": "The brave shop owner fought off the armed robber.",
-                "zh": "勇敢的店主擊退了持槍強盜。"
+                "zh": "勇敢的店主擊退了持槍強盜。",
+                "level": "TOEIC"
             },
             {
                 "en": "Police are still searching for the robbers who broke into the museum.",
-                "zh": "警方仍在尋找闖入博物館的搶匪。"
+                "zh": "警方仍在尋找闖入博物館的搶匪。",
+                "level": "TOEIC"
             },
             {
                 "en": "The robber demanded all the cash in the register.",
-                "zh": "搶匪要求交出收銀機裡所有的現金。"
+                "zh": "搶匪要求交出收銀機裡所有的現金。",
+                "level": "TOEIC"
             },
             {
                 "en": "He was sentenced to ten years in prison for being a notorious robber.",
-                "zh": "他因為是一名惡名昭彰的搶匪而被判處十年徒刑。"
+                "zh": "他因為是一名惡名昭彰的搶匪而被判處十年徒刑。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1743,23 +2053,28 @@
         "examples": [
             {
                 "en": "The detective is investigating an armed robbery at the convenience store.",
-                "zh": "偵探正在調查便利商店的一起持械搶劫案。"
+                "zh": "偵探正在調查便利商店的一起持械搶劫案。",
+                "level": "TOEIC"
             },
             {
                 "en": "He was arrested and charged with attempted robbery.",
-                "zh": "他被逮捕並被指控企圖搶劫。"
+                "zh": "他被逮捕並被指控企圖搶劫。",
+                "level": "TOEIC"
             },
             {
                 "en": "The frequency of bank robberies in the city has decreased significantly.",
-                "zh": "該城市銀行搶劫案的發生率已顯著下降。"
+                "zh": "該城市銀行搶劫案的發生率已顯著下降。",
+                "level": "TOEIC"
             },
             {
                 "en": "They witnessed the robbery and quickly called the police.",
-                "zh": "他們目擊了搶劫過程並迅速報了警。"
+                "zh": "他們目擊了搶劫過程並迅速報了警。",
+                "level": "TOEIC"
             },
             {
                 "en": "The total amount of money stolen during the robbery was huge.",
-                "zh": "在搶劫中被盜的總金額非常龐大。"
+                "zh": "在搶劫中被盜的總金額非常龐大。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1771,23 +2086,28 @@
         "examples": [
             {
                 "en": "After taking a hot shower, he wrapped himself in a thick cotton robe.",
-                "zh": "洗完熱水澡後，他裹上了一件厚棉浴袍。"
+                "zh": "洗完熱水澡後，他裹上了一件厚棉浴袍。",
+                "level": "TOEIC"
             },
             {
                 "en": "The judge entered the courtroom wearing a long black robe.",
-                "zh": "法官穿著黑色長袍走進法庭。"
+                "zh": "法官穿著黑色長袍走進法庭。",
+                "level": "TOEIC"
             },
             {
                 "en": "The wizard in the story wore a purple robe covered in silver stars.",
-                "zh": "故事裡的巫師穿著一件布滿銀星的紫色長袍。"
+                "zh": "故事裡的巫師穿著一件布滿銀星的紫色長袍。",
+                "level": "TOEIC"
             },
             {
                 "en": "She bought a luxurious silk robe as a gift for her mother.",
-                "zh": "她買了一件奢華的絲綢長袍作為送給母親的禮物。"
+                "zh": "她買了一件奢華的絲綢長袍作為送給母親的禮物。",
+                "level": "TOEIC"
             },
             {
                 "en": "The choir members put on their red robes before the performance.",
-                "zh": "合唱團成員在表演前穿上了他們的紅色長袍。"
+                "zh": "合唱團成員在表演前穿上了他們的紅色長袍。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1799,23 +2119,28 @@
         "examples": [
             {
                 "en": "The space agency successfully launched a new rocket into orbit.",
-                "zh": "太空機構成功發射了一枚新火箭進入軌道。"
+                "zh": "太空機構成功發射了一枚新火箭進入軌道。",
+                "level": "TOEIC"
             },
             {
                 "en": "Fuel prices have rocketed recently due to the global shortage.",
-                "zh": "由於全球短缺，燃料價格最近急遽上升。"
+                "zh": "由於全球短缺，燃料價格最近急遽上升。",
+                "level": "TOEIC"
             },
             {
                 "en": "The boy was fascinated by the model rocket and dreamed of being an astronaut.",
-                "zh": "男孩對模型火箭非常著迷，夢想成為太空人。"
+                "zh": "男孩對模型火箭非常著迷，夢想成為太空人。",
+                "level": "TOEIC"
             },
             {
                 "en": "Sales of the new smartphone rocketed on the first day of its release.",
-                "zh": "新款智慧型手機在發布首日的銷量一飛衝天。"
+                "zh": "新款智慧型手機在發布首日的銷量一飛衝天。",
+                "level": "TOEIC"
             },
             {
                 "en": "The rocket booster separated from the main ship as planned.",
-                "zh": "火箭推進器按計畫從主船體分離。"
+                "zh": "火箭推進器按計畫從主船體分離。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1827,23 +2152,28 @@
         "examples": [
             {
                 "en": "She served the hot coffee in a delicate cup and saucer.",
-                "zh": "她用精緻的杯子和茶碟端上熱咖啡。"
+                "zh": "她用精緻的杯子和茶碟端上熱咖啡。",
+                "level": "TOEIC"
             },
             {
                 "en": "The cat happily licked the milk from the small saucer on the floor.",
-                "zh": "那隻貓開心地舔著地板上小碟子裡的牛奶。"
+                "zh": "那隻貓開心地舔著地板上小碟子裡的牛奶。",
+                "level": "TOEIC"
             },
             {
                 "en": "Be careful not to spill tea into the saucer.",
-                "zh": "小心不要把茶灑到托盤裡。"
+                "zh": "小心不要把茶灑到托盤裡。",
+                "level": "TOEIC"
             },
             {
                 "en": "Many people reported seeing a flying saucer in the night sky.",
-                "zh": "許多人報告說在夜空中看到了飛碟（飛行的托盤）。"
+                "zh": "許多人報告說在夜空中看到了飛碟（飛行的托盤）。",
+                "level": "TOEIC"
             },
             {
                 "en": "The antique store sells a matching set of teacups and saucers.",
-                "zh": "這家古董店賣一整套相配的茶杯和茶碟。"
+                "zh": "這家古董店賣一整套相配的茶杯和茶碟。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1855,23 +2185,28 @@
         "examples": [
             {
                 "en": "I would like two scoops of vanilla ice cream, please.",
-                "zh": "請給我兩勺香草冰淇淋。"
+                "zh": "請給我兩勺香草冰淇淋。",
+                "level": "TOEIC"
             },
             {
                 "en": "He used a large plastic scoop to dig in the sand.",
-                "zh": "他用一個大塑膠勺在沙子裡挖。"
+                "zh": "他用一個大塑膠勺在沙子裡挖。",
+                "level": "TOEIC"
             },
             {
                 "en": "The journalist was thrilled to get a major scoop on the scandal.",
-                "zh": "記者很高興能獲得關於這樁醜聞的重大獨家新聞。"
+                "zh": "記者很高興能獲得關於這樁醜聞的重大獨家新聞。",
+                "level": "TOEIC"
             },
             {
                 "en": "She quickly scooped up the spilled sugar from the counter.",
-                "zh": "她迅速地把灑在流理台上的糖舀起來。"
+                "zh": "她迅速地把灑在流理台上的糖舀起來。",
+                "level": "TOEIC"
             },
             {
                 "en": "Can you scoop some flour into the mixing bowl for me?",
-                "zh": "你能幫我舀一些麵粉到攪拌碗裡嗎？"
+                "zh": "你能幫我舀一些麵粉到攪拌碗裡嗎？",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1883,23 +2218,28 @@
         "examples": [
             {
                 "en": "You need a screwdriver to tighten this loose screw.",
-                "zh": "你需要一把螺絲起子來鎖緊這個鬆動的螺絲釘。"
+                "zh": "你需要一把螺絲起子來鎖緊這個鬆動的螺絲釘。",
+                "level": "TOEIC"
             },
             {
                 "en": "Please make sure to screw the lid tightly on the jar.",
-                "zh": "請務必把罐子的蓋子旋緊。"
+                "zh": "請務必把罐子的蓋子旋緊。",
+                "level": "TOEIC"
             },
             {
                 "en": "He forgot to put a screw in the hinge, so the door doesn't close properly.",
-                "zh": "他忘了在鉸鏈上裝螺絲，所以門關不緊。"
+                "zh": "他忘了在鉸鏈上裝螺絲，所以門關不緊。",
+                "level": "TOEIC"
             },
             {
                 "en": "They had to screw the wooden boards together to build the fence.",
-                "zh": "他們必須用螺絲把木板鎖在一起來建造圍欄。"
+                "zh": "他們必須用螺絲把木板鎖在一起來建造圍欄。",
+                "level": "TOEIC"
             },
             {
                 "en": "Be careful not to screw up this important project.",
-                "zh": "小心別搞砸了這個重要的專案。（俚語用法）"
+                "zh": "小心別搞砸了這個重要的專案。（俚語用法）",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1911,23 +2251,28 @@
         "examples": [
             {
                 "en": "He used a flathead screwdriver to open the paint can.",
-                "zh": "他用一把平頭螺絲起子打開油漆罐。"
+                "zh": "他用一把平頭螺絲起子打開油漆罐。",
+                "level": "TOEIC"
             },
             {
                 "en": "Could you pass me the Phillips screwdriver to fix this chair?",
-                "zh": "你能把十字螺絲起子遞給我來修這把椅子嗎？"
+                "zh": "你能把十字螺絲起子遞給我來修這把椅子嗎？",
+                "level": "TOEIC"
             },
             {
                 "en": "Always keep a basic toolkit with a hammer and a screwdriver at home.",
-                "zh": "家裡總是該備有一個包含鐵鎚和螺絲起子的基本工具箱。"
+                "zh": "家裡總是該備有一個包含鐵鎚和螺絲起子的基本工具箱。",
+                "level": "TOEIC"
             },
             {
                 "en": "An electric screwdriver can save you a lot of time and effort.",
-                "zh": "電動螺絲起子可以為你省下許多時間和力氣。"
+                "zh": "電動螺絲起子可以為你省下許多時間和力氣。",
+                "level": "TOEIC"
             },
             {
                 "en": "The mechanic reached for his screwdriver to adjust the engine.",
-                "zh": "技工伸手去拿螺絲起子來調整引擎。"
+                "zh": "技工伸手去拿螺絲起子來調整引擎。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1939,23 +2284,28 @@
         "examples": [
             {
                 "en": "I need to buy a new bottle of shampoo for dry hair.",
-                "zh": "我需要買一瓶新的乾性髮質適用洗髮精。"
+                "zh": "我需要買一瓶新的乾性髮質適用洗髮精。",
+                "level": "TOEIC"
             },
             {
                 "en": "She always shampoos her hair every other day to keep it healthy.",
-                "zh": "為了保持健康，她總是每隔一天洗一次頭髮。"
+                "zh": "為了保持健康，她總是每隔一天洗一次頭髮。",
+                "level": "TOEIC"
             },
             {
                 "en": "The hotel provides free soap, shampoo, and towels for guests.",
-                "zh": "飯店為客人提供免費的肥皂、洗髮精和毛巾。"
+                "zh": "飯店為客人提供免費的肥皂、洗髮精和毛巾。",
+                "level": "TOEIC"
             },
             {
                 "en": "Make sure you rinse all the shampoo out of your hair thoroughly.",
-                "zh": "確保你徹底沖洗掉頭髮上所有的洗髮精。"
+                "zh": "確保你徹底沖洗掉頭髮上所有的洗髮精。",
+                "level": "TOEIC"
             },
             {
                 "en": "He is allergic to the strong fragrance in this cheap shampoo.",
-                "zh": "他對這款廉價洗髮精裡強烈的香味過敏。"
+                "zh": "他對這款廉價洗髮精裡強烈的香味過敏。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1967,23 +2317,28 @@
         "examples": [
             {
                 "en": "My grandmother loves watching daily soap operas on television.",
-                "zh": "我祖母喜歡看電視上每天播出的肥皂劇。"
+                "zh": "我祖母喜歡看電視上每天播出的肥皂劇。",
+                "level": "TOEIC"
             },
             {
                 "en": "The plot of this soap opera is incredibly dramatic and unrealistic.",
-                "zh": "這齣肥皂劇的情節極度戲劇化且不切實際。"
+                "zh": "這齣肥皂劇的情節極度戲劇化且不切實際。",
+                "level": "TOEIC"
             },
             {
                 "en": "He acts as the main villain in a popular Spanish soap opera.",
-                "zh": "他在一部受歡迎的西班牙肥皂劇中扮演主要反派角色。"
+                "zh": "他在一部受歡迎的西班牙肥皂劇中扮演主要反派角色。",
+                "level": "TOEIC"
             },
             {
                 "en": "Soap operas are known for their exaggerated storylines and emotional conflicts.",
-                "zh": "肥皂劇以其誇張的故事情節和情感衝突而聞名。"
+                "zh": "肥皂劇以其誇張的故事情節和情感衝突而聞名。",
+                "level": "TOEIC"
             },
             {
                 "en": "She never misses an episode of her favorite evening soap opera.",
-                "zh": "她從不錯過她最喜歡的晚間肥皂劇的任何一集。"
+                "zh": "她從不錯過她最喜歡的晚間肥皂劇的任何一集。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -1995,23 +2350,28 @@
         "examples": [
             {
                 "en": "He expressed his deep sorrow over the loss of his beloved pet.",
-                "zh": "他對失去心愛的寵物表達了深深的悲傷。"
+                "zh": "他對失去心愛的寵物表達了深深的悲傷。",
+                "level": "TOEIC"
             },
             {
                 "en": "Her eyes were filled with sorrow as she listened to the tragic news.",
-                "zh": "當她聽到這個悲慘的消息時，眼中充滿了憂傷。"
+                "zh": "當她聽到這個悲慘的消息時，眼中充滿了憂傷。",
+                "level": "TOEIC"
             },
             {
                 "en": "Time slowly heals the sorrow of losing a loved one.",
-                "zh": "時間會慢慢治癒失去摯愛的悲痛。"
+                "zh": "時間會慢慢治癒失去摯愛的悲痛。",
+                "level": "TOEIC"
             },
             {
                 "en": "They shared both the joys and sorrows of their long marriage.",
-                "zh": "他們分享了漫長婚姻中的快樂與悲傷。"
+                "zh": "他們分享了漫長婚姻中的快樂與悲傷。",
+                "level": "TOEIC"
             },
             {
                 "en": "The sad melody perfectly captures the sorrow of a broken heart.",
-                "zh": "這悲傷的旋律完美捕捉了心碎的憂傷。"
+                "zh": "這悲傷的旋律完美捕捉了心碎的憂傷。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -2023,23 +2383,28 @@
         "examples": [
             {
                 "en": "The guest speaker at the conference delivered an inspiring presentation.",
-                "zh": "會議上的客座演講者發表了一場激勵人心的演講。"
+                "zh": "會議上的客座演講者發表了一場激勵人心的演講。",
+                "level": "TOEIC"
             },
             {
                 "en": "I need to connect my phone to the Bluetooth speaker to play music.",
-                "zh": "我需要將手機連接到藍牙揚聲器來播放音樂。"
+                "zh": "我需要將手機連接到藍牙揚聲器來播放音樂。",
+                "level": "TOEIC"
             },
             {
                 "en": "He is a fluent speaker of both English and French.",
-                "zh": "他是一個能流利使用英語和法語的人。"
+                "zh": "他是一個能流利使用英語和法語的人。",
+                "level": "TOEIC"
             },
             {
                 "en": "The sound quality from this small portable speaker is surprisingly good.",
-                "zh": "這個小型便攜式揚聲器的音質出奇的好。"
+                "zh": "這個小型便攜式揚聲器的音質出奇的好。",
+                "level": "TOEIC"
             },
             {
                 "en": "The audience applauded loudly when the speaker finished his speech.",
-                "zh": "當演講者結束演講時，觀眾大聲鼓掌。"
+                "zh": "當演講者結束演講時，觀眾大聲鼓掌。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -2051,23 +2416,28 @@
         "examples": [
             {
                 "en": "He works as a secret spy for the national intelligence agency.",
-                "zh": "他作為國家情報局的秘密間諜工作。"
+                "zh": "他作為國家情報局的秘密間諜工作。",
+                "level": "TOEIC"
             },
             {
                 "en": "They suspect that an enemy spy has infiltrated the military base.",
-                "zh": "他們懷疑有一名敵方間諜潛入了軍事基地。"
+                "zh": "他們懷疑有一名敵方間諜潛入了軍事基地。",
+                "level": "TOEIC"
             },
             {
                 "en": "The neighbor likes to spy on everyone through his window.",
-                "zh": "那個鄰居喜歡透過窗戶暗中監視大家。"
+                "zh": "那個鄰居喜歡透過窗戶暗中監視大家。",
+                "level": "TOEIC"
             },
             {
                 "en": "A spy movie is full of action, deception, and advanced gadgets.",
-                "zh": "間諜電影充滿了動作、欺騙和先進的裝備。"
+                "zh": "間諜電影充滿了動作、欺騙和先進的裝備。",
+                "level": "TOEIC"
             },
             {
                 "en": "She was caught trying to spy on her competitor's business plans.",
-                "zh": "她被抓到試圖刺探競爭對手的商業計畫。"
+                "zh": "她被抓到試圖刺探競爭對手的商業計畫。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -2079,23 +2449,28 @@
         "examples": [
             {
                 "en": "The national football team will play their next match at the city stadium.",
-                "zh": "國家足球隊將在市立體育場進行下一場比賽。"
+                "zh": "國家足球隊將在市立體育場進行下一場比賽。",
+                "level": "TOEIC"
             },
             {
                 "en": "Tens of thousands of fans filled the stadium to watch the final game.",
-                "zh": "數以萬計的球迷擠滿了體育場觀看決賽。"
+                "zh": "數以萬計的球迷擠滿了體育場觀看決賽。",
+                "level": "TOEIC"
             },
             {
                 "en": "They are building a massive new stadium for the upcoming Olympic Games.",
-                "zh": "他們正在為即將到來的奧運會建造一座巨大的新體育場。"
+                "zh": "他們正在為即將到來的奧運會建造一座巨大的新體育場。",
+                "level": "TOEIC"
             },
             {
                 "en": "The cheers from the crowd echoed throughout the entire stadium.",
-                "zh": "人群的歡呼聲在整個露天體育場迴盪。"
+                "zh": "人群的歡呼聲在整個露天體育場迴盪。",
+                "level": "TOEIC"
             },
             {
                 "en": "We bought tickets in the front row of the stadium for a better view.",
-                "zh": "我們買了體育場前排的票以獲得更好的視野。"
+                "zh": "我們買了體育場前排的票以獲得更好的視野。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -2107,23 +2482,28 @@
         "examples": [
             {
                 "en": "He sat on a tall wooden stool at the bar and ordered a drink.",
-                "zh": "他坐在酒吧的高腳木凳上點了一杯飲料。"
+                "zh": "他坐在酒吧的高腳木凳上點了一杯飲料。",
+                "level": "TOEIC"
             },
             {
                 "en": "The little boy stood on a step stool to reach the cookie jar.",
-                "zh": "小男孩站在墊腳凳上拿餅乾罐。"
+                "zh": "小男孩站在墊腳凳上拿餅乾罐。",
+                "level": "TOEIC"
             },
             {
                 "en": "The doctor asked the patient to provide a stool sample for medical testing.",
-                "zh": "醫生要求病人提供糞便樣本進行醫學檢驗。"
+                "zh": "醫生要求病人提供糞便樣本進行醫學檢驗。",
+                "level": "TOEIC"
             },
             {
                 "en": "She pushed the small stool under the table to save space.",
-                "zh": "她把小凳子推到桌下以節省空間。"
+                "zh": "她把小凳子推到桌下以節省空間。",
+                "level": "TOEIC"
             },
             {
                 "en": "A three-legged stool is often more stable on uneven ground.",
-                "zh": "在不平坦的地面上，三條腿的凳子通常更穩定。"
+                "zh": "在不平坦的地面上，三條腿的凳子通常更穩定。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -2135,23 +2515,28 @@
         "examples": [
             {
                 "en": "Please throw your empty plastic bottles into the trash can.",
-                "zh": "請將你喝空的塑膠瓶扔進垃圾桶。"
+                "zh": "請將你喝空的塑膠瓶扔進垃圾桶。",
+                "level": "TOEIC"
             },
             {
                 "en": "The park was completely covered in trash after the outdoor festival.",
-                "zh": "戶外音樂節過後，公園裡滿地都是垃圾。"
+                "zh": "戶外音樂節過後，公園裡滿地都是垃圾。",
+                "level": "TOEIC"
             },
             {
                 "en": "I can't believe you watch that reality show; it's absolute trash.",
-                "zh": "我真不敢相信你看那個實境秀；那根本是垃圾。"
+                "zh": "我真不敢相信你看那個實境秀；那根本是垃圾。",
+                "level": "TOEIC"
             },
             {
                 "en": "He took out the trash on his way to work this morning.",
-                "zh": "他今天早上上班途中把垃圾拿出去倒了。"
+                "zh": "他今天早上上班途中把垃圾拿出去倒了。",
+                "level": "TOEIC"
             },
             {
                 "en": "Don't listen to his complaints; he's just talking trash.",
-                "zh": "別聽他的抱怨；他只是在說廢話。"
+                "zh": "別聽他的抱怨；他只是在說廢話。",
+                "level": "TOEIC"
             }
         ]
     },
@@ -2163,23 +2548,28 @@
         "examples": [
             {
                 "en": "Most of the residents in this neighborhood are white-collar professionals.",
-                "zh": "這個社區的大多數居民都是白領專業人士。"
+                "zh": "這個社區的大多數居民都是白領專業人士。",
+                "level": "TOEIC"
             },
             {
                 "en": "White-collar crimes, such as fraud, are often difficult to investigate.",
-                "zh": "白領犯罪（如詐欺）通常很難調查。"
+                "zh": "白領犯罪（如詐欺）通常很難調查。",
+                "level": "TOEIC"
             },
             {
                 "en": "He left his physically demanding job for a comfortable white-collar position.",
-                "zh": "他離開了需要體力的工作，轉向舒適的白領職位。"
+                "zh": "他離開了需要體力的工作，轉向舒適的白領職位。",
+                "level": "TOEIC"
             },
             {
                 "en": "White-collar workers typically spend long hours sitting at their desks.",
-                "zh": "白領工作者通常長時間坐在辦公桌前。"
+                "zh": "白領工作者通常長時間坐在辦公桌前。",
+                "level": "TOEIC"
             },
             {
                 "en": "The company offers excellent benefits to attract highly skilled white-collar employees.",
-                "zh": "這家公司提供優厚的福利以吸引高技能的白領員工。"
+                "zh": "這家公司提供優厚的福利以吸引高技能的白領員工。",
+                "level": "TOEIC"
             }
         ]
     }
