@@ -1,0 +1,530 @@
+[
+    {
+        "id": 1,
+        "word": "alarm",
+        "part_of_speech": "n.",
+        "meaning": "鬧鐘",
+        "examples": [
+            {
+                "en": "I set two alarms to wake me up in the morning.",
+                "zh": "我設了兩個鬧鐘在早晨叫醒我。",
+                "level": "初級"
+            },
+            {
+                "en": "The alarm went off at 6 AM sharp.",
+                "zh": "鬧鐘在早上六點整響起。",
+                "level": "初級"
+            },
+            {
+                "en": "She woke up immediately when her phone alarm rang.",
+                "zh": "當手機鬧鐘響起時，她立刻醒了過來。",
+                "level": "中級"
+            },
+            {
+                "en": "He forgot to set his alarm and overslept the next morning.",
+                "zh": "他忘記設定鬧鐘，隔天早上睡過頭了。",
+                "level": "中級"
+            },
+            {
+                "en": "Modern security alarms utilize sophisticated motion sensors to detect intruders.",
+                "zh": "現代安全警報器利用先進的動作感測器來偵測入侵者。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "word": "straight",
+        "part_of_speech": "adv.",
+        "meaning": "直接地；立即地",
+        "examples": [
+            {
+                "en": "Let's go straight back home after the potluck party tonight.",
+                "zh": "今晚的百樂餐會結束後，我們就直接回家吧。",
+                "level": "初級"
+            },
+            {
+                "en": "Go straight down this street and you will find the library.",
+                "zh": "沿著這條街直走，你就會找到圖書館。",
+                "level": "初級"
+            },
+            {
+                "en": "He walked straight to the manager's office to report the issue.",
+                "zh": "他直接走到經理辦公室報告這個問題。",
+                "level": "中級"
+            },
+            {
+                "en": "She drove straight through the night to reach her destination.",
+                "zh": "她連夜開車直奔目的地。",
+                "level": "中級"
+            },
+            {
+                "en": "Professional engineers must address critical system errors straight away.",
+                "zh": "專業工程師必須立即處理關鍵的系統錯誤。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "word": "research",
+        "part_of_speech": "n.",
+        "meaning": "研究",
+        "examples": [
+            {
+                "en": "You'll need to do some serious research before you start writing your report.",
+                "zh": "在你開始寫你的報告之前，將需要做些認真的研究。",
+                "level": "初級"
+            },
+            {
+                "en": "Scientists conduct research to find new treatments for diseases.",
+                "zh": "科學家進行研究以尋找疾病的新治療方法。",
+                "level": "初級"
+            },
+            {
+                "en": "Her research focuses on artificial intelligence and machine learning.",
+                "zh": "她的研究專注於人工智慧與機械學習。",
+                "level": "中級"
+            },
+            {
+                "en": "Market research helps companies understand consumer preferences.",
+                "zh": "市場研究有助於企業了解消費者偏好。",
+                "level": "中級"
+            },
+            {
+                "en": "Extensive empirical research validates the effectiveness of the new therapy.",
+                "zh": "廣泛的實證研究證實了新療法的有效性。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "word": "oversleep",
+        "part_of_speech": "v.",
+        "meaning": "睡過頭",
+        "examples": [
+            {
+                "en": "Joanna stayed up late studying for the exam. Therefore, she overslept the next morning.",
+                "zh": "Joanna 為了考試熬夜念書。因此她隔天早上睡過頭了。",
+                "level": "初級"
+            },
+            {
+                "en": "I'm afraid I will oversleep if I don't set an alarm.",
+                "zh": "我怕如果不設鬧鐘我會睡過頭。",
+                "level": "初級"
+            },
+            {
+                "en": "He overslept and missed his morning flight.",
+                "zh": "他睡過頭並錯過了早班機。",
+                "level": "中級"
+            },
+            {
+                "en": "Staying up late frequently increases the chances of oversleeping.",
+                "zh": "經常熬夜會增加睡過頭的機率。",
+                "level": "中級"
+            },
+            {
+                "en": "Chronically irregular sleep schedules often lead individuals to oversleep on weekends.",
+                "zh": "長期不規律的睡眠作息常導致個人在週末睡過頭。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "word": "amazing",
+        "part_of_speech": "adj.",
+        "meaning": "令人驚奇的",
+        "examples": [
+            {
+                "en": "This restaurant doesn't look fancy at all, but its food is amazing.",
+                "zh": "這家餐廳看起來一點也不豪華，但它的食物令人驚艷。",
+                "level": "初級"
+            },
+            {
+                "en": "We had an amazing time visiting Tokyo last summer.",
+                "zh": "我們去年夏天去東京玩得非常愉快。",
+                "level": "初級"
+            },
+            {
+                "en": "The acrobat performed amazing tricks that left the audience in awe.",
+                "zh": "特技演員表演了令人驚嘆的絕技，讓觀眾嘆為觀止。",
+                "level": "中級"
+            },
+            {
+                "en": "It is amazing how fast technology has evolved over the past decade.",
+                "zh": "過去十年科技演進的速度真是令人驚奇。",
+                "level": "中級"
+            },
+            {
+                "en": "The scientist made an amazing breakthrough in renewable energy research.",
+                "zh": "該科學家在再生能源研究中取得了驚人的突破。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "word": "invent",
+        "part_of_speech": "v.",
+        "meaning": "發明",
+        "examples": [
+            {
+                "en": "A Taiwanese-American, Peter Tsai, invented N95 masks.",
+                "zh": "一位臺灣美國人 Peter Tsai 發明了 N95 口罩。",
+                "level": "初級"
+            },
+            {
+                "en": "Thomas Edison invented the practical electric incandescent bulb.",
+                "zh": "湯瑪斯·愛迪生發明瞭實用的白熾燈泡。",
+                "level": "初級"
+            },
+            {
+                "en": "Children love to invent stories about magical creatures.",
+                "zh": "孩子們喜歡發明關於神奇生物的故事。",
+                "level": "中級"
+            },
+            {
+                "en": "The startup company invented a new device to purify water efficiently.",
+                "zh": "這家新創公司發明了一種能高效淨化水質的新設備。",
+                "level": "中級"
+            },
+            {
+                "en": "Engineers continuously invent innovative mechanisms to optimize industrial production.",
+                "zh": "工程師不斷發明創新機制以優化工業生產。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "word": "solve",
+        "part_of_speech": "v.",
+        "meaning": "解決",
+        "examples": [
+            {
+                "en": "Can you believe that I spent the whole day trying to solve a computer problem?",
+                "zh": "你相信我花了一整天的時間，就為了試著解決一個電腦問題嗎？",
+                "level": "初級"
+            },
+            {
+                "en": "We need to work together to solve this problem.",
+                "zh": "我們需要一起合作來解決這個問題。",
+                "level": "初級"
+            },
+            {
+                "en": "The detective worked hard to solve the mysterious case.",
+                "zh": "偵探努力破案以解決這個神祕案件。",
+                "level": "中級"
+            },
+            {
+                "en": "Effective communication can help solve misunderstandings between friends.",
+                "zh": "有效的溝通有助於解決朋友之間的誤解。",
+                "level": "中級"
+            },
+            {
+                "en": "Advanced computational algorithms effectively solve complex optimization equations.",
+                "zh": "先進的計算演算法能有效解決複雜的最佳化方程式。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "word": "solution",
+        "part_of_speech": "n.",
+        "meaning": "解決辦法",
+        "examples": [
+            {
+                "en": "Our local government must come up with a solution to the serious parking problem.",
+                "zh": "我們的地方政府必須想出一個解決嚴重停車問題的方法。",
+                "level": "初級"
+            },
+            {
+                "en": "We are still searching for a permanent solution.",
+                "zh": "我們仍在尋找一個永久的解決方案。",
+                "level": "初級"
+            },
+            {
+                "en": "The team brainstormed for hours to find a viable solution.",
+                "zh": "團隊腦力激盪了數小時以尋找可行的解決方案。",
+                "level": "中級"
+            },
+            {
+                "en": "Every complex challenge demands a carefully calculated solution.",
+                "zh": "每一個複雜的挑戰都需要經過精確計算的解決方案。",
+                "level": "中級"
+            },
+            {
+                "en": "Implementing structural reforms provides a comprehensive solution to economic stagnation.",
+                "zh": "實施結構性改革為經濟停滯提供了全面的解決方案。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "word": "regular",
+        "part_of_speech": "adj.",
+        "meaning": "一般的",
+        "examples": [
+            {
+                "en": "Jessica likes to drink soy milk more than regular cow's milk.",
+                "zh": "Jessica 喜歡喝豆漿過喝一般的牛奶。",
+                "level": "初級"
+            },
+            {
+                "en": "It is important to maintain regular sleeping habits.",
+                "zh": "保持規律的睡眠習慣是很重要的。",
+                "level": "初級"
+            },
+            {
+                "en": "He is a regular customer at this coffee shop.",
+                "zh": "他是這家咖啡廳的常客。",
+                "level": "中級"
+            },
+            {
+                "en": "Regular exercise contributes significantly to overall physical health.",
+                "zh": "規律運動對整體身體健康有顯著助益。",
+                "level": "中級"
+            },
+            {
+                "en": "Regular maintenance audits ensure optimal performance of heavy machinery.",
+                "zh": "定期的維護稽核確保重型機械的最佳效能。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "word": "chase",
+        "part_of_speech": "v.",
+        "meaning": "追逐",
+        "examples": [
+            {
+                "en": "The dog stopped chasing after the mailman when his master showed up and shouted at it.",
+                "zh": "當主人出現並且對牠喊叫時，那隻狗才停止追趕郵差。",
+                "level": "初級"
+            },
+            {
+                "en": "The cat likes to chase mice in the yard.",
+                "zh": "貓咪喜歡在院子裡追老鼠。",
+                "level": "初級"
+            },
+            {
+                "en": "Police officers chased the suspect through the crowded streets.",
+                "zh": "警察在擁擠的街道上追逐嫌犯。",
+                "level": "中級"
+            },
+            {
+                "en": "Don't spend all your time chasing wealth and ignoring relationships.",
+                "zh": "不要把所有時間都花在追逐財富而忽略人際關係。",
+                "level": "中級"
+            },
+            {
+                "en": "Ambitious entrepreneurs relentlessly chase innovative business opportunities.",
+                "zh": "雄心勃勃的企業家不懈地追逐創新的商業機會。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "word": "promise",
+        "part_of_speech": "v.",
+        "meaning": "承諾",
+        "examples": [
+            {
+                "en": "John promised that he would finish the job by Friday.",
+                "zh": "John 承諾會在星期五之前完成這項工作。",
+                "level": "初級"
+            },
+            {
+                "en": "I promise I will never tell your secret to anyone.",
+                "zh": "我答應我絕不會把你的祕密告訴任何人。",
+                "level": "初級"
+            },
+            {
+                "en": "She made a promise to support her friend through difficult times.",
+                "zh": "她承諾在艱難時刻支持她的朋友。",
+                "level": "中級"
+            },
+            {
+                "en": "Politicians often make promises that are hard to fulfill.",
+                "zh": "政治人物經常做出難以兌現的承諾。",
+                "level": "中級"
+            },
+            {
+                "en": "Binding contractual promises legally obligate both participating parties.",
+                "zh": "具約束力的合約承諾在法律上約束了雙方參與者。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "word": "design",
+        "part_of_speech": "v.",
+        "meaning": "設計",
+        "examples": [
+            {
+                "en": "The teacher asked the students to design their own business cards.",
+                "zh": "這位老師要求學生們設計他們自己的名片。",
+                "level": "初級"
+            },
+            {
+                "en": "She wants to study fashion design in Paris.",
+                "zh": "她想去巴黎修讀時尚設計。",
+                "level": "初級"
+            },
+            {
+                "en": "The architect designed a modern building with great energy efficiency.",
+                "zh": "建築師設計了一棟具備高度能源效率的現代建築。",
+                "level": "中級"
+            },
+            {
+                "en": "User-friendly interface design enhances customer engagement.",
+                "zh": "使用者友善的介面設計能提升客戶參與度。",
+                "level": "中級"
+            },
+            {
+                "en": "Ergonomic furniture designs prioritize long-term user comfort and posture.",
+                "zh": "人體工學家具設計將長期的使用者舒適度與姿勢放在首位。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "word": "position",
+        "part_of_speech": "n.",
+        "meaning": "位置",
+        "examples": [
+            {
+                "en": "The position of the sun in the sky shows that it's almost noon.",
+                "zh": "太陽在天空中的位置顯示現在差不多是中午了。",
+                "level": "初級"
+            },
+            {
+                "en": "He applied for a managerial position in the marketing department.",
+                "zh": "他申請了行銷部門的管理職位。",
+                "level": "初級"
+            },
+            {
+                "en": "Please adjust your seat position for maximum comfort.",
+                "zh": "請調整您的座椅位置以達到最大舒適度。",
+                "level": "中級"
+            },
+            {
+                "en": "The company holds a strong competitive position in the global market.",
+                "zh": "該公司在全球市場中佔有強大的競爭地位。",
+                "level": "中級"
+            },
+            {
+                "en": "Strategic geographical positioning facilitates efficient logistics distribution.",
+                "zh": "具戰略性的地理位置配置有助於高效的物流配送。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "word": "particular",
+        "part_of_speech": "adj.",
+        "meaning": "特定的",
+        "examples": [
+            {
+                "en": "My mother likes this particular shampoo. We can't buy just any brand.",
+                "zh": "我媽媽喜歡這款特定的洗髮精。我們不能隨便買任何品牌。",
+                "level": "初級"
+            },
+            {
+                "en": "Is there anything in particular you would like for dinner?",
+                "zh": "你晚餐有沒有特別想吃什麼？",
+                "level": "初級"
+            },
+            {
+                "en": "She paid particular attention to the grammar rules during the lecture.",
+                "zh": "她在講課期間特別注意文法規則。",
+                "level": "中級"
+            },
+            {
+                "en": "He is very particular about the quality of his coffee beans.",
+                "zh": "他對咖啡豆的品質非常挑剔。",
+                "level": "中級"
+            },
+            {
+                "en": "Particular environmental conditions must be met for the experiment to succeed.",
+                "zh": "必須滿足特定的環境條件才能使實驗成功。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "word": "create",
+        "part_of_speech": "v.",
+        "meaning": "創造",
+        "examples": [
+            {
+                "en": "Beethoven continued to create music even after his hearing problem became more serious.",
+                "zh": "即使在他的聽力問題變得更加嚴重後，貝多芬繼續創作音樂。",
+                "level": "初級"
+            },
+            {
+                "en": "Artists use colors and shapes to create beautiful paintings.",
+                "zh": "藝術家利用色彩與形狀來創作美麗的畫作。",
+                "level": "初級"
+            },
+            {
+                "en": "The new policy aims to create more job opportunities for young graduates.",
+                "zh": "新政策旨在為年輕畢業生創造更多就業機會。",
+                "level": "中級"
+            },
+            {
+                "en": "Good teamwork helps create a positive and productive work environment.",
+                "zh": "良好的團隊合作有助於營造正面且高產的工作環境。",
+                "level": "中高級"
+            },
+            {
+                "en": "Cutting-edge software solutions create immense value for global enterprises.",
+                "zh": "尖端的軟體解決方案為全球企業創造了巨大價值。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "word": "encounter",
+        "part_of_speech": "v.",
+        "meaning": "遭遇",
+        "examples": [
+            {
+                "en": "When we encounter a problem, we should calm down and look for a solution.",
+                "zh": "當我們遇到問題時，我們應該冷靜下來，並且尋求解決之道。",
+                "level": "初級"
+            },
+            {
+                "en": "I did not expect to encounter my old friend at the supermarket.",
+                "zh": "我沒想到會在超級市場遇到我的老朋友。",
+                "level": "初級"
+            },
+            {
+                "en": "Travelers may encounter unexpected language barriers abroad.",
+                "zh": "旅客在國外可能會遇到意料之外的語言障礙。",
+                "level": "中級"
+            },
+            {
+                "en": "The expedition team encountered severe weather conditions in the mountains.",
+                "zh": "探險隊在山中遭遇了惡劣的天氣狀況。",
+                "level": "中級"
+            },
+            {
+                "en": "Enterprises frequently encounter regulatory hurdles when expanding internationally.",
+                "zh": "企業在向國際擴張時經常遭遇法規障礙。",
+                "level": "中高級"
+            }
+        ]
+    }
+]

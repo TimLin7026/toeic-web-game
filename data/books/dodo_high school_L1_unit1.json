@@ -1,0 +1,497 @@
+[
+    {
+        "id": 1,
+        "word": "different",
+        "part_of_speech": "adj.",
+        "meaning": "不同的",
+        "examples": [
+            {
+                "en": "Asian elephants are different from African elephants.",
+                "zh": "亞洲象和非洲象不一樣。",
+                "level": "初級"
+            },
+            {
+                "en": "My taste in music is quite different from yours.",
+                "zh": "我對音樂的品味和你的相當不同。",
+                "level": "初級"
+            },
+            {
+                "en": "The two brothers look similar, but their personalities are completely different.",
+                "zh": "這兩兄弟長得很像，但個性完全不同。",
+                "level": "中級"
+            },
+            {
+                "en": "Working in a startup is a completely different experience from working in a large corporation.",
+                "zh": "在新創公司工作與在大企業工作是完全不同的體驗。",
+                "level": "中級"
+            },
+            {
+                "en": "Cultural expectations can be vastly different depending on the country you visit.",
+                "zh": "根據你訪問的國家，文化期待可能會大相逕庭。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "word": "awesome",
+        "part_of_speech": "adj.",
+        "meaning": "很棒的",
+        "examples": [
+            {
+                "en": "The magic show was awesome. I enjoyed it a lot.",
+                "zh": "那場魔術表演很棒。我很喜歡。",
+                "level": "初級"
+            },
+            {
+                "en": "We had an awesome time at the concert last night.",
+                "zh": "我們昨晚在演唱會上玩得很開心。",
+                "level": "初級"
+            },
+            {
+                "en": "That is an awesome idea for our upcoming school project.",
+                "zh": "這對我們即將到來的學校專案來說是個很棒的主意。",
+                "level": "中級"
+            },
+            {
+                "en": "The view from the top of the mountain was simply awesome.",
+                "zh": "山頂上的景色簡直美得令人讚嘆。",
+                "level": "中級"
+            },
+            {
+                "en": "She possesses an awesome capability to solve complex technical problems under pressure.",
+                "zh": "她具備在壓力下解決複雜技術問題的驚人能力。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "word": "surprised",
+        "part_of_speech": "adj.",
+        "meaning": "驚訝的",
+        "examples": [
+            {
+                "en": "The fans were surprised at the famous singer's sudden marriage.",
+                "zh": "歌迷們對這位名歌手的突然結婚感到很驚訝。",
+                "level": "初級"
+            },
+            {
+                "en": "I was surprised by the sudden change in the weather.",
+                "zh": "我對天氣的突然變化感到驚訝。",
+                "level": "初級"
+            },
+            {
+                "en": "Everyone was surprised when he announced his resignation.",
+                "zh": "當他宣佈辭職時，每個人都感到很驚訝。",
+                "level": "中級"
+            },
+            {
+                "en": "She looked surprised to see her old friend at the airport.",
+                "zh": "看到老朋友在機場出現，她看起來很驚訝。",
+                "level": "中級"
+            },
+            {
+                "en": "The board of directors was pleasantly surprised by the company's quarterly growth.",
+                "zh": "董事會對公司季度的成長感到喜出望外。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "word": "interested",
+        "part_of_speech": "adj.",
+        "meaning": "有興趣的",
+        "examples": [
+            {
+                "en": "Steve is interested in playing the guitar.",
+                "zh": "Steve 對彈吉他有興趣。",
+                "level": "初級"
+            },
+            {
+                "en": "Are you interested in joining our club?",
+                "zh": "你有興趣加入我們的社團嗎？",
+                "level": "初級"
+            },
+            {
+                "en": "Many students showed a deep interest in the science exhibition.",
+                "zh": "許多學生對科學展覽表現出濃厚的興趣。",
+                "level": "中級"
+            },
+            {
+                "en": "She became interested in photography after traveling abroad.",
+                "zh": "她出國旅行後開始對攝影產生興趣。",
+                "level": "中級"
+            },
+            {
+                "en": "Investors remain intensely interested in renewable energy technologies.",
+                "zh": "投資者對再生能源技術始終保持高度興趣。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "word": "interesting",
+        "part_of_speech": "adj.",
+        "meaning": "有趣的",
+        "examples": [
+            {
+                "en": "Ms. White told the kids an interesting story.",
+                "zh": "White 女士對孩子們說了一個有趣的故事。",
+                "level": "初級"
+            },
+            {
+                "en": "This is a very interesting book about space exploration.",
+                "zh": "這是一本關於太空探索的非常有趣的书。",
+                "level": "初級"
+            },
+            {
+                "en": "We found an interesting café tucked away in the alley.",
+                "zh": "我們在巷子裡發現了一家有趣的咖啡館。",
+                "level": "中級"
+            },
+            {
+                "en": "The documentary offered an interesting perspective on modern art.",
+                "zh": "這部紀錄片提供了關於現代藝術的一個有趣視角。",
+                "level": "中級"
+            },
+            {
+                "en": "His lecture presented an interesting hypothesis regarding linguistic evolution.",
+                "zh": "他的講座提出了關於語言演化的有趣假說。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "word": "decision",
+        "part_of_speech": "n.",
+        "meaning": "決定",
+        "examples": [
+            {
+                "en": "Before Judy makes a decision, she talks about it with her parents.",
+                "zh": "Judy 在做決定前，她和父母討論。",
+                "level": "初級"
+            },
+            {
+                "en": "It was a difficult decision to make.",
+                "zh": "這是一個艱難的決定。",
+                "level": "初級"
+            },
+            {
+                "en": "The committee reached a final decision after hours of debate.",
+                "zh": "委員會經過數小時的辯論後達成了最終決定。",
+                "level": "中級"
+            },
+            {
+                "en": "You need to take responsibility for your own career decisions.",
+                "zh": "你需要為你自己的職涯決定負責。",
+                "level": "中級"
+            },
+            {
+                "en": "Strategic executive decisions shape the long-term trajectory of the enterprise.",
+                "zh": "策略性的高層決策塑造了企業的長期發展軌跡。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "word": "decide",
+        "part_of_speech": "v.",
+        "meaning": "決定",
+        "examples": [
+            {
+                "en": "Stacy decided not to buy the dress because it was too expensive.",
+                "zh": "Stacy 決定不買這件洋裝，因為太貴了。",
+                "level": "初級"
+            },
+            {
+                "en": "We haven't decided where to go for our vacation yet.",
+                "zh": "我們還沒決定假期要去哪裡。",
+                "level": "初級"
+            },
+            {
+                "en": "She decided to pursue a master's degree in computer science.",
+                "zh": "她決定攻讀計算機科學碩士學位。",
+                "level": "中級"
+            },
+            {
+                "en": "It took him a long time to decide on the best course of action.",
+                "zh": "他花了好長時間才決定最佳的行動方案。",
+                "level": "中級"
+            },
+            {
+                "en": "Management must decisively decide whether to expand into international markets.",
+                "zh": "管理階層必須果斷決定是否擴展到國際市場。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "word": "upset",
+        "part_of_speech": "adj.",
+        "meaning": "難過的",
+        "examples": [
+            {
+                "en": "Hanna's cat died a few days ago, so she was quite upset.",
+                "zh": "Hanna 的貓幾天前死掉了，所以她十分難過。",
+                "level": "初級"
+            },
+            {
+                "en": "Don't be upset about making mistakes; you can learn from them.",
+                "zh": "不要為犯錯感到難過；你可以從中學習。",
+                "level": "初級"
+            },
+            {
+                "en": "He felt upset when his proposal was rejected by the supervisor.",
+                "zh": "當他的提案被主管拒絕時，他感到很沮喪。",
+                "level": "中級"
+            },
+            {
+                "en": "She was deeply upset by the unfair comments made online.",
+                "zh": "她對網路上不公平的評論感到非常難過。",
+                "level": "中級"
+            },
+            {
+                "en": "Employees became visibly upset upon hearing news of the restructuring.",
+                "zh": "員工在聽到重組的消息後顯得相當沮喪。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "word": "trust",
+        "part_of_speech": "v.",
+        "meaning": "相信",
+        "examples": [
+            {
+                "en": "We can't trust Ben because he likes to tell lies.",
+                "zh": "我們不能信任 Ben，因為他喜歡說謊。",
+                "level": "初級"
+            },
+            {
+                "en": "Trust me, everything is going to be fine.",
+                "zh": "相信我，一切都會好起來的。",
+                "level": "初級"
+            },
+            {
+                "en": "Building mutual trust is essential for a successful partnership.",
+                "zh": "建立互信是成功合作夥伴關係的根本。",
+                "level": "中級"
+            },
+            {
+                "en": "She earned the trust of her team members through consistent hard work.",
+                "zh": "她透過持續的努力贏得了團隊成員的信任。",
+                "level": "中級"
+            },
+            {
+                "en": "Consumer trust remains the cornerstone of any sustainable commercial enterprise.",
+                "zh": "消費者信任始終是任何永續商業企業的基石。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "word": "believe",
+        "part_of_speech": "v.",
+        "meaning": "相信",
+        "examples": [
+            {
+                "en": "I can't believe it! I just took a picture with my favorite actor.",
+                "zh": "我真不敢相信！我剛剛跟我最喜歡的演員拍了一張照片。",
+                "level": "初級"
+            },
+            {
+                "en": "Do you believe in ghosts?",
+                "zh": "你相信有鬼嗎？",
+                "level": "初級"
+            },
+            {
+                "en": "I believe that hard work eventually pays off.",
+                "zh": "我相信努力終究會有回報。",
+                "level": "中級"
+            },
+            {
+                "en": "Few people believed his extraordinary story at first.",
+                "zh": "起初很少有人相信他那離奇的故事。",
+                "level": "中級"
+            },
+            {
+                "en": "We firmly believe in fostering an inclusive and innovative work environment.",
+                "zh": "我們堅信培育一個包容且創新的工作環境。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "word": "perfect",
+        "part_of_speech": "adj.",
+        "meaning": "完美的",
+        "examples": [
+            {
+                "en": "The weather today is perfect. Let's go to the beach!",
+                "zh": "今天的天氣很好。我們去海灘吧！",
+                "level": "初級"
+            },
+            {
+                "en": "Practice makes perfect.",
+                "zh": "熟能生巧。",
+                "level": "初級"
+            },
+            {
+                "en": "The timing for the product launch was simply perfect.",
+                "zh": "產品發布的時機簡直完美。",
+                "level": "中級"
+            },
+            {
+                "en": "She found the perfect apartment close to her workplace.",
+                "zh": "她找到了靠近工作地點的完美公寓。",
+                "level": "中級"
+            },
+            {
+                "en": "Achieving absolute perfection in complex systems requires meticulous engineering.",
+                "zh": "在複雜系統中實現絕對完美需要一絲不苟的工程設計。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "word": "certainly",
+        "part_of_speech": "adv.",
+        "meaning": "必定",
+        "examples": [
+            {
+                "en": "Joe studies very hard, so he will certainly pass the exam.",
+                "zh": "Joe 很用功，所以他一定會通過考試。",
+                "level": "初級"
+            },
+            {
+                "en": "I will certainly help you with your project.",
+                "zh": "我一定會幫你處理你的專案。",
+                "level": "初級"
+            },
+            {
+                "en": "This new policy will certainly improve employee satisfaction.",
+                "zh": "這項新政策勢必會提升員工滿意度。",
+                "level": "中級"
+            },
+            {
+                "en": "You can certainly rely on her expertise in this matter.",
+                "zh": "在這一點上，你絕對可以信賴她的專業知識。",
+                "level": "中級"
+            },
+            {
+                "en": "Advanced automation will certainly redefine operational workflows across industries.",
+                "zh": "先進的自動化勢必重新定義各產業的營運工作流程。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "word": "unforgettable",
+        "part_of_speech": "adj.",
+        "meaning": "令人難忘的",
+        "examples": [
+            {
+                "en": "My one-month trip to Italy on my own was unforgettable.",
+                "zh": "我獨自義大利一個月的旅行令人難忘。",
+                "level": "初級"
+            },
+            {
+                "en": "We had an unforgettable evening celebrating our graduation.",
+                "zh": "我們度過了一個慶祝畢業的難忘夜晚。",
+                "level": "初級"
+            },
+            {
+                "en": "Meeting my childhood hero was an unforgettable experience.",
+                "zh": "見到我兒時的英雄是一段難忘的經歷。",
+                "level": "中級"
+            },
+            {
+                "en": "The breathtaking sunset over the ocean left an unforgettable impression.",
+                "zh": "海面上壯麗的日落留下了難忘的印象。",
+                "level": "中級"
+            },
+            {
+                "en": "Her visionary leadership remains an unforgettable milestone in corporate history.",
+                "zh": "她具前瞻性的領導力成為企業歷史上難忘的里程碑。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "word": "memory",
+        "part_of_speech": "n.",
+        "meaning": "回憶",
+        "examples": [
+            {
+                "en": "Every time Anna looks at those photos, she thinks of the sweet memories of her high school life.",
+                "zh": "每次 Anna 看那些照片，她就想起高中生活的甜蜜回憶。",
+                "level": "初級"
+            },
+            {
+                "en": "I have good memories of my childhood.",
+                "zh": "我有很好的童年回憶。",
+                "level": "初級"
+            },
+            {
+                "en": "The old photograph brought back warm memories of the past.",
+                "zh": "這張舊照片勾起了對過去溫馨的回憶。",
+                "level": "中級"
+            },
+            {
+                "en": "She has a sharp memory and can remember names easily.",
+                "zh": "她記憶力敏銳，能輕易記住名字。",
+                "level": "中級"
+            },
+            {
+                "en": "Optimizing cache memory performance is vital for high-speed computing hardware.",
+                "zh": "優化快取記憶體效能對高速運算硬體至關重要。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "word": "all the time",
+        "part_of_speech": "phrase",
+        "meaning": "一直",
+        "examples": [
+            {
+                "en": "Stacy asks questions all the time because she wants to know more about the world.",
+                "zh": "Stacy 總是問問題，因為她想更了解這個世界。",
+                "level": "初級"
+            },
+            {
+                "en": "He checks his smartphone all the time.",
+                "zh": "他總是查看他的智慧型手機。",
+                "level": "初級"
+            },
+            {
+                "en": "Weather patterns are changing all the time due to climate shifts.",
+                "zh": "由於氣候變遷，天氣型態隨時都在改變。",
+                "level": "中級"
+            },
+            {
+                "en": "She practices her presentation skills all the time to gain confidence.",
+                "zh": "她總是練習簡報技巧以獲得信心。",
+                "level": "中級"
+            },
+            {
+                "en": "Dynamic market conditions require enterprises to adapt their strategies all the time.",
+                "zh": "動態的市場狀況要求企業時刻調整其策略。",
+                "level": "中高級"
+            }
+        ]
+    }
+]

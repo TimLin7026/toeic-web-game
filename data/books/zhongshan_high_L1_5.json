@@ -1,0 +1,563 @@
+[
+    {
+        "id": 1,
+        "word": "difficulty",
+        "part_of_speech": "n.",
+        "meaning": "困難",
+        "examples": [
+            {
+                "en": "My grandmother is 75 years old, but she can use her smartphone without difficulty.",
+                "zh": "我祖母 75 歲了，但是她可以毫無困難地使用她的智慧型手機。",
+                "level": "初級"
+            },
+            {
+                "en": "Many students experience difficulty when learning a new language.",
+                "zh": "許多學生在學習新語言時會遇到困難。",
+                "level": "初級"
+            },
+            {
+                "en": "The team managed to overcome every technical difficulty during the project.",
+                "zh": "團隊設法克服了專案中的每一個技術困難。",
+                "level": "中級"
+            },
+            {
+                "en": "She had great difficulty explaining her complicated ideas to the audience.",
+                "zh": "她向觀眾解釋她複雜的想法時遇到了很大的困難。",
+                "level": "中級"
+            },
+            {
+                "en": "Navigating unforeseen financial difficulties requires meticulous strategic planning.",
+                "zh": "應對未預見的財務困難需要嚴謹的策略規劃。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "word": "otherwise",
+        "part_of_speech": "adv.",
+        "meaning": "否則；不然",
+        "examples": [
+            {
+                "en": "You'd better get up now; otherwise, you won't be able to catch the flight.",
+                "zh": "你最好現在起床；否則，你將無法趕上飛機。",
+                "level": "初級"
+            },
+            {
+                "en": "Hurry up, otherwise we will miss the train.",
+                "zh": "快一點，否則我們會趕不上火車。",
+                "level": "初級"
+            },
+            {
+                "en": "He was exhausted, but he forced himself to work otherwise he would fall behind.",
+                "zh": "他精疲力竭，但還是逼自己工作，否則他會落後。",
+                "level": "中級"
+            },
+            {
+                "en": "The weather report predicted rain, but the weather turned out otherwise.",
+                "zh": "氣象預報預測會下雨，但結果卻完全不是如此。",
+                "level": "中級"
+            },
+            {
+                "en": "Environmental regulations prohibit industrial dumping that would otherwise degrade local ecosystems.",
+                "zh": "環境法規禁止工業傾倒，否則會惡化當地生態系統。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "word": "aware",
+        "part_of_speech": "adj.",
+        "meaning": "知道的；意識到的",
+        "examples": [
+            {
+                "en": "Jenny's boss was standing behind her while she was working, but she wasn't aware of it.",
+                "zh": "當 Jenny 在工作時，她的老闆就站在她身后，但她卻全然不知。",
+                "level": "初級"
+            },
+            {
+                "en": "Are you aware of the new company policies?",
+                "zh": "你知道公司的新政策嗎？",
+                "level": "初級"
+            },
+            {
+                "en": "She became aware of the potential risks before signing the contract.",
+                "zh": "她在簽署合約前意識到了潛在的風險。",
+                "level": "中級"
+            },
+            {
+                "en": "Everyone should be fully aware of the importance of data privacy.",
+                "zh": "每個人都應該充分意識到資料隱私的重要性。",
+                "level": "中級"
+            },
+            {
+                "en": "Maintaining operational security ensures employees remain acutely aware of cyber threats.",
+                "zh": "維持營運安全確保員工對網路威脅保持高度警覺。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "word": "eventually",
+        "part_of_speech": "adv.",
+        "meaning": "終於；最後",
+        "examples": [
+            {
+                "en": "Oliver drank too much and never cared about his health. He eventually got sick.",
+                "zh": "Oliver 喝太多酒，從來不顧及他的健康，最後終於生病了。",
+                "level": "初級"
+            },
+            {
+                "en": "If you work hard, you will eventually achieve your goals.",
+                "zh": "如果你努力工作，你最終會實現你的目標。",
+                "level": "初級"
+            },
+            {
+                "en": "After hours of searching, the rescue team eventually found the lost hikers.",
+                "zh": "經過數小時的搜尋，救援隊終於找到了迷路的健行者。",
+                "level": "中級"
+            },
+            {
+                "en": "The complex software bug was eventually fixed by the senior developer.",
+                "zh": "這個複雜的軟體錯誤最終由資深開發人員修復了。",
+                "level": "中級"
+            },
+            {
+                "en": "Persistently pursuing innovative solutions eventually transforms an enterprise's market standing.",
+                "zh": "堅持追求創新解決方案最終會轉變企業的市場地位。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "word": "confirm",
+        "part_of_speech": "v.",
+        "meaning": "確認",
+        "examples": [
+            {
+                "en": "I called the hotel to confirm our stay for next weekend.",
+                "zh": "我打電話給飯店確認我們下週末的住宿。",
+                "level": "初級"
+            },
+            {
+                "en": "Please confirm your email address by clicking the link.",
+                "zh": "請點擊連結確認您的電子郵件地址。",
+                "level": "初級"
+            },
+            {
+                "en": "The laboratory tests confirmed that the water was safe to drink.",
+                "zh": "實驗室測試確認該水質可以安全飲用。",
+                "level": "中級"
+            },
+            {
+                "en": "The manager will send an official email to confirm the meeting schedule.",
+                "zh": "經理將發送官方郵件以確認會議日程。",
+                "level": "中級"
+            },
+            {
+                "en": "Rigorous empirical data successfully confirms the validity of the scientific hypothesis.",
+                "zh": "嚴謹的實證數據成功證實了科學假設的有效性。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "word": "scared",
+        "part_of_speech": "adj.",
+        "meaning": "害怕的",
+        "examples": [
+            {
+                "en": "My little brother is scared of bugs. He is even afraid of ants.",
+                "zh": "我的小弟害怕蟲子，他甚至怕螞蟻。",
+                "level": "初級"
+            },
+            {
+                "en": "Don't be scared; I will protect you.",
+                "zh": "不要害怕；我會保護你。",
+                "level": "初級"
+            },
+            {
+                "en": "The little girl was scared when she heard the loud thunder outside.",
+                "zh": "小女孩聽到外面巨大的雷聲時感到很害怕。",
+                "level": "中級"
+            },
+            {
+                "en": "Many people are scared of speaking in front of a large audience.",
+                "zh": "很多人害怕在大眾面前發言。",
+                "level": "中級"
+            },
+            {
+                "en": "Navigating unprecedented economic shifts often makes market investors deeply scared.",
+                "zh": "應對空前的經濟轉變常使市場投資人感到恐慌。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "word": "approach",
+        "part_of_speech": "v.",
+        "meaning": "靠近；接近",
+        "examples": [
+            {
+                "en": "Because the final exams are approaching, most of my classmates are studying in the library.",
+                "zh": "因為期末考將近，大部分的同學都在圖書館裡讀書。",
+                "level": "初級"
+            },
+            {
+                "en": "Winter is approaching, so the weather is getting colder.",
+                "zh": "冬天快到了，所以天氣變得越來越冷。",
+                "level": "初級"
+            },
+            {
+                "en": "As we approached the station, we saw the train waiting on the track.",
+                "zh": "當我們接近車站時，我們看到火車正停在軌道上等待。",
+                "level": "中級"
+            },
+            {
+                "en": "The company decided to adopt a new marketing approach to attract younger customers.",
+                "zh": "公司決定採用新的行銷方法來吸引年輕客戶。",
+                "level": "中級"
+            },
+            {
+                "en": "Innovative technological advancements approach a paradigm shift in modern education.",
+                "zh": "創新的技術進步正引領現代教育走向典範轉移。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "word": "shelter",
+        "part_of_speech": "n.",
+        "meaning": "收容所；避難所",
+        "examples": [
+            {
+                "en": "It is better to get a pet from an animal shelter; you may save its life.",
+                "zh": "從動物收容所領養寵物是比較好的，你或許可以救牠一命。",
+                "level": "初級"
+            },
+            {
+                "en": "The hikers sought shelter from the heavy rain under a large tree.",
+                "zh": "健行者在一棵大樹下尋找避雨的地方。",
+                "level": "初級"
+            },
+            {
+                "en": "Stray cats and dogs are well cared for at the municipal shelter.",
+                "zh": "流浪貓狗在市立收容所受到妥善照顧。",
+                "level": "中級"
+            },
+            {
+                "en": "Emergency shelters were set up quickly when the hurricane struck.",
+                "zh": "當颶風侵襲時，緊急避難所迅速設立。",
+                "level": "中級"
+            },
+            {
+                "en": "Providing adequate humanitarian shelter is a crucial priority during natural disasters.",
+                "zh": "在自然災害期間，提供充足的人道主義庇護所是至關重要的首要任務。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "word": "crowded",
+        "part_of_speech": "adj.",
+        "meaning": "擁擠的",
+        "examples": [
+            {
+                "en": "The department store becomes very crowded when there is a big sale.",
+                "zh": "百貨公司在大拍賣時變得非常擁擠。",
+                "level": "初級"
+            },
+            {
+                "en": "The subway trains are always crowded during morning rush hours.",
+                "zh": "早晨尖峰時段的地鐵總是十分擁擠。",
+                "level": "初級"
+            },
+            {
+                "en": "We had difficulty finding a seat in the crowded restaurant.",
+                "zh": "我們在擁擠的餐廳裡很難找到座位。",
+                "level": "中級"
+            },
+            {
+                "en": "The popular tourist spot was too crowded for us to enjoy.",
+                "zh": "這個熱門景點人太多了，讓我們無法好好享受。",
+                "level": "中級"
+            },
+            {
+                "en": "Managing pedestrian traffic in densely crowded urban spaces requires sophisticated planning.",
+                "zh": "在人口密集的擁擠都市空間中管理行人交通需要精密的規劃。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "word": "forever",
+        "part_of_speech": "adv.",
+        "meaning": "永遠",
+        "examples": [
+            {
+                "en": "I enjoy my job as a waiter, but I don't think I will work in the restaurant forever.",
+                "zh": "我喜歡當服務生的工作，但我認為我不會永遠在餐廳裡工作。",
+                "level": "初級"
+            },
+            {
+                "en": "True friendship lasts forever.",
+                "zh": "真正的友誼天長地久。",
+                "level": "初級"
+            },
+            {
+                "en": "She promised to cherish these memories forever.",
+                "zh": "她答應永遠珍惜這些回憶。",
+                "level": "中級"
+            },
+            {
+                "en": "Digital data stored in the cloud is not necessarily preserved forever.",
+                "zh": "儲存在雲端的數位資料不見得能永久保存。",
+                "level": "中級"
+            },
+            {
+                "en": "Historical monuments stand as forever reminders of ancient civilizations.",
+                "zh": "歷史古蹟作為古代文明的永恆記憶而屹立不搖。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "word": "terrified",
+        "part_of_speech": "adj.",
+        "meaning": "受到驚嚇的",
+        "examples": [
+            {
+                "en": "The terrified kitten hid under a car when a boy tried to catch her.",
+                "zh": "當一個男孩試圖抓她時，這一隻受到驚嚇的小貓躲在車子底下。",
+                "level": "初級"
+            },
+            {
+                "en": "He was terrified of speaking in public.",
+                "zh": "他非常害怕在公眾面前發言。",
+                "level": "初級"
+            },
+            {
+                "en": "The children were terrified by the loud thunder during the storm.",
+                "zh": "孩子們被暴風雨中的巨大雷聲嚇壞了。",
+                "level": "中級"
+            },
+            {
+                "en": "She felt terrified when she realized she was lost in the dark woods.",
+                "zh": "當她發現自己迷失在黑暗樹林中時，她感到驚恐萬分。",
+                "level": "中級"
+            },
+            {
+                "en": "Market analysts expressed terrified caution amidst unprecedented economic uncertainty.",
+                "zh": "市場分析師在空前的經濟不確定性中表達了恐慌的謹慎態度。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "word": "terrify",
+        "part_of_speech": "v.",
+        "meaning": "使驚嚇",
+        "examples": [
+            {
+                "en": "The monster on TV terrified the little girl.",
+                "zh": "電視上的怪獸嚇到小女孩。",
+                "level": "初級"
+            },
+            {
+                "en": "Heights tend to terrify some people.",
+                "zh": "高度往往會嚇到有些人。",
+                "level": "初級"
+            },
+            {
+                "en": "The sudden loud noise terrified the stray dog.",
+                "zh": "突如其來的巨大聲響嚇壞了流浪狗。",
+                "level": "中級"
+            },
+            {
+                "en": "Horror movies are designed to terrify audiences.",
+                "zh": "恐怖電影旨在嚇唬觀眾。",
+                "level": "中級"
+            },
+            {
+                "en": "Cybersecurity threats continually terrify corporate risk management departments.",
+                "zh": "網路安全威脅不斷嚇壞企業風險管理部門。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "word": "exhausted",
+        "part_of_speech": "adj.",
+        "meaning": "精疲力竭的",
+        "examples": [
+            {
+                "en": "The kids played around for hours in the yard, and they all felt exhausted.",
+                "zh": "孩子們在庭院玩了好幾個小時，他們全部精疲力竭。",
+                "level": "初級"
+            },
+            {
+                "en": "I feel exhausted after working a twelve-hour shift.",
+                "zh": "上了十二小時的班後，我覺得精疲力竭。",
+                "level": "初級"
+            },
+            {
+                "en": "The marathon runners looked completely exhausted at the finish line.",
+                "zh": "馬拉松選手在終點線看起來精疲力竭。",
+                "level": "中級"
+            },
+            {
+                "en": "She was too exhausted to cook dinner, so they ordered takeout.",
+                "zh": "她累得沒辦法煮晚餐，所以他們點了外賣。",
+                "level": "中級"
+            },
+            {
+                "en": "Sustained overwork leaves employees physically and mentally exhausted.",
+                "zh": "持續過勞會讓員工身心俱疲。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "word": "exhaust",
+        "part_of_speech": "v.",
+        "meaning": "使精疲力竭",
+        "examples": [
+            {
+                "en": "The long walk exhausted the old man, so he lay down and took a nap.",
+                "zh": "走了很久的路讓這個老人精疲力竭，所以他躺下來小睡一下。",
+                "level": "初級"
+            },
+            {
+                "en": "Intense studying before the exam completely exhausted him.",
+                "zh": "考試前的密集K書讓他精疲力竭。",
+                "level": "初級"
+            },
+            {
+                "en": "The grueling training schedule exhausted the team members.",
+                "zh": "艱苦的訓練日程讓團隊成員體力耗盡。",
+                "level": "中級"
+            },
+            {
+                "en": "Industrial production can rapidly exhaust local natural resources.",
+                "zh": "工業生產會迅速耗盡當地自然資源。",
+                "level": "中級"
+            },
+            {
+                "en": "Unregulated resource extraction will eventually exhaust global energy supplies.",
+                "zh": "不受規範的資源開採終將耗盡全球能源供應。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "word": "awake",
+        "part_of_speech": "adj.",
+        "meaning": "醒著的",
+        "examples": [
+            {
+                "en": "When Dad needs to work late, he usually drinks a cup of black coffee to stay awake.",
+                "zh": "當爸爸需要工作到比較晚時，他常常喝杯黑咖啡來保持清醒。",
+                "level": "初級"
+            },
+            {
+                "en": "She lay wide awake in bed, unable to fall asleep.",
+                "zh": "她躺在床上毫無睡意，完全清醒著。",
+                "level": "初級"
+            },
+            {
+                "en": "The baby remained awake throughout the entire flight.",
+                "zh": "這名嬰兒在整個航程中都是醒著的。",
+                "level": "中級"
+            },
+            {
+                "en": "Drinking coffee too late at night can keep you awake for hours.",
+                "zh": "太晚喝咖啡會讓你清醒好幾個小時。",
+                "level": "中級"
+            },
+            {
+                "en": "Maintaining vigilant situational awareness keeps operators mentally awake during night shifts.",
+                "zh": "保持警覺的情境意識能讓作業員在夜班期間保持精神清醒。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "word": "adopt",
+        "part_of_speech": "v.",
+        "meaning": "領養",
+        "examples": [
+            {
+                "en": "Lily wanted to have a dog, so her mom took her to a shelter to adopt one.",
+                "zh": "因為 Lily 想要養狗，所以她的媽媽帶她去收容所領養一隻。",
+                "level": "初級"
+            },
+            {
+                "en": "Many families choose to adopt homeless pets.",
+                "zh": "許多家庭選擇領養無家可歸的寵物。",
+                "level": "初級"
+            },
+            {
+                "en": "The city council decided to adopt the new environmental policy.",
+                "zh": "市議會決定採納這項新的環境政策。",
+                "level": "中級"
+            },
+            {
+                "en": "She hopes to adopt a more active lifestyle this year.",
+                "zh": "她希望今年能採取更積極的生活方式。",
+                "level": "中級"
+            },
+            {
+                "en": "Corporations increasingly adopt sustainable business practices to meet global standards.",
+                "zh": "企業日益採用永續的商業實踐來符合全球標準。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "word": "blessing",
+        "part_of_speech": "n.",
+        "meaning": "幸運的事",
+        "examples": [
+            {
+                "en": "It was a blessing that Ruby didn't really get hurt when she fell off the second-floor balcony.",
+                "zh": "Ruby 從二樓陽台摔下來卻沒怎麼受傷，真是件幸運的事。",
+                "level": "初級"
+            },
+            {
+                "en": "Good health is the greatest blessing in life.",
+                "zh": "健康的身體是人生最大的福氣。",
+                "level": "初級"
+            },
+            {
+                "en": "Her parents gave their blessing to the young couple's marriage.",
+                "zh": "她的父母給這對年輕夫妻的婚姻給予了祝福。",
+                "level": "中級"
+            },
+            {
+                "en": "Sometimes losing a job turns out to be a blessing in disguise.",
+                "zh": "有時候失業反而因禍得福。",
+                "level": "中級"
+            },
+            {
+                "en": "Experiencing such profound challenges proved to be a mixed blessing for his career growth.",
+                "zh": "經歷如此深遠的挑戰對他的職涯成長來說可謂禍福參半。",
+                "level": "中高級"
+            }
+        ]
+    }
+]

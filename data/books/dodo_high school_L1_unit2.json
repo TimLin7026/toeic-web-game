@@ -1,0 +1,563 @@
+[
+    {
+        "id": 1,
+        "word": "prepare",
+        "part_of_speech": "v.",
+        "meaning": "準備",
+        "examples": [
+            {
+                "en": "Dad is good at cooking, and he likes to prepare dinner for us.",
+                "zh": "父親精通廚藝，他喜歡為我們準備晚餐。",
+                "level": "初級"
+            },
+            {
+                "en": "Students need to prepare for the final exam.",
+                "zh": "學生需要為期末考做準備。",
+                "level": "初級"
+            },
+            {
+                "en": "The chef spent hours preparing the fresh ingredients for the banquet.",
+                "zh": "主廚花了好幾個小時為宴會準備新鮮食材。",
+                "level": "中級"
+            },
+            {
+                "en": "It is important to prepare thoroughly before attending a job interview.",
+                "zh": "在參加工作面試前做充分準備是很重要的。",
+                "level": "中級"
+            },
+            {
+                "en": "The government is taking measures to prepare the infrastructure for natural disasters.",
+                "zh": "政府正在採取措施為應對自然災害準備基礎設施。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "word": "consideration",
+        "part_of_speech": "n.",
+        "meaning": "考慮",
+        "examples": [
+            {
+                "en": "Lucy always takes price into consideration when she buys new dresses.",
+                "zh": "Lucy 買新裝時總是會把價錢列入考慮。",
+                "level": "初級"
+            },
+            {
+                "en": "Thank you for your kind consideration.",
+                "zh": "謝謝你的貼心考量。",
+                "level": "初級"
+            },
+            {
+                "en": "All proposals will be taken into serious consideration by the board.",
+                "zh": "所有提案都將由董事會進行嚴肅考慮。",
+                "level": "中級"
+            },
+            {
+                "en": "Environmental impact is an important consideration in urban planning.",
+                "zh": "環境影響是都市規劃中的一個重要考量。",
+                "level": "中級"
+            },
+            {
+                "en": "Strategic market expansion requires careful consideration of geopolitical risks.",
+                "zh": "策略性市場擴張需要仔細考量地緣政治風險。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "word": "guest",
+        "part_of_speech": "n.",
+        "meaning": "客人",
+        "examples": [
+            {
+                "en": "All the guests at Jessica and Brian's wedding were happy and excited.",
+                "zh": "在 Jessica 與 Brian 婚禮上的所有賓客既高興又興奮。",
+                "level": "初級"
+            },
+            {
+                "en": "The hotel welcomed its VIP guests with great hospitality.",
+                "zh": "飯店以高度熱情迎接貴賓。",
+                "level": "初級"
+            },
+            {
+                "en": "Several notable guests attended the annual charity gala.",
+                "zh": "幾位知名嘉賓出席了年度慈善晚會。",
+                "level": "中級"
+            },
+            {
+                "en": "The speaker answered questions from the audience and invited guests.",
+                "zh": "主講人回答了觀眾與受邀客人的提問。",
+                "level": "中級"
+            },
+            {
+                "en": "Ensuring guest satisfaction is the primary objective of hospitality management.",
+                "zh": "確保賓客滿意度是餐旅管理的首要目標。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "word": "host",
+        "part_of_speech": "n.",
+        "meaning": "主辦",
+        "examples": [
+            {
+                "en": "After dinner, the host asked one of his guests to play the piano.",
+                "zh": "晚餐後，主人請求其中一位來賓演奏鋼琴。",
+                "level": "初級"
+            },
+            {
+                "en": "Everybody here hopes our city will host the Summer Olympics someday.",
+                "zh": "這裡的每一個人都希望我們的城市將來有一天能主辦夏季奧運。",
+                "level": "初級"
+            },
+            {
+                "en": "Taiwan will host an international technology conference next month.",
+                "zh": "台灣下個月將主辦一場國際科技會議。",
+                "level": "中級"
+            },
+            {
+                "en": "She did a wonderful job as the host of the television show.",
+                "zh": "她擔任該電視節目主持人的表現非常出色。",
+                "level": "中級"
+            },
+            {
+                "en": "Hosting multinational summits requires meticulous logistical coordination.",
+                "zh": "主辦跨國峰會需要嚴謹的後勤協調。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "word": "pleasant",
+        "part_of_speech": "adj.",
+        "meaning": "愉快的",
+        "examples": [
+            {
+                "en": "Our trip to Canada was pleasant. I'll remember it for the rest of my life.",
+                "zh": "我們的加拿大之旅非常愉快。我這輩子都會記得它的。",
+                "level": "初級"
+            },
+            {
+                "en": "We had a pleasant conversation over a cup of coffee.",
+                "zh": "我們喝著咖啡進行了愉快的對話。",
+                "level": "初級"
+            },
+            {
+                "en": "The pleasant weather made our outdoor picnic even more enjoyable.",
+                "zh": "宜人的天氣讓我們的戶外野餐更加盡興。",
+                "level": "中級"
+            },
+            {
+                "en": "She has a very pleasant personality that welcomes everyone.",
+                "zh": "她擁有非常討人喜歡的個性，能迎接每一個人。",
+                "level": "中級"
+            },
+            {
+                "en": "Creating a pleasant acoustic environment enhances workplace productivity.",
+                "zh": "營造愉快的聲學環境能提升職場生產力。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "word": "awkward",
+        "part_of_speech": "adj.",
+        "meaning": "尷尬的",
+        "examples": [
+            {
+                "en": "The superstar didn't want to answer the reporter's awkward questions about her personal life.",
+                "zh": "這名超級巨星不想回答記者所有關於她私生活的尷尬問題。",
+                "level": "初級"
+            },
+            {
+                "en": "There was an awkward silence in the elevator.",
+                "zh": "電梯裡出現了一陣尷尬的沉默。",
+                "level": "初級"
+            },
+            {
+                "en": "I asked him an awkward question and immediately regretted it.",
+                "zh": "我問了他一個尷尬的問題，隨即感到後悔。",
+                "level": "中級"
+            },
+            {
+                "en": "He tried to break the awkward tension by telling a joke.",
+                "zh": "他試圖透過講笑話來打破尷尬的緊張氣氛。",
+                "level": "中級"
+            },
+            {
+                "en": "Navigating cross-cultural miscommunications can sometimes be socially awkward.",
+                "zh": "處理跨文化的溝通誤解有時在社交上會感到尷尬。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "word": "therefore",
+        "part_of_speech": "adv.",
+        "meaning": "因此",
+        "examples": [
+            {
+                "en": "Sue has a good voice and enjoys singing; therefore, she plans to be a singer.",
+                "zh": "Sue 有一副很好的歌喉，而且喜歡唱歌。因此，她打算以後要當歌手。",
+                "level": "初級"
+            },
+            {
+                "en": "It started to rain; therefore, we postponed the sports meeting.",
+                "zh": "開始下雨了；因此，我們延期了運動會。",
+                "level": "初級"
+            },
+            {
+                "en": "The company missed its quarterly target and therefore reduced its budget.",
+                "zh": "公司未達到季度目標，因此削減了預算。",
+                "level": "中級"
+            },
+            {
+                "en": "She worked diligently and therefore earned a well-deserved promotion.",
+                "zh": "她努力工作，因此贏得了實至名歸的升遷。",
+                "level": "中級"
+            },
+            {
+                "en": "Operational efficiency declined; therefore, management initiated a comprehensive audit.",
+                "zh": "營運效率下降；因此，管理階層發起了全面稽核。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "word": "assign",
+        "part_of_speech": "v.",
+        "meaning": "分配",
+        "examples": [
+            {
+                "en": "Dad usually assigns us to clean the living room and bedrooms on Sundays.",
+                "zh": "爸爸星期天通常會指派我們整理客廳及臥室。",
+                "level": "初級"
+            },
+            {
+                "en": "The teacher assigned a short essay for homework.",
+                "zh": "老師指派了一篇短文作為作業。",
+                "level": "初級"
+            },
+            {
+                "en": "The manager assigned specific tasks to each team member.",
+                "zh": "經理為每個團隊成員分配了具體任務。",
+                "level": "中級"
+            },
+            {
+                "en": "New employees are assigned a mentor to help them adapt quickly.",
+                "zh": "新進員工會被指派一名導師來協助他們快速適應。",
+                "level": "中級"
+            },
+            {
+                "en": "Dynamic resource allocation algorithms automatically assign computing tasks.",
+                "zh": "動態資源分配演算法會自動指派運算任務。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "word": "originally",
+        "part_of_speech": "adv.",
+        "meaning": "起初",
+        "examples": [
+            {
+                "en": "Linda is originally from America, but now she lives in South Korea with her husband.",
+                "zh": "Linda 原來來自美國，但她現在跟她先生住在南韓。",
+                "level": "初級"
+            },
+            {
+                "en": "The meeting was originally scheduled for Monday, but it was postponed.",
+                "zh": "會議原訂於星期一舉行，但被延期了。",
+                "level": "初級"
+            },
+            {
+                "en": "This historic building was originally used as a post office.",
+                "zh": "這棟歷史建築原先是用作郵局的。",
+                "level": "中級"
+            },
+            {
+                "en": "He originally planned to study engineering, but changed his major to design.",
+                "zh": "他原本計畫攻讀工程學，但後來把主修改成了設計。",
+                "level": "中級"
+            },
+            {
+                "en": "The manuscript was originally written in Latin before being translated.",
+                "zh": "該手稿在被翻譯之前，原本是用拉丁文寫成的。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "word": "unexpected",
+        "part_of_speech": "adj.",
+        "meaning": "出乎意料的",
+        "examples": [
+            {
+                "en": "The kids were surprised by their grandparents' unexpected visit.",
+                "zh": "孩子們對於他們祖父母出乎意料的拜訪感到驚訝。",
+                "level": "初級"
+            },
+            {
+                "en": "We received an unexpected package in the mail today.",
+                "zh": "我們今天在郵件中收到了一個意想不到的包裹。",
+                "level": "初級"
+            },
+            {
+                "en": "The company reported an unexpected profit surge this quarter.",
+                "zh": "該公司本季報告了出乎意料的利潤激增。",
+                "level": "中級"
+            },
+            {
+                "en": "An unexpected traffic jam made me late for the appointment.",
+                "zh": "一場突如其來的交通堵塞讓我的約會遲到了。",
+                "level": "中級"
+            },
+            {
+                "en": "Mitigating unexpected market volatility requires robust contingency planning.",
+                "zh": "緩解出乎意料的市場波動需要健全的應變規劃。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "word": "fair",
+        "part_of_speech": "n.",
+        "meaning": "市集",
+        "examples": [
+            {
+                "en": "We went to a book fair yesterday and bought some comic books.",
+                "zh": "我們昨天去書展，買了一些漫畫書。",
+                "level": "初級"
+            },
+            {
+                "en": "The annual science fair showcases creative student projects.",
+                "zh": "年度科學博覽會展示了學生們的創意專案。",
+                "level": "初級"
+            },
+            {
+                "en": "She showcased her handmade crafts at the local weekend craft fair.",
+                "zh": "她在當地的週末手作市集上展示了她的手工藝品。",
+                "level": "中級"
+            },
+            {
+                "en": "The technology fair attracted thousands of international exhibitors.",
+                "zh": "科技博覽會吸引了數千名國際參展商。",
+                "level": "中級"
+            },
+            {
+                "en": "International trade fairs provide vital networking opportunities for manufacturers.",
+                "zh": "國際貿易展覽會為製造商提供了重要的交流機會。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "word": "impress",
+        "part_of_speech": "v.",
+        "meaning": "留下深刻印象",
+        "examples": [
+            {
+                "en": "The delicious foods in the night markets of Taiwan impress many people from other countries.",
+                "zh": "臺灣夜市的美食使許多外國人留下深刻的印象。",
+                "level": "初級"
+            },
+            {
+                "en": "Her presentation managed to impress the interviewers.",
+                "zh": "她的簡報成功給面試官留下了深刻印象。",
+                "level": "初級"
+            },
+            {
+                "en": "He tried to impress his friends with his magic tricks.",
+                "zh": "他試圖用他的魔術把戲給朋友留下深刻印象。",
+                "level": "中級"
+            },
+            {
+                "en": "The historical architecture of the city never fails to impress visitors.",
+                "zh": "這座城市的歷史建築總是能讓訪客留下深刻印象。",
+                "level": "中級"
+            },
+            {
+                "en": "Advanced engineering capabilities consistently impress global clientele.",
+                "zh": "先進的工程能力始終讓全球客戶留下深刻印象。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "word": "secret",
+        "part_of_speech": "adj.",
+        "meaning": "秘密的",
+        "examples": [
+            {
+                "en": "Tim has a secret hiding place for his favorite toys, so his baby brother can't take them.",
+                "zh": "Tim 有一個藏他最愛玩具的秘密地點，所以他的弟弟不會拿走它們。",
+                "level": "初級"
+            },
+            {
+                "en": "They met at a secret location to discuss the plan.",
+                "zh": "他們在一個秘密地點碰面討論該計畫。",
+                "level": "初級"
+            },
+            {
+                "en": "She kept her recipe for apple pie a closely guarded secret.",
+                "zh": "她把蘋果派的食譜保密得滴水不漏。",
+                "level": "中級"
+            },
+            {
+                "en": "The intelligence agency uncovered a secret underground network.",
+                "zh": "情報機構破獲了一個秘密地下網路。",
+                "level": "中級"
+            },
+            {
+                "en": "Maintaining operational security requires strict protection of trade secrets.",
+                "zh": "維持營運安全需要對商業機密進行嚴格保護。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "word": "enjoyable",
+        "part_of_speech": "adj.",
+        "meaning": "愉快的",
+        "examples": [
+            {
+                "en": "My family went to Kenting and had an enjoyable holiday.",
+                "zh": "我們家去墾丁並且度過了一個愉快的假日。",
+                "level": "初級"
+            },
+            {
+                "en": "We had an enjoyable dinner party with our close friends.",
+                "zh": "我們與摯友度過了一場愉快的晚宴。",
+                "level": "初級"
+            },
+            {
+                "en": "Reading a good novel in the afternoon is always an enjoyable activity.",
+                "zh": "下午讀一本好小說總是一件令人愉快的事。",
+                "level": "中級"
+            },
+            {
+                "en": "The museum tour was informative and remarkably enjoyable.",
+                "zh": "博物館導覽既具知識性又相當令人愉快。",
+                "level": "中級"
+            },
+            {
+                "en": "Fostering an enjoyable collaborative atmosphere boosts overall staff morale.",
+                "zh": "營造愉快的協作氛圍能提振整體員工士氣。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "word": "experience",
+        "part_of_speech": "n.",
+        "meaning": "經驗",
+        "examples": [
+            {
+                "en": "Jenny had many interesting experiences during her summer camp in New York City.",
+                "zh": "在紐約市參加夏令營期間，Jenny 獲得許多有趣的經驗。",
+                "level": "初級"
+            },
+            {
+                "en": "Do you have any prior experience in customer service?",
+                "zh": "你先前有任何客服經驗嗎？",
+                "level": "初級"
+            },
+            {
+                "en": "Traveling alone can be a life-changing experience for young adults.",
+                "zh": "獨自旅行對年輕人來說可能是一次改變人生的經歷。",
+                "level": "中級"
+            },
+            {
+                "en": "He gained valuable management experience working in large corporations.",
+                "zh": "他在大企業工作的經歷中獲得了寶貴的管理經驗。",
+                "level": "中級"
+            },
+            {
+                "en": "Comprehensive professional experience significantly accelerates executive decision-making.",
+                "zh": "豐富的專業經驗能顯著加速高層決策。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "word": "date back (to)",
+        "part_of_speech": "phrase",
+        "meaning": "追溯到",
+        "examples": [
+            {
+                "en": "The church in the city dates back to the late 1800s.",
+                "zh": "在這城市裡的那座教堂追溯到 19 世紀末。",
+                "level": "初級"
+            },
+            {
+                "en": "These ancient traditions date back hundreds of years.",
+                "zh": "這些古老的傳統可以追溯到數百年前。",
+                "level": "初級"
+            },
+            {
+                "en": "Their friendship dates back to their high school days.",
+                "zh": "他們的友誼可以追溯到高中時代。",
+                "level": "中級"
+            },
+            {
+                "en": "The manuscript's origins date back to the Ming Dynasty.",
+                "zh": "該手稿的起源可追溯至明朝。",
+                "level": "中級"
+            },
+            {
+                "en": "Archaeological artifacts excavated on site date back to prehistoric settlements.",
+                "zh": "現場出土的考古文物可追溯至史前聚落。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "word": "show up",
+        "part_of_speech": "phrase",
+        "meaning": "出現",
+        "examples": [
+            {
+                "en": "When the superstar showed up, all the fans were very excited and began to shout loudly.",
+                "zh": "當那名超級巨星出現時，所有粉絲興奮不已，開始大聲尖叫。",
+                "level": "初級"
+            },
+            {
+                "en": "He didn't show up for the meeting this morning.",
+                "zh": "他今天早上沒有出席會議。",
+                "level": "初級"
+            },
+            {
+                "en": "Many volunteers showed up to help clean the beach.",
+                "zh": "許多志工出現來協助清理海灘。",
+                "level": "中級"
+            },
+            {
+                "en": "She didn't expect him to show up at her birthday party.",
+                "zh": "她沒想到他會出現在她的生日派對上。",
+                "level": "中級"
+            },
+            {
+                "en": "Key stakeholders failed to show up, leading to a postponement of negotiations.",
+                "zh": "關鍵利害關係人未能出席，導致談判延期。",
+                "level": "中高級"
+            }
+        ]
+    }
+]

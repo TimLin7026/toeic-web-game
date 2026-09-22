@@ -1,0 +1,563 @@
+[
+    {
+        "id": 1,
+        "word": "recover",
+        "part_of_speech": "v.",
+        "meaning": "康復",
+        "examples": [
+            {
+                "en": "By taking a few days off, Sally was able to recover quickly from the flu.",
+                "zh": "藉由休息了幾天，Sally 從流感中迅速康復。",
+                "level": "初級"
+            },
+            {
+                "en": "He is trying to recover his lost data from the broken computer.",
+                "zh": "他試圖從壞掉的電腦中恢復遺失的資料。",
+                "level": "初級"
+            },
+            {
+                "en": "It took the patient several weeks to fully recover from the surgery.",
+                "zh": "病人花了幾個星期才從手術中完全康復。",
+                "level": "中級"
+            },
+            {
+                "en": "Stock prices are expected to recover after the temporary market drop.",
+                "zh": "在市場暫時下跌後，股價預期將會回升。",
+                "level": "中級"
+            },
+            {
+                "en": "The economy needs time to recover from the severe global financial crisis.",
+                "zh": "經濟需要時間從嚴重的全球金融危機中復甦。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "word": "surgery",
+        "part_of_speech": "n.",
+        "meaning": "手術",
+        "examples": [
+            {
+                "en": "Mike is getting surgery right now because of a serious accident.",
+                "zh": "因為嚴重意外，Mike 目前正在接受手術。",
+                "level": "初級"
+            },
+            {
+                "en": "She had to undergo knee surgery after her sports injury.",
+                "zh": "她在運動受傷後不得不接受膝蓋手術。",
+                "level": "初級"
+            },
+            {
+                "en": "The successful heart surgery lasted for over six hours.",
+                "zh": "這場成功的心臟手術持續了六個多小時。",
+                "level": "中級"
+            },
+            {
+                "en": "He is recovering well in the hospital after his minor surgery.",
+                "zh": "他在接受小手術後正在醫院良好康復中。",
+                "level": "中級"
+            },
+            {
+                "en": "Pioneering robotic surgery techniques minimize patient recovery times.",
+                "zh": "先進的機器人手術技術將病患康復時間減到最短。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "word": "suffer",
+        "part_of_speech": "v.",
+        "meaning": "遭受",
+        "examples": [
+            {
+                "en": "Ray suffered from back pain before, but the pain went away after he started doing gentle exercise.",
+                "zh": "Ray 以前受背痛所苦，但是在開始做緩運動後，背痛就消失了。",
+                "level": "初級"
+            },
+            {
+                "en": "Many people suffer from seasonal allergies in spring.",
+                "zh": "許多人在春天飽受季節性過敏之苦。",
+                "level": "初級"
+            },
+            {
+                "en": "The company suffered heavy financial losses during the downturn.",
+                "zh": "公司在經濟低迷期間遭受了沉重的財務損失。",
+                "level": "中級"
+            },
+            {
+                "en": "She suffered a minor injury during soccer practice.",
+                "zh": "她在足球練習中受了輕傷。",
+                "level": "中級"
+            },
+            {
+                "en": "Coastal regions frequently suffer from severe structural damage during typhoons.",
+                "zh": "沿海地區在颱風期間經常遭受嚴重的結構損害。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "word": "disease",
+        "part_of_speech": "n.",
+        "meaning": "疾病",
+        "examples": [
+            {
+                "en": "COVID-19 was a terrible disease when it first appeared in 2019.",
+                "zh": "2019 年新冠肺炎首次出現時，是一種可怕的疾病。",
+                "level": "初級"
+            },
+            {
+                "en": "Heart disease is one of the leading causes of death worldwide.",
+                "zh": "心臟病是全球主要的死因之一。",
+                "level": "初級"
+            },
+            {
+                "en": "Scientists are working hard to find a cure for the rare disease.",
+                "zh": "科學家們正努力為這種罕見疾病尋找治療方法。",
+                "level": "中級"
+            },
+            {
+                "en": "Vaccination helps prevent the spread of infectious diseases.",
+                "zh": "疫苗接種有助於預防傳染病的傳播。",
+                "level": "中級"
+            },
+            {
+                "en": "Epidemiologists monitor the transmission patterns of emerging infectious diseases.",
+                "zh": "流行病學家監測新興傳染病的傳播模式。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "word": "realize",
+        "part_of_speech": "v.",
+        "meaning": "意識到",
+        "examples": [
+            {
+                "en": "Lily realized that her son was a great writer after she read his story.",
+                "zh": "Lily 讀了兒子故事後，才察覺他是個很棒的作家。",
+                "level": "初級"
+            },
+            {
+                "en": "I didn't realize how late it was.",
+                "zh": "我沒意識到已經這麼晚了。",
+                "level": "初級"
+            },
+            {
+                "en": "She finally realized her lifelong dream of becoming a doctor.",
+                "zh": "她終於實現了成為醫生的終身夢想。",
+                "level": "中級"
+            },
+            {
+                "en": "He realized his mistake and apologized immediately.",
+                "zh": "他意識到自己的錯誤並立即道歉。",
+                "level": "中級"
+            },
+            {
+                "en": "Organizations must realize the strategic importance of cybersecurity compliance.",
+                "zh": "組織必須體認到網路安全合規性的策略重要性。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "word": "describe",
+        "part_of_speech": "v.",
+        "meaning": "描述",
+        "examples": [
+            {
+                "en": "The boy couldn't find the words to describe his dream car, so he drew a picture of it.",
+                "zh": "男孩找不到文字來描述他夢想中的汽車，所以他把它畫出來。",
+                "level": "初級"
+            },
+            {
+                "en": "Can you describe what the suspect looked like?",
+                "zh": "你能描述嫌疑犯長什麼樣子嗎？",
+                "level": "初級"
+            },
+            {
+                "en": "She described her wonderful travel experiences to her classmates.",
+                "zh": "她向同學描述了她美好的旅行經驗。",
+                "level": "中級"
+            },
+            {
+                "en": "It is hard to describe the feeling of standing at the mountain peak.",
+                "zh": "站在山頂的感覺很難以言語形容。",
+                "level": "中級"
+            },
+            {
+                "en": "The report comprehensively describes the socio-economic impact of urbanization.",
+                "zh": "該報告全面描述了都市化的社會經濟影響。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "word": "couple",
+        "part_of_speech": "n.",
+        "meaning": "夫妻",
+        "examples": [
+            {
+                "en": "The newly married couple planned to go on a trip to Iceland for their honeymoon.",
+                "zh": "這對新婚夫妻計劃要去冰島度蜜月。",
+                "level": "初級"
+            },
+            {
+                "en": "The elderly couple has been married for fifty years.",
+                "zh": "這對老夫婦已經結婚五十年了。",
+                "level": "初級"
+            },
+            {
+                "en": "A young couple was sitting on the park bench talking.",
+                "zh": "一對年輕情侶正坐在公園長椅上聊天。",
+                "level": "中級"
+            },
+            {
+                "en": "The couple decided to renovate their kitchen this summer.",
+                "zh": "這對夫妻決定今年夏天翻修他們的廚房。",
+                "level": "中級"
+            },
+            {
+                "en": "Couples therapists often emphasize effective communication as a vital foundation.",
+                "zh": "伴侶治療師經常強調有效溝通是至關重要的基礎。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "word": "encourage",
+        "part_of_speech": "v.",
+        "meaning": "鼓勵",
+        "examples": [
+            {
+                "en": "Mike's parents always encourage him to work hard and follow his dreams.",
+                "zh": "Mike 的父母一直鼓勵他努力工作與追求夢想。",
+                "level": "初級"
+            },
+            {
+                "en": "Teachers should encourage students to ask questions in class.",
+                "zh": "老師應該鼓勵學生在課堂上提問。",
+                "level": "初級"
+            },
+            {
+                "en": "Her coach encouraged her before the gymnastics competition.",
+                "zh": "她的教練在體操比賽前鼓勵了她。",
+                "level": "中級"
+            },
+            {
+                "en": "The government encourages local businesses to adopt green practices.",
+                "zh": "政府鼓勵當地企業採取綠色實踐。",
+                "level": "中級"
+            },
+            {
+                "en": "Favorable policies strongly encourage foreign direct investment in technology sectors.",
+                "zh": "有利的政策強烈鼓勵外國直接投資科技產業。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "word": "view",
+        "part_of_speech": "n.",
+        "meaning": "視野",
+        "examples": [
+            {
+                "en": "Hotel rooms with a good view of the sea are usually more expensive.",
+                "zh": "能看到美麗海景的旅館房間通常比較貴。",
+                "level": "初級"
+            },
+            {
+                "en": "The balcony offers a breathtaking view of the valley.",
+                "zh": "陽台提供了令人驚嘆的山谷景致。",
+                "level": "初級"
+            },
+            {
+                "en": "From my point of view, this plan needs more refinement.",
+                "zh": "依我來看，這個計畫需要更多琢磨。",
+                "level": "中級"
+            },
+            {
+                "en": "They sat by the window to enjoy the scenic view.",
+                "zh": "他們坐在窗邊欣賞風景。",
+                "level": "中級"
+            },
+            {
+                "en": "Architectural designs must balance aesthetic views with structural integrity.",
+                "zh": "建築設計必須在美學視角與結構完整性之間取得平衡。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "word": "imagine",
+        "part_of_speech": "v.",
+        "meaning": "想像",
+        "examples": [
+            {
+                "en": "Our music teacher asked us to close our eyes and imagine that we were at a beach.",
+                "zh": "我們的音樂老師要我們閉上眼睛，想像我們正在海灘上。",
+                "level": "初級"
+            },
+            {
+                "en": "Can you imagine living without a smartphone?",
+                "zh": "你能想像沒有智慧型手機的生活嗎？",
+                "level": "初級"
+            },
+            {
+                "en": "She tried to imagine what her future career would look like.",
+                "zh": "她試圖想像她未來的職涯會是什麼樣子。",
+                "level": "中級"
+            },
+            {
+                "en": "It's hard to imagine the scale of the universe.",
+                "zh": "很難想像宇宙的規模有多大。",
+                "level": "中級"
+            },
+            {
+                "en": "Creative writers use vivid imagery to help readers imagine fictional worlds.",
+                "zh": "創作者使用生動的意象來協助讀者想像虛構的世界。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "word": "remove",
+        "part_of_speech": "v.",
+        "meaning": "移除",
+        "examples": [
+            {
+                "en": "Do you know any good ways to remove the price sticker from this box?",
+                "zh": "你知道什麼好方法可以將價格標籤從這個盒子上移除嗎？",
+                "level": "初級"
+            },
+            {
+                "en": "Please remove your shoes before entering the traditional room.",
+                "zh": "進入傳統房間前請脫鞋。",
+                "level": "初級"
+            },
+            {
+                "en": "The maintenance team removed the old software and installed the update.",
+                "zh": "維護團隊移除了舊軟體並安裝了更新。",
+                "level": "中級"
+            },
+            {
+                "en": "She used a special solvent to remove the stain from her shirt.",
+                "zh": "她用特殊的溶劑去除襯衫上的污漬。",
+                "level": "中級"
+            },
+            {
+                "en": "Strict protocols ensure the safe removal of hazardous industrial waste.",
+                "zh": "嚴格的規程確保安全移除有害工業廢棄物。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "word": "reply",
+        "part_of_speech": "v.",
+        "meaning": "回覆",
+        "examples": [
+            {
+                "en": "Henry replied right after he got my message.",
+                "zh": "Henry 一收到我的訊息後就回覆了。",
+                "level": "初級"
+            },
+            {
+                "en": "Did she reply to your email?",
+                "zh": "她回覆你的電子郵件了嗎？",
+                "level": "初級"
+            },
+            {
+                "en": "The manager promised to reply to the customer's complaint by tomorrow.",
+                "zh": "經理答應在明天前回覆客戶的抱怨。",
+                "level": "中級"
+            },
+            {
+                "en": "He didn't know how to reply to her unexpected question.",
+                "zh": "他不知道該如何回答她突如其來的问题。",
+                "level": "中級"
+            },
+            {
+                "en": "Prompt customer service replies significantly enhance user satisfaction metrics.",
+                "zh": "即時的客服回覆能顯著提升用戶滿意度指標。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "word": "return",
+        "part_of_speech": "v.",
+        "meaning": "返回",
+        "examples": [
+            {
+                "en": "After a one-year trip, Tom finally returned to his hometown.",
+                "zh": "一年的旅行後，Tom 終於回到了他的家鄉。",
+                "level": "初級"
+            },
+            {
+                "en": "Jenny returned Ken's book to him after she finished reading it.",
+                "zh": "Jenny 讀完 Ken 的書後，就把它歸還給 Ken 了。",
+                "level": "初級"
+            },
+            {
+                "en": "He plans to return to university to pursue a graduate degree.",
+                "zh": "他計畫返回大學攻讀研究所學位。",
+                "level": "中級"
+            },
+            {
+                "en": "Please return the borrowed equipment to the laboratory after use.",
+                "zh": "使用後請將借用的設備歸還至實驗室。",
+                "level": "中級"
+            },
+            {
+                "en": "Strong macroeconomic indicators suggest a robust return of investor confidence.",
+                "zh": "強勁的總體經濟指標顯示投資人信心強力回升。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "word": "shocked",
+        "part_of_speech": "adj.",
+        "meaning": "震驚的",
+        "examples": [
+            {
+                "en": "Flora was shocked and upset when she heard the news.",
+                "zh": "當 Flora 聽到那個消息時，她既震驚又沮喪。",
+                "level": "初級"
+            },
+            {
+                "en": "We were all shocked by the sudden resignation of the CEO.",
+                "zh": "執行長突然辭職讓我們所有人感到震驚。",
+                "level": "初級"
+            },
+            {
+                "en": "She looked shocked when she saw the final exam results.",
+                "zh": "當她看到期末考成績時，她看起來很震驚。",
+                "level": "中級"
+            },
+            {
+                "en": "Residents were shocked by the unexpected destruction caused by the storm.",
+                "zh": "居民對暴風雨造成的意外破壞感到震驚。",
+                "level": "中級"
+            },
+            {
+                "en": "Global markets reacted with shocked disbelief to the geopolitical escalation.",
+                "zh": "全球市場對地緣政治升級感到震驚與難以置信。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "word": "shock",
+        "part_of_speech": "v.",
+        "meaning": "使震驚",
+        "examples": [
+            {
+                "en": "The sudden earthquake in the middle of the class shocked us all.",
+                "zh": "課堂中突如其來的地震嚇壞了我們所有人。",
+                "level": "初級"
+            },
+            {
+                "en": "The news of the accident shocked everyone in the office.",
+                "zh": "事故的消息震驚了辦公室裡的每個人。",
+                "level": "初級"
+            },
+            {
+                "en": "His sudden decision to resign shocked his colleagues.",
+                "zh": "他突然決定辭職的事情震驚了他的同事。",
+                "level": "中級"
+            },
+            {
+                "en": "The high cost of living in the city shocked the young couple.",
+                "zh": "這座城市高昂的生活成本讓這對年輕夫妻感到震驚。",
+                "level": "中級"
+            },
+            {
+                "en": "Unprecedented market fluctuations shock investors worldwide.",
+                "zh": "空前的市場波動震驚了全球投資者。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "word": "blind",
+        "part_of_speech": "adj.",
+        "meaning": "盲的",
+        "examples": [
+            {
+                "en": "The dog led the blind woman safely across the street.",
+                "zh": "這隻狗引導這位眼盲的婦人安全過馬路。",
+                "level": "初級"
+            },
+            {
+                "en": "He has been blind since he was born.",
+                "zh": "他自出生起就失明了。",
+                "level": "初級"
+            },
+            {
+                "en": "She relied on her guide dog because she was blind.",
+                "zh": "她因為失明而依賴導盲犬。",
+                "level": "中級"
+            },
+            {
+                "en": "It is unfair to make blind judgments without knowing the facts.",
+                "zh": "在不了解事實的情況下做出盲目的判斷是不公平的。",
+                "level": "中級"
+            },
+            {
+                "en": "Accepting information without critical analysis represents a form of intellectual blindness.",
+                "zh": "毫無批判性分析地接受資訊代表了一種理智上的盲目。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "word": "whisper",
+        "part_of_speech": "v.",
+        "meaning": "低語",
+        "examples": [
+            {
+                "en": "Jenny's brother laughed out loud when she whispered a joke into his ear.",
+                "zh": "Jenny 輕聲地在她哥哥耳邊講了個笑話，他放聲大笑。",
+                "level": "初級"
+            },
+            {
+                "en": "Please whisper so you don't wake up the baby.",
+                "zh": "請小聲說話，以免吵醒寶寶。",
+                "level": "初級"
+            },
+            {
+                "en": "They whispered secrets to each other across the table.",
+                "zh": "他們隔著桌子向彼此低語祕密。",
+                "level": "中級"
+            },
+            {
+                "en": "She leaned over to whisper something in her friend's ear.",
+                "zh": "她彎下身在朋友耳邊低語了一些事。",
+                "level": "中級"
+            },
+            {
+                "en": "Rumors began to whisper through the corridors regarding the leadership change.",
+                "zh": "關於領導層變動的流言開始在走廊間悄悄傳開。",
+                "level": "中高級"
+            }
+        ]
+    }
+]
