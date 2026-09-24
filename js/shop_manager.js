@@ -48,6 +48,9 @@
             localStorage.setItem('toeic_shop_data', JSON.stringify(this.data));
             // 兼容性寫法，方便前端直接抓取點數
             localStorage.setItem('toeic_points', this.data.points.toString());
+            if (typeof uploadLeaderboardData === 'function') {
+                try { uploadLeaderboardData(); } catch (e) {}
+            }
         },
 
         getTodayDateString() {
