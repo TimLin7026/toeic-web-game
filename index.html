@@ -297,7 +297,7 @@
             </div>
             <!-- 遊戲版本號呈現 -->
             <div class="border-t pt-2.5 text-center">
-                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260924.04</p>
+                <p class="text-[10px] text-slate-400 font-medium">版本號：v1.20260924.05</p>
             </div>
         </div>
 
@@ -1661,12 +1661,14 @@
                               if (s.targetQuizCount) localStorage.setItem('toeic_target_quiz_count', s.targetQuizCount);
                               if (s.autoQuizThreshold) localStorage.setItem('toeic_auto_quiz_threshold', s.autoQuizThreshold);
                               if (s.showTicker !== undefined) localStorage.setItem('toeic_show_ticker', s.showTicker);
+                              if (s.customNickname) localStorage.setItem('toeic_custom_nickname', s.customNickname);
                           if (s.completedUnits) {
                               completedUnits = Array.from(new Set([...completedUnits, ...s.completedUnits]));
                               localStorage.setItem('toeic_completed_units', JSON.stringify(completedUnits));
                           }
                               syncSettingsUI();
                               applyTickerVisibility();
+                              if (typeof updateSettingsNicknameUI === 'function') updateSettingsNicknameUI();
                           }
 
                           // 更新當前加載的 wordsData 單字狀態
@@ -1705,6 +1707,7 @@
                 targetQuizCount: localStorage.getItem('toeic_target_quiz_count') || '2',
                 autoQuizThreshold: localStorage.getItem('toeic_auto_quiz_threshold') || '3',
                 showTicker: localStorage.getItem('toeic_show_ticker') || 'true',
+                customNickname: localStorage.getItem('toeic_custom_nickname') || '',
                 completedUnits: completedUnits
             };
             const content = {
@@ -1757,6 +1760,7 @@
                 targetQuizCount: localStorage.getItem('toeic_target_quiz_count') || '2',
                 autoQuizThreshold: localStorage.getItem('toeic_auto_quiz_threshold') || '3',
                 showTicker: localStorage.getItem('toeic_show_ticker') || 'true',
+                customNickname: localStorage.getItem('toeic_custom_nickname') || '',
                 completedUnits: completedUnits
             };
             const content = {
@@ -4313,6 +4317,17 @@
                     const json = await res.json();
                     if (json && json.status === 'success' && Array.isArray(json.data)) {
                         cachedLeaderboardData = json.data;
+                        
+                        // 若本地尚未設定暱稱，但 Google Sheet 天梯榜已存在該使用者的稱號，自動跨設備回填還原
+                        const myEmail = (currentUserInfo && currentUserInfo.email) || localStorage.getItem('g_user_email') || '';
+                        if (myEmail && !getCustomNickname()) {
+                            const foundMe = cachedLeaderboardData.find(p => p.email && p.email.toLowerCase() === myEmail.toLowerCase());
+                            if (foundMe && foundMe.nickname) {
+                                localStorage.setItem('toeic_custom_nickname', foundMe.nickname);
+                                updateSettingsNicknameUI();
+                            }
+                        }
+                        
                         renderLeaderboard(type);
                         updateLeaderboardTicker();
                         return;
