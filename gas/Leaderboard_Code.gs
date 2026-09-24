@@ -88,7 +88,19 @@ function doPost(e) {
         break;
       }
     }
-    const rowValues = [email, nickname, displayName, photoUrl, points, masteredCount, streakDays, nowStr];
+    
+    // 🛡️ 關鍵防覆蓋保護：若傳入的暱稱為空，但試算表該玩家已有非空暱稱，絕對保留原有暱稱，不以空字串覆蓋！
+    let finalNickname = nickname;
+    if (!finalNickname && targetRow > -1) {
+      finalNickname = String(data[targetRow - 1][1] || "").trim();
+    }
+    
+    let finalDisplayName = displayName;
+    if (!finalDisplayName && finalNickname) {
+      finalDisplayName = finalNickname;
+    }
+    
+    const rowValues = [email, finalNickname, finalDisplayName, photoUrl, points, masteredCount, streakDays, nowStr];
     if (targetRow > -1) {
       sheet.getRange(targetRow, 1, 1, HEADERS.length).setValues([rowValues]);
     } else {
