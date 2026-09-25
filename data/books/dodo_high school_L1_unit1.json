@@ -1,6 +1,138 @@
 [
     {
         "id": 1,
+        "word": "exciting",
+        "part_of_speech": "adj.",
+        "meaning": "令人興奮的；刺激的",
+        "examples": [
+            {
+                "en": "Tony watched an exciting live basketball game last night.",
+                "zh": "Tony 昨晚看了一場刺激的現場籃球賽。",
+                "level": "初級"
+            },
+            {
+                "en": "Traveling to a foreign country is always an exciting experience.",
+                "zh": "到外國旅行總是一段令人興奮的經驗。",
+                "level": "初級"
+            },
+            {
+                "en": "The exciting news about the new product launch spread quickly across the company.",
+                "zh": "關於新產品發布的振奮消息迅速在公司內傳開。",
+                "level": "中級"
+            },
+            {
+                "en": "The movie featured several exciting action sequences that kept viewers on the edge of their seats.",
+                "zh": "這部電影包含了幾個扣人心弦的刺激動作片段，讓觀眾坐立難安。",
+                "level": "中級"
+            },
+            {
+                "en": "Pioneering technological breakthroughs offer exciting opportunities for sustainable market growth.",
+                "zh": "開創性的技術突破為永續的市場成長帶來了令人振奮的機會。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "word": "proud",
+        "part_of_speech": "adj.",
+        "meaning": "驕傲的",
+        "examples": [
+            {
+                "en": "Mr. and Mrs. Clinton are proud of their daughter because she is honest.",
+                "zh": "Clinton 夫婦以他們的女兒為榮，因為她很誠實。",
+                "level": "初級"
+            },
+            {
+                "en": "She felt proud when she received her graduation certificate.",
+                "zh": "當她接過畢業證書時，她感到十分自豪。",
+                "level": "初級"
+            },
+            {
+                "en": "The entire team felt proud of completing the challenging project ahead of the deadline.",
+                "zh": "整個團隊為能提前在截止日前完成這項艱鉅專案而感到驕傲。",
+                "level": "中級"
+            },
+            {
+                "en": "He was too proud to admit his mistakes and ask his colleagues for guidance.",
+                "zh": "他自尊心太強，不願承認自己的錯誤並向同事請教。",
+                "level": "中級"
+            },
+            {
+                "en": "Organizations maintain a proud heritage of corporate responsibility and ethical innovation.",
+                "zh": "這些組織保持著引以為傲的企業責任與合規創新的優良傳統。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "word": "challenge",
+        "part_of_speech": "n.",
+        "meaning": "挑戰",
+        "examples": [
+            {
+                "en": "Henry always faces challenges in a brave way.",
+                "zh": "Henry 總是勇敢地面對挑戰。",
+                "level": "初級"
+            },
+            {
+                "en": "Learning a new language is a difficult challenge for many students.",
+                "zh": "學習一門新語言對許多學生來說是一項艱難的挑戰。",
+                "level": "初級"
+            },
+            {
+                "en": "The economic downturn posed a serious financial challenge to the small enterprise.",
+                "zh": "經濟不景氣對這家小企業構成了嚴峻的財務挑戰。",
+                "level": "中級"
+            },
+            {
+                "en": "Overcoming this environmental challenge requires close cooperation among nations.",
+                "zh": "克服這項環境挑戰需要各國之間的緊密合作。",
+                "level": "中級"
+            },
+            {
+                "en": "Navigating complex regulatory frameworks presents an intricate operational challenge for modern corporations.",
+                "zh": "遵循複雜的法規架構對現代企業構成了錯綜複雜的營運挑戰。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "word": "nervous",
+        "part_of_speech": "adj.",
+        "meaning": "緊張的",
+        "examples": [
+            {
+                "en": "Tom is nervous about the final exam.",
+                "zh": "Tom 對期末考很緊張。",
+                "level": "初級"
+            },
+            {
+                "en": "I always feel nervous before speaking in front of a large crowd.",
+                "zh": "在一大群人面前發言之前，我總是感到緊張。",
+                "level": "初級"
+            },
+            {
+                "en": "She took a deep breath to calm her nervous energy before the interview.",
+                "zh": "面試前她深呼吸以平復緊張的情緒。",
+                "level": "中級"
+            },
+            {
+                "en": "The nervous investor monitored the fluctuating stock index with growing anxiety.",
+                "zh": "緊張的投資者帶著日益增長的焦慮密切關注著波動的股票指數。",
+                "level": "中級"
+            },
+            {
+                "en": "Heightened market volatility created nervous anticipation among institutional financial stakeholders.",
+                "zh": "加劇的市場波動在機構金融利害關係人中引發了緊繃的觀望情緒。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 5,
         "word": "different",
         "part_of_speech": "adj.",
         "meaning": "不同的",
@@ -33,10 +165,10 @@
         ]
     },
     {
-        "id": 2,
+        "id": 6,
         "word": "awesome",
         "part_of_speech": "adj.",
-        "meaning": "很棒的",
+        "meaning": "很棒的；令人驚歎的",
         "examples": [
             {
                 "en": "The magic show was awesome. I enjoyed it a lot.",
@@ -66,7 +198,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 7,
         "word": "surprised",
         "part_of_speech": "adj.",
         "meaning": "驚訝的",
@@ -99,7 +231,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 8,
         "word": "interested",
         "part_of_speech": "adj.",
         "meaning": "有興趣的",
@@ -132,40 +264,7 @@
         ]
     },
     {
-        "id": 5,
-        "word": "interesting",
-        "part_of_speech": "adj.",
-        "meaning": "有趣的",
-        "examples": [
-            {
-                "en": "Ms. White told the kids an interesting story.",
-                "zh": "White 女士對孩子們說了一個有趣的故事。",
-                "level": "初級"
-            },
-            {
-                "en": "This is a very interesting book about space exploration.",
-                "zh": "這是一本關於太空探索的非常有趣的书。",
-                "level": "初級"
-            },
-            {
-                "en": "We found an interesting café tucked away in the alley.",
-                "zh": "我們在巷子裡發現了一家有趣的咖啡館。",
-                "level": "中級"
-            },
-            {
-                "en": "The documentary offered an interesting perspective on modern art.",
-                "zh": "這部紀錄片提供了關於現代藝術的一個有趣視角。",
-                "level": "中級"
-            },
-            {
-                "en": "His lecture presented an interesting hypothesis regarding linguistic evolution.",
-                "zh": "他的講座提出了關於語言演化的有趣假說。",
-                "level": "中高級"
-            }
-        ]
-    },
-    {
-        "id": 6,
+        "id": 9,
         "word": "decision",
         "part_of_speech": "n.",
         "meaning": "決定",
@@ -198,40 +297,7 @@
         ]
     },
     {
-        "id": 7,
-        "word": "decide",
-        "part_of_speech": "v.",
-        "meaning": "決定",
-        "examples": [
-            {
-                "en": "Stacy decided not to buy the dress because it was too expensive.",
-                "zh": "Stacy 決定不買這件洋裝，因為太貴了。",
-                "level": "初級"
-            },
-            {
-                "en": "We haven't decided where to go for our vacation yet.",
-                "zh": "我們還沒決定假期要去哪裡。",
-                "level": "初級"
-            },
-            {
-                "en": "She decided to pursue a master's degree in computer science.",
-                "zh": "她決定攻讀計算機科學碩士學位。",
-                "level": "中級"
-            },
-            {
-                "en": "It took him a long time to decide on the best course of action.",
-                "zh": "他花了好長時間才決定最佳的行動方案。",
-                "level": "中級"
-            },
-            {
-                "en": "Management must decisively decide whether to expand into international markets.",
-                "zh": "管理階層必須果斷決定是否擴展到國際市場。",
-                "level": "中高級"
-            }
-        ]
-    },
-    {
-        "id": 8,
+        "id": 10,
         "word": "upset",
         "part_of_speech": "adj.",
         "meaning": "難過的",
@@ -264,10 +330,10 @@
         ]
     },
     {
-        "id": 9,
+        "id": 11,
         "word": "trust",
         "part_of_speech": "v.",
-        "meaning": "相信",
+        "meaning": "相信；信任",
         "examples": [
             {
                 "en": "We can't trust Ben because he likes to tell lies.",
@@ -297,7 +363,7 @@
         ]
     },
     {
-        "id": 10,
+        "id": 12,
         "word": "believe",
         "part_of_speech": "v.",
         "meaning": "相信",
@@ -330,7 +396,7 @@
         ]
     },
     {
-        "id": 11,
+        "id": 13,
         "word": "perfect",
         "part_of_speech": "adj.",
         "meaning": "完美的",
@@ -363,7 +429,7 @@
         ]
     },
     {
-        "id": 12,
+        "id": 14,
         "word": "certainly",
         "part_of_speech": "adv.",
         "meaning": "必定",
@@ -396,7 +462,7 @@
         ]
     },
     {
-        "id": 13,
+        "id": 15,
         "word": "unforgettable",
         "part_of_speech": "adj.",
         "meaning": "令人難忘的",
@@ -429,10 +495,10 @@
         ]
     },
     {
-        "id": 14,
+        "id": 16,
         "word": "memory",
         "part_of_speech": "n.",
-        "meaning": "回憶",
+        "meaning": "回憶；記憶",
         "examples": [
             {
                 "en": "Every time Anna looks at those photos, she thinks of the sweet memories of her high school life.",
@@ -462,10 +528,175 @@
         ]
     },
     {
-        "id": 15,
+        "id": 17,
+        "word": "be in the same boat",
+        "part_of_speech": "phrase",
+        "meaning": "處在相同困境",
+        "examples": [
+            {
+                "en": "The traffic is terrible, but since we are all in the same boat, we should not get angry.",
+                "zh": "交通很糟，但既然我們處境都一樣，我們就不該生氣。",
+                "level": "初級"
+            },
+            {
+                "en": "Don't worry about the tough assignment; we are in the same boat.",
+                "zh": "別擔心這項艱難的任務；我們處在同一條船上。",
+                "level": "初級"
+            },
+            {
+                "en": "Many small business owners found themselves in the same boat during the economic slowdown.",
+                "zh": "在經濟放緩期間，許多小企業主發現自己身處同樣的困境。",
+                "level": "中級"
+            },
+            {
+                "en": "Instead of blaming each other, remember that we are all in the same boat and must cooperate.",
+                "zh": "與其互相指責，不如記住我們同舟共濟，必須互相合作。",
+                "level": "中級"
+            },
+            {
+                "en": "Competing domestic manufacturers realized they were in the same boat when confronted with global supply chain disruptions.",
+                "zh": "當面臨全球供應鏈中斷時，相互競爭的國內製造商意識到彼此休戚與共。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "word": "make a difference",
+        "part_of_speech": "phrase",
+        "meaning": "帶來不同；造成影響",
+        "examples": [
+            {
+                "en": "A good teacher often makes a difference in her or his students' lives.",
+                "zh": "一位好老師常為她或他的學生的生活帶來改變。",
+                "level": "初級"
+            },
+            {
+                "en": "Even small donations can make a difference to families in need.",
+                "zh": "即使是小額捐款也能為有需要的家庭帶來改變。",
+                "level": "初級"
+            },
+            {
+                "en": "Volunteering on weekends is a meaningful way to make a difference in your local community.",
+                "zh": "週末當志工是在當地社區發揮影響力的有意義方式。",
+                "level": "中級"
+            },
+            {
+                "en": "Adopting energy-efficient habits can make a significant difference to monthly electricity costs.",
+                "zh": "養成節能習慣可以對每月的電費開銷產生顯著的影響。",
+                "level": "中級"
+            },
+            {
+                "en": "Implementing targeted mentorship initiatives can make a substantial difference in corporate talent retention.",
+                "zh": "落實具針對性的導師計畫能對企業人才留任產生實質影響。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "word": "go for sth.",
+        "part_of_speech": "phrase",
+        "meaning": "努力爭取某事物",
+        "examples": [
+            {
+                "en": "Every swimmer went for first prize in the swimming race.",
+                "zh": "游泳比賽中每位游泳選手都努力爭取第一名。",
+                "level": "初級"
+            },
+            {
+                "en": "If you really want that scholarship, you should go for it.",
+                "zh": "如果你真的很想拿到那筆獎學金，你應該全力爭取。",
+                "level": "初級"
+            },
+            {
+                "en": "She decided to go for the promotion after working diligently for three years.",
+                "zh": "在辛勤工作了三年後，她決定積極爭取這次升遷。",
+                "level": "中級"
+            },
+            {
+                "en": "The soccer team went for the win in the final minutes of the championship match.",
+                "zh": "足球隊在冠軍賽的最後幾分鐘奮力爭取勝利。",
+                "level": "中級"
+            },
+            {
+                "en": "Venture capitalists encourage founders to aggressively go for market leadership.",
+                "zh": "創投家鼓勵創辦人積極爭取市場領導地位。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "word": "give up",
+        "part_of_speech": "phrase",
+        "meaning": "放棄",
+        "examples": [
+            {
+                "en": "Although the job is not easy, John never gives up.",
+                "zh": "雖然這份工作不容易，但是 John 從不放棄。",
+                "level": "初級"
+            },
+            {
+                "en": "Never give up on your dreams, no matter how hard things get.",
+                "zh": "無論事情變得多艱難，永遠不要放棄你的夢想。",
+                "level": "初級"
+            },
+            {
+                "en": "He had to give up playing basketball because of a serious knee injury.",
+                "zh": "由於嚴重的膝蓋傷勢，他不得不放棄打籃球。",
+                "level": "中級"
+            },
+            {
+                "en": "She refused to give up until she found an effective solution to the problem.",
+                "zh": "在找到解決問題的有效辦法之前，她拒絕放棄。",
+                "level": "中級"
+            },
+            {
+                "en": "Visionary leaders persistently pursue their strategic goals rather than giving up during economic downturns.",
+                "zh": "具遠見的領導者會堅持不懈地追求其策略目標，而非在景氣低迷時輕言放棄。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "word": "have one's back",
+        "part_of_speech": "phrase",
+        "meaning": "支持某人",
+        "examples": [
+            {
+                "en": "Nancy decided to study in France, and her parents had her back.",
+                "zh": "Nancy 決定在法國念書，而她父母支持她。",
+                "level": "初級"
+            },
+            {
+                "en": "True friends will always have your back when you face difficulties.",
+                "zh": "當你面臨困難時，真正的朋友總會支持你。",
+                "level": "初級"
+            },
+            {
+                "en": "It is reassuring to know that your teammates have your back during critical tasks.",
+                "zh": "在執行關鍵任務時，知道隊友支持你令人感到安心。",
+                "level": "中級"
+            },
+            {
+                "en": "The manager assured the employees that leadership would have their back throughout the transition.",
+                "zh": "經理向員工保證，在整個過渡期內領導階層都會支持他們。",
+                "level": "中級"
+            },
+            {
+                "en": "Fostering an enterprise culture where colleagues genuinely have each other's back drives organizational resilience.",
+                "zh": "培育同仁真誠相挺的企業文化能推動組織的韌性。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 22,
         "word": "all the time",
         "part_of_speech": "phrase",
-        "meaning": "一直",
+        "meaning": "一直；總是",
         "examples": [
             {
                 "en": "Stacy asks questions all the time because she wants to know more about the world.",
@@ -473,23 +704,23 @@
                 "level": "初級"
             },
             {
-                "en": "He checks his smartphone all the time.",
-                "zh": "他總是查看他的智慧型手機。",
+                "en": "He checks his smartphone all the time while waiting for the bus.",
+                "zh": "他在等公車時總是一直看智慧型手機。",
                 "level": "初級"
             },
             {
-                "en": "Weather patterns are changing all the time due to climate shifts.",
-                "zh": "由於氣候變遷，天氣型態隨時都在改變。",
+                "en": "Weather patterns in this region seem to be changing all the time.",
+                "zh": "這個地區的天氣型態似乎無時無刻都在變化。",
                 "level": "中級"
             },
             {
-                "en": "She practices her presentation skills all the time to gain confidence.",
-                "zh": "她總是練習簡報技巧以獲得信心。",
+                "en": "She practices her public speaking skills all the time to gain confidence.",
+                "zh": "她總是練習公開演講技巧以建立自信。",
                 "level": "中級"
             },
             {
-                "en": "Dynamic market conditions require enterprises to adapt their strategies all the time.",
-                "zh": "動態的市場狀況要求企業時刻調整其策略。",
+                "en": "Dynamic market conditions require modern enterprises to re-evaluate their strategies all the time.",
+                "zh": "動態的市場狀況要求現代企業無時無刻不在重新評估其策略。",
                 "level": "中高級"
             }
         ]

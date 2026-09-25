@@ -11,230 +11,197 @@
                 "level": "初級"
             },
             {
-                "en": "I get bored easily when I have nothing to do.",
-                "zh": "當我沒事可做時，我很容易感到無聊。",
+                "en": "I was bored because there was nothing interesting to watch on television.",
+                "zh": "我覺得很無聊，因為電視上沒有什麼有趣的節目可看。",
                 "level": "初級"
             },
             {
-                "en": "She felt bored during the long lecture because the speaker spoke too slowly.",
-                "zh": "她在漫長的講座中感到無聊，因為講者說話太慢了。",
+                "en": "Students often get bored during lectures if the teacher relies solely on text-heavy slides.",
+                "zh": "如果老師只依賴密密麻麻的文字投影片，學生在課堂上往往會感到無聊。",
                 "level": "中級"
             },
             {
-                "en": "Students often grow bored if teaching methods remain repetitive.",
-                "zh": "如果教學方法重複單調，學生經常會感到無聊。",
+                "en": "He became bored with his repetitive office routines and decided to learn web programming.",
+                "zh": "他對重複單調的辦公室例行工作感到厭倦，決定學習網頁程式設計。",
                 "level": "中級"
             },
             {
-                "en": "Advanced learners rarely feel bored when exploring complex academic literature.",
-                "zh": "高級學習者在探索複雜的學術文獻時很少感到無聊。",
+                "en": "Intellectually ambitious researchers rarely feel bored when analyzing multifaceted empirical anomalies.",
+                "zh": "具備學術抱負的研究人員在剖析錯綜複雜的實證異常現象時，極少感到枯燥無味。",
                 "level": "中高級"
             }
         ]
     },
     {
         "id": 2,
-        "word": "boring",
-        "part_of_speech": "adj.",
-        "meaning": "令人無聊的",
-        "examples": [
-            {
-                "en": "James fell asleep on the sofa because the show on TV was very boring.",
-                "zh": "James 在沙發上睡著了，因為電視上的節目很無聊。",
-                "level": "初級"
-            },
-            {
-                "en": "Doing repetitive tasks every day can be quite boring.",
-                "zh": "每天做重複的工作可能會相當無聊。",
-                "level": "初級"
-            },
-            {
-                "en": "He found the history movie so boring that he left before it ended.",
-                "zh": "他覺得那部歷史電影太無聊了，所以在結束前就離開了。",
-                "level": "中級"
-            },
-            {
-                "en": "The presentation was filled with boring statistics that failed to engage the audience.",
-                "zh": "簡報充斥著無聊的統計數據，未能吸引觀眾。",
-                "level": "中級"
-            },
-            {
-                "en": "Transforming boring data sets into engaging visualizations is a valuable design skill.",
-                "zh": "將無聊的數據集轉化為引人入勝的視覺化圖表是一項寶貴的設計技能。",
-                "level": "中高級"
-            }
-        ]
-    },
-    {
-        "id": 3,
         "word": "complain",
         "part_of_speech": "v.",
         "meaning": "抱怨",
         "examples": [
             {
                 "en": "Mr. Smith made a phone call last night to complain to the police about the noise from his neighbor.",
-                "zh": "Smith 先生昨晚打電話向警察抱怨來自他鄰居的吵鬧聲。",
+                "zh": "Smith 先生昨晚打電話向警察抱怨鄰居家傳來的吵鬧聲。",
                 "level": "初級"
             },
             {
-                "en": "It is useless to complain without trying to fix the problem.",
-                "zh": "只會抱怨而不試著解決問題是沒有用的。",
+                "en": "It does not help to complain constantly without proposing constructive alternatives.",
+                "zh": "若不提出建設性的替代方案，一味抱怨於事無補。",
                 "level": "初級"
             },
             {
-                "en": "Customers have the right to complain if the service is unsatisfactory.",
-                "zh": "如果服務不滿意，顧客有權利抱怨。",
+                "en": "Consumers have the right to complain to customer service if their delivered goods arrive damaged.",
+                "zh": "如果收到的商品破損，消費者有權向客服部門投訴抱怨。",
                 "level": "中級"
             },
             {
-                "en": "She always complains about the heavy workload at the office.",
-                "zh": "她總是抱怨辦公室沉重的工作負荷。",
+                "en": "Commuters frequently complain about the overcrowding and signal delays on subway networks during peak hours.",
+                "zh": "通勤族經常抱怨尖峰時段地鐵網路的過度擁擠與號誌延誤問題。",
                 "level": "中級"
             },
             {
-                "en": "Constructive feedback differs significantly from merely complaining about inconveniences.",
-                "zh": "建設性的回饋與單純抱怨不便之處有顯著的不同。",
+                "en": "Compliance oversight boards investigate verified whistleblower filings rather than dismiss employees complaining of systemic impropriety.",
+                "zh": "法規審查委員會負責調查經過核實的吹哨者舉報，而非對揭發體制不端行為的員工抱怨置之不理。",
                 "level": "中高級"
             }
         ]
     },
     {
-        "id": 4,
+        "id": 3,
         "word": "instead",
         "part_of_speech": "adv.",
         "meaning": "反而；代替",
         "examples": [
             {
                 "en": "I was surprised that my mom wasn't angry about my mistake. Instead, she gave me a hug.",
-                "zh": "我很驚訝媽媽沒有因為我的過錯而生氣，反而給我一個擁抱。",
+                "zh": "我很驚訝媽媽沒有因為我的過錯而生氣，反而給了我一個擁抱。",
                 "level": "初級"
             },
             {
-                "en": "We didn't go to the park; instead, we stayed home.",
-                "zh": "我們沒有去公園，反而待在家裡。",
+                "en": "We chose not to eat out; instead, we cooked vegetable soup at home.",
+                "zh": "我們選擇不在外面吃；反而留在家裡煮蔬菜湯。",
                 "level": "初級"
             },
             {
-                "en": "If you don't like coffee, you can choose tea instead.",
-                "zh": "如果你不喜歡咖啡，你可以改選茶代替。",
+                "en": "If you do not prefer black coffee, you may order green tea instead.",
+                "zh": "如果你不喜歡喝黑咖啡，也可以改點綠茶來代替。",
                 "level": "中級"
             },
             {
-                "en": "He decided not to buy a new car, opting to repair his old one instead.",
-                "zh": "他決定不買新車，選擇修理舊車來代替。",
+                "en": "The manager rejected the costly software suite, opting instead for a customized in-house solution.",
+                "zh": "經理否決了昂貴的套裝軟體，反而選擇客製化的內部自行開發方案。",
                 "level": "中級"
             },
             {
-                "en": "Rather than relying on outdated procedures, the department adopted automated workflows instead.",
-                "zh": "該部門沒有依賴過時的程序，而是改採自動化的工作流程。",
+                "en": "Rather than relying on legacy monolithic architectures, modern engineering teams deploy microservices instead.",
+                "zh": "現代工程團隊不再仰賴傳統單體架構，而是轉而部署具彈性的微服務架構。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "word": "talent",
+        "part_of_speech": "n.",
+        "meaning": "天賦；才華",
+        "examples": [
+            {
+                "en": "Amber's musical talent impressed everyone when she played the piano at the school concert.",
+                "zh": "當 Amber 在學校音樂會上彈奏鋼琴時，她的音樂天賦令在場每個人印象深刻。",
+                "level": "初級"
+            },
+            {
+                "en": "He demonstrated a natural talent for playing chess at an early age.",
+                "zh": "他從小就展現出下西洋棋的與生俱來的天賦。",
+                "level": "初級"
+            },
+            {
+                "en": "The technology conglomerate established a fellowship to nurture promising engineering talent.",
+                "zh": "該科技集團設立了獎學金，以培育具發展潛力的工程研發人才。",
+                "level": "中級"
+            },
+            {
+                "en": "Consistent deliberate practice is just as essential as innate talent for professional athletic success.",
+                "zh": "在職業運動員的成功道路上，持之以恆的刻意練習與先天資質同等重要。",
+                "level": "中級"
+            },
+            {
+                "en": "Cultivating cross-disciplinary executive talent across global operational subsidiaries secures sustainable corporate competitiveness.",
+                "zh": "在全球營運子公司間培育跨領域的高階管理人才，能確保企業長遠的競爭優勢。",
                 "level": "中高級"
             }
         ]
     },
     {
         "id": 5,
-        "word": "talent",
-        "part_of_speech": "n.",
-        "meaning": "天賦",
-        "examples": [
-            {
-                "en": "Amber's musical talent impressed everyone when she played the piano at the school concert.",
-                "zh": "當 Amber 在學校音樂會上彈奏鋼琴時，她的音樂天賦讓每個人都印象深刻。",
-                "level": "初級"
-            },
-            {
-                "en": "She has a natural talent for painting.",
-                "zh": "她在繪畫方面有與生俱來的才華。",
-                "level": "初級"
-            },
-            {
-                "en": "The company is always looking to recruit top engineering talent.",
-                "zh": "這家公司一直在尋找招募頂尖的工程人才。",
-                "level": "中級"
-            },
-            {
-                "en": "Hard work is just as important as raw talent for achieving success.",
-                "zh": "對於取得成功而言，努力工作與天賦同樣重要。",
-                "level": "中級"
-            },
-            {
-                "en": "Nurturing creative talent within an organization fosters long-term innovation.",
-                "zh": "在組織內部培養創意人才有助於長期的創新。",
-                "level": "中高級"
-            }
-        ]
-    },
-    {
-        "id": 6,
         "word": "recognize",
         "part_of_speech": "v.",
         "meaning": "認可；辨認出",
         "examples": [
             {
                 "en": "Chinese is recognized as one of the hardest languages in the world for English speakers to learn.",
-                "zh": "對英語為母語的人而言，中文被認為是世界上最難學的語言之一。",
+                "zh": "對英語母語者而言，中文被公認是世界上最難學的語言之一。",
                 "level": "初級"
             },
             {
-                "en": "I could hardly recognize him after all these years.",
-                "zh": "多年不見，我幾乎認不出他來了。",
+                "en": "I could barely recognize my elementary school classmate after twenty years.",
+                "zh": "經過二十年後，我幾乎認不出我的小學同學了。",
                 "level": "初級"
             },
             {
-                "en": "The school committee recognized her academic achievements with an award.",
-                "zh": "學校委員會以獎項肯定了她的學術成就。",
+                "en": "The academic senate recognized her groundbreaking environmental research with a prestigious award.",
+                "zh": "學術評議會頒發權威獎項，以表彰認可她開創性的環境研究成果。",
                 "level": "中級"
             },
             {
-                "en": "It is important to recognize your own mistakes and learn from them.",
-                "zh": "認清自己的錯誤並從中學習是很重要的。",
+                "en": "Insightful executives readily recognize the strategic value of employee wellness initiatives.",
+                "zh": "具洞察力的企業高層能迅速體認到推行員工身心健康計畫的戰略價值。",
                 "level": "中級"
             },
             {
-                "en": "Global financial institutions officially recognized the company's sustainable market position.",
-                "zh": "全球金融機構正式認可了該公司的永續市場地位。",
+                "en": "Supranational regulatory authorities formally recognized the novel vaccine synthesis protocol under emergency evaluation guidelines.",
+                "zh": "跨國監管機構在緊急評估準則下，正式認可了該新型疫苗合成流程的合規性。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "word": "focus",
+        "part_of_speech": "v.",
+        "meaning": "集中（注意力）；聚焦",
+        "examples": [
+            {
+                "en": "Justin had trouble focusing on his studies after a bad night's sleep.",
+                "zh": "在度過輾轉難眠的夜晚後，Justin 無法專注於他的課業上。",
+                "level": "初級"
+            },
+            {
+                "en": "In today's class, our focus will be on the history of Taiwan.",
+                "zh": "在今天的課堂上，我們的焦點將會放在台灣的歷史上。",
+                "level": "初級"
+            },
+            {
+                "en": "Please silence your smartphones so you can focus completely during the technical briefing.",
+                "zh": "請將手機調至靜音，以便在技術簡報期間全神貫注。",
+                "level": "中級"
+            },
+            {
+                "en": "The corporate committee decided to focus capital allocations on core sustainable manufacturing lines.",
+                "zh": "企業委員會決定將資本配置的重心聚焦於核心永續製造產線上。",
+                "level": "中級"
+            },
+            {
+                "en": "Quantitative analysts deliberately focus their algorithmic modeling on mitigating asymmetric liquidity risks.",
+                "zh": "計量分析師特意將演算法建模的重心集中於防範不對稱流動性風險之上。",
                 "level": "中高級"
             }
         ]
     },
     {
         "id": 7,
-        "word": "focus",
-        "part_of_speech": "v.",
-        "meaning": "專注",
-        "examples": [
-            {
-                "en": "Justin had trouble focusing on his studies after a bad night's sleep.",
-                "zh": "在度過一個輾轉難眠的夜晚後，Justin 無法專注在他的課業上。",
-                "level": "初級"
-            },
-            {
-                "en": "Please focus on the board while I explain the rules.",
-                "zh": "在我解釋規則時，請專注看黑板。",
-                "level": "初級"
-            },
-            {
-                "en": "The manager asked the team to focus on completing the urgent task.",
-                "zh": "經理要求團隊專注於完成這項緊急任務。",
-                "level": "中級"
-            },
-            {
-                "en": "It is hard to focus in a noisy environment.",
-                "zh": "在吵雜的環境中很難專心。",
-                "level": "中級"
-            },
-            {
-                "en": "Strategic enterprises focus their core resources on high-yield business sectors.",
-                "zh": "策略型企業將其核心資源集中在高收益的商業領域。",
-                "level": "中高級"
-            }
-        ]
-    },
-    {
-        "id": 8,
         "word": "period",
         "part_of_speech": "n.",
-        "meaning": "一段時間",
+        "meaning": "一段時間；時期",
         "examples": [
             {
                 "en": "Luckily, with Benson's help, my computer problems were solved in a very short period of time.",
@@ -242,95 +209,161 @@
                 "level": "初級"
             },
             {
-                "en": "We are entering a challenging period of economic transition.",
-                "zh": "我們正進入一個充滿挑戰的經濟轉型期。",
+                "en": "The archaeological gallery exhibits stone tools from the prehistoric period.",
+                "zh": "這間考古展廳陳列著來自史前時期的石器工具。",
                 "level": "初級"
             },
             {
-                "en": "Plants need a certain period of sunlight to grow properly.",
-                "zh": "植物需要一定時間的光照才能正常生長。",
+                "en": "Subscribers are granted a probationary period of thirty days prior to contractual billing.",
+                "zh": "訂戶在進入合約計費前享有為期三十天的體驗試用期。",
                 "level": "中級"
             },
             {
-                "en": "She recorded significant improvements over a six-month training period.",
-                "zh": "她在為期六個月的訓練期間記錄了顯著的進步。",
+                "en": "The region underwent an unprecedented period of industrial modernization following the economic reforms.",
+                "zh": "經濟改革之後，該地區經歷了一段空前的工業現代化轉型期。",
                 "level": "中級"
             },
             {
-                "en": "A critical historical period often catalyzes profound societal transformations.",
-                "zh": "關鍵的歷史時期往往會催化深刻的社會轉型。",
+                "en": "Macroeconomic restructuring requires an extended consolidation period before capital reallocation yields measurable productivity dividends.",
+                "zh": "總體經濟結構重組需要經歷一段漫長的整固期，資本的再分配才能帶來切實的生產力效益。",
                 "level": "中高級"
             }
         ]
     },
     {
-        "id": 9,
+        "id": 8,
         "word": "confident",
         "part_of_speech": "adj.",
         "meaning": "有信心的",
         "examples": [
             {
                 "en": "The director felt confident about her new movie and believed that it would be a big hit.",
-                "zh": "這位導演對於她的新電影感到很有信心，並相信它會相當賣座。",
+                "zh": "這位導演對她的新電影感到很有信心，並相信它會大受歡迎。",
                 "level": "初級"
             },
             {
-                "en": "He is confident that he will pass the interview.",
-                "zh": "他對自己能通過面試很有信心。",
+                "en": "She reviewed her lecture notes carefully and felt confident before taking the quiz.",
+                "zh": "她認真複習了講義，在參加測驗前感到信心十足。",
                 "level": "初級"
             },
             {
-                "en": "Practice makes speakers more confident in front of an audience.",
-                "zh": "練習能讓演講者在觀眾面前更有自信。",
+                "en": "We have confidence in George's ability to do the project well.",
+                "zh": "我們對 George 做好這項專案的能力深具信心。",
                 "level": "中級"
             },
             {
-                "en": "She delivered the presentation with a confident and calm demeanor.",
-                "zh": "她以自信且沉著的態度發表了簡報。",
+                "en": "Delivering clear statements with a confident voice reassures clients during contract negotiations.",
+                "zh": "在合約談判中使用沉穩自信的語調清晰表達，能給客戶帶來安定感與信任。",
                 "level": "中級"
             },
             {
-                "en": "Maintaining a confident outlook is vital for executives steering through corporate crises.",
-                "zh": "保持自信的前景對於引導企業度過危機的高階主管至關重要。",
+                "en": "Maintaining a confident yet prudent governance framework empowers executives to navigate volatile global supply shocks.",
+                "zh": "維持自信而審慎的治理體系，能賦予管理階層沉著應對全球供應鏈劇烈動盪的能力。",
                 "level": "中高級"
             }
         ]
     },
     {
-        "id": 10,
+        "id": 9,
         "word": "patient",
         "part_of_speech": "adj.",
         "meaning": "有耐心的",
         "examples": [
             {
                 "en": "Ms. Lin is very patient with her students. She always gives them enough time to answer questions.",
-                "zh": "林老師對她的學生很有耐心。她總是給他們足夠的時間來回答問題。",
+                "zh": "林老師對她的學生很有耐心，總是給他們足夠的時間回答問題。",
                 "level": "初級"
             },
             {
-                "en": "Please be patient while we process your request.",
-                "zh": "在我們處理您的請求時，請耐心等候。",
+                "en": "Please remain patient while the customer support representative verifies your identity.",
+                "zh": "客服專員在核實您的身分時，請耐心等候。",
                 "level": "初級"
             },
             {
-                "en": "Teachers need to be patient when explaining difficult concepts.",
-                "zh": "老師在解釋困難的概念時需要有耐心。",
+                "en": "After hours of waiting, Justin ran out of patience and decided to leave.",
+                "zh": "等了好幾個小時後，Justin 失去了耐心並決定離開。",
                 "level": "中級"
             },
             {
-                "en": "He remained patient despite the long delay at the airport.",
-                "zh": "儘管在機場遇到長時間延誤，他依然保持耐心。",
+                "en": "Mastering nuanced foreign language idioms requires a persistent and exceptionally patient mindset.",
+                "zh": "精通細微的外語成語習慣用語，需要持之以恆且極具耐心的心態。",
                 "level": "中級"
             },
             {
-                "en": "Mastering complex technical skills demands persistent and patient practice.",
-                "zh": "掌握複雜的技術技能需要堅持不懈且有耐心的練習。",
+                "en": "Institutional venture funds exercise patient capital allocation to accommodate extended biotechnological validation cycles.",
+                "zh": "機構創投基金採取耐心資本配置策略，以包容生物科技漫長嚴謹的臨床驗證週期。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "word": "determined",
+        "part_of_speech": "adj.",
+        "meaning": "堅決的",
+        "examples": [
+            {
+                "en": "Max was determined to quit smoking after his daughter was born.",
+                "zh": "在女兒出生後，Max 下定決心戒菸。",
+                "level": "初級"
+            },
+            {
+                "en": "She was determined to master python programming before the summer vacation ended.",
+                "zh": "她下定決心要在暑假結束前精通 Python 程式設計。",
+                "level": "初級"
+            },
+            {
+                "en": "You should determine your own future through diligence, focus, and integrity.",
+                "zh": "你應當透過勤奮、專注與正直來決定自己的未來。",
+                "level": "中級"
+            },
+            {
+                "en": "Despite encountering harsh initial skepticism, the engineer remained determined to validate his clean energy prototype.",
+                "zh": "儘管遭遇了最初的嚴格質疑，工程師依然堅定不移地驗證他的清潔能源原型機。",
+                "level": "中級"
+            },
+            {
+                "en": "The corporate steering committee stood determined to implement stringent fiduciary oversight despite temporary operational disruption.",
+                "zh": "儘管面臨短暫的營運衝擊，企業指導委員會仍堅決推行嚴格的受託監督審查機制。",
                 "level": "中高級"
             }
         ]
     },
     {
         "id": 11,
+        "word": "image",
+        "part_of_speech": "n.",
+        "meaning": "圖像；形象",
+        "examples": [
+            {
+                "en": "During the news report, an image of the bank robber was shown on screen.",
+                "zh": "在這則新聞報導中，那名銀行搶匪的影像被顯示在螢幕上。",
+                "level": "初級"
+            },
+            {
+                "en": "You can insert a high-quality digital image into your presentation slide.",
+                "zh": "你可以在簡報投影片中插入一張高品質的數位圖片。",
+                "level": "初級"
+            },
+            {
+                "en": "The apparel brand rebranded its packaging to project an eco-friendly and modern corporate image.",
+                "zh": "該服飾品牌重新設計了包裝，以展現環保與現代兼具的企業形象。",
+                "level": "中級"
+            },
+            {
+                "en": "High-resolution satellite images provided meteorological experts with vital storm trajectory diagnostics.",
+                "zh": "高解析度衛星影像為氣象專家提供了關鍵的暴風雨路徑診斷資訊。",
+                "level": "中級"
+            },
+            {
+                "en": "Cultivating an unimpeachable ethical image is an indispensable strategic asset for multinational publicly traded corporations.",
+                "zh": "樹立無可指摘的倫理形象，對於跨國上市公開企業而言是一項不可或缺的戰略資產。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 12,
         "word": "unique",
         "part_of_speech": "adj.",
         "meaning": "獨一無二的",
@@ -341,95 +374,95 @@
                 "level": "初級"
             },
             {
-                "en": "Every culture has its own unique traditions.",
-                "zh": "每種文化都有其獨特的傳統。",
+                "en": "Each biological fingerprint possesses a unique pattern that belongs to only one individual.",
+                "zh": "每枚生物指紋都具有專屬於單一個人的獨一無二紋理模式。",
                 "level": "初級"
             },
             {
-                "en": "The artist's unique style quickly gained popularity in the market.",
-                "zh": "這位藝術家獨特的風格很快在市場上獲得歡迎。",
+                "en": "This historic teahouse offers a unique blend of heritage craftsmanship and contemporary aesthetics.",
+                "zh": "這間歷史悠久的茶館融合了傳統工藝與當代美學，展現出獨樹一幟的魅力。",
                 "level": "中級"
             },
             {
-                "en": "This software offers unique features tailored for professional designers.",
-                "zh": "這款軟體提供了專為專業設計師量身打造的獨特功能。",
+                "en": "The remote volcanic habitat harbors unique flora and fauna found nowhere else on the planet.",
+                "zh": "這處偏遠的火山棲息地孕育了地球上其他任何地方都找不到的獨特動植物。",
                 "level": "中級"
             },
             {
-                "en": "Providing a unique value proposition is essential for differentiating a brand.",
-                "zh": "提供獨特的價值主張對於區隔品牌至關重要。",
-                "level": "中高級"
-            }
-        ]
-    },
-    {
-        "id": 12,
-        "word": "customer",
-        "part_of_speech": "n.",
-        "meaning": "顧客",
-        "examples": [
-            {
-                "en": "Regular customers of this airline can enjoy lower ticket prices.",
-                "zh": "這間航空公司的常客能夠享有較低的票價。",
-                "level": "初級"
-            },
-            {
-                "en": "The store manager greeted every customer with a warm smile.",
-                "zh": "店經理用溫暖的微笑迎接每一位顧客。",
-                "level": "初級"
-            },
-            {
-                "en": "Providing excellent service helps retain loyal customers.",
-                "zh": "提供優質服務有助於留住忠實顧客。",
-                "level": "中級"
-            },
-            {
-                "en": "Customer feedback is crucial for improving product quality.",
-                "zh": "顧客回饋對於提升產品品質至關重要。",
-                "level": "中級"
-            },
-            {
-                "en": "Enterprises must continuously analyze customer behaviors to adapt to market trends.",
-                "zh": "企業必須持續分析顧客行為以適應市場趨勢。",
+                "en": "Developing an irreproducible proprietary technology confers a unique market position protected by robust intellectual property.",
+                "zh": "研發無法仿製的專有技術能確立受強大智慧財產權保護的獨特市場地位。",
                 "level": "中高級"
             }
         ]
     },
     {
         "id": 13,
-        "word": "support",
+        "word": "customer",
         "part_of_speech": "n.",
-        "meaning": "支持",
+        "meaning": "顧客",
         "examples": [
             {
-                "en": "Ryan is great at public speaking. With his support, I prepared a really good speech.",
-                "zh": "Ryan 很擅長公開演說。有了他的支持，我準備了一場很精彩的演講。",
+                "en": "Regular customers of this airline can enjoy lower ticket prices.",
+                "zh": "這間航空公司的常客能夠享有較低的票價優惠。",
                 "level": "初級"
             },
             {
-                "en": "Thank you for your continuous support.",
-                "zh": "謝謝你一直以來的支持。",
+                "en": "The cafe staff welcomed every incoming customer with a genuine smile.",
+                "zh": "咖啡館員工帶著真誠的微笑歡迎每一位光臨的顧客。",
                 "level": "初級"
             },
             {
-                "en": "The local community offered strong support to the charity event.",
-                "zh": "當地社區為慈善活動提供了強力的支持。",
+                "en": "Providing responsive after-sales service is crucial for establishing long-term customer retention.",
+                "zh": "提供即時有效的售後服務對於建立長期的顧客留存率至關重要。",
                 "level": "中級"
             },
             {
-                "en": "She received tremendous emotional support from her family during hard times.",
-                "zh": "她在艱難時期從家人那裡獲得了巨大的情感支持。",
+                "en": "The retail platform surveys customer satisfaction quarterly to refine delivery checkout procedures.",
+                "zh": "該零售電商平台每季調查顧客滿意度，以精進配送與結帳流程。",
                 "level": "中級"
             },
             {
-                "en": "Robust IT infrastructure provides essential operational support for global enterprises.",
-                "zh": "穩健的資訊科技基礎設施為跨國企業提供必要的營運支援。",
+                "en": "Enterprises leverage predictive customer analytics to forecast lifetime value and preempt contractual attrition.",
+                "zh": "企業運用預測性顧客數據分析技術，以預判顧客終身價值並防範合約流失。",
                 "level": "中高級"
             }
         ]
     },
     {
         "id": 14,
+        "word": "support",
+        "part_of_speech": "n.",
+        "meaning": "支持",
+        "examples": [
+            {
+                "en": "Ryan is great at public speaking. With his support, I prepared a really good speech.",
+                "zh": "Ryan 很擅長公開演說，有了他的支持，我準備了一場很精彩的演講。",
+                "level": "初級"
+            },
+            {
+                "en": "Thank you sincerely for your unfailing support during my university entrance examinations.",
+                "zh": "衷心感謝你在我大學入學考試期間給予我堅定不移的支持。",
+                "level": "初級"
+            },
+            {
+                "en": "Some people strongly supported my idea in the meeting, but others were against it.",
+                "zh": "會議中有些人強烈支持我的想法，但其他人則表示反對。",
+                "level": "中級"
+            },
+            {
+                "en": "The municipal administration allocated emergency subsidies to provide welfare support for displaced families.",
+                "zh": "市政府撥款緊急補助金，為流離失所的家庭提供福利救濟支持。",
+                "level": "中級"
+            },
+            {
+                "en": "Robust digital infrastructure provides indispensable operational support for highly decentralized international finance.",
+                "zh": "穩健的數位基礎設施為高度去中心化的跨國金融業務提供了不可或缺的營運後盾。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 15,
         "word": "success",
         "part_of_speech": "n.",
         "meaning": "成功",
@@ -440,32 +473,32 @@
                 "level": "初級"
             },
             {
-                "en": "Hard work is the key to success.",
-                "zh": "努力工作是成功的關鍵。",
+                "en": "Diligent revision and methodical practice are foundational prerequisites for academic success.",
+                "zh": "勤奮複習與有系統的練習是課業獲得成功的根本基石。",
                 "level": "初級"
             },
             {
-                "en": "The launch of the new product was a massive commercial success.",
-                "zh": "新產品的上市取得了巨大的商業成功。",
+                "en": "Although Robert is young, he is already a very successful businessman.",
+                "zh": "雖然 Robert 很年輕，但他已經是個非常成功的商人。",
                 "level": "中級"
             },
             {
-                "en": "She measured her success not by wealth, but by personal fulfillment.",
-                "zh": "她衡量成功的標準不是財富，而是個人的成就感。",
+                "en": "The biotech startup celebrated the commercial success of its novel medical diagnostic device.",
+                "zh": "這家生技新創公司慶祝其新型醫療診斷裝置在商業市場上的顯著成功。",
                 "level": "中級"
             },
             {
-                "en": "Achieving long-term corporate success requires both visionary leadership and execution.",
-                "zh": "實現長期的企業成功需要具前瞻性的領導力與執行力。",
+                "en": "Sustained corporate success mandates maintaining an optimal equilibrium between strategic discipline and agile innovation.",
+                "zh": "企業長青的成功之道，端賴戰略紀律與敏捷市場創新之間的動態平衡。",
                 "level": "中高級"
             }
         ]
     },
     {
-        "id": 15,
+        "id": 16,
         "word": "inspire",
         "part_of_speech": "v.",
-        "meaning": "激勵",
+        "meaning": "激勵；啟發",
         "examples": [
             {
                 "en": "The film about saving animals inspired lots of people to care more about nature.",
@@ -473,23 +506,221 @@
                 "level": "初級"
             },
             {
-                "en": "Great teachers inspire students to learn.",
-                "zh": "優秀的老師會激勵學生學習。",
+                "en": "Her courage in overcoming medical hardship continues to inspire everyone in the community.",
+                "zh": "她克服病痛折磨的堅韌勇氣持續激勵著社區裡的每個人。",
                 "level": "初級"
             },
             {
-                "en": "Her courage inspired everyone in the community.",
-                "zh": "她的勇氣激勵了社區裡的每個人。",
+                "en": "Exceptional literature possesses the enduring power to inspire empathy across disparate historical eras.",
+                "zh": "傑出的文學作品具有深遠的力量，能啟發跨越不同歷史時代的人際共鳴與同理心。",
                 "level": "中級"
             },
             {
-                "en": "The CEO's speech aimed to inspire the employees to reach higher goals.",
-                "zh": "執行長的演講旨在激勵員工達到更高的目標。",
+                "en": "The athletic coach delivered an impassioned address to inspire the roster before the championship showdown.",
+                "zh": "在冠軍決賽前，總教練發表了一番慷慨激昂的演說，激勵全體隊員全力奮戰。",
                 "level": "中級"
             },
             {
-                "en": "Pioneering scientific discoveries continuously inspire future generations of researchers.",
-                "zh": "開創性的科學發現不斷激勵著未來幾代的研究人員。",
+                "en": "Visionary scientific mentorship consistently inspires generational breakthroughs in clean hydrogen energy technology.",
+                "zh": "具遠見卓識的科研傳承與指導，能持續激發清潔氫能技術取得具世代意義的重大突破。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "word": "turn out",
+        "part_of_speech": "phrase",
+        "meaning": "結果是……；原來是……",
+        "examples": [
+            {
+                "en": "I met a lovely couple in the park yesterday, and they turned out to be my new neighbors.",
+                "zh": "我昨天在公園遇到一對和善的夫妻，原來他們是我的新鄰居。",
+                "level": "初級"
+            },
+            {
+                "en": "The grammar exam turned out to be much less intimidating than the students had anticipated.",
+                "zh": "文法測驗的結果比學生們預想的要簡單和緩得多。",
+                "level": "初級"
+            },
+            {
+                "en": "Despite early morning showers, the weather turned out pleasant for the outdoor orientation camp.",
+                "zh": "儘管清晨有陣雨，迎新露營時的天氣結果卻十分舒適宜人。",
+                "level": "中級"
+            },
+            {
+                "en": "What initially seemed like an insurmountable setback turned out to be a transformational learning opportunity.",
+                "zh": "起初看似難以逾越的挫折，事後證明卻成了一次帶來轉變的寶貴學習契機。",
+                "level": "中級"
+            },
+            {
+                "en": "The complex algorithmic concurrency bottleneck turned out to be triggered by an unindexed database query cascade.",
+                "zh": "這項複雜的演算法並發瓶頸，最終查明是由未建立索引的資料庫級聯查詢所引發的。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "word": "no longer",
+        "part_of_speech": "phrase",
+        "meaning": "不再",
+        "examples": [
+            {
+                "en": "Mrs. Jones no longer lives in this building. She moved out two years ago.",
+                "zh": "Jones 太太不住這棟大樓了，她兩年前就搬走了。",
+                "level": "初級"
+            },
+            {
+                "en": "He no longer consumes sugary sodas because he wants to improve his physical stamina.",
+                "zh": "他不再喝含糖汽水了，因為他想增強自己的體能。",
+                "level": "初級"
+            },
+            {
+                "en": "The damaged bridge is no longer deemed safe for heavy commercial transit.",
+                "zh": "受損的橋樑結構已不再被認定適合供重型商用車輛通行。",
+                "level": "中級"
+            },
+            {
+                "en": "Analog magnetic tape media is no longer manufactured at scale as cloud storage dominates.",
+                "zh": "隨著雲端儲存佔據主導地位，類比磁帶媒介已不再進行規模化量產。",
+                "level": "中級"
+            },
+            {
+                "en": "Legacy commercial enterprises can no longer insulate core revenues from agile cross-border fintech disruption.",
+                "zh": "在敏捷跨境金融科技的強勢衝擊下，傳統商業體系再也無法保護核心營收免受侵蝕。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "word": "be filled with",
+        "part_of_speech": "phrase",
+        "meaning": "充滿",
+        "examples": [
+            {
+                "en": "Life is filled with surprises. You'll never know what will happen next.",
+                "zh": "人生充滿了驚奇，你永遠不會知道接下來會發生什麼事。",
+                "level": "初級"
+            },
+            {
+                "en": "The central auditorium was filled with eager attendees awaiting the keynote address.",
+                "zh": "中央大禮堂裡擠滿了熱切等待主題演講的與會者。",
+                "level": "初級"
+            },
+            {
+                "en": "Her travelogue is filled with vivid sensory descriptions depicting nocturnal street markets across Asia.",
+                "zh": "她的旅遊扎記充滿了生動的感官描寫，細膩描繪了亞洲各地的夜市風貌。",
+                "level": "中級"
+            },
+            {
+                "en": "The high-tech cleanroom facility was filled with precision laser sensors calibrated for nanometer fabrication.",
+                "zh": "這座高科技無塵室設施內配備了精密雷射感測器，專為奈米級製程進行校準。",
+                "level": "中級"
+            },
+            {
+                "en": "Evolving multilateral treaties are filled with deliberate diplomatic ambiguities safeguarding national strategic autonomy.",
+                "zh": "演進中的多邊條約充斥著刻意為之的外交模糊條款，以維護各國的戰略自主權。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "word": "as a result",
+        "part_of_speech": "phrase",
+        "meaning": "因此",
+        "examples": [
+            {
+                "en": "I didn't sleep well last night. As a result, I feel pretty tired now.",
+                "zh": "我昨晚沒睡好；因此，我現在覺得很疲累。",
+                "level": "初級"
+            },
+            {
+                "en": "She practiced the piano pieces diligently; as a result, she achieved top honors at the audition.",
+                "zh": "她勤奮不懈地練琴；因此，她在甄選試演中拔得頭籌。",
+                "level": "初級"
+            },
+            {
+                "en": "The regional train was halted by adverse weather; as a result, dozens of passengers missed connecting departures.",
+                "zh": "區域列車因惡劣天候停駛；結果，數十名乘客錯過了後續的轉運車次。",
+                "level": "中級"
+            },
+            {
+                "en": "The manufacturer trimmed promotional budgets; as a result, quarterly domestic sales softened marginally.",
+                "zh": "製造商縮減了宣傳推廣預算；因此，該季度的國內銷量呈現微幅放緩。",
+                "level": "中級"
+            },
+            {
+                "en": "Key maritime shipping bottlenecks shut down unexpectedly; as a result, global automotive assembly schedules ceased completely.",
+                "zh": "關鍵海運樞紐無預警停擺；因此，全球汽車組裝生產日程全面被迫中斷。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "word": "in the end",
+        "part_of_speech": "phrase",
+        "meaning": "最後",
+        "examples": [
+            {
+                "en": "Don't worry. I'm sure that our plan will work out quite well in the end.",
+                "zh": "不用擔心，我很確信我們的計畫最後會順利進行。",
+                "level": "初級"
+            },
+            {
+                "en": "We searched thoroughly for the passport and found it inside the desk drawer in the end.",
+                "zh": "我們徹底搜尋了護照，最後在書桌抽屜深處找到了它。",
+                "level": "初級"
+            },
+            {
+                "en": "Both negotiating factions compromised on critical provisions, formalizing an equitable agreement in the end.",
+                "zh": "談判雙方在關鍵條款上各退一步，最終確立了一份公平合理的合作協議。",
+                "level": "中級"
+            },
+            {
+                "en": "Dedicated effort, ethical steadfastness, and authentic perseverance invariably yield lasting fulfillment in the end.",
+                "zh": "專注的付出、道德的堅守與由衷的毅力，最終必定會轉化為持久的成就與充實感。",
+                "level": "中級"
+            },
+            {
+                "en": "In the end, foundational fiduciary trust dictates long-term corporate survivability far more than transient quarterly profit spikes.",
+                "zh": "歸根結底，決定企業長遠生存力的核心要素在於信託受託誠信，遠勝於短暫的季度利潤激增。",
+                "level": "中高級"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "word": "make the most of sth.",
+        "part_of_speech": "phrase",
+        "meaning": "充分利用",
+        "examples": [
+            {
+                "en": "Make the most of your vacation by helping others and learning new things.",
+                "zh": "藉由幫助他人與學習新事物來充分利用你的假期。",
+                "level": "初級"
+            },
+            {
+                "en": "We should make the most of this sunny weekend by arranging an outdoor hike.",
+                "zh": "我們應該好好把握這個陽光明媚的週末，安排一趟戶外健行。",
+                "level": "初級"
+            },
+            {
+                "en": "Undergraduate students are encouraged to make the most of available campus research laboratory facilities.",
+                "zh": "校方鼓勵大學部學生充分善用校園內完備的研究實驗室設施。",
+                "level": "中級"
+            },
+            {
+                "en": "Early-stage founders must make the most of seed capital to engineer a commercially viable product prototype.",
+                "zh": "初創團隊必須物盡其用善加運用種子輪資金，打造出具備商業可行性的產品原型。",
+                "level": "中級"
+            },
+            {
+                "en": "Progressive technology conglomerates make the most of deep learning pipelines to automate mission-critical logistical decisions.",
+                "zh": "具前瞻思維的科技巨頭充分運用深度學習管線技術，將攸關核心使命的物流決策全面自動化。",
                 "level": "中高級"
             }
         ]
